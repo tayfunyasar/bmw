@@ -1,0 +1,23 @@
+{
+  "textPrimary": "#e2e8f0",
+  "textSecondary": "#94a3b8",
+  "textHighlight": "#fefce8",
+  "bgBase": "#0a0c14",
+  "primary": "#3b82f6",
+  "link": "#60a5fa",
+  "success": "#22c55e",
+  "danger": "#ef4444",
+  "warning": "#f59e0b",
+  "star": "#fbbf24",
+  "cyan": "#22d3ee",
+  "pink": "#f9a8d4",
+  "dangerLight": "#f87171",
+  "successLight": "#4ade80",
+  "cardBg": "rgba(10, 12, 20, 0.9)",
+  "borderSubtle": "rgba(255, 255, 255, 0.06)",
+  "bgSubtle": "rgba(255, 255, 255, 0.04)",
+  "bgVerySubtle": "rgba(255, 255, 255, 0.03)",
+  "hoverBgBlue": "rgba(96, 165, 250, 0.08)",
+  "hoverColumnBg": "rgba(96, 165, 250, 0.1)",
+  "cardBgSubtle": "rgba(255,255,255,0.03)"
+}

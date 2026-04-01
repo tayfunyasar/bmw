@@ -1,0 +1,380 @@
+[
+  {
+    "code": "S403A",
+    "name": "Sunroof",
+    "price": 1000,
+    "score": 2,
+    "tag": "GATE — must have",
+    "features": [
+      "Sunroof",
+      "Panoramic roof"
+    ],
+    "description": [
+      "Glasschiebe-Hebedach"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "WARRANTY",
+    "name": "Warranty",
+    "features": [
+      "Warranty"
+    ],
+    "description": [],
+    "props": {},
+    "defaultStatus": "no",
+    "score": 1
+  },
+  {
+    "code": "S5AZA",
+    "name": "Laser Light",
+    "price": 3200,
+    "score": 2,
+    "tag": "Rare & expensive",
+    "features": [
+      "Laser headlights"
+    ],
+    "description": [
+      "Laserlicht"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S5AUA",
+    "name": "Driving Asst+",
+    "price": 2500,
+    "score": 2,
+    "tag": "ACC + lane keep",
+    "features": [],
+    "description": [
+      "DRIVING ASSISTANT PROFESSIONAL",
+      "Driving Assistant Plus"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S688A",
+    "name": "Harman Kardon",
+    "price": 1600,
+    "score": 2,
+    "tag": "Audio upgrade",
+    "features": [],
+    "description": [
+      "Harman Kardon",
+      "H/K"
+    ],
+    "negativeDescription": [
+      "HiFi-Lautsprechersystem"
+    ],
+    "props": {},
+    "defaultStatus": "unknown"
+  },
+  {
+    "code": "S2T4A",
+    "name": "M Sport Diff",
+    "price": 1500,
+    "score": 2,
+    "tag": "Drift & cornering",
+    "features": [],
+    "description": [
+      "M Sportdifferential"
+    ],
+    "props": {},
+    "defaultStatus": "unknown"
+  },
+  {
+    "code": "S610A",
+    "name": "Head-Up Disp",
+    "price": 1400,
+    "score": 2,
+    "tag": "Safety",
+    "features": [
+      "Head-up display"
+    ],
+    "description": [
+      "Head-up-Display"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S5DN_360",
+    "name": "360° Camera",
+    "price": 900,
+    "score": 2,
+    "tag": "Parking",
+    "features": [],
+    "description": [
+      "PARKING ASSISTANT PLUS",
+      "Surround View"
+    ],
+    "props": {
+      "parkingSensors": [
+        "360° camera"
+      ]
+    },
+    "defaultStatus": "no"
+  },
+  {
+    "code": "KGNL",
+    "name": "Alcantara Seats",
+    "price": 900,
+    "score": 1,
+    "tag": "Interior upgrade",
+    "features": [],
+    "description": [
+      "Alcantara"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S322A",
+    "name": "Comfort Access",
+    "price": 800,
+    "score": 1,
+    "features": [
+      "Keyless central locking"
+    ],
+    "description": [
+      "Komfortzugang"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S2VFA",
+    "name": "Adaptive M Susp",
+    "price": 700,
+    "score": 1,
+    "tag": "Handling upgrade",
+    "features": [
+      "Dynamic chassis control"
+    ],
+    "description": [
+      "Adaptives M Fahrwerk"
+    ],
+    "negativeDescription": [
+      "M Sportfahrwerk"
+    ],
+    "props": {},
+    "defaultStatus": "unknown"
+  },
+  {
+    "code": "S459A",
+    "name": "Elec Seats/Mem",
+    "price": 700,
+    "score": 1,
+    "features": [
+      "Electric seat adjustment",
+      "Eletric seat adjustment with memory function"
+    ],
+    "description": [
+      "Sitzverstellung elektrisch"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S5DNA",
+    "name": "Park Asst+",
+    "price": 700,
+    "score": 1,
+    "features": [],
+    "description": [
+      "PARKING ASSISTANT PLUS"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S6U3A",
+    "name": "Cockpit Pro",
+    "price": 650,
+    "score": 1,
+    "features": [
+      "Digital cockpit"
+    ],
+    "description": [
+      "Live Cockpit Professional"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S715A",
+    "name": "M Aero Pkg",
+    "price": 550,
+    "score": 1,
+    "features": [
+      "Sports package"
+    ],
+    "description": [
+      "M Sportpaket",
+      "M Aerodynamikpaket"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S2VLA",
+    "name": "Var Sport Steer",
+    "price": 500,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Variable Sportlenkung"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S420A",
+    "name": "Sun Prot Glass",
+    "price": 350,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Abgedunkelte Verglasung",
+      "Sonnenschutzverglasung"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S1MAA",
+    "name": "Sport Exhaust",
+    "price": 350,
+    "score": 1,
+    "features": [],
+    "description": [
+      "M Sportabgasanlage"
+    ],
+    "props": {},
+    "defaultStatus": "unknown"
+  },
+  {
+    "code": "S5ACA",
+    "name": "High Beam Asst",
+    "price": 200,
+    "score": 1,
+    "features": [
+      "High beam assist"
+    ],
+    "description": [
+      "Fernlichtassistent"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S6C4A",
+    "name": "Connected Pro",
+    "price": 200,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Connected Package Professional",
+      "Connected Professional"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S430A",
+    "name": "Mirror Tilt",
+    "price": 100,
+    "score": 1,
+    "features": [
+      "Autom. dimming interior mirror"
+    ],
+    "description": [
+      "Innen- und Außenspiegel"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S4AWA",
+    "name": "Sensatec Dash",
+    "price": 100,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Sensatec",
+      "Instrumententafel",
+      "Dashboard"
+    ],
+    "matchType": "ALL_DESCRIPTION",
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S775A",
+    "name": "Black Headliner",
+    "price": 100,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Dachhimmel anthrazit"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S493A",
+    "name": "Storage Pkg",
+    "price": 50,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Ablagepaket"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S536A",
+    "name": "Pre-Heater",
+    "price": 1500,
+    "score": 1,
+    "tag": "Standheizung/Fernstart",
+    "features": [],
+    "description": [
+      "Standheizung"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S2NHA",
+    "name": "M Sport Brake",
+    "price": 800,
+    "score": 1,
+    "features": [],
+    "description": [
+      "M Sportbremse"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S3ACA",
+    "name": "Çeki Demiri",
+    "price": 500,
+    "score": 0,
+    "features": [
+      "Trailer coupling",
+      "Tow bar"
+    ],
+    "description": [
+      "Anhängerkupplung",
+      "AHK"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  }
+]

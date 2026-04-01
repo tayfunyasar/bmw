@@ -1,0 +1,728 @@
+[
+  {
+    "listingId": "C26",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449974148",
+    "mobileDeId": "449974148",
+    "exteriorColorName": "Tansanit Blue II",
+    "interiorColorName": "Deri Siyah",
+    "drivetrainType": null,
+    "basePriceEuro": 49898,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 46301,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      11
+    ],
+    "numberOfPreviousOwners": "2",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": null,
+    "sellerTypeOrName": "Autohaus Karl+Co ★4.3",
+    "modelGeneration": null,
+    "co2EmissionsGramPerKm": null,
+    "listingLocation": "🇩🇪 Mainz",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "unknown",
+      "S2VFA": "yes",
+      "S459A": "unknown",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "unknown",
+      "S1MAA": "yes",
+      "S5ACA": "unknown",
+      "S6C4A": "yes",
+      "S430A": "unknown",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Yeniden ilan (id:449271448→449974148). Tüm donanım doğrulandı. Sahip 1→2, tescil 11→12/2022. HU Yeni",
+        "detail": "",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "SATILDI (18.03.2026). ⭐ Tansanit Blue II, €49,898, 46.3K km. Laser+HK+DA++M Diff+Adaptive M+Sport Exhaust ama HUD/360° yoktu",
+        "detail": "",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-18T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": null
+  },
+  {
+    "listingId": "C25",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=442279121",
+    "mobileDeId": "442279121",
+    "exteriorColorName": "Brooklyn Grau",
+    "interiorColorName": "Alcantara Bej",
+    "drivetrainType": "xDrive AWD (varsayılan)",
+    "basePriceEuro": 45690,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 25500,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      6
+    ],
+    "numberOfPreviousOwners": "2",
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "Yeni",
+    "sellerTypeOrName": "ahg Autohandelsges. ★4.5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 183,
+    "listingLocation": "🇩🇪 Offenburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [
+      "Rengi güzel, ancak araç bomboş"
+    ],
+    "listingDescriptionNotes": [
+      "Kazasızlık doğrulanmış"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "unknown",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S688A": "no",
+      "S2T4A": "no",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "unknown",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "yes",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Aktif → Satılan",
+        "detail": "14.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-14T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#cbd5e1"
+  },
+  {
+    "listingId": "C33",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=448106368",
+    "mobileDeId": "448106368",
+    "exteriorColorName": "Black Sapphire",
+    "interiorColorName": "Deri Siyah",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 49855,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 42631,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      1
+    ],
+    "numberOfPreviousOwners": "1",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2027",
+    "sellerTypeOrName": "Autohaus Kühnert ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇩🇪 Reichenbach",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "Garanti var"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Aktif → Satılan",
+        "detail": "14.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-14T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C45",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443616047",
+    "mobileDeId": "443616047",
+    "exteriorColorName": "BMW Ind. Dravitgrau",
+    "interiorColorName": "Vernasca Siyah",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 51702,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 38517,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": "2",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "01/2028",
+    "sellerTypeOrName": "BMW München ★4.3",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇩🇪 München",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [
+      "Renk biraz sorun, beğenmedik"
+    ],
+    "listingDescriptionNotes": [
+      "2yr BMW PS garanti",
+      "Kazasız",
+      "🔄 LCI (fotoğraflardan doğrulandı)",
+      "SA kodları BMW.de URL'den doğrulandı",
+      "Vergi dilimi düşük"
+    ],
+    "listingAdditionalFeatures": [
+      "Individual Dravitgrau (nadir renk!)"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Aktif → Satılan",
+        "detail": "14.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-14T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#a78bfa"
+  },
+  {
+    "listingId": "C10",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=446222526",
+    "mobileDeId": "446222526",
+    "exteriorColorName": "Dravitgrau",
+    "interiorColorName": "Deri Siyah",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 48588,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 0,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      0
+    ],
+    "numberOfPreviousOwners": "?",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "?",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Mainz",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "Bekleyen ilandan taşındı — sunroof doğrulanamamıştı"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "WARRANTY": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Bekleyen → Satılan",
+        "detail": "14.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-14T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C27",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443997122",
+    "mobileDeId": "443997122",
+    "exteriorColorName": "Dravitgrau",
+    "interiorColorName": "Alcantara Siyah",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 47680,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 43244,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      11
+    ],
+    "numberOfPreviousOwners": "1",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "Yeni",
+    "sellerTypeOrName": "Autohaus Müller ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 184,
+    "listingLocation": "🇩🇪 Leipzig",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "xDrive doğrulandı (Dört tekerlekli sürüş ekipmanda)",
+      "Araç no: 1018235"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Tekrar tarama — Renk Dravitgrau, İç Alcantara Siyah doğrulandı. xDrive doğrulandı. HU → Yeni. CO₂ → 184. Alcantara/Elec Seats/Mirror → yes. 360° yes → NO (sadece geri kamera). Park Asst+ yes → NO (sadece Park Asst). Araç no: 1018235",
+        "detail": "15.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#fb923c"
+  },
+  {
+    "listingId": "C44",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445512610",
+    "mobileDeId": "445512610",
+    "exteriorColorName": "M Brooklyn Grau",
+    "interiorColorName": "Merino Siyah (Individual)",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 50203,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 47630,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "11/2025",
+    "sellerTypeOrName": "BMW München ★4.3",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 München",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [
+      "Renk biraz sorun, beğenmedik",
+      "Jantları beğenmedik",
+      "KM çok yüksek (47.6K)"
+    ],
+    "listingDescriptionNotes": [
+      "BMW resmi bayi (Türkçe konuşuyorlar!)",
+      "⚠️ HU 11/2025 dolmuş!",
+      "2yr BMW PS garanti",
+      "Kazasız"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "unknown",
+      "S4AWA": "yes",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#fbbf24"
+  },
+  {
+    "listingId": "C18",
+    "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=448809290",
+    "mobileDeId": "448809290",
+    "exteriorColorName": "San Remo Green",
+    "interiorColorName": "Alcantara Siyah",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 54950,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 29581,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "Yeni",
+    "sellerTypeOrName": "Riller & Schnauck ★4.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 183,
+    "listingLocation": "🇩🇪 Berlin",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Voranlage — standort/donanım bayiden teyit edilmeli",
+      "Bayi Türkçe konuşuyor!",
+      "Araç no: 2491107"
+    ],
+    "listingAdditionalFeatures": [
+      "Carbon Interior"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "yes",
+      "S5AZA": "no",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "unknown",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "Tekrar tarama — M Diff, M Brake, M Aero, VSS, Sport Exhaust, Sensatec Dash, Black Headliner, Storage Pkg, Mirror Tilt unknown → YES. Warranty → yes. Pre-Heater → no. Carbon Interior. Voranlage notu. Bayi Türkçe konuşuyor",
+        "detail": "15.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Araç satıldı veya yayından kaldırıldı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#4ade80"
+  },
+  {
+    "listingId": "C55",
+    "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=450753122",
+    "mobileDeId": "450753122",
+    "exteriorColorName": "Beyaz",
+    "interiorColorName": "Alcantara-Leder",
+    "drivetrainType": "xDrive AWD (?)",
+    "basePriceEuro": 47500,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 45000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      4
+    ],
+    "numberOfPreviousOwners": "2",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "12/2027",
+    "sellerTypeOrName": "Özel Satıcı",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 173,
+    "listingLocation": "🇩🇪 Ludwigshafen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "🔥 BPM €4,112 (05/2021) → Toplam €51,612",
+      "2. sahip — Jahreswagen 2022'de BMW'den (Münih) 8K km'de alınmış",
+      "⚠️ Donanım bilgisi çok az — satıcıdan detay almak gerekli",
+      "⚠️ xDrive/renk/donanım belirsiz",
+      "Tel: 0176 61230116",
+      "HU 12/2027 ✅ (çok yeni!)"
+    ],
+    "listingAdditionalFeatures": [
+      "Allwetterreifen (yeni) + yaz lastikleri mevcut"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "YENİ €47,500, 45K km, 05/2021. 🔥 BPM €4,112 → toplam €51,612! Alcantara+Schiebedach. Donanım çoğu bilinmiyor — satıcıdan detay gerekli. Özel satıcı",
+        "detail": "20.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-20T12:00:00.000Z"
+      },
+      {
+        "action": "Aktif → Satılan",
+        "detail": "31.03.2026",
+        "changes": null,
+        "auditDate": "2026-04-01T07:41:30.060Z"
+      }
+    ],
+    "cardThemeColorHex": "#86efac"
+  }
+]

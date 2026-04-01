@@ -1,0 +1,38 @@
+{
+  "priority": {
+    "title": "C44 München (BMW Fröttmaning)",
+    "date": "09.03.2026 Pazartesi",
+    "action": "BMW München Fröttmaning'i ara",
+    "questions": [
+      "HU 11/2025 dolmuş — yenilecek mi? Maliyeti bayiye mi ait?",
+      "Full Service (tam servis geçmişi) doğru mu?",
+      "Pre-Heater var mı? (SA kodlarında yok ama teyit)"
+    ],
+    "strengths": "SA kodları doğrulanmış near-full spec, Individual Merino deri, HUD var",
+    "vehicleNo": "MX364306",
+    "dealerLink": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e932a-63d3-79bc-b23e-abda46c5c4b0"
+  },
+  "otherActions": [
+    {
+      "car": "C43 Glienicke",
+      "action": "📞 Aranacak: Fotoğrafları iste. H&R mod. RDW'de sorun olur mu? 285 kW motor detayı (Motorsport Eng. Pkg). SA: M Diff/Adaptive M/VSS/M Brake/Comfort Access YOK.",
+      "link": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449418692"
+    },
+    {
+      "car": "C39 Rödermark",
+      "action": "DA+ bayiye sorulmalı (Autohaus Euler ★4.5)"
+    },
+    {
+      "car": "C44 München",
+      "action": "HU 11/2025 dolmuş, birçok donanım bilinmiyor → bayiye sor (BMW München Fröttmaning)"
+    },
+    {
+      "car": "C7 Diepholz",
+      "action": "1 Mart email gönderildi, yanıt bekleniyor (TRIMIA)"
+    }
+  ],
+  "email": {
+    "title": "C47 WELLER Osnabrück — Email (14.03.2026)",
+    "body": "Subject: M440i Coupe (13100210) – Quick questions\n\nHello,\n\nI am interested in the BMW M440i Coupe on mobile.de.\n- Vehicle No: 13100210\n\nTwo quick questions:\n\n1- Is this vehicle RWD or xDrive?\n2- Does it have Adaptives Fahrwerk (Adaptive M Suspension) and Differentialsperre (M Sport Differential)?\n\nI am specifically looking for an M440i xDrive Coupe (G22, 2-door) with the following criteria:\n- Year: 2021 or newer\n- Sunroof (Glasdach)\n- Under 40,000 km\n- Under €52,000\n- Driving Assistant Professional preferred\n- LCI model preferred, but not required\n\nIf this vehicle does not match, I would be happy to hear about any similar vehicles you may have in stock.\n\nCould you also register me in your system so I can be notified when matching vehicles become available?\n\nYou can reach me at: tayfun@tayfunyasar.com\n\nThank you!\n\nBest regards\nTayfun Yasar"
+  }
+}

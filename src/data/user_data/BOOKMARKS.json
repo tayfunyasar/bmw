@@ -1,0 +1,22 @@
+[
+  {
+    "title": "WELLER Gruppe — M440i ≤50K km, ≤€55K",
+    "url": "https://wellergruppe.de/fahrzeuge/bmw/m440i/?condition_mileage=max50000&purchaseOptions_price_value=max55000"
+  },
+  {
+    "title": "BMW NL Occasions — 4 Serie Coupé, Benzine, 2021+, Garantie",
+    "url": "https://occasions.bmw.nl/bmw/zoeken/resultaten?filters=YToxNDp7czo0OiJtb2RlIjtzOjc6ImRlZmF1bHQiO3M6NDoicGFnZSI7czoxOiIyIjtzOjEwOiJzb3J0U2VhcmNoIjtzOjExOiJtaWxlYWdlLWFzYyI7czo2OiJ0YXJnZXQiO047czoxMDoieHNzRW5hYmxlciI7TjtzOjE2OiJ4c3NFbmFibGVyVGFyZ2V0IjtzOjA6IiI7czoxMjoicGFyZW50RG9tYWluIjtOO3M6NToic2VyaWUiO3M6MTE6IkJNVyA0IFNlcmllIjtzOjc6ImNoYXNzaXMiO3M6NjoiQ291cMOpIjtzOjQ6ImZ1ZWwiO3M6NzoiQmVuemluZSI7czoxMToiZGF0ZVBhcnRPbmUiO2E6MTp7czozOiJtaW4iO3M6NDoiMjAyMSI7fXM6MTg6InNoYWRvd19kYXRlUGFydE9uZSI7YToxOntzOjM6Im1pbiI7czo0OiIyMDIxIjt9czo5OiJnYXJhbnR1ZWUiO2k6MTtzOjk6ImlzU3RhcnRlZCI7YjoxO30=&vehicleId=244036825"
+  },
+  {
+    "title": "BMW.de Gebrauchtwagen — M4 G22, ≤€55,900, 2023+",
+    "url": "https://www.bmw.de/de-de/sl/gebrauchtwagen/results?filters=%257B%2522MARKETING_MODEL_RANGE%2522%253A%255B%2522M4_G22%2522%255D%252C%2522PRICE%2522%253A%255Bnull%252C55900%255D%252C%2522IS_INSTALLMENT%2522%253Afalse%252C%2522REGISTRATION_YEAR%2522%253A%255B2023%252C-1%255D%257D&sorting=SORT_ORDER_SF_OFFER_INSTALLMENT_ASC"
+  },
+  {
+    "title": "Euler Group — M440i Coupé, ≤50K km, 2021+",
+    "url": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/?filter=registration_min_2021%2Ckm_max_50000%2Cbmw+4er%2C440%2Ccoupe&price=financing"
+  },
+  {
+    "title": "Unterberger — M440i Coupé, ≤50K km, ≤€60K, 2021+",
+    "url": "https://at.unterberger.cc/fahrzeugverkauf/#!/vehicles?manufacturers=221&series=23&models=%226772%22&variants=122&skip=-10&index=-1&order=Price-asc&manufacturersType=PKW&mileageMax=50000&priceMax=60000&registerDateMin=2021&usageTypes=%22Gebrauchtwagen%22&bodyGroups=%22pkw%22"
+  }
+]

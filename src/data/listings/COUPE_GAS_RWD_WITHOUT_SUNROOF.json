@@ -1,0 +1,208 @@
+[
+  {
+    "listingId": "C103",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-a-heckantrieb-500ps-heidenheim/449511257.html",
+    "mobileDeId": "449511257",
+    "exteriorColorName": "Sanremo Green Metallic",
+    "interiorColorName": "Alcantara Black",
+    "drivetrainType": "RWD",
+    "basePriceEuro": 55000,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 23500,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "2",
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Fatih Sener",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 173,
+    "listingLocation": "🇩🇪 Heidenheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "Heckantrieb (RWD)"
+    ],
+    "listingAdditionalFeatures": [
+      "EGO-X Abgasanlage (~€3,500 - Aftermarket)",
+      "300-Zellen Downpipe (~€1,200 - Aftermarket)"
+    ],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "WARRANTY": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "unknown",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-22T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#15803d"
+  },
+  {
+    "listingId": "C107",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-leder-hud-acc-kamera-ha-ka-lenkradh-michelfeld/451248264.html",
+    "mobileDeId": "451248264",
+    "exteriorColorName": "Sanremo Grün",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 40006,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      10
+    ],
+    "numberOfPreviousOwners": "2",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "10/2026",
+    "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 167,
+    "listingLocation": "🇩🇪 74545 Michelfeld",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "WARRANTY": "yes",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-26T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C121",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-garagenwagen-ludwigshafen/451092000.html",
+    "mobileDeId": "451092000",
+    "exteriorColorName": null,
+    "interiorColorName": null,
+    "drivetrainType": "RWD",
+    "basePriceEuro": 43900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 45000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      5
+    ],
+    "numberOfPreviousOwners": "?",
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "12/2027",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Unknown",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "WARRANTY": "no",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "no",
+      "S2VFA": "unknown",
+      "S459A": "no",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "no",
+      "S6C4A": "no",
+      "S430A": "no",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  }
+]

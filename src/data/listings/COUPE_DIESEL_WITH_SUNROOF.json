@@ -1,0 +1,142 @@
+[
+  {
+    "listingId": "C106",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4-coupe-m440-d-xdrive-schiebedach-t%C3%BCv-bis-07-27-mittenwalde/447208423.html",
+    "mobileDeId": "447208423",
+    "exteriorColorName": "Portimao Blau",
+    "interiorColorName": "Alcantara / Sensatec Siyah",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 42999,
+    "estimatedImportTaxEuro": 0,
+    "mileageKm": 48000,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      7
+    ],
+    "numberOfPreviousOwners": "3",
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "07/2027",
+    "sellerTypeOrName": "HS Autohandel ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 149,
+    "listingLocation": "🇩🇪 Mittenwalde",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "M440d (Diesel) — Çok düşük CO2 (149g/km)"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#22d3ee"
+  },
+  {
+    "listingId": "C109",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440d-xdrive-h-k-ahk-sitzbel%C3%BCftung-laser-pressath/411996296.html",
+    "mobileDeId": "411996296",
+    "exteriorColorName": "Saphirschwarz metallic",
+    "interiorColorName": "Leder Vernasca Schwarz",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 55800,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 35000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      12
+    ],
+    "numberOfPreviousOwners": "1",
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "Yeni",
+    "sellerTypeOrName": "Autohaus Graser GmbH ★5.0",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 150,
+    "listingLocation": "🇩🇪 Pressath",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "M440d (Diesel) — Çok dolu paket"
+    ],
+    "listingAdditionalFeatures": [
+      "Sitzbelüftung (Koltuk Soğutma)"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "WARRANTY": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  }
+]

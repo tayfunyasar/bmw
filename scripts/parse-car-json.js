@@ -122,6 +122,7 @@ function parseCar(car, nextId) {
   const mobileDeId = mobileDeIdMatch ? mobileDeIdMatch[1] : null;
   
   const serviceType = description.includes("Scheckheftgepflegt") || features.includes("Full Service History") ? "yes" : "unknown";
+  const hasWarranty = features.includes("Warranty") ? "yes" : "no";
 
   return {
     listingId: nextId,
@@ -135,6 +136,9 @@ function parseCar(car, nextId) {
     mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
     firstRegistrationYearAndMonth: firstRegistrationYearAndMonth,
     numberOfPreviousOwners: props.numberOfOwners || "?",
+    warranty: {
+      exists: hasWarranty
+    },
     service: {
       type: serviceType,
       history: []
@@ -170,7 +174,7 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
   const fieldsToCheck = [
       'basePriceEuro', 'mileageKm', 'sellerTypeOrName',
       'listingLocation', 'exteriorColorName', 'interiorColorName',
-      'numberOfPreviousOwners', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm'
+      'numberOfPreviousOwners', 'warranty', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm'
   ];  
   fieldsToCheck.forEach(key => {
       // Sadece gerçekten değişmişse ve anlamlı değerse güncelle

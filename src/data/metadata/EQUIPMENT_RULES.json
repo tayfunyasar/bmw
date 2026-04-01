@@ -16,17 +16,6 @@
     "defaultStatus": "no"
   },
   {
-    "code": "WARRANTY",
-    "name": "Warranty",
-    "features": [
-      "Warranty"
-    ],
-    "description": [],
-    "props": {},
-    "defaultStatus": "no",
-    "score": 1
-  },
-  {
     "code": "S5AZA",
     "name": "Laser Light",
     "price": 3200,
@@ -122,7 +111,7 @@
     "code": "KGNL",
     "name": "Alcantara Seats",
     "price": 900,
-    "score": 1,
+    "score": 2,
     "tag": "Interior upgrade",
     "features": [],
     "description": [

@@ -18,6 +18,7 @@ const ROOT_KEYS_ORDER = [
   'mileageKm',
   'firstRegistrationYearAndMonth',
   'numberOfPreviousOwners',
+  'warranty',
   'service',
   'nextInspectionDate',
   'sellerTypeOrName',
@@ -34,7 +35,7 @@ const ROOT_KEYS_ORDER = [
 ];
 
 const EQUIP_KEYS_ORDER = [
-  'S403A', 'WARRANTY', 'S5AZA', 'S5AUA', 'S688A', 'S2T4A',
+  'S403A', 'S5AZA', 'S5AUA', 'S688A', 'S2T4A',
   'S610A', 'S5DN_360', 'KGNL', 'S322A', 'S2VFA', 'S459A',
   'S5DNA', 'S6U3A', 'S715A', 'S2VLA', 'S420A', 'S1MAA',
   'S5ACA', 'S6C4A', 'S430A', 'S4AWA', 'S775A', 'S493A',
@@ -87,6 +88,11 @@ function formatListing(listing, index, filename) {
       newListing[key] = {
         type: oldService.type || 'unknown',
         history: Array.isArray(oldService.history) ? oldService.history : []
+      };
+    } else if (key === 'warranty') {
+      const oldWarranty = listing.warranty || {};
+      newListing[key] = {
+        exists: oldWarranty.exists || 'unknown'
       };
     } else {
       // For standard keys: if not present, set to null (or empty array if it's a known array field)

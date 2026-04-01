@@ -47,6 +47,9 @@ komutunu çalıştırarak alanların sırasını ve formatting'i otomatik düzel
   "mileageKm": 35000,
   "firstRegistrationYearAndMonth": [2022, 5],
   "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
   "service": {
     "type": "yes",
     "history": []

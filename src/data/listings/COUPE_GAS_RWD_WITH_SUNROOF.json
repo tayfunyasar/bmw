@@ -14,6 +14,9 @@
       1
     ],
     "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": true
+    },
     "service": {
       "type": "unknown",
       "history": []
@@ -29,7 +32,6 @@
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
-      "WARRANTY": "yes",
       "S5AZA": "yes",
       "S5AUA": "yes",
       "S688A": "yes",
@@ -81,6 +83,9 @@
       7
     ],
     "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": true
+    },
     "service": {
       "type": "unknown",
       "history": []
@@ -96,7 +101,6 @@
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
-      "WARRANTY": "yes",
       "S5AZA": "yes",
       "S5AUA": "no",
       "S688A": "yes",
@@ -148,6 +152,9 @@
       1
     ],
     "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "unknown"
+    },
     "service": {
       "type": "unknown",
       "history": []
@@ -163,7 +170,6 @@
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
-      "WARRANTY": "no",
       "S5AZA": "yes",
       "S5AUA": "no",
       "S688A": "unknown",

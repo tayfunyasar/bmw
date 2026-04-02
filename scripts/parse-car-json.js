@@ -36,43 +36,51 @@ function parseCar(car, nextId) {
   const attributes = car.attributes || {};
 
   const equipmentFeatures = {};
-  
-  for (const rule of equipmentRules) {
-    let hasFeature = false;
-    let hasNegative = false;
+  const descNormalized = description.toLowerCase().replace(/[-–]/g, ' ');
 
-    // 1. Check Negative descriptions first
-    if (rule.negativeDescription && rule.negativeDescription.length > 0) {
-      hasNegative = rule.negativeDescription.some(nd => description.includes(nd));
+  for (const rule of equipmentRules) {
+    // Helper: case-insensitive, dash/hyphen-tolerant matching against description
+    const descMatches = (keyword) => descNormalized.includes(keyword.toLowerCase().replace(/[-–]/g, ' '));
+
+    // 1. Check positive description match (HIGHEST PRIORITY — dealer's own text is authoritative)
+    let matchDescription = false;
+    if (rule.matchType === 'ALL_DESCRIPTION' && rule.description && rule.description.length > 0) {
+      matchDescription = rule.description.every(d => descMatches(d));
+    } else if (rule.description && rule.description.length > 0) {
+      matchDescription = rule.description.some(d => descMatches(d));
     }
 
-    if (!hasNegative) {
-      // 2. Check ALL_DESCRIPTION match type
-      if (rule.matchType === 'ALL_DESCRIPTION' && rule.description && rule.description.length > 0) {
-        hasFeature = rule.description.every(d => description.includes(d));
-      } else {
-        // 3. Normal OR logic across features, description, and props
-        const matchFeatures = rule.features && rule.features.some(f => features.includes(f));
-        const matchDescription = rule.description && rule.description.some(d => description.includes(d));
-        
-        let matchProps = false;
-        if (rule.props) {
-          matchProps = Object.entries(rule.props).some(([propKey, propValues]) => {
-            const carPropVal = props[propKey] || "";
-            return propValues.some(val => carPropVal.includes(val));
-          });
-        }
-        
-        hasFeature = matchFeatures || matchDescription || matchProps;
-      }
+    if (matchDescription) {
+      equipmentFeatures[rule.code] = "yes";
+      continue;
+    }
+
+    // 2. Check negative descriptions (only matters when no positive description match)
+    let hasNegative = false;
+    if (rule.negativeDescription && rule.negativeDescription.length > 0) {
+      hasNegative = rule.negativeDescription.some(nd => descMatches(nd));
     }
 
     if (hasNegative) {
       equipmentFeatures[rule.code] = "no";
-    } else if (hasFeature) {
+      continue;
+    }
+
+    // 3. Check features array and props (Apify key-value data — lower priority)
+    const matchFeatures = rule.features && rule.features.some(f => features.includes(f));
+
+    let matchProps = false;
+    if (rule.props) {
+      matchProps = Object.entries(rule.props).some(([propKey, propValues]) => {
+        const carPropVal = props[propKey] || "";
+        return propValues.some(val => carPropVal.includes(val));
+      });
+    }
+
+    if (matchFeatures || matchProps) {
       equipmentFeatures[rule.code] = "yes";
     } else {
-      equipmentFeatures[rule.code] = rule.defaultStatus;
+      equipmentFeatures[rule.code] = "unknown";
     }
   }
 
@@ -130,7 +138,7 @@ function parseCar(car, nextId) {
     mobileDeId: mobileDeId,
     exteriorColorName: props.manufacturerColour || props.colour,
     interiorColorName: props.upholstery,
-    drivetrainType: car.title?.includes("xDrive") || description.includes("xDrive") ? "xDrive AWD" : "RWD",
+    drivetrainType: /x[- ]?drive/i.test(car.title || "") || /x[- ]?drive/i.test(description) || /x[- ]?drive/i.test(car.url || "") ? "xDrive AWD" : "RWD",
     basePriceEuro: car.price?.amount,
     estimatedImportTaxEuro: estimatedImportTaxEuro,
     mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
@@ -186,12 +194,15 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
   });
 
   // equipmentFeatures alanı detaylı kontrol ediliyor
+  // overrideFeatures'da tanımlı olanlar ASLA otomatik güncellenmez
+  const overrides = existingCar.overrideFeatures || {};
   if (newCar.equipmentFeatures && existingCar.equipmentFeatures) {
       Object.keys(newCar.equipmentFeatures).forEach(feat => {
+          if (feat in overrides) return; // Manuel override korunuyor
           if (existingCar.equipmentFeatures[feat] !== newCar.equipmentFeatures[feat]) {
-              changes[`equipmentFeatures.${feat}`] = { 
-                  old: existingCar.equipmentFeatures[feat], 
-                  new: newCar.equipmentFeatures[feat] 
+              changes[`equipmentFeatures.${feat}`] = {
+                  old: existingCar.equipmentFeatures[feat],
+                  new: newCar.equipmentFeatures[feat]
               };
               existingCar.equipmentFeatures[feat] = newCar.equipmentFeatures[feat];
               hasChanges = true;

@@ -9,8 +9,9 @@ import rwdGasWithSunroofListings from './listings/COUPE_GAS_RWD_WITH_SUNROOF.jso
 import rwdGasWithoutSunroofListings from './listings/COUPE_GAS_RWD_WITHOUT_SUNROOF.json';
 import deletedCars from './listings/DELETED_CARS.json';
 import granCoupe from './listings/GRAN_COUPE.json';
+import cakalListings from './listings/COUPE_GAS_WITH_SUNROOF_CAKAL.json';
+import kazaliListings from './listings/COUPE_GAS_WITH_SUNROOF_KAZALI.json';
 import bpmData from './metadata/BPM_DATA.json';
-import vehicleNotes from './user_data/VEHICLE_NOTES.json';
 import bookmarks from './user_data/BOOKMARKS.json';
 
 import actionPlan from './user_data/ACTION_PLAN.json';
@@ -26,8 +27,9 @@ export {
   noSunroofGas,
   deletedCars,
   granCoupe,
+  cakalListings,
+  kazaliListings,
   bpmData,
-  vehicleNotes,
   bookmarks,
 
   actionPlan

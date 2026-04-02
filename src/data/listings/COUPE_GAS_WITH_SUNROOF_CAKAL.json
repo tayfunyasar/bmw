@@ -1,0 +1,889 @@
+[
+  {
+    "listingId": "C43",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449418692",
+    "mobileDeId": "449418692",
+    "exteriorColorName": "BLUE",
+    "interiorColorName": null,
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 49900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 48000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      1
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "unknown"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "LCI?",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 16548 Glienicke/Nordbahn",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [
+      "Renk / jant kombinasyonu çok iyi",
+      "285 kW / 387 BG — LCI güç seviyesi! Pre-LCI 275 kW. BPM etkisi: LCI ise ~€11K",
+      "Özel satıcı (Kleinanzeigen) — bayi güvencesi yok ama BMW garanti devam ediyor",
+      "⚠️ Çakal kasa: Sportfedern (spor yay) = daha sert ve daha düşük duruş, fabrika EDC'ye kıyasla alçaltılmış",
+      "⚠️ Çakal kasa: Spurverbreiterung (iz genişletici) = tekerlekleri dışa taşıyor, daha agresif duruş + iz stabilitesi",
+      "⚠️ Çakal kasa: Geliştirilmiş motor yazılımı / ECU optimizasyonu, yüksek performanslı filtrasyon, bazı versiyonlarda şanzıman kalibrasyonu"
+    ],
+    "listingDescriptionNotes": [
+      "🔥 S33T Motorsport Engineering Package (nadir!)",
+      "BMW PS garanti 02/2026–02/2028 + Service inkl. 2028/90K",
+      "1.sahip BMW AG (9K km'den itibaren)",
+      "Sadece el yıkama + yıllık profesyonel bakım"
+    ],
+    "listingAdditionalFeatures": [
+      "H&R sportfedern+spurverbreiterung (seri parçalar mevcut, eingetragen)"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "yes",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3AGA": "unknown",
+      "S3ADA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Özel Satıcı (Glienicke)",
+            "new": "Unknown Dealer"
+          },
+          "listingLocation": {
+            "old": "🇩🇪 Glienicke",
+            "new": "🇩🇪 16548 Glienicke/Nordbahn"
+          },
+          "exteriorColorName": {
+            "old": "Blue",
+            "new": "BLUE"
+          },
+          "interiorColorName": {
+            "old": "Alcantara/Carbon Siyah",
+            "new": null
+          },
+          "numberOfPreviousOwners": {
+            "old": "2 (9K km'den)",
+            "new": "?"
+          },
+          "equipmentFeatures.S403A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.WARRANTY": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S688A": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S610A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S2VFA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S459A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S5ACA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.SERVICE": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-03-31T17:45:32.366Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          }
+        },
+        "auditDate": "2026-03-31T20:31:04.609Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "yes"
+          },
+          "equipmentFeatures.S610A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.863Z"
+      },
+      {
+        "action": "Manuel Override",
+        "detail": "overrideFeatures alanı eklendi: S403A (Sunroof) = yes",
+        "changes": {
+          "equipmentFeatures.S403A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:26.787Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S322A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S459A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5ACA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.210Z"
+      }
+    ],
+    "cardThemeColorHex": "#c084fc",
+    "overrideFeatures": {
+      "S403A": "yes"
+    }
+  },
+  {
+    "listingId": "C125",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-xdrive-m-sport-hud-hk-laser-vilnius/437804770.html",
+    "mobileDeId": "437804770",
+    "exteriorColorName": "Black Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 44998,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 43250,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": true
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "UAB Vin Motors ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇱🇹 14184 Vilnius",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3AGA": "unknown",
+      "S3ADA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇱🇹 Vilnius",
+            "new": "🇱🇹 14184 Vilnius"
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.212Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C23",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449256616",
+    "mobileDeId": "449256616",
+    "exteriorColorName": "Saphirschwarz",
+    "interiorColorName": "Full leather, Other",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 53990,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 24927,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      0
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "unknown"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "MEYER-HAFNER GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇦🇹 9020 Klagenfurt",
+    "curatorPickBadge": "👑",
+    "curatorPersonalNotes": [
+      "CO₂ 0 g/km kayıtlı (Avusturya hatalı kayıt), gerçek ~183 g/km"
+    ],
+    "listingDescriptionNotes": [
+      "SA kodları doğrulanmış (en güvenilir veri)",
+      "🇦🇹 Avusturya ithalatı"
+    ],
+    "listingAdditionalFeatures": [
+      "19\" BMW Individual jantlar (793 I)"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3AGA": "unknown",
+      "S3ADA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "MEYER-HAFNER ★4.6",
+            "new": "MEYER-HAFNER GmbH ★4.6"
+          },
+          "listingLocation": {
+            "old": "🇦🇹 Klagenfurt",
+            "new": "🇦🇹 9020 Klagenfurt"
+          },
+          "interiorColorName": {
+            "old": "Merino Tartufo",
+            "new": "Full leather, Other"
+          },
+          "numberOfPreviousOwners": {
+            "old": "1",
+            "new": "?"
+          },
+          "co2EmissionsGramPerKm": {
+            "old": 183,
+            "new": 0
+          },
+          "equipmentFeatures.WARRANTY": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:21.192Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.863Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AZA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.210Z"
+      }
+    ],
+    "cardThemeColorHex": "#f472b6"
+  },
+  {
+    "listingId": "C54",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449879644",
+    "mobileDeId": "449879644",
+    "exteriorColorName": "A300 ",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 44000,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 2258,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "unknown"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "PRO-GUM SERVICE SPOLKA JAWNA ★3.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇵🇱 983 Krakau",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "🔥 BPM €4,112 (06/2021) → Toplam €48,112",
+      "⚠️ 2,258 km — neden 5 yıldır kullanılmamış?",
+      "DE-Fahrzeug (kein US Import)",
+      "Bayi bilgisi eksik — satıcıdan teyit gerekli",
+      "Yeni price: €89,450"
+    ],
+    "listingAdditionalFeatures": [
+      "M Sport Paket Pro",
+      "M Brake mavi kaliper",
+      "19\" 797M jantlar"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S2VLA": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3AGA": "unknown",
+      "S3ADA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "YENİ €44,000, 2.3K km(!), 06/2021. 🔥 BPM €4,112 → toplam €48,112! HUD+Adaptive M+M Brake+Comfort Access. Donanım temel: Laser/DA+/HK/M Diff/360°/VSS/M Aero yok. Alpine White",
+        "detail": "18.03.2026",
+        "changes": null,
+        "auditDate": null
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-18T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "? (özel satıcı?)",
+            "new": "PRO-GUM SERVICE SPOLKA JAWNA ★3.7"
+          },
+          "listingLocation": {
+            "old": "🇩🇪 ?",
+            "new": "🇵🇱 983 Krakau"
+          },
+          "exteriorColorName": {
+            "old": "Alpine White",
+            "new": "A300 "
+          },
+          "interiorColorName": {
+            "old": "Vernasca Siyah",
+            "new": "Full leather, Black"
+          },
+          "co2EmissionsGramPerKm": {
+            "old": 173,
+            "new": 170
+          },
+          "equipmentFeatures.WARRANTY": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S688A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "no",
+            "new": "yes"
+          },
+          "equipmentFeatures.S1MAA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-03-31T17:45:32.370Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "history": []
+            },
+            "new": {
+              "type": "unknown",
+              "history": []
+            }
+          }
+        },
+        "auditDate": "2026-03-31T20:31:04.609Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AZA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.210Z"
+      }
+    ],
+    "cardThemeColorHex": "#e2e8f0"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "code": "S2MPA",
+    "name": "M Carbon Ceramic Brake",
+    "reason": "M440i'ye hiçbir zaman sunulmadı. BMW M Carbon Ceramic fren yalnızca M3/M4 (G80/G82) modellerine sipariş edilebilir. M440i (G22) için geçerli değil."
+  },
+  {
+    "code": "S715A",
+    "name": "M Aero Package",
+    "reason": "M440i'de standarttır — opsiyonel değil. M440i modeli tanım gereği zaten M versiyonu olduğundan, M Aero Paketi (ön ek, yan etekler, arka difüzör) fabrikadan standart geliyor. 430i/420i için opsiyonel olan bu paket, M440i'de ayrıca seçilmesi gerekmiyor."
+  }
+]

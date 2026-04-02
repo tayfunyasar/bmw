@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Typography, Space, List } from 'antd';
-import { vehicleNotes, actionPlan } from '../../data';
+import { actionPlan } from '../../data';
 
 const { Title, Text, Link } = Typography;
 
@@ -46,24 +46,5 @@ export const NotesTab = () => (
       </Space>
     </Card>
 
-    <Card title="📝 Araç Notları (Tabloda olmayan ekstra bilgiler)">
-      <List
-        size="small"
-        bordered
-        dataSource={vehicleNotes}
-        renderItem={(item) => (
-          <List.Item>
-            <div style={{ width: '100%' }}>
-              <div style={{ color: item.hex, fontWeight: 700, marginBottom: 4 }}>{item.title}</div>
-              <div>
-                {item.content.map((line, i) => (
-                  <div key={i}>• {line}</div>
-                ))}
-              </div>
-            </div>
-          </List.Item>
-        )}
-      />
-    </Card>
   </Space>
 );

@@ -259,7 +259,9 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
-      "€49,890 | 🚪 Gran Coupé (G26) + xDrive yok. Carbon Glasdach, Laser, HUD. Kattenstroth ★5.0"
+      "€49,890 | 🚪 Gran Coupé (G26) + xDrive yok. Carbon Glasdach, Laser, HUD. Kattenstroth ★5.0",
+      "285 kW / 387 BG — LCI güç seviyesi! Pre-LCI 275 kW. BPM etkisi: LCI ise ~€11K",
+      "Özel satıcı (Kleinanzeigen) — bayi güvencesi yok ama BMW garanti devam ediyor"
     ],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
@@ -1282,25 +1284,25 @@
       "S2T4A": "unknown",
       "S610A": "yes",
       "S5DN_360": "yes",
-      "KGNL": "no",
+      "KGNL": "unknown",
       "S322A": "yes",
-      "S2VFA": "no",
+      "S2VFA": "yes",
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "no",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
       "S6C4A": "yes",
       "S430A": "yes",
-      "S4AWA": "no",
+      "S4AWA": "unknown",
       "S775A": "yes",
       "S493A": "yes",
       "S536A": "yes",
       "S2NHA": "yes",
-      "S3ACA": "no"
+      "S3ACA": "unknown"
     },
     "auditHistory": [
       {
@@ -1308,6 +1310,109 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-31T20:31:04.609Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S2VFA": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.867Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.215Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C132",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdr-gc-m-sport-pro-ahk-gsd-360-h-k-dapro-winsen-luhe/447030402.html",
+    "mobileDeId": "447030402",
+    "exteriorColorName": "Saphirschwarz",
+    "interiorColorName": "Full leather",
+    "drivetrainType": "RWD",
+    "basePriceEuro": 58450,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 10946,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      12
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.4",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 196,
+    "listingLocation": "🇩🇪 21423 Winsen/Luhe",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-01T22:09:43.741Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8"

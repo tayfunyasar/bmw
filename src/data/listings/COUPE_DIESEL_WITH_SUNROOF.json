@@ -46,7 +46,7 @@
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "yes",
+      "S715A": "unknown",
       "S2VLA": "yes",
       "S420A": "yes",
       "S1MAA": "yes",
@@ -119,7 +119,7 @@
       "S459A": "yes",
       "S5DNA": "no",
       "S6U3A": "yes",
-      "S715A": "yes",
+      "S715A": "unknown",
       "S2VLA": "yes",
       "S420A": "yes",
       "S1MAA": "yes",
@@ -139,6 +139,306 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-31T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C124",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440d-xdrive-coupe-m-sport-pro-licopro-gsd-360-salzwedel-brietz/451247762.html",
+    "mobileDeId": "451247762",
+    "exteriorColorName": "Sanremo green metallic",
+    "interiorColorName": "Part leather",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 48990,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 35760,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      2
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": true
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "WELLER Premium GmbH - BMW Vertragshändler - MINI Servicebetrieb ★4.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 155,
+    "listingLocation": "🇩🇪 Brietz",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "no",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "unknown",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇩🇪 29410 Salzwedel",
+            "new": "🇩🇪 Brietz"
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S2VFA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AZA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S322A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.216Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8"
+  },
+  {
+    "listingId": "C119",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-d-xdrive-coupe-m-sport-pro-gsd-hud-360-ibbenb%C3%BCren/451359658.html",
+    "mobileDeId": "451359658",
+    "exteriorColorName": "saphirschwarz",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 56990.29,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 33500,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      5
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": true
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "05/2027",
+    "sellerTypeOrName": "Auto Jesse GmbH & Co. KG ★4.5",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 49477 Ibbenbüren",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-03-31T16:49:01.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          }
+        },
+        "auditDate": "2026-03-31T20:31:04.609Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "yes"
+          },
+          "equipmentFeatures.S688A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.864Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AZA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.211Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8"

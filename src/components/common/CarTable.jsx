@@ -94,17 +94,27 @@ export const CarTable = ({
   const importTaxIndex = dataSource.findIndex(item => item.key === 'importTax');
   if (importTaxIndex !== -1) dataSource.splice(importTaxIndex, 1);
 
-  const twoStarFeatures = equipmentRules
-    .filter(feature => feature.score === 2)
+  const threeStarFeatures = equipmentRules
+    .filter(feature => feature.score === 3)
     .sort((a, b) => {
-      // S403A (Sunroof) her zaman en tepede olmalı
       if (a.code === 'S403A') return -1;
       if (b.code === 'S403A') return 1;
       return (b.price * b.score) - (a.price * a.score);
     });
+  const threeStarSource = threeStarFeatures.map(feature => ({
+    key: `feat_${feature.name}`,
+    prop: <Space size={4}><StarRating count={3}/><Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text> <Text type="secondary" style={{ fontSize: '11px' }}>(~€{feature.price.toLocaleString()})</Text></Text></Space>,
+    propName: feature.code,
+    isFeature: true,
+    isFeatureIcon: true,
+  }));
+
+  const twoStarFeatures = equipmentRules
+    .filter(feature => feature.score === 2)
+    .sort((a, b) => (b.price * b.score) - (a.price * a.score));
   const twoStarSource = twoStarFeatures.map(feature => ({
     key: `feat_${feature.name}`,
-    prop: <Space size={4}><StarRating count={2}/><Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text></Text></Space>,
+    prop: <Space size={4}><StarRating count={2}/><Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text> <Text type="secondary" style={{ fontSize: '11px' }}>(~€{feature.price.toLocaleString()})</Text></Text></Space>,
     propName: feature.code,
     isFeature: true,
     isFeatureIcon: true,
@@ -115,7 +125,7 @@ export const CarTable = ({
     .sort((a, b) => b.price - a.price);
   const oneStarSource = oneStarFeatures.map(feature => ({
     key: `feat_${feature.name}`,
-    prop: <Space size={4}><StarRating count={1}/><Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text></Text></Space>,
+    prop: <Space size={4}><StarRating count={1}/><Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text> <Text type="secondary" style={{ fontSize: '11px' }}>(~€{feature.price.toLocaleString()})</Text></Text></Space>,
     propName: feature.code,
     isFeature: true,
     isFeatureIcon: true,
@@ -126,7 +136,7 @@ export const CarTable = ({
     .sort((a, b) => b.price - a.price);
   const zeroStarSource = zeroStarFeatures.map(feature => ({
     key: `feat_${feature.name}`,
-    prop: <Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text></Text>,
+    prop: <Text>{feature.name} <Text type="secondary" style={{ fontSize: '11px' }}>({feature.code})</Text> <Text type="secondary" style={{ fontSize: '11px' }}>(~€{feature.price.toLocaleString()})</Text></Text>,
     propName: feature.code,
     isFeature: true,
     isFeatureIcon: true,
@@ -166,6 +176,10 @@ export const CarTable = ({
 
       <Card title={`🇳🇱 BPM & Toplam Maliyet ${yearLabel}`}>
         <Table dataSource={costSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
+      </Card>
+
+      <Card title={`⭐⭐⭐ 3 Yıldızlı Donanımlar ${yearLabel}`}>
+        <Table dataSource={threeStarSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
       </Card>
 
       <Card title={`⭐⭐ 2 Yıldızlı Donanımlar ${yearLabel}`}>

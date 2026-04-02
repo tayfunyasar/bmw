@@ -3,7 +3,7 @@
     "code": "S403A",
     "name": "Sunroof",
     "price": 1000,
-    "score": 2,
+    "score": 3,
     "tag": "GATE — must have",
     "features": [
       "Sunroof",
@@ -32,9 +32,9 @@
   },
   {
     "code": "S5AUA",
-    "name": "Driving Asst+",
+    "name": "Driving Assistant Professional",
     "price": 2500,
-    "score": 2,
+    "score": 3,
     "tag": "ACC + lane keep",
     "features": [],
     "description": [
@@ -46,7 +46,7 @@
   },
   {
     "code": "S688A",
-    "name": "Harman Kardon",
+    "name": "Harman Kardon Sound",
     "price": 1600,
     "score": 2,
     "tag": "Audio upgrade",
@@ -65,7 +65,7 @@
     "code": "S2T4A",
     "name": "M Sport Diff",
     "price": 1500,
-    "score": 2,
+    "score": 3,
     "tag": "Drift & cornering",
     "features": [],
     "description": [
@@ -121,6 +121,31 @@
     "defaultStatus": "no"
   },
   {
+    "code": "S1MAA",
+    "name": "Sport Exhaust",
+    "price": 350,
+    "score": 2,
+    "features": [],
+    "description": [
+      "M Sportabgasanlage"
+    ],
+    "props": {},
+    "defaultStatus": "unknown"
+  },
+  {
+    "code": "S536A",
+    "name": "Pre-Heater",
+    "price": 1500,
+    "score": 1,
+    "tag": "Standheizung/Fernstart",
+    "features": [],
+    "description": [
+      "Standheizung"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
     "code": "S322A",
     "name": "Comfort Access",
     "price": 800,
@@ -135,8 +160,20 @@
     "defaultStatus": "no"
   },
   {
+    "code": "S2NHA",
+    "name": "M Sport Brake (mavi kaliper)",
+    "price": 800,
+    "score": 1,
+    "features": [],
+    "description": [
+      "M Sportbremse"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
     "code": "S2VFA",
-    "name": "Adaptive M Susp",
+    "name": "Adaptive M Suspension",
     "price": 700,
     "score": 1,
     "tag": "Handling upgrade",
@@ -154,7 +191,7 @@
   },
   {
     "code": "S459A",
-    "name": "Elec Seats/Mem",
+    "name": "Electric Seats / Memory",
     "price": 700,
     "score": 1,
     "features": [
@@ -169,7 +206,7 @@
   },
   {
     "code": "S5DNA",
-    "name": "Park Asst+",
+    "name": "Park Assist+",
     "price": 700,
     "score": 1,
     "features": [],
@@ -181,7 +218,7 @@
   },
   {
     "code": "S6U3A",
-    "name": "Cockpit Pro",
+    "name": "Live Cockpit Professional",
     "price": 650,
     "score": 1,
     "features": [
@@ -194,23 +231,8 @@
     "defaultStatus": "no"
   },
   {
-    "code": "S715A",
-    "name": "M Aero Pkg",
-    "price": 550,
-    "score": 1,
-    "features": [
-      "Sports package"
-    ],
-    "description": [
-      "M Sportpaket",
-      "M Aerodynamikpaket"
-    ],
-    "props": {},
-    "defaultStatus": "no"
-  },
-  {
     "code": "S2VLA",
-    "name": "Var Sport Steer",
+    "name": "Variable Sport Steering",
     "price": 500,
     "score": 1,
     "features": [],
@@ -221,8 +243,36 @@
     "defaultStatus": "no"
   },
   {
+    "code": "S494A",
+    "name": "Heated Front Seats",
+    "price": 400,
+    "score": 1,
+    "features": [
+      "Heated seats"
+    ],
+    "description": [
+      "Sitzheizung"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S248A",
+    "name": "Heated Steering Wheel",
+    "price": 250,
+    "score": 1,
+    "features": [
+      "Heated steering wheel"
+    ],
+    "description": [
+      "Lenkradheizung"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
     "code": "S420A",
-    "name": "Sun Prot Glass",
+    "name": "Sun Protection Glass",
     "price": 350,
     "score": 1,
     "features": [],
@@ -234,20 +284,8 @@
     "defaultStatus": "no"
   },
   {
-    "code": "S1MAA",
-    "name": "Sport Exhaust",
-    "price": 350,
-    "score": 1,
-    "features": [],
-    "description": [
-      "M Sportabgasanlage"
-    ],
-    "props": {},
-    "defaultStatus": "unknown"
-  },
-  {
     "code": "S5ACA",
-    "name": "High Beam Asst",
+    "name": "High Beam Assistant",
     "price": 200,
     "score": 1,
     "features": [
@@ -261,7 +299,7 @@
   },
   {
     "code": "S6C4A",
-    "name": "Connected Pro",
+    "name": "BMW Connected Pro",
     "price": 200,
     "score": 1,
     "features": [],
@@ -274,7 +312,7 @@
   },
   {
     "code": "S430A",
-    "name": "Mirror Tilt",
+    "name": "Mirror Tilt (park vitesinde)",
     "price": 100,
     "score": 1,
     "features": [
@@ -288,7 +326,7 @@
   },
   {
     "code": "S4AWA",
-    "name": "Sensatec Dash",
+    "name": "Sensatec Dashboard",
     "price": 100,
     "score": 1,
     "features": [],
@@ -314,38 +352,39 @@
     "defaultStatus": "no"
   },
   {
-    "code": "S493A",
-    "name": "Storage Pkg",
-    "price": 50,
+    "code": "S3ADA",
+    "name": "Remote Engine Start",
+    "price": 300,
     "score": 1,
+    "features": [],
+    "description": [
+      "Fernstart",
+      "Remote Engine Start"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S3AGA",
+    "name": "Drive Recorder (dashcam)",
+    "price": 300,
+    "score": 1,
+    "features": [],
+    "description": [
+      "Drive Recorder",
+      "Dashcam"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S493A",
+    "name": "Storage Package",
+    "price": 50,
+    "score": 0,
     "features": [],
     "description": [
       "Ablagepaket"
-    ],
-    "props": {},
-    "defaultStatus": "no"
-  },
-  {
-    "code": "S536A",
-    "name": "Pre-Heater",
-    "price": 1500,
-    "score": 1,
-    "tag": "Standheizung/Fernstart",
-    "features": [],
-    "description": [
-      "Standheizung"
-    ],
-    "props": {},
-    "defaultStatus": "no"
-  },
-  {
-    "code": "S2NHA",
-    "name": "M Sport Brake",
-    "price": 800,
-    "score": 1,
-    "features": [],
-    "description": [
-      "M Sportbremse"
     ],
     "props": {},
     "defaultStatus": "no"

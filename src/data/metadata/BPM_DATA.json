@@ -1,8 +1,9 @@
 [
-  { "key": "1", "gen": "LCI (2024+)", "co2": "175 g/km", "reg": "01/2024", "aangifte": "07-03-2026", "bpm": "€11,097", "source": "Autoweek" },
-  { "key": "2", "gen": "LCI (2023)", "co2": "~175 g/km", "reg": "07/2023", "aangifte": "18-03-2026", "bpm": "~€7,428", "source": "⚠️ Tahmini — 2023 BPM tablosu, kesin hesap gerekli" },
-  { "key": "3", "gen": "LCI (2024+)", "co2": "186 g/km", "reg": "04/2024", "aangifte": "07-03-2026", "bpm": "~€12,000+", "source": "Tahmini" },
-  { "key": "4", "gen": "Pre-LCI", "co2": "~173 g/km", "reg": "2022-2023", "aangifte": "07-03-2026", "bpm": "€7,428", "source": "Autoweek BPM calc (173g/km, 01/2023)" },
-  { "key": "5", "gen": "Pre-LCI (2021)", "co2": "173 g/km", "reg": "01/2021", "aangifte": "14-03-2026", "bpm": "€4,112", "source": "Autoweek BPM calc" },
-  { "key": "6", "gen": "NL plakalı", "co2": "—", "reg": "—", "aangifte": "—", "bpm": "€0", "source": "BPM yok" }
+  { "key": "1", "gen": "LCI (2024+)", "co2": "170 g/km", "reg": "01/2024", "aangifte": "02-04-2026", "bpm": "€9,530", "source": "Autoweek BPM calc (170g/km WLTP, benzine)" },
+  { "key": "2", "gen": "LCI (2024+)", "co2": "175 g/km", "reg": "01/2024", "aangifte": "07-03-2026", "bpm": "€11,097", "source": "Autoweek" },
+  { "key": "3", "gen": "Pre-LCI (2023)", "co2": "173 g/km", "reg": "01/2023", "aangifte": "02-04-2026", "bpm": "€7,345", "source": "Autoweek BPM calc (173g/km WLTP, benzine)" },
+  { "key": "4", "gen": "LCI (2024+)", "co2": "186 g/km", "reg": "04/2024", "aangifte": "07-03-2026", "bpm": "~€12,000+", "source": "Tahmini" },
+  { "key": "5", "gen": "Pre-LCI", "co2": "~173 g/km", "reg": "2022-2023", "aangifte": "07-03-2026", "bpm": "€7,428", "source": "Autoweek BPM calc (173g/km, 01/2023)" },
+  { "key": "6", "gen": "Pre-LCI (2021)", "co2": "173 g/km", "reg": "01/2021", "aangifte": "14-03-2026", "bpm": "€4,112", "source": "Autoweek BPM calc" },
+  { "key": "7", "gen": "NL plakalı", "co2": "—", "reg": "—", "aangifte": "—", "bpm": "€0", "source": "BPM yok" }
 ]

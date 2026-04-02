@@ -63,13 +63,13 @@
         "action": "Yeniden ilan (id:449271448→449974148). Tüm donanım doğrulandı. Sahip 1→2, tescil 11→12/2022. HU Yeni",
         "detail": "",
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
-        "action": "SATILDI (18.03.2026). ⭐ Tansanit Blue II, €49,898, 46.3K km. Laser+HK+DA++M Diff+Adaptive M+Sport Exhaust ama HUD/360° yoktu",
+        "action": "SATILDI⭐ Tansanit Blue II, €49,898, 46.3K km. Laser+HK+DA++M Diff+Adaptive M+Sport Exhaust ama HUD/360° yoktu",
         "detail": "",
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-18T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -78,7 +78,10 @@
         "auditDate": "2026-03-18T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": null
+    "cardThemeColorHex": null,
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   },
   {
     "listingId": "C25",
@@ -146,9 +149,9 @@
     "auditHistory": [
       {
         "action": "Aktif → Satılan",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -157,7 +160,8 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#cbd5e1"
+    "cardThemeColorHex": "#cbd5e1",
+    "aiCommentary": []
   },
   {
     "listingId": "C33",
@@ -223,9 +227,9 @@
     "auditHistory": [
       {
         "action": "Aktif → Satılan",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -234,7 +238,10 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   },
   {
     "listingId": "C45",
@@ -308,9 +315,9 @@
     "auditHistory": [
       {
         "action": "Aktif → Satılan",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -319,7 +326,11 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#a78bfa"
+    "cardThemeColorHex": "#a78bfa",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟠 Toplam €59,130 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C10",
@@ -385,9 +396,9 @@
     "auditHistory": [
       {
         "action": "Bekleyen → Satılan",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -396,7 +407,11 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok"
+    ]
   },
   {
     "listingId": "C27",
@@ -462,16 +477,16 @@
     },
     "auditHistory": [
       {
-        "action": "Tekrar tarama — Renk Dravitgrau, İç Alcantara Siyah doğrulandı. xDrive doğrulandı. HU → Yeni. CO₂ → 184. Alcantara/Elec Seats/Mirror → yes. 360° yes → NO (sadece geri kamera). Park Asst+ yes → NO (sadece Park Asst). Araç no: 1018235",
-        "detail": "15.03.2026",
-        "changes": null,
-        "auditDate": null
-      },
-      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "Tekrar tarama — Renk Dravitgrau, İç Alcantara Siyah doğrulandı. xDrive doğrulandı. HU → Yeni. CO₂ → 184. Alcantara/Elec Seats/Mirror → yes. 360° yes → NO (sadece geri kamera). Park Asst+ yes → NO (sadece Park Asst). Araç no: 1018235",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-15T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -480,7 +495,10 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#fb923c"
+    "cardThemeColorHex": "#fb923c",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   },
   {
     "listingId": "C44",
@@ -564,7 +582,11 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#fbbf24"
+    "cardThemeColorHex": "#fbbf24",
+    "aiCommentary": [
+      "🔴 TÜV/HU süresi dolmuş (11/2025)",
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   },
   {
     "listingId": "C18",
@@ -635,16 +657,16 @@
     },
     "auditHistory": [
       {
-        "action": "Tekrar tarama — M Diff, M Brake, M Aero, VSS, Sport Exhaust, Sensatec Dash, Black Headliner, Storage Pkg, Mirror Tilt unknown → YES. Warranty → yes. Pre-Heater → no. Carbon Interior. Voranlage notu. Bayi Türkçe konuşuyor",
-        "detail": "15.03.2026",
-        "changes": null,
-        "auditDate": null
-      },
-      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "Tekrar tarama — M Diff, M Brake, M Aero, VSS, Sport Exhaust, Sensatec Dash, Black Headliner, Storage Pkg, Mirror Tilt unknown → YES. Warranty → yes. Pre-Heater → no. Carbon Interior. Voranlage notu. Bayi Türkçe konuşuyor",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-15T12:00:00.000Z"
       },
       {
         "action": "İlan Satıldı",
@@ -653,7 +675,10 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#4ade80"
+    "cardThemeColorHex": "#4ade80",
+    "aiCommentary": [
+      "🟠 Toplam €62,378 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C55",
@@ -726,9 +751,9 @@
     "auditHistory": [
       {
         "action": "YENİ €47,500, 45K km, 05/2021. 🔥 BPM €4,112 → toplam €51,612! Alcantara+Schiebedach. Donanım çoğu bilinmiyor — satıcıdan detay gerekli. Özel satıcı",
-        "detail": "20.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-20T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -743,6 +768,200 @@
         "auditDate": "2026-04-01T07:41:30.060Z"
       }
     ],
-    "cardThemeColorHex": "#86efac"
+    "cardThemeColorHex": "#86efac",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok"
+    ]
+  },
+  {
+    "listingId": "C112",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-standheizung-glasdach-schweinfurt/451783042.html",
+    "mobileDeId": "451783042",
+    "exteriorColorName": "mineralweiss",
+    "interiorColorName": "Full leather, Other",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 50890,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 37953,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      9
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": true
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Filialbetrieb Rhein Schweinfurt Zweigniederlassung der Heermann und Rhein GmbH ★4.3",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 97424 Schweinfurt",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [
+      "Individual Instrumententaf. (lederbezogen)",
+      "Innovationspaket (S07R7)"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "unknown",
+      "S536A": "yes",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-30T13:35:33.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Filialbetrieb Rhein Schweinfurt ★4.3",
+            "new": "Filialbetrieb Rhein Schweinfurt Zweigniederlassung der Heermann und Rhein GmbH ★4.3"
+          },
+          "listingLocation": {
+            "old": "🇩🇪 Schweinfurt",
+            "new": "🇩🇪 97424 Schweinfurt"
+          },
+          "exteriorColorName": {
+            "old": "Mineralweiss",
+            "new": "mineralweiss"
+          },
+          "interiorColorName": {
+            "old": "Leder Schwarz (Ind. Instrumententafel)",
+            "new": "Full leather, Other"
+          },
+          "co2EmissionsGramPerKm": {
+            "old": 173,
+            "new": 0
+          },
+          "equipmentFeatures.S688A": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S1MAA": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "SATILDI",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-02T17:52:30.399Z"
+      }
+    ],
+    "cardThemeColorHex": "#e2e8f0",
+    "aiCommentary": [
+      "🟢 2 gündür satışta — yeni ilan",
+      "🟠 Toplam €58,318 — bütçe üst sınırına yakın"
+    ]
   }
 ]

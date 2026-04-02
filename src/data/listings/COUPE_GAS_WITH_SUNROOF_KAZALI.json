@@ -62,13 +62,31 @@
     },
     "auditHistory": [
       {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-08-19T12:42:53.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-13T17:43:06.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-01T22:09:43.740Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🔴 225 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+      "⚠️ İlan 206 gün sonra yenilendi — ilgi düşük olabilir",
+      "🟡 Servis geçmişi bilinmiyor",
+      "🔴 Toplam €67,997 — bütçe aşımı"
+    ]
   },
   {
     "listingId": "C126",
@@ -132,6 +150,12 @@
       "S3ACA": "unknown"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-17T20:05:27.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
@@ -228,6 +252,12 @@
         "auditDate": "2026-04-01T20:22:48.214Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟢 15 gündür satışta — yeni ilan",
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok",
+      "🟠 Toplam €59,327 — bütçe üst sınırına yakın"
+    ]
   }
 ]

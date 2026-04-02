@@ -77,6 +77,12 @@
     },
     "auditHistory": [
       {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-05T07:07:56.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -306,7 +312,12 @@
     "cardThemeColorHex": "#c084fc",
     "overrideFeatures": {
       "S403A": "yes"
-    }
+    },
+    "aiCommentary": [
+      "🟢 28 gündür satışta — yeni ilan",
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok"
+    ]
   },
   {
     "listingId": "C125",
@@ -371,6 +382,18 @@
       "S248A": "yes"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-10-01T09:44:37.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-21T02:08:15.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
@@ -466,7 +489,11 @@
         "auditDate": "2026-04-01T20:22:48.212Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🔴 183 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+      "⚠️ İlan 171 gün sonra yenilendi — ilgi düşük olabilir"
+    ]
   },
   {
     "listingId": "C23",
@@ -538,6 +565,12 @@
       "S248A": "yes"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-03T13:44:10.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
@@ -654,7 +687,11 @@
         "auditDate": "2026-04-01T20:22:48.210Z"
       }
     ],
-    "cardThemeColorHex": "#f472b6"
+    "cardThemeColorHex": "#f472b6",
+    "aiCommentary": [
+      "🟢 29 gündür satışta — yeni ilan",
+      "🟠 Toplam €61,418 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C54",
@@ -730,16 +767,28 @@
     },
     "auditHistory": [
       {
-        "action": "YENİ €44,000, 2.3K km(!), 06/2021. 🔥 BPM €4,112 → toplam €48,112! HUD+Adaptive M+M Brake+Comfort Access. Donanım temel: Laser/DA+/HK/M Diff/360°/VSS/M Aero yok. Alpine White",
-        "detail": "18.03.2026",
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-10T07:13:59.000Z"
+      },
+      {
+        "action": "YENİ €44,000, 2.3K km(!), 06/2021. 🔥 BPM €4,112 → toplam €48,112! HUD+Adaptive M+M Brake+Comfort Access. Donanım temel: Laser/DA+/HK/M Diff/360°/VSS/M Aero yok. Alpine White",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-18T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-18T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-30T16:31:42.000Z"
       },
       {
         "action": "İlan Güncellemesi (Otomatik)",
@@ -884,6 +933,12 @@
         "auditDate": "2026-04-01T20:22:48.210Z"
       }
     ],
-    "cardThemeColorHex": "#e2e8f0"
+    "cardThemeColorHex": "#e2e8f0",
+    "aiCommentary": [
+      "🟢 23 gündür satışta — yeni ilan",
+      "ℹ️ İlan 20 gün sonra yenilendi",
+      "🔴 2,258 km / 59 ay — anormal düşük km riski",
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   }
 ]

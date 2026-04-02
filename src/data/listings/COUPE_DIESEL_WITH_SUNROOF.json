@@ -68,7 +68,10 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#22d3ee"
+    "cardThemeColorHex": "#22d3ee",
+    "aiCommentary": [
+      "🟠 3 sahipli — sık el değiştirme"
+    ]
   },
   {
     "listingId": "C109",
@@ -141,7 +144,10 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🔴 Toplam €63,228 — bütçe aşımı"
+    ]
   },
   {
     "listingId": "C124",
@@ -203,6 +209,12 @@
       "S3ACA": "unknown"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-24T14:54:48.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
@@ -274,7 +286,10 @@
         "auditDate": "2026-04-01T20:22:48.216Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟢 8 gündür satışta — yeni ilan"
+    ]
   },
   {
     "listingId": "C119",
@@ -336,6 +351,12 @@
       "S3ACA": "unknown"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-25T15:22:50.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
@@ -441,6 +462,10 @@
         "auditDate": "2026-04-01T20:22:48.211Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟢 7 gündür satışta — yeni ilan",
+      "🔴 Toplam €68,087.29 — bütçe aşımı"
+    ]
   }
 ]

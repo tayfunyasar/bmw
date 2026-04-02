@@ -19,8 +19,8 @@ export const StarRating = ({ count }) => (
 
 export const ColorDisplay = ({ colorCode, colorName }) => (
   <Space size={4}>
-    <div style={{ width: 28, height: 28, borderRadius: 6, background: colorCode, border: '1px solid rgba(0,0,0,0.1)', flexShrink: 0 }} />
-    <Text>{colorName}</Text>
+    {colorName ? <div style={{ width: 28, height: 28, borderRadius: 6, background: colorCode, border: '1px solid rgba(0,0,0,0.1)', flexShrink: 0 }} /> : null}
+    <Text>{colorName || "—"}</Text>
     {isColorFav(colorName) && <Text>⭐</Text>}
     {isColorNotFav(colorName) && <Text>👎</Text>}
   </Space>

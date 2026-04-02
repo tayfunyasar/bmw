@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
-import { equipmentRules, COLOR_CODES, INTERIOR_CODES } from '../../data';
+import { equipmentRules, getColorHex, getInteriorHex } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { formatNotes, formatAdditionalFeatures } from '../../utils/helpers';
 
@@ -52,10 +52,10 @@ export const CarTable = ({
       width: 120,
       render: (val, record) => {
         if (record.isColor) {
-          return <ColorDisplay colorCode={COLOR_CODES[car.exteriorColorName]} colorName={car.exteriorColorName} />;
+          return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
         }
         if (record.isInterior) {
-          return <InteriorDisplay colorCode={INTERIOR_CODES[car.interiorColorName]} colorName={car.interiorColorName} />;
+          return <InteriorDisplay colorCode={getInteriorHex(car.interiorColorName)} colorName={car.interiorColorName} />;
         }
         if (record.isFeatureIcon) {
           return <FeatureIcon type={car.equipmentFeatures?.[record.propName]} />;
@@ -71,28 +71,28 @@ export const CarTable = ({
     })));
 
   const dataSource = [
-    Object.assign({ key: 'loc', prop: 'Konum' }, Object.fromEntries(cars.map(car => [car.listingId, car.listingLocation]))),
     { key: 'color', prop: 'Dış Renk', isColor: true },
     { key: 'interior', prop: 'İç Renk', isInterior: true },
     Object.assign({ key: 'drive', prop: 'Tahrik' }, Object.fromEntries(cars.map(car => [car.listingId, car.drivetrainType]))),
     Object.assign({ key: 'price', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'importTax', prop: 'BPM + Toplam' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.estimatedImportTaxEuro?.toLocaleString()} = €${(car.basePriceEuro+car.estimatedImportTaxEuro)?.toLocaleString()}`]))),
     Object.assign({ key: 'mileage', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString()} km`]))),
     Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => [car.listingId, car.firstRegistrationYearAndMonth ? `${(car.firstRegistrationYearAndMonth[1]+1).toString().padStart(2, '0')}/${car.firstRegistrationYearAndMonth[0]}` : '?']))),
-    Object.assign({ key: 'owners', prop: 'Sahip' }, Object.fromEntries(cars.map(car => [car.listingId, car.numberOfPreviousOwners]))),
-    Object.assign({ key: 'warranty', prop: 'Garanti' }, Object.fromEntries(cars.map(car => [car.listingId, car.warranty?.exists === 'yes' ? 'Evet' : (car.warranty?.exists === 'no' ? 'Hayır' : '?')]))),
-    Object.assign({ key: 'service', prop: 'Tam Servis' }, Object.fromEntries(cars.map(car => [car.listingId, car.service?.type === 'yes' ? 'Evet' : (car.service?.type === 'no' ? 'Hayır' : '?')]))),
-    Object.assign({ key: 'inspection', prop: 'Muayene (TÜV)' }, Object.fromEntries(cars.map(car => [car.listingId, car.nextInspectionDate]))),
-    Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGeneration]))),
+    Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration]))),
     Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?']))),
-    Object.assign({ key: 'seller', prop: 'Satıcı' }, Object.fromEntries(cars.map(car => [car.listingId, car.sellerTypeOrName]))),
     Object.assign({ key: 'additionalFeatures', prop: '✨ Ek Özellikler' }, Object.fromEntries(cars.map(car => [car.listingId, formatAdditionalFeatures(car.listingAdditionalFeatures)]))),
     Object.assign({ key: 'notes', prop: '📝 Notlar' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.listingDescriptionNotes)]))),
     Object.assign({ key: 'personalNotes', prop: '💭 Kişisel' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.curatorPersonalNotes)]))),
+    Object.assign({ key: 'aiCommentary', prop: '🤖 AI Yorumu' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.aiCommentary)]))),
   ];
 
-  const importTaxIndex = dataSource.findIndex(item => item.key === 'importTax');
-  if (importTaxIndex !== -1) dataSource.splice(importTaxIndex, 1);
+  const listingInfoSource = [
+    Object.assign({ key: 'loc', prop: 'Konum' }, Object.fromEntries(cars.map(car => [car.listingId, car.listingLocation]))),
+    Object.assign({ key: 'seller', prop: 'Satıcı' }, Object.fromEntries(cars.map(car => [car.listingId, car.sellerTypeOrName]))),
+    Object.assign({ key: 'owners', prop: 'Sahip Sayısı' }, Object.fromEntries(cars.map(car => [car.listingId, car.numberOfPreviousOwners]))),
+    Object.assign({ key: 'warranty', prop: 'Garanti' }, Object.fromEntries(cars.map(car => [car.listingId, car.warranty?.exists === 'yes' ? 'Evet' : (car.warranty?.exists === 'no' ? 'Hayır' : '?')]))),
+    Object.assign({ key: 'service', prop: 'Tam Servis' }, Object.fromEntries(cars.map(car => [car.listingId, car.service?.type === 'yes' ? 'Evet' : (car.service?.type === 'no' ? 'Hayır' : '?')]))),
+    Object.assign({ key: 'inspection', prop: 'Muayene (TÜV)' }, Object.fromEntries(cars.map(car => [car.listingId, car.nextInspectionDate]))),
+  ];
 
   const threeStarFeatures = equipmentRules
     .filter(feature => feature.score === 3)
@@ -144,8 +144,18 @@ export const CarTable = ({
 
   const costSource = [
     Object.assign({ key: 'price_row', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'bpm_row', prop: '+ BPM' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.estimatedImportTaxEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'total_row', prop: 'TOPLAM', isTotal: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.baseTotalCost]))),
+    Object.assign({ key: 'bpm_row', prop: '+ BPM (tahmini)' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.estimatedImportTaxEuro?.toLocaleString()}`]))),
+    Object.assign({ key: 'bpm_calc_row', prop: '+ BPM (hesaplanan)' }, Object.fromEntries(cars.map(car => {
+      const calc = car.metrics?.bpmCalculation;
+      if (!calc?.bpmCalculated) return [car.listingId, '?'];
+      return [car.listingId, `€${calc.bpmCalculated.toLocaleString()} (${calc.depreciationPercent}% afs.)`];
+    }))),
+    Object.assign({ key: 'total_row', prop: 'TOPLAM (tahmini)', isTotal: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.baseTotalCost]))),
+    Object.assign({ key: 'total_calc_row', prop: 'TOPLAM (hesaplanan)', isTotal: true }, Object.fromEntries(cars.map(car => {
+      const bpm = car.metrics?.bpmCalculation?.bpmCalculated;
+      if (!bpm) return [car.listingId, null];
+      return [car.listingId, (car.basePriceEuro || 0) + bpm];
+    }))),
   ];
 
   const evaluationSource = [
@@ -176,6 +186,10 @@ export const CarTable = ({
 
       <Card title={`🇳🇱 BPM & Toplam Maliyet ${yearLabel}`}>
         <Table dataSource={costSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
+      </Card>
+
+      <Card title={`📋 İlan Bilgisi ${yearLabel}`}>
+        <Table dataSource={listingInfoSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
       </Card>
 
       <Card title={`⭐⭐⭐ 3 Yıldızlı Donanımlar ${yearLabel}`}>

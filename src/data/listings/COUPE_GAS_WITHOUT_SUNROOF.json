@@ -65,9 +65,9 @@
     "auditHistory": [
       {
         "action": "Bekleyen → Sunroof Yok (Red)",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -82,7 +82,8 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#60a5fa"
+    "cardThemeColorHex": "#60a5fa",
+    "aiCommentary": []
   },
   {
     "listingId": "C15",
@@ -148,9 +149,9 @@
     "auditHistory": [
       {
         "action": "Silinen → Sunroof Yok tablosuna taşındı.",
-        "detail": "Carbon Dach doğrulandı (14.03.2026)",
+        "detail": "Carbon Dach doğrulandı",
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -165,7 +166,10 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#d946ef"
+    "cardThemeColorHex": "#d946ef",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   },
   {
     "listingId": "C49",
@@ -232,9 +236,9 @@
     "auditHistory": [
       {
         "action": "Yeni araç — 🚫 Sunroof Yok tablosuna eklendi. €50,879, Laser+HUD+HK+360° ama sunroof yok",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -249,7 +253,12 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#fbbf24"
+    "cardThemeColorHex": "#fbbf24",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok",
+      "🟠 Toplam €58,307 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C50",
@@ -319,9 +328,9 @@
     "auditHistory": [
       {
         "action": "Silinen → Sunroof Yok tablosuna taşındı. HK doğrulandı (önceden no idi → yes). Detaylı donanım güncellendi",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -336,7 +345,10 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#38bdf8"
+    "cardThemeColorHex": "#38bdf8",
+    "aiCommentary": [
+      "🟠 Toplam €60,213 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C19",
@@ -405,9 +417,9 @@
     "auditHistory": [
       {
         "action": "Silinen → Sunroof Yok tablosuna taşındı. Tansanitblau II ⭐, near-full spec, 25K km, WELLER ★4.5. EN YAZIK ARAÇ",
-        "detail": "14.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-14T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -422,7 +434,11 @@
         "auditDate": "2026-03-14T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#22d3ee"
+    "cardThemeColorHex": "#22d3ee",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟠 Toplam €60,418 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C51",
@@ -495,9 +511,9 @@
     "auditHistory": [
       {
         "action": "Yeni araç → Sunroof Yok tablosuna eklendi. 🔥 2021 model BPM €4,112! €49,900, toplam €54,012. Near-full mechanical spec",
-        "detail": "15.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-15T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -512,7 +528,8 @@
         "auditDate": "2026-03-15T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#fbbf24"
+    "cardThemeColorHex": "#fbbf24",
+    "aiCommentary": []
   },
   {
     "listingId": "C29",
@@ -581,9 +598,9 @@
     "auditHistory": [
       {
         "action": "Silinen → Sunroof Yok tablosuna taşındı. LCI 04/2024, ⭐ Tansanit-Blau II, 21K km. Sunroof yok + limit aşımı",
-        "detail": "15.03.2026",
+        "detail": null,
         "changes": null,
-        "auditDate": null
+        "auditDate": "2026-03-15T12:00:00.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -598,7 +615,11 @@
         "auditDate": "2026-03-15T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#60a5fa"
+    "cardThemeColorHex": "#60a5fa",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🔴 Toplam €65,997 — bütçe aşımı"
+    ]
   },
   {
     "listingId": "C101",
@@ -675,7 +696,8 @@
         "auditDate": "2026-03-22T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#e2e8f0"
+    "cardThemeColorHex": "#e2e8f0",
+    "aiCommentary": []
   },
   {
     "listingId": "C102",
@@ -746,7 +768,11 @@
         "auditDate": "2026-03-22T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#000000"
+    "cardThemeColorHex": "#000000",
+    "aiCommentary": [
+      "🔴 47 km / 46 ay — anormal düşük km riski",
+      "🟡 Özel satıcı — bayi güvencesi yok"
+    ]
   },
   {
     "listingId": "C116",
@@ -815,7 +841,10 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟠 Toplam €60,408 — bütçe üst sınırına yakın"
+    ]
   },
   {
     "listingId": "C117",
@@ -884,7 +913,12 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟠 Aylık ~2,601 km — yüksek kullanım",
+      "🟡 Servis geçmişi bilinmiyor",
+      "🔴 Toplam €67,187 — bütçe aşımı"
+    ]
   },
   {
     "listingId": "C118",
@@ -953,7 +987,8 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": []
   },
   {
     "listingId": "C122",
@@ -1022,7 +1057,11 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok"
+    ]
   },
   {
     "listingId": "C131",
@@ -1085,12 +1124,29 @@
     },
     "auditHistory": [
       {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-06T10:37:21.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-13T15:12:29.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-01T22:09:43.741Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟢 27 gündür satışta — yeni ilan",
+      "ℹ️ İlan 7 gün sonra yenilendi",
+      "🔴 Toplam €68,047 — bütçe aşımı"
+    ]
   }
 ]

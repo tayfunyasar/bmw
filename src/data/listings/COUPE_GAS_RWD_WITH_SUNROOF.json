@@ -66,7 +66,12 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟡 Özel satıcı — bayi güvencesi yok",
+      "🔴 Toplam €63,597 — bütçe aşımı"
+    ]
   },
   {
     "listingId": "C113",
@@ -135,6 +140,10 @@
         "auditDate": "2026-03-31T12:00:00.000Z"
       }
     ],
-    "cardThemeColorHex": "#94a3b8"
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🔴 TÜV/HU süresi dolmuş (07/2025)",
+      "🟡 Servis geçmişi bilinmiyor"
+    ]
   }
 ]

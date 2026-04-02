@@ -162,13 +162,25 @@ function parseCar(car, nextId) {
     listingAdditionalFeatures: [],
     equipmentFeatures: equipmentFeatures,
     auditHistory: [
+      ...(car.createdTime ? [{
+        action: "İlan Yayınlandı (mobile.de)",
+        detail: null,
+        changes: null,
+        auditDate: car.createdTime
+      }] : []),
       {
         action: "İlan Eklendi",
         detail: "Sistem tarafından kayıt altına alındı",
         changes: null,
         auditDate: new Date().toISOString()
-      }
-    ],
+      },
+      ...(car.renewedTime && car.renewedTime !== car.createdTime ? [{
+        action: "İlan Yenilendi (mobile.de)",
+        detail: null,
+        changes: null,
+        auditDate: car.renewedTime
+      }] : [])
+    ].sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate)),
     cardThemeColorHex: (props.manufacturerColour || "").includes("weiß") ? "#e2e8f0" : "#94a3b8"
   };
 }
@@ -275,11 +287,23 @@ async function run() {
         const parsedCar = parseCar(car, existingCar.listingId);
         const { hasChanges, changes } = applyUpdatesAndGetChanges(existingCar, parsedCar);
 
-        if (hasChanges) {
-            const locationCity = existingCar.listingLocation ? existingCar.listingLocation.split(' ').pop() : '?';
-            const auditId = `${existingCar.listingId} ${locationCity}`;
+        // renewedTime değiştiyse auditHistory'ye ekle
+        existingCar.auditHistory = existingCar.auditHistory || [];
+        if (car.renewedTime) {
+            const alreadyHasRenewed = existingCar.auditHistory.some(a =>
+                a.action === 'İlan Yenilendi (mobile.de)' && a.auditDate === car.renewedTime
+            );
+            if (!alreadyHasRenewed) {
+                existingCar.auditHistory.push({
+                    action: "İlan Yenilendi (mobile.de)",
+                    detail: null,
+                    changes: null,
+                    auditDate: car.renewedTime
+                });
+            }
+        }
 
-            existingCar.auditHistory = existingCar.auditHistory || [];
+        if (hasChanges) {
             existingCar.auditHistory.push({
                 action: "İlan Güncellemesi (Otomatik)",
                 detail: "Apify tekrar taraması sonucu veriler eşitlendi",
@@ -287,8 +311,12 @@ async function run() {
                 auditDate: new Date().toISOString()
             });
 
+            // Tarih sırasına göre sırala
+            existingCar.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
+
             console.log(`✅ ${existingCar.listingId} başarıyla güncellendi (Fiyat, km veya donanım değişti).`);
         } else {
+            existingCar.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
             console.log(`ℹ️ ${existingCar.listingId} tarandı ancak değişen bir veri bulunamadı.`);
         }
     } else {

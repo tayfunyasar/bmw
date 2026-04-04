@@ -27,9 +27,7 @@
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 58455 Witten",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [
-      "Onarılmış kaza hasarı (Repaired accident damage)"
-    ],
+    "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -55,7 +53,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -85,7 +82,8 @@
       "🔴 225 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
       "⚠️ İlan 206 gün sonra yenilendi — ilgi düşük olabilir",
       "🟡 Servis geçmişi bilinmiyor",
-      "🔴 Toplam €67,997 — bütçe aşımı"
+      "Onarılmış kaza hasarı (Repaired accident damage)",
+      "🔴 Toplam €69,241 — bütçe aşımı"
     ]
   },
   {
@@ -116,9 +114,7 @@
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇱🇹 50300 Kaunas",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [
-      "Onarılmış kaza hasarı (Repaired accident damage)"
-    ],
+    "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -144,7 +140,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -257,7 +252,8 @@
       "🟢 15 gündür satışta — yeni ilan",
       "🟡 Servis geçmişi bilinmiyor",
       "🟡 Özel satıcı — bayi güvencesi yok",
-      "🟠 Toplam €59,327 — bütçe üst sınırına yakın"
+      "Onarılmış kaza hasarı (Repaired accident damage)",
+      "🟠 Toplam €58,848 — bütçe üst sınırına yakın"
     ]
   }
 ]

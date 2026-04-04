@@ -28,9 +28,7 @@
     "listingLocation": "🇩🇪 Mittenwalde",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "M440d (Diesel) — Çok düşük CO2 (149g/km)"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -55,7 +53,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "yes",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -70,7 +67,8 @@
     ],
     "cardThemeColorHex": "#22d3ee",
     "aiCommentary": [
-      "🟠 3 sahipli — sık el değiştirme"
+      "🟠 3 sahipli — sık el değiştirme",
+      "M440d (Diesel) — Çok düşük CO2 (149g/km)"
     ]
   },
   {
@@ -102,9 +100,7 @@
     "listingLocation": "🇩🇪 Pressath",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "M440d (Diesel) — Çok dolu paket"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [
       "Sitzbelüftung (Koltuk Soğutma)"
     ],
@@ -131,7 +127,6 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -146,7 +141,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
-      "🔴 Toplam €63,228 — bütçe aşımı"
+      "M440d (Diesel) — Çok dolu paket",
+      "🟠 Toplam €60,316 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -203,7 +199,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -345,7 +340,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -465,7 +459,7 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
       "🟢 7 gündür satışta — yeni ilan",
-      "🔴 Toplam €68,087.29 — bütçe aşımı"
+      "🔴 Toplam €69,163.29 — bütçe aşımı"
     ]
   }
 ]

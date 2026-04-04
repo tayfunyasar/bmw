@@ -31,7 +31,8 @@ const ROOT_KEYS_ORDER = [
   'listingAdditionalFeatures',
   'equipmentFeatures',
   'auditHistory',
-  'cardThemeColorHex'
+  'cardThemeColorHex',
+  'aiCommentary'
 ];
 
 const EQUIP_KEYS_ORDER = [

@@ -1,41 +1,35 @@
-import { CoupeGasWithSunroof, equipmentRules } from '../data';
+import { CoupeGasWithSunroof, equipmentRules, PRICING_CONSTANTS } from '../data';
 
-// --- Constants & Configuration ---
-const EVALUATION_DATE = {
-  year: 2026,
-  month: 3, // March (0-indexed)
-  day: 1
-};
-
-const TIME_CONSTANTS = {
-  daysInAverageMonth: 30.44,
-  millisecondsInADay: 1000 * 60 * 60 * 24
-};
-
-const DEPRECIATION_RATES = {
-  monthlyInEuros: 138,
-  perKmInEuros: 0.092
-};
-
-const FEATURE_STATUS = {
-  yes: "yes",
-  unknown: "unknown"
-};
+const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS } = PRICING_CONSTANTS;
 
 // --- Time Calculations ---
 const calculateAgeInMonths = (registrationYear, registrationMonth) => {
   const evaluation = new Date(EVALUATION_DATE.year, EVALUATION_DATE.month, EVALUATION_DATE.day);
-  const registration = new Date(registrationYear, registrationMonth, 1);
+  const registration = new Date(registrationYear, registrationMonth - 1, 1);
   
   const ageInDays = (evaluation.getTime() - registration.getTime()) / TIME_CONSTANTS.millisecondsInADay;
   return Math.round(ageInDays / TIME_CONSTANTS.daysInAverageMonth);
 };
 
 // --- Depreciation Calculations ---
+const calculateMileagePenalty = (mileage) => {
+  let penalty = 0;
+  for (const bracket of DEPRECIATION_RATES.mileageBrackets) {
+    if (mileage <= bracket.min) break;
+    const kmInBracket = Math.min(mileage, bracket.max) - bracket.min;
+    penalty += kmInBracket * bracket.rate;
+  }
+  // 70K+ km: en yüksek dilim oranıyla devam
+  if (mileage > 70000) {
+    penalty += (mileage - 70000) * DEPRECIATION_RATES.overflowRate;
+  }
+  return Math.round(penalty);
+};
+
 const calculateDepreciation = (ageInMonths, mileage) => {
   const agePenalty = ageInMonths * DEPRECIATION_RATES.monthlyInEuros;
-  const mileagePenalty = Math.round(mileage * DEPRECIATION_RATES.perKmInEuros);
-  
+  const mileagePenalty = calculateMileagePenalty(mileage);
+
   return {
     agePenalty,
     mileagePenalty,
@@ -84,14 +78,54 @@ const calculateCriticalFeaturesScore = (evaluatedFeatures) => {
   }, { currentScore: 0, maximumPossibleScore: 0 });
 };
 
-// --- BPM Calculator (2026 tarief + afschrijvingstabel) ---
-const BPM_BRACKETS = [
-  { min: 0, max: 77, base: 687, rate: 2 },
-  { min: 77, max: 100, base: 841, rate: 82 },
-  { min: 100, max: 139, base: 2727, rate: 181 },
-  { min: 139, max: 155, base: 9786, rate: 297 },
-  { min: 155, max: Infinity, base: 14538, rate: 594 },
-];
+// --- BPM Calculator (historisch tarief + afschrijvingstabel) ---
+// Belastingdienst: "U mag het laagste bpm-tarief gebruiken tussen de datum van
+// ingebruikname en de datum van de goedkeuring door de RDW."
+// Bron: external/bpm_tarieven_bpm0651z16fd.pdf (Belastingdienst tarievenlijst)
+const BPM_TARIEVEN = {
+  2021: [
+    { min: 0, max: 79, base: 360, rate: 2 },
+    { min: 79, max: 106, base: 518, rate: 60 },
+    { min: 106, max: 155, base: 2138, rate: 131 },
+    { min: 155, max: 173, base: 8557, rate: 213 },
+    { min: 173, max: Infinity, base: 12391, rate: 424 },
+  ],
+  2022: [
+    { min: 0, max: 81, base: 380, rate: 2 },
+    { min: 81, max: 105, base: 528, rate: 64 },
+    { min: 105, max: 147, base: 2064, rate: 139 },
+    { min: 147, max: 164, base: 7902, rate: 228 },
+    { min: 164, max: Infinity, base: 11778, rate: 457 },
+  ],
+  2023: [
+    { min: 0, max: 82, base: 400, rate: 2 },
+    { min: 82, max: 106, base: 564, rate: 68 },
+    { min: 106, max: 148, base: 2196, rate: 149 },
+    { min: 148, max: 165, base: 8454, rate: 244 },
+    { min: 165, max: Infinity, base: 12602, rate: 488 },
+  ],
+  2024: [
+    { min: 0, max: 80, base: 440, rate: 2 },
+    { min: 80, max: 104, base: 600, rate: 76 },
+    { min: 104, max: 145, base: 2424, rate: 167 },
+    { min: 145, max: 161, base: 9271, rate: 274 },
+    { min: 161, max: Infinity, base: 13655, rate: 549 },
+  ],
+  2025: [
+    { min: 0, max: 79, base: 667, rate: 2 },
+    { min: 79, max: 101, base: 825, rate: 79 },
+    { min: 101, max: 141, base: 2563, rate: 173 },
+    { min: 141, max: 157, base: 9483, rate: 284 },
+    { min: 157, max: Infinity, base: 14027, rate: 568 },
+  ],
+  2026: [
+    { min: 0, max: 77, base: 687, rate: 2 },
+    { min: 77, max: 100, base: 841, rate: 82 },
+    { min: 100, max: 139, base: 2727, rate: 181 },
+    { min: 139, max: 155, base: 9786, rate: 297 },
+    { min: 155, max: Infinity, base: 14538, rate: 594 },
+  ],
+};
 
 const BPM_DEPRECIATION_TABLE = [
   { minMonth: 0, maxMonth: 1, basePercent: 0, monthlyAdd: 12 },
@@ -110,13 +144,31 @@ const BPM_DEPRECIATION_TABLE = [
   { minMonth: 114, maxMonth: Infinity, basePercent: 81, monthlyAdd: 0.19 },
 ];
 
+const calcBrutoBpmForYear = (co2, year) => {
+  const brackets = BPM_TARIEVEN[year];
+  if (!brackets) return Infinity;
+  const bracket = brackets.find(b => co2 > b.min && co2 <= b.max) || brackets[brackets.length - 1];
+  return bracket.base + ((co2 - bracket.min) * bracket.rate);
+};
+
 const calculateBpm = (co2, registrationYear, registrationMonth) => {
-  if (!co2 || co2 <= 0) return { bpmBruto: null, bpmCalculated: null, depreciationPercent: null };
+  const effectiveCo2 = (co2 && co2 > 0) ? co2 : BPM_DEFAULT_CO2;
 
-  const bracket = BPM_BRACKETS.find(b => co2 > b.min && co2 <= b.max) || BPM_BRACKETS[BPM_BRACKETS.length - 1];
-  const bpmBruto = bracket.base + ((co2 - bracket.min) * bracket.rate);
+  // Historisch tarief: laagste brüt BPM tussen ingebruikname en RDW goedkeuring
+  const rdwYear = EVALUATION_DATE.year;
+  const startYear = Math.max(registrationYear || rdwYear, 2021);
+  let lowestBruto = Infinity;
+  let tariefYear = rdwYear;
+  for (let y = startYear; y <= rdwYear; y++) {
+    const bruto = calcBrutoBpmForYear(effectiveCo2, y);
+    if (bruto < lowestBruto) {
+      lowestBruto = bruto;
+      tariefYear = y;
+    }
+  }
+  const bpmBruto = lowestBruto;
 
-  if (!registrationYear || !registrationMonth) return { bpmBruto, bpmCalculated: null, depreciationPercent: null };
+  if (!registrationYear || registrationMonth == null) return { bpmBruto, bpmCalculated: null, depreciationPercent: null, tariefYear };
 
   const today = new Date(EVALUATION_DATE.year, EVALUATION_DATE.month, EVALUATION_DATE.day);
   const regDate = new Date(registrationYear, registrationMonth - 1);
@@ -126,7 +178,7 @@ const calculateBpm = (co2, registrationYear, registrationMonth) => {
   const depPercent = Math.min(row.basePercent + ((ageMonths - row.minMonth) * row.monthlyAdd), 100);
   const bpmCalculated = Math.round(bpmBruto * (100 - depPercent) / 100);
 
-  return { bpmBruto, bpmCalculated, depreciationPercent: Math.round(depPercent * 10) / 10 };
+  return { bpmBruto, bpmCalculated, depreciationPercent: Math.round(depPercent * 10) / 10, tariefYear };
 };
 
 // --- Main Calculator ---
@@ -137,20 +189,19 @@ export function calculateCarMetrics(car) {
   const ageInMonths = calculateAgeInMonths(registrationYear, registrationMonth);
   const depreciation = calculateDepreciation(ageInMonths, car.mileageKm);
   
-  // 2. Base Cost
-  const baseTotalCost = car.basePriceEuro + car.estimatedImportTaxEuro;
-  
-  // 3. Features & Scores
+  // 2. BPM Calculation
+  const bpm = calculateBpm(car.co2EmissionsGramPerKm, registrationYear, registrationMonth);
+
+  // 3. Base Cost (fiyat + hesaplanan BPM)
+  const baseTotalCost = car.basePriceEuro + (bpm.bpmCalculated || 0);
+
+  // 4. Features & Scores
   const evaluatedFeatures = evaluateCarFeatures(car.equipmentFeatures);
   const extraFeaturesValue = calculateFeaturesValue(evaluatedFeatures);
   const featureScores = calculateCriticalFeaturesScore(evaluatedFeatures);
-    
-  // 4. Final Adjusted Cost
-  // Formula: Base Cost + Total Depreciation Penalty - Value of Extra Features
-  const adjustedCost = baseTotalCost + depreciation.totalDepreciation - extraFeaturesValue;
 
-  // 5. BPM Calculation
-  const bpm = calculateBpm(car.co2EmissionsGramPerKm, registrationYear, registrationMonth);
+  // 5. Final Adjusted Cost
+  const adjustedCost = baseTotalCost + depreciation.totalDepreciation - extraFeaturesValue;
 
   return Object.assign({ ageInMonths }, depreciation, {
     baseTotalCost,

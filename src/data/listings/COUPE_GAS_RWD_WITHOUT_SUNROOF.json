@@ -28,9 +28,7 @@
     "listingLocation": "🇩🇪 Heidenheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "Heckantrieb (RWD)"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [
       "EGO-X Abgasanlage (~€3,500 - Aftermarket)",
       "300-Zellen Downpipe (~€1,200 - Aftermarket)"
@@ -58,7 +56,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "yes",
       "S536A": "yes",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -74,7 +71,8 @@
     "cardThemeColorHex": "#15803d",
     "aiCommentary": [
       "🟡 Özel satıcı — bayi güvencesi yok",
-      "🟠 Toplam €59,112 — bütçe üst sınırına yakın"
+      "Heckantrieb (RWD)",
+      "🟠 Toplam €59,808 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -131,7 +129,6 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -165,55 +162,177 @@
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
     "nextInspectionDate": "12/2027",
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Unknown",
+    "listingLocation": "🇩🇪 67071 Ludwigshafen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
-      "S403A": "no",
-      "S5AZA": "no",
-      "S5AUA": "no",
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
       "S688A": "unknown",
       "S2T4A": "unknown",
-      "S610A": "no",
-      "S5DN_360": "no",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
       "KGNL": "yes",
-      "S322A": "no",
+      "S322A": "unknown",
       "S2VFA": "unknown",
-      "S459A": "no",
-      "S5DNA": "no",
-      "S6U3A": "no",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
       "S715A": "unknown",
-      "S2VLA": "no",
-      "S420A": "no",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
       "S1MAA": "unknown",
-      "S5ACA": "no",
-      "S6C4A": "no",
-      "S430A": "no",
-      "S4AWA": "no",
-      "S775A": "no",
-      "S493A": "no",
-      "S536A": "no",
-      "S2NHA": "no",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
       "S3ACA": "unknown"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-23T05:39:41.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇩🇪 Unknown",
+            "new": "🇩🇪 67071 Ludwigshafen"
+          },
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S403A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AZA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S610A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S322A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S459A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5ACA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-04T10:52:55.928Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -221,5 +340,80 @@
       "🟡 Servis geçmişi bilinmiyor",
       "🟡 Özel satıcı — bayi güvencesi yok"
     ]
+  },
+  {
+    "listingId": "C146",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-driv-assist-prof-harman-k-head-up-berlin/448958569.html",
+    "mobileDeId": "448958569",
+    "exteriorColorName": "saphirschwarz",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "RWD",
+    "basePriceEuro": 54700,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 50040,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2028",
+    "sellerTypeOrName": "BMW AG - Niederlassung Berlin - Hauptbetrieb - Verkauf Gebrauchte Automobile ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 14057 Berlin",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-27T04:20:53.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.372Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

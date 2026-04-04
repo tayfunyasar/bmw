@@ -52,6 +52,7 @@ export const CarTable = ({
       width: 120,
       render: (val, record) => {
         if (record.isColor) {
+          if (car.overrideFeatures?.exteriorColorName) return <Text>?</Text>;
           return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
         }
         if (record.isInterior) {
@@ -70,17 +71,37 @@ export const CarTable = ({
       }
     })));
 
+  const overrideLabels = {
+    co2EmissionsGramPerKm: (v) => `CO₂: ${v} g/km`,
+    exteriorColorName: (v) => `Renk: ${v}`,
+    vin: (v) => `VIN: ${v}`,
+    S403A: () => 'Sunroof: ✅',
+  };
+
+  const formatOverrides = (car) => {
+    const ov = car.overrideFeatures;
+    if (!ov || !Object.keys(ov).length) return null;
+    return Object.entries(ov).map(([k, v]) => {
+      const fmt = overrideLabels[k];
+      return fmt ? fmt(v) : `${k}: ${v}`;
+    }).join('\n');
+  };
+
   const dataSource = [
     { key: 'color', prop: 'Dış Renk', isColor: true },
     { key: 'interior', prop: 'İç Renk', isInterior: true },
     Object.assign({ key: 'drive', prop: 'Tahrik' }, Object.fromEntries(cars.map(car => [car.listingId, car.drivetrainType]))),
     Object.assign({ key: 'price', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
     Object.assign({ key: 'mileage', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString()} km`]))),
-    Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => [car.listingId, car.firstRegistrationYearAndMonth ? `${(car.firstRegistrationYearAndMonth[1]+1).toString().padStart(2, '0')}/${car.firstRegistrationYearAndMonth[0]}` : '?']))),
+    Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => [car.listingId, car.firstRegistrationYearAndMonth ? `${car.firstRegistrationYearAndMonth[1].toString().padStart(2, '0')}/${car.firstRegistrationYearAndMonth[0]}` : '?']))),
     Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration]))),
-    Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?']))),
+    Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.overrideFeatures?.co2EmissionsGramPerKm ? '?' : (car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?')]))),
+    Object.assign({ key: 'overrides', prop: '🔧 Override' }, Object.fromEntries(cars.map(car => {
+      const text = formatOverrides(car);
+      return [car.listingId, text ? formatNotes(text.split('\n')) : '—'];
+    }))),
     Object.assign({ key: 'additionalFeatures', prop: '✨ Ek Özellikler' }, Object.fromEntries(cars.map(car => [car.listingId, formatAdditionalFeatures(car.listingAdditionalFeatures)]))),
-    Object.assign({ key: 'notes', prop: '📝 Notlar' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.listingDescriptionNotes)]))),
+    Object.assign({ key: 'notes', prop: '📝 Satıcı Açıklaması' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.listingDescriptionNotes)]))),
     Object.assign({ key: 'personalNotes', prop: '💭 Kişisel' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.curatorPersonalNotes)]))),
     Object.assign({ key: 'aiCommentary', prop: '🤖 AI Yorumu' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.aiCommentary)]))),
   ];
@@ -144,14 +165,12 @@ export const CarTable = ({
 
   const costSource = [
     Object.assign({ key: 'price_row', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'bpm_row', prop: '+ BPM (tahmini)' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.estimatedImportTaxEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'bpm_calc_row', prop: '+ BPM (hesaplanan)' }, Object.fromEntries(cars.map(car => {
+    Object.assign({ key: 'bpm_calc_row', prop: '+ BPM' }, Object.fromEntries(cars.map(car => {
       const calc = car.metrics?.bpmCalculation;
       if (!calc?.bpmCalculated) return [car.listingId, '?'];
-      return [car.listingId, `€${calc.bpmCalculated.toLocaleString()} (${calc.depreciationPercent}% afs.)`];
+      return [car.listingId, `€${calc.bpmCalculated.toLocaleString()} (${calc.depreciationPercent}% afs., ${calc.tariefYear} tarief)`];
     }))),
-    Object.assign({ key: 'total_row', prop: 'TOPLAM (tahmini)', isTotal: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.baseTotalCost]))),
-    Object.assign({ key: 'total_calc_row', prop: 'TOPLAM (hesaplanan)', isTotal: true }, Object.fromEntries(cars.map(car => {
+    Object.assign({ key: 'total_calc_row', prop: 'TOPLAM', isTotal: true }, Object.fromEntries(cars.map(car => {
       const bpm = car.metrics?.bpmCalculation?.bpmCalculated;
       if (!bpm) return [car.listingId, null];
       return [car.listingId, (car.basePriceEuro || 0) + bpm];

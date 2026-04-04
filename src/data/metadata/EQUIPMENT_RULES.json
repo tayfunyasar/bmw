@@ -378,18 +378,6 @@
     "defaultStatus": "no"
   },
   {
-    "code": "S493A",
-    "name": "Storage Package",
-    "price": 50,
-    "score": 0,
-    "features": [],
-    "description": [
-      "Ablagepaket"
-    ],
-    "props": {},
-    "defaultStatus": "no"
-  },
-  {
     "code": "S3ACA",
     "name": "Çeki Demiri",
     "price": 500,

@@ -19,7 +19,8 @@
     "apify": "^3.7.0",
     "dotenv": "^17.3.1",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.14.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",

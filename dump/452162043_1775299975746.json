@@ -1,0 +1,155 @@
+{
+  "id": 452162043,
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-coupe-palling/452162043.html",
+  "shortTitle": "BMW M440",
+  "subTitle": "i xDrive Coupe",
+  "title": "BMW M440 i xDrive Coupe",
+  "properties": {
+    "milage": "58,500 km",
+    "gearbox": "Automatic",
+    "fuelType": "Petrol",
+    "power": "275 kW (374 hp)",
+    "firstRegistration": "08/2021",
+    "seats": null,
+    "doors": null,
+    "generalInspection": "08/2026",
+    "lastService": null,
+    "lastServiceMilage": null,
+    "productionDate": null,
+    "engineSize": null,
+    "cylinders": null,
+    "emptyWeight": null,
+    "emissionClass": null,
+    "emissionSticker": "4 (Green)",
+    "co2Emission": null,
+    "co2Class": null,
+    "fuelConsumption": null,
+    "costPer1500km": null,
+    "colour": null,
+    "manufacturerColour": "GREY",
+    "upholstery": null,
+    "countryVersion": null,
+    "vehicleNumber": null,
+    "numberOfOwners": null,
+    "climatisation": "A/C (man.)",
+    "parkingSensors": "Rear",
+    "airbags": null,
+    "tankCapacity": null,
+    "range": null,
+    "powerConsumption": null,
+    "energyConsumption": null,
+    "otherEnergySources": null,
+    "driveType": "Internal combustion engine"
+  },
+  "descriptionHtml": "Fahrzeug in Top-Zustand aus erster Hand (Erstbesitzer).<br>Farbe: Dravitgrau Metallic.",
+  "description": "Fahrzeug in Top-Zustand aus erster Hand (Erstbesitzer).\nFarbe: Dravitgrau Metallic.",
+  "isNew": true,
+  "isConditionNew": false,
+  "segment": "Car",
+  "category": "SportsCar",
+  "manufacturer": "BMW",
+  "model": "M440",
+  "price": {
+    "priceType": "FIXED",
+    "amount": 43000,
+    "currency": "EUR",
+    "formatted": "€43,000"
+  },
+  "netPrice": null,
+  "createdTime": "2026-04-03T14:10:03.000Z",
+  "modifiedTime": "2026-04-03T14:10:04.000Z",
+  "renewedTime": "2026-04-03T14:10:03.000Z",
+  "attributes": {
+    "Vehicle condition": "Used vehicle",
+    "Category": "Sports Car/Coupe",
+    "Mileage": "58,500 km",
+    "Power": "275 kW (374 hp)",
+    "Drive type": "Internal combustion engine",
+    "Fuel": "Petrol",
+    "Transmission": "Automatic",
+    "Emissions Sticker": "4 (Green)",
+    "First Registration": "08/2021",
+    "HU": "08/2026",
+    "Climatisation": "A/C (man.)",
+    "Parking sensors": "Rear",
+    "Colour (Manufacturer)": "GREY"
+  },
+  "batteryInformation": null,
+  "features": [
+    "ABS",
+    "Alloy wheels",
+    "Bluetooth",
+    "Cruise control",
+    "Fixed trailer coupling",
+    "Full Service History",
+    "Hands-free kit",
+    "Heated seats",
+    "Navigation system",
+    "Tuner/radio"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1a97f67-e62d-47e5-98cf-03dd51e4885f?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1e/1eb9b0b9-61b5-4b48-b138-7fc62786eeef?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/20d1db22-779b-4b36-b922-52c8662f641d?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a170ad06-9097-4feb-8d1b-97cd9b48893e?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/57fecd52-3e7e-41dc-b2f0-f7d0641c790c?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6f6e6c3-7579-454a-8b63-b2d0c582cbb0?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/37/3791851b-efe0-49eb-9c61-bc723ad55efd?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b96147c-bbda-41d4-9982-392dffae1dcb?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2f5030c-8636-4b10-9330-bf7960c07f73?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/86/86c8b262-8bc1-496b-87ca-2bdfb5568dbb?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd220989-6cb3-46c4-bdb0-a996d985b4a6?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b4252c0-1c54-4ffe-b683-235d41f96e2a?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a682d8e-3f2c-421a-a682-5e62eabd483f?rule=mo-1600.jpg"
+  ],
+  "version": 2,
+  "priceRating": {
+    "rating": "Very good price",
+    "priceRanges": [
+      {
+        "label": "Very good price",
+        "min": 34000,
+        "max": 44100
+      },
+      {
+        "label": "Good price",
+        "min": 44100,
+        "max": 47500
+      },
+      {
+        "label": "Fair price",
+        "min": 47500,
+        "max": 52900
+      },
+      {
+        "label": "Increased price",
+        "min": 52900,
+        "max": 56700
+      },
+      {
+        "label": "High price",
+        "min": 56700,
+        "max": 63100
+      }
+    ]
+  },
+  "dealer": {
+    "contry": "DE",
+    "phones": [],
+    "messengers": [],
+    "languages": [],
+    "activeSince": "",
+    "logoUrl": "",
+    "sellerType": "Private Seller",
+    "addesses": [
+      "DE-83349 Palling"
+    ],
+    "location": {
+      "latitude": 48.00333,
+      "longitude": 12.64325
+    },
+    "rating": {},
+    "openingHours": [],
+    "person": {}
+  }
+}

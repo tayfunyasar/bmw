@@ -53,7 +53,6 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "no",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -70,7 +69,7 @@
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
       "🟡 Özel satıcı — bayi güvencesi yok",
-      "🔴 Toplam €63,597 — bütçe aşımı"
+      "🔴 Toplam €64,000 — bütçe aşımı"
     ]
   },
   {
@@ -127,7 +126,6 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "no",
-      "S493A": "no",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"

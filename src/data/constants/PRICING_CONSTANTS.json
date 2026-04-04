@@ -1,0 +1,29 @@
+{
+  "EVALUATION_DATE": {
+    "year": 2026,
+    "month": 3,
+    "day": 1
+  },
+  "TIME_CONSTANTS": {
+    "daysInAverageMonth": 30.44,
+    "millisecondsInADay": 86400000
+  },
+  "DEPRECIATION_RATES": {
+    "monthlyInEuros": 138,
+    "mileageBrackets": [
+      { "min": 0, "max": 10000, "rate": 0.03 },
+      { "min": 10000, "max": 20000, "rate": 0.05 },
+      { "min": 20000, "max": 30000, "rate": 0.08 },
+      { "min": 30000, "max": 40000, "rate": 0.12 },
+      { "min": 40000, "max": 50000, "rate": 0.35 },
+      { "min": 50000, "max": 60000, "rate": 0.55 },
+      { "min": 60000, "max": 70000, "rate": 0.80 }
+    ],
+    "overflowRate": 0.80
+  },
+  "BPM_DEFAULT_CO2": 177,
+  "FEATURE_STATUS": {
+    "yes": "yes",
+    "unknown": "unknown"
+  }
+}

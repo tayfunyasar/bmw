@@ -11,7 +11,7 @@
     "mileageKm": 0,
     "firstRegistrationYearAndMonth": [
       2022,
-      0
+      1
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
@@ -29,9 +29,7 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "1 sahip, kazasız, tam servis",
-      "Sunroof YOK → RED",
-      "Near-full spec — sunroof olsaydı TOP aday olurdu!"
+      "1 sahip, kazasız, tam servis"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -57,7 +55,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -83,7 +80,10 @@
       }
     ],
     "cardThemeColorHex": "#60a5fa",
-    "aiCommentary": []
+    "aiCommentary": [
+      "Sunroof YOK → RED",
+      "Near-full spec — sunroof olsaydı TOP aday olurdu!"
+    ]
   },
   {
     "listingId": "C15",
@@ -141,7 +141,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -168,7 +167,8 @@
     ],
     "cardThemeColorHex": "#d946ef",
     "aiCommentary": [
-      "🟡 Servis geçmişi bilinmiyor"
+      "🟡 Servis geçmişi bilinmiyor",
+      "🟠 Toplam €58,196 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -201,8 +201,7 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "Araç no: 208973",
-      "🚫 Sunroof YOK — ekipmanda Glasdach/Schiebe-Hebedach yok"
+      "Araç no: 208973"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -228,7 +227,6 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "no",
       "S3ACA": "unknown"
@@ -257,7 +255,8 @@
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
       "🟡 Özel satıcı — bayi güvencesi yok",
-      "🟠 Toplam €58,307 — bütçe üst sınırına yakın"
+      "🚫 Sunroof YOK — ekipmanda Glasdach/Schiebe-Hebedach yok",
+      "🟠 Toplam €58,498 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -290,9 +289,7 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "Kazasız, 24 ay garanti, Tam servis",
-      "👎 Arctic Race Blue (favori değil)",
-      "🚫 Sunroof YOK (SA'da 0403 yok, ekipmanda Glasdach yok)"
+      "Kazasız, 24 ay garanti, Tam servis"
     ],
     "listingAdditionalFeatures": [
       "Alcantara Siyah iç, 797M Bicolor jantlar, Aluminium Tetragon interior"
@@ -320,7 +317,6 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -347,7 +343,9 @@
     ],
     "cardThemeColorHex": "#38bdf8",
     "aiCommentary": [
-      "🟠 Toplam €60,213 — bütçe üst sınırına yakın"
+      "👎 Arctic Race Blue (favori değil)",
+      "🚫 Sunroof YOK (SA'da 0403 yok, ekipmanda Glasdach yok)",
+      "🟠 Toplam €59,479 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -380,10 +378,7 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "⭐ Tansanitblau II (favori renk!)",
-      "NEAR-FULL: Laser, HUD, HK, 360°, Adaptive M, ACC Stop&Go, Pre-Heater, Comfort Access",
-      "Araç no: 34122040",
-      "🚫 Sunroof YOK — EN YAZIK ARAÇ!"
+      "Araç no: 34122040"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -409,7 +404,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -437,7 +431,10 @@
     "cardThemeColorHex": "#22d3ee",
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
-      "🟠 Toplam €60,418 — bütçe üst sınırına yakın"
+      "⭐ Tansanitblau II (favori renk!)",
+      "NEAR-FULL: Laser, HUD, HK, 360°, Adaptive M, ACC Stop&Go, Pre-Heater, Comfort Access",
+      "🚫 Sunroof YOK — EN YAZIK ARAÇ!",
+      "🟠 Toplam €59,939 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -470,11 +467,9 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "🔥 2021 model — BPM sadece €4,112! (toplam €54,012)",
       "Kazasız, 1 sahip, BMW AG özel leasing dönüşü",
       "12 ay garanti dahil, NL müşterilerine garanti mümkün (ek ücretle)",
       "MwSt 19% ausweisbar, NETTOEXPORT möglich",
-      "🚫 Sunroof YOK",
       "Kleine Delle Motorhaube + Felge VL Kratzer (satış öncesi onarılacak)"
     ],
     "listingAdditionalFeatures": [
@@ -503,7 +498,6 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -529,7 +523,10 @@
       }
     ],
     "cardThemeColorHex": "#fbbf24",
-    "aiCommentary": []
+    "aiCommentary": [
+      "🔥 2021 model — BPM sadece €4,112! (toplam €54,012)",
+      "🚫 Sunroof YOK"
+    ]
   },
   {
     "listingId": "C29",
@@ -561,10 +558,7 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "💰 LCI 04/2024 BPM ~€11K → toplam ~€66K (limit aşımı!)",
-      "⭐ Ind. Tansanit-Blau II (favori renk!)",
-      "21K km, 1 sahip",
-      "🚫 Sunroof YOK"
+      "21K km, 1 sahip"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -590,7 +584,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -618,7 +611,10 @@
     "cardThemeColorHex": "#60a5fa",
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
-      "🔴 Toplam €65,997 — bütçe aşımı"
+      "💰 LCI 04/2024 BPM ~€11K → toplam ~€66K (limit aşımı!)",
+      "⭐ Ind. Tansanit-Blau II (favori renk!)",
+      "🚫 Sunroof YOK",
+      "🔴 Toplam €66,737 — bütçe aşımı"
     ]
   },
   {
@@ -649,11 +645,11 @@
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 Buchschwabach",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
       "M440i 2025 LCI II Model",
       "Çok düşük km"
     ],
-    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [
       "Innovations-Paket",
       "Comfort-Paket",
@@ -683,7 +679,6 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -697,7 +692,9 @@
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
-    "aiCommentary": []
+    "aiCommentary": [
+      "🔴 Toplam €72,291 — bütçe aşımı"
+    ]
   },
   {
     "listingId": "C102",
@@ -755,7 +752,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -828,7 +824,6 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
-      "S493A": "no",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -843,7 +838,7 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
-      "🟠 Toplam €60,408 — bütçe üst sınırına yakın"
+      "🟠 Toplam €58,363 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -900,7 +895,6 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
-      "S493A": "no",
       "S536A": "yes",
       "S2NHA": "no",
       "S3ACA": "unknown"
@@ -917,7 +911,7 @@
     "aiCommentary": [
       "🟠 Aylık ~2,601 km — yüksek kullanım",
       "🟡 Servis geçmişi bilinmiyor",
-      "🔴 Toplam €67,187 — bütçe aşımı"
+      "🔴 Toplam €71,721 — bütçe aşımı"
     ]
   },
   {
@@ -974,7 +968,6 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
-      "S493A": "no",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -1044,7 +1037,6 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
-      "S493A": "no",
       "S536A": "no",
       "S2NHA": "no",
       "S3ACA": "unknown"
@@ -1117,7 +1109,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -1146,7 +1137,307 @@
     "aiCommentary": [
       "🟢 27 gündür satışta — yeni ilan",
       "ℹ️ İlan 7 gün sonra yenilendi",
-      "🔴 Toplam €68,047 — bütçe aşımı"
+      "🔴 Toplam €69,796 — bütçe aşımı"
     ]
+  },
+  {
+    "listingId": "C135",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-head-up-hk-hifi-dab-wlan-shz-wunsiedel/451925138.html",
+    "mobileDeId": "451925138",
+    "exteriorColorName": "saphirschwarz",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 47850,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 54735,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "03/2027",
+    "sellerTypeOrName": "Autohaus J. B. Lell GmbH ★4.5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 95632 Wunsiedel",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-01T04:08:47.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:52:55.927Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C138",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-headup-laser-hifi-stutensee-blankenloch/448926020.html",
+    "mobileDeId": "448926020",
+    "exteriorColorName": "Arctic race blue metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 45330,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 47390,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Uwe Ratzel GmbH & Co.KG ★5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Blankenloch",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-26T13:34:04.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:52:55.927Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C140",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-coupe-palling/452162043.html",
+    "mobileDeId": "452162043",
+    "exteriorColorName": "GREY",
+    "interiorColorName": null,
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 43000,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 58500,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      8
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "08/2026",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 83349 Palling",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-03T14:10:03.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:52:55.927Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C141",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sportpaket-pro-roth/450118212.html",
+    "mobileDeId": "450118212",
+    "exteriorColorName": "Sanremo Green",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 52500,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 54728,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "03/2026",
+    "sellerTypeOrName": "Autohaus Waldmüller GmbH & Co. KG ★4.1",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 91154 Roth",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-12T13:29:10.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.366Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

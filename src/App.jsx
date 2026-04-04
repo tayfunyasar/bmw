@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ConfigProvider, Layout, Flex } from 'antd';
 import { evaluatedListings } from './utils/pricingCalculator';
 import { PageHeader } from './components/PageHeader';
@@ -9,20 +10,22 @@ const { Content } = Layout;
 
 const App = () => {
   return (
-    <ConfigProvider>
-      <Layout>
-        <Content>
-          <Flex vertical gap="middle">
-            
-            <PageHeader />
+    <BrowserRouter>
+      <ConfigProvider>
+        <Layout>
+          <Content>
+            <Flex vertical gap="middle">
 
-            <Recommendations evaluatedListings={evaluatedListings} />
+              <PageHeader />
 
-            <MainTabs />
-          </Flex>
-        </Content>
-      </Layout>
-    </ConfigProvider>
+              <Recommendations evaluatedListings={evaluatedListings} />
+
+              <MainTabs />
+            </Flex>
+          </Content>
+        </Layout>
+      </ConfigProvider>
+    </BrowserRouter>
   );
 };
 

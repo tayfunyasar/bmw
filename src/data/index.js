@@ -1,5 +1,6 @@
 export * from './COLOR_PREFERENCES.js';
 import UI_COLORS from './constants/THEME_CONSTANTS.json';
+import PRICING_CONSTANTS from './constants/PRICING_CONSTANTS.json';
 import equipmentRules from './metadata/EQUIPMENT_RULES.json';
 import CoupeGasWithSunroof from './listings/COUPE_GAS_WITH_SUNROOF.json';
 import CoupeDieselWithSunroof from './listings/COUPE_DIESEL_WITH_SUNROOF.json';
@@ -18,6 +19,7 @@ import actionPlan from './user_data/ACTION_PLAN.json';
 
 export {
   UI_COLORS,
+  PRICING_CONSTANTS,
   equipmentRules,
   CoupeGasWithSunroof,
   CoupeDieselWithSunroof,

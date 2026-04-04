@@ -53,7 +53,6 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -141,7 +140,6 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -219,7 +217,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -276,10 +273,7 @@
     ],
     "listingDescriptionNotes": [
       "2yr BMW PS garanti",
-      "Kazasız",
-      "🔄 LCI (fotoğraflardan doğrulandı)",
-      "SA kodları BMW.de URL'den doğrulandı",
-      "Vergi dilimi düşük"
+      "Kazasız"
     ],
     "listingAdditionalFeatures": [
       "Individual Dravitgrau (nadir renk!)"
@@ -307,7 +301,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -329,7 +322,10 @@
     "cardThemeColorHex": "#a78bfa",
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
-      "🟠 Toplam €59,130 — bütçe üst sınırına yakın"
+      "🔄 LCI (fotoğraflardan doğrulandı)",
+      "SA kodları BMW.de URL'den doğrulandı",
+      "Vergi dilimi düşük",
+      "🟠 Toplam €59,656 — bütçe üst sınırına yakın"
     ]
   },
   {
@@ -344,7 +340,7 @@
     "mileageKm": 0,
     "firstRegistrationYearAndMonth": [
       2022,
-      0
+      1
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
@@ -361,9 +357,7 @@
     "listingLocation": "🇩🇪 Mainz",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "Bekleyen ilandan taşındı — sunroof doğrulanamamıştı"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "unknown",
@@ -388,7 +382,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -410,7 +403,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
-      "🟡 Özel satıcı — bayi güvencesi yok"
+      "🟡 Özel satıcı — bayi güvencesi yok",
+      "Bekleyen ilandan taşındı — sunroof doğrulanamamıştı"
     ]
   },
   {
@@ -443,7 +437,6 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "xDrive doğrulandı (Dört tekerlekli sürüş ekipmanda)",
       "Araç no: 1018235"
     ],
     "listingAdditionalFeatures": [],
@@ -470,7 +463,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -497,7 +489,8 @@
     ],
     "cardThemeColorHex": "#fb923c",
     "aiCommentary": [
-      "🟡 Servis geçmişi bilinmiyor"
+      "🟡 Servis geçmişi bilinmiyor",
+      "xDrive doğrulandı (Dört tekerlekli sürüş ekipmanda)"
     ]
   },
   {
@@ -535,7 +528,6 @@
     ],
     "listingDescriptionNotes": [
       "BMW resmi bayi (Türkçe konuşuyorlar!)",
-      "⚠️ HU 11/2025 dolmuş!",
       "2yr BMW PS garanti",
       "Kazasız"
     ],
@@ -563,7 +555,6 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "unknown",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -585,7 +576,8 @@
     "cardThemeColorHex": "#fbbf24",
     "aiCommentary": [
       "🔴 TÜV/HU süresi dolmuş (11/2025)",
-      "🟡 Servis geçmişi bilinmiyor"
+      "🟡 Servis geçmişi bilinmiyor",
+      "⚠️ HU 11/2025 dolmuş!"
     ]
   },
   {
@@ -616,11 +608,8 @@
     "co2EmissionsGramPerKm": 183,
     "listingLocation": "🇩🇪 Berlin",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [
-      "Ağırlık 1,905 kg → xDrive onaylı (RWD 1,815 kg olurdu)"
-    ],
+    "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "⚠️ Voranlage — standort/donanım bayiden teyit edilmeli",
       "Bayi Türkçe konuşuyor!",
       "Araç no: 2491107"
     ],
@@ -650,7 +639,6 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
-      "S493A": "yes",
       "S536A": "no",
       "S2NHA": "yes",
       "S3ACA": "unknown"
@@ -677,7 +665,9 @@
     ],
     "cardThemeColorHex": "#4ade80",
     "aiCommentary": [
-      "🟠 Toplam €62,378 — bütçe üst sınırına yakın"
+      "Ağırlık 1,905 kg → xDrive onaylı (RWD 1,815 kg olurdu)",
+      "⚠️ Voranlage — standort/donanım bayiden teyit edilmeli",
+      "🔴 Toplam €63,748 — bütçe aşımı"
     ]
   },
   {
@@ -710,12 +700,8 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "🔥 BPM €4,112 (05/2021) → Toplam €51,612",
       "2. sahip — Jahreswagen 2022'de BMW'den (Münih) 8K km'de alınmış",
-      "⚠️ Donanım bilgisi çok az — satıcıdan detay almak gerekli",
-      "⚠️ xDrive/renk/donanım belirsiz",
-      "Tel: 0176 61230116",
-      "HU 12/2027 ✅ (çok yeni!)"
+      "Tel: 0176 61230116"
     ],
     "listingAdditionalFeatures": [
       "Allwetterreifen (yeni) + yaz lastikleri mevcut"
@@ -743,7 +729,6 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
-      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -771,7 +756,10 @@
     "cardThemeColorHex": "#86efac",
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor",
-      "🟡 Özel satıcı — bayi güvencesi yok"
+      "🟡 Özel satıcı — bayi güvencesi yok",
+      "⚠️ Donanım bilgisi çok az — satıcıdan detay almak gerekli",
+      "⚠️ xDrive/renk/donanım belirsiz",
+      "HU 12/2027 ✅ (çok yeni!)"
     ]
   },
   {
@@ -831,7 +819,6 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "unknown",
       "S3ACA": "unknown"
@@ -961,7 +948,7 @@
     "cardThemeColorHex": "#e2e8f0",
     "aiCommentary": [
       "🟢 2 gündür satışta — yeni ilan",
-      "🟠 Toplam €58,318 — bütçe üst sınırına yakın"
+      "🟠 Toplam €58,435 — bütçe üst sınırına yakın"
     ]
   }
 ]

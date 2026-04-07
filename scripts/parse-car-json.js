@@ -11,9 +11,14 @@ const equipmentRulesPath = path.resolve(__dirname, '../src/data/metadata/EQUIPME
 
 const CoupeWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF.json');
 const CoupeWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITHOUT_SUNROOF.json');
+const dieselWithSunroofPath = path.join(listingsDir, 'COUPE_DIESEL_WITH_SUNROOF.json');
 const granCoupePath = path.join(listingsDir, 'GRAN_COUPE.json');
 const rwdGasWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITH_SUNROOF.json');
 const rwdGasWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json');
+const soldPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_SOLD.json');
+const kazaliPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_KAZALI.json');
+const cakalPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_CAKAL.json');
+const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
 
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
 
@@ -27,6 +32,17 @@ function getNextListingId(existingListings) {
     }
   });
   return `C${maxId + 1}`;
+}
+
+function determineDrivetrain(title, description, url) {
+  const allText = `${title} ${description} ${url}`;
+  const hasXDrive = /x[- ]?drive/i.test(allText);
+  const hasAllrad = /allrad/i.test(description);
+  const hasRWD = /\bRWD\b/.test(title) || /hinterradantrieb/i.test(description);
+
+  if (hasXDrive || hasAllrad) return { type: "xDrive AWD", certain: true };
+  if (hasRWD) return { type: "RWD", certain: true };
+  return { type: "xDrive AWD", certain: false };
 }
 
 function parseCar(car, nextId) {
@@ -128,9 +144,10 @@ function parseCar(car, nextId) {
 
   const mobileDeIdMatch = car.url?.match(/id=(\d+)/) || car.url?.match(/\/(\d+)\.html/);
   const mobileDeId = mobileDeIdMatch ? mobileDeIdMatch[1] : null;
-  
+
   const serviceType = description.includes("Scheckheftgepflegt") || features.includes("Full Service History") ? "yes" : "unknown";
   const hasWarranty = features.includes("Warranty") ? "yes" : "no";
+  const drivetrain = determineDrivetrain(car.title || "", description, car.url || "");
 
   return {
     listingId: nextId,
@@ -138,7 +155,7 @@ function parseCar(car, nextId) {
     mobileDeId: mobileDeId,
     exteriorColorName: props.manufacturerColour || props.colour,
     interiorColorName: props.upholstery,
-    drivetrainType: /x[- ]?drive/i.test(car.title || "") || /x[- ]?drive/i.test(description) || /x[- ]?drive/i.test(car.url || "") ? "xDrive AWD" : "RWD",
+    drivetrainType: drivetrain.type,
     basePriceEuro: car.price?.amount,
     estimatedImportTaxEuro: estimatedImportTaxEuro,
     mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
@@ -181,7 +198,8 @@ function parseCar(car, nextId) {
         auditDate: car.renewedTime
       }] : [])
     ].sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate)),
-    cardThemeColorHex: (props.manufacturerColour || "").includes("weiß") ? "#e2e8f0" : "#94a3b8"
+    cardThemeColorHex: (props.manufacturerColour || "").includes("weiß") ? "#e2e8f0" : "#94a3b8",
+    aiCommentary: !drivetrain.certain ? ["⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."] : null
   };
 }
 
@@ -253,11 +271,16 @@ async function run() {
 
   const CoupeWithSunroof = JSON.parse(fs.readFileSync(CoupeWithSunroofPath, 'utf-8'));
   const CoupeWithoutSunroof = JSON.parse(fs.readFileSync(CoupeWithoutSunroofPath, 'utf-8'));
+  const dieselWithSunroof = JSON.parse(fs.readFileSync(dieselWithSunroofPath, 'utf-8'));
   const granCoupe = JSON.parse(fs.readFileSync(granCoupePath, 'utf-8'));
   const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
   const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
+  const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
+  const kazali = JSON.parse(fs.readFileSync(kazaliPath, 'utf-8'));
+  const cakal = JSON.parse(fs.readFileSync(cakalPath, 'utf-8'));
+  const deleted = JSON.parse(fs.readFileSync(deletedPath, 'utf-8'));
 
-  let currentAllListings = [...CoupeWithSunroof, ...CoupeWithoutSunroof, ...rwdGasWithSunroof, ...rwdGasWithoutSunroof, ...granCoupe];
+  let currentAllListings = [...CoupeWithSunroof, ...CoupeWithoutSunroof, ...dieselWithSunroof, ...rwdGasWithSunroof, ...rwdGasWithoutSunroof, ...granCoupe, ...sold, ...kazali, ...cakal, ...deleted];
 
   for (const car of carData) {
     const mobileDeIdMatch = car.url?.match(/id=(\d+)/) || car.url?.match(/\/(\d+)\.html/);
@@ -272,6 +295,9 @@ async function run() {
             existingCar = CoupeWithoutSunroof.find(c => c.mobileDeId === mobileDeId);
         }
         if (!existingCar) {
+            existingCar = dieselWithSunroof.find(c => c.mobileDeId === mobileDeId);
+        }
+        if (!existingCar) {
             existingCar = rwdGasWithSunroof.find(c => c.mobileDeId === mobileDeId);
         }
         if (!existingCar) {
@@ -279,6 +305,18 @@ async function run() {
         }
         if (!existingCar) {
             existingCar = granCoupe.find(c => c.mobileDeId === mobileDeId);
+        }
+        if (!existingCar) {
+            existingCar = sold.find(c => c.mobileDeId === mobileDeId);
+        }
+        if (!existingCar) {
+            existingCar = kazali.find(c => c.mobileDeId === mobileDeId);
+        }
+        if (!existingCar) {
+            existingCar = cakal.find(c => c.mobileDeId === mobileDeId);
+        }
+        if (!existingCar) {
+            existingCar = deleted.find(c => c.mobileDeId === mobileDeId);
         }
     }
 
@@ -328,12 +366,17 @@ async function run() {
         currentAllListings.push(parsedCar);
 
         const isSunroof = parsedCar.equipmentFeatures.S403A === "yes";
-        const isRWD = parsedCar.drivetrainType === "RWD";
+        const driveResult = determineDrivetrain(car.title || "", car.description || "", car.url || "");
+        const isRWD = driveResult.type === "RWD" && driveResult.certain;
         const isGC = car.title?.includes("GC") || car.subTitle?.includes("GC") || car.description?.includes("Gran Coupe") || car.description?.includes("Gran Coupé");
+        const isDiesel = (car.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(car.title || "");
 
         if (isGC) {
           granCoupe.push(parsedCar);
           console.log(`✅ Yeni eklendi: ${nextId} (GRAN_COUPE.json)`);
+        } else if (isDiesel) {
+          dieselWithSunroof.push(parsedCar);
+          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_DIESEL_WITH_SUNROOF.json)`);
         } else if (isRWD) {
           if (isSunroof) {
             rwdGasWithSunroof.push(parsedCar);
@@ -344,10 +387,10 @@ async function run() {
           }
         } else if (isSunroof) {
           CoupeWithSunroof.push(parsedCar);
-          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_WITH_SUNROOF.json)`);
+          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_GAS_WITH_SUNROOF.json)`);
         } else {
           CoupeWithoutSunroof.push(parsedCar);
-          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_WITHOUT_SUNROOF.json)`);
+          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_GAS_WITHOUT_SUNROOF.json)`);
         }
     }
   }
@@ -355,6 +398,7 @@ async function run() {
   // Tüm değişiklikleri diske yaz
   fs.writeFileSync(CoupeWithSunroofPath, JSON.stringify(CoupeWithSunroof, null, 2));
   fs.writeFileSync(CoupeWithoutSunroofPath, JSON.stringify(CoupeWithoutSunroof, null, 2));
+  fs.writeFileSync(dieselWithSunroofPath, JSON.stringify(dieselWithSunroof, null, 2));
   fs.writeFileSync(rwdGasWithSunroofPath, JSON.stringify(rwdGasWithSunroof, null, 2));
   fs.writeFileSync(rwdGasWithoutSunroofPath, JSON.stringify(rwdGasWithoutSunroof, null, 2));
   fs.writeFileSync(granCoupePath, JSON.stringify(granCoupe, null, 2));

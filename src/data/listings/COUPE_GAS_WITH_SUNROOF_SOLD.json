@@ -46,6 +46,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "yes",
       "S5ACA": "unknown",
@@ -53,9 +55,18 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -133,6 +144,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -140,9 +153,18 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -210,6 +232,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -217,9 +241,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -294,6 +327,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -301,9 +336,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -375,6 +419,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -382,9 +428,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -456,6 +511,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -463,9 +520,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -548,6 +614,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -555,9 +623,18 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -632,6 +709,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "yes",
       "S5ACA": "unknown",
@@ -639,9 +718,18 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -722,6 +810,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -729,9 +819,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -812,6 +911,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -819,9 +920,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -948,7 +1058,8 @@
     "cardThemeColorHex": "#e2e8f0",
     "aiCommentary": [
       "🟢 2 gündür satışta — yeni ilan",
-      "🟠 Toplam €58,435 — bütçe üst sınırına yakın"
+      "🟠 Toplam €58,435 — bütçe üst sınırına yakın",
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
     ]
   }
 ]

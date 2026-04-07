@@ -10,7 +10,10 @@
       "Panoramic roof"
     ],
     "description": [
-      "Glasschiebe-Hebedach"
+      "Glasschiebe-Hebedach",
+      "Schiebe-Hebedach",
+      "Hebedach elektrisch",
+      "Schiebe-/Hebedach"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -39,7 +42,9 @@
     "features": [],
     "description": [
       "DRIVING ASSISTANT PROFESSIONAL",
-      "Driving Assistant Plus"
+      "Driving Assistant Plus",
+      "Fahrassistenz-System",
+      "Fahrassistenz"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -69,14 +74,17 @@
     "tag": "Drift & cornering",
     "features": [],
     "description": [
-      "M Sportdifferential"
+      "M Sportdifferential",
+      "Differential-Sperre",
+      "Differentialsperre",
+      "Sperrdifferential"
     ],
     "props": {},
     "defaultStatus": "unknown"
   },
   {
     "code": "S610A",
-    "name": "Head-Up Disp",
+    "name": "Head-Up Display",
     "price": 1400,
     "score": 2,
     "tag": "Safety",
@@ -84,7 +92,9 @@
       "Head-up display"
     ],
     "description": [
-      "Head-up-Display"
+      "Head-up-Display",
+      "Head-Up Display",
+      "Head-Up-Display"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -154,7 +164,8 @@
       "Keyless central locking"
     ],
     "description": [
-      "Komfortzugang"
+      "Komfortzugang",
+      "Comfort Access"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -166,7 +177,8 @@
     "score": 1,
     "features": [],
     "description": [
-      "M Sportbremse"
+      "M Sportbremse",
+      "M Sportbremsen"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -181,7 +193,8 @@
       "Dynamic chassis control"
     ],
     "description": [
-      "Adaptives M Fahrwerk"
+      "Adaptives M Fahrwerk",
+      "Adaptives M-Technik Sportfahrwerk"
     ],
     "negativeDescription": [
       "M Sportfahrwerk"
@@ -199,7 +212,8 @@
       "Eletric seat adjustment with memory function"
     ],
     "description": [
-      "Sitzverstellung elektrisch"
+      "Sitzverstellung elektrisch",
+      "Memorysitz"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -211,7 +225,9 @@
     "score": 1,
     "features": [],
     "description": [
-      "PARKING ASSISTANT PLUS"
+      "PARKING ASSISTANT PLUS",
+      "Parkassistent-Paket Plus",
+      "Parkassistent Plus"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -251,7 +267,8 @@
       "Heated seats"
     ],
     "description": [
-      "Sitzheizung"
+      "Sitzheizung",
+      "Sitzheizungen"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -265,7 +282,8 @@
       "Heated steering wheel"
     ],
     "description": [
-      "Lenkradheizung"
+      "Lenkradheizung",
+      "Lenkrad heizbar"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -312,14 +330,16 @@
   },
   {
     "code": "S430A",
-    "name": "Mirror Tilt (park vitesinde)",
+    "name": "Mirror Package",
     "price": 100,
     "score": 1,
     "features": [
       "Autom. dimming interior mirror"
     ],
     "description": [
-      "Innen- und Außenspiegel"
+      "Innen- und Außenspiegel",
+      "Spiegel-Paket",
+      "Spiegelpaket"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -372,6 +392,7 @@
     "features": [],
     "description": [
       "Drive Recorder",
+      "BMW Drive Recorder",
       "Dashcam"
     ],
     "props": {},
@@ -389,6 +410,119 @@
     "description": [
       "Anhängerkupplung",
       "AHK"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S488A",
+    "name": "Electric Lumbar Support",
+    "price": 200,
+    "score": 0,
+    "features": [
+      "Lumbar support"
+    ],
+    "description": [
+      "Lendenwirbelstütze",
+      "Lendenwirbelstützen"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S715A",
+    "name": "M Aerodynamic Package",
+    "price": 0,
+    "score": 0,
+    "tag": "M440i standart",
+    "features": [],
+    "description": [
+      "M Aerodynamikpaket",
+      "M-Aerodynamikpaket",
+      "Aerodynamik-Paket"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S493A",
+    "name": "Storage Package",
+    "price": 50,
+    "score": 0,
+    "features": [],
+    "description": [
+      "Ablagenpaket"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S521A",
+    "name": "Rain Sensor",
+    "price": 0,
+    "score": 0,
+    "features": [
+      "Rain sensor"
+    ],
+    "description": [
+      "Regensensor"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S524A",
+    "name": "Auto Headlights",
+    "price": 0,
+    "score": 0,
+    "features": [
+      "Automatic headlights"
+    ],
+    "description": [
+      "Lichtautomatik",
+      "Fahrlichtautomatik"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S265A",
+    "name": "Tire Pressure Monitor",
+    "price": 0,
+    "score": 0,
+    "features": [
+      "Tyre pressure monitoring"
+    ],
+    "description": [
+      "Reifendruckkontrolle",
+      "Reifendruck-Kontrolle",
+      "Reifendruckkontrollsystem"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S216A",
+    "name": "Servotronic",
+    "price": 0,
+    "score": 0,
+    "features": [],
+    "description": [
+      "Servotronic"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S302A",
+    "name": "Alarm System",
+    "price": 200,
+    "score": 0,
+    "features": [
+      "Alarm system"
+    ],
+    "description": [
+      "Alarmanlage"
     ],
     "props": {},
     "defaultStatus": "no"

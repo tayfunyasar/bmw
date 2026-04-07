@@ -48,6 +48,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -55,9 +57,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -134,6 +145,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -141,9 +154,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -220,6 +242,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "no",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "no",
       "S5ACA": "yes",
@@ -227,9 +251,18 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "no",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -310,6 +343,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "no",
       "S5ACA": "yes",
@@ -317,9 +352,18 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -397,6 +441,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -404,9 +450,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -491,6 +546,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "no",
       "S5ACA": "yes",
@@ -498,9 +555,18 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -577,6 +643,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "yes",
       "S5ACA": "unknown",
@@ -584,9 +652,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -672,6 +749,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -679,9 +758,18 @@
       "S430A": "unknown",
       "S4AWA": "yes",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -745,6 +833,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -752,9 +842,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -817,6 +916,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "no",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -824,9 +925,18 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -888,6 +998,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -895,9 +1007,18 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "no",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -961,6 +1082,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "no",
@@ -968,9 +1091,18 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -1030,6 +1162,8 @@
       "S6U3A": "no",
       "S715A": "unknown",
       "S2VLA": "no",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "no",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1037,9 +1171,18 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "no",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -1089,7 +1232,7 @@
     "equipmentFeatures": {
       "S403A": "unknown",
       "S5AZA": "unknown",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "yes",
@@ -1100,8 +1243,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1109,9 +1254,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -1131,6 +1285,45 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-01T22:09:43.741Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.821Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1185,8 +1378,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1194,9 +1389,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -1206,10 +1410,47 @@
         "auditDate": "2026-04-01T04:08:47.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-01T04:08:47.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:52:55.927Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.826Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1262,6 +1503,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -1269,9 +1512,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -1281,10 +1533,31 @@
         "auditDate": "2026-02-26T13:34:04.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-26T13:34:04.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:52:55.927Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.820Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1337,6 +1610,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -1344,9 +1619,18 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -1356,10 +1640,27 @@
         "auditDate": "2026-04-03T14:10:03.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-03T14:10:03.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:52:55.927Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.826Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1410,8 +1711,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1419,9 +1722,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -1431,13 +1743,338 @@
         "auditDate": "2026-03-12T13:29:10.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-12T13:29:10.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.366Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C150",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-hud-parkass-komfortzg-kaarst/451960776.html",
+    "mobileDeId": "451960776",
+    "exteriorColorName": "BMW Individual Dravitgrau",
+    "interiorColorName": "Alcantara, Brown",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 54430,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 28901,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2026",
+    "sellerTypeOrName": "Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.9",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 41564 Kaarst",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
+    },
+    "overrideFeatures": {
+      "S403A": "no"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-01T11:30:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-01T11:30:10.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-07T07:08:33.657Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.556Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S488A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.994Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C146",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-driv-assist-prof-harman-k-head-up-berlin/448958569.html",
+    "mobileDeId": "448958569",
+    "exteriorColorName": "saphirschwarz",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 54700,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 50040,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2028",
+    "sellerTypeOrName": "BMW AG - Niederlassung Berlin - Hauptbetrieb - Verkauf Gebrauchte Automobile ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 14057 Berlin",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-27T04:20:53.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-27T04:20:53.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.820Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

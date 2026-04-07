@@ -30,6 +30,7 @@ const ROOT_KEYS_ORDER = [
   'listingDescriptionNotes',
   'listingAdditionalFeatures',
   'equipmentFeatures',
+  'overrideFeatures',
   'auditHistory',
   'cardThemeColorHex',
   'aiCommentary'
@@ -38,9 +39,10 @@ const ROOT_KEYS_ORDER = [
 const EQUIP_KEYS_ORDER = [
   'S403A', 'S5AZA', 'S5AUA', 'S688A', 'S2T4A',
   'S610A', 'S5DN_360', 'KGNL', 'S322A', 'S2VFA', 'S459A',
-  'S5DNA', 'S6U3A', 'S715A', 'S2VLA', 'S420A', 'S1MAA',
-  'S5ACA', 'S6C4A', 'S430A', 'S4AWA', 'S775A', 'S493A',
-  'S536A', 'S2NHA', 'S3ACA'
+  'S5DNA', 'S6U3A', 'S715A', 'S2VLA', 'S494A', 'S248A',
+  'S420A', 'S1MAA', 'S5ACA', 'S6C4A', 'S430A', 'S4AWA',
+  'S775A', 'S493A', 'S536A', 'S2NHA', 'S3ACA', 'S3ADA', 'S3AGA',
+  'S488A', 'S521A', 'S524A', 'S265A', 'S216A', 'S302A'
 ];
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
@@ -60,30 +62,35 @@ let hasError = false;
 
 function formatListing(listing, index, filename) {
   const newListing = {};
-  
+  const carLabel = `${listing.listingId || '?'}/${listing.mobileDeId || '?'}`;
+
   // 1. Check for extra keys not in our schema
   const extraKeys = Object.keys(listing).filter(k => !ROOT_KEYS_ORDER.includes(k));
   if (extraKeys.length > 0) {
-    console.error(`Error: File ${filename}, item index ${index} has unknown root keys: ${extraKeys.join(', ')}`);
+    console.error(`Error: [${carLabel}] ${filename} index ${index} — unknown root keys: ${extraKeys.join(', ')}`);
     hasError = true;
   }
-  
+
   // 2. Build the new object strictly in order
   for (const key of ROOT_KEYS_ORDER) {
     if (key === 'equipmentFeatures') {
       const newEquip = {};
       const oldEquip = listing.equipmentFeatures || {};
-      
+
       const extraEquipKeys = Object.keys(oldEquip).filter(k => !EQUIP_KEYS_ORDER.includes(k));
       if (extraEquipKeys.length > 0) {
-        console.error(`Error: File ${filename}, item index ${index} has unknown equipment features: ${extraEquipKeys.join(', ')}`);
+        console.error(`Error: [${carLabel}] ${filename} index ${index} — unknown equipment features: ${extraEquipKeys.join(', ')}`);
         hasError = true;
       }
-      
+
       for (const eqKey of EQUIP_KEYS_ORDER) {
         newEquip[eqKey] = oldEquip[eqKey] !== undefined ? oldEquip[eqKey] : 'unknown';
       }
       newListing[key] = newEquip;
+    } else if (key === 'overrideFeatures') {
+      if (listing.overrideFeatures) {
+        newListing[key] = listing.overrideFeatures;
+      }
     } else if (key === 'service') {
       const oldService = listing.service || {};
       newListing[key] = {

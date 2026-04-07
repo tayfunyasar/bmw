@@ -46,6 +46,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "yes",
       "S5ACA": "yes",
@@ -53,9 +55,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "yes",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -120,6 +131,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "yes",
       "S5ACA": "yes",
@@ -127,9 +140,18 @@
       "S430A": "yes",
       "S4AWA": "yes",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "no",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -146,7 +168,7 @@
     ]
   },
   {
-    "listingId": "C124",
+    "listingId": "C163",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440d-xdrive-coupe-m-sport-pro-licopro-gsd-360-salzwedel-brietz/451247762.html",
     "mobileDeId": "451247762",
     "exteriorColorName": "Sanremo green metallic",
@@ -161,7 +183,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -181,17 +203,19 @@
       "S5AZA": "unknown",
       "S5AUA": "unknown",
       "S688A": "no",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
       "KGNL": "yes",
       "S322A": "unknown",
       "S2VFA": "no",
       "S459A": "yes",
-      "S5DNA": "unknown",
+      "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "yes",
       "S5ACA": "yes",
@@ -199,9 +223,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -211,83 +244,23 @@
         "auditDate": "2026-03-24T14:54:48.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-24T14:54:48.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-03-31T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "listingLocation": {
-            "old": "🇩🇪 29410 Salzwedel",
-            "new": "🇩🇪 Brietz"
-          },
-          "service": {
-            "old": {
-              "type": "unknown",
-              "history": []
-            },
-            "new": {
-              "type": "yes",
-              "history": []
-            }
-          },
-          "equipmentFeatures.S2VFA": {
-            "old": "yes",
-            "new": "no"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-04-01T19:09:58.155Z"
-      },
-      {
-        "action": "Default Davranış Güncellemesi",
-        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
-        "changes": {
-          "equipmentFeatures.S5AZA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5AUA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S322A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-01T20:22:48.216Z"
+        "auditDate": "2026-04-07T13:37:02.463Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟢 8 gündür satışta — yeni ilan"
-    ]
+    "aiCommentary": null
   },
   {
-    "listingId": "C119",
+    "listingId": "C164",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-d-xdrive-coupe-m-sport-pro-gsd-hud-360-ibbenb%C3%BCren/451359658.html",
     "mobileDeId": "451359658",
     "exteriorColorName": "saphirschwarz",
@@ -302,7 +275,7 @@
     ],
     "numberOfPreviousOwners": "2",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -331,8 +304,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -340,9 +315,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -352,114 +336,19 @@
         "auditDate": "2026-03-25T15:22:50.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-25T15:22:50.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-03-31T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S3ACA": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-03-31T16:49:01.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "service": {
-            "old": {
-              "history": []
-            },
-            "new": {
-              "type": "yes",
-              "history": []
-            }
-          }
-        },
-        "auditDate": "2026-03-31T20:31:04.609Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "service": {
-            "old": {
-              "type": "unknown",
-              "history": []
-            },
-            "new": {
-              "type": "yes",
-              "history": []
-            }
-          }
-        },
-        "auditDate": "2026-04-01T19:09:58.155Z"
-      },
-      {
-        "action": "Donanım Yeniden Hesaplandı",
-        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
-        "changes": {
-          "equipmentFeatures.S5AUA": {
-            "old": "no",
-            "new": "yes"
-          },
-          "equipmentFeatures.S688A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S775A": {
-            "old": "no",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-01T20:15:12.864Z"
-      },
-      {
-        "action": "Default Davranış Güncellemesi",
-        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
-        "changes": {
-          "equipmentFeatures.S5AZA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.KGNL": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-01T20:22:48.211Z"
+        "auditDate": "2026-04-07T13:37:02.464Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟢 7 gündür satışta — yeni ilan",
-      "🔴 Toplam €69,163.29 — bütçe aşımı"
-    ]
+    "aiCommentary": null
   }
 ]

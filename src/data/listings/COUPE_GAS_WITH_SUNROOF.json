@@ -15,10 +15,10 @@
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
     "nextInspectionDate": "02/2026",
@@ -48,8 +48,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "unknown",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -57,9 +59,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -225,6 +236,59 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.209Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.816Z"
       }
     ],
     "cardThemeColorHex": "#22d3ee",
@@ -255,10 +319,10 @@
     ],
     "numberOfPreviousOwners": "2",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
     "nextInspectionDate": "12/2027",
@@ -286,8 +350,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -295,13 +361,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "yes"
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-12-05T09:07:07.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2025-12-05T09:07:07.000Z"
@@ -450,6 +531,51 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.819Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
@@ -476,7 +602,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "unknown",
@@ -513,8 +639,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -522,13 +650,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-19T04:37:20.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-19T04:37:20.000Z"
@@ -692,6 +835,49 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.823Z"
       }
     ],
     "cardThemeColorHex": "#fb7185",
@@ -716,7 +902,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -746,7 +932,7 @@
       "S5AZA": "yes",
       "S5AUA": "unknown",
       "S688A": "unknown",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "unknown",
       "KGNL": "yes",
@@ -755,8 +941,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -764,13 +952,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-01-22T04:09:51.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-01-22T04:09:51.000Z"
@@ -992,6 +1195,53 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.819Z"
       }
     ],
     "cardThemeColorHex": "#3b82f6",
@@ -1018,10 +1268,10 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
     "nextInspectionDate": "New",
@@ -1038,7 +1288,7 @@
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "unknown",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "no",
       "S2T4A": "unknown",
       "S610A": "unknown",
@@ -1049,8 +1299,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -1058,9 +1310,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -1235,6 +1496,55 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.818Z"
       }
     ],
     "cardThemeColorHex": "#a3e635",
@@ -1261,7 +1571,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
       "type": "yes",
@@ -1294,6 +1604,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1301,13 +1613,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-01-18T17:38:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-01-18T17:38:10.000Z"
@@ -1471,6 +1798,45 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.819Z"
       }
     ],
     "cardThemeColorHex": "#818cf8",
@@ -1498,7 +1864,7 @@
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
       "type": "yes",
@@ -1532,8 +1898,10 @@
       "S459A": "unknown",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1541,13 +1909,28 @@
       "S430A": "unknown",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-04T15:02:17.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-02-04T15:02:17.000Z"
@@ -1704,6 +2087,37 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.820Z"
       }
     ],
     "cardThemeColorHex": "#f472b6",
@@ -1718,7 +2132,7 @@
     "listingId": "C17",
     "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=449339883",
     "mobileDeId": "449339883",
-    "exteriorColorName": "Blue Metallic",
+    "exteriorColorName": null,
     "interiorColorName": "Full leather",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 51000,
@@ -1730,7 +2144,7 @@
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -1769,6 +2183,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -1776,13 +2192,31 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
+    },
+    "overrideFeatures": {
+      "exteriorColorName": "Blue Metallic"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-04T11:03:16.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-04T11:03:16.000Z"
@@ -1976,6 +2410,45 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "exteriorColorName": {
+            "old": "Blue Metallic",
+            "new": null
+          },
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.821Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
@@ -1985,10 +2458,7 @@
       "🟠 mobile.de \"Artırılmış fiyat\" uyarısı var",
       "📈 Fiyat €55K→€53K→€55K→€53K",
       "🟠 Toplam €59,214 — bütçe üst sınırına yakın"
-    ],
-    "overrideFeatures": {
-      "exteriorColorName": "Blue Metallic"
-    }
+    ]
   },
   {
     "listingId": "C104",
@@ -2006,7 +2476,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -2024,7 +2494,7 @@
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "unknown",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "unknown",
@@ -2035,8 +2505,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -2044,13 +2516,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-11-17T11:33:43.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2025-11-17T11:33:43.000Z"
@@ -2197,13 +2684,53 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.818Z"
       }
     ],
     "cardThemeColorHex": "#9ca3af",
     "aiCommentary": [
       "🟠 136 gündür satışta — 3 ayı aştı, neden satılamadığı araştırılmalı",
       "🔴 TÜV/HU süresi dolmuş (09/2025)",
-      "🔴 Toplam €64,445 — bütçe aşımı"
+      "🔴 Toplam €64,445 — bütçe aşımı",
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
     ]
   },
   {
@@ -2222,7 +2749,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -2247,7 +2774,7 @@
       "S5AZA": "unknown",
       "S5AUA": "unknown",
       "S688A": "yes",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "unknown",
       "S5DN_360": "unknown",
       "KGNL": "unknown",
@@ -2256,8 +2783,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -2265,13 +2794,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-30T17:50:34.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-30T17:50:34.000Z"
@@ -2410,6 +2954,53 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.825Z"
       }
     ],
     "cardThemeColorHex": "#fb923c",
@@ -2433,7 +3024,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -2458,7 +3049,7 @@
       "S5AZA": "unknown",
       "S5AUA": "unknown",
       "S688A": "yes",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
       "KGNL": "unknown",
@@ -2467,8 +3058,10 @@
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -2476,13 +3069,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "yes",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-07-01T12:01:35.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2025-07-01T12:01:35.000Z"
@@ -2621,6 +3229,57 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.817Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
@@ -2645,7 +3304,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -2668,7 +3327,7 @@
     "equipmentFeatures": {
       "S403A": "unknown",
       "S5AZA": "yes",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "yes",
@@ -2679,8 +3338,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -2688,13 +3349,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "yes",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-08-04T17:38:49.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2025-08-04T17:38:49.000Z"
@@ -2811,6 +3487,53 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.817Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2834,7 +3557,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "unknown",
@@ -2857,7 +3580,7 @@
       "S5AZA": "yes",
       "S5AUA": "yes",
       "S688A": "yes",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
       "KGNL": "unknown",
@@ -2868,6 +3591,8 @@
       "S6U3A": "unknown",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -2875,13 +3600,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-26T18:30:14.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-26T18:30:14.000Z"
@@ -3038,6 +3778,41 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.825Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3064,7 +3839,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -3093,8 +3868,10 @@
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -3102,13 +3879,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-26T17:12:33.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-26T17:12:33.000Z"
@@ -3205,6 +3997,57 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.211Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.825Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3229,7 +4072,7 @@
     ],
     "numberOfPreviousOwners": "2",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -3247,7 +4090,7 @@
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "yes",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "unknown",
@@ -3256,10 +4099,12 @@
       "S322A": "unknown",
       "S2VFA": "unknown",
       "S459A": "unknown",
-      "S5DNA": "unknown",
+      "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -3267,13 +4112,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-21T09:50:55.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-21T09:50:55.000Z"
@@ -3370,6 +4230,61 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.212Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.823Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3394,7 +4309,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -3423,8 +4338,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -3432,13 +4349,28 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-23T14:17:43.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-23T14:17:43.000Z"
@@ -3535,6 +4467,91 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.212Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-02T08:17:39.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S488A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3588,8 +4605,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -3597,9 +4616,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -3609,10 +4637,51 @@
         "auditDate": "2025-11-19T12:34:24.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-11-19T12:34:24.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-01T22:09:43.735Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.818Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3646,7 +4715,7 @@
     "nextInspectionDate": "New",
     "sellerTypeOrName": "Procar Automobile Wuppertal GmbH & Co. KG ★4.4",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 177,
+    "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 42117 Wuppertal",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -3666,8 +4735,10 @@
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -3675,9 +4746,22 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "yes"
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
+    },
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": 177,
+      "vin": "WBA11AR090CM35217"
     },
     "auditHistory": [
       {
@@ -3687,10 +4771,91 @@
         "auditDate": "2026-04-02T17:43:45.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-02T17:43:45.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-03T07:51:10.735Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 177,
+            "new": 0
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S488A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3701,11 +4866,7 @@
       "ℹ️ CARFAX: 08/2023 itibarıyla 5.000 km kayıtlı",
       "⚠️ Satıcıdan onarım belgesi ve detayı mutlaka istenmelidir",
       "🔴 Toplam €64,361 — bütçe aşımı"
-    ],
-    "overrideFeatures": {
-      "co2EmissionsGramPerKm": 177,
-      "vin": "WBA11AR090CM35217"
-    }
+    ]
   },
   {
     "listingId": "C134",
@@ -3743,7 +4904,7 @@
       "S5AZA": "unknown",
       "S5AUA": "unknown",
       "S688A": "unknown",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "unknown",
       "S5DN_360": "unknown",
       "KGNL": "unknown",
@@ -3754,6 +4915,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -3761,9 +4924,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -3773,10 +4945,47 @@
         "auditDate": "2026-03-19T08:12:05.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-19T08:12:05.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:52:55.920Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.823Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3816,7 +5025,7 @@
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "unknown",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "no",
       "S2T4A": "unknown",
       "S610A": "yes",
@@ -3825,10 +5034,12 @@
       "S322A": "yes",
       "S2VFA": "unknown",
       "S459A": "yes",
-      "S5DNA": "unknown",
+      "S5DNA": "yes",
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -3836,9 +5047,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -3848,10 +5068,47 @@
         "auditDate": "2026-03-24T17:29:31.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-24T17:29:31.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:52:55.927Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.824Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3891,7 +5148,7 @@
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "unknown",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "no",
       "S2T4A": "unknown",
       "S610A": "yes",
@@ -3900,10 +5157,12 @@
       "S322A": "yes",
       "S2VFA": "unknown",
       "S459A": "yes",
-      "S5DNA": "unknown",
+      "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -3911,9 +5170,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -3952,6 +5220,41 @@
           }
         },
         "auditDate": "2026-04-04T10:59:37.373Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3991,7 +5294,7 @@
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "yes",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
@@ -4002,8 +5305,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -4011,9 +5316,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -4023,10 +5337,59 @@
         "auditDate": "2026-03-25T10:36:47.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-25T10:36:47.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:52:55.927Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.824Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4079,6 +5442,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -4086,9 +5451,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -4098,10 +5472,39 @@
         "auditDate": "2026-03-16T09:45:03.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-16T09:45:03.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4152,8 +5555,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -4161,9 +5566,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "yes"
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "unknown"
     },
     "auditHistory": [
       {
@@ -4173,10 +5587,43 @@
         "auditDate": "2026-02-28T16:37:12.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-28T16:37:12.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.820Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4227,8 +5674,10 @@
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
@@ -4236,9 +5685,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -4258,6 +5716,37 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4310,6 +5799,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -4317,9 +5808,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -4329,10 +5829,43 @@
         "auditDate": "2026-02-26T15:41:04.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-26T15:41:04.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.820Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4383,8 +5916,10 @@
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -4392,9 +5927,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -4404,10 +5948,51 @@
         "auditDate": "2026-03-27T13:21:00.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-27T13:21:00.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S3AGA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.825Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4449,7 +6034,7 @@
       "S5AZA": "unknown",
       "S5AUA": "unknown",
       "S688A": "unknown",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "unknown",
       "KGNL": "unknown",
@@ -4460,6 +6045,8 @@
       "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
@@ -4467,9 +6054,18 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
+      "S493A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
     },
     "auditHistory": [
       {
@@ -4479,13 +6075,595 @@
         "auditDate": "2026-03-18T10:18:21.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-18T10:18:21.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-04T10:59:37.373Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C152",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-inov-u-park-plus-lm-19-m-technik-bmw-se-karlsdorf-neuthard/452231805.html",
+    "mobileDeId": "452231805",
+    "exteriorColorName": "Sanremo Green",
+    "interiorColorName": "Other, Other",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 46900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 53000,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      3
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "F1 Automobile ★5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Neuthard",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-04T12:40:17.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-04T12:40:17.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:23:07.113Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S2VFA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C121",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-garagenwagen-ludwigshafen/451092000.html",
+    "mobileDeId": "451092000",
+    "exteriorColorName": null,
+    "interiorColorName": null,
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 43900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 45000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      5
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "12/2027",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 67071 Ludwigshafen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-23T05:39:41.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇩🇪 Unknown",
+            "new": "🇩🇪 67071 Ludwigshafen"
+          },
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S403A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AZA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S610A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S322A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S459A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5ACA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-04T10:52:55.928Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S403A": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.823Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+    ]
+  },
+  {
+    "listingId": "C151",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-sportpaket-kaufbeuren/452311604.html",
+    "mobileDeId": "452311604",
+    "exteriorColorName": "BLACK",
+    "interiorColorName": null,
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 49900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 61100,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      7
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "05/2027",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 87600 Kaufbeuren",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-05T17:10:03.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-05T17:10:03.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

@@ -19,6 +19,14 @@ export const formatNotes = (notes) => {
   ));
 };
 
+export const findDealerForListing = (sellerTypeOrName, dealers) => {
+  if (!sellerTypeOrName || sellerTypeOrName === '?' || !dealers) return null;
+  const sellerLower = sellerTypeOrName.toLowerCase();
+  return dealers.find(dealer =>
+    dealer.matchPatterns.some(pattern => sellerLower.includes(pattern.toLowerCase()))
+  ) || null;
+};
+
 export const formatAdditionalFeatures = (features) => {
   if (!Array.isArray(features)) return "—";
   

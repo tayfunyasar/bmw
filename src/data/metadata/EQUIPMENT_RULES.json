@@ -13,7 +13,11 @@
       "Glasschiebe-Hebedach",
       "Schiebe-Hebedach",
       "Hebedach elektrisch",
-      "Schiebe-/Hebedach"
+      "Schiebe-/Hebedach",
+      "Open-Air Paket",
+      "Glasdach",
+      "Dachfenster",
+      "Schiebedach"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -28,7 +32,8 @@
       "Laser headlights"
     ],
     "description": [
-      "Laserlicht"
+      "Laserlicht",
+      "BMW Laserlicht"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -58,10 +63,13 @@
     "features": [],
     "description": [
       "Harman Kardon",
+      "Harman-Kardon",
+      "Harman/Kardon",
       "H/K"
     ],
     "negativeDescription": [
-      "HiFi-Lautsprechersystem"
+      "HiFi-Lautsprechersystem",
+      "HiFi Lautsprechersystem"
     ],
     "props": {},
     "defaultStatus": "unknown"
@@ -75,8 +83,10 @@
     "features": [],
     "description": [
       "M Sportdifferential",
+      "M Sportdifferenzial",
       "Differential-Sperre",
       "Differentialsperre",
+      "Differenzialsperre",
       "Sperrdifferential"
     ],
     "props": {},
@@ -137,7 +147,10 @@
     "score": 2,
     "features": [],
     "description": [
-      "M Sportabgasanlage"
+      "M Sportabgasanlage",
+      "M Sport Abgasanlage",
+      "Sportauspuff",
+      "Sport-Auspuffanlage"
     ],
     "props": {},
     "defaultStatus": "unknown"
@@ -194,7 +207,8 @@
     ],
     "description": [
       "Adaptives M Fahrwerk",
-      "Adaptives M-Technik Sportfahrwerk"
+      "Adaptives M-Technik Sportfahrwerk",
+      "Adaptives Fahrwerk M"
     ],
     "negativeDescription": [
       "M Sportfahrwerk"
@@ -213,6 +227,7 @@
     ],
     "description": [
       "Sitzverstellung elektrisch",
+      "Sitzverstellung, elektrisch",
       "Memorysitz"
     ],
     "props": {},
@@ -227,7 +242,8 @@
     "description": [
       "PARKING ASSISTANT PLUS",
       "Parkassistent-Paket Plus",
-      "Parkassistent Plus"
+      "Parkassistent Plus",
+      "Automatisches Einparken"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -241,7 +257,9 @@
       "Digital cockpit"
     ],
     "description": [
-      "Live Cockpit Professional"
+      "Live Cockpit Professional",
+      "BMW Live Cockpit Professional",
+      "Live Cockpit Prof"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -296,7 +314,8 @@
     "features": [],
     "description": [
       "Abgedunkelte Verglasung",
-      "Sonnenschutzverglasung"
+      "Sonnenschutzverglasung",
+      "Sichtschutzglas"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -338,6 +357,8 @@
     ],
     "description": [
       "Innen- und Außenspiegel",
+      "Innen-/Außenspiegel",
+      "Abblendautomatik",
       "Spiegel-Paket",
       "Spiegelpaket"
     ],
@@ -366,7 +387,8 @@
     "score": 1,
     "features": [],
     "description": [
-      "Dachhimmel anthrazit"
+      "Dachhimmel anthrazit",
+      "Dachhimmel Anthrazit"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -424,7 +446,9 @@
     ],
     "description": [
       "Lendenwirbelstütze",
-      "Lendenwirbelstützen"
+      "Lendenwirbelstützen",
+      "Lordosenstütze",
+      "Lordose"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -451,7 +475,9 @@
     "score": 0,
     "features": [],
     "description": [
-      "Ablagenpaket"
+      "Ablagenpaket",
+      "Ablagepaket",
+      "Ablage-Paket"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -496,7 +522,8 @@
     "description": [
       "Reifendruckkontrolle",
       "Reifendruck-Kontrolle",
-      "Reifendruckkontrollsystem"
+      "Reifendruckkontrollsystem",
+      "Reifendruckanzeige"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -523,6 +550,18 @@
     ],
     "description": [
       "Alarmanlage"
+    ],
+    "props": {},
+    "defaultStatus": "no"
+  },
+  {
+    "code": "S4NHA",
+    "name": "Nackenwärmer (Boyun Isıtıcı)",
+    "price": 350,
+    "score": 0,
+    "features": [],
+    "description": [
+      "Nackenwärmer"
     ],
     "props": {},
     "defaultStatus": "no"

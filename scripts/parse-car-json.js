@@ -13,6 +13,7 @@ const CoupeWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF.json
 const CoupeWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITHOUT_SUNROOF.json');
 const dieselWithSunroofPath = path.join(listingsDir, 'COUPE_DIESEL_WITH_SUNROOF.json');
 const granCoupePath = path.join(listingsDir, 'GRAN_COUPE.json');
+const cabrioPath = path.join(listingsDir, 'CABRIO.json');
 const rwdGasWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITH_SUNROOF.json');
 const rwdGasWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json');
 const soldPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_SOLD.json');
@@ -214,8 +215,9 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
       'listingLocation', 'exteriorColorName', 'interiorColorName',
       'numberOfPreviousOwners', 'warranty', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm'
   ];  
+  const overrides = existingCar.overrideFeatures || {};
   fieldsToCheck.forEach(key => {
-      // Sadece gerçekten değişmişse ve anlamlı değerse güncelle
+      if (key in overrides) return; // Manuel override korunuyor
       if (newCar[key] !== undefined && existingCar[key] !== newCar[key] && JSON.stringify(existingCar[key]) !== JSON.stringify(newCar[key])) {
           changes[key] = { old: existingCar[key], new: newCar[key] };
           existingCar[key] = newCar[key];
@@ -225,7 +227,6 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
 
   // equipmentFeatures alanı detaylı kontrol ediliyor
   // overrideFeatures'da tanımlı olanlar ASLA otomatik güncellenmez
-  const overrides = existingCar.overrideFeatures || {};
   if (newCar.equipmentFeatures && existingCar.equipmentFeatures) {
       Object.keys(newCar.equipmentFeatures).forEach(feat => {
           if (feat in overrides) return; // Manuel override korunuyor
@@ -244,24 +245,18 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
 }
 
 async function run() {
-  const latestImportPath = path.resolve(__dirname, '../dump/.latest_import');
-  if (!fs.existsSync(latestImportPath)) {
-      console.error('İşlenecek yeni araç bulunamadı (dump/.latest_import eksik).');
+  const dumpDir = path.resolve(__dirname, '../dump');
+  const allDumpFiles = fs.readdirSync(dumpDir).filter(f => f.endsWith('.json'));
+
+  if (allDumpFiles.length === 0) {
+      console.error('dump/ dizininde işlenecek JSON dosyası bulunamadı.');
       process.exit(0);
   }
 
-  const filesToProcess = fs.readFileSync(latestImportPath, 'utf-8').split('\n').filter(Boolean);
   const carData = [];
-  const dumpDir = path.resolve(__dirname, '../dump');
-
-  for (const filename of filesToProcess) {
-      // Sadece dosya adını al (eğer tam yol gelirse diye önlem)
-      const pureFilename = path.basename(filename);
-      const filePath = path.join(dumpDir, pureFilename);
-      
-      if (fs.existsSync(filePath)) {
-          carData.push(JSON.parse(fs.readFileSync(filePath, 'utf-8')));
-      }
+  for (const filename of allDumpFiles) {
+      const filePath = path.join(dumpDir, filename);
+      carData.push(JSON.parse(fs.readFileSync(filePath, 'utf-8')));
   }
 
   if (carData.length === 0) {
@@ -273,6 +268,7 @@ async function run() {
   const CoupeWithoutSunroof = JSON.parse(fs.readFileSync(CoupeWithoutSunroofPath, 'utf-8'));
   const dieselWithSunroof = JSON.parse(fs.readFileSync(dieselWithSunroofPath, 'utf-8'));
   const granCoupe = JSON.parse(fs.readFileSync(granCoupePath, 'utf-8'));
+  const cabrio = fs.existsSync(cabrioPath) ? JSON.parse(fs.readFileSync(cabrioPath, 'utf-8')) : [];
   const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
   const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
   const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
@@ -280,52 +276,62 @@ async function run() {
   const cakal = JSON.parse(fs.readFileSync(cakalPath, 'utf-8'));
   const deleted = JSON.parse(fs.readFileSync(deletedPath, 'utf-8'));
 
-  let currentAllListings = [...CoupeWithSunroof, ...CoupeWithoutSunroof, ...dieselWithSunroof, ...rwdGasWithSunroof, ...rwdGasWithoutSunroof, ...granCoupe, ...sold, ...kazali, ...cakal, ...deleted];
+  // Taşınabilir (aktif) dosyalar — sold/cakal/deleted taşınmaz
+  const activeFiles = [
+    { name: 'COUPE_GAS_WITH_SUNROOF', data: CoupeWithSunroof },
+    { name: 'COUPE_GAS_WITHOUT_SUNROOF', data: CoupeWithoutSunroof },
+    { name: 'COUPE_DIESEL_WITH_SUNROOF', data: dieselWithSunroof },
+    { name: 'COUPE_GAS_RWD_WITH_SUNROOF', data: rwdGasWithSunroof },
+    { name: 'COUPE_GAS_RWD_WITHOUT_SUNROOF', data: rwdGasWithoutSunroof },
+    { name: 'GRAN_COUPE', data: granCoupe },
+    { name: 'CABRIO', data: cabrio },
+    { name: 'COUPE_GAS_WITH_SUNROOF_KAZALI', data: kazali },
+  ];
+  const frozenFiles = [
+    { name: 'SOLD', data: sold },
+    { name: 'CAKAL', data: cakal },
+    { name: 'DELETED', data: deleted },
+  ];
+
+  let currentAllListings = [...activeFiles, ...frozenFiles].flatMap(f => f.data);
+
+  function findCarAndSource(mobileDeId) {
+    for (const file of [...activeFiles, ...frozenFiles]) {
+      const car = file.data.find(c => c.mobileDeId === mobileDeId);
+      if (car) return { car, source: file };
+    }
+    return { car: null, source: null };
+  }
+
+  function determineTargetFile(car, rawCar) {
+    const overrides = car.overrideFeatures || {};
+    const isSunroof = car.equipmentFeatures.S403A === "yes";
+    const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "");
+    const isRWD = overrides.drivetrainType === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
+    const allText = `${rawCar.title || ""} ${rawCar.subTitle || ""} ${rawCar.description || ""}`;
+    const isGC = allText.includes("Gran Coupe") || allText.includes("Gran Coupé") || rawCar.title?.includes("GC") || rawCar.subTitle?.includes("GC");
+    const isCabrio = /cabrio/i.test(allText);
+    const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
+    const isDamaged = rawCar.isDamaged === true || (rawCar.attributes?.['Vehicle condition'] || '').includes('accident');
+
+    if (isCabrio) return 'CABRIO';
+    if (isGC) return 'GRAN_COUPE';
+    if (isDamaged) return 'COUPE_GAS_WITH_SUNROOF_KAZALI';
+    if (isDiesel) return 'COUPE_DIESEL_WITH_SUNROOF';
+    if (isRWD) return isSunroof ? 'COUPE_GAS_RWD_WITH_SUNROOF' : 'COUPE_GAS_RWD_WITHOUT_SUNROOF';
+    return isSunroof ? 'COUPE_GAS_WITH_SUNROOF' : 'COUPE_GAS_WITHOUT_SUNROOF';
+  }
 
   for (const car of carData) {
     const mobileDeIdMatch = car.url?.match(/id=(\d+)/) || car.url?.match(/\/(\d+)\.html/);
     const mobileDeId = mobileDeIdMatch ? mobileDeIdMatch[1] : null;
 
-    let existingCar = null;
-
-    // Sistemde var mı diye kontrol et (Yalnızca tam liste olan Coupe listelerine bakıyoruz, GC summary olduğu için es geçiyoruz)
-    if (mobileDeId) {
-        existingCar = CoupeWithSunroof.find(c => c.mobileDeId === mobileDeId);
-        if (!existingCar) {
-            existingCar = CoupeWithoutSunroof.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = dieselWithSunroof.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = rwdGasWithSunroof.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = rwdGasWithoutSunroof.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = granCoupe.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = sold.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = kazali.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = cakal.find(c => c.mobileDeId === mobileDeId);
-        }
-        if (!existingCar) {
-            existingCar = deleted.find(c => c.mobileDeId === mobileDeId);
-        }
-    }
+    const { car: existingCar, source } = mobileDeId ? findCarAndSource(mobileDeId) : { car: null, source: null };
 
     if (existingCar) {
-        // Mevcut aracı GÜNCELLE ve AUDIT_HISTORY oluştur
         const parsedCar = parseCar(car, existingCar.listingId);
         const { hasChanges, changes } = applyUpdatesAndGetChanges(existingCar, parsedCar);
 
-        // renewedTime değiştiyse auditHistory'ye ekle
         existingCar.auditHistory = existingCar.auditHistory || [];
         if (car.renewedTime) {
             const alreadyHasRenewed = existingCar.auditHistory.some(a =>
@@ -348,50 +354,40 @@ async function run() {
                 changes: changes,
                 auditDate: new Date().toISOString()
             });
-
-            // Tarih sırasına göre sırala
             existingCar.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
-
             console.log(`✅ ${existingCar.listingId} başarıyla güncellendi (Fiyat, km veya donanım değişti).`);
         } else {
             existingCar.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
             console.log(`ℹ️ ${existingCar.listingId} tarandı ancak değişen bir veri bulunamadı.`);
         }
+
+        // Dosya yerleşim kontrolü — sadece aktif dosyalardaki araçlar taşınabilir
+        const isFrozen = frozenFiles.some(f => f === source);
+        if (!isFrozen) {
+            const targetName = determineTargetFile(existingCar, car);
+            if (targetName !== source.name) {
+                const idx = source.data.indexOf(existingCar);
+                source.data.splice(idx, 1);
+                const targetFile = activeFiles.find(f => f.name === targetName);
+                targetFile.data.push(existingCar);
+                existingCar.auditHistory.push({
+                    action: `Dosya Taşıma: ${source.name} → ${targetName}`,
+                    detail: "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+                    changes: null,
+                    auditDate: new Date().toISOString()
+                });
+                console.log(`🔀 ${existingCar.listingId} taşındı: ${source.name} → ${targetName}`);
+            }
+        }
     } else {
-        // Yeni araç ekleme rutini
         const nextId = getNextListingId(currentAllListings);
         const parsedCar = parseCar(car, nextId);
-        
-        // Yeni ID'yi havuza ekle ki aynı çalışmada tekrar üretilmesin
         currentAllListings.push(parsedCar);
 
-        const isSunroof = parsedCar.equipmentFeatures.S403A === "yes";
-        const driveResult = determineDrivetrain(car.title || "", car.description || "", car.url || "");
-        const isRWD = driveResult.type === "RWD" && driveResult.certain;
-        const isGC = car.title?.includes("GC") || car.subTitle?.includes("GC") || car.description?.includes("Gran Coupe") || car.description?.includes("Gran Coupé");
-        const isDiesel = (car.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(car.title || "");
-
-        if (isGC) {
-          granCoupe.push(parsedCar);
-          console.log(`✅ Yeni eklendi: ${nextId} (GRAN_COUPE.json)`);
-        } else if (isDiesel) {
-          dieselWithSunroof.push(parsedCar);
-          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_DIESEL_WITH_SUNROOF.json)`);
-        } else if (isRWD) {
-          if (isSunroof) {
-            rwdGasWithSunroof.push(parsedCar);
-            console.log(`✅ Yeni eklendi: ${nextId} (COUPE_GAS_RWD_WITH_SUNROOF.json)`);
-          } else {
-            rwdGasWithoutSunroof.push(parsedCar);
-            console.log(`✅ Yeni eklendi: ${nextId} (COUPE_GAS_RWD_WITHOUT_SUNROOF.json)`);
-          }
-        } else if (isSunroof) {
-          CoupeWithSunroof.push(parsedCar);
-          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_GAS_WITH_SUNROOF.json)`);
-        } else {
-          CoupeWithoutSunroof.push(parsedCar);
-          console.log(`✅ Yeni eklendi: ${nextId} (COUPE_GAS_WITHOUT_SUNROOF.json)`);
-        }
+        const targetName = determineTargetFile(parsedCar, car);
+        const targetFile = activeFiles.find(f => f.name === targetName);
+        targetFile.data.push(parsedCar);
+        console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)`);
     }
   }
 
@@ -402,6 +398,8 @@ async function run() {
   fs.writeFileSync(rwdGasWithSunroofPath, JSON.stringify(rwdGasWithSunroof, null, 2));
   fs.writeFileSync(rwdGasWithoutSunroofPath, JSON.stringify(rwdGasWithoutSunroof, null, 2));
   fs.writeFileSync(granCoupePath, JSON.stringify(granCoupe, null, 2));
+  fs.writeFileSync(cabrioPath, JSON.stringify(cabrio, null, 2));
+  fs.writeFileSync(kazaliPath, JSON.stringify(kazali, null, 2));
 }
 
 run().catch(console.error);

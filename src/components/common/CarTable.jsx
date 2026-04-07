@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
-import { equipmentRules, getColorHex, getInteriorHex } from '../../data';
+import { equipmentRules, dealersData, getColorHex, getInteriorHex } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
-import { formatNotes, formatAdditionalFeatures } from '../../utils/helpers';
+import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
 
 const { Text, Link } = Typography;
 
@@ -31,14 +31,18 @@ export const CarTable = ({
       key: 'prop',
       fixed: 'left',
       width: 140,
-      render: (text, record) => <Text strong={record.isFeature} type={record.isFeature ? "warning" : "secondary"}>{text}</Text>
+      render: (text, record) => record.isSection
+        ? <Text strong style={{ fontSize: '13px' }}>{text}</Text>
+        : <Text strong={record.isFeature} type={record.isFeature ? "warning" : "secondary"}>{text}</Text>,
+      onCell: (record) => record.isSection ? { style: { backgroundColor: '#fafafa', borderBottom: '2px solid #d9d9d9' } } : {}
     }
   ].concat(cars.map((car, index) => ({
       title: (
         <Flex vertical align="center">
-          <Link strong href={car.listingUrl} target="_blank" delete={isRejected} underline={!isRejected}>{car.listingId}</Link>
+          <Link strong href={car.listingUrl} target="_blank" delete={isRejected || car.isSold} underline={!isRejected && !car.isSold}>{car.listingId}</Link>
           {isRejected && <Text type="danger">{rejectedLabel}</Text>}
-          {car.curatorPickBadge && !isRejected && <Text>{car.curatorPickBadge}</Text>}
+          {car.isSold && !isRejected && <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text>}
+          {car.curatorPickBadge && !isRejected && !car.isSold && <Text>{car.curatorPickBadge}</Text>}
           {car.auditHistory && car.auditHistory.length > 0 && (
             <Button type="text" size="small" icon={<ClockCircleOutlined />} onClick={() => showHistory(car)} style={{ marginTop: 4, fontSize: '12px' }}>
               Geçmiş
@@ -50,7 +54,14 @@ export const CarTable = ({
       key: car.listingId,
       align: 'center',
       width: 120,
+      onCell: (record) => {
+        const style = {};
+        if (record.isSection) Object.assign(style, { backgroundColor: '#fafafa', borderBottom: '2px solid #d9d9d9' });
+        else if (car.isSold) Object.assign(style, { backgroundColor: 'rgba(255, 77, 79, 0.06)' });
+        return { style };
+      },
       render: (val, record) => {
+        if (record.isSection) return null;
         if (record.isColor) {
           if (car.overrideFeatures?.exteriorColorName) return <Text>?</Text>;
           return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
@@ -109,10 +120,26 @@ export const CarTable = ({
   const listingInfoSource = [
     Object.assign({ key: 'loc', prop: 'Konum' }, Object.fromEntries(cars.map(car => [car.listingId, car.listingLocation]))),
     Object.assign({ key: 'seller', prop: 'Satıcı' }, Object.fromEntries(cars.map(car => [car.listingId, car.sellerTypeOrName]))),
+    Object.assign({ key: 'dealerNotes', prop: '🏢 Bayi Notları' }, Object.fromEntries(cars.map(car => {
+      const dealer = findDealerForListing(car.sellerTypeOrName, dealersData);
+      if (!dealer) return [car.listingId, '—'];
+      const allNotes = [...dealer.notes, ...(dealer.website ? [`🔗 ${dealer.website}`] : [])];
+      return [car.listingId, allNotes.length > 0 ? formatNotes(allNotes) : '—'];
+    }))),
     Object.assign({ key: 'owners', prop: 'Sahip Sayısı' }, Object.fromEntries(cars.map(car => [car.listingId, car.numberOfPreviousOwners]))),
     Object.assign({ key: 'warranty', prop: 'Garanti' }, Object.fromEntries(cars.map(car => [car.listingId, car.warranty?.exists === 'yes' ? 'Evet' : (car.warranty?.exists === 'no' ? 'Hayır' : '?')]))),
     Object.assign({ key: 'service', prop: 'Tam Servis' }, Object.fromEntries(cars.map(car => [car.listingId, car.service?.type === 'yes' ? 'Evet' : (car.service?.type === 'no' ? 'Hayır' : '?')]))),
     Object.assign({ key: 'inspection', prop: 'Muayene (TÜV)' }, Object.fromEntries(cars.map(car => [car.listingId, car.nextInspectionDate]))),
+    Object.assign({ key: 'dates', prop: '📅 İlan Tarihleri' }, Object.fromEntries(cars.map(car => {
+      const history = car.auditHistory || [];
+      const published = history.find(h => h.action?.includes('İlan Yayınlandı'));
+      const sold = history.find(h => h.action?.startsWith('SATILDI'));
+      const fmt = (d) => d ? new Date(d).toLocaleDateString('tr-TR') : null;
+      const parts = [];
+      if (published) parts.push(`Eklendi: ${fmt(published.auditDate)}`);
+      if (sold) parts.push(`Satıldı: ${fmt(sold.auditDate)}`);
+      return [car.listingId, parts.length > 0 ? parts.join(' → ') : '—'];
+    }))),
   ];
 
   const threeStarFeatures = equipmentRules
@@ -197,38 +224,34 @@ export const CarTable = ({
     return title;
   };
 
+  const sectionHeader = (label) => {
+    const row = { key: `section_${label}`, prop: label, isSection: true };
+    cars.forEach(car => { row[car.listingId] = ''; });
+    return row;
+  };
+
+  const unifiedSource = [
+    ...dataSource,
+    sectionHeader(`🇳🇱 BPM & Toplam Maliyet ${yearLabel}`),
+    ...costSource,
+    sectionHeader(`📉 Yıpranma & Düzeltilmiş ${yearLabel}`),
+    ...evaluationSource,
+    sectionHeader(`📋 İlan Bilgisi ${yearLabel}`),
+    ...listingInfoSource,
+    sectionHeader(`⭐⭐⭐ 3 Yıldızlı Donanımlar ${yearLabel}`),
+    ...threeStarSource,
+    sectionHeader(`⭐⭐ 2 Yıldızlı Donanımlar ${yearLabel}`),
+    ...twoStarSource,
+    sectionHeader(`⭐ 1 Yıldızlı Donanımlar ${yearLabel}`),
+    ...oneStarSource,
+    sectionHeader(`Opsiyonel Donanımlar ${yearLabel}`),
+    ...zeroStarSource,
+  ];
+
   return (
     <Flex vertical gap="large">
       <Card title={renderTitle()}>
-        <Table dataSource={dataSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} rowHoverable={false} />
-      </Card>
-
-      <Card title={`🇳🇱 BPM & Toplam Maliyet ${yearLabel}`}>
-        <Table dataSource={costSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
-      </Card>
-
-      <Card title={`📋 İlan Bilgisi ${yearLabel}`}>
-        <Table dataSource={listingInfoSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
-      </Card>
-
-      <Card title={`⭐⭐⭐ 3 Yıldızlı Donanımlar ${yearLabel}`}>
-        <Table dataSource={threeStarSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
-      </Card>
-
-      <Card title={`⭐⭐ 2 Yıldızlı Donanımlar ${yearLabel}`}>
-        <Table dataSource={twoStarSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
-      </Card>
-
-      <Card title={`⭐ 1 Yıldızlı Donanımlar ${yearLabel}`}>
-        <Table dataSource={oneStarSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
-      </Card>
-
-      <Card title={`Opsiyonel Donanımlar ${yearLabel}`}>
-        <Table dataSource={zeroStarSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
-      </Card>
-
-      <Card title={`📉 Yıpranma & Düzeltilmiş ${yearLabel}`}>
-        <Table dataSource={evaluationSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} showHeader={false} rowHoverable={false} />
+        <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} rowHoverable={false} />
       </Card>
 
       <Modal

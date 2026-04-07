@@ -42,7 +42,7 @@ const EQUIP_KEYS_ORDER = [
   'S5DNA', 'S6U3A', 'S715A', 'S2VLA', 'S494A', 'S248A',
   'S420A', 'S1MAA', 'S5ACA', 'S6C4A', 'S430A', 'S4AWA',
   'S775A', 'S493A', 'S536A', 'S2NHA', 'S3ACA', 'S3ADA', 'S3AGA',
-  'S488A', 'S521A', 'S524A', 'S265A', 'S216A', 'S302A'
+  'S488A', 'S521A', 'S524A', 'S265A', 'S216A', 'S302A', 'S4NHA'
 ];
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
@@ -54,7 +54,8 @@ const files = [
   'COUPE_GAS_RWD_WITH_SUNROOF.json', 
   'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
   'DELETED_CARS.json',
-  'GRAN_COUPE.json'
+  'GRAN_COUPE.json',
+  'CABRIO.json'
 ];
 
 const isFix = process.argv.includes('--fix');

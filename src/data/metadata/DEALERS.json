@@ -1,0 +1,30 @@
+[
+  {
+    "dealerId": "riller-schnauck",
+    "displayName": "Riller & Schnauck",
+    "matchPatterns": ["Riller", "Schnauck"],
+    "notes": ["Türkçe konuşuyorlar!", "BMW ve MINI yetkili bayi (Vertragshändler)"],
+    "website": null
+  },
+  {
+    "dealerId": "bmw-muenchen",
+    "displayName": "BMW München",
+    "matchPatterns": ["BMW München"],
+    "notes": ["BMW resmi bayi", "Türkçe konuşuyorlar!"],
+    "website": null
+  },
+  {
+    "dealerId": "trimia-gmbh",
+    "displayName": "TRIMIA GMBH",
+    "matchPatterns": ["TRIMIA"],
+    "notes": ["\"i.G.\" (kuruluş aşamasında), gmx.de email — güvenilirlik sorgulanabilir"],
+    "website": null
+  },
+  {
+    "dealerId": "unterberger",
+    "displayName": "Autohaus Unterberger",
+    "matchPatterns": ["Unterberger"],
+    "notes": [],
+    "website": "at.unterberger.cc"
+  }
+]

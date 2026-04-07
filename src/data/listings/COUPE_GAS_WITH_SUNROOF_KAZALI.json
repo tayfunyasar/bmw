@@ -42,9 +42,9 @@
       "S322A": "yes",
       "S2VFA": "no",
       "S459A": "yes",
-      "S5DNA": "unknown",
+      "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
       "S420A": "yes",
       "S1MAA": "unknown",
@@ -55,7 +55,19 @@
       "S775A": "unknown",
       "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S493A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -75,6 +87,57 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-01T22:09:43.740Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S488A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S4NHA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T21:17:19.933Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -102,7 +165,7 @@
     ],
     "numberOfPreviousOwners": "2",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
       "type": "unknown",
@@ -121,7 +184,7 @@
       "S403A": "yes",
       "S5AZA": "yes",
       "S5AUA": "unknown",
-      "S688A": "unknown",
+      "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "yes",
       "S5DN_360": "yes",
@@ -142,11 +205,29 @@
       "S775A": "unknown",
       "S536A": "unknown",
       "S2NHA": "unknown",
-      "S3ACA": "unknown"
+      "S3ACA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S3ADA": "yes",
+      "S3AGA": "yes",
+      "S488A": "unknown",
+      "S493A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-17T20:05:27.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-17T20:05:27.000Z"
@@ -245,6 +326,61 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.214Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "equipmentFeatures.S688A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S4NHA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T21:17:19.939Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -255,5 +391,127 @@
       "Onarılmış kaza hasarı (Repaired accident damage)",
       "🟠 Toplam €58,848 — bütçe üst sınırına yakın"
     ]
+  },
+  {
+    "listingId": "C142",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-a-m%C3%BCnchen/450443658.html",
+    "mobileDeId": "450443658",
+    "exteriorColorName": "Grey",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 48000,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 67000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "03/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 80807 München",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-16T09:45:03.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-16T09:45:03.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-04-07T21:17:19.938Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

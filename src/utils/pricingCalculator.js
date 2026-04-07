@@ -1,4 +1,4 @@
-import { CoupeGasWithSunroof, equipmentRules, PRICING_CONSTANTS } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS } from '../data';
 
 const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS } = PRICING_CONSTANTS;
 
@@ -48,21 +48,11 @@ const evaluateCarFeatures = (carFeatures) => {
   }));
 };
 const calculateFeaturesValue = (evaluatedFeatures) => {
-  // Sadece bilinen (yes/no) donanımlar üzerinden oran hesapla
-  const knownFeatures = evaluatedFeatures.filter(f => f.value === "yes" || f.value === "no");
-  const maxPossibleValue = evaluatedFeatures.reduce((sum, f) => sum + (f.price * f.score), 0);
-
-  if (knownFeatures.length === 0 || maxPossibleValue === 0) return 0;
-
-  const knownYesValue = knownFeatures
+  // yes = tam değer, no = 0, unknown = 0 (ne ödül ne ceza)
+  // Sadece doğrulanmış donanımlar düzeltilmiş maliyeti düşürür
+  return evaluatedFeatures
     .filter(f => f.value === "yes")
     .reduce((sum, f) => sum + (f.price * f.score), 0);
-  const knownMaxValue = knownFeatures
-    .reduce((sum, f) => sum + (f.price * f.score), 0);
-
-  // Oran: bilinen donanımlar arasındaki yes oranını toplam potansiyele uygula
-  const ratio = knownMaxValue > 0 ? knownYesValue / knownMaxValue : 0;
-  return Math.round(maxPossibleValue * ratio);
 };
 
 const calculateCriticalFeaturesScore = (evaluatedFeatures) => {
@@ -292,5 +282,8 @@ const extractSortedYears = (groupedListings) => {
 };
 
 export const evaluatedListings = createEvaluatedListings(CoupeGasWithSunroof);
+const evaluatedSold = createEvaluatedListings(soldGasListings).map(car => Object.assign(car, { isSold: true }));
 export const yearGroups = groupListingsByYear(evaluatedListings);
 export const sortedYears = extractSortedYears(yearGroups);
+
+export const allByTotalCost = [...evaluatedListings, ...evaluatedSold].sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);

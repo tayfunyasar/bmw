@@ -66,7 +66,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -151,7 +152,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -202,7 +204,7 @@
       "S403A": "yes",
       "S5AZA": "unknown",
       "S5AUA": "unknown",
-      "S688A": "no",
+      "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
@@ -223,7 +225,7 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
       "S3ACA": "unknown",
@@ -234,7 +236,8 @@
       "S524A": "yes",
       "S265A": "yes",
       "S216A": "yes",
-      "S302A": "yes"
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -254,6 +257,28 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-07T13:37:02.463Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S688A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:51:17.492Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:59:03.059Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -300,7 +325,7 @@
       "S5DN_360": "yes",
       "KGNL": "unknown",
       "S322A": "yes",
-      "S2VFA": "unknown",
+      "S2VFA": "yes",
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
@@ -326,7 +351,8 @@
       "S524A": "unknown",
       "S265A": "yes",
       "S216A": "unknown",
-      "S302A": "yes"
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -346,6 +372,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-07T13:37:02.464Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2VFA": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T21:08:00.722Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

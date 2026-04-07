@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Tabs } from 'antd';
-import { yearGroups, sortedYears } from '../utils/pricingCalculator';
+import { yearGroups, sortedYears, allByTotalCost } from '../utils/pricingCalculator';
 import { soldGasListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
 import { VehicleTableCard } from './VehicleTableCard';
+import { CarTable } from './common/CarTable';
 import { YearlyComparisonTab } from './tabs/YearlyComparisonTab';
 import { RulesTab } from './tabs/RulesTab';
 import { BookmarksTab } from './tabs/BookmarksTab';
@@ -13,7 +14,7 @@ import { DeletedCarsTab } from './tabs/DeletedCarsTab';
 export const MainTabs = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const currentTab = location.pathname.replace('/', '') || sortedYears[0];
+  const currentTab = location.pathname.replace('/', '') || 'all-adjusted';
 
   const handleTabChange = (key) => {
     navigate(`/${key}`);
@@ -23,7 +24,11 @@ export const MainTabs = () => {
     <Tabs
       activeKey={currentTab}
       onChange={handleTabChange}
-      items={sortedYears.map(year => {
+      items={[{
+          key: 'all-adjusted',
+          label: `💰 TOPLAM MALİYET — ${allByTotalCost.length} araç`,
+          children: <CarTable cars={allByTotalCost} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} />
+        }].concat(sortedYears.map(year => {
           const yearlyCars = yearGroups[year];
           const winningCarIndex = yearlyCars.reduce((bestIndex, car, currentIndex) => car.metrics.adjustedCost < yearlyCars[bestIndex].metrics.adjustedCost ? currentIndex : bestIndex, 0);
 
@@ -32,7 +37,7 @@ export const MainTabs = () => {
             label: `📅 ${year} MODEL YILI — ${yearlyCars.length} araç`,
             children: <YearlyComparisonTab year={year} yearlyCars={yearlyCars} winningCarIndex={winningCarIndex} />
           };
-        }).concat([
+        })).concat([
         {
           key: 'bookmarks',
           label: '🔖 Siteler & Bookmarklar',

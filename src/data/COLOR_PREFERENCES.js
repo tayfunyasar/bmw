@@ -1,4 +1,4 @@
-export const favColors = ["Tansanit Blue","Tansanit Blue II","Tanzanit Blue","Tanzanit Blue II","Tansanitblau","Tansanitblau II"];
+export const favColors = ["Tansanit Blue","Tansanit Blue II","Tanzanit Blue","Tanzanit Blue II","Tansanitblau","Tansanitblau II","Blue Metallic"];
 export const notFavColors = ["Arctic Race Blue","San Remo Green","M Brooklyn Grau","Brooklyn Grau"];
 export const isColorFav = (color) => favColors.some(f => color?.toLowerCase().includes(f.toLowerCase()));
 export const isColorNotFav = (color) => notFavColors.some(f => color?.toLowerCase().includes(f.toLowerCase()));

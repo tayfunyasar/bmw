@@ -66,7 +66,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -164,7 +165,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -252,7 +254,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -347,7 +350,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -439,7 +443,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -531,7 +536,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -634,7 +640,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -729,7 +736,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -830,7 +838,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -931,7 +940,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1134,7 +1144,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "yes"
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1347,5 +1358,179 @@
       "⚠️ BMW Garanti 09.03.2026 — BİTTİ!",
       "🟠 Toplam €61,114 — bütçe üst sınırına yakın"
     ]
+  },
+  {
+    "listingId": "C152",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-inov-u-park-plus-lm-19-m-technik-bmw-se-karlsdorf-neuthard/452231805.html",
+    "mobileDeId": "452231805",
+    "exteriorColorName": "Sanremo Green",
+    "interiorColorName": "Other, Other",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 46900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 53000,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      3
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "F1 Automobile ★5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Neuthard",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-04T12:40:17.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-04T12:40:17.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:23:07.113Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S2VFA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
+      },
+      {
+        "action": "SATILDI⭐ Sanremo Green, €46,900, 53K km.",
+        "detail": "",
+        "changes": null,
+        "auditDate": "2026-04-07T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

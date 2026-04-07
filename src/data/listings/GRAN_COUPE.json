@@ -66,7 +66,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -157,7 +158,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -248,7 +250,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -339,7 +342,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -432,7 +436,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -523,7 +528,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -614,7 +620,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -705,7 +712,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -796,7 +804,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -887,7 +896,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -978,7 +988,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1069,7 +1080,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1160,7 +1172,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1250,7 +1263,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1352,7 +1366,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1443,7 +1458,8 @@
       "S524A": "unknown",
       "S265A": "unknown",
       "S216A": "unknown",
-      "S302A": "unknown"
+      "S302A": "unknown",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1502,7 +1518,7 @@
       "S403A": "yes",
       "S5AZA": "yes",
       "S5AUA": "yes",
-      "S688A": "unknown",
+      "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
@@ -1523,7 +1539,7 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
+      "S493A": "yes",
       "S536A": "yes",
       "S2NHA": "yes",
       "S3ACA": "unknown",
@@ -1534,7 +1550,8 @@
       "S524A": "yes",
       "S265A": "yes",
       "S216A": "yes",
-      "S302A": "yes"
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1643,6 +1660,28 @@
           }
         },
         "auditDate": "2026-04-07T13:30:51.823Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S688A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:51:17.490Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:59:03.058Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1687,7 +1726,7 @@
       "S403A": "yes",
       "S5AZA": "unknown",
       "S5AUA": "yes",
-      "S688A": "unknown",
+      "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
@@ -1708,7 +1747,7 @@
       "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "yes",
-      "S493A": "unknown",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "unknown",
       "S3ACA": "yes",
@@ -1719,7 +1758,8 @@
       "S524A": "yes",
       "S265A": "yes",
       "S216A": "yes",
-      "S302A": "yes"
+      "S302A": "yes",
+      "S4NHA": "unknown"
     },
     "auditHistory": [
       {
@@ -1782,6 +1822,28 @@
           }
         },
         "auditDate": "2026-04-07T13:30:51.820Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S688A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:51:17.486Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:59:03.054Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1789,5 +1851,275 @@
       "🟡 61 gündür satışta",
       "🔴 Toplam €78,172 — bütçe aşımı"
     ]
+  },
+  {
+    "listingId": "C165",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-pano-inno-standheizung-viernheim/446186430.html",
+    "mobileDeId": "446186430",
+    "exteriorColorName": "SONDERLACKIERUNG",
+    "interiorColorName": "Full leather, Beige",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 45990,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 64000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      1
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Wiegand Automobile ★3.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 68519 Viernheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-01-20T15:40:23.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-07T09:09:40.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-07T20:15:27.221Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:32:16.850Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S688A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:51:17.486Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:59:03.053Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → GRAN_COUPE",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-04-07T20:59:38.493Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C141",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sportpaket-pro-roth/450118212.html",
+    "mobileDeId": "450118212",
+    "exteriorColorName": "Sanremo Green",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 52500,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 54728,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "03/2026",
+    "sellerTypeOrName": "Autohaus Waldmüller GmbH & Co. KG ★4.1",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 91154 Roth",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-12T13:29:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-12T13:29:10.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.366Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → GRAN_COUPE",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-04-07T20:59:38.496Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

@@ -295,317 +295,6 @@
     ]
   },
   {
-    "listingId": "C56",
-    "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=450721167",
-    "mobileDeId": "450721167",
-    "exteriorColorName": "saphirschwarz",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 48790,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 16900,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      11
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.5",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 88131 Lindau",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [
-      "Dandik jant var"
-    ],
-    "listingDescriptionNotes": [
-      "MwSt ausweisbar"
-    ],
-    "listingAdditionalFeatures": [
-      "18\" 848 M Bicolor (küçük!)",
-      "Edelholz Eiche Maser interior (meşe ağaç)"
-    ],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "no",
-      "S2T4A": "yes",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "unknown",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-19T04:37:20.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-19T04:37:20.000Z"
-      },
-      {
-        "action": "YENİ €48,790, 16.9K km, 12/2022. Saphirschwarz+Vernasca. M Diff+M Brake+VSS+M Aero+Comfort Access. Laser/HK/HUD/DA+/360°/Adaptive M yok. 18\" jantlar. MwSt ausweisbar. Unterberger ★4.5",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-20T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-03-20T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "sellerTypeOrName": {
-            "old": "Autohaus Unterberger ★4.5",
-            "new": "Autohaus Unterberger GmbH ★4.5"
-          },
-          "listingLocation": {
-            "old": "🇩🇪 Lindau",
-            "new": "🇩🇪 88131 Lindau"
-          },
-          "exteriorColorName": {
-            "old": "Saphirschwarz",
-            "new": "saphirschwarz"
-          },
-          "interiorColorName": {
-            "old": "Vernasca Siyah",
-            "new": "Full leather, Black"
-          },
-          "co2EmissionsGramPerKm": {
-            "old": 173,
-            "new": 0
-          },
-          "equipmentFeatures.Warranty": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.Harman Kardon": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.M Sport Diff": {
-            "old": "yes",
-            "new": "unknown"
-          },
-          "equipmentFeatures.Sun Prot Glass": {
-            "old": "unknown",
-            "new": "no"
-          },
-          "equipmentFeatures.Sport Exhaust": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.Black Headliner": {
-            "old": "unknown",
-            "new": "no"
-          },
-          "equipmentFeatures.Storage Pkg": {
-            "old": "yes",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-03-31T15:52:00.307Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S3ACA": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-03-31T16:49:01.004Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "service": {
-            "old": {
-              "history": []
-            },
-            "new": {
-              "type": "unknown",
-              "history": []
-            }
-          }
-        },
-        "auditDate": "2026-03-31T20:31:04.605Z"
-      },
-      {
-        "action": "Donanım Yeniden Hesaplandı",
-        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
-        "changes": {
-          "equipmentFeatures.S688A": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-04-01T20:15:12.863Z"
-      },
-      {
-        "action": "Default Davranış Güncellemesi",
-        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
-        "changes": {
-          "equipmentFeatures.S5AZA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5AUA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S610A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DN_360": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.KGNL": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S420A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S775A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-01T20:22:48.210Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "warranty": {
-            "old": {
-              "exists": true
-            },
-            "new": {
-              "exists": "yes"
-            }
-          },
-          "equipmentFeatures.S494A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S248A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S488A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S715A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S265A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S302A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:30:51.823Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S2T4A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T20:32:16.854Z"
-      }
-    ],
-    "cardThemeColorHex": "#fb7185",
-    "aiCommentary": [
-      "🟢 14 gündür satışta — yeni ilan",
-      "🟡 Servis geçmişi bilinmiyor"
-    ]
-  },
-  {
     "listingId": "C39",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sportpaket-hud-leder-memo-r%C3%B6dermark/446310350.html",
     "mobileDeId": "446310350",
@@ -1621,7 +1310,7 @@
     "exteriorColorName": null,
     "interiorColorName": "Full leather",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 51000,
+    "basePriceEuro": 49000,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 40000,
     "firstRegistrationYearAndMonth": [
@@ -1693,7 +1382,10 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "exteriorColorName": "Blue Metallic"
+      "exteriorColorName": {
+        "value": "Blue Metallic",
+        "reason": "mobile.de renk bilgisi hatalı, kullanıcı düzeltmesi"
+      }
     },
     "auditHistory": [
       {
@@ -1936,6 +1628,17 @@
           }
         },
         "auditDate": "2026-04-07T13:30:51.821Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 51000,
+            "new": 49000
+          }
+        },
+        "auditDate": "2026-04-07T22:13:50.361Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
@@ -2860,7 +2563,7 @@
       "S5AZA": "unknown",
       "S5AUA": "unknown",
       "S688A": "yes",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
       "KGNL": "unknown",
@@ -3072,6 +2775,17 @@
           }
         },
         "auditDate": "2026-04-07T20:51:17.492Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-08T20:15:25.139Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3116,7 +2830,7 @@
       "S5AZA": "yes",
       "S5AUA": "yes",
       "S688A": "yes",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "unknown",
       "S5DN_360": "unknown",
       "KGNL": "yes",
@@ -3332,6 +3046,17 @@
           }
         },
         "auditDate": "2026-04-07T21:08:00.721Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-08T20:15:25.138Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3821,8 +3546,14 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "co2EmissionsGramPerKm": 177,
-      "vin": "WBA11AR090CM35217"
+      "co2EmissionsGramPerKm": {
+        "value": 177,
+        "reason": "Crawl verisi eksik, manuel girildi"
+      },
+      "vin": {
+        "value": "WBA11AR090CM35217",
+        "reason": "Manuel girildi"
+      }
     },
     "auditHistory": [
       {
@@ -4183,179 +3914,6 @@
           }
         },
         "auditDate": "2026-04-07T21:08:00.722Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C137",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-xdrive-wolnzach/450536847.html",
-    "mobileDeId": "450536847",
-    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 48000,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 69500,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      4
-    ],
-    "numberOfPreviousOwners": "2",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "Autohaus Reith GmbH & Co. KG ★3",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 163,
-    "listingLocation": "🇩🇪 85283 Wolnzach",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "yes",
-      "S688A": "no",
-      "S2T4A": "unknown",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "yes",
-      "S322A": "yes",
-      "S2VFA": "yes",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "yes",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-17T09:06:00.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-31T09:33:12.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-04T10:52:55.927Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S494A": {
-            "new": "yes"
-          },
-          "equipmentFeatures.S248A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ADA": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3AGA": {
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-04T10:59:37.373Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S5AUA": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S494A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S715A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S521A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S265A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S302A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:30:51.822Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S1MAA": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T20:51:17.489Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S2VFA": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T21:08:00.717Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5046,7 +4604,7 @@
     "exteriorColorName": "Black Sapphire ",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 44990,
+    "basePriceEuro": 44490,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 56000,
     "firstRegistrationYearAndMonth": [
@@ -5162,6 +4720,17 @@
           }
         },
         "auditDate": "2026-04-07T13:30:51.822Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 44990,
+            "new": 44490
+          }
+        },
+        "auditDate": "2026-04-07T22:13:50.363Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5590,7 +5159,10 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "exteriorColorName": "Alpinweiß"
+      "exteriorColorName": {
+        "value": "Alpinweiß",
+        "reason": "Crawl verisi eksik, kullanıcı teyidi: Alpinweiß"
+      }
     },
     "auditHistory": [
       {

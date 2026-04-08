@@ -305,7 +305,10 @@
     ],
     "cardThemeColorHex": "#c084fc",
     "overrideFeatures": {
-      "S403A": "yes"
+      "S403A": {
+        "value": "yes",
+        "reason": "Fotoğraflardan sunroof teyit edildi"
+      }
     },
     "aiCommentary": [
       "🟢 28 gündür satışta — yeni ilan",

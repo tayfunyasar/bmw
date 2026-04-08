@@ -17,7 +17,8 @@
       "Open-Air Paket",
       "Glasdach",
       "Dachfenster",
-      "Schiebedach"
+      "Schiebedach",
+      "Glass Roof"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -81,6 +82,7 @@
     "score": 3,
     "tag": "Drift & cornering",
     "features": [],
+    "impliedBy": ["M Sportpaket Pro", "M Sport Pro", "M Sport Package Pro"],
     "description": [
       "M Sportdifferential",
       "M Sportdifferenzial",
@@ -200,7 +202,7 @@
     "code": "S2VFA",
     "name": "Adaptive M Suspension",
     "price": 700,
-    "score": 1,
+    "score": 2,
     "tag": "Handling upgrade",
     "features": [
       "Dynamic chassis control"
@@ -243,6 +245,7 @@
       "PARKING ASSISTANT PLUS",
       "Parkassistent-Paket Plus",
       "Parkassistent Plus",
+      "Parking Assistance System Plus",
       "Automatisches Einparken"
     ],
     "props": {},
@@ -315,7 +318,8 @@
     "description": [
       "Abgedunkelte Verglasung",
       "Sonnenschutzverglasung",
-      "Sichtschutzglas"
+      "Sichtschutzglas",
+      "Sun Protection Glazing"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -359,6 +363,7 @@
       "Innen- und Außenspiegel",
       "Innen-/Außenspiegel",
       "Abblendautomatik",
+      "automatisch abblendend",
       "Spiegel-Paket",
       "Spiegelpaket"
     ],
@@ -477,7 +482,8 @@
     "description": [
       "Ablagenpaket",
       "Ablagepaket",
-      "Ablage-Paket"
+      "Ablage-Paket",
+      "Storage Compartment Package"
     ],
     "props": {},
     "defaultStatus": "no"

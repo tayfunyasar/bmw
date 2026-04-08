@@ -58,12 +58,13 @@ export const CarTable = ({
         const style = {};
         if (record.isSection) Object.assign(style, { backgroundColor: '#fafafa', borderBottom: '2px solid #d9d9d9' });
         else if (car.isSold) Object.assign(style, { backgroundColor: 'rgba(255, 77, 79, 0.06)' });
+        else if (car.curatorPickBadge) Object.assign(style, { backgroundColor: 'rgba(82, 196, 26, 0.06)' });
         return { style };
       },
       render: (val, record) => {
         if (record.isSection) return null;
         if (record.isColor) {
-          if (car.overrideFeatures?.exteriorColorName) return <Text>?</Text>;
+          if (car.overrideFeatures?.exteriorColorName) return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
           return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
         }
         if (record.isInterior) {
@@ -85,16 +86,25 @@ export const CarTable = ({
   const overrideLabels = {
     co2EmissionsGramPerKm: (v) => `CO₂: ${v} g/km`,
     exteriorColorName: (v) => `Renk: ${v}`,
+    mileageKm: (v) => `KM: ${v?.toLocaleString?.() || v}`,
+    drivetrainType: (v) => `Tahrik: ${v}`,
     vin: (v) => `VIN: ${v}`,
-    S403A: () => 'Sunroof: ✅',
+    S403A: (v) => `Sunroof: ${v === 'no' ? '❌' : '✅'}`,
   };
+
+  // Override değeri { value, reason } objesi veya düz değer olabilir
+  const getOverrideValue = (entry) => entry?.value !== undefined ? entry.value : entry;
+  const getOverrideReason = (entry) => entry?.reason || null;
 
   const formatOverrides = (car) => {
     const ov = car.overrideFeatures;
     if (!ov || !Object.keys(ov).length) return null;
     return Object.entries(ov).map(([k, v]) => {
+      const val = getOverrideValue(v);
+      const reason = getOverrideReason(v);
       const fmt = overrideLabels[k];
-      return fmt ? fmt(v) : `${k}: ${v}`;
+      const label = fmt ? fmt(val) : `${k}: ${val}`;
+      return reason ? `${label} (${reason})` : label;
     }).join('\n');
   };
 
@@ -106,7 +116,7 @@ export const CarTable = ({
     Object.assign({ key: 'mileage', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString()} km`]))),
     Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => [car.listingId, car.firstRegistrationYearAndMonth ? `${car.firstRegistrationYearAndMonth[1].toString().padStart(2, '0')}/${car.firstRegistrationYearAndMonth[0]}` : '?']))),
     Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration]))),
-    Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.overrideFeatures?.co2EmissionsGramPerKm ? '?' : (car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?')]))),
+    Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?']))),
     Object.assign({ key: 'overrides', prop: '🔧 Override' }, Object.fromEntries(cars.map(car => {
       const text = formatOverrides(car);
       return [car.listingId, text ? formatNotes(text.split('\n')) : '—'];

@@ -217,7 +217,7 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
   ];  
   const overrides = existingCar.overrideFeatures || {};
   fieldsToCheck.forEach(key => {
-      if (key in overrides) return; // Manuel override korunuyor
+      if (overrides[key]) return; // Manuel override korunuyor (obje veya değer varsa atla)
       if (newCar[key] !== undefined && existingCar[key] !== newCar[key] && JSON.stringify(existingCar[key]) !== JSON.stringify(newCar[key])) {
           changes[key] = { old: existingCar[key], new: newCar[key] };
           existingCar[key] = newCar[key];
@@ -229,7 +229,7 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
   // overrideFeatures'da tanımlı olanlar ASLA otomatik güncellenmez
   if (newCar.equipmentFeatures && existingCar.equipmentFeatures) {
       Object.keys(newCar.equipmentFeatures).forEach(feat => {
-          if (feat in overrides) return; // Manuel override korunuyor
+          if (overrides[feat]) return; // Manuel override korunuyor
           if (existingCar.equipmentFeatures[feat] !== newCar.equipmentFeatures[feat]) {
               changes[`equipmentFeatures.${feat}`] = {
                   old: existingCar.equipmentFeatures[feat],
@@ -253,8 +253,17 @@ async function run() {
       process.exit(0);
   }
 
-  const carData = [];
+  // Her mobileDeId için sadece en yeni dump dosyasını al (flip-flop önleme)
+  const latestDumps = {};
   for (const filename of allDumpFiles) {
+      const [id, tsRaw] = filename.replace('.json', '').split('_');
+      const ts = parseInt(tsRaw);
+      if (!latestDumps[id] || ts > latestDumps[id].ts) {
+          latestDumps[id] = { ts, filename };
+      }
+  }
+  const carData = [];
+  for (const { filename } of Object.values(latestDumps)) {
       const filePath = path.join(dumpDir, filename);
       carData.push(JSON.parse(fs.readFileSync(filePath, 'utf-8')));
   }
@@ -307,7 +316,8 @@ async function run() {
     const overrides = car.overrideFeatures || {};
     const isSunroof = car.equipmentFeatures.S403A === "yes";
     const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "");
-    const isRWD = overrides.drivetrainType === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
+    const driveOverride = overrides.drivetrainType?.value || overrides.drivetrainType;
+    const isRWD = driveOverride === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
     const allText = `${rawCar.title || ""} ${rawCar.subTitle || ""} ${rawCar.description || ""}`;
     const isGC = allText.includes("Gran Coupe") || allText.includes("Gran Coupé") || rawCar.title?.includes("GC") || rawCar.subTitle?.includes("GC");
     const isCabrio = /cabrio/i.test(allText);

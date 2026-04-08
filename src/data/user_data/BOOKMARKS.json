@@ -22,5 +22,9 @@
   {
     "title": "mobile.de — M440i/M440d xDrive, ≤70K km, ≤€57K, 2021+, ≥272 kW",
     "url": "https://www.mobile.de/tr/araçlar/arama.html?isSearchRequest=true&s=Car&vc=Car&ms=3500%3B120&ms=3500%3B335&fr=2021&pw=272&p=%3A57000&ml=%3A70000&sb=doc&od=down"
+  },
+  {
+    "title": "BMW.de Gebrauchtwagen — M4 G22 BPS, ≤€55,900, ≤60K km, 2021+",
+    "url": "https://www.bmw.de/de-de/sl/gebrauchtwagen/results?filters=%257B%2522MARKETING_MODEL_RANGE%2522%253A%255B%2522M4_G22%2522%255D%252C%2522PRICE%2522%253A%255Bnull%252C55900%255D%252C%2522IS_INSTALLMENT%2522%253Afalse%252C%2522USED_CAR_MILEAGE%2522%253A%255B0%252C60000%255D%252C%2522REGISTRATION_YEAR%2522%253A%255B2021%252C-1%255D%252C%2522USED_CARS_PROGRAM%2522%253A%255B%2522BPS%2522%255D%257D&sorting=SORT_ORDER_SF_OFFER_INSTALLMENT_ASC"
   }
 ]

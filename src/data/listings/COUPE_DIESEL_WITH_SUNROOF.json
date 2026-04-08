@@ -320,7 +320,7 @@
       "S5AZA": "unknown",
       "S5AUA": "yes",
       "S688A": "yes",
-      "S2T4A": "unknown",
+      "S2T4A": "yes",
       "S610A": "yes",
       "S5DN_360": "yes",
       "KGNL": "unknown",
@@ -383,6 +383,17 @@
           }
         },
         "auditDate": "2026-04-07T21:08:00.722Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-08T20:15:25.139Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

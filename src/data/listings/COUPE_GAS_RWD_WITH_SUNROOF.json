@@ -239,7 +239,10 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "drivetrainType": "RWD"
+      "drivetrainType": {
+        "value": "RWD",
+        "reason": "Kullanıcı teyidi: araç RWD"
+      }
     },
     "auditHistory": [
       {

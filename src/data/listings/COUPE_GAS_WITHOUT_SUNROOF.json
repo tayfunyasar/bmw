@@ -1776,7 +1776,10 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "S403A": "no"
+      "S403A": {
+        "value": "no",
+        "reason": "Dump verisinde sunroof bilgisi yok, kullanıcı teyidi"
+      }
     },
     "auditHistory": [
       {
@@ -2085,7 +2088,10 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "S403A": "no"
+      "S403A": {
+        "value": "no",
+        "reason": "Kullanıcı teyidi: sunroof yok"
+      }
     },
     "auditHistory": [
       {
@@ -2386,7 +2392,10 @@
       "S4NHA": "unknown"
     },
     "overrideFeatures": {
-      "S403A": "no"
+      "S403A": {
+        "value": "no",
+        "reason": "Kullanıcı teyidi: sunroof yok"
+      }
     },
     "auditHistory": [
       {

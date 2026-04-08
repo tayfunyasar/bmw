@@ -385,7 +385,7 @@
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 48588,
     "estimatedImportTaxEuro": 7428,
-    "mileageKm": 0,
+    "mileageKm": 50000,
     "firstRegistrationYearAndMonth": [
       2022,
       1
@@ -445,6 +445,12 @@
       "S216A": "unknown",
       "S302A": "unknown",
       "S4NHA": "unknown"
+    },
+    "overrideFeatures": {
+      "mileageKm": {
+        "value": 50000,
+        "reason": "Crawl verisi 0 km gösteriyor, gerçek değer ~50.000 km"
+      }
     },
     "auditHistory": [
       {
@@ -1528,6 +1534,185 @@
         "detail": "",
         "changes": null,
         "auditDate": "2026-04-07T12:00:00.000Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C137",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-xdrive-wolnzach/450536847.html",
+    "mobileDeId": "450536847",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 48000,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 69500,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      4
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Reith GmbH & Co. KG ★3",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 163,
+    "listingLocation": "🇩🇪 85283 Wolnzach",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-17T09:06:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-31T09:33:12.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:52:55.927Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-04T10:59:37.373Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.822Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S1MAA": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:51:17.489Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2VFA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T21:08:00.717Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+        "changes": null,
+        "auditDate": "2026-04-08T19:07:27.581Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

@@ -207,43 +207,39 @@ export function calculateCarMetrics(car) {
 const assignRecommendations = (evaluated) => {
   evaluated.forEach(car => {
      let score = 0;
-     // Donanım (30%): Kritik donanım sayısı
-     score += (car.metrics.criticalFeaturesScore * 1.5);
-     
-     // Fiyat/değer (25%): Düzeltilmiş maliyet (düşük = iyi)
-     score += ((65000 - car.metrics.adjustedCost) / 1000); 
-     
-     // Güvenilirlik (20%): 1 sahip, tam servis, bayi puanı
+
+     // 1. Düzeltilmiş maliyet (50%): KM + yaş + donanım etkisi zaten içinde
+     // Düşük adjustedCost = iyi (daha az KM, daha genç, daha iyi donanım)
+     score += ((70000 - car.metrics.adjustedCost) / 1000);
+
+     // 2. Güvenilirlik (25%): sahip, servis, bayi
      if (car.numberOfPreviousOwners === '1') score += 3;
      if (car.service?.type === 'yes') score += 2;
-     
      if (car.sellerTypeOrName?.includes('★')) {
        const ratingMatch = car.sellerTypeOrName.match(/★([\d.]+)/);
        if (ratingMatch) score += parseFloat(ratingMatch[1]);
      }
-     
-     // Risk faktörleri (15%):
+
+     // 3. Risk faktörleri (15%):
      if (car.sellerTypeOrName?.toLowerCase().includes('private') || car.sellerTypeOrName?.toLowerCase().includes('özel') || car.sellerTypeOrName?.toLowerCase().includes('privat')) {
        score -= 2;
      }
      if (car.listingAdditionalFeatures?.some(feat => feat.toLowerCase().includes('aftermarket'))) {
-       score -= 2;
+       score -= 3;
      }
-     
-     // Bonus (10%): LCI, M Brake, vb.
+
+     // 4. Bonus (10%): LCI, Standheizung
      if (car.modelGeneration === 'LCI') score += 2;
-     if (car.equipmentFeatures?.S2NHA === 'yes') score += 1;
      if (car.equipmentFeatures?.S536A === 'yes') score += 2;
-     
-     // Reset badge to avoid duplicates across re-renders
+
      car.curatorPickBadge = '';
      car.totalScore = score;
   });
 
   const bestSpec = [...evaluated].sort((a,b) => b.metrics.criticalFeaturesScore - a.metrics.criticalFeaturesScore)[0];
   const topPick = [...evaluated].sort((a,b) => b.totalScore - a.totalScore)[0];
-  const budgetPick = [...evaluated].filter(c => c.metrics.baseTotalCost < 57000).sort((a,b) => b.totalScore - a.totalScore)[0];
-  const balancedPick = [...evaluated].filter(c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.baseTotalCost <= 58000).sort((a,b) => b.totalScore - a.totalScore)[0];
+  const budgetPick = [...evaluated].filter(c => c.metrics.adjustedCost < 70000).sort((a,b) => b.totalScore - a.totalScore)[0];
+  const balancedPick = [...evaluated].filter(c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.adjustedCost <= 75000).sort((a,b) => b.totalScore - a.totalScore)[0];
 
   if (bestSpec) bestSpec.curatorPickBadge += '👑';
   if (topPick && !topPick.curatorPickBadge.includes('🏆')) topPick.curatorPickBadge += '🏆';

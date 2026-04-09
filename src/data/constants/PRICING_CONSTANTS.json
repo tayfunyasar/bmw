@@ -11,15 +11,15 @@
   "DEPRECIATION_RATES": {
     "monthlyInEuros": 200,
     "mileageBrackets": [
-      { "min": 0, "max": 10000, "rate": 0.05 },
-      { "min": 10000, "max": 20000, "rate": 0.08 },
-      { "min": 20000, "max": 30000, "rate": 0.12 },
-      { "min": 30000, "max": 40000, "rate": 0.18 },
-      { "min": 40000, "max": 50000, "rate": 0.45 },
-      { "min": 50000, "max": 60000, "rate": 0.70 },
-      { "min": 60000, "max": 70000, "rate": 1.00 }
+      { "min": 0, "max": 10000, "rate": 0.08 },
+      { "min": 10000, "max": 20000, "rate": 0.12 },
+      { "min": 20000, "max": 30000, "rate": 0.20 },
+      { "min": 30000, "max": 40000, "rate": 0.35 },
+      { "min": 40000, "max": 50000, "rate": 0.65 },
+      { "min": 50000, "max": 60000, "rate": 1.00 },
+      { "min": 60000, "max": 70000, "rate": 1.50 }
     ],
-    "overflowRate": 1.00
+    "overflowRate": 1.80
   },
   "BPM_DEFAULT_CO2": 177,
   "FEATURE_STATUS": {

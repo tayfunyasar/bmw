@@ -101,6 +101,16 @@ function parseCar(car, nextId) {
     }
   }
 
+  // impliedBy: parent özellik description'da varsa, alt özelliği "yes" yap
+  for (const rule of equipmentRules) {
+    if (rule.impliedBy && equipmentFeatures[rule.code] !== "yes") {
+      const parentFound = rule.impliedBy.some(p => descNormalized.includes(p.toLowerCase().replace(/[-–]/g, ' ')));
+      if (parentFound) {
+        equipmentFeatures[rule.code] = "yes";
+      }
+    }
+  }
+
   const regMatch = (props.firstRegistration || "").match(/(\d+)\/(\d+)/);
   const firstRegistrationYearAndMonth = regMatch ? [parseInt(regMatch[2]), parseInt(regMatch[1])] : [null, null];
 

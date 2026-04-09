@@ -1951,7 +1951,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "yes"
+      "exists": "no"
     },
     "service": {
       "type": "yes",
@@ -1960,13 +1960,16 @@
     "nextInspectionDate": "New",
     "sellerTypeOrName": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.8",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 184,
+    "co2EmissionsGramPerKm": 177,
     "listingLocation": "🇩🇪 04328 Leipzig",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
+    "curatorPersonalNotes": [
+      "📧 09.04.2026 bayi yanıtı: CoC eki gönderildi, 1 sahip, tam BMW servis, kazasız ama arka tampon boyalı, fabrika garantisi yok, AB export'ta used car warranty verecekler"
+    ],
     "listingDescriptionNotes": [
-      "Garantili",
-      "Int.KnNr: 1018235"
+      "Arka tampon boyalı (bayi teyidi)",
+      "BMW tam servis geçmişi (bayi teyidi)",
+      "BMW fabrika garantisi dolmuş — AB kaydında used car warranty verilecek"
     ],
     "listingAdditionalFeatures": [
       "Adaptive M susp mevcut"
@@ -2009,6 +2012,16 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "overrideFeatures": {
+      "warranty": {
+        "value": "no",
+        "reason": "BMW fabrika garantisi dolmuş (3 yıl). AB kaydında kullanılmış araç garantisi verilecek."
+      },
+      "co2EmissionsGramPerKm": {
+        "value": 177,
+        "reason": "Bayi CoC belgesi ile teyit (09.04.2026)"
+      }
     },
     "auditHistory": [
       {
@@ -2250,7 +2263,9 @@
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 73730 Esslingen am Neckar",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
+    "curatorPersonalNotes": [
+      "📧 08.04.2026 email gönderildi: CO₂/CoC, Standheizung/VSS/Live Cockpit Pro, garanti, servis, kaza, net fiyat soruldu"
+    ],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [
       "Adaptif M Süspansiyon",
@@ -4630,7 +4645,7 @@
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
-      "S5AZA": "unknown",
+      "S5AZA": "yes",
       "S5AUA": "unknown",
       "S688A": "unknown",
       "S2T4A": "yes",
@@ -4731,116 +4746,21 @@
           }
         },
         "auditDate": "2026-04-07T22:13:50.363Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C169",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-360-camera-headup-hk-gro%C3%9Fniedesheim/452478312.html",
-    "mobileDeId": "452478312",
-    "exteriorColorName": "Grey",
-    "interiorColorName": "Part leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 46900,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 69000,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      6
-    ],
-    "numberOfPreviousOwners": "3",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "09/2027",
-    "sellerTypeOrName": "David Zuber",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 67259 Großniedesheim",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "yes",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-07T18:18:19.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-07T18:18:19.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-07T20:15:27.227Z"
       },
       {
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
-          "equipmentFeatures.S2T4A": {
+          "equipmentFeatures.S5AZA": {
             "old": "unknown",
             "new": "yes"
           }
         },
-        "auditDate": "2026-04-07T20:32:16.859Z"
+        "auditDate": "2026-04-08T20:40:07.965Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C167",
@@ -4971,122 +4891,6 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
-  },
-  {
-    "listingId": "C168",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-mit-500ps-tausch-merzig/452441469.html",
-    "mobileDeId": "452441469",
-    "exteriorColorName": "GREY",
-    "interiorColorName": null,
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 45000,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 60000,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      11
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "08/2027",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 66663 Merzig",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "unknown",
-      "S5DNA": "yes",
-      "S6U3A": "unknown",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "unknown",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
-      "S524A": "unknown",
-      "S265A": "unknown",
-      "S216A": "unknown",
-      "S302A": "unknown",
-      "S4NHA": "unknown"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-07T12:41:57.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-07T12:41:57.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-07T20:15:27.226Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S403A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T20:37:32.463Z"
-      },
-      {
-        "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → COUPE_GAS_WITH_SUNROOF",
-        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
-        "changes": null,
-        "auditDate": "2026-04-07T20:37:32.463Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
   },
   {
     "listingId": "C121",

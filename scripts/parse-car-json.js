@@ -333,9 +333,9 @@ async function run() {
     const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "");
     const driveOverride = overrides.drivetrainType?.value || overrides.drivetrainType;
     const isRWD = driveOverride === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
-    const allText = `${rawCar.title || ""} ${rawCar.subTitle || ""} ${rawCar.description || ""}`;
+    const allText = `${rawCar.title || ""} ${rawCar.subTitle || ""} ${rawCar.description || ""} ${rawCar.category || ""}`;
     const isGC = allText.includes("Gran Coupe") || allText.includes("Gran Coupé") || rawCar.title?.includes("GC") || rawCar.subTitle?.includes("GC");
-    const isCabrio = /cabrio/i.test(allText);
+    const isCabrio = /cabrio/i.test(allText) || /convertible/i.test(allText);
     const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
     const isDamaged = rawCar.isDamaged === true || (rawCar.attributes?.['Vehicle condition'] || '').includes('accident');
 

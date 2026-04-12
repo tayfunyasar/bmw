@@ -220,7 +220,7 @@ const assignRecommendations = (evaluated) => {
 
      // 2. Güvenilirlik: sahip, servis, bayi
      if (car.numberOfPreviousOwners === '1') add('Tek sahip', 1);
-     if (car.service?.type === 'yes') add('Tam servis', 2);
+     if (car.service?.type === 'yes') add('Tam servis', 1);
 
      // 3. Risk faktörleri
      const sellerLower = car.sellerTypeOrName?.toLowerCase() || '';
@@ -236,8 +236,8 @@ const assignRecommendations = (evaluated) => {
 
      // 5. Tescil yılı
      const registrationYear = car.firstRegistrationYearAndMonth?.[0];
-     if (registrationYear >= 2023) add('2023+ tescil', 2);
-     else if (registrationYear === 2021) add('2021 tescil', -1);
+     if (registrationYear >= 2023) add('2023+ tescil', 3);
+     else if (registrationYear === 2021) add('2021 tescil', -3);
 
      // 6. Dış renk tercihi
      if (isColorFav(car.exteriorColorName)) add('Favori renk', 2);

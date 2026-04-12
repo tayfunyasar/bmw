@@ -212,8 +212,11 @@ const assignRecommendations = (evaluated) => {
        breakdown.push({ label, delta: Math.round(delta * 10) / 10 });
      };
 
-     // 1. Düzeltilmiş maliyet: KM + yaş + donanım etkisi zaten içinde
+     // 1a. Düzeltilmiş maliyet: KM + yaş + donanım etkisi zaten içinde (düşük = iyi)
      add('Düzeltilmiş maliyet', (62000 - car.metrics.adjustedCost) / 2000);
+
+     // 1b. Toplam alım maliyeti cezası: fiyat + BPM (yüksek = ceza, donanımdan bağımsız)
+     add('Toplam alım maliyeti', (62000 - car.metrics.baseTotalCost) / 2000);
 
      // 2. Güvenilirlik: sahip, servis, bayi
      if (car.numberOfPreviousOwners === '1') add('Tek sahip', 1);

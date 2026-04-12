@@ -705,10 +705,10 @@
     "listingId": "C101",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-acc-sth-mfl-3d-view-hifi-led-qi-2zk-buchschwabach-bei-n%C3%BCrnberg/442478207.html",
     "mobileDeId": "442478207",
-    "exteriorColorName": "Mineral White Metallic",
-    "interiorColorName": "Deri Kahve (Vernasca)",
+    "exteriorColorName": "MINERALWEISS",
+    "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 55789,
+    "basePriceEuro": 54490,
     "estimatedImportTaxEuro": 0,
     "mileageKm": 25900,
     "firstRegistrationYearAndMonth": [
@@ -717,17 +717,17 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
       "history": []
     },
-    "nextInspectionDate": "Yeni",
+    "nextInspectionDate": "New",
     "sellerTypeOrName": "Autohaus Straußberger ★4.9",
     "modelGeneration": "LCI II",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Buchschwabach",
+    "listingLocation": "🇩🇪 90574 Buchschwabach bei Nürnberg",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -741,43 +741,48 @@
       "Heated steering wheel"
     ],
     "equipmentFeatures": {
-      "S403A": "no",
+      "S403A": "unknown",
       "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "yes",
       "S5DN_360": "yes",
       "KGNL": "unknown",
       "S322A": "yes",
-      "S2VFA": "yes",
+      "S2VFA": "unknown",
       "S459A": "yes",
       "S5DNA": "yes",
       "S6U3A": "yes",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "unknown",
-      "S248A": "unknown",
-      "S420A": "unknown",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
       "S6C4A": "unknown",
-      "S430A": "unknown",
-      "S4AWA": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
       "S775A": "unknown",
       "S493A": "unknown",
       "S536A": "yes",
-      "S2NHA": "yes",
+      "S2NHA": "unknown",
       "S3ACA": "unknown",
       "S3ADA": "unknown",
       "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
       "S524A": "unknown",
-      "S265A": "unknown",
+      "S265A": "yes",
       "S216A": "unknown",
-      "S302A": "unknown",
+      "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2025-11-27T12:42:34.000Z",
+      "modifiedTime": "2026-04-11T07:03:01.000Z",
+      "renewedTime": "2026-04-11T07:03:01.000Z"
     },
     "auditHistory": [
       {
@@ -785,6 +790,111 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-22T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-11T07:03:01.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 55789,
+            "new": 54490
+          },
+          "listingLocation": {
+            "old": "🇩🇪 Buchschwabach",
+            "new": "🇩🇪 90574 Buchschwabach bei Nürnberg"
+          },
+          "exteriorColorName": {
+            "old": "Mineral White Metallic",
+            "new": "MINERALWEISS"
+          },
+          "interiorColorName": {
+            "old": "Deri Kahve (Vernasca)",
+            "new": "Full leather, Brown"
+          },
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "nextInspectionDate": {
+            "old": "Yeni",
+            "new": "New"
+          },
+          "equipmentFeatures.S403A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S688A": {
+            "old": "no",
+            "new": "yes"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VFA": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-12T10:10:36.089Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
@@ -1281,6 +1391,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-03-06T10:37:21.000Z",
+      "modifiedTime": "2026-04-01T08:19:38.000Z",
+      "renewedTime": "2026-03-13T15:12:29.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1428,6 +1543,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-04-01T04:08:47.000Z",
+      "modifiedTime": "2026-04-01T06:14:47.000Z",
+      "renewedTime": "2026-04-01T04:08:47.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1563,6 +1683,11 @@
       "S302A": "unknown",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-02-26T13:34:04.000Z",
+      "modifiedTime": "2026-03-31T15:04:26.000Z",
+      "renewedTime": "2026-02-26T13:34:04.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1671,6 +1796,11 @@
       "S302A": "unknown",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-04-03T14:10:03.000Z",
+      "modifiedTime": "2026-04-03T14:10:04.000Z",
+      "renewedTime": "2026-04-03T14:10:03.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1774,6 +1904,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-01T11:30:10.000Z",
+      "modifiedTime": "2026-04-01T11:30:13.000Z",
+      "renewedTime": "2026-04-01T11:30:10.000Z"
     },
     "overrideFeatures": {
       "S403A": {
@@ -1937,6 +2072,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-02-27T04:20:53.000Z",
+      "modifiedTime": "2026-04-02T03:15:38.000Z",
+      "renewedTime": "2026-02-27T04:20:53.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -2086,6 +2226,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2025-07-01T12:01:35.000Z",
+      "modifiedTime": "2026-04-01T09:04:08.000Z",
+      "renewedTime": "2025-07-01T12:01:35.000Z"
     },
     "overrideFeatures": {
       "S403A": {
@@ -2391,6 +2536,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2025-08-04T17:38:49.000Z",
+      "modifiedTime": "2026-03-31T17:00:06.000Z",
+      "renewedTime": "2025-08-04T17:38:49.000Z"
+    },
     "overrideFeatures": {
       "S403A": {
         "value": "no",
@@ -2674,6 +2824,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-04-08T22:24:59.000Z",
+      "modifiedTime": "2026-04-08T23:21:27.000Z",
+      "renewedTime": "2026-04-08T22:24:59.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -2810,6 +2965,11 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-09T17:13:12.000Z",
+      "modifiedTime": "2026-04-10T17:12:41.000Z",
+      "renewedTime": "2026-04-09T17:13:12.000Z"
     },
     "auditHistory": [
       {

@@ -69,6 +69,11 @@
       "S302A": "yes",
       "S4NHA": "yes"
     },
+    "listingDates": {
+      "createdTime": "2026-04-07T12:36:50.000Z",
+      "modifiedTime": "2026-04-07T15:06:17.000Z",
+      "renewedTime": "2026-04-07T12:36:50.000Z"
+    },
     "auditHistory": [
       {
         "action": "Dosya Taşıma: WITHOUT_SUNROOF → WITH_SUNROOF",

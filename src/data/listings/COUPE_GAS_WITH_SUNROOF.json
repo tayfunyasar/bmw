@@ -71,6 +71,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2025-12-05T09:07:07.000Z",
+      "modifiedTime": "2026-04-07T16:31:23.000Z",
+      "renewedTime": "2025-12-05T09:07:07.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -373,6 +378,11 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-01-22T04:09:51.000Z",
+      "modifiedTime": "2026-04-10T02:37:27.000Z",
+      "renewedTime": "2026-01-22T04:09:51.000Z"
     },
     "auditHistory": [
       {
@@ -755,6 +765,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2025-10-16T09:37:41.000Z",
+      "modifiedTime": "2026-04-07T19:21:31.000Z",
+      "renewedTime": "2026-01-21T07:30:09.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1081,6 +1096,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-01-18T17:38:10.000Z",
+      "modifiedTime": "2026-04-07T16:11:05.000Z",
+      "renewedTime": "2026-01-18T17:38:10.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1380,6 +1400,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-04T11:03:16.000Z",
+      "modifiedTime": "2026-04-08T15:50:20.000Z",
+      "renewedTime": "2026-03-04T11:03:16.000Z"
     },
     "overrideFeatures": {
       "exteriorColorName": {
@@ -1731,6 +1756,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-03-26T17:12:33.000Z",
+      "modifiedTime": "2026-04-07T14:08:56.000Z",
+      "renewedTime": "2026-03-26T17:12:33.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -1997,6 +2027,11 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-21T09:50:55.000Z",
+      "modifiedTime": "2026-04-07T14:39:05.000Z",
+      "renewedTime": "2026-03-21T09:50:55.000Z"
     },
     "auditHistory": [
       {
@@ -2269,6 +2304,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-03-23T14:17:43.000Z",
+      "modifiedTime": "2026-04-07T14:32:15.000Z",
+      "renewedTime": "2026-04-02T08:17:39.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -2537,6 +2577,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2025-11-19T12:34:24.000Z",
+      "modifiedTime": "2026-04-07T16:43:59.000Z",
+      "renewedTime": "2025-11-19T12:34:24.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -2678,6 +2723,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-02T17:43:45.000Z",
+      "modifiedTime": "2026-04-10T15:32:16.000Z",
+      "renewedTime": "2026-04-02T17:43:45.000Z"
     },
     "overrideFeatures": {
       "co2EmissionsGramPerKm": {
@@ -2875,6 +2925,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-03-19T08:12:05.000Z",
+      "modifiedTime": "2026-04-08T01:05:50.000Z",
+      "renewedTime": "2026-04-08T01:05:49.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -3004,6 +3059,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-24T17:29:31.000Z",
+      "modifiedTime": "2026-04-07T14:23:05.000Z",
+      "renewedTime": "2026-03-24T17:29:31.000Z"
     },
     "auditHistory": [
       {
@@ -3139,6 +3199,11 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-25T10:36:47.000Z",
+      "modifiedTime": "2026-04-07T14:16:43.000Z",
+      "renewedTime": "2026-03-25T10:36:47.000Z"
     },
     "auditHistory": [
       {
@@ -3276,6 +3341,11 @@
       "S302A": "unknown",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-02-28T16:37:12.000Z",
+      "modifiedTime": "2026-04-07T15:27:24.000Z",
+      "renewedTime": "2026-02-28T16:37:12.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -3406,6 +3476,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-10T12:42:34.000Z",
+      "modifiedTime": "2026-04-09T22:16:43.000Z",
+      "renewedTime": "2026-04-07T10:10:40.000Z"
     },
     "auditHistory": [
       {
@@ -3570,6 +3645,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-02-26T15:41:04.000Z",
+      "modifiedTime": "2026-04-08T14:55:25.000Z",
+      "renewedTime": "2026-02-26T15:41:04.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -3689,6 +3769,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-27T13:21:00.000Z",
+      "modifiedTime": "2026-04-07T14:09:40.000Z",
+      "renewedTime": "2026-03-27T13:21:00.000Z"
     },
     "auditHistory": [
       {
@@ -3828,6 +3913,11 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-18T10:18:21.000Z",
+      "modifiedTime": "2026-04-07T14:39:46.000Z",
+      "renewedTime": "2026-03-18T10:18:21.000Z"
     },
     "auditHistory": [
       {
@@ -3979,6 +4069,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-04-07T10:32:47.000Z",
+      "modifiedTime": "2026-04-07T13:12:24.000Z",
+      "renewedTime": "2026-04-07T10:32:47.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -4108,6 +4203,11 @@
       "S216A": "unknown",
       "S302A": "unknown",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-23T05:39:41.000Z",
+      "modifiedTime": "2026-04-07T14:33:20.000Z",
+      "renewedTime": "2026-03-23T05:39:41.000Z"
     },
     "overrideFeatures": {
       "exteriorColorName": {
@@ -4359,6 +4459,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-04-10T08:07:55.000Z",
+      "modifiedTime": "2026-04-10T15:05:07.000Z",
+      "renewedTime": "2026-04-10T08:07:55.000Z"
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -4421,28 +4526,28 @@
       "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
-      "S5DN_360": "no",
-      "KGNL": "no",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
       "S322A": "yes",
       "S2VFA": "no",
       "S459A": "yes",
-      "S5DNA": "no",
+      "S5DNA": "unknown",
       "S6U3A": "yes",
       "S715A": "yes",
       "S2VLA": "yes",
       "S494A": "yes",
       "S248A": "yes",
-      "S420A": "yes",
+      "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
       "S6C4A": "yes",
       "S430A": "yes",
-      "S4AWA": "yes",
+      "S4AWA": "unknown",
       "S775A": "yes",
       "S493A": "yes",
-      "S536A": "no",
+      "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "no",
+      "S3ACA": "unknown",
       "S3ADA": "unknown",
       "S3AGA": "unknown",
       "S488A": "yes",
@@ -4451,7 +4556,12 @@
       "S265A": "yes",
       "S216A": "yes",
       "S302A": "yes",
-      "S4NHA": "no"
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-10T18:04:20.000Z",
+      "modifiedTime": "2026-04-10T18:04:22.000Z",
+      "renewedTime": "2026-04-10T18:04:20.000Z"
     },
     "auditHistory": [
       {
@@ -4486,6 +4596,45 @@
           "S4NHA": "unknown→no"
         },
         "auditDate": "2026-04-10T23:30:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "yes",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4NHA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-12T10:10:36.099Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4560,6 +4709,11 @@
       "S216A": "unknown",
       "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-08T03:36:06.000Z",
+      "modifiedTime": "2026-04-08T23:03:41.000Z",
+      "renewedTime": "2026-04-08T03:36:06.000Z"
     },
     "auditHistory": [
       {

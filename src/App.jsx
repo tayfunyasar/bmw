@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ConfigProvider, Layout, Flex } from 'antd';
-import { evaluatedListings } from './utils/pricingCalculator';
+import { allByTotalCost } from './utils/pricingCalculator';
 import { PageHeader } from './components/PageHeader';
 import { Recommendations } from './components/Recommendations';
 import { MainTabs } from './components/MainTabs';
@@ -18,7 +18,7 @@ const App = () => {
 
               <PageHeader />
 
-              <Recommendations evaluatedListings={evaluatedListings} />
+              <Recommendations evaluatedListings={allByTotalCost} />
 
               <MainTabs />
             </Flex>

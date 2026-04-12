@@ -238,6 +238,11 @@
       "S302A": "yes",
       "S4NHA": "unknown"
     },
+    "listingDates": {
+      "createdTime": "2026-04-05T17:10:03.000Z",
+      "modifiedTime": "2026-04-05T17:10:04.000Z",
+      "renewedTime": "2026-04-05T17:10:03.000Z"
+    },
     "overrideFeatures": {
       "drivetrainType": {
         "value": "RWD",

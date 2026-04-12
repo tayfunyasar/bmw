@@ -1,4 +1,4 @@
-import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, isColorFav, isColorNotFav } from '../data';
 
 const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS } = PRICING_CONSTANTS;
 
@@ -206,34 +206,43 @@ export function calculateCarMetrics(car) {
 
 const assignRecommendations = (evaluated) => {
   evaluated.forEach(car => {
-     let score = 0;
+     const breakdown = [];
+     const add = (label, delta) => {
+       if (delta === 0) return;
+       breakdown.push({ label, delta: Math.round(delta * 10) / 10 });
+     };
 
-     // 1. Düzeltilmiş maliyet (50%): KM + yaş + donanım etkisi zaten içinde
-     // Düşük adjustedCost = iyi (daha az KM, daha genç, daha iyi donanım)
-     score += ((70000 - car.metrics.adjustedCost) / 1000);
+     // 1. Düzeltilmiş maliyet: KM + yaş + donanım etkisi zaten içinde
+     add('Düzeltilmiş maliyet', (62000 - car.metrics.adjustedCost) / 2000);
 
-     // 2. Güvenilirlik (25%): sahip, servis, bayi
-     if (car.numberOfPreviousOwners === '1') score += 3;
-     if (car.service?.type === 'yes') score += 2;
-     if (car.sellerTypeOrName?.includes('★')) {
-       const ratingMatch = car.sellerTypeOrName.match(/★([\d.]+)/);
-       if (ratingMatch) score += parseFloat(ratingMatch[1]);
-     }
+     // 2. Güvenilirlik: sahip, servis, bayi
+     if (car.numberOfPreviousOwners === '1') add('Tek sahip', 1);
+     if (car.service?.type === 'yes') add('Tam servis', 2);
 
-     // 3. Risk faktörleri (15%):
-     if (car.sellerTypeOrName?.toLowerCase().includes('private') || car.sellerTypeOrName?.toLowerCase().includes('özel') || car.sellerTypeOrName?.toLowerCase().includes('privat')) {
-       score -= 2;
+     // 3. Risk faktörleri
+     const sellerLower = car.sellerTypeOrName?.toLowerCase() || '';
+     if (sellerLower.includes('private') || sellerLower.includes('özel') || sellerLower.includes('privat')) {
+       add('Özel satıcı', -2);
      }
      if (car.listingAdditionalFeatures?.some(feat => feat.toLowerCase().includes('aftermarket'))) {
-       score -= 3;
+       add('Aftermarket donanım', -3);
      }
 
-     // 4. Bonus (10%): LCI, Standheizung
-     if (car.modelGeneration === 'LCI') score += 2;
-     if (car.equipmentFeatures?.S536A === 'yes') score += 2;
+     // 4. LCI bonusu
+     if (car.modelGeneration === 'LCI') add('LCI (facelift)', 5);
+
+     // 5. Tescil yılı
+     const registrationYear = car.firstRegistrationYearAndMonth?.[0];
+     if (registrationYear >= 2023) add('2023+ tescil', 2);
+     else if (registrationYear === 2021) add('2021 tescil', -1);
+
+     // 6. Dış renk tercihi
+     if (isColorFav(car.exteriorColorName)) add('Favori renk', 2);
+     else if (isColorNotFav(car.exteriorColorName)) add('Sevilmeyen renk', -2);
 
      car.curatorPickBadge = '';
-     car.totalScore = score;
+     car.scoreBreakdown = breakdown;
+     car.totalScore = Math.round(breakdown.reduce((sum, b) => sum + b.delta, 0) * 10) / 10;
   });
 
   const bestSpec = [...evaluated].sort((a,b) => b.metrics.criticalFeaturesScore - a.metrics.criticalFeaturesScore)[0];

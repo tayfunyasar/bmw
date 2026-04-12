@@ -9,7 +9,7 @@
     "millisecondsInADay": 86400000
   },
   "DEPRECIATION_RATES": {
-    "monthlyInEuros": 200,
+    "monthlyInEuros": 400,
     "mileageBrackets": [
       { "min": 0, "max": 10000, "rate": 0.08 },
       { "min": 10000, "max": 20000, "rate": 0.12 },

@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
-import { equipmentRules, dealersData, getColorHex, getInteriorHex } from '../../data';
+import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
 
 const { Text, Link } = Typography;
+const TODAY = new Date();
+const TODAY_MS = TODAY.getTime();
 
 export const CarTable = ({
   cars,
@@ -141,14 +143,25 @@ export const CarTable = ({
     Object.assign({ key: 'service', prop: 'Tam Servis' }, Object.fromEntries(cars.map(car => [car.listingId, car.service?.type === 'yes' ? 'Evet' : (car.service?.type === 'no' ? 'Hayır' : '?')]))),
     Object.assign({ key: 'inspection', prop: 'Muayene (TÜV)' }, Object.fromEntries(cars.map(car => [car.listingId, car.nextInspectionDate]))),
     Object.assign({ key: 'dates', prop: '📅 İlan Tarihleri' }, Object.fromEntries(cars.map(car => {
+      const dates = car.listingDates || {};
       const history = car.auditHistory || [];
       const published = history.find(h => h.action?.includes('İlan Yayınlandı'));
-      const sold = history.find(h => h.action?.startsWith('SATILDI'));
+      const sold = history.find(h => h.action?.startsWith('SATILDI') || h.action?.includes('İlan Satıldı'));
       const fmt = (d) => d ? new Date(d).toLocaleDateString('tr-TR') : null;
+      const daysColor = (d) => d < 7 ? UI_COLORS.statusFresh : d < 14 ? UI_COLORS.statusWarning : UI_COLORS.statusStale;
       const parts = [];
-      if (published) parts.push(`Eklendi: ${fmt(published.auditDate)}`);
+      const createdDate = dates.createdTime || published?.auditDate;
+      if (createdDate) parts.push(`Yayın: ${fmt(createdDate)}`);
+      if (dates.modifiedTime) parts.push(`Güncelleme: ${fmt(dates.modifiedTime)}`);
+      if (dates.renewedTime && dates.renewedTime !== dates.createdTime) parts.push(`Yenileme: ${fmt(dates.renewedTime)}`);
       if (sold) parts.push(`Satıldı: ${fmt(sold.auditDate)}`);
-      return [car.listingId, parts.length > 0 ? parts.join(' → ') : '—'];
+      if (createdDate) {
+        const endMs = sold ? new Date(sold.auditDate).getTime() : TODAY_MS;
+        const days = Math.floor((endMs - new Date(createdDate).getTime()) / 86400000);
+        const label = sold ? `${days} günde satıldı` : `${days} gündür yayında`;
+        return [car.listingId, <span key={car.listingId}>{parts.join(' · ')} · <span style={{ color: daysColor(days), fontWeight: 600 }}>📌 {label}</span></span>];
+      }
+      return [car.listingId, parts.length > 0 ? parts.join(' · ') : '—'];
     }))),
   ];
 

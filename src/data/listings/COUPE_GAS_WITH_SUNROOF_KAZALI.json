@@ -147,7 +147,13 @@
       "🟡 Servis geçmişi bilinmiyor",
       "Onarılmış kaza hasarı (Repaired accident damage)",
       "🔴 Toplam €69,241 — bütçe aşımı"
-    ]
+    ],
+    "listingDates": {
+      "createdTime": "2025-08-19T12:42:53.000Z",
+      "modifiedTime": "2026-04-01T07:59:47.000Z",
+      "renewedTime": "2026-03-13T17:43:06.000Z",
+      "lastCrawlTime": null
+    }
   },
   {
     "listingId": "C126",
@@ -390,7 +396,13 @@
       "🟡 Özel satıcı — bayi güvencesi yok",
       "Onarılmış kaza hasarı (Repaired accident damage)",
       "🟠 Toplam €58,848 — bütçe üst sınırına yakın"
-    ]
+    ],
+    "listingDates": {
+      "createdTime": "2026-03-17T20:05:27.000Z",
+      "modifiedTime": "2026-03-31T13:41:26.000Z",
+      "renewedTime": "2026-03-17T20:05:27.000Z",
+      "lastCrawlTime": null
+    }
   },
   {
     "listingId": "C142",
@@ -512,7 +524,13 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "listingDates": {
+      "createdTime": "2026-03-16T09:45:03.000Z",
+      "modifiedTime": "2026-03-31T14:30:26.000Z",
+      "renewedTime": "2026-03-16T09:45:03.000Z",
+      "lastCrawlTime": null
+    }
   },
   {
     "listingId": "C56",
@@ -829,7 +847,13 @@
     "aiCommentary": [
       "🟢 14 gündür satışta — yeni ilan",
       "🟡 Servis geçmişi bilinmiyor"
-    ]
+    ],
+    "listingDates": {
+      "createdTime": "2026-03-19T04:37:20.000Z",
+      "modifiedTime": "2026-04-07T14:41:28.000Z",
+      "renewedTime": "2026-03-19T04:37:20.000Z",
+      "lastCrawlTime": null
+    }
   },
   {
     "listingId": "C170",
@@ -922,6 +946,12 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "listingDates": {
+      "createdTime": "2025-10-06T08:08:46.000Z",
+      "modifiedTime": "2026-04-08T15:53:48.000Z",
+      "renewedTime": "2026-04-08T15:53:47.000Z",
+      "lastCrawlTime": null
+    }
   }
 ]

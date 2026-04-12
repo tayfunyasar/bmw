@@ -189,6 +189,11 @@ function parseCar(car, nextId) {
     listingDescriptionNotes: [],
     listingAdditionalFeatures: [],
     equipmentFeatures: equipmentFeatures,
+    listingDates: {
+      createdTime: car.createdTime || null,
+      modifiedTime: car.modifiedTime || null,
+      renewedTime: car.renewedTime || null
+    },
     auditHistory: [
       ...(car.createdTime ? [{
         action: "İlan Yayınlandı (mobile.de)",
@@ -351,6 +356,12 @@ async function run() {
     if (existingCar) {
         const parsedCar = parseCar(car, existingCar.listingId);
         const { hasChanges, changes } = applyUpdatesAndGetChanges(existingCar, parsedCar);
+
+        // listingDates güncelle
+        existingCar.listingDates = existingCar.listingDates || {};
+        if (car.createdTime) existingCar.listingDates.createdTime = car.createdTime;
+        if (car.modifiedTime) existingCar.listingDates.modifiedTime = car.modifiedTime;
+        if (car.renewedTime) existingCar.listingDates.renewedTime = car.renewedTime;
 
         existingCar.auditHistory = existingCar.auditHistory || [];
         if (car.renewedTime) {

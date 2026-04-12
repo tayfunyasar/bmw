@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 const ROOT_KEYS_ORDER = [
   'listingId',
   'listingUrl',
+  'dealerListingUrl',
   'mobileDeId',
   'exteriorColorName',
   'interiorColorName',
@@ -30,6 +31,7 @@ const ROOT_KEYS_ORDER = [
   'listingDescriptionNotes',
   'listingAdditionalFeatures',
   'equipmentFeatures',
+  'listingDates',
   'overrideFeatures',
   'auditHistory',
   'cardThemeColorHex',
@@ -88,6 +90,18 @@ function formatListing(listing, index, filename) {
         newEquip[eqKey] = oldEquip[eqKey] !== undefined ? oldEquip[eqKey] : 'unknown';
       }
       newListing[key] = newEquip;
+    } else if (key === 'dealerListingUrl') {
+      if (listing.dealerListingUrl) {
+        newListing[key] = listing.dealerListingUrl;
+      }
+    } else if (key === 'listingDates') {
+      if (listing.listingDates) {
+        newListing[key] = {
+          createdTime: listing.listingDates.createdTime || null,
+          modifiedTime: listing.listingDates.modifiedTime || null,
+          renewedTime: listing.listingDates.renewedTime || null
+        };
+      }
     } else if (key === 'overrideFeatures') {
       if (listing.overrideFeatures) {
         newListing[key] = listing.overrideFeatures;

@@ -19,5 +19,8 @@
   "bgVerySubtle": "rgba(255, 255, 255, 0.03)",
   "hoverBgBlue": "rgba(96, 165, 250, 0.08)",
   "hoverColumnBg": "rgba(96, 165, 250, 0.1)",
-  "cardBgSubtle": "rgba(255,255,255,0.03)"
+  "cardBgSubtle": "rgba(255,255,255,0.03)",
+  "statusFresh": "#52c41a",
+  "statusWarning": "#faad14",
+  "statusStale": "#ff4d4f"
 }

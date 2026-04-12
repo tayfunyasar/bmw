@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline } from 'antd';
-import { ClockCircleOutlined } from '@ant-design/icons';
+import { ClockCircleOutlined, PushpinOutlined, PushpinFilled } from '@ant-design/icons';
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
+import { useFrozenCars } from '../FrozenCarsContext';
 
 const { Text, Link } = Typography;
 const TODAY = new Date();
@@ -20,6 +21,8 @@ export const CarTable = ({
 }) => {
   const [historyModalVisible, setHistoryModalVisible] = useState(false);
   const [selectedCarHistory, setSelectedCarHistory] = useState(null);
+  const { frozenIds, toggle: toggleFreeze } = useFrozenCars() || { frozenIds: [], toggle: () => {} };
+  const isFrozen = (id) => frozenIds.includes(id);
 
   const showHistory = (car) => {
     setSelectedCarHistory(car);
@@ -45,6 +48,15 @@ export const CarTable = ({
           {isRejected && <Text type="danger">{rejectedLabel}</Text>}
           {car.isSold && !isRejected && <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text>}
           {car.curatorPickBadge && !isRejected && !car.isSold && <Text>{car.curatorPickBadge}</Text>}
+          <Button
+            type="text"
+            size="small"
+            icon={isFrozen(car.listingId) ? <PushpinFilled /> : <PushpinOutlined />}
+            onClick={() => toggleFreeze(car.listingId)}
+            style={{ marginTop: 4, fontSize: '12px', color: isFrozen(car.listingId) ? '#1677ff' : undefined }}
+          >
+            {isFrozen(car.listingId) ? 'Unfreeze' : 'Freeze'}
+          </Button>
           {car.auditHistory && car.auditHistory.length > 0 && (
             <Button type="text" size="small" icon={<ClockCircleOutlined />} onClick={() => showHistory(car)} style={{ marginTop: 4, fontSize: '12px' }}>
               Geçmiş

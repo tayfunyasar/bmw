@@ -5,6 +5,7 @@ import { allByTotalCost } from './utils/pricingCalculator';
 import { PageHeader } from './components/PageHeader';
 import { Recommendations } from './components/Recommendations';
 import { MainTabs } from './components/MainTabs';
+import { FrozenCarsProvider } from './components/FrozenCarsContext';
 
 const { Content } = Layout;
 
@@ -12,18 +13,20 @@ const App = () => {
   return (
     <BrowserRouter>
       <ConfigProvider>
-        <Layout>
-          <Content>
-            <Flex vertical gap="middle">
+        <FrozenCarsProvider>
+          <Layout>
+            <Content>
+              <Flex vertical gap="middle">
 
-              <PageHeader />
+                <PageHeader />
 
-              <Recommendations evaluatedListings={allByTotalCost} />
+                <Recommendations evaluatedListings={allByTotalCost} />
 
-              <MainTabs />
-            </Flex>
-          </Content>
-        </Layout>
+                <MainTabs />
+              </Flex>
+            </Content>
+          </Layout>
+        </FrozenCarsProvider>
       </ConfigProvider>
     </BrowserRouter>
   );

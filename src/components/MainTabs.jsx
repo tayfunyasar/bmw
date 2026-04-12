@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Tabs } from 'antd';
 import { yearGroups, sortedYears, allByTotalCost } from '../utils/pricingCalculator';
 import { soldGasListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
+import { useFrozenCars } from './FrozenCarsContext';
 import { VehicleTableCard } from './VehicleTableCard';
 import { CarTable } from './common/CarTable';
 import { YearlyComparisonTab } from './tabs/YearlyComparisonTab';
@@ -15,16 +16,41 @@ export const MainTabs = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentTab = location.pathname.replace('/', '') || 'all-adjusted';
+  const { frozenIds } = useFrozenCars();
 
   const handleTabChange = (key) => {
     navigate(`/${key}`);
   };
+
+  const allCarsById = useMemo(() => {
+    const pool = [
+      ...allByTotalCost,
+      ...soldGasListings,
+      ...rwdGasWithSunroofListings,
+      ...rwdGasWithoutSunroofListings,
+      ...noSunroofGas,
+      ...CoupeDieselWithSunroof,
+      ...cakalListings,
+      ...kazaliListings,
+    ];
+    const map = new Map();
+    pool.forEach(car => { if (!map.has(car.listingId)) map.set(car.listingId, car); });
+    return map;
+  }, []);
+
+  const frozenCars = frozenIds.map(id => allCarsById.get(id)).filter(Boolean);
 
   return (
     <Tabs
       activeKey={currentTab}
       onChange={handleTabChange}
       items={[{
+          key: 'frozen',
+          label: `📌 Freeze Edilenler — ${frozenCars.length} araç`,
+          children: frozenCars.length > 0
+            ? <CarTable cars={frozenCars} title="📌 Freeze Edilen Araçlar — Yan Yana Karşılaştırma" />
+            : <div style={{ padding: 24, textAlign: 'center', color: '#888' }}>Henüz freeze edilmiş araç yok. Diğer sekmelerde araç başlığındaki 📌 Freeze butonuna tıkla.</div>
+        }, {
           key: 'all-adjusted',
           label: `💰 TOPLAM MALİYET — ${allByTotalCost.length} araç`,
           children: <CarTable cars={allByTotalCost} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} />

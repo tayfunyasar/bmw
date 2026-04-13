@@ -35,11 +35,14 @@ function getNextListingId(existingListings) {
   return `C${maxId + 1}`;
 }
 
-function determineDrivetrain(title, description, url) {
+function determineDrivetrain(title, description, url, features = []) {
   const allText = `${title} ${description} ${url}`;
   const hasXDrive = /x[- ]?drive/i.test(allText);
   const hasAllrad = /allrad/i.test(description);
-  const hasRWD = /\bRWD\b/.test(title) || /hinterradantrieb/i.test(description);
+  const hasRWD = /\bRWD\b/.test(title)
+    || /hinterradantrieb/i.test(description)
+    || /heckantrieb/i.test(description)
+    || features.includes("Rear wheel drive");
 
   if (hasXDrive || hasAllrad) return { type: "xDrive AWD", certain: true };
   if (hasRWD) return { type: "RWD", certain: true };
@@ -158,7 +161,7 @@ function parseCar(car, nextId) {
 
   const serviceType = description.includes("Scheckheftgepflegt") || features.includes("Full Service History") ? "yes" : "unknown";
   const hasWarranty = features.includes("Warranty") ? "yes" : "no";
-  const drivetrain = determineDrivetrain(car.title || "", description, car.url || "");
+  const drivetrain = determineDrivetrain(car.title || "", description, car.url || "", features);
 
   return {
     listingId: nextId,
@@ -330,7 +333,7 @@ async function run() {
   function determineTargetFile(car, rawCar) {
     const overrides = car.overrideFeatures || {};
     const isSunroof = car.equipmentFeatures.S403A === "yes";
-    const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "");
+    const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "", rawCar.features || []);
     const driveOverride = overrides.drivetrainType?.value || overrides.drivetrainType;
     const isRWD = driveOverride === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
     const allText = `${rawCar.title || ""} ${rawCar.subTitle || ""} ${rawCar.description || ""} ${rawCar.category || ""}`;

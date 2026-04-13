@@ -4390,257 +4390,6 @@
     ]
   },
   {
-    "listingId": "C173",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-a-xdrive-coupe-gsd-daprof-rfk-hud-acc-keyl-memmingen/452712519.html",
-    "mobileDeId": "452712519",
-    "exteriorColorName": "Saphirschwarz metallic",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 45990,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 32858,
-    "firstRegistrationYearAndMonth": [
-      2021,
-      12
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "10/2026",
-    "sellerTypeOrName": "Autohaus Reisacher GmbH ★4.1",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 176,
-    "listingLocation": "🇩🇪 87700 Memmingen",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "no",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-10T08:07:55.000Z",
-      "modifiedTime": "2026-04-10T15:05:07.000Z",
-      "renewedTime": "2026-04-10T08:07:55.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-10T08:07:55.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-10T08:07:55.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-10T20:00:30.730Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C174",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-hildesheim/452776369.html",
-    "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-62979719/",
-    "mobileDeId": "452776369",
-    "exteriorColorName": "Sanremo Green",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 47450,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 46159,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      4
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "WELLER Premium GmbH ★4.5",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 31137 Hildesheim",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-10T18:04:20.000Z",
-      "modifiedTime": "2026-04-10T18:04:22.000Z",
-      "renewedTime": "2026-04-10T18:04:20.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-10T18:04:20.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-10T18:04:20.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-10T20:00:30.731Z"
-      },
-      {
-        "action": "Bayi Sitesinden Donanım Güncellendi",
-        "detail": "wellergruppe.de bayi sitesinden donanım bilgileri çekildi. S5DN_360→no (sadece Rückfahrkamera), KGNL→no (Leder Vernasca), S5DNA→no (basic ParkAssistent), S420A→yes, S4AWA→yes (Sensatec), S536A→no, S3ACA→no, S4NHA→no olarak güncellendi.",
-        "changes": {
-          "S5DN_360": "unknown→no",
-          "KGNL": "unknown→no",
-          "S5DNA": "unknown→no",
-          "S420A": "unknown→yes",
-          "S4AWA": "unknown→yes",
-          "S536A": "unknown→no",
-          "S3ACA": "unknown→no",
-          "S4NHA": "unknown→no"
-        },
-        "auditDate": "2026-04-10T23:30:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S5DN_360": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.KGNL": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S420A": {
-            "old": "yes",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "yes",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4NHA": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-12T10:10:36.099Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
     "listingId": "C175",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-livecockpitprof-head-up-pdc-stuttgart/452497090.html",
     "mobileDeId": "452497090",
@@ -4739,32 +4488,32 @@
     "aiCommentary": null
   },
   {
-    "listingId": "C177",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-coupe-a-v%C3%B6hringen/452926039.html",
-    "mobileDeId": "452926039",
+    "listingId": "C179",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-inspektion-t%C3%BCv-au-neu-j%C3%BClich/449815889.html",
+    "mobileDeId": "449815889",
     "exteriorColorName": "Black Metallic",
-    "interiorColorName": "Alcantara",
+    "interiorColorName": "Full leather, Red",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 45900,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 46000,
+    "basePriceEuro": 44790,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 25000,
     "firstRegistrationYearAndMonth": [
-      2021,
-      12
+      2023,
+      1
     ],
-    "numberOfPreviousOwners": "2",
+    "numberOfPreviousOwners": "?",
     "warranty": {
       "exists": "no"
     },
     "service": {
-      "type": "yes",
+      "type": "unknown",
       "history": []
     },
-    "nextInspectionDate": "12/2026",
-    "sellerTypeOrName": "Unknown Dealer",
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Jülicher Autozentrum Makki GmbH ★4.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 89269 Vöhringen",
+    "listingLocation": "🇩🇪 52428 Jülich",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -4773,31 +4522,31 @@
       "S403A": "yes",
       "S5AZA": "unknown",
       "S5AUA": "unknown",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "yes",
-      "S322A": "unknown",
-      "S2VFA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
       "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
       "S248A": "yes",
-      "S420A": "yes",
+      "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "yes",
       "S6C4A": "unknown",
       "S430A": "yes",
       "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "yes",
-      "S2NHA": "yes",
-      "S3ACA": "yes",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
       "S3ADA": "unknown",
       "S3AGA": "unknown",
       "S488A": "yes",
@@ -4805,37 +4554,35 @@
       "S524A": "unknown",
       "S265A": "yes",
       "S216A": "unknown",
-      "S302A": "yes",
+      "S302A": "unknown",
       "S4NHA": "unknown"
     },
     "listingDates": {
-      "createdTime": "2026-04-12T16:06:02.000Z",
-      "modifiedTime": "2026-04-12T16:12:12.000Z",
-      "renewedTime": "2026-04-12T16:06:02.000Z"
+      "createdTime": "2026-03-09T13:42:58.000Z",
+      "modifiedTime": "2026-04-13T12:44:04.000Z",
+      "renewedTime": "2026-04-13T12:43:59.000Z"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
         "detail": null,
         "changes": null,
-        "auditDate": "2026-04-12T16:06:02.000Z"
+        "auditDate": "2026-03-09T13:42:58.000Z"
       },
       {
         "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
-        "auditDate": "2026-04-12T16:06:02.000Z"
+        "auditDate": "2026-04-13T12:43:59.000Z"
       },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-04-12T19:23:14.190Z"
+        "auditDate": "2026-04-13T18:33:05.700Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
+    "aiCommentary": null
   }
 ]

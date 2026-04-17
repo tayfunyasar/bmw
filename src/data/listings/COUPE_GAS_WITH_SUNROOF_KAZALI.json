@@ -153,7 +153,8 @@
       "modifiedTime": "2026-04-01T07:59:47.000Z",
       "renewedTime": "2026-03-13T17:43:06.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true
   },
   {
     "listingId": "C126",
@@ -402,7 +403,8 @@
       "modifiedTime": "2026-03-31T13:41:26.000Z",
       "renewedTime": "2026-03-17T20:05:27.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true
   },
   {
     "listingId": "C142",
@@ -530,7 +532,8 @@
       "modifiedTime": "2026-03-31T14:30:26.000Z",
       "renewedTime": "2026-03-16T09:45:03.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true
   },
   {
     "listingId": "C56",
@@ -853,7 +856,8 @@
       "modifiedTime": "2026-04-07T14:41:28.000Z",
       "renewedTime": "2026-03-19T04:37:20.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true
   },
   {
     "listingId": "C170",
@@ -952,6 +956,7 @@
       "modifiedTime": "2026-04-08T15:53:48.000Z",
       "renewedTime": "2026-04-08T15:53:47.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true
   }
 ]

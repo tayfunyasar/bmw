@@ -40,7 +40,9 @@ try {
     execSync(`node scripts/apify-fetch-car.js ${argsString}`, { stdio: 'inherit' });
 
     console.log('\n--- 2. Adım: Veri işleniyor (Eşleştirme ve Güncelleme) ---');
-    execSync('npm run import:car', { stdio: 'inherit' });
+    // Sadece bu komutta indirilen ID'leri işle — diğer dosyalara yan etki olmasın
+    execSync(`node scripts/parse-car-json.js ${argsString}`, { stdio: 'inherit' });
+    execSync('npm run format:data', { stdio: 'inherit' });
 
     console.log('\n--- İşlem başarıyla tamamlandı! ---');
 } catch (error) {

@@ -13,7 +13,8 @@
     "import:car": "node scripts/parse-car-json.js && npm run format:data",
     "import:apify": "node scripts/import-full.js",
     "sell": "node scripts/mark-sold.js",
-    "refresh": "node scripts/refresh-stale.js"
+    "refresh": "node scripts/refresh-stale.js",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",

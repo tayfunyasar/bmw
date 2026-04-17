@@ -39,13 +39,20 @@ function determineDrivetrain(title, description, url, features = []) {
   const allText = `${title} ${description} ${url}`;
   const hasXDrive = /x[- ]?drive/i.test(allText);
   const hasAllrad = /allrad/i.test(description);
-  const hasRWD = /\bRWD\b/.test(title)
+  // Güçlü RWD sinyali: ilan metninde/başlığında açıkça geçen ibareler
+  const hasStrongRWD = /\bRWD\b/.test(title)
     || /hinterradantrieb/i.test(description)
-    || /heckantrieb/i.test(description)
-    || features.includes("Rear wheel drive");
+    || /heckantrieb/i.test(description);
+  // Zayıf RWD sinyali: sadece Apify features etiketi (yanıltıcı olabiliyor)
+  const hasWeakRWD = features.includes("Rear wheel drive");
 
   if (hasXDrive || hasAllrad) return { type: "xDrive AWD", certain: true };
-  if (hasRWD) return { type: "RWD", certain: true };
+  if (hasStrongRWD) return { type: "RWD", certain: true };
+  if (hasWeakRWD) return {
+    type: "xDrive AWD",
+    certain: false,
+    note: "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+  };
   return { type: "xDrive AWD", certain: false };
 }
 
@@ -170,6 +177,7 @@ function parseCar(car, nextId) {
     exteriorColorName: props.manufacturerColour || props.colour,
     interiorColorName: props.upholstery,
     drivetrainType: drivetrain.type,
+    drivetrainCertain: drivetrain.certain,
     basePriceEuro: car.price?.amount,
     estimatedImportTaxEuro: estimatedImportTaxEuro,
     mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
@@ -218,7 +226,7 @@ function parseCar(car, nextId) {
       }] : [])
     ].sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate)),
     cardThemeColorHex: (props.manufacturerColour || "").includes("weiß") ? "#e2e8f0" : "#94a3b8",
-    aiCommentary: !drivetrain.certain ? ["⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."] : null
+    aiCommentary: !drivetrain.certain ? [drivetrain.note || "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."] : null
   };
 }
 
@@ -231,7 +239,8 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
   const fieldsToCheck = [
       'basePriceEuro', 'mileageKm', 'sellerTypeOrName',
       'listingLocation', 'exteriorColorName', 'interiorColorName',
-      'numberOfPreviousOwners', 'warranty', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm'
+      'numberOfPreviousOwners', 'warranty', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm',
+      'drivetrainType', 'drivetrainCertain'
   ];  
   const overrides = existingCar.overrideFeatures || {};
   fieldsToCheck.forEach(key => {
@@ -271,10 +280,17 @@ async function run() {
       process.exit(0);
   }
 
+  // Opsiyonel CLI filtresi: sadece belirtilen mobile.de ID'lerini işle
+  const filterIds = process.argv.slice(2).map(s => s.trim()).filter(Boolean);
+  if (filterIds.length > 0) {
+      console.log(`🔎 Filtre aktif: sadece ${filterIds.length} ID işlenecek (${filterIds.join(', ')})`);
+  }
+
   // Her mobileDeId için sadece en yeni dump dosyasını al (flip-flop önleme)
   const latestDumps = {};
   for (const filename of allDumpFiles) {
       const [id, tsRaw] = filename.replace('.json', '').split('_');
+      if (filterIds.length > 0 && !filterIds.includes(id)) continue;
       const ts = parseInt(tsRaw);
       if (!latestDumps[id] || ts > latestDumps[id].ts) {
           latestDumps[id] = { ts, filename };

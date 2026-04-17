@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline } from 'antd';
+import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline, Tooltip } from 'antd';
 import { ClockCircleOutlined, PushpinOutlined, PushpinFilled } from '@ant-design/icons';
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
@@ -125,7 +125,13 @@ export const CarTable = ({
   const dataSource = [
     { key: 'color', prop: 'Dış Renk', isColor: true },
     { key: 'interior', prop: 'İç Renk', isInterior: true },
-    Object.assign({ key: 'drive', prop: 'Tahrik' }, Object.fromEntries(cars.map(car => [car.listingId, car.drivetrainType]))),
+    Object.assign({ key: 'drive', prop: 'Tahrik' }, Object.fromEntries(cars.map(car => {
+      const weak = car.drivetrainCertain === false;
+      const cell = weak
+        ? <Tooltip title="Zayıf sinyal: sadece Apify 'Rear wheel drive' etiketi var, ilan metninde teyit yok. Satıcıdan doğrulanmalı."><Text type="warning">{car.drivetrainType} ⚠️</Text></Tooltip>
+        : <Tooltip title="Güçlü sinyal: ilan başlığı/açıklaması doğrudan tahrik tipini belirtiyor."><Text>{car.drivetrainType} ✅</Text></Tooltip>;
+      return [car.listingId, cell];
+    }))),
     Object.assign({ key: 'price', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
     Object.assign({ key: 'mileage', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString()} km`]))),
     Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => [car.listingId, car.firstRegistrationYearAndMonth ? `${car.firstRegistrationYearAndMonth[1].toString().padStart(2, '0')}/${car.firstRegistrationYearAndMonth[0]}` : '?']))),

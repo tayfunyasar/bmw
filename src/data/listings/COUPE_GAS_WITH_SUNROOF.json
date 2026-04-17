@@ -3345,142 +3345,6 @@
     "aiCommentary": null
   },
   {
-    "listingId": "C143",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laserlicht-glasdach-ahk-m%C3%BCnchen/449057379.html",
-    "mobileDeId": "449057379",
-    "exteriorColorName": "Black Metallic",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 48900,
-    "estimatedImportTaxEuro": 11097,
-    "mileageKm": 57000,
-    "firstRegistrationYearAndMonth": [
-      2023,
-      9
-    ],
-    "numberOfPreviousOwners": "2",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "07/2026",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 81737 München",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "unknown",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "yes",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "yes",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "unknown",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-02-28T16:37:12.000Z",
-      "modifiedTime": "2026-04-14T15:33:04.000Z",
-      "renewedTime": "2026-02-28T16:37:12.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-02-28T16:37:12.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-02-28T16:37:12.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-04T10:59:37.372Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S494A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S488A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S715A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S521A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S265A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:30:51.820Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S2T4A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T20:32:16.852Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
     "listingId": "C144",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-leder-sport-auspuff-m-schiebedach-isernhagen-ot-altwarmb%C3%BCchen-bei-hannover-a2-a7/449913824.html",
     "mobileDeId": "449913824",
@@ -5097,16 +4961,27 @@
     "nextInspectionDate": "New",
     "sellerTypeOrName": "Gottstein GmbH Automobile & Motorräder ★4.7",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 177,
     "listingLocation": "🇩🇪 Tiengen",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
+    "curatorPersonalNotes": [
+      "✅ Kaza YOK (satıcı teyidi)",
+      "⚠️ Garanti yarın (18.04.2026) bitiyor — uzatma seçenekleri: 1 yıl veya 2 yıl (€600)",
+      "❌ Driving Assistant Professional YOK",
+      "✅ CO₂ = 177 g/km (teyit edildi)",
+      "✅ Dış renk: Sanremo Green (açık yeşil) teyit",
+      "💰 Fiyat pazarlıksız (araç neredeyse sıfır, 38.926 km)",
+      "🔧 TÜV: gerekirse yeni yapılacak",
+      "🔧 Fren servisi: Ağustos 2024",
+      "🔧 Servis: erken yapılamaz — ~5.000 km veya ~10 hafta önceden",
+      "📞 Jannick · +49 7751 83 92 37 · Gottstein GmbH"
+    ],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
       "S5AZA": "yes",
-      "S5AUA": "yes",
+      "S5AUA": "no",
       "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
@@ -5165,10 +5040,36 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.399Z"
+      },
+      {
+        "action": "Satıcı Görüşmesi (Telefon)",
+        "detail": "Jannick ile görüşme — CO₂ 177, DA Prof yok, garanti yarın bitiyor, kaza yok",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 177
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "yes",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-17T14:14:02.877Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": {
+        "value": 177,
+        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17)"
+      },
+      "S5AUA": {
+        "value": "no",
+        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17): Driving Assistant Professional yok"
+      }
+    },
+    "dealerListingUrl": "https://www.gottstein-gruppe.de/de/fahrzeugangebot/#!/vehicles/6678460/BMW_M440i_xDrive_Coupé_M_Shadow_Line_SANREMO_GREEN"
   },
   {
     "listingId": "C187",
@@ -5195,7 +5096,7 @@
     "nextInspectionDate": "New",
     "sellerTypeOrName": "Langenhan GmbH Filiale Mühlhausen ★4.7",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 194,
     "listingLocation": "🇩🇪 99996 Unstruttal",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -5263,10 +5164,27 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.399Z"
+      },
+      {
+        "action": "Manuel Override",
+        "detail": "co2EmissionsGramPerKm override edildi",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 194
+          }
+        },
+        "auditDate": "2026-04-17T13:46:18.009Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": {
+        "value": 194,
+        "reason": "Kullanıcı teyidi: ilanda belirtilmemiş, 194 g/km olarak sabitlendi"
+      }
+    }
   },
   {
     "listingId": "C192",
@@ -5396,7 +5314,9 @@
     "co2EmissionsGramPerKm": 170,
     "listingLocation": "🇩🇪 38110 Braunschweig",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
+    "curatorPersonalNotes": [
+      "⚠️ Kazalı şüphesi: yan aynalar ve topuz detayları uyumsuz — çakal kasa olabilir"
+    ],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {

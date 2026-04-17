@@ -2657,7 +2657,9 @@
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 31137 Hildesheim",
     "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
+    "curatorPersonalNotes": [
+      "⚠️ Yüksek KM"
+    ],
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {

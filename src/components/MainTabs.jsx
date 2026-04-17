@@ -28,12 +28,13 @@ const EmptyFrozen = () => (
 
 const FrozenTabContent = ({ frozenCars, allCarsById }) => {
   const [activeSubTab, setActiveSubTab] = useState('suggested');
+  const [nowMs] = useState(() => Date.now());
 
   const buildUnion = (days) => {
     const unionMap = new Map();
     frozenCars.forEach(c => unionMap.set(c.listingId, c));
     if (days != null) {
-      const cutoff = Date.now() - days * 86400000;
+      const cutoff = nowMs - days * 86400000;
       [...allCarsById.values()].forEach(car => {
         const date = getCarPublishedDate(car);
         if (date && date.getTime() >= cutoff) unionMap.set(car.listingId, car);

@@ -13,6 +13,7 @@
     "import:car": "node scripts/parse-car-json.js && npm run format:data",
     "import:apify": "node scripts/import-full.js",
     "sell": "node scripts/mark-sold.js",
+    "cakal": "node scripts/mark-cakal.js",
     "refresh": "node scripts/refresh-stale.js",
     "deploy": "vercel --prod"
   },

@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Tabs } from 'antd';
-import { yearGroups, sortedYears, allByTotalCost } from '../utils/pricingCalculator';
+import { yearGroups, sortedYears, allByTotalCost, sortByTotalCost } from '../utils/pricingCalculator';
 import { soldGasListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
 import { useFrozenCars } from './FrozenCarsContext';
 import { VehicleTableCard } from './VehicleTableCard';
@@ -11,6 +11,56 @@ import { RulesTab } from './tabs/RulesTab';
 import { BookmarksTab } from './tabs/BookmarksTab';
 import { NotesTab } from './tabs/NotesTab';
 import { DeletedCarsTab } from './tabs/DeletedCarsTab';
+
+const RECENT_DAYS_OPTIONS = [1, 3, 7, 14, 30];
+
+const getCarPublishedDate = (car) => {
+  const published = car.auditHistory?.find(h => h.action?.includes('İlan Yayınlandı'));
+  const raw = car.listingDates?.createdTime || published?.auditDate;
+  return raw ? new Date(raw) : null;
+};
+
+const EmptyFrozen = () => (
+  <div style={{ padding: 24, textAlign: 'center', color: '#888' }}>
+    Bu görünümde araç yok. Diğer sekmelerde araç başlığındaki 📌 Freeze butonuna tıkla.
+  </div>
+);
+
+const FrozenTabContent = ({ frozenCars, allCarsById }) => {
+  const [activeSubTab, setActiveSubTab] = useState('suggested');
+
+  const buildUnion = (days) => {
+    const unionMap = new Map();
+    frozenCars.forEach(c => unionMap.set(c.listingId, c));
+    if (days != null) {
+      const cutoff = Date.now() - days * 86400000;
+      [...allCarsById.values()].forEach(car => {
+        const date = getCarPublishedDate(car);
+        if (date && date.getTime() >= cutoff) unionMap.set(car.listingId, car);
+      });
+    }
+    return sortByTotalCost([...unionMap.values()]);
+  };
+
+  const renderTab = (days) => {
+    const cars = buildUnion(days);
+    const titleSuffix = days == null ? '' : ` + Son ${days} Gün`;
+    return cars.length > 0
+      ? <CarTable cars={cars} title={`📌 Önerilenler${titleSuffix} — Yan Yana Karşılaştırma`} />
+      : <EmptyFrozen />;
+  };
+
+  const subItems = [
+    { key: 'suggested', label: 'Önerilenler', children: renderTab(null) },
+    ...RECENT_DAYS_OPTIONS.map(d => ({
+      key: `day${d}`,
+      label: `Önerilenler + Son ${d}`,
+      children: renderTab(d),
+    })),
+  ];
+
+  return <Tabs activeKey={activeSubTab} onChange={setActiveSubTab} items={subItems} />;
+};
 
 export const MainTabs = () => {
   const navigate = useNavigate();
@@ -22,23 +72,33 @@ export const MainTabs = () => {
     navigate(`/${key}`);
   };
 
+  const sorted = useMemo(() => ({
+    sold: sortByTotalCost(soldGasListings),
+    rwdSunroof: sortByTotalCost(rwdGasWithSunroofListings),
+    rwdNoSunroof: sortByTotalCost(rwdGasWithoutSunroofListings),
+    noSunroof: sortByTotalCost(noSunroofGas),
+    diesel: sortByTotalCost(CoupeDieselWithSunroof),
+    cakal: sortByTotalCost(cakalListings),
+    kazali: sortByTotalCost(kazaliListings),
+  }), []);
+
   const allCarsById = useMemo(() => {
     const pool = [
       ...allByTotalCost,
-      ...soldGasListings,
-      ...rwdGasWithSunroofListings,
-      ...rwdGasWithoutSunroofListings,
-      ...noSunroofGas,
-      ...CoupeDieselWithSunroof,
-      ...cakalListings,
-      ...kazaliListings,
+      ...sorted.sold,
+      ...sorted.rwdSunroof,
+      ...sorted.rwdNoSunroof,
+      ...sorted.noSunroof,
+      ...sorted.diesel,
+      ...sorted.cakal,
+      ...sorted.kazali,
     ];
     const map = new Map();
     pool.forEach(car => { if (!map.has(car.listingId)) map.set(car.listingId, car); });
     return map;
-  }, []);
+  }, [sorted]);
 
-  const frozenCars = frozenIds.map(id => allCarsById.get(id)).filter(Boolean);
+  const frozenCars = sortByTotalCost(frozenIds.map(id => allCarsById.get(id)).filter(Boolean));
 
   return (
     <Tabs
@@ -47,9 +107,7 @@ export const MainTabs = () => {
       items={[{
           key: 'frozen',
           label: `📌 Freeze Edilenler — ${frozenCars.length} araç`,
-          children: frozenCars.length > 0
-            ? <CarTable cars={frozenCars} title="📌 Freeze Edilen Araçlar — Yan Yana Karşılaştırma" />
-            : <div style={{ padding: 24, textAlign: 'center', color: '#888' }}>Henüz freeze edilmiş araç yok. Diğer sekmelerde araç başlığındaki 📌 Freeze butonuna tıkla.</div>
+          children: <FrozenTabContent frozenCars={frozenCars} allCarsById={allCarsById} />
         }, {
           key: 'all-adjusted',
           label: `💰 TOPLAM MALİYET — ${allByTotalCost.length} araç`,
@@ -87,37 +145,37 @@ export const MainTabs = () => {
         {
           key: 'cakal',
           label: '🐺 Çakal Kasalar',
-          children: <VehicleTableCard carList={cakalListings} title="🐺 Çakal Kasalar — Modifiyeli / Şüpheli Araçlar" isRejected={true} rejectedLabel="ÇAKAL" />
+          children: <VehicleTableCard carList={sorted.cakal} title="🐺 Çakal Kasalar — Modifiyeli / Şüpheli Araçlar" isRejected={true} rejectedLabel="ÇAKAL" />
         },
         {
           key: 'kazali',
           label: '💥 Kazalı Araçlar',
-          children: <VehicleTableCard carList={kazaliListings} title="�� Kazalı Araçlar — Onarılmış Hasar Kaydı" isRejected={true} rejectedLabel="KAZALI" />
+          children: <VehicleTableCard carList={sorted.kazali} title="�� Kazalı Araçlar — Onarılmış Hasar Kaydı" isRejected={true} rejectedLabel="KAZALI" />
         },
         {
           key: 'sold',
           label: '🚫 Satılan Araçlar',
-          children: <VehicleTableCard carList={soldGasListings} title="🚫 Satılan Araçlar" isRejected={true} rejectedLabel="SATILDI" />
+          children: <VehicleTableCard carList={sorted.sold} title="🚫 Satılan Araçlar" isRejected={true} rejectedLabel="SATILDI" />
         },
         {
           key: 'no-sunroof',
           label: '🚫 Sunroof Yok',
-          children: <VehicleTableCard carList={noSunroofGas} title="🚫 Sunroof Yok — Red Edilen Araçlar" isRejected={true} rejectedLabel="RED" />
+          children: <VehicleTableCard carList={sorted.noSunroof} title="🚫 Sunroof Yok — Red Edilen Araçlar" isRejected={true} rejectedLabel="RED" />
         },
         {
           key: 'rwd-with-sunroof',
           label: '🔙 RWD & Sunroof',
-          children: <VehicleTableCard carList={rwdGasWithSunroofListings} title="🔙 Arkadan İtiş (RWD) & Sunroof — Red Edilen Araçlar" isRejected={true} rejectedLabel="RED (RWD)" />
+          children: <VehicleTableCard carList={sorted.rwdSunroof} title="🔙 Arkadan İtiş (RWD) & Sunroof — Red Edilen Araçlar" isRejected={true} rejectedLabel="RED (RWD)" />
         },
         {
           key: 'rwd-no-sunroof',
           label: '🔙 RWD & Sunroof Yok',
-          children: <VehicleTableCard carList={rwdGasWithoutSunroofListings} title="🔙 Arkadan İtiş (RWD) & Sunroof Yok — Red Edilen Araçlar" isRejected={true} rejectedLabel="RED (RWD/No Sunroof)" />
+          children: <VehicleTableCard carList={sorted.rwdNoSunroof} title="🔙 Arkadan İtiş (RWD) & Sunroof Yok — Red Edilen Araçlar" isRejected={true} rejectedLabel="RED (RWD/No Sunroof)" />
         },
         {
           key: 'diesel',
           label: '⛽ Dizel Araçlar & Sunroof',
-          children: <VehicleTableCard carList={CoupeDieselWithSunroof} title="⛽ Dizel Araçlar & Sunroof" isRejected={false} />
+          children: <VehicleTableCard carList={sorted.diesel} title="⛽ Dizel Araçlar & Sunroof" isRejected={false} />
         }
       ])} 
     />

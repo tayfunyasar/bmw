@@ -50,6 +50,14 @@ const rankPicks = (evaluatedListings, category) => {
   return [...pool].sort((a, b) => category.scoreOf(b) - category.scoreOf(a)).slice(0, 5);
 };
 
+export const computeSuggestedIds = (evaluatedListings) => {
+  const ids = new Set();
+  CATEGORIES.forEach(category => {
+    rankPicks(evaluatedListings, category).forEach(c => ids.add(c.listingId));
+  });
+  return [...ids];
+};
+
 const formatScore = (n) => (typeof n === 'number' ? Math.round(n * 10) / 10 : n);
 
 const RankedPick = ({ car, rank, category }) => {

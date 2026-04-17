@@ -134,7 +134,10 @@ export const CarTable = ({
     }))),
     Object.assign({ key: 'price', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
     Object.assign({ key: 'mileage', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString()} km`]))),
-    Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => [car.listingId, car.firstRegistrationYearAndMonth ? `${car.firstRegistrationYearAndMonth[1].toString().padStart(2, '0')}/${car.firstRegistrationYearAndMonth[0]}` : '?']))),
+    Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => {
+      const [y, m] = car.firstRegistrationYearAndMonth || [];
+      return [car.listingId, (y != null && m != null) ? `${m.toString().padStart(2, '0')}/${y}` : '?'];
+    }))),
     Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration]))),
     Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?']))),
     Object.assign({ key: 'overrides', prop: '🔧 Override' }, Object.fromEntries(cars.map(car => {

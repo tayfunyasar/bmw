@@ -266,6 +266,12 @@ const assignRecommendations = (evaluated) => {
   return evaluated;
 };
 
+// Tüm sekmelerde ortak kullanılan: toplam alım maliyetine göre artan sıralama
+// (fiyat + BPM). Metrics yoksa hesaplanır; varsa korunur.
+export const sortByTotalCost = (listings) => [...listings]
+  .map(car => car.metrics ? car : Object.assign({}, car, { metrics: calculateCarMetrics(car) }))
+  .sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);
+
 // --- Data Aggregation ---
 const createEvaluatedListings = (listings) => {
   const evaluated = listings.map((car, index) => Object.assign({}, car, { 

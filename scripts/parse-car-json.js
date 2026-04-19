@@ -356,7 +356,7 @@ async function run() {
     const isGC = allText.includes("Gran Coupe") || allText.includes("Gran Coupé") || rawCar.title?.includes("GC") || rawCar.subTitle?.includes("GC");
     const isCabrio = /cabrio/i.test(allText) || /convertible/i.test(allText);
     const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
-    const isDamaged = rawCar.isDamaged === true || (rawCar.attributes?.['Vehicle condition'] || '').includes('accident');
+    const isDamaged = rawCar.isDamaged === true || !!rawCar.isDamaged || (rawCar.attributes?.['Vehicle condition'] || '').includes('accident') || (typeof rawCar.isDamaged === 'string' && rawCar.isDamaged.includes('Unfallvorschaden'));
 
     if (isCabrio) return 'CABRIO';
     if (isGC) return 'GRAN_COUPE';

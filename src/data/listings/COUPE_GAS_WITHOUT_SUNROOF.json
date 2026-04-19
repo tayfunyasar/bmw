@@ -604,10 +604,10 @@
     "listingId": "C29",
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=441933571",
     "mobileDeId": "441933571",
-    "exteriorColorName": "Ind. Tansanit-Blau II",
-    "interiorColorName": "?",
+    "exteriorColorName": "tansanitblau ii",
+    "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 54900,
+    "basePriceEuro": 53700,
     "estimatedImportTaxEuro": 11097,
     "mileageKm": 21073,
     "firstRegistrationYearAndMonth": [
@@ -616,17 +616,17 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "unknown"
+      "exists": "yes"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Hedin ★4.3",
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Hedin Automotive Saarland GmbH ★4.3",
     "modelGeneration": "LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Saarbrücken",
+    "co2EmissionsGramPerKm": 186,
+    "listingLocation": "🇩🇪 66117 Saarbrücken",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -634,43 +634,48 @@
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
-      "S403A": "no",
+      "S403A": "unknown",
       "S5AZA": "yes",
-      "S5AUA": "unknown",
+      "S5AUA": "yes",
       "S688A": "no",
       "S2T4A": "yes",
       "S610A": "unknown",
       "S5DN_360": "yes",
-      "KGNL": "unknown",
+      "KGNL": "yes",
       "S322A": "yes",
       "S2VFA": "unknown",
-      "S459A": "unknown",
+      "S459A": "yes",
       "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
+      "S715A": "yes",
       "S2VLA": "yes",
-      "S494A": "unknown",
+      "S494A": "yes",
       "S248A": "unknown",
-      "S420A": "unknown",
+      "S420A": "yes",
       "S1MAA": "yes",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
       "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
       "S2NHA": "yes",
       "S3ACA": "unknown",
       "S3ADA": "unknown",
       "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
       "S524A": "unknown",
-      "S265A": "unknown",
-      "S216A": "unknown",
-      "S302A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2025-11-20T13:40:48.000Z",
+      "modifiedTime": "2026-04-19T01:03:05.000Z",
+      "renewedTime": "2026-04-19T01:03:04.000Z"
     },
     "auditHistory": [
       {
@@ -690,6 +695,136 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-15T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-19T01:03:04.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 54900,
+            "new": 53700
+          },
+          "sellerTypeOrName": {
+            "old": "Hedin ★4.3",
+            "new": "Hedin Automotive Saarland GmbH ★4.3"
+          },
+          "listingLocation": {
+            "old": "🇩🇪 Saarbrücken",
+            "new": "🇩🇪 66117 Saarbrücken"
+          },
+          "exteriorColorName": {
+            "old": "Ind. Tansanit-Blau II",
+            "new": "tansanitblau ii"
+          },
+          "interiorColorName": {
+            "old": "?",
+            "new": "Full leather, Other"
+          },
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "nextInspectionDate": {
+            "old": "?",
+            "new": "New"
+          },
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 186
+          },
+          "drivetrainCertain": {
+            "new": true
+          },
+          "equipmentFeatures.S403A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S459A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5ACA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S430A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-19T12:15:43.536Z"
       }
     ],
     "cardThemeColorHex": "#60a5fa",

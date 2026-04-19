@@ -4939,6 +4939,7 @@
   {
     "listingId": "C186",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-shadow-line-waldshut-tiengen/453077509.html",
+    "dealerListingUrl": "https://www.gottstein-gruppe.de/de/fahrzeugangebot/#!/vehicles/6678460/BMW_M440i_xDrive_Coupé_M_Shadow_Line_SANREMO_GREEN",
     "mobileDeId": "453077509",
     "exteriorColorName": "SANREMO GREEN",
     "interiorColorName": "Full leather, Black",
@@ -5022,6 +5023,16 @@
       "modifiedTime": "2026-04-14T13:13:28.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": {
+        "value": 177,
+        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17)"
+      },
+      "S5AUA": {
+        "value": "no",
+        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17): Driving Assistant Professional yok"
+      }
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -5058,18 +5069,7 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null,
-    "overrideFeatures": {
-      "co2EmissionsGramPerKm": {
-        "value": 177,
-        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17)"
-      },
-      "S5AUA": {
-        "value": "no",
-        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17): Driving Assistant Professional yok"
-      }
-    },
-    "dealerListingUrl": "https://www.gottstein-gruppe.de/de/fahrzeugangebot/#!/vehicles/6678460/BMW_M440i_xDrive_Coupé_M_Shadow_Line_SANREMO_GREEN"
+    "aiCommentary": null
   },
   {
     "listingId": "C187",
@@ -5146,6 +5146,12 @@
       "modifiedTime": "2026-04-16T11:22:24.000Z",
       "renewedTime": "2026-04-14T11:25:31.000Z"
     },
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": {
+        "value": 194,
+        "reason": "Kullanıcı teyidi: ilanda belirtilmemiş, 194 g/km olarak sabitlendi"
+      }
+    },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
@@ -5178,13 +5184,7 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null,
-    "overrideFeatures": {
-      "co2EmissionsGramPerKm": {
-        "value": 194,
-        "reason": "Kullanıcı teyidi: ilanda belirtilmemiş, 194 g/km olarak sabitlendi"
-      }
-    }
+    "aiCommentary": null
   },
   {
     "listingId": "C192",
@@ -5710,5 +5710,99 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C200",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-sportpaket-kaufbeuren/453407029.html",
+    "mobileDeId": "453407029",
+    "exteriorColorName": "BLACK",
+    "interiorColorName": null,
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 48500,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 61100,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      7
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "05/2027",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 87600 Kaufbeuren",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-17T15:08:07.000Z",
+      "modifiedTime": "2026-04-17T15:08:07.000Z",
+      "renewedTime": "2026-04-17T15:08:07.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-17T15:08:07.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-19T12:15:43.537Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

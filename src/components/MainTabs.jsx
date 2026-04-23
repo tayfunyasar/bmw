@@ -26,7 +26,7 @@ const EmptyFrozen = () => (
   </div>
 );
 
-const FrozenTabContent = ({ frozenCars, allCarsById }) => {
+const FrozenTabContent = ({ frozenCars, recentPool }) => {
   const [activeSubTab, setActiveSubTab] = useState('suggested');
   const [nowMs] = useState(() => Date.now());
 
@@ -35,7 +35,7 @@ const FrozenTabContent = ({ frozenCars, allCarsById }) => {
     frozenCars.forEach(c => unionMap.set(c.listingId, c));
     if (days != null) {
       const cutoff = nowMs - days * 86400000;
-      [...allCarsById.values()].forEach(car => {
+      recentPool.forEach(car => {
         const date = getCarPublishedDate(car);
         if (date && date.getTime() >= cutoff) unionMap.set(car.listingId, car);
       });
@@ -108,7 +108,7 @@ export const MainTabs = () => {
       items={[{
           key: 'frozen',
           label: `📌 Freeze Edilenler — ${frozenCars.length} araç`,
-          children: <FrozenTabContent frozenCars={frozenCars} allCarsById={allCarsById} />
+          children: <FrozenTabContent frozenCars={frozenCars} recentPool={allByTotalCost} />
         }, {
           key: 'all-adjusted',
           label: `💰 TOPLAM MALİYET — ${allByTotalCost.length} araç`,

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { pushSoldAudit } from './lib/sold.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,14 +46,7 @@ if (!foundCar) {
   process.exit(1);
 }
 
-foundCar.auditHistory = foundCar.auditHistory || [];
-foundCar.auditHistory.push({
-  action: "İlan Satıldı",
-  detail: `${sourceFile} dosyasından SOLD olarak taşındı`,
-  changes: null,
-  auditDate: new Date().toISOString()
-});
-foundCar.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
+pushSoldAudit(foundCar, sourceFile);
 
 const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
 sold.push(foundCar);

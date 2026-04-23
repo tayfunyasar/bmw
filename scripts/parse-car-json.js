@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { pushSoldAudit } from './lib/sold.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -346,6 +347,18 @@ async function run() {
     return { car: null, source: null };
   }
 
+  function detectDamageReason(rawCar) {
+    if (rawCar.isDamaged === true) return 'Apify isDamaged alanı true';
+    if (typeof rawCar.isDamaged === 'string' && rawCar.isDamaged.includes('Unfallvorschaden')) return `Apify isDamaged metninde tespit edildi: "${rawCar.isDamaged}"`;
+    if (!!rawCar.isDamaged && typeof rawCar.isDamaged !== 'string') return 'Apify isDamaged alanı truthy';
+    const vehicleCondition = rawCar.attributes?.['Vehicle condition'] || '';
+    if (vehicleCondition.includes('accident')) return `Apify 'Vehicle condition' alanı: "${vehicleCondition}"`;
+    const description = rawCar.description || '';
+    const vorschadenMatch = description.match(/[^.\n]*Vorschaden[^.\n]*/i);
+    if (vorschadenMatch) return `İlan açıklamasında tespit edildi: "${vorschadenMatch[0].trim()}"`;
+    return null;
+  }
+
   function determineTargetFile(car, rawCar) {
     const overrides = car.overrideFeatures || {};
     const isSunroof = car.equipmentFeatures.S403A === "yes";
@@ -356,17 +369,41 @@ async function run() {
     const isGC = allText.includes("Gran Coupe") || allText.includes("Gran Coupé") || rawCar.title?.includes("GC") || rawCar.subTitle?.includes("GC");
     const isCabrio = /cabrio/i.test(allText) || /convertible/i.test(allText);
     const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
-    const isDamaged = rawCar.isDamaged === true || !!rawCar.isDamaged || (rawCar.attributes?.['Vehicle condition'] || '').includes('accident') || (typeof rawCar.isDamaged === 'string' && rawCar.isDamaged.includes('Unfallvorschaden'));
+    const damageReason = detectDamageReason(rawCar);
 
-    if (isCabrio) return 'CABRIO';
-    if (isGC) return 'GRAN_COUPE';
-    if (isDamaged) return 'COUPE_GAS_WITH_SUNROOF_KAZALI';
-    if (isDiesel) return 'COUPE_DIESEL_WITH_SUNROOF';
-    if (isRWD) return isSunroof ? 'COUPE_GAS_RWD_WITH_SUNROOF' : 'COUPE_GAS_RWD_WITHOUT_SUNROOF';
-    return isSunroof ? 'COUPE_GAS_WITH_SUNROOF' : 'COUPE_GAS_WITHOUT_SUNROOF';
+    if (isCabrio) return { target: 'CABRIO' };
+    if (isGC) return { target: 'GRAN_COUPE' };
+    if (damageReason) return { target: 'COUPE_GAS_WITH_SUNROOF_KAZALI', reason: damageReason };
+    if (isDiesel) return { target: 'COUPE_DIESEL_WITH_SUNROOF' };
+    if (isRWD) return { target: isSunroof ? 'COUPE_GAS_RWD_WITH_SUNROOF' : 'COUPE_GAS_RWD_WITHOUT_SUNROOF' };
+    return { target: isSunroof ? 'COUPE_GAS_WITH_SUNROOF' : 'COUPE_GAS_WITHOUT_SUNROOF' };
   }
 
   for (const car of carData) {
+    // Apify "Listing does not exists anymore" cevabı: ilan mobile.de'den kalkmış → otomatik SOLD'a taşı
+    if (car.title === 'Listing does not exists anymore') {
+      const deadId = String(car.id ?? car.url?.match(/\/a\/(\d+)/)?.[1] ?? '').trim();
+      if (!deadId) {
+        console.warn(`⚠️ Kalkmış ilan ama mobileDeId tespit edilemedi — url: ${car.url}`);
+        continue;
+      }
+      const { car: existingCar, source } = findCarAndSource(deadId);
+      if (!existingCar) {
+        console.log(`ℹ️ Kalkmış ilan ${deadId} aktif listelerde zaten yok, atlanıyor.`);
+        continue;
+      }
+      if (frozenFiles.includes(source)) {
+        console.log(`ℹ️ ${existingCar.listingId} (${deadId}) zaten ${source.name}'da — atlanıyor.`);
+        continue;
+      }
+      const idx = source.data.indexOf(existingCar);
+      source.data.splice(idx, 1);
+      pushSoldAudit(existingCar, `${source.name}.json`, "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)");
+      sold.push(existingCar);
+      console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → SOLD`);
+      continue;
+    }
+
     const mobileDeIdMatch = car.url?.match(/id=(\d+)/) || car.url?.match(/\/(\d+)\.html/);
     const mobileDeId = mobileDeIdMatch ? mobileDeIdMatch[1] : null;
 
@@ -414,7 +451,7 @@ async function run() {
         // Dosya yerleşim kontrolü — sadece aktif dosyalardaki araçlar taşınabilir
         const isFrozen = frozenFiles.some(f => f === source);
         if (!isFrozen) {
-            const targetName = determineTargetFile(existingCar, car);
+            const { target: targetName, reason } = determineTargetFile(existingCar, car);
             if (targetName !== source.name) {
                 const idx = source.data.indexOf(existingCar);
                 source.data.splice(idx, 1);
@@ -422,11 +459,18 @@ async function run() {
                 targetFile.data.push(existingCar);
                 existingCar.auditHistory.push({
                     action: `Dosya Taşıma: ${source.name} → ${targetName}`,
-                    detail: "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+                    detail: reason ?? "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
                     changes: null,
                     auditDate: new Date().toISOString()
                 });
-                console.log(`🔀 ${existingCar.listingId} taşındı: ${source.name} → ${targetName}`);
+                if (reason) {
+                    existingCar.listingDescriptionNotes = existingCar.listingDescriptionNotes || [];
+                    const note = `⚠️ ${targetName} olarak işaretlendi — ${reason}`;
+                    if (!existingCar.listingDescriptionNotes.includes(note)) {
+                        existingCar.listingDescriptionNotes.push(note);
+                    }
+                }
+                console.log(`🔀 ${existingCar.listingId} taşındı: ${source.name} → ${targetName}${reason ? ` (${reason})` : ''}`);
             }
         }
     } else {
@@ -434,10 +478,14 @@ async function run() {
         const parsedCar = parseCar(car, nextId);
         currentAllListings.push(parsedCar);
 
-        const targetName = determineTargetFile(parsedCar, car);
+        const { target: targetName, reason } = determineTargetFile(parsedCar, car);
         const targetFile = activeFiles.find(f => f.name === targetName);
+        if (reason) {
+            parsedCar.listingDescriptionNotes = parsedCar.listingDescriptionNotes || [];
+            parsedCar.listingDescriptionNotes.push(`⚠️ ${targetName} olarak işaretlendi — ${reason}`);
+        }
         targetFile.data.push(parsedCar);
-        console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)`);
+        console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)${reason ? ` — ${reason}` : ''}`);
     }
   }
 
@@ -450,6 +498,7 @@ async function run() {
   fs.writeFileSync(granCoupePath, JSON.stringify(granCoupe, null, 2));
   fs.writeFileSync(cabrioPath, JSON.stringify(cabrio, null, 2));
   fs.writeFileSync(kazaliPath, JSON.stringify(kazali, null, 2));
+  fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2));
 }
 
 run().catch(console.error);

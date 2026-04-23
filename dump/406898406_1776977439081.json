@@ -1,0 +1,293 @@
+{
+  "id": 406898406,
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-blind-spot-line-assist-led-vilnius/406898406.html",
+  "shortTitle": "BMW M440",
+  "subTitle": "i xDrive Coupé/Blind Spot/Line assist/LED",
+  "title": "BMW M440i xDrive Coupé/Blind Spot/Line assist/LED",
+  "properties": {
+    "milage": "42,000 km",
+    "gearbox": "Automatic",
+    "fuelType": "Petrol",
+    "power": "275 kW (374 hp)",
+    "firstRegistration": "05/2021",
+    "seats": "4",
+    "doors": "2/3",
+    "generalInspection": "New",
+    "lastService": null,
+    "lastServiceMilage": null,
+    "productionDate": null,
+    "engineSize": "2,998 ccm",
+    "cylinders": null,
+    "emptyWeight": null,
+    "emissionClass": null,
+    "emissionSticker": null,
+    "co2Emission": "175 g/km",
+    "co2Class": "Based on CO₂ emissions (combined)",
+    "fuelConsumption": [
+      "7.7 l/100km (combined)"
+    ],
+    "costPer1500km": null,
+    "colour": "Black Metallic",
+    "manufacturerColour": null,
+    "upholstery": "Full leather, Black",
+    "countryVersion": null,
+    "vehicleNumber": "P00313",
+    "numberOfOwners": "1",
+    "climatisation": "Automatic climatisation, 2 zones",
+    "parkingSensors": "Self-steering systems, Front, Rear, Camera",
+    "airbags": "Front and Side and More Airbags",
+    "tankCapacity": null,
+    "range": null,
+    "powerConsumption": null,
+    "energyConsumption": "7.7 l/100km",
+    "otherEnergySources": null,
+    "driveType": "Internal combustion engine"
+  },
+  "descriptionHtml": "Car located in Lithuania<br><br>Vehicle is in perfect condition. For more information please contact us via phone number or email address.<br><br>We can help with car inspection and transportation in Lithuania (and baltic states), contact us for more information or visit us on https://www.vinmotors.lt/en<br><br>Ernestas +370 (648) 32 280 (Whatsapp/Viber/Telegram) (EN/LT/RU)<br>Vilius +370 (629) 69 451 (Whatsapp/Viber/Telegram) (EN/LT)<br><br>Vin Motors is your ultimate destination for all things automotive! We pride ourselves on providing an exceptional car buying experience that's tailored to meet your needs. As a reputable car dealership, we offer a vast selection of top-quality vehicles from various makes and models, ensuring that you find the perfect match for your lifestyle and budget.<br><br><br>Please be advised: Our working hours is from Monday to Friday from 10 AM to 7 PM (GMT +2).<br><br>Address: Kelpių g. 37, Avižieniai, Avižienių sen., Vilniaus r. sav. 14184",
+  "description": "Car located in Lithuania\n\nVehicle is in perfect condition. For more information please contact us via phone number or email address.\n\nWe can help with car inspection and transportation in Lithuania (and baltic states), contact us for more information or visit us\non https://www.vinmotors.lt/en\n\nErnestas +370 (648) 32 280 (Whatsapp/Viber/Telegram) (EN/LT/RU)\nVilius +370 (629) 69 451 (Whatsapp/Viber/Telegram) (EN/LT)\n\nVin Motors is your ultimate destination for all things automotive! We pride ourselves on providing an exceptional car buying\nexperience that's tailored to meet your needs. As a reputable car dealership, we offer a vast selection of top-quality vehicles\nfrom various makes and models, ensuring that you find the perfect match for your lifestyle and budget.\n\n\nPlease be advised: Our working hours is from Monday to Friday from 10 AM to 7 PM (GMT +2).\n\nAddress: Kelpių g. 37, Avižieniai, Avižienių sen., Vilniaus r. sav. 14184",
+  "isNew": false,
+  "isDamaged": false,
+  "isReadyToDrive": true,
+  "isConditionNew": false,
+  "segment": "Car",
+  "category": "SportsCar",
+  "sellerId": 32735118,
+  "manufacturer": "BMW",
+  "model": "M440",
+  "price": {
+    "priceType": "FIXED",
+    "amount": 38500,
+    "currency": "EUR",
+    "formatted": "€38,500"
+  },
+  "netPrice": null,
+  "createdTime": "2024-10-23T16:49:10.000Z",
+  "modifiedTime": "2026-04-21T17:16:23.000Z",
+  "renewedTime": "2026-04-15T01:04:52.000Z",
+  "attributes": {
+    "Vehicle condition": "Used vehicle, Accident-free",
+    "Category": "Sports Car/Coupe",
+    "Model range": "G22",
+    "Trim line": "-",
+    "Vehicle Number": "P00313",
+    "Mileage": "42,000 km",
+    "Cubic Capacity": "2,998 ccm",
+    "Power": "275 kW (374 hp)",
+    "Drive type": "Internal combustion engine",
+    "Fuel": "Petrol",
+    "CO₂ class": "Based on CO₂ emissions (combined)",
+    "Fuel consumption": [
+      "7.7 l/100km (combined)"
+    ],
+    "Number of Seats": "4",
+    "Door Count": "2/3",
+    "Transmission": "Automatic",
+    "First Registration": "05/2021",
+    "Number of Vehicle Owners": "1",
+    "HU": "New",
+    "Climatisation": "Automatic climatisation, 2 zones",
+    "Parking sensors": "Self-steering systems, Front, Rear, Camera",
+    "Airbags": "Front and Side and More Airbags",
+    "Colour": "Black Metallic",
+    "Interior Design": "Full leather, Black",
+    "Energy consumption (comb.)": "7.7 l/100km",
+    "CO₂ emissions (comb.)": "175 g/km"
+  },
+  "batteryInformation": null,
+  "features": [
+    "ABS",
+    "Adaptive Cruise Control",
+    "Adaptive lighting",
+    "Alarm system",
+    "Alloy wheels",
+    "Ambient lighting",
+    "Android Auto",
+    "Apple CarPlay",
+    "Arm rest",
+    "Autom. dimming interior mirror",
+    "Blind spot assist",
+    "Bluetooth",
+    "CD Multichanger",
+    "CD player",
+    "Central locking",
+    "DAB radio",
+    "Distance warning system",
+    "Dynamic chassis control",
+    "Electric backseat adjustment",
+    "Electric seat adjustment",
+    "Electric side mirror",
+    "Electric tailgate",
+    "Electric windows",
+    "Eletric seat adjustment with memory function",
+    "Emergency brake assist",
+    "Emergency call system",
+    "ESP",
+    "Fatigue warning system",
+    "Four-wheel drive",
+    "Full Service History",
+    "Hands-free kit",
+    "Heated seats",
+    "Heated steering wheel",
+    "High beam assist",
+    "Hill-start assist",
+    "Immobilizer",
+    "Induction charging for smartphones",
+    "Integrated music streaming",
+    "Isofix",
+    "Keyless central locking",
+    "Lane change assist",
+    "Leather steering wheel",
+    "LED headlights",
+    "LED running lights",
+    "Light sensor",
+    "Lumbar support",
+    "Multifunction steering wheel",
+    "Navigation preparation",
+    "Navigation system",
+    "New service",
+    "Non-smoker vehicle",
+    "On-board computer",
+    "Paddle shifters",
+    "Particulate filter",
+    "Power Assisted Steering",
+    "Rain sensor",
+    "Smoker's package",
+    "Sound system",
+    "Speed limit control system",
+    "Sport seats",
+    "Start-stop system",
+    "Summer tyres",
+    "Sunroof",
+    "Tinted windows",
+    "Touchscreen",
+    "Traction control",
+    "Traffic sign recognition",
+    "Tyre pressure monitoring",
+    "USB port",
+    "Voice control",
+    "Warranty",
+    "WLAN / Wi-Fi hotspot"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/85a522e5-64b5-4a4a-825f-db7e08d3310f?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1a68cd9-5761-49a2-a77c-d05d8297f866?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/73d49f12-4bb6-4865-a1ca-6ad2114ce904?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4fa55370-00fd-4ab9-9ef3-d9ae5099a849?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/52/52414a61-1235-4eb6-ae1c-501dab1a9e3f?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/42/42047728-ffc2-4b8e-a3e8-3095fe827e0b?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/7026efc6-1ea2-40f6-8736-b6887cc0c786?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2c/2c1af388-9c26-4579-b083-b95d780047e8?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f57c34a-1757-4de0-8d06-fd5c2804b599?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/592d3269-5e2d-42e1-a574-c743df1dcb20?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/980f38c4-750c-40ed-bc06-b401bb62e431?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e35feb8-afc0-44d2-8b8a-37b487c50837?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bff94c1f-2ebc-4c25-bb82-8300432c6910?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4c8e37f-3493-4923-8a70-108a2640d83d?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/66f06d8a-7ed5-4ec5-8fbe-f2ec2e3b1d2a?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b456fa8-fb46-474f-b1ba-ea076bc17422?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd9abcde-b2d6-4cc6-8278-64c397cacba8?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/acd99b6a-2bf4-4ddf-8a0b-7b3a0456ce3b?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/da/daae9a5c-a7a9-4638-9bc4-484ff617fe33?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ce/ce377947-06ab-4533-a347-f95746a22ae7?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c76ebb49-e00b-4778-84c4-cf7d42b48e31?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/81ef50a0-1189-467a-8daa-e0a3fad6519c?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/18/18b5b8bf-e605-41bf-8558-f9c6b4808ab8?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2b/2ba20651-4253-42b3-8d0c-c15ba5b7910c?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/68a7e509-5123-4e92-8481-2fe295270891?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8ef982-35e4-4aa3-8e61-bc0355ceae14?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b9f6927-110a-41d1-8f2c-839ffcdc7ada?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b534b64-68f2-422c-b811-a65b63851ca0?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2e/2edae0df-69ee-4286-8870-6869544cef90?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4723fa5-b267-42f1-8680-70a7186400da?rule=mo-1600.jpg"
+  ],
+  "version": 182,
+  "priceRating": {
+    "rating": "Very good price",
+    "priceRanges": [
+      {
+        "label": "Very good price",
+        "min": 30000,
+        "max": 39000
+      },
+      {
+        "label": "Good price",
+        "min": 39000,
+        "max": 42000
+      },
+      {
+        "label": "Fair price",
+        "min": 42000,
+        "max": 46800
+      },
+      {
+        "label": "Increased price",
+        "min": 46800,
+        "max": 50200
+      },
+      {
+        "label": "High price",
+        "min": 50200,
+        "max": 55800
+      }
+    ]
+  },
+  "dealer": {
+    "id": 32735118,
+    "contry": "LT",
+    "name": "UAB Vin Motors",
+    "phones": [
+      "+370 648 32280"
+    ],
+    "messengers": [
+      {
+        "type": "WHATS_APP",
+        "number": "+370 648 32280",
+        "uri": "https://wa.me/37064832280?ref=fb"
+      }
+    ],
+    "languages": [
+      "Pусский",
+      "English"
+    ],
+    "activeSince": "2023-07-12T00:00:00.000+00:00",
+    "homePageUrl": "https://home.mobile.de/home/redirect.html?customerId=32735118",
+    "logoUrl": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b9392e9-24da-406e-a1d7-f19684123464?rule=mo-1600.jpg",
+    "reviewPageUrl": "https://www.mobile.de/bewertungen/UABVINMOTORS?lang=en",
+    "sellerType": "Dealer",
+    "addesses": [
+      "Kelpių 37",
+      "LT-14184 Vilnius"
+    ],
+    "location": {
+      "latitude": 54.759079,
+      "longitude": 25.1916085
+    },
+    "rating": {
+      "advice": 4.761904761904762,
+      "total": 4.8,
+      "responseTime": 4.791666666666667,
+      "friendliness": 4.863636363636363,
+      "adRealityRate": 100,
+      "ratingCount": 24,
+      "recommendationRate": 95
+    },
+    "openingHours": [
+      {
+        "day": "Mon - Fri",
+        "time": "10:00 h - 18:00 h"
+      },
+      {
+        "day": "Sat",
+        "time": "10:00 h - 15:00 h"
+      }
+    ],
+    "person": {
+      "name": "Vilius Smirnovas",
+      "role": "Co-Founder"
+    }
+  },
+  "footnotes": [
+    "The information is provided in accordance with the Passenger Car Energy Consumption Labelling Regulation. The values stated were determined in accordance with the prescribed WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) measurement method. The fuel consumption and CO₂ emissions of a car depend not only on the efficient utilisation of fuel by the car, but also on driving style and other non-technical factors. CO₂ is the main greenhouse gas responsible for global warming. A guide to the fuel consumption and CO₂ emissions of all new car models offered in Germany can be viewed free of charge at any point of sale in Germany where new cars are displayed or offered for sale. The guide is also available here: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+    "The terms and conditions of the service provider apply."
+  ]
+}

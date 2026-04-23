@@ -1139,14 +1139,14 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
       "history": []
     },
     "nextInspectionDate": "New",
-    "sellerTypeOrName": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.8",
+    "sellerTypeOrName": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.9",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 165,
     "listingLocation": "🇩🇪 04328 Leipzig",
@@ -1155,43 +1155,48 @@
     "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
-      "S403A": "no",
+      "S403A": "unknown",
       "S5AZA": "yes",
-      "S5AUA": "no",
-      "S688A": "no",
-      "S2T4A": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
       "S610A": "yes",
-      "S5DN_360": "no",
+      "S5DN_360": "unknown",
       "KGNL": "yes",
       "S322A": "yes",
       "S2VFA": "unknown",
       "S459A": "yes",
-      "S5DNA": "no",
+      "S5DNA": "unknown",
       "S6U3A": "yes",
-      "S715A": "unknown",
-      "S2VLA": "no",
-      "S494A": "unknown",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
       "S248A": "unknown",
       "S420A": "yes",
       "S1MAA": "unknown",
       "S5ACA": "yes",
       "S6C4A": "yes",
       "S430A": "yes",
-      "S4AWA": "no",
-      "S775A": "no",
-      "S493A": "unknown",
-      "S536A": "no",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
       "S2NHA": "yes",
-      "S3ACA": "unknown",
+      "S3ACA": "yes",
       "S3ADA": "unknown",
       "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
       "S524A": "unknown",
-      "S265A": "unknown",
+      "S265A": "yes",
       "S216A": "unknown",
-      "S302A": "unknown",
+      "S302A": "yes",
       "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2025-12-17T08:40:44.000Z",
+      "modifiedTime": "2026-04-23T07:22:11.000Z",
+      "renewedTime": "2026-04-21T01:00:24.000Z"
     },
     "auditHistory": [
       {
@@ -1199,6 +1204,106 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-21T01:00:24.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.8",
+            "new": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.9"
+          },
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "drivetrainCertain": {
+            "new": true
+          },
+          "equipmentFeatures.S403A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S688A": {
+            "old": "no",
+            "new": "yes"
+          },
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-23T20:31:59.366Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3436,32 +3541,32 @@
     ]
   },
   {
-    "listingId": "C195",
-    "listingUrl": "https://www.mobile.de/api/a/450645184",
-    "mobileDeId": null,
-    "exteriorColorName": null,
-    "interiorColorName": null,
+    "listingId": "C203",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-acc-m-technik-360-19zoll-r%C3%BCckholz/453744667.html",
+    "mobileDeId": "453744667",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": null,
+    "basePriceEuro": 45400,
     "estimatedImportTaxEuro": 4112,
-    "mileageKm": 0,
+    "mileageKm": 59600,
     "firstRegistrationYearAndMonth": [
-      null,
-      null
+      2021,
+      2
     ],
-    "numberOfPreviousOwners": "?",
+    "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "no"
+      "exists": "yes"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
+    "nextInspectionDate": "04/2028",
+    "sellerTypeOrName": "Autohaus Schmidt ★4.3",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Unknown",
+    "co2EmissionsGramPerKm": 155,
+    "listingLocation": "🇩🇪 87494 Rückholz",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -3470,86 +3575,90 @@
       "S403A": "unknown",
       "S5AZA": "unknown",
       "S5AUA": "unknown",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
       "S610A": "unknown",
-      "S5DN_360": "unknown",
+      "S5DN_360": "yes",
       "KGNL": "unknown",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
       "S5DNA": "unknown",
-      "S6U3A": "unknown",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
       "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
       "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
       "S536A": "unknown",
-      "S2NHA": "unknown",
+      "S2NHA": "yes",
       "S3ACA": "unknown",
       "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
       "S524A": "unknown",
-      "S265A": "unknown",
+      "S265A": "yes",
       "S216A": "unknown",
-      "S302A": "unknown",
+      "S302A": "yes",
       "S4NHA": "unknown"
     },
     "listingDates": {
-      "createdTime": null,
-      "modifiedTime": null,
-      "renewedTime": null
+      "createdTime": "2026-04-21T10:47:34.000Z",
+      "modifiedTime": "2026-04-23T14:50:48.000Z",
+      "renewedTime": "2026-04-21T10:47:34.000Z"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-21T10:47:34.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-04-17T09:56:17.405Z"
+        "auditDate": "2026-04-23T20:31:59.366Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
+    "aiCommentary": null
   },
   {
-    "listingId": "C196",
-    "listingUrl": "https://www.mobile.de/api/a/452427940",
-    "mobileDeId": null,
-    "exteriorColorName": null,
-    "interiorColorName": null,
+    "listingId": "C207",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-mild-hybrid-aut-navi-led-tempo-korntal-m%C3%BCnchingen/453920655.html",
+    "mobileDeId": "453920655",
+    "exteriorColorName": "Gray",
+    "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": null,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 0,
+    "basePriceEuro": 52410,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 12589,
     "firstRegistrationYearAndMonth": [
-      null,
-      null
+      2023,
+      7
     ],
-    "numberOfPreviousOwners": "?",
+    "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "no"
+      "exists": "yes"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
+    "nextInspectionDate": "04/2028",
+    "sellerTypeOrName": "Autohero GmbH - Abholstation Stuttgart ★4.4",
+    "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Unknown",
+    "listingLocation": "🇩🇪 Münchingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -3558,233 +3667,61 @@
       "S403A": "unknown",
       "S5AZA": "unknown",
       "S5AUA": "unknown",
-      "S688A": "unknown",
+      "S688A": "yes",
       "S2T4A": "unknown",
       "S610A": "unknown",
       "S5DN_360": "unknown",
       "KGNL": "unknown",
-      "S322A": "unknown",
+      "S322A": "yes",
       "S2VFA": "unknown",
-      "S459A": "unknown",
+      "S459A": "yes",
       "S5DNA": "unknown",
-      "S6U3A": "unknown",
+      "S6U3A": "yes",
       "S715A": "unknown",
       "S2VLA": "unknown",
-      "S494A": "unknown",
-      "S248A": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
       "S420A": "unknown",
       "S1MAA": "unknown",
       "S5ACA": "unknown",
       "S6C4A": "unknown",
-      "S430A": "unknown",
+      "S430A": "yes",
       "S4AWA": "unknown",
       "S775A": "unknown",
       "S493A": "unknown",
       "S536A": "unknown",
-      "S2NHA": "unknown",
+      "S2NHA": "yes",
       "S3ACA": "unknown",
       "S3ADA": "unknown",
       "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
       "S524A": "unknown",
-      "S265A": "unknown",
+      "S265A": "yes",
       "S216A": "unknown",
       "S302A": "unknown",
       "S4NHA": "unknown"
     },
     "listingDates": {
-      "createdTime": null,
-      "modifiedTime": null,
-      "renewedTime": null
+      "createdTime": "2026-04-23T06:56:10.000Z",
+      "modifiedTime": "2026-04-23T06:58:19.000Z",
+      "renewedTime": "2026-04-23T06:56:10.000Z"
     },
     "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-23T06:56:10.000Z"
+      },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-04-17T09:56:17.409Z"
+        "auditDate": "2026-04-23T20:31:59.367Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
-  },
-  {
-    "listingId": "C197",
-    "listingUrl": "https://www.mobile.de/api/a/450645184",
-    "mobileDeId": null,
-    "exteriorColorName": null,
-    "interiorColorName": null,
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": null,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 0,
-    "firstRegistrationYearAndMonth": [
-      null,
-      null
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Unknown",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "unknown",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "unknown",
-      "S5DNA": "unknown",
-      "S6U3A": "unknown",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "unknown",
-      "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "unknown",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
-      "S524A": "unknown",
-      "S265A": "unknown",
-      "S216A": "unknown",
-      "S302A": "unknown",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": null,
-      "modifiedTime": null,
-      "renewedTime": null
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-17T09:56:27.776Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
-  },
-  {
-    "listingId": "C198",
-    "listingUrl": "https://www.mobile.de/api/a/452427940",
-    "mobileDeId": null,
-    "exteriorColorName": null,
-    "interiorColorName": null,
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": null,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 0,
-    "firstRegistrationYearAndMonth": [
-      null,
-      null
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 Unknown",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "unknown",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "unknown",
-      "S5DNA": "unknown",
-      "S6U3A": "unknown",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "unknown",
-      "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "unknown",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
-      "S524A": "unknown",
-      "S265A": "unknown",
-      "S216A": "unknown",
-      "S302A": "unknown",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": null,
-      "modifiedTime": null,
-      "renewedTime": null
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-17T09:56:27.781Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
+    "aiCommentary": null
   }
 ]

@@ -237,7 +237,7 @@ const assignRecommendations = (evaluated) => {
      // 5. Tescil yılı
      const registrationYear = car.firstRegistrationYearAndMonth?.[0];
      if (registrationYear >= 2023) add('2023+ tescil', 3);
-     else if (registrationYear === 2021) add('2021 tescil', -3);
+     else if (registrationYear === 2021) add('2021 tescil', -2);
 
      // 6. Dış renk tercihi
      if (isColorFav(car.exteriorColorName)) add('Favori renk', 2);

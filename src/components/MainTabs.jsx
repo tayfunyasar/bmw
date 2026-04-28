@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Tabs } from 'antd';
 import { yearGroups, sortedYears, allByTotalCost, sortByTotalCost } from '../utils/pricingCalculator';
@@ -6,62 +6,13 @@ import { soldGasListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListing
 import { useFrozenCars } from './FrozenCarsContext';
 import { VehicleTableCard } from './VehicleTableCard';
 import { CarTable } from './common/CarTable';
+import { CarsWithRecentSubTabs } from './CarsWithRecentSubTabs';
+import { computeSuggestedIds } from './Recommendations';
 import { YearlyComparisonTab } from './tabs/YearlyComparisonTab';
 import { RulesTab } from './tabs/RulesTab';
 import { BookmarksTab } from './tabs/BookmarksTab';
 import { NotesTab } from './tabs/NotesTab';
 import { DeletedCarsTab } from './tabs/DeletedCarsTab';
-
-const RECENT_DAYS_OPTIONS = [1, 3, 7, 14, 30];
-
-const getCarPublishedDate = (car) => {
-  const published = car.auditHistory?.find(h => h.action?.includes('İlan Yayınlandı'));
-  const raw = car.listingDates?.createdTime || published?.auditDate;
-  return raw ? new Date(raw) : null;
-};
-
-const EmptyFrozen = () => (
-  <div style={{ padding: 24, textAlign: 'center', color: '#888' }}>
-    Bu görünümde araç yok. Diğer sekmelerde araç başlığındaki 📌 Freeze butonuna tıkla.
-  </div>
-);
-
-const FrozenTabContent = ({ frozenCars, recentPool }) => {
-  const [activeSubTab, setActiveSubTab] = useState('suggested');
-  const [nowMs] = useState(() => Date.now());
-
-  const buildUnion = (days) => {
-    const unionMap = new Map();
-    frozenCars.forEach(c => unionMap.set(c.listingId, c));
-    if (days != null) {
-      const cutoff = nowMs - days * 86400000;
-      recentPool.forEach(car => {
-        const date = getCarPublishedDate(car);
-        if (date && date.getTime() >= cutoff) unionMap.set(car.listingId, car);
-      });
-    }
-    return sortByTotalCost([...unionMap.values()]);
-  };
-
-  const renderTab = (days) => {
-    const cars = buildUnion(days);
-    const titleSuffix = days == null ? '' : ` + Son ${days} Gün`;
-    return cars.length > 0
-      ? <CarTable cars={cars} title={`📌 Önerilenler${titleSuffix} — Yan Yana Karşılaştırma`} />
-      : <EmptyFrozen />;
-  };
-
-  const subItems = [
-    { key: 'suggested', label: 'Önerilenler', children: renderTab(null) },
-    ...RECENT_DAYS_OPTIONS.map(d => ({
-      key: `day${d}`,
-      label: `Önerilenler + Son ${d}`,
-      children: renderTab(d),
-    })),
-  ];
-
-  return <Tabs activeKey={activeSubTab} onChange={setActiveSubTab} items={subItems} />;
-};
 
 export const MainTabs = () => {
   const navigate = useNavigate();
@@ -101,6 +52,11 @@ export const MainTabs = () => {
 
   const frozenCars = sortByTotalCost(frozenIds.map(id => allCarsById.get(id)).filter(Boolean));
 
+  const suggestedCars = useMemo(() => {
+    const ids = computeSuggestedIds(allByTotalCost);
+    return sortByTotalCost(ids.map(id => allCarsById.get(id)).filter(Boolean));
+  }, [allCarsById]);
+
   return (
     <Tabs
       activeKey={currentTab}
@@ -108,7 +64,21 @@ export const MainTabs = () => {
       items={[{
           key: 'frozen',
           label: `📌 Freeze Edilenler — ${frozenCars.length} araç`,
-          children: <FrozenTabContent frozenCars={frozenCars} recentPool={allByTotalCost} />
+          children: frozenCars.length > 0
+            ? <CarTable cars={frozenCars} title="📌 Freeze Edilenler — Yan Yana Karşılaştırma" />
+            : <div style={{ padding: 24, textAlign: 'center', color: '#888' }}>Bu görünümde araç yok. Diğer sekmelerde araç başlığındaki 📌 Freeze butonuna tıkla.</div>
+        }, {
+          key: 'suggested',
+          label: `🎯 Önerilen Araçlar — ${suggestedCars.length} araç`,
+          children: (
+            <CarsWithRecentSubTabs
+              cars={suggestedCars}
+              recentPool={allByTotalCost}
+              baseLabel="Önerilenler"
+              titlePrefix="🎯 Önerilenler"
+              emptyMessage="Önerilen araç yok."
+            />
+          )
         }, {
           key: 'all-adjusted',
           label: `💰 TOPLAM MALİYET — ${allByTotalCost.length} araç`,

@@ -3760,5 +3760,824 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C182",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-blind-spot-line-assist-led-vilnius/406898406.html",
+    "mobileDeId": "406898406",
+    "exteriorColorName": "Black Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 38500,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 42000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "UAB Vin Motors ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇱🇹 14184 Vilnius",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2024-10-23T16:49:10.000Z",
+      "modifiedTime": "2026-04-21T17:16:23.000Z",
+      "renewedTime": "2026-04-15T01:04:52.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2024-10-23T16:49:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-15T01:04:52.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-17T09:39:00.377Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-04-23T20:50:39.151Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-04-28T13:44:13.445Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C22",
+    "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=446033462",
+    "mobileDeId": "446033462",
+    "exteriorColorName": "Blue Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 49900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 26402,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      1
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "02/2027",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 74564 Crailsheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [
+      "Kış/Yaz lastikleri dahil"
+    ],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-01-18T17:38:10.000Z",
+      "modifiedTime": "2026-04-21T15:22:18.000Z",
+      "renewedTime": "2026-04-12T16:25:35.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-01-18T17:38:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-01-18T17:38:10.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-07T12:00:00.000Z"
+      },
+      {
+        "action": "Silinen → Aktif",
+        "detail": "sunroof ilk taramada gözden kaçmıştı, tekrar taramada bulundu",
+        "changes": null,
+        "auditDate": "2026-03-14T12:00:00.000Z"
+      },
+      {
+        "action": "Tekrar tarama — Kazasızlık doğrulandı. Alcantara unknown → no. Mirror Tilt → yes",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-14T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 51900,
+            "new": 50900
+          },
+          "sellerTypeOrName": {
+            "old": "Özel Satıcı (Crailsheim)",
+            "new": "Unknown Dealer"
+          },
+          "listingLocation": {
+            "old": "🇩🇪 Crailsheim",
+            "new": "🇩🇪 74564 Crailsheim"
+          },
+          "exteriorColorName": {
+            "old": "Mavi Metalik",
+            "new": "Blue Metallic"
+          },
+          "interiorColorName": {
+            "old": "Deri Siyah",
+            "new": "Full leather, Black"
+          },
+          "co2EmissionsGramPerKm": {
+            "old": 183,
+            "new": 0
+          },
+          "equipmentFeatures.WARRANTY": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "unknown",
+            "new": "no"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:21.192Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.819Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-12T16:25:35.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 50900,
+            "new": 49900
+          }
+        },
+        "auditDate": "2026-04-17T09:56:17.401Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-04-23T20:50:28.120Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-04-28T13:44:13.449Z"
+      }
+    ],
+    "cardThemeColorHex": "#818cf8",
+    "aiCommentary": [
+      "🟡 73 gündür satışta",
+      "🟡 Özel satıcı — bayi güvencesi yok",
+      "DA+ bileşenleri: Kör nokta + Şerit değiştirme + Acil fren + Mesafe uyarı",
+      "⚠️ Euro4 hatalı kayıt (muhtemelen Euro6)",
+      "✅ Kazasız doğrulandı"
+    ]
+  },
+  {
+    "listingId": "C147",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-b%C3%BChlertal/451532906.html",
+    "mobileDeId": "451532906",
+    "exteriorColorName": "Blue Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 68375,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      11
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "12/2027",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 77830 Bühlertal",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-27T13:21:00.000Z",
+      "modifiedTime": "2026-04-21T14:23:02.000Z",
+      "renewedTime": "2026-03-27T13:21:00.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-27T13:21:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-27T13:21:00.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S3AGA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.825Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:32:16.857Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-04-23T20:50:28.125Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-04-28T13:44:13.457Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C205",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-kempten/453796951.html",
+    "mobileDeId": "453796951",
+    "exteriorColorName": null,
+    "interiorColorName": null,
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 47499,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 50015,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      4
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "04/2026",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 87435 Kempten",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "unknown",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-21T18:31:19.000Z",
+      "modifiedTime": "2026-04-21T18:31:20.000Z",
+      "renewedTime": "2026-04-21T18:31:19.000Z"
+    },
+    "overrideFeatures": {
+      "S403A": {
+        "value": "yes",
+        "reason": "Kullanıcı teyidi: sunroof var"
+      }
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-21T18:31:19.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-23T20:31:59.367Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → COUPE_GAS_WITH_SUNROOF",
+        "detail": "Kullanıcı teyidi sonucu sunroof olduğu tespit edildi",
+        "changes": {
+          "equipmentFeatures.S403A": {
+            "from": "unknown",
+            "to": "yes"
+          }
+        },
+        "auditDate": "2026-04-23T20:45:00.000Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-04-28T13:44:22.134Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C208",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sport-laser-da-ahk-acc-kamera-shz-k%C3%B6ln-nord/453982279.html",
+    "mobileDeId": "453982279",
+    "exteriorColorName": "BROOKLYN GRAU",
+    "interiorColorName": "Other",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 44890,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 52358,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      1
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Procar Automobile GmbH & Co.KG ★4.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Nord",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-23T16:31:51.000Z",
+      "modifiedTime": "2026-04-23T17:19:26.000Z",
+      "renewedTime": "2026-04-23T16:31:51.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-23T16:31:51.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-23T20:31:59.367Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-04-28T13:44:22.135Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

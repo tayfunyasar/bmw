@@ -313,6 +313,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.448Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.189Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
@@ -405,7 +415,7 @@
     },
     "listingDates": {
       "createdTime": "2026-01-22T04:09:51.000Z",
-      "modifiedTime": "2026-04-28T02:34:56.000Z",
+      "modifiedTime": "2026-05-02T02:34:49.000Z",
       "renewedTime": "2026-01-22T04:09:51.000Z"
     },
     "auditHistory": [
@@ -731,6 +741,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.449Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.190Z"
       }
     ],
     "cardThemeColorHex": "#3b82f6",
@@ -1082,6 +1102,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.447Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.188Z"
       }
     ],
     "cardThemeColorHex": "#a3e635",
@@ -1468,6 +1498,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.450Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.191Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
@@ -1551,7 +1591,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-26T17:12:33.000Z",
-      "modifiedTime": "2026-04-28T12:48:03.000Z",
+      "modifiedTime": "2026-04-30T05:26:42.000Z",
       "renewedTime": "2026-04-20T08:15:48.000Z"
     },
     "auditHistory": [
@@ -1792,323 +1832,22 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.456Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.195Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
       "🟢 6 gündür satışta — yeni ilan",
       "🟠 Toplam €62,658 — bütçe üst sınırına yakın"
-    ]
-  },
-  {
-    "listingId": "C120",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-coupe-xdrive-pano-live-cock-m-sport-p-schierling/450937505.html",
-    "mobileDeId": "450937505",
-    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 53990,
-    "estimatedImportTaxEuro": 11097,
-    "mileageKm": 44228,
-    "firstRegistrationYearAndMonth": [
-      2023,
-      10
-    ],
-    "numberOfPreviousOwners": "2",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "03/2027",
-    "sellerTypeOrName": "Auto Boutique Schierling GmbH ★4.8",
-    "modelGeneration": "LCI",
-    "co2EmissionsGramPerKm": 170,
-    "listingLocation": "🇩🇪 84069 Schierling",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "yes",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "unknown",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "yes",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-03-21T09:50:55.000Z",
-      "modifiedTime": "2026-04-28T12:47:21.000Z",
-      "renewedTime": "2026-03-21T09:50:55.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-21T09:50:55.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-21T09:50:55.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-03-31T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "service": {
-            "old": {
-              "type": "unknown",
-              "history": []
-            },
-            "new": {
-              "type": "yes",
-              "history": []
-            }
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-04-01T19:09:58.155Z"
-      },
-      {
-        "action": "Donanım Yeniden Hesaplandı",
-        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
-        "changes": {
-          "equipmentFeatures.S688A": {
-            "old": "no",
-            "new": "yes"
-          },
-          "equipmentFeatures.S775A": {
-            "old": "no",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-01T20:15:12.864Z"
-      },
-      {
-        "action": "Default Davranış Güncellemesi",
-        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
-        "changes": {
-          "equipmentFeatures.S5AUA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S610A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DN_360": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S322A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S459A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S2VLA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-01T20:22:48.212Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "warranty": {
-            "old": {
-              "exists": true
-            },
-            "new": {
-              "exists": "yes"
-            }
-          },
-          "equipmentFeatures.S5AUA": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S494A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S248A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S488A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S715A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S521A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S265A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S216A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S302A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:30:51.823Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S1MAA": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T20:51:17.491Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S493A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T21:08:00.721Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S2T4A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-08T20:15:25.138Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "basePriceEuro": {
-            "old": 55990,
-            "new": 54990
-          }
-        },
-        "auditDate": "2026-04-17T09:56:17.406Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "basePriceEuro": {
-            "old": 54990,
-            "new": 53990
-          },
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:28.123Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.453Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟢 12 gündür satışta — yeni ilan",
-      "🔴 Toplam €63,361 — bütçe aşımı"
     ]
   },
   {
@@ -2396,6 +2135,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.454Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.194Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2476,7 +2225,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-02T17:43:45.000Z",
-      "modifiedTime": "2026-04-21T14:11:01.000Z",
+      "modifiedTime": "2026-05-01T12:20:34.000Z",
       "renewedTime": "2026-04-02T17:43:45.000Z"
     },
     "overrideFeatures": {
@@ -2628,6 +2377,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.457Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.196Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2712,7 +2471,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-19T08:12:05.000Z",
-      "modifiedTime": "2026-04-28T01:05:53.000Z",
+      "modifiedTime": "2026-05-01T06:31:05.000Z",
       "renewedTime": "2026-04-28T01:05:52.000Z"
     },
     "auditHistory": [
@@ -2796,6 +2555,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.451Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.192Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2961,6 +2730,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.455Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.195Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3234,6 +3013,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.454Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.193Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
@@ -3313,7 +3102,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-08T03:36:06.000Z",
-      "modifiedTime": "2026-04-25T03:31:05.000Z",
+      "modifiedTime": "2026-04-28T14:35:13.000Z",
       "renewedTime": "2026-04-08T03:36:06.000Z"
     },
     "auditHistory": [
@@ -3369,6 +3158,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.458Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.197Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3397,7 +3196,7 @@
       "history": []
     },
     "nextInspectionDate": "New",
-    "sellerTypeOrName": "Jülicher Autozentrum Makki GmbH ★4.3",
+    "sellerTypeOrName": "Jülicher Autozentrum Makki GmbH ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 52428 Jülich",
@@ -3446,7 +3245,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-09T13:42:58.000Z",
-      "modifiedTime": "2026-04-27T15:59:31.000Z",
+      "modifiedTime": "2026-05-01T00:05:30.000Z",
       "renewedTime": "2026-04-27T15:59:20.000Z"
     },
     "auditHistory": [
@@ -3497,6 +3296,20 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.451Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Jülicher Autozentrum Makki GmbH ★4.3",
+            "new": "Jülicher Autozentrum Makki GmbH ★4.4"
+          },
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.191Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3574,7 +3387,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-13T19:00:28.000Z",
-      "modifiedTime": "2026-04-21T14:04:48.000Z",
+      "modifiedTime": "2026-04-28T14:22:35.000Z",
       "renewedTime": "2026-04-13T19:00:28.000Z"
     },
     "auditHistory": [
@@ -3615,6 +3428,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.458Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.197Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3692,7 +3515,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T04:52:38.000Z",
-      "modifiedTime": "2026-04-21T14:04:41.000Z",
+      "modifiedTime": "2026-05-01T00:15:07.000Z",
       "renewedTime": "2026-04-14T04:52:38.000Z"
     },
     "auditHistory": [
@@ -3733,6 +3556,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.458Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.197Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3822,7 +3655,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
-      "modifiedTime": "2026-04-21T13:59:48.000Z",
+      "modifiedTime": "2026-04-29T08:13:28.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
     "overrideFeatures": {
@@ -3888,6 +3721,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.459Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.198Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3965,7 +3808,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T11:25:31.000Z",
-      "modifiedTime": "2026-04-21T13:58:03.000Z",
+      "modifiedTime": "2026-04-28T14:23:43.000Z",
       "renewedTime": "2026-04-14T11:25:31.000Z"
     },
     "overrideFeatures": {
@@ -4023,6 +3866,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.459Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.199Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4100,7 +3953,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T11:42:34.000Z",
-      "modifiedTime": "2026-04-28T11:45:18.000Z",
+      "modifiedTime": "2026-05-01T00:33:43.000Z",
       "renewedTime": "2026-04-16T11:42:34.000Z"
     },
     "auditHistory": [
@@ -4141,6 +3994,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.131Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.199Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4222,7 +4085,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T13:23:42.000Z",
-      "modifiedTime": "2026-04-21T13:35:44.000Z",
+      "modifiedTime": "2026-04-28T14:17:17.000Z",
       "renewedTime": "2026-04-16T13:23:42.000Z"
     },
     "auditHistory": [
@@ -4263,6 +4126,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.132Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.200Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4340,7 +4213,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T14:18:43.000Z",
-      "modifiedTime": "2026-04-21T14:44:25.000Z",
+      "modifiedTime": "2026-04-28T14:11:39.000Z",
       "renewedTime": "2026-04-16T14:18:43.000Z"
     },
     "auditHistory": [
@@ -4385,6 +4258,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.133Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:12:55.200Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4462,7 +4345,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-12T16:06:02.000Z",
-      "modifiedTime": "2026-04-22T17:18:53.000Z",
+      "modifiedTime": "2026-04-28T14:35:20.000Z",
       "renewedTime": "2026-04-12T16:06:02.000Z"
     },
     "auditHistory": [
@@ -4519,6 +4402,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.129Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.438Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4598,7 +4491,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T13:13:44.000Z",
-      "modifiedTime": "2026-04-28T12:11:43.000Z",
+      "modifiedTime": "2026-04-28T14:21:43.000Z",
       "renewedTime": "2026-04-14T13:13:44.000Z"
     },
     "auditHistory": [
@@ -4656,6 +4549,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.130Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.439Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4733,7 +4636,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-17T15:08:07.000Z",
-      "modifiedTime": "2026-04-21T13:39:05.000Z",
+      "modifiedTime": "2026-04-28T14:08:45.000Z",
       "renewedTime": "2026-04-17T15:08:07.000Z"
     },
     "auditHistory": [
@@ -4774,6 +4677,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.133Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.440Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4853,7 +4766,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-21T14:16:19.000Z",
-      "modifiedTime": "2026-04-27T23:39:01.000Z",
+      "modifiedTime": "2026-04-30T23:29:55.000Z",
       "renewedTime": "2026-04-21T14:16:19.000Z"
     },
     "auditHistory": [
@@ -4884,6 +4797,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.134Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.441Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4961,7 +4884,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-23T06:49:40.000Z",
-      "modifiedTime": "2026-04-28T13:40:21.000Z",
+      "modifiedTime": "2026-04-30T12:44:03.000Z",
       "renewedTime": "2026-04-23T06:49:40.000Z"
     },
     "auditHistory": [
@@ -4992,6 +4915,16 @@
           }
         },
         "auditDate": "2026-04-28T13:44:22.135Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.442Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5006,7 +4939,7 @@
     "exteriorColorName": "Black Sapphire",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 48450,
+    "basePriceEuro": 48450.01,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 35189,
     "firstRegistrationYearAndMonth": [
@@ -5071,7 +5004,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-24T09:01:36.000Z",
-      "modifiedTime": "2026-04-28T13:03:30.000Z",
+      "modifiedTime": "2026-04-30T23:11:38.000Z",
       "renewedTime": "2026-04-24T09:01:36.000Z"
     },
     "auditHistory": [
@@ -5082,10 +5015,30 @@
         "auditDate": "2026-04-24T09:01:36.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-24T09:01:36.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.935Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 48450,
+            "new": 48450.01
+          },
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.442Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5184,6 +5137,16 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.935Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.443Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5274,10 +5237,26 @@
         "auditDate": "2026-04-28T03:26:08.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-28T03:26:08.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.938Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.443Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5305,7 +5284,7 @@
       "type": "unknown",
       "history": []
     },
-    "nextInspectionDate": "05/2027",
+    "nextInspectionDate": "?",
     "sellerTypeOrName": "May & Olde GmbH ★4.5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 186,
@@ -5355,7 +5334,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T05:11:01.000Z",
-      "modifiedTime": "2026-04-28T13:08:59.000Z",
+      "modifiedTime": "2026-05-02T04:34:37.000Z",
       "renewedTime": "2026-04-28T05:11:01.000Z"
     },
     "auditHistory": [
@@ -5366,13 +5345,127 @@
         "auditDate": "2026-04-28T05:11:01.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-28T05:11:01.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.939Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "nextInspectionDate": {
+            "old": "05/2027",
+            "new": "?"
+          },
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-02T12:13:03.444Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C223",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-fast-vollaust-noch-3-jahre-garantie-essen/454685857.html",
+    "mobileDeId": "454685857",
+    "exteriorColorName": "Blue Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 51980,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 23890,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      1
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "03/2027",
+    "sellerTypeOrName": "Klaus Perz",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 45277 Essen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-01T13:28:14.000Z",
+      "modifiedTime": "2026-05-01T13:31:31.000Z",
+      "renewedTime": "2026-05-01T13:28:14.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-01T13:28:14.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-02T12:07:58.924Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

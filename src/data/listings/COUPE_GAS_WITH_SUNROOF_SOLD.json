@@ -4579,5 +4579,322 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C120",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-coupe-xdrive-pano-live-cock-m-sport-p-schierling/450937505.html",
+    "mobileDeId": "450937505",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 53990,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 44228,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      10
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "03/2027",
+    "sellerTypeOrName": "Auto Boutique Schierling GmbH ★4.8",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇩🇪 84069 Schierling",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "unknown",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-21T09:50:55.000Z",
+      "modifiedTime": "2026-04-28T12:47:21.000Z",
+      "renewedTime": "2026-03-21T09:50:55.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-21T09:50:55.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-21T09:50:55.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S688A": {
+            "old": "no",
+            "new": "yes"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.864Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S610A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S322A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S459A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.212Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.823Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S1MAA": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:51:17.491Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T21:08:00.721Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-08T20:15:25.138Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 55990,
+            "new": 54990
+          }
+        },
+        "auditDate": "2026-04-17T09:56:17.406Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 54990,
+            "new": 53990
+          },
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-04-23T20:50:28.123Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-04-28T13:44:13.453Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-05-02T12:12:55.193Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "🟢 12 gündür satışta — yeni ilan",
+      "🔴 Toplam €63,361 — bütçe aşımı"
+    ]
   }
 ]

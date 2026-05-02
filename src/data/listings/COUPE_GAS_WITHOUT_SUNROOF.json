@@ -4189,5 +4189,99 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C222",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coup-michelfeld/454624738.html",
+    "mobileDeId": "454624738",
+    "exteriorColorName": "Tansanitblau",
+    "interiorColorName": "Alcantara",
+    "drivetrainType": "xDrive AWD",
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 52547,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "12/2026",
+    "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 74545 Michelfeld",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-30T17:01:57.000Z",
+      "modifiedTime": "2026-05-01T17:02:04.000Z",
+      "renewedTime": "2026-04-30T17:01:57.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-30T17:01:57.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-02T12:07:58.922Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

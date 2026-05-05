@@ -304,17 +304,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.120Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.261Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
@@ -724,17 +713,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.121Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.263Z"
       }
     ],
     "cardThemeColorHex": "#3b82f6",
@@ -1067,17 +1045,6 @@
           }
         },
         "auditDate": "2026-04-07T21:08:00.713Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.257Z"
       }
     ],
     "cardThemeColorHex": "#a3e635",
@@ -1455,17 +1422,6 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.450Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.267Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
@@ -1781,17 +1737,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.124Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.275Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2080,17 +2025,6 @@
           }
         },
         "auditDate": "2026-05-05T18:11:59.154Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.272Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2314,17 +2248,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.125Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.280Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2474,17 +2397,6 @@
         "detail": null,
         "changes": null,
         "auditDate": "2026-04-28T01:05:52.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.272Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2641,17 +2553,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.124Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.274Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2906,17 +2807,6 @@
         "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
         "changes": null,
         "auditDate": "2026-04-07T20:54:21.880Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.272Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
@@ -3043,17 +2933,6 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.458Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.282Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3187,17 +3066,6 @@
           }
         },
         "auditDate": "2026-05-02T12:12:55.191Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.268Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3297,17 +3165,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.398Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.286Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3407,17 +3264,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.398Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.287Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3554,17 +3400,6 @@
           }
         },
         "auditDate": "2026-04-17T14:14:02.877Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.287Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3664,17 +3499,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.400Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.291Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3778,17 +3602,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.400Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.293Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3902,17 +3715,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:39.155Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.293Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4038,17 +3840,6 @@
           }
         },
         "auditDate": "2026-04-23T20:50:39.152Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.285Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4167,17 +3958,6 @@
         "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
         "changes": null,
         "auditDate": "2026-04-17T09:56:17.413Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.289Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4277,17 +4057,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-19T12:15:43.537Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.294Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4395,17 +4164,6 @@
         "detail": null,
         "changes": null,
         "auditDate": "2026-05-04T11:48:08.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.296Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4525,17 +4283,6 @@
           }
         },
         "auditDate": "2026-05-05T18:12:08.494Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.299Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4637,17 +4384,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.938Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.302Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4761,17 +4497,6 @@
           }
         },
         "auditDate": "2026-05-02T12:13:03.444Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.302Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4871,17 +4596,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-02T12:07:58.924Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.304Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4983,17 +4697,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.772Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.298Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5093,17 +4796,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.775Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.306Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5203,17 +4895,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.775Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.306Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

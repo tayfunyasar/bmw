@@ -129,17 +129,6 @@
         "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
         "changes": null,
         "auditDate": "2026-04-07T21:03:27.616Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.281Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -267,17 +256,6 @@
           }
         },
         "auditDate": "2026-04-12T19:48:26.581Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.285Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -377,17 +355,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.936Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.300Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -487,17 +454,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.766Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.264Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -597,17 +553,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.767Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.278Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -707,17 +652,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.769Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.282Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -817,17 +751,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.771Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.295Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -927,17 +850,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.774Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.305Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

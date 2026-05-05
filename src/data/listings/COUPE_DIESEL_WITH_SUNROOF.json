@@ -287,17 +287,6 @@
           }
         },
         "auditDate": "2026-04-07T20:59:03.059Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.273Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -419,17 +408,6 @@
           }
         },
         "auditDate": "2026-04-08T20:15:25.139Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.275Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

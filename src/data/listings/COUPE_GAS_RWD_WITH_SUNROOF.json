@@ -352,17 +352,6 @@
           }
         },
         "auditDate": "2026-04-07T20:43:47.532Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "old": null,
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-05T18:13:55.281Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

@@ -6,6 +6,7 @@
     "exteriorColorName": "Blue Metallic",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": null,
     "basePriceEuro": 52500,
     "estimatedImportTaxEuro": 11097,
     "mileageKm": 20890,
@@ -91,6 +92,7 @@
     "exteriorColorName": "Arctic Race Blue",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": null,
     "basePriceEuro": 49950,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 29550,
@@ -175,6 +177,7 @@
     "exteriorColorName": "BLACK",
     "interiorColorName": null,
     "drivetrainType": "RWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 49900,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 61100,
@@ -349,6 +352,17 @@
           }
         },
         "auditDate": "2026-04-07T20:43:47.532Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.281Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

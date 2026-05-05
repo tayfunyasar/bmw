@@ -227,6 +227,12 @@
         "auditDate": "2026-04-18T13:57:15.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-18T13:57:15.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -238,7 +244,8 @@
     "isDamaged": "Unfallvorschaden: Ja — Reimport aus Canada mit Vorschaden/Bilder vorhanden",
     "attributes": {
       "Vehicle condition": "accident - Canada import"
-    }
+    },
+    "drivetrainCertain": true
   },
   {
     "listingId": "C130",
@@ -1302,6 +1309,12 @@
         "auditDate": "2026-04-23T17:25:44.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-23T17:25:44.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -1315,7 +1328,8 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "drivetrainCertain": true
   },
   {
     "listingId": "C129",
@@ -1475,16 +1489,6 @@
         "auditDate": "2026-04-17T09:56:17.400Z"
       },
       {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:28.120Z"
-      },
-      {
         "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
         "detail": "İlan açıklamasında tespit edildi: \"Bei diesem Fahrzeug handelt es sich um einen Reimport mit einem instandgesetzten Vorschaden\"",
         "changes": null,
@@ -1584,10 +1588,218 @@
         "auditDate": "2026-04-24T06:43:15.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-24T06:43:15.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.934Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C231",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-coupe-leder-laser-navi-mwst-grabensee-%C3%B6sterreich/453402370.html",
+    "mobileDeId": "453402370",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 28999,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 62000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      4
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "MNS- Automobile GmbH ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 155,
+    "listingLocation": "🇦🇹 3041 Grabensee Österreich",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S1MAA": "yes",
+      "S536A": "yes",
+      "S322A": "yes",
+      "S2NHA": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S3ACA": "unknown",
+      "S488A": "yes",
+      "S715A": "yes",
+      "S493A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "unknown",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-17T14:26:07.000Z",
+      "modifiedTime": "2026-04-28T14:15:58.000Z",
+      "renewedTime": "2026-04-26T11:52:20.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-17T14:26:07.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-26T11:52:20.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.770Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C232",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-kempten/453587916.html",
+    "mobileDeId": "453587916",
+    "exteriorColorName": "White Metallic",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 45799,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 50045,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      4
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "04/2026",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 87439 Kempten",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S1MAA": "unknown",
+      "S536A": "unknown",
+      "S322A": "unknown",
+      "S2NHA": "unknown",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S5ACA": "unknown",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S3ACA": "unknown",
+      "S488A": "unknown",
+      "S715A": "unknown",
+      "S493A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "unknown",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-19T16:18:26.000Z",
+      "modifiedTime": "2026-05-05T14:35:53.000Z",
+      "renewedTime": "2026-04-19T16:18:26.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-19T16:18:26.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-19T16:18:26.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.771Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

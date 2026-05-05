@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { pushSoldAudit } from './lib/sold.js';
+import { classifyBodyStyle, rawCarToTextObj, rawCarApifyCategory } from './lib/body-style.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -14,6 +15,7 @@ const CoupeWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF.json
 const CoupeWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITHOUT_SUNROOF.json');
 const dieselWithSunroofPath = path.join(listingsDir, 'COUPE_DIESEL_WITH_SUNROOF.json');
 const granCoupePath = path.join(listingsDir, 'GRAN_COUPE.json');
+const granCoupeKazaliPath = path.join(listingsDir, 'GRAN_COUPE_KAZALI.json');
 const cabrioPath = path.join(listingsDir, 'CABRIO.json');
 const rwdGasWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITH_SUNROOF.json');
 const rwdGasWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json');
@@ -312,6 +314,7 @@ async function run() {
   const CoupeWithoutSunroof = JSON.parse(fs.readFileSync(CoupeWithoutSunroofPath, 'utf-8'));
   const dieselWithSunroof = JSON.parse(fs.readFileSync(dieselWithSunroofPath, 'utf-8'));
   const granCoupe = JSON.parse(fs.readFileSync(granCoupePath, 'utf-8'));
+  const granCoupeKazali = fs.existsSync(granCoupeKazaliPath) ? JSON.parse(fs.readFileSync(granCoupeKazaliPath, 'utf-8')) : [];
   const cabrio = fs.existsSync(cabrioPath) ? JSON.parse(fs.readFileSync(cabrioPath, 'utf-8')) : [];
   const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
   const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
@@ -328,6 +331,7 @@ async function run() {
     { name: 'COUPE_GAS_RWD_WITH_SUNROOF', data: rwdGasWithSunroof },
     { name: 'COUPE_GAS_RWD_WITHOUT_SUNROOF', data: rwdGasWithoutSunroof },
     { name: 'GRAN_COUPE', data: granCoupe },
+    { name: 'GRAN_COUPE_KAZALI', data: granCoupeKazali },
     { name: 'CABRIO', data: cabrio },
     { name: 'COUPE_GAS_WITH_SUNROOF_KAZALI', data: kazali },
   ];
@@ -365,14 +369,18 @@ async function run() {
     const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "", rawCar.features || []);
     const driveOverride = overrides.drivetrainType?.value || overrides.drivetrainType;
     const isRWD = driveOverride === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
-    const allText = `${rawCar.title || ""} ${rawCar.subTitle || ""} ${rawCar.description || ""} ${rawCar.category || ""}`;
-    const isGC = allText.includes("Gran Coupe") || allText.includes("Gran Coupé") || rawCar.title?.includes("GC") || rawCar.subTitle?.includes("GC");
-    const isCabrio = /cabrio/i.test(allText) || /convertible/i.test(allText);
+    const textObj = rawCarToTextObj(rawCar);
+    const apifyCategory = rawCarApifyCategory(rawCar);
+    const bodyStyle = classifyBodyStyle(textObj, { apifyCategory });
     const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
     const damageReason = detectDamageReason(rawCar);
 
-    if (isCabrio) return { target: 'CABRIO' };
-    if (isGC) return { target: 'GRAN_COUPE' };
+    if (bodyStyle === 'CABRIO') return { target: 'CABRIO' };
+    if (bodyStyle === 'GRAN_COUPE') {
+      return damageReason
+        ? { target: 'GRAN_COUPE_KAZALI', reason: damageReason }
+        : { target: 'GRAN_COUPE' };
+    }
     if (damageReason) return { target: 'COUPE_GAS_WITH_SUNROOF_KAZALI', reason: damageReason };
     if (isDiesel) return { target: 'COUPE_DIESEL_WITH_SUNROOF' };
     if (isRWD) return { target: isSunroof ? 'COUPE_GAS_RWD_WITH_SUNROOF' : 'COUPE_GAS_RWD_WITHOUT_SUNROOF' };
@@ -496,6 +504,7 @@ async function run() {
   fs.writeFileSync(rwdGasWithSunroofPath, JSON.stringify(rwdGasWithSunroof, null, 2));
   fs.writeFileSync(rwdGasWithoutSunroofPath, JSON.stringify(rwdGasWithoutSunroof, null, 2));
   fs.writeFileSync(granCoupePath, JSON.stringify(granCoupe, null, 2));
+  fs.writeFileSync(granCoupeKazaliPath, JSON.stringify(granCoupeKazali, null, 2));
   fs.writeFileSync(cabrioPath, JSON.stringify(cabrio, null, 2));
   fs.writeFileSync(kazaliPath, JSON.stringify(kazali, null, 2));
   fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2));

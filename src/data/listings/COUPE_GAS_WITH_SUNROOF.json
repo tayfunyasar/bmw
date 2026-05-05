@@ -6,6 +6,7 @@
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "interiorColorName": "Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 47900,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 44900,
@@ -73,7 +74,7 @@
     },
     "listingDates": {
       "createdTime": "2025-12-05T09:07:07.000Z",
-      "modifiedTime": "2026-04-21T15:34:34.000Z",
+      "modifiedTime": "2026-05-05T16:45:47.000Z",
       "renewedTime": "2025-12-05T09:07:07.000Z"
     },
     "auditHistory": [
@@ -309,20 +310,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.448Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.189Z"
+        "auditDate": "2026-05-05T18:13:55.261Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
@@ -340,6 +332,7 @@
     "exteriorColorName": "ARCTIC RACE BLUE METALLIC",
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 47666,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 30683,
@@ -415,7 +408,7 @@
     },
     "listingDates": {
       "createdTime": "2026-01-22T04:09:51.000Z",
-      "modifiedTime": "2026-05-02T02:34:49.000Z",
+      "modifiedTime": "2026-05-05T16:35:01.000Z",
       "renewedTime": "2026-01-22T04:09:51.000Z"
     },
     "auditHistory": [
@@ -737,20 +730,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.449Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.190Z"
+        "auditDate": "2026-05-05T18:13:55.263Z"
       }
     ],
     "cardThemeColorHex": "#3b82f6",
@@ -768,6 +752,7 @@
     "exteriorColorName": "BROOKLYN GRAU",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 49775,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 36500,
@@ -835,7 +820,7 @@
     },
     "listingDates": {
       "createdTime": "2025-10-16T09:37:41.000Z",
-      "modifiedTime": "2026-04-21T16:51:19.000Z",
+      "modifiedTime": "2026-05-05T16:58:56.000Z",
       "renewedTime": "2026-01-21T07:30:09.000Z"
     },
     "auditHistory": [
@@ -1088,30 +1073,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-23T20:50:28.119Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.447Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.188Z"
+        "auditDate": "2026-05-05T18:13:55.257Z"
       }
     ],
     "cardThemeColorHex": "#a3e635",
@@ -1129,6 +1095,7 @@
     "exteriorColorName": null,
     "interiorColorName": "Full leather",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 47000,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 41000,
@@ -1202,7 +1169,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-04T11:03:16.000Z",
-      "modifiedTime": "2026-04-26T07:35:18.000Z",
+      "modifiedTime": "2026-05-05T16:05:28.000Z",
       "renewedTime": "2026-03-04T11:03:16.000Z"
     },
     "overrideFeatures": {
@@ -1479,16 +1446,6 @@
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:28.121Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
           "mileageKm": {
             "old": 40000,
             "new": 41000
@@ -1504,10 +1461,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-05-02T12:12:55.191Z"
+        "auditDate": "2026-05-05T18:13:55.267Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
@@ -1526,6 +1484,7 @@
     "exteriorColorName": "san remo green",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 50950,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 29581,
@@ -1591,7 +1550,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-26T17:12:33.000Z",
-      "modifiedTime": "2026-04-30T05:26:42.000Z",
+      "modifiedTime": "2026-05-05T15:28:08.000Z",
       "renewedTime": "2026-04-20T08:15:48.000Z"
     },
     "auditHistory": [
@@ -1828,20 +1787,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.456Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.195Z"
+        "auditDate": "2026-05-05T18:13:55.275Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1857,7 +1807,8 @@
     "exteriorColorName": "arctic race blue",
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 50950,
+    "drivetrainCertain": true,
+    "basePriceEuro": 45950,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 25396,
     "firstRegistrationYearAndMonth": [
@@ -1922,7 +1873,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-23T14:17:43.000Z",
-      "modifiedTime": "2026-04-21T15:12:51.000Z",
+      "modifiedTime": "2026-05-05T15:16:11.000Z",
       "renewedTime": "2026-04-02T08:17:39.000Z"
     },
     "auditHistory": [
@@ -2120,31 +2071,26 @@
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
+          "basePriceEuro": {
+            "old": 50950,
+            "new": 45950
+          },
           "drivetrainCertain": {
             "new": true
           }
         },
-        "auditDate": "2026-04-23T20:50:28.124Z"
+        "auditDate": "2026-05-05T18:11:59.154Z"
       },
       {
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.454Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.194Z"
+        "auditDate": "2026-05-05T18:13:55.272Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2160,6 +2106,7 @@
     "exteriorColorName": "Brooklyn Grau ",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 55870,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 52819,
@@ -2225,7 +2172,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-02T17:43:45.000Z",
-      "modifiedTime": "2026-05-01T12:20:34.000Z",
+      "modifiedTime": "2026-05-05T15:11:49.000Z",
       "renewedTime": "2026-04-02T17:43:45.000Z"
     },
     "overrideFeatures": {
@@ -2373,20 +2320,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.457Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.196Z"
+        "auditDate": "2026-05-05T18:13:55.280Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2406,6 +2344,7 @@
     "exteriorColorName": "Mineralweiss metallic",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 42500,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 51655,
@@ -2471,7 +2410,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-19T08:12:05.000Z",
-      "modifiedTime": "2026-05-01T06:31:05.000Z",
+      "modifiedTime": "2026-05-05T15:44:43.000Z",
       "renewedTime": "2026-04-28T01:05:52.000Z"
     },
     "auditHistory": [
@@ -2531,16 +2470,6 @@
         "auditDate": "2026-04-08T01:05:49.000Z"
       },
       {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:28.122Z"
-      },
-      {
         "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
@@ -2551,20 +2480,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.451Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.192Z"
+        "auditDate": "2026-05-05T18:13:55.272Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2577,6 +2497,7 @@
     "exteriorColorName": "Sophistograu-metallic",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 47499,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 56373,
@@ -2642,7 +2563,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-25T10:36:47.000Z",
-      "modifiedTime": "2026-04-23T07:27:53.000Z",
+      "modifiedTime": "2026-05-05T16:34:30.000Z",
       "renewedTime": "2026-03-25T10:36:47.000Z"
     },
     "auditHistory": [
@@ -2726,20 +2647,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:13.455Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.195Z"
+        "auditDate": "2026-05-05T18:13:55.274Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2752,6 +2664,7 @@
     "exteriorColorName": "Alpinweiß",
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 43900,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 45000,
@@ -2817,7 +2730,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-23T05:39:41.000Z",
-      "modifiedTime": "2026-04-21T15:17:19.000Z",
+      "modifiedTime": "2026-05-05T15:16:33.000Z",
       "renewedTime": "2026-03-23T05:39:41.000Z"
     },
     "overrideFeatures": {
@@ -2999,30 +2912,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": false
           }
         },
-        "auditDate": "2026-04-23T20:50:28.123Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.454Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.193Z"
+        "auditDate": "2026-05-05T18:13:55.272Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
@@ -3037,6 +2931,7 @@
     "exteriorColorName": "Arctic Race Blue",
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 49980,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 64441,
@@ -3102,7 +2997,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-08T03:36:06.000Z",
-      "modifiedTime": "2026-04-28T14:35:13.000Z",
+      "modifiedTime": "2026-05-05T15:08:30.000Z",
       "renewedTime": "2026-04-08T03:36:06.000Z"
     },
     "auditHistory": [
@@ -3139,16 +3034,6 @@
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:28.125Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
           "basePriceEuro": {
             "old": 51990,
             "new": 49980
@@ -3164,10 +3049,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-05-02T12:12:55.197Z"
+        "auditDate": "2026-05-05T18:13:55.282Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3180,6 +3066,7 @@
     "exteriorColorName": "Black Metallic",
     "interiorColorName": "Full leather, Red",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 44490,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 25000,
@@ -3245,7 +3132,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-09T13:42:58.000Z",
-      "modifiedTime": "2026-05-01T00:05:30.000Z",
+      "modifiedTime": "2026-05-05T15:55:52.000Z",
       "renewedTime": "2026-04-27T15:59:20.000Z"
     },
     "auditHistory": [
@@ -3266,16 +3153,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-13T18:33:05.700Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:39.151Z"
       },
       {
         "action": "İlan Yenilendi (mobile.de)",
@@ -3310,6 +3187,17 @@
           }
         },
         "auditDate": "2026-05-02T12:12:55.191Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.268Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3322,6 +3210,7 @@
     "exteriorColorName": "BLACK",
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 49900,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 42000,
@@ -3387,7 +3276,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-13T19:00:28.000Z",
-      "modifiedTime": "2026-04-28T14:22:35.000Z",
+      "modifiedTime": "2026-05-05T14:52:24.000Z",
       "renewedTime": "2026-04-13T19:00:28.000Z"
     },
     "auditHistory": [
@@ -3414,30 +3303,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-23T20:50:39.152Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.458Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.197Z"
+        "auditDate": "2026-05-05T18:13:55.286Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3450,6 +3320,7 @@
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 49855,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 42631,
@@ -3515,7 +3386,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T04:52:38.000Z",
-      "modifiedTime": "2026-05-01T00:15:07.000Z",
+      "modifiedTime": "2026-05-05T14:39:44.000Z",
       "renewedTime": "2026-04-14T04:52:38.000Z"
     },
     "auditHistory": [
@@ -3542,30 +3413,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-23T20:50:39.153Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.458Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.197Z"
+        "auditDate": "2026-05-05T18:13:55.287Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3579,6 +3431,7 @@
     "exteriorColorName": "SANREMO GREEN",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 54390,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 38926,
@@ -3655,7 +3508,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
-      "modifiedTime": "2026-04-29T08:13:28.000Z",
+      "modifiedTime": "2026-05-05T14:51:33.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
     "overrideFeatures": {
@@ -3707,175 +3560,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-23T20:50:39.153Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.459Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.198Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C187",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sport-pro-led-lc-prof-hud-gsd-unstruttal/453085072.html",
-    "mobileDeId": "453085072",
-    "exteriorColorName": "DRAVITGRAU METALLIC",
-    "interiorColorName": "Alcantara, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 49916,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 40509,
-    "firstRegistrationYearAndMonth": [
-      2023,
-      5
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "Langenhan GmbH Filiale Mühlhausen ★4.7",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 194,
-    "listingLocation": "🇩🇪 99996 Unstruttal",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "yes",
-      "S688A": "no",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-14T11:25:31.000Z",
-      "modifiedTime": "2026-04-28T14:23:43.000Z",
-      "renewedTime": "2026-04-14T11:25:31.000Z"
-    },
-    "overrideFeatures": {
-      "co2EmissionsGramPerKm": {
-        "value": 194,
-        "reason": "Kullanıcı teyidi: ilanda belirtilmemiş, 194 g/km olarak sabitlendi"
-      }
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-14T11:25:31.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-14T11:25:31.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-17T09:39:00.399Z"
-      },
-      {
-        "action": "Manuel Override",
-        "detail": "co2EmissionsGramPerKm override edildi",
-        "changes": {
-          "co2EmissionsGramPerKm": {
-            "old": 0,
-            "new": 194
-          }
-        },
-        "auditDate": "2026-04-17T13:46:18.009Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-23T20:50:39.153Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:13.459Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.199Z"
+        "auditDate": "2026-05-05T18:13:55.287Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3888,6 +3577,7 @@
     "exteriorColorName": "BROOKLYN GRAU METALLIC",
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 52900,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 13000,
@@ -3953,7 +3643,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T11:42:34.000Z",
-      "modifiedTime": "2026-05-01T00:33:43.000Z",
+      "modifiedTime": "2026-05-05T14:43:44.000Z",
       "renewedTime": "2026-04-16T11:42:34.000Z"
     },
     "auditHistory": [
@@ -3980,30 +3670,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": false
           }
         },
-        "auditDate": "2026-04-23T20:50:39.154Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-04-28T13:44:22.131Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.199Z"
+        "auditDate": "2026-05-05T18:13:55.291Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4018,6 +3689,7 @@
     "exteriorColorName": "Black Sapphire ",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 44490,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 56000,
@@ -4085,7 +3757,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T13:23:42.000Z",
-      "modifiedTime": "2026-04-28T14:17:17.000Z",
+      "modifiedTime": "2026-05-05T14:44:05.000Z",
       "renewedTime": "2026-04-16T13:23:42.000Z"
     },
     "auditHistory": [
@@ -4112,30 +3784,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-23T20:50:39.155Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:22.132Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.200Z"
+        "auditDate": "2026-05-05T18:13:55.293Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4148,6 +3801,7 @@
     "exteriorColorName": "Black Metallic",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 48000,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 55400,
@@ -4213,7 +3867,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T14:18:43.000Z",
-      "modifiedTime": "2026-04-28T14:11:39.000Z",
+      "modifiedTime": "2026-05-05T14:45:18.000Z",
       "renewedTime": "2026-04-16T14:18:43.000Z"
     },
     "auditHistory": [
@@ -4254,20 +3908,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-04-28T13:44:22.133Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:12:55.200Z"
+        "auditDate": "2026-05-05T18:13:55.293Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4280,6 +3925,7 @@
     "exteriorColorName": "Black Metallic",
     "interiorColorName": "Alcantara",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 43500,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 46000,
@@ -4345,7 +3991,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-12T16:06:02.000Z",
-      "modifiedTime": "2026-04-28T14:35:20.000Z",
+      "modifiedTime": "2026-05-05T15:00:32.000Z",
       "renewedTime": "2026-04-12T16:06:02.000Z"
     },
     "auditHistory": [
@@ -4398,20 +4044,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": false
           }
         },
-        "auditDate": "2026-04-28T13:44:22.129Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-02T12:13:03.438Z"
+        "auditDate": "2026-05-05T18:13:55.285Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4426,6 +4063,7 @@
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 48800,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 43000,
@@ -4491,7 +4129,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T13:13:44.000Z",
-      "modifiedTime": "2026-04-28T14:21:43.000Z",
+      "modifiedTime": "2026-05-05T14:51:10.000Z",
       "renewedTime": "2026-04-14T13:13:44.000Z"
     },
     "auditHistory": [
@@ -4535,30 +4173,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": false
           }
         },
-        "auditDate": "2026-04-23T20:50:39.154Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-04-28T13:44:22.130Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-02T12:13:03.439Z"
+        "auditDate": "2026-05-05T18:13:55.289Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4571,6 +4190,7 @@
     "exteriorColorName": "BLACK",
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 48500,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 61100,
@@ -4636,7 +4256,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-17T15:08:07.000Z",
-      "modifiedTime": "2026-04-28T14:08:45.000Z",
+      "modifiedTime": "2026-05-05T14:40:04.000Z",
       "renewedTime": "2026-04-17T15:08:07.000Z"
     },
     "auditHistory": [
@@ -4663,30 +4283,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": false
           }
         },
-        "auditDate": "2026-04-23T20:50:39.155Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-04-28T13:44:22.133Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-02T12:13:03.440Z"
+        "auditDate": "2026-05-05T18:13:55.294Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4701,6 +4302,7 @@
     "exteriorColorName": "SAPHIRSCHWARZ",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 46499,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 64335,
@@ -4766,8 +4368,8 @@
     },
     "listingDates": {
       "createdTime": "2026-04-21T14:16:19.000Z",
-      "modifiedTime": "2026-04-30T23:29:55.000Z",
-      "renewedTime": "2026-04-21T14:16:19.000Z"
+      "modifiedTime": "2026-05-05T14:14:25.000Z",
+      "renewedTime": "2026-05-04T11:48:08.000Z"
     },
     "auditHistory": [
       {
@@ -4789,256 +4391,21 @@
         "auditDate": "2026-04-23T20:31:59.366Z"
       },
       {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-04-28T13:44:22.134Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-02T12:13:03.441Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C206",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-aut-navi-hud-hk-lmr-zeven/453920171.html",
-    "mobileDeId": "453920171",
-    "exteriorColorName": "saphirschwarz",
-    "interiorColorName": "Full leather, Brown",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 49460,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 53800,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      4
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "Autohaus E. Brinkmann GmbH Ihr-BMW-und-MINI-Vertragshändler ★3.6",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 27404 Zeven",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "yes",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "yes",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-23T06:49:40.000Z",
-      "modifiedTime": "2026-04-30T12:44:03.000Z",
-      "renewedTime": "2026-04-23T06:49:40.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-23T06:49:40.000Z"
-      },
-      {
         "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
-        "auditDate": "2026-04-23T06:49:40.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-23T20:31:59.367Z"
+        "auditDate": "2026-05-04T11:48:08.000Z"
       },
       {
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-04-28T13:44:22.135Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainCertain": {
-            "new": false
-          }
-        },
-        "auditDate": "2026-05-02T12:13:03.442Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
-  },
-  {
-    "listingId": "C213",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdr-coupe-laser-carbon-gsd-360-h-k-20-hamburg/454030850.html",
-    "mobileDeId": "454030850",
-    "exteriorColorName": "Black Sapphire",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 48450.01,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 35189,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      3
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.3",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 176,
-    "listingLocation": "🇩🇪 21073 Hamburg",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "yes",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "yes",
-      "S5ACA": "yes",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "yes",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-24T09:01:36.000Z",
-      "modifiedTime": "2026-04-30T23:11:38.000Z",
-      "renewedTime": "2026-04-24T09:01:36.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-24T09:01:36.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-24T09:01:36.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-28T13:37:32.935Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "basePriceEuro": {
-            "old": 48450,
-            "new": 48450.01
-          },
-          "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-05-02T12:13:03.442Z"
+        "auditDate": "2026-05-05T18:13:55.296Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5051,7 +4418,8 @@
     "exteriorColorName": "Blue Metallic",
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
-    "basePriceEuro": 41333,
+    "drivetrainCertain": false,
+    "basePriceEuro": 39999,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 56100,
     "firstRegistrationYearAndMonth": [
@@ -5116,8 +4484,8 @@
     },
     "listingDates": {
       "createdTime": "2026-04-24T11:56:52.000Z",
-      "modifiedTime": "2026-04-28T13:36:40.000Z",
-      "renewedTime": "2026-04-28T06:57:12.000Z"
+      "modifiedTime": "2026-05-05T14:11:00.000Z",
+      "renewedTime": "2026-05-05T06:27:01.000Z"
     },
     "auditHistory": [
       {
@@ -5139,14 +4507,35 @@
         "auditDate": "2026-04-28T13:37:32.935Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-05T06:27:01.000Z"
+      },
+      {
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
+          "basePriceEuro": {
+            "old": 41333,
+            "new": 39999
+          },
           "drivetrainCertain": {
             "new": false
           }
         },
-        "auditDate": "2026-05-02T12:13:03.443Z"
+        "auditDate": "2026-05-05T18:12:08.494Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.299Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5161,6 +4550,7 @@
     "exteriorColorName": "BMW Individual Dravitgrau",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 51705,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 54772,
@@ -5226,7 +4616,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T03:26:08.000Z",
-      "modifiedTime": "2026-04-28T13:08:34.000Z",
+      "modifiedTime": "2026-05-05T13:59:29.000Z",
       "renewedTime": "2026-04-28T03:26:08.000Z"
     },
     "auditHistory": [
@@ -5253,10 +4643,11 @@
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "drivetrainCertain": {
+            "old": null,
             "new": true
           }
         },
-        "auditDate": "2026-05-02T12:13:03.443Z"
+        "auditDate": "2026-05-05T18:13:55.302Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5269,6 +4660,7 @@
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 44990,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 52673,
@@ -5334,7 +4726,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T05:11:01.000Z",
-      "modifiedTime": "2026-05-02T04:34:37.000Z",
+      "modifiedTime": "2026-05-05T13:52:45.000Z",
       "renewedTime": "2026-04-28T05:11:01.000Z"
     },
     "auditHistory": [
@@ -5369,6 +4761,17 @@
           }
         },
         "auditDate": "2026-05-02T12:13:03.444Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.302Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5381,6 +4784,7 @@
     "exteriorColorName": "Blue Metallic",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
     "basePriceEuro": 51980,
     "estimatedImportTaxEuro": 11097,
     "mileageKm": 23890,
@@ -5446,7 +4850,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-01T13:28:14.000Z",
-      "modifiedTime": "2026-05-01T13:31:31.000Z",
+      "modifiedTime": "2026-05-05T13:38:45.000Z",
       "renewedTime": "2026-05-01T13:28:14.000Z"
     },
     "auditHistory": [
@@ -5457,15 +4861,362 @@
         "auditDate": "2026-05-01T13:28:14.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-01T13:28:14.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-02T12:07:58.924Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.304Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
       "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
     ]
+  },
+  {
+    "listingId": "C235",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/454011133.html",
+    "mobileDeId": "454011133",
+    "exteriorColorName": "Fire Red",
+    "interiorColorName": "Cloth, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 55900,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 51584,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "04/2028",
+    "sellerTypeOrName": "Baum Automobile GmbH & Co. KG ★4.5",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 53474 Bad Neuenahr",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-24T04:09:01.000Z",
+      "modifiedTime": "2026-05-05T14:16:21.000Z",
+      "renewedTime": "2026-04-24T04:09:01.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-24T04:09:01.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-24T04:09:01.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.772Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.298Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C240",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-sportpaket-bluetooth-navi-led-vollleder-bad-homburg/454929826.html",
+    "mobileDeId": "454929826",
+    "exteriorColorName": "Sanremo Green",
+    "interiorColorName": "Full leather",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 53990,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 10094,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      6
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.2",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 61352 Bad Homburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "unknown",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-04T17:15:23.000Z",
+      "modifiedTime": "2026-05-05T13:19:31.000Z",
+      "renewedTime": "2026-05-04T17:15:23.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-04T17:15:23.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-04T17:15:23.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.775Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.306Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C241",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-garantie-2028-moers/454949097.html",
+    "mobileDeId": "454949097",
+    "exteriorColorName": "White",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 43499,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 69000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      1
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "11/2028",
+    "sellerTypeOrName": "Emrecan Bakir",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 47445 Moers",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-04T21:12:26.000Z",
+      "modifiedTime": "2026-05-05T13:19:37.000Z",
+      "renewedTime": "2026-05-04T21:12:26.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-04T21:12:26.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-04T21:12:26.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.775Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.306Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

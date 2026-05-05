@@ -6,6 +6,7 @@
     "exteriorColorName": "Portimao Blau",
     "interiorColorName": "Alcantara / Sensatec Siyah",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": null,
     "basePriceEuro": 42999,
     "estimatedImportTaxEuro": 0,
     "mileageKm": 48000,
@@ -90,6 +91,7 @@
     "exteriorColorName": "Saphirschwarz metallic",
     "interiorColorName": "Leder Vernasca Schwarz",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": null,
     "basePriceEuro": 55800,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 35000,
@@ -176,6 +178,7 @@
     "exteriorColorName": "Sanremo green metallic",
     "interiorColorName": "Part leather",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 48990,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 35760,
@@ -284,6 +287,17 @@
           }
         },
         "auditDate": "2026-04-07T20:59:03.059Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.273Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -296,6 +310,7 @@
     "exteriorColorName": "saphirschwarz",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 56990.29,
     "estimatedImportTaxEuro": 11097,
     "mileageKm": 33500,
@@ -404,6 +419,17 @@
           }
         },
         "auditDate": "2026-04-08T20:15:25.139Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.275Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

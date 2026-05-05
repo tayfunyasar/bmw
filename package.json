@@ -14,6 +14,7 @@
     "import:apify": "node scripts/import-full.js",
     "move:sell": "node scripts/mark-sold.js",
     "move:cakal": "node scripts/mark-cakal.js",
+    "move:kazali": "node scripts/mark-kazali.js",
     "move:withoutsunroof": "node scripts/mark-withoutsunroof.js",
     "refresh": "node scripts/refresh-stale.js",
     "deploy": "vercel --prod"

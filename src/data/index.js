@@ -10,6 +10,7 @@ import rwdGasWithSunroofListings from './listings/COUPE_GAS_RWD_WITH_SUNROOF.jso
 import rwdGasWithoutSunroofListings from './listings/COUPE_GAS_RWD_WITHOUT_SUNROOF.json';
 import deletedCars from './listings/DELETED_CARS.json';
 import granCoupe from './listings/GRAN_COUPE.json';
+import granCoupeKazaliListings from './listings/GRAN_COUPE_KAZALI.json';
 import cabrioListings from './listings/CABRIO.json';
 import cakalListings from './listings/COUPE_GAS_WITH_SUNROOF_CAKAL.json';
 import kazaliListings from './listings/COUPE_GAS_WITH_SUNROOF_KAZALI.json';
@@ -31,6 +32,7 @@ export {
   noSunroofGas,
   deletedCars,
   granCoupe,
+  granCoupeKazaliListings,
   cabrioListings,
   cakalListings,
   kazaliListings,

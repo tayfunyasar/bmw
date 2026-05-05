@@ -6,6 +6,7 @@
     "exteriorColorName": "Sanremo Green Metallic",
     "interiorColorName": "Alcantara Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": null,
     "basePriceEuro": 55000,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 23500,
@@ -94,6 +95,7 @@
     "exteriorColorName": "Sanremo Grün",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": null,
     "basePriceEuro": 45900,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 40006,
@@ -177,6 +179,7 @@
     "exteriorColorName": "Sanremo Grün",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 45900,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 40006,
@@ -269,6 +272,17 @@
         "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
         "changes": null,
         "auditDate": "2026-04-13T18:46:27.894Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.285Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -281,6 +295,7 @@
     "exteriorColorName": "Green Metallic",
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 54000,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 24000,
@@ -367,6 +382,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.400Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.290Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -379,6 +405,7 @@
     "exteriorColorName": "Sanremo Grün",
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
+    "drivetrainCertain": true,
     "basePriceEuro": 45900,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 40006,
@@ -455,10 +482,27 @@
         "auditDate": "2026-04-26T17:01:58.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-26T17:01:58.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.936Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainCertain": {
+            "old": null,
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:13:55.301Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

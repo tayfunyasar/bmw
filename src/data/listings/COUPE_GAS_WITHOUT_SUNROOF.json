@@ -4583,5 +4583,100 @@
       "🚫 Sunroof YOK",
       "🔴 Toplam €66,737 — bütçe aşımı"
     ]
+  },
+  {
+    "listingId": "C246",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-carbonpaket-laser-hud-360-hifi-h-k-bietigheim-bissingen/455115089.html",
+    "mobileDeId": "455115089",
+    "exteriorColorName": "M Brooklyn Grau",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
+    "basePriceEuro": 49875,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 43337,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      10
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Autohaus Stadel Zweigniederlassung der AH Heermann und Rhein GmbH ★4.9",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 Bissingen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-06T15:35:24.000Z",
+      "modifiedTime": "2026-05-06T15:45:23.000Z",
+      "renewedTime": "2026-05-06T15:35:24.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T15:35:24.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-06T16:24:28.265Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

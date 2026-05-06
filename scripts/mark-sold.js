@@ -1,55 +1,27 @@
-import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { moveListing, listingsDir } from './lib/move-listing.js';
 import { pushSoldAudit } from './lib/sold.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const soldArchive = {
+  path: path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_SOLD.json'),
+  name: 'COUPE_GAS_WITH_SUNROOF_SOLD.json'
+};
 
-const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const soldPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_SOLD.json');
-
-const SOURCE_FILES = [
-  'COUPE_GAS_WITH_SUNROOF.json',
-  'COUPE_GAS_WITHOUT_SUNROOF.json',
-  'COUPE_DIESEL_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
-  'GRAN_COUPE.json'
-];
-
-const mobileDeId = process.argv[2];
-if (!mobileDeId) {
-  console.error('Kullanım: npm run sell -- <mobileDeId>');
+const id = process.argv[2];
+if (!id) {
+  console.error('Kullanım: npm run move:sell -- <mobileDeId | listingId>');
   process.exit(1);
 }
 
-let foundCar = null;
-let sourceFile = null;
+const result = moveListing({
+  id,
+  pickArchive: () => soldArchive,
+  mutateCar: (car, { sourceFile }) => pushSoldAudit(car, sourceFile)
+});
 
-for (const file of SOURCE_FILES) {
-  const filePath = path.join(listingsDir, file);
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  const index = data.findIndex(c => c.mobileDeId === mobileDeId);
-
-  if (index !== -1) {
-    foundCar = data[index];
-    sourceFile = file;
-    data.splice(index, 1);
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
-    break;
-  }
-}
-
-if (!foundCar) {
-  console.error(`Hata: mobileDeId ${mobileDeId} aktif listelerden hiçbirinde bulunamadı.`);
+if (!result.found) {
+  console.error(`Hata: "${id}" aktif listelerden hiçbirinde bulunamadı.`);
   process.exit(1);
 }
 
-pushSoldAudit(foundCar, sourceFile);
-
-const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
-sold.push(foundCar);
-fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2) + '\n', 'utf-8');
-
-console.log(`✅ ${foundCar.listingId} (${mobileDeId}) satıldı — ${sourceFile} → COUPE_GAS_WITH_SUNROOF_SOLD.json`);
+console.log(`✅ ${result.car.listingId} (${result.car.mobileDeId}) satıldı — ${result.sourceFile} → ${result.archive.name}`);

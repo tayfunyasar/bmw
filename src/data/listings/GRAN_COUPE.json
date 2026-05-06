@@ -2907,5 +2907,284 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C242",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrgc-m-pro-kamera-widescreen-sitzh-hifi19-heidenheim/455020178.html",
+    "mobileDeId": "455020178",
+    "exteriorColorName": "Brooklyn grau",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 49700,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 54713,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Walter Mulfinger GmbH ★5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 188,
+    "listingLocation": "🇩🇪 89520 Heidenheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "no",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "unknown",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-05T15:43:12.000Z",
+      "modifiedTime": "2026-05-05T15:43:16.000Z",
+      "renewedTime": "2026-05-05T15:43:12.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-05T15:43:12.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-06T16:24:28.261Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C243",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440-i-mild-hybrid-xdrive-euro-6d-allrad-wilhelmshaven/455029108.html",
+    "mobileDeId": "455029108",
+    "exteriorColorName": "Portimao Blau",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 53495,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 14039,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Schmidt + Koch GmbH ★4.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 26389 Wilhelmshaven",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "unknown",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-05T17:06:15.000Z",
+      "modifiedTime": "2026-05-05T17:06:15.000Z",
+      "renewedTime": "2026-05-05T17:06:15.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-05T17:06:15.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-06T16:24:28.263Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C245",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-hk-hifi-dab-gsd-rfk-komfortzg-shz-ludwigshafen/455105040.html",
+    "mobileDeId": "455105040",
+    "exteriorColorName": "BMW Individual Tansanitblau",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 51990,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 56369,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "04/2026",
+    "sellerTypeOrName": "Klaus Scheller GmbH ★4.3",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 67071 Ludwigshafen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "unknown",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "unknown",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-06T13:59:36.000Z",
+      "modifiedTime": "2026-05-06T15:13:50.000Z",
+      "renewedTime": "2026-05-06T13:59:36.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T13:59:36.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-06T16:24:28.264Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

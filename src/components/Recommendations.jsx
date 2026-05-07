@@ -33,14 +33,14 @@ const CATEGORIES = [
     icon: '💰',
     label: 'En iyi değer',
     scoreLabel: 'Değer',
-    filter: c => c.metrics.adjustedCost < 70000,
+    filter: c => c.metrics.personalDealScore < 70000,
     scoreOf: c => c.totalScore,
   },
   {
     icon: '⚖️',
     label: 'Dengeli seçim',
     scoreLabel: 'Denge',
-    filter: c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.adjustedCost <= 75000,
+    filter: c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.personalDealScore <= 75000,
     scoreOf: c => (c.totalScore + c.metrics.criticalFeaturesScore) / 2,
   },
 ];

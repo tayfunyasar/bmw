@@ -5233,5 +5233,326 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C180",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-leder-hud-acc-kamera-ha-ka-lenkradh-michelfeld/453007109.html",
+    "mobileDeId": "453007109",
+    "exteriorColorName": "Sanremo Grün",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 40006,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      10
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "10/2026",
+    "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 167,
+    "listingLocation": "🇩🇪 74545 Michelfeld",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-13T14:24:47.000Z",
+      "modifiedTime": "2026-04-13T14:24:51.000Z",
+      "renewedTime": "2026-04-13T14:24:47.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-13T14:24:47.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-13T14:24:47.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-13T18:33:05.707Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → COUPE_GAS_RWD_WITHOUT_SUNROOF",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-04-13T18:46:27.894Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-05-07T16:07:38.900Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C191",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-a-heckantrieb-laser-acc-hud-heidenheim/453143852.html",
+    "mobileDeId": "453143852",
+    "exteriorColorName": "Green Metallic",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 54000,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 24000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 89522 Heidenheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-14T22:03:47.000Z",
+      "modifiedTime": "2026-04-15T06:46:13.000Z",
+      "renewedTime": "2026-04-14T22:03:47.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-14T22:03:47.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-14T22:03:47.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-17T09:39:00.400Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-05-07T16:07:38.901Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C217",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-leder-hud-acc-kamera-ha-ka-lenkradh-michelfeld/454239228.html",
+    "mobileDeId": "454239228",
+    "exteriorColorName": "Sanremo Grün",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 40006,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      10
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "10/2026",
+    "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 167,
+    "listingLocation": "🇩🇪 74545 Michelfeld",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-26T17:01:58.000Z",
+      "modifiedTime": "2026-04-28T13:20:34.000Z",
+      "renewedTime": "2026-04-26T17:01:58.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-26T17:01:58.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-26T17:01:58.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-28T13:37:32.936Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-05-07T16:07:38.901Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

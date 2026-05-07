@@ -3186,5 +3186,141 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C240",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-sportpaket-bluetooth-navi-led-vollleder-bad-homburg/454929826.html",
+    "mobileDeId": "454929826",
+    "exteriorColorName": "Sanremo Green",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 53990,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 15360,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      6
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.2",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇩🇪 61352 Bad Homburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-04T17:15:23.000Z",
+      "modifiedTime": "2026-05-07T14:43:38.000Z",
+      "renewedTime": "2026-05-04T17:15:23.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-04T17:15:23.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-04T17:15:23.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.775Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "mileageKm": {
+            "old": 10094,
+            "new": 15360
+          },
+          "interiorColorName": {
+            "old": "Full leather",
+            "new": "Full leather, Brown"
+          },
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 175
+          },
+          "drivetrainType": {
+            "old": "xDrive AWD",
+            "new": "RWD"
+          },
+          "equipmentFeatures.S610A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-05-07T15:53:57.466Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → GRAN_COUPE",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-05-07T15:53:57.466Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

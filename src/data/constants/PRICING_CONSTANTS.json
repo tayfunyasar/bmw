@@ -21,7 +21,13 @@
     ],
     "overflowRate": 1.80
   },
-  "BPM_DEFAULT_CO2": 177,
+  "BPM_DEFAULT_CO2": 188,
+  "OWNER_ADJUSTMENT_EUR": {
+    "1": -1000,
+    "2": 0,
+    "3": 2000,
+    "4": 3500
+  },
   "FEATURE_STATUS": {
     "yes": "yes",
     "unknown": "unknown"

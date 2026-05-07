@@ -85,7 +85,7 @@ export const MainTabs = () => {
           children: <CarTable cars={allByTotalCost} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} />
         }].concat(sortedYears.map(year => {
           const yearlyCars = yearGroups[year];
-          const winningCarIndex = yearlyCars.reduce((bestIndex, car, currentIndex) => car.metrics.adjustedCost < yearlyCars[bestIndex].metrics.adjustedCost ? currentIndex : bestIndex, 0);
+          const winningCarIndex = yearlyCars.reduce((bestIndex, car, currentIndex) => car.metrics.personalDealScore < yearlyCars[bestIndex].metrics.personalDealScore ? currentIndex : bestIndex, 0);
 
           return {
             key: year,

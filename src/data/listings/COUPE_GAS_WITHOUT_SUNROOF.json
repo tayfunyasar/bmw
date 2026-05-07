@@ -4678,5 +4678,140 @@
     "aiCommentary": [
       "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
     ]
+  },
+  {
+    "listingId": "C247",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-m-sport-coupe-laser-ahk-hud-memory-michelfeld/455123831.html",
+    "mobileDeId": "455123831",
+    "exteriorColorName": "Tansanitblau",
+    "interiorColorName": "Alcantara",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 52547,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 159,
+    "listingLocation": "🇩🇪 74545 Michelfeld",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "unknown",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-06T17:02:20.000Z",
+      "modifiedTime": "2026-05-06T17:02:28.000Z",
+      "renewedTime": "2026-05-06T17:02:20.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T17:02:20.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T17:02:20.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-07T15:51:33.286Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainType": {
+            "old": "RWD",
+            "new": "xDrive AWD"
+          },
+          "drivetrainCertain": {
+            "old": true,
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-07T16:03:18.092Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_RWD_WITHOUT_SUNROOF → COUPE_GAS_WITHOUT_SUNROOF",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-05-07T16:03:18.094Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": null,
+            "new": [
+              "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+            ]
+          }
+        },
+        "auditDate": "2026-05-07T16:03:54.252Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+    ]
   }
 ]

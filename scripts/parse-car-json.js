@@ -42,19 +42,20 @@ function determineDrivetrain(title, description, url, features = []) {
   const allText = `${title} ${description} ${url}`;
   const hasXDrive = /x[- ]?drive/i.test(allText);
   const hasAllrad = /allrad/i.test(description);
-  // Güçlü RWD sinyali: ilan metninde/başlığında açıkça geçen ibareler
-  const hasStrongRWD = /\bRWD\b/.test(title)
-    || /hinterradantrieb/i.test(description)
-    || /heckantrieb/i.test(description);
-  // Zayıf RWD sinyali: sadece Apify features etiketi (yanıltıcı olabiliyor)
-  const hasWeakRWD = features.includes("Rear wheel drive");
+  // KESIN RWD sinyali: SADECE title'da literal "RWD" geçiyorsa.
+  // Heckantrieb / Hinterradantrieb / Apify "Rear wheel drive" yanıltıcı olabiliyor —
+  // bunlar şüphe yaratır ama "RWD" kararı verdirmez. Default = xDrive (uncertain).
+  const hasExplicitRWD = /\bRWD\b/.test(title);
+  const hasSuspectRWD = /hinterradantrieb/i.test(allText)
+    || /heckantrieb/i.test(allText)
+    || features.includes("Rear wheel drive");
 
   if (hasXDrive || hasAllrad) return { type: "xDrive AWD", certain: true };
-  if (hasStrongRWD) return { type: "RWD", certain: true };
-  if (hasWeakRWD) return {
+  if (hasExplicitRWD) return { type: "RWD", certain: true };
+  if (hasSuspectRWD) return {
     type: "xDrive AWD",
     certain: false,
-    note: "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+    note: "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
   };
   return { type: "xDrive AWD", certain: false };
 }
@@ -243,8 +244,8 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
       'basePriceEuro', 'mileageKm', 'sellerTypeOrName',
       'listingLocation', 'exteriorColorName', 'interiorColorName',
       'numberOfPreviousOwners', 'warranty', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm',
-      'drivetrainType', 'drivetrainCertain'
-  ];  
+      'drivetrainType', 'drivetrainCertain', 'aiCommentary'
+  ];
   const overrides = existingCar.overrideFeatures || {};
   fieldsToCheck.forEach(key => {
       if (overrides[key]) return; // Manuel override korunuyor (obje veya değer varsa atla)

@@ -90,7 +90,7 @@ export const CarTable = ({
         if (record.isTotal) {
           return <Text strong type="warning">€{val?.toLocaleString()}</Text>;
         }
-        if (record.isAdjusted) {
+        if (record.isDealScore) {
           return <Text strong type={index === winningCarIndex ? "success" : "secondary"}>€{val?.toLocaleString()}</Text>;
         }
         return <Text>{val}</Text>;
@@ -253,7 +253,7 @@ export const CarTable = ({
     Object.assign({ key: 'kmpen_row', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString() || '?'} km → €${car.metrics?.mileagePenalty?.toLocaleString() || '?'}`]))),
     Object.assign({ key: 'depreciation_row', prop: 'Yıpranma' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.metrics?.totalDepreciation?.toLocaleString() || '?'}`]))),
     Object.assign({ key: 'extfeat_row', prop: '− Donanım' }, Object.fromEntries(cars.map(car => [car.listingId, `−€${car.metrics?.extraFeaturesValue?.toLocaleString() || '?'}`]))),
-    Object.assign({ key: 'adjusted_row', prop: 'DÜZELTİLMİŞ', isAdjusted: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.adjustedCost]))),
+    Object.assign({ key: 'deal_score_row', prop: 'FIRSAT FİYATI', isDealScore: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.personalDealScore]))),
   ];
 
   const renderTitle = () => {

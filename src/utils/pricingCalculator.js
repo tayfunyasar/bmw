@@ -1,6 +1,6 @@
 import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, isColorFav, isColorNotFav } from '../data';
 
-const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS } = PRICING_CONSTANTS;
+const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
 
 // --- Time Calculations ---
 const calculateAgeInMonths = (registrationYear, registrationMonth) => {
@@ -53,6 +53,28 @@ const calculateFeaturesValue = (evaluatedFeatures) => {
   return evaluatedFeatures
     .filter(f => f.value === "yes")
     .reduce((sum, f) => sum + (f.price * f.score), 0);
+};
+
+// "unknown" feature'lar şu an personalDealScore'a hiç katkı vermiyor — bu fırsatları
+// kaçırtabiliyor (donanımlı ama dökümante etmemiş ilanlar pahalı görünür).
+// Burada *sadece bilgi amaçlı* potansiyel değeri hesaplıyoruz; skor değişmiyor.
+// UI bu değeri "±€X belirsiz donanım" olarak gösterip kullanıcıyı bayi linkine yönlendirir.
+const calculateUnknownsInfo = (evaluatedFeatures) => {
+  const unknowns = evaluatedFeatures.filter(f => f.value === FEATURE_STATUS.unknown && f.score > 0);
+  return {
+    unknownsCount: unknowns.length,
+    unknownsPotentialValue: unknowns.reduce((sum, f) => sum + (f.price * f.score), 0),
+  };
+};
+
+const calculateOwnerAdjustment = (numberOfPreviousOwners) => {
+  if (numberOfPreviousOwners == null || numberOfPreviousOwners === '?') return 0;
+  const key = String(numberOfPreviousOwners);
+  if (key in OWNER_ADJUSTMENT_EUR) return OWNER_ADJUSTMENT_EUR[key];
+  // 4+ sahip için en yüksek ceza ile devam (defansif: data "5", "6" görse)
+  const numeric = parseInt(key, 10);
+  if (!Number.isFinite(numeric)) return 0;
+  return OWNER_ADJUSTMENT_EUR['4'] ?? 0;
 };
 
 const calculateCriticalFeaturesScore = (evaluatedFeatures) => {
@@ -189,9 +211,13 @@ export function calculateCarMetrics(car) {
   const evaluatedFeatures = evaluateCarFeatures(car.equipmentFeatures);
   const extraFeaturesValue = calculateFeaturesValue(evaluatedFeatures);
   const featureScores = calculateCriticalFeaturesScore(evaluatedFeatures);
+  const unknownsInfo = calculateUnknownsInfo(evaluatedFeatures);
 
-  // 5. Final Adjusted Cost
-  const adjustedCost = baseTotalCost + depreciation.totalDepreciation - extraFeaturesValue;
+  // 5. Owner adjustment (1 sahip = bonus, 3+ sahip = ceza)
+  const ownerAdjustment = calculateOwnerAdjustment(car.numberOfPreviousOwners);
+
+  // 6. Final Personal Deal Score (€ — düşük = iyi fırsat)
+  const personalDealScore = baseTotalCost + depreciation.totalDepreciation - extraFeaturesValue + ownerAdjustment;
 
   return Object.assign({ ageInMonths }, depreciation, {
     baseTotalCost,
@@ -199,12 +225,35 @@ export function calculateCarMetrics(car) {
     extraFeaturesValue,
     criticalFeaturesScore: featureScores.currentScore,
     maxCriticalScore: featureScores.maximumPossibleScore,
-    adjustedCost,
+    ownerAdjustment,
+    unknownsCount: unknownsInfo.unknownsCount,
+    unknownsPotentialValue: unknownsInfo.unknownsPotentialValue,
+    personalDealScore,
     bpmCalculation: bpm
   });
 }
 
+// Dataset'ten türeyen, outlier-dayanıklı maliyet skoru.
+// Anchor = medyan (sabit magic number değil), birim = MAD (Median Absolute Deviation),
+// ±5 ile clamp (tek bir aşırı ilan diğer sinyalleri ezmesin diye).
+const robustCostStats = (values) => {
+  const sorted = [...values].sort((a, b) => a - b);
+  const median = sorted[Math.floor(sorted.length / 2)];
+  const deviations = sorted.map(v => Math.abs(v - median)).sort((a, b) => a - b);
+  const mad = deviations[Math.floor(deviations.length / 2)] || 1;
+  return { median, mad };
+};
+
+const COST_DELTA_CAP = 5;
+const clampedCostDelta = (value, { median, mad }) => {
+  const z = (median - value) / mad;
+  return Math.max(-COST_DELTA_CAP, Math.min(COST_DELTA_CAP, z));
+};
+
 const assignRecommendations = (evaluated) => {
+  const dealStats = robustCostStats(evaluated.map(c => c.metrics.personalDealScore));
+  const baseStats = robustCostStats(evaluated.map(c => c.metrics.baseTotalCost));
+
   evaluated.forEach(car => {
      const breakdown = [];
      const add = (label, delta) => {
@@ -212,14 +261,13 @@ const assignRecommendations = (evaluated) => {
        breakdown.push({ label, delta: Math.round(delta * 10) / 10 });
      };
 
-     // 1a. Düzeltilmiş maliyet: KM + yaş + donanım etkisi zaten içinde (düşük = iyi)
-     add('Düzeltilmiş maliyet', (62000 - car.metrics.adjustedCost) / 2000);
+     // 1a. Personal deal score: KM + yaş + donanım + sahip etkisi içinde (düşük = iyi)
+     add('Fırsat skoru', clampedCostDelta(car.metrics.personalDealScore, dealStats));
 
-     // 1b. Toplam alım maliyeti cezası: fiyat + BPM (yüksek = ceza, donanımdan bağımsız)
-     add('Toplam alım maliyeti', (62000 - car.metrics.baseTotalCost) / 2000);
+     // 1b. Toplam alım maliyeti cezası: fiyat + BPM (yüksek = ceza, donanım/sahipten bağımsız)
+     add('Toplam alım maliyeti', clampedCostDelta(car.metrics.baseTotalCost, baseStats));
 
-     // 2. Güvenilirlik: sahip, servis, bayi
-     if (car.numberOfPreviousOwners === '1') add('Tek sahip', 1);
+     // 2. Güvenilirlik: servis, bayi (sahip sayısı artık personalDealScore'da)
      if (car.service?.type === 'yes') add('Tam servis', 1);
 
      // 3. Risk faktörleri
@@ -250,8 +298,8 @@ const assignRecommendations = (evaluated) => {
 
   const bestSpec = [...evaluated].sort((a,b) => b.metrics.criticalFeaturesScore - a.metrics.criticalFeaturesScore)[0];
   const topPick = [...evaluated].sort((a,b) => b.totalScore - a.totalScore)[0];
-  const budgetPick = [...evaluated].filter(c => c.metrics.adjustedCost < 70000).sort((a,b) => b.totalScore - a.totalScore)[0];
-  const balancedPick = [...evaluated].filter(c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.adjustedCost <= 75000).sort((a,b) => b.totalScore - a.totalScore)[0];
+  const budgetPick = [...evaluated].filter(c => c.metrics.personalDealScore < 70000).sort((a,b) => b.totalScore - a.totalScore)[0];
+  const balancedPick = [...evaluated].filter(c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.personalDealScore <= 75000).sort((a,b) => b.totalScore - a.totalScore)[0];
 
   if (bestSpec) bestSpec.curatorPickBadge += '👑';
   if (topPick && !topPick.curatorPickBadge.includes('🏆')) topPick.curatorPickBadge += '🏆';

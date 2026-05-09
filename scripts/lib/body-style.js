@@ -8,7 +8,10 @@
 // sınırı ile yakalanır — başka kelimelerin ortasındaki "GC"yi tetiklemez.
 
 const GRAN_COUPE_RE = /(gran[d]?|gan)\s*coup/i;
-const GC_ABBR_RE = /\bGC\b/;
+// GC kisaltmasi. \b sinirli klasik durumlar (örn. " GC ") + xDrGC / xDriveGC
+// gibi yapisik varyantlar (mobile.de baslik kisaltmalari). Diger kelimelerin
+// ortasindaki rastgele GC'yi tetiklememesi icin sadece bu iki on-eki kabul ediyoruz.
+const GC_ABBR_RE = /(?:\b|x?Dr(?:ive)?)GC\b/;
 const CABRIO_RE = /\b(ca[rb]+rio(let)?|convertible|cab\.)/i;
 // BMW 4 Serisi chassis kodlari: G22 = Coupé, G23 = Cabrio, G26 = Gran Coupé.
 // Apify "Model range" alaninda veya bazen baslikta net olarak gorunur.

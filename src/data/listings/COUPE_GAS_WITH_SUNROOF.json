@@ -397,7 +397,7 @@
     },
     "listingDates": {
       "createdTime": "2026-01-22T04:09:51.000Z",
-      "modifiedTime": "2026-05-05T16:35:01.000Z",
+      "modifiedTime": "2026-05-08T02:33:32.000Z",
       "renewedTime": "2026-01-22T04:09:51.000Z"
     },
     "auditHistory": [
@@ -1818,7 +1818,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-23T14:17:43.000Z",
-      "modifiedTime": "2026-05-05T15:16:11.000Z",
+      "modifiedTime": "2026-05-06T23:04:38.000Z",
       "renewedTime": "2026-04-02T08:17:39.000Z"
     },
     "auditHistory": [
@@ -2032,148 +2032,6 @@
       "🟢 9 gündür satışta — yeni ilan",
       "🟠 Toplam €58,271 — bütçe üst sınırına yakın"
     ]
-  },
-  {
-    "listingId": "C134",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-4-serie-coupe-xdrive-schiebedach-park-k%C3%B6ln/450732194.html",
-    "mobileDeId": "450732194",
-    "exteriorColorName": "Mineralweiss metallic",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "basePriceEuro": 42500,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 51655,
-    "firstRegistrationYearAndMonth": [
-      2021,
-      7
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "07/2027",
-    "sellerTypeOrName": "Kallenhard GmbH ★5",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 174,
-    "listingLocation": "🇩🇪 51149 Köln",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "unknown",
-      "S2T4A": "yes",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-03-19T08:12:05.000Z",
-      "modifiedTime": "2026-05-05T15:44:43.000Z",
-      "renewedTime": "2026-04-28T01:05:52.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-19T08:12:05.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-19T08:12:05.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-04T10:52:55.920Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S2T4A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S494A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S488A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S521A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S265A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S302A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:30:51.823Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-08T01:05:49.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-28T01:05:52.000Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
   },
   {
     "listingId": "C139",
@@ -2784,7 +2642,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-09T13:42:58.000Z",
-      "modifiedTime": "2026-05-05T15:55:52.000Z",
+      "modifiedTime": "2026-05-08T14:02:58.000Z",
       "renewedTime": "2026-04-27T15:59:20.000Z"
     },
     "auditHistory": [
@@ -2951,7 +2809,7 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
-    "basePriceEuro": 49855,
+    "basePriceEuro": 49455,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 42631,
     "firstRegistrationYearAndMonth": [
@@ -3016,7 +2874,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T04:52:38.000Z",
-      "modifiedTime": "2026-05-05T14:39:44.000Z",
+      "modifiedTime": "2026-05-06T12:35:16.000Z",
       "renewedTime": "2026-04-14T04:52:38.000Z"
     },
     "auditHistory": [
@@ -3037,6 +2895,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-17T09:39:00.398Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 49855,
+            "new": 49455
+          }
+        },
+        "auditDate": "2026-05-08T20:08:43.944Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3621,122 +3490,6 @@
     ]
   },
   {
-    "listingId": "C189",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-akrapovic-auspuff-berlin/453096467.html",
-    "mobileDeId": "453096467",
-    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": false,
-    "basePriceEuro": 48800,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 43000,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      7
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "07/2027",
-    "sellerTypeOrName": "Cheap Cars Berlin , Radutskiy ★4.9",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 13581 Berlin",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
-      "S610A": "yes",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "yes",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-14T13:13:44.000Z",
-      "modifiedTime": "2026-05-05T14:51:10.000Z",
-      "renewedTime": "2026-04-14T13:13:44.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-14T13:13:44.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-14T13:13:44.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-17T09:39:00.399Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "drivetrainType": {
-            "old": "RWD",
-            "new": "xDrive AWD"
-          }
-        },
-        "auditDate": "2026-04-17T09:56:17.413Z"
-      },
-      {
-        "action": "Dosya Taşıma: COUPE_GAS_RWD_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF",
-        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
-        "changes": null,
-        "auditDate": "2026-04-17T09:56:17.413Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
     "listingId": "C200",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-sportpaket-kaufbeuren/453407029.html",
     "mobileDeId": "453407029",
@@ -4073,7 +3826,7 @@
     "drivetrainCertain": true,
     "basePriceEuro": 51705,
     "estimatedImportTaxEuro": 7428,
-    "mileageKm": 54772,
+    "mileageKm": 54773,
     "firstRegistrationYearAndMonth": [
       2022,
       2
@@ -4087,7 +3840,7 @@
       "history": []
     },
     "nextInspectionDate": "02/2025",
-    "sellerTypeOrName": "BMW AG Niederlassung Hamburg ★4.3",
+    "sellerTypeOrName": "BMW AG Niederlassung Hamburg ★4.2",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 22885 Barsbüttel bei Hamburg",
@@ -4136,7 +3889,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T03:26:08.000Z",
-      "modifiedTime": "2026-05-05T13:59:29.000Z",
+      "modifiedTime": "2026-05-06T03:21:22.000Z",
       "renewedTime": "2026-04-28T03:26:08.000Z"
     },
     "auditHistory": [
@@ -4157,6 +3910,21 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-04-28T13:37:32.938Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "mileageKm": {
+            "old": 54772,
+            "new": 54773
+          },
+          "sellerTypeOrName": {
+            "old": "BMW AG Niederlassung Hamburg ★4.3",
+            "new": "BMW AG Niederlassung Hamburg ★4.2"
+          }
+        },
+        "auditDate": "2026-05-08T20:08:50.199Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4235,7 +4003,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T05:11:01.000Z",
-      "modifiedTime": "2026-05-05T13:52:45.000Z",
+      "modifiedTime": "2026-05-08T04:35:25.000Z",
       "renewedTime": "2026-04-28T05:11:01.000Z"
     },
     "auditHistory": [
@@ -4580,99 +4348,6 @@
           }
         },
         "auditDate": "2026-05-07T15:53:57.466Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C244",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laserlicht-leder-hud-navi-maintal/455053004.html",
-    "mobileDeId": "455053004",
-    "exteriorColorName": "DRAVITGRAU",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "basePriceEuro": 46290,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 55458,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      3
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Krah+Enders GmbH & Co. KG ★4.9",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 63477 Maintal",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "unknown",
-      "S610A": "yes",
-      "S5DN_360": "unknown",
-      "KGNL": "yes",
-      "S322A": "yes",
-      "S2VFA": "unknown",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "yes",
-      "S5ACA": "yes",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-05-06T01:38:32.000Z",
-      "modifiedTime": "2026-05-06T05:19:52.000Z",
-      "renewedTime": "2026-05-06T01:38:32.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-05-06T01:38:32.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-05-06T16:24:28.264Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

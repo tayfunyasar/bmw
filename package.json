@@ -17,7 +17,8 @@
     "move:kazali": "node scripts/mark-kazali.js",
     "move:withoutsunroof": "node scripts/mark-withoutsunroof.js",
     "refresh": "node scripts/refresh-stale.js",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "test": "node --test scripts/lib/*.test.js"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",

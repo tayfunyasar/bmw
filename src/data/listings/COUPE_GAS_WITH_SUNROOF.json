@@ -74,7 +74,7 @@
     },
     "listingDates": {
       "createdTime": "2025-12-05T09:07:07.000Z",
-      "modifiedTime": "2026-05-05T16:45:47.000Z",
+      "modifiedTime": "2026-05-10T23:21:51.000Z",
       "renewedTime": "2025-12-05T09:07:07.000Z"
     },
     "auditHistory": [
@@ -304,15 +304,26 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.120Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟠 118 gündür satışta — 3 ayı aştı, neden satılamadığı araştırılmalı",
+              "🟡 Servis geçmişi bilinmiyor",
+              "Ağırlık 1,905 kg → xDrive onaylı",
+              "🟠 Toplam €58,183 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.559Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
-    "aiCommentary": [
-      "🟠 118 gündür satışta — 3 ayı aştı, neden satılamadığı araştırılmalı",
-      "🟡 Servis geçmişi bilinmiyor",
-      "Ağırlık 1,905 kg → xDrive onaylı",
-      "🟠 Toplam €58,183 — bütçe üst sınırına yakın"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C39",
@@ -397,7 +408,7 @@
     },
     "listingDates": {
       "createdTime": "2026-01-22T04:09:51.000Z",
-      "modifiedTime": "2026-05-08T02:33:32.000Z",
+      "modifiedTime": "2026-05-11T02:33:58.000Z",
       "renewedTime": "2026-01-22T04:09:51.000Z"
     },
     "auditHistory": [
@@ -713,15 +724,26 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.121Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟡 70 gündür satışta",
+              "\"Mesafe uyarı\" + \"Şerit değiştirme yardımı\" var → DA+ olabilir ama kesin değil",
+              "Kamera var ama \"360°\" açıkça belirtilmemiş → muhtemelen geri görüş",
+              "HK fotoğraflardan doğrulandı (satıcı listesinde belirtilmemiş)"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.560Z"
       }
     ],
     "cardThemeColorHex": "#3b82f6",
-    "aiCommentary": [
-      "🟡 70 gündür satışta",
-      "\"Mesafe uyarı\" + \"Şerit değiştirme yardımı\" var → DA+ olabilir ama kesin değil",
-      "Kamera var ama \"360°\" açıkça belirtilmemiş → muhtemelen geri görüş",
-      "HK fotoğraflardan doğrulandı (satıcı listesinde belirtilmemiş)"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C40",
@@ -1045,15 +1067,26 @@
           }
         },
         "auditDate": "2026-04-07T21:08:00.713Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟠 168 gündür satışta — 3 ayı aştı, neden satılamadığı araştırılmalı",
+              "⚠️ İlan 97 gün sonra yenilendi — ilgi düşük olabilir",
+              "🟡 Servis geçmişi bilinmiyor",
+              "CO₂ 149 — NEDC olabilir (şüpheli)"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.558Z"
       }
     ],
     "cardThemeColorHex": "#a3e635",
-    "aiCommentary": [
-      "🟠 168 gündür satışta — 3 ayı aştı, neden satılamadığı araştırılmalı",
-      "⚠️ İlan 97 gün sonra yenilendi — ilgi düşük olabilir",
-      "🟡 Servis geçmişi bilinmiyor",
-      "CO₂ 149 — NEDC olabilir (şüpheli)"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C17",
@@ -1422,16 +1455,27 @@
           }
         },
         "auditDate": "2026-04-28T13:44:13.450Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟢 29 gündür satışta — yeni ilan",
+              "🟡 Özel satıcı — bayi güvencesi yok",
+              "🟠 mobile.de \"Artırılmış fiyat\" uyarısı var",
+              "📈 Fiyat €55K→€53K→€55K→€53K",
+              "🟠 Toplam €59,214 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.561Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
-    "aiCommentary": [
-      "🟢 29 gündür satışta — yeni ilan",
-      "🟡 Özel satıcı — bayi güvencesi yok",
-      "🟠 mobile.de \"Artırılmış fiyat\" uyarısı var",
-      "📈 Fiyat €55K→€53K→€55K→€53K",
-      "🟠 Toplam €59,214 — bütçe üst sınırına yakın"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C115",
@@ -1737,13 +1781,24 @@
           }
         },
         "auditDate": "2026-04-23T20:50:28.124Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟢 6 gündür satışta — yeni ilan",
+              "🟠 Toplam €62,658 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.565Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟢 6 gündür satışta — yeni ilan",
-      "🟠 Toplam €62,658 — bütçe üst sınırına yakın"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C123",
@@ -2025,13 +2080,24 @@
           }
         },
         "auditDate": "2026-05-05T18:11:59.154Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟢 9 gündür satışta — yeni ilan",
+              "🟠 Toplam €58,271 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.563Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟢 9 gündür satışta — yeni ilan",
-      "🟠 Toplam €58,271 — bütçe üst sınırına yakın"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C139",
@@ -2106,7 +2172,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-25T10:36:47.000Z",
-      "modifiedTime": "2026-05-05T16:34:30.000Z",
+      "modifiedTime": "2026-05-11T08:33:41.000Z",
       "renewedTime": "2026-03-25T10:36:47.000Z"
     },
     "auditHistory": [
@@ -3257,7 +3323,7 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
-    "basePriceEuro": 48000,
+    "basePriceEuro": 47600,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 55400,
     "firstRegistrationYearAndMonth": [
@@ -3322,7 +3388,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T14:18:43.000Z",
-      "modifiedTime": "2026-05-05T14:45:18.000Z",
+      "modifiedTime": "2026-05-09T10:56:48.000Z",
       "renewedTime": "2026-04-16T14:18:43.000Z"
     },
     "auditHistory": [
@@ -3357,137 +3423,21 @@
           }
         },
         "auditDate": "2026-04-23T20:50:39.155Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C177",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-coupe-a-v%C3%B6hringen/452926039.html",
-    "mobileDeId": "452926039",
-    "exteriorColorName": "Black Metallic",
-    "interiorColorName": "Alcantara",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": false,
-    "basePriceEuro": 43500,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 46000,
-    "firstRegistrationYearAndMonth": [
-      2021,
-      12
-    ],
-    "numberOfPreviousOwners": "2",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "12/2026",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 89269 Vöhringen",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "yes",
-      "S322A": "unknown",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "unknown",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "yes",
-      "S2NHA": "yes",
-      "S3ACA": "yes",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-12T16:06:02.000Z",
-      "modifiedTime": "2026-05-05T15:00:32.000Z",
-      "renewedTime": "2026-04-12T16:06:02.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-12T16:06:02.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-12T16:06:02.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-04-12T19:23:14.190Z"
-      },
-      {
-        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_RWD_WITH_SUNROOF",
-        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
-        "changes": null,
-        "auditDate": "2026-04-13T18:46:27.894Z"
-      },
-      {
-        "action": "Dosya Taşıma: COUPE_GAS_RWD_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF",
-        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
-        "changes": null,
-        "auditDate": "2026-04-17T09:56:17.411Z"
       },
       {
         "action": "İlan Güncellemesi (Otomatik)",
         "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
         "changes": {
           "basePriceEuro": {
-            "old": 45900,
-            "new": 43500
-          },
-          "drivetrainCertain": {
-            "new": false
+            "old": 48000,
+            "new": 47600
           }
         },
-        "auditDate": "2026-04-23T20:50:39.152Z"
+        "auditDate": "2026-05-11T09:27:26.570Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C200",
@@ -3663,7 +3613,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-21T14:16:19.000Z",
-      "modifiedTime": "2026-05-05T14:14:25.000Z",
+      "modifiedTime": "2026-05-11T08:32:13.000Z",
       "renewedTime": "2026-05-04T11:48:08.000Z"
     },
     "auditHistory": [
@@ -3809,11 +3759,26 @@
           }
         },
         "auditDate": "2026-05-05T18:12:08.494Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+            ],
+            "new": [
+              "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+            ]
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.571Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
-      "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
     ]
   },
   {
@@ -4003,7 +3968,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T05:11:01.000Z",
-      "modifiedTime": "2026-05-08T04:35:25.000Z",
+      "modifiedTime": "2026-05-11T04:33:43.000Z",
       "renewedTime": "2026-04-28T05:11:01.000Z"
     },
     "auditHistory": [
@@ -4137,11 +4102,26 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-02T12:07:58.924Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+            ],
+            "new": [
+              "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+            ]
+          }
+        },
+        "auditDate": "2026-05-11T09:27:33.629Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": [
-      "⚠️ Apify 'Rear wheel drive' etiketi mevcut ama ilan metninde teyit (Heckantrieb/Hinterradantrieb) yok. xDrive varsayıldı — satıcıdan teyit alınmalı."
+      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
     ]
   },
   {
@@ -4217,7 +4197,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-24T04:09:01.000Z",
-      "modifiedTime": "2026-05-05T14:16:21.000Z",
+      "modifiedTime": "2026-05-08T09:03:45.000Z",
       "renewedTime": "2026-04-24T04:09:01.000Z"
     },
     "auditHistory": [
@@ -4352,5 +4332,100 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C252",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-sportp-dig-cockpit-laser-shz-acc-m%C3%BCnchen/455490627.html",
+    "mobileDeId": "455490627",
+    "exteriorColorName": "M Brooklyn Grau",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
+    "basePriceEuro": 49980,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 47756,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      2
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "03/2028",
+    "sellerTypeOrName": "BMW München – Filiale Fröttmaning ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 80939 München",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "yes",
+      "S322A": "unknown",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-11T07:16:59.000Z",
+      "modifiedTime": "2026-05-11T07:17:15.000Z",
+      "renewedTime": "2026-05-11T07:16:59.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-11T07:16:59.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-11T09:24:28.187Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+    ]
   }
 ]

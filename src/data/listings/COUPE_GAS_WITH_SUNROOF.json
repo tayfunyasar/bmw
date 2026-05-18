@@ -1076,7 +1076,7 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
-    "basePriceEuro": 50950,
+    "basePriceEuro": 48950,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 29581,
     "firstRegistrationYearAndMonth": [
@@ -1092,7 +1092,7 @@
       "history": []
     },
     "nextInspectionDate": "New",
-    "sellerTypeOrName": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2",
+    "sellerTypeOrName": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 14513 Teltow",
@@ -1141,7 +1141,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-26T17:12:33.000Z",
-      "modifiedTime": "2026-05-12T23:00:45.000Z",
+      "modifiedTime": "2026-05-18T17:13:37.000Z",
       "renewedTime": "2026-04-20T08:15:48.000Z"
     },
     "auditHistory": [
@@ -1397,6 +1397,21 @@
           }
         },
         "auditDate": "2026-05-16T07:19:57.516Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 50950,
+            "new": 48950
+          },
+          "sellerTypeOrName": {
+            "old": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2",
+            "new": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3"
+          }
+        },
+        "auditDate": "2026-05-18T17:21:40.317Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1426,7 +1441,7 @@
       "history": []
     },
     "nextInspectionDate": "New",
-    "sellerTypeOrName": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2",
+    "sellerTypeOrName": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 14513 Teltow",
@@ -1707,6 +1722,17 @@
           }
         },
         "auditDate": "2026-05-16T07:19:57.515Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2",
+            "new": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3"
+          }
+        },
+        "auditDate": "2026-05-18T17:21:40.315Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1785,7 +1811,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-25T10:36:47.000Z",
-      "modifiedTime": "2026-05-13T12:49:08.000Z",
+      "modifiedTime": "2026-05-18T15:07:41.000Z",
       "renewedTime": "2026-03-25T10:36:47.000Z"
     },
     "auditHistory": [
@@ -1878,262 +1904,6 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
-  },
-  {
-    "listingId": "C121",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-garagenwagen-ludwigshafen/451092000.html",
-    "mobileDeId": "451092000",
-    "exteriorColorName": "Alpinweiß",
-    "interiorColorName": null,
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": false,
-    "basePriceEuro": 43900,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 45000,
-    "firstRegistrationYearAndMonth": [
-      2021,
-      5
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "12/2027",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 67071 Ludwigshafen",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "yes",
-      "S322A": "unknown",
-      "S2VFA": "unknown",
-      "S459A": "unknown",
-      "S5DNA": "unknown",
-      "S6U3A": "unknown",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "unknown",
-      "S6C4A": "unknown",
-      "S430A": "unknown",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "unknown",
-      "S524A": "unknown",
-      "S265A": "unknown",
-      "S216A": "unknown",
-      "S302A": "unknown",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-03-23T05:39:41.000Z",
-      "modifiedTime": "2026-05-12T15:40:51.000Z",
-      "renewedTime": "2026-03-23T05:39:41.000Z"
-    },
-    "overrideFeatures": {
-      "exteriorColorName": {
-        "value": "Alpinweiß",
-        "reason": "Crawl verisi eksik, kullanıcı teyidi: Alpinweiß"
-      }
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-23T05:39:41.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-03-31T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "listingLocation": {
-            "old": "🇩🇪 Unknown",
-            "new": "🇩🇪 67071 Ludwigshafen"
-          },
-          "warranty": {
-            "old": {
-              "exists": "unknown"
-            },
-            "new": {
-              "exists": "no"
-            }
-          },
-          "service": {
-            "old": {
-              "type": "unknown",
-              "history": []
-            },
-            "new": {
-              "type": "yes",
-              "history": []
-            }
-          },
-          "equipmentFeatures.S403A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5AZA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5AUA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S610A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DN_360": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S322A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S2NHA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S459A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S6U3A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S2VLA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S494A": {
-            "new": "yes"
-          },
-          "equipmentFeatures.S248A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S420A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5ACA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S6C4A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S430A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S775A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ADA": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3AGA": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-04T10:52:55.928Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S403A": {
-            "old": "yes",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S494A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:30:51.823Z"
-      },
-      {
-        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITHOUT_SUNROOF",
-        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
-        "changes": null,
-        "auditDate": "2026-04-07T20:34:17.858Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S403A": {
-            "old": "unknown",
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T20:54:21.880Z"
-      },
-      {
-        "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → COUPE_GAS_WITH_SUNROOF",
-        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
-        "changes": null,
-        "auditDate": "2026-04-07T20:54:21.880Z"
-      }
-    ],
-    "cardThemeColorHex": "#e2e8f0",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ]
   },
   {
     "listingId": "C175",
@@ -2714,7 +2484,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
-      "modifiedTime": "2026-05-12T15:23:22.000Z",
+      "modifiedTime": "2026-05-18T11:31:59.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
     "overrideFeatures": {
@@ -3309,7 +3079,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-28T05:11:01.000Z",
-      "modifiedTime": "2026-05-16T04:34:28.000Z",
+      "modifiedTime": "2026-05-18T04:33:43.000Z",
       "renewedTime": "2026-04-28T05:11:01.000Z"
     },
     "auditHistory": [
@@ -3464,105 +3234,6 @@
     "aiCommentary": [
       "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
     ]
-  },
-  {
-    "listingId": "C235",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/454011133.html",
-    "mobileDeId": "454011133",
-    "exteriorColorName": "Fire Red",
-    "interiorColorName": "Cloth, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "basePriceEuro": 55900,
-    "estimatedImportTaxEuro": 11097,
-    "mileageKm": 51584,
-    "firstRegistrationYearAndMonth": [
-      2024,
-      7
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "04/2028",
-    "sellerTypeOrName": "Baum Automobile GmbH & Co. KG ★4.5",
-    "modelGeneration": "LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 53474 Bad Neuenahr",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "unknown",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "yes",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "unknown",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-24T04:09:01.000Z",
-      "modifiedTime": "2026-05-08T09:03:45.000Z",
-      "renewedTime": "2026-04-24T04:09:01.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-24T04:09:01.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-24T04:09:01.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-05-05T14:36:31.772Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
   },
   {
     "listingId": "C241",
@@ -4057,6 +3728,12 @@
         "auditDate": "2026-05-14T20:27:02.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-14T20:27:02.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -4106,7 +3783,7 @@
       "S5AUA": "unknown",
       "S688A": "yes",
       "S2T4A": "yes",
-      "S610A": "yes",
+      "S610A": "unknown",
       "S5DN_360": "yes",
       "KGNL": "yes",
       "S322A": "yes",
@@ -4141,7 +3818,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-15T08:10:43.000Z",
-      "modifiedTime": "2026-05-15T11:45:13.000Z",
+      "modifiedTime": "2026-05-18T16:07:33.000Z",
       "renewedTime": "2026-05-15T08:10:43.000Z"
     },
     "auditHistory": [
@@ -4152,10 +3829,27 @@
         "auditDate": "2026-05-15T08:10:43.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-15T08:10:43.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-16T07:17:12.312Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S610A": {
+            "old": "yes",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-05-18T17:21:46.544Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4245,6 +3939,12 @@
         "auditDate": "2026-05-15T13:03:07.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-15T13:03:07.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -4327,12 +4027,18 @@
     },
     "listingDates": {
       "createdTime": "2026-05-15T13:09:00.000Z",
-      "modifiedTime": "2026-05-16T07:16:46.000Z",
+      "modifiedTime": "2026-05-18T14:22:25.000Z",
       "renewedTime": "2026-05-15T13:09:00.000Z"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-15T13:09:00.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-05-15T13:09:00.000Z"
@@ -4536,5 +4242,98 @@
     "aiCommentary": [
       "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
     ]
+  },
+  {
+    "listingId": "C266",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/456054682.html",
+    "mobileDeId": "456054682",
+    "exteriorColorName": "Fire Red",
+    "interiorColorName": "Cloth, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 55900,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 51584,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "04/2028",
+    "sellerTypeOrName": "Baum Automobile GmbH & Co. KG ★4.5",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 53474 Bad Neuenahr",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "unknown",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-18T09:18:47.000Z",
+      "modifiedTime": "2026-05-18T09:19:22.000Z",
+      "renewedTime": "2026-05-18T09:18:47.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-18T09:18:47.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-18T17:23:41.584Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

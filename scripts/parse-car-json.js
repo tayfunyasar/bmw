@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { pushSoldAudit } from './lib/sold.js';
 import { classifyBodyStyle, rawCarToTextObj, rawCarApifyCategory } from './lib/body-style.js';
+import { matchEquipmentFeatures } from './lib/equipment-match.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -66,64 +67,11 @@ function parseCar(car, nextId) {
   const props = car.properties || {};
   const attributes = car.attributes || {};
 
-  const equipmentFeatures = {};
-  const descNormalized = description.toLowerCase().replace(/[-–]/g, ' ');
-
-  for (const rule of equipmentRules) {
-    // Helper: case-insensitive, dash/hyphen-tolerant matching against description
-    const descMatches = (keyword) => descNormalized.includes(keyword.toLowerCase().replace(/[-–]/g, ' '));
-
-    // 1. Check positive description match (HIGHEST PRIORITY — dealer's own text is authoritative)
-    let matchDescription = false;
-    if (rule.matchType === 'ALL_DESCRIPTION' && rule.description && rule.description.length > 0) {
-      matchDescription = rule.description.every(d => descMatches(d));
-    } else if (rule.description && rule.description.length > 0) {
-      matchDescription = rule.description.some(d => descMatches(d));
-    }
-
-    if (matchDescription) {
-      equipmentFeatures[rule.code] = "yes";
-      continue;
-    }
-
-    // 2. Check negative descriptions (only matters when no positive description match)
-    let hasNegative = false;
-    if (rule.negativeDescription && rule.negativeDescription.length > 0) {
-      hasNegative = rule.negativeDescription.some(nd => descMatches(nd));
-    }
-
-    if (hasNegative) {
-      equipmentFeatures[rule.code] = "no";
-      continue;
-    }
-
-    // 3. Check features array and props (Apify key-value data — lower priority)
-    const matchFeatures = rule.features && rule.features.some(f => features.includes(f));
-
-    let matchProps = false;
-    if (rule.props) {
-      matchProps = Object.entries(rule.props).some(([propKey, propValues]) => {
-        const carPropVal = props[propKey] || "";
-        return propValues.some(val => carPropVal.includes(val));
-      });
-    }
-
-    if (matchFeatures || matchProps) {
-      equipmentFeatures[rule.code] = "yes";
-    } else {
-      equipmentFeatures[rule.code] = "unknown";
-    }
-  }
-
-  // impliedBy: parent özellik description'da varsa, alt özelliği "yes" yap
-  for (const rule of equipmentRules) {
-    if (rule.impliedBy && equipmentFeatures[rule.code] !== "yes") {
-      const parentFound = rule.impliedBy.some(p => descNormalized.includes(p.toLowerCase().replace(/[-–]/g, ' ')));
-      if (parentFound) {
-        equipmentFeatures[rule.code] = "yes";
-      }
-    }
-  }
+  // Donanim eslestirme mantigi scripts/lib/equipment-match.js icinde — tek kaynak.
+  const equipmentFeatures = matchEquipmentFeatures(
+    { description, features, props },
+    equipmentRules
+  );
 
   const regMatch = (props.firstRegistration || "").match(/(\d+)\/(\d+)/);
   const firstRegistrationYearAndMonth = regMatch ? [parseInt(regMatch[2]), parseInt(regMatch[1])] : [null, null];

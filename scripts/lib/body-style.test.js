@@ -38,6 +38,15 @@ test('isGranCoupe — does NOT trigger on random GC inside other words', () => {
   assert.equal(isGranCoupe({ title: 'BMW M440i Coupe Laser' }), false);
 });
 
+test('classifyBodyStyle — equipment abbreviations (DAPRO/LivePro) do NOT trigger GC/Cabrio', () => {
+  // "DAPRO" (Driving Assistant Professional) ve "LivePro" donanim kisaltmalaridir,
+  // govde tipi sinyali degil — boyle bir baslik COUPE olarak siniflanmali.
+  assert.equal(
+    classifyBodyStyle({ title: 'BMW M440 i xDr Coupe,LivePro,Laser,DAPRO,Memory,360°' }),
+    'COUPE'
+  );
+});
+
 test('isCabrio — explicit Cabrio variants', () => {
   assert.equal(isCabrio({ title: 'BMW M440i Cabrio' }), true);
   assert.equal(isCabrio({ title: 'BMW M440i Cabriolet' }), true);

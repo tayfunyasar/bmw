@@ -7,7 +7,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
 const dumpDir = path.resolve(__dirname, '../dump');
 
-const STALE_DAYS = parseInt(process.argv[2]) || 3;
+const argv = process.argv.slice(2);
+// --list: Apify'i çağırmadan sadece stale ilan ID'lerini yazdır ve çık.
+// Refresh sonrası hâlâ stale kalanlar = veri çekilemeyen (403) ilanlardır.
+const LIST_ONLY = argv.includes('--list');
+const STALE_DAYS = parseInt(argv.find(a => /^\d+$/.test(a))) || 3;
 const staleCutoff = Date.now() - (STALE_DAYS * 24 * 60 * 60 * 1000);
 
 const activeFiles = [
@@ -31,6 +35,11 @@ for (const f of dumpFiles) {
 
 // Dump'ı olmayan veya 3+ gün önce taranmış ilanları bul
 const staleIds = allIds.filter(id => !dumpMap[id] || dumpMap[id] < staleCutoff);
+
+if (LIST_ONLY) {
+  staleIds.forEach(id => console.log(id));
+  process.exit(0);
+}
 
 if (staleIds.length === 0) {
   console.log(`Tüm ilanlar son ${STALE_DAYS} gün içinde taranmış. Yapılacak bir şey yok.`);

@@ -1228,5 +1228,98 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C280",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-h-k-laser-standheizung-wittlich/456325860.html",
+    "mobileDeId": "456325860",
+    "exteriorColorName": "SANREMO GREEN METALLIC",
+    "interiorColorName": "Velour, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 55900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 20557,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      1
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "CAR Avenue Autohaus GmbH ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 192,
+    "listingLocation": "🇩🇪 54516 Wittlich",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-21T09:26:57.000Z",
+      "modifiedTime": "2026-05-21T15:42:53.000Z",
+      "renewedTime": "2026-05-21T09:26:57.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-21T09:26:57.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-21T20:50:57.756Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

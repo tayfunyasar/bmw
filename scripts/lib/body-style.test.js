@@ -32,6 +32,18 @@ test('isGranCoupe — GC abbreviation glued to xDr / xDrive', () => {
   assert.equal(isGranCoupe({ title: 'BMW M440i DrGC Sport' }), true);
 });
 
+test('isGranCoupe — "G.C." dotted abbreviation', () => {
+  // mobile.de ilan basliklarinda Gran Coupé "G.C." olarak da kisaltiliyor.
+  assert.equal(
+    isGranCoupe({ title: 'BMW M440i xDrive G.C. St+Go KomZu HdUp DA Laser 19"' }),
+    true
+  );
+  assert.equal(isGranCoupe({ subTitle: 'i xDrive G.C. Laser' }), true);
+  assert.equal(isGranCoupe({ title: 'BMW M440i G.C HUD' }), true);
+  // Noktali yazim da kelime ortasindaki rastgele GC'yi tetiklememeli.
+  assert.equal(isGranCoupe({ title: 'BMW G.Class Concept' }), false);
+});
+
 test('isGranCoupe — does NOT trigger on random GC inside other words', () => {
   assert.equal(isGranCoupe({ title: 'BMW SOMETHINGGC random' }), false);
   assert.equal(isGranCoupe({ title: 'RANDOMGCSTUFF' }), false);
@@ -100,6 +112,15 @@ test('classifyBodyStyle — Sports Car/Coupe + GC text → GRAN_COUPE', () => {
   assert.equal(
     classifyBodyStyle(
       { title: 'BMW M440i Gran Coupé', modelRange: 'G26' },
+      { apifyCategory: 'Sports Car/Coupe' }
+    ),
+    'GRAN_COUPE'
+  );
+  // Gercek ilan (mobileDeId 449292696 / C281): Apify "Sports Car/Coupe"
+  // donerken baslikta "G.C." gecen arac Gran Coupé olarak siniflanmali.
+  assert.equal(
+    classifyBodyStyle(
+      { title: 'BMW M440i xDrive G.C. St+Go KomZu HdUp DA Laser 19"' },
       { apifyCategory: 'Sports Car/Coupe' }
     ),
     'GRAN_COUPE'

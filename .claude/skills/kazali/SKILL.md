@@ -1,7 +1,6 @@
 ---
 name: kazali
 description: Mark one or more listings as crashed/accident-damaged (kazalı) by their mobile.de ID or local listingId. TRIGGER whenever the user writes "kazali" or "kazalı" together with one or more IDs (numeric mobile.de ID like 452097976 or local listingId like C133), in any order and with or without a leading slash. Examples that MUST trigger this skill: "/kazali 452097976", "C133 kazali", "kazali C133 C231", "bunlar kazali: 452097976 451474145". An optional reason phrase after the ID is forwarded to the script as the audit reason.
-user_invocable: true
 ---
 
 # Kazali (Mark as Crashed)

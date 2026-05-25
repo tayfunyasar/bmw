@@ -1,7 +1,6 @@
 ---
 name: mobilede-tara
-description: BOOKMARKS.json icerisindeki mobile.de M440i/M440d arama linkini Chrome'da acar, ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla ID/baslik tablosu olarak doker. Sayfalari sirayla gezer ve **kept icinde ardisik 5 existing** gordugu anda durur (guvenlik ust siniri 10 sayfa). Bulunan tum yeni ID'ler icin sonda `npm run import:apify` calistirilir. Hicbir detay sayfasi acmaz, sadece arama listesini gezer.
-user_invocable: true
+description: BOOKMARKS.json icindeki mobile.de M440i/M440d arama linkini Chrome'da acar, yeni ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla tarar. Ardisik 5 existing gorunce durur (ust sinir 10 sayfa), yeni ID'leri `npm run import:apify` ile ceker. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "/mobilede-tara" yazdiginda — slash olsun olmasin, bu cumlelerden biri gectiginde DOGRUDAN bu skill'i calistir, kullaniciya secenek sunma.
 ---
 
 # mobile.de Tara

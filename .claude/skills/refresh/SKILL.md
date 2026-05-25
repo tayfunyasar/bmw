@@ -1,7 +1,6 @@
 ---
 name: refresh
 description: Stale (3+ gündür taranmamış) ilanları `npm run refresh` ile Apify'dan yeniden tarar. Apify mobile.de'ye karşı sık sık `403` / "Detected a session error, rotating session..." verip ilanı çekemez; bu durumda ilanın gerçekten kaybolup kaybolmadığı otomatik anlaşılamaz. Skill, refresh sonrası hâlâ stale kalan (= veri çekilemeyen) ilanları Chrome'da tek tek açar: sayfa "Bu araç mevcut değil" gibi boş dönerse ilan satılmış/kaldırılmış demektir ve `npm run move:sell` ile SOLD arşivine taşınır; sayfada ilan içeriği (fiyat, km vb.) dolu gelirse ilan geçerli sayılır ve dokunulmaz. TRIGGER: kullanıcı "/refresh", "refresh", "ilanları yenile", "stale ilanları tara" dediğinde.
-user_invocable: true
 ---
 
 # Refresh (Stale İlan Yenileme + 403 Kurtarma)

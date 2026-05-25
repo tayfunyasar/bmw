@@ -1,7 +1,6 @@
 ---
 name: satildi
 description: Mark one or more listings as sold by their mobile.de ID or local listingId. TRIGGER whenever the user writes "satildi" (Turkish for "sold") together with one or more IDs (numeric mobile.de ID like 441661357 or local listingId like C133), in any order and with or without a leading slash. Examples that MUST trigger this skill: "/satildi 441661357", "441661357 satildi", "satildi C133 451474145", "bunlar satildi: C231 451474145".
-user_invocable: true
 ---
 
 # Satildi (Mark as Sold)

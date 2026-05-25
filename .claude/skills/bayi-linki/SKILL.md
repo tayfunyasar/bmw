@@ -1,7 +1,6 @@
 ---
 name: bayi-linki
-description: Bir ilana bayi websitesi linki ekle, sayfayi tarayip unknown donanimlari cozumle
-user_invocable: true
+description: Bir ilana bayi websitesi linki ekle, sayfayi tarayip equipment unknown'larini cozumle. TRIGGER - kullanici bir listing ID (orn. C174) ile birlikte bir bayi/dealer URL'si verdiginde ("C174 bayi linki: https://...", "/bayi-linki C174 <url>", "<url> C174'un bayi sayfasi" vb.) DOGRUDAN bu skill'i calistir.
 ---
 
 # Bayi Linki (Dealer Listing URL)

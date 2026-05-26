@@ -74,7 +74,7 @@
     },
     "listingDates": {
       "createdTime": "2025-12-05T09:07:07.000Z",
-      "modifiedTime": "2026-05-19T16:52:12.000Z",
+      "modifiedTime": "2026-05-26T16:52:12.000Z",
       "renewedTime": "2025-12-05T09:07:07.000Z"
     },
     "auditHistory": [
@@ -400,7 +400,7 @@
     },
     "listingDates": {
       "createdTime": "2025-10-16T09:37:41.000Z",
-      "modifiedTime": "2026-05-19T17:24:19.000Z",
+      "modifiedTime": "2026-05-26T16:54:02.000Z",
       "renewedTime": "2026-01-21T07:30:09.000Z"
     },
     "auditHistory": [
@@ -749,7 +749,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-04T11:03:16.000Z",
-      "modifiedTime": "2026-05-19T16:12:09.000Z",
+      "modifiedTime": "2026-05-26T16:05:31.000Z",
       "renewedTime": "2026-03-04T11:03:16.000Z"
     },
     "overrideFeatures": {
@@ -1141,7 +1141,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-26T17:12:33.000Z",
-      "modifiedTime": "2026-05-21T12:29:14.000Z",
+      "modifiedTime": "2026-05-26T15:48:19.000Z",
       "renewedTime": "2026-04-20T08:15:48.000Z"
     },
     "auditHistory": [
@@ -1418,350 +1418,6 @@
     "aiCommentary": null
   },
   {
-    "listingId": "C123",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-laser-hud-navi-egsd-mem-keyle-teltow/451142156.html",
-    "mobileDeId": "451142156",
-    "exteriorColorName": "arctic race blue",
-    "interiorColorName": "Alcantara, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": false,
-    "basePriceEuro": 42950,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 25396,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      6
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 14513 Teltow",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "unknown",
-      "S688A": "no",
-      "S2T4A": "unknown",
-      "S610A": "yes",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "yes",
-      "S2VFA": "unknown",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "unknown",
-      "S494A": "unknown",
-      "S248A": "unknown",
-      "S420A": "unknown",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "unknown",
-      "S2NHA": "unknown",
-      "S3ACA": "unknown",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "unknown",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-03-23T14:17:43.000Z",
-      "modifiedTime": "2026-05-21T16:59:34.000Z",
-      "renewedTime": "2026-04-02T08:17:39.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-23T14:17:43.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-03-23T14:17:43.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-03-31T12:00:00.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "service": {
-            "old": {
-              "type": "unknown",
-              "history": []
-            },
-            "new": {
-              "type": "yes",
-              "history": []
-            }
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "yes",
-            "new": "no"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-04-01T19:09:58.155Z"
-      },
-      {
-        "action": "Donanım Yeniden Hesaplandı",
-        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
-        "changes": {
-          "equipmentFeatures.S688A": {
-            "old": "unknown",
-            "new": "no"
-          }
-        },
-        "auditDate": "2026-04-01T20:15:12.864Z"
-      },
-      {
-        "action": "Default Davranış Güncellemesi",
-        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
-        "changes": {
-          "equipmentFeatures.S5AUA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DN_360": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.KGNL": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S5DNA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S2VLA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S420A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S4AWA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S536A": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S2NHA": {
-            "old": "no",
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ACA": {
-            "old": "no",
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-01T20:22:48.212Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-02T08:17:39.000Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "warranty": {
-            "old": {
-              "exists": true
-            },
-            "new": {
-              "exists": "yes"
-            }
-          },
-          "equipmentFeatures.S494A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S248A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ADA": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3AGA": {
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-07T07:08:33.666Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S494A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S248A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3ADA": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S3AGA": {
-            "new": "unknown"
-          }
-        },
-        "auditDate": "2026-04-07T07:12:39.558Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "equipmentFeatures.S488A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S715A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S493A": {
-            "old": "unknown",
-            "new": "yes"
-          },
-          "equipmentFeatures.S521A": {
-            "new": "yes"
-          },
-          "equipmentFeatures.S524A": {
-            "new": "unknown"
-          },
-          "equipmentFeatures.S265A": {
-            "new": "yes"
-          },
-          "equipmentFeatures.S216A": {
-            "new": "yes"
-          },
-          "equipmentFeatures.S302A": {
-            "new": "yes"
-          }
-        },
-        "auditDate": "2026-04-07T13:29:12.995Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "basePriceEuro": {
-            "old": 50950,
-            "new": 45950
-          },
-          "drivetrainCertain": {
-            "new": true
-          }
-        },
-        "auditDate": "2026-05-05T18:11:59.154Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "aiCommentary": {
-            "old": [
-              "🟢 9 gündür satışta — yeni ilan",
-              "🟠 Toplam €58,271 — bütçe üst sınırına yakın"
-            ],
-            "new": null
-          }
-        },
-        "auditDate": "2026-05-11T09:27:26.563Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "sellerTypeOrName": {
-            "old": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3",
-            "new": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2"
-          }
-        },
-        "auditDate": "2026-05-16T07:19:57.515Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "sellerTypeOrName": {
-            "old": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2",
-            "new": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3"
-          }
-        },
-        "auditDate": "2026-05-18T17:21:40.315Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "basePriceEuro": {
-            "old": 45950,
-            "new": 42950
-          },
-          "drivetrainCertain": {
-            "old": true,
-            "new": false
-          },
-          "aiCommentary": {
-            "old": null,
-            "new": [
-              "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
-            ]
-          }
-        },
-        "auditDate": "2026-05-21T20:52:30.822Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
-    ]
-  },
-  {
     "listingId": "C139",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-glasdach-hud-h-k-da-pa-m%C3%BClheim-an-der-ruhr/451321280.html",
     "mobileDeId": "451321280",
@@ -1834,7 +1490,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-25T10:36:47.000Z",
-      "modifiedTime": "2026-05-19T16:46:56.000Z",
+      "modifiedTime": "2026-05-26T15:54:37.000Z",
       "renewedTime": "2026-03-25T10:36:47.000Z"
     },
     "auditHistory": [
@@ -2001,7 +1657,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-08T03:36:06.000Z",
-      "modifiedTime": "2026-05-19T15:32:29.000Z",
+      "modifiedTime": "2026-05-26T15:35:59.000Z",
       "renewedTime": "2026-04-08T03:36:06.000Z"
     },
     "auditHistory": [
@@ -2071,7 +1727,7 @@
     "interiorColorName": "Full leather, Red",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
-    "basePriceEuro": 43990,
+    "basePriceEuro": 43490,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 25000,
     "firstRegistrationYearAndMonth": [
@@ -2136,8 +1792,8 @@
     },
     "listingDates": {
       "createdTime": "2026-03-09T13:42:58.000Z",
-      "modifiedTime": "2026-05-19T15:53:11.000Z",
-      "renewedTime": "2026-05-11T13:38:24.000Z"
+      "modifiedTime": "2026-05-26T13:39:08.000Z",
+      "renewedTime": "2026-05-26T13:39:01.000Z"
     },
     "auditHistory": [
       {
@@ -2208,6 +1864,23 @@
           }
         },
         "auditDate": "2026-05-13T19:48:02.501Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-26T13:39:01.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 43990,
+            "new": 43490
+          }
+        },
+        "auditDate": "2026-05-26T17:27:34.150Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2286,7 +1959,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-13T19:00:28.000Z",
-      "modifiedTime": "2026-05-19T15:27:54.000Z",
+      "modifiedTime": "2026-05-26T15:22:36.000Z",
       "renewedTime": "2026-04-13T19:00:28.000Z"
     },
     "auditHistory": [
@@ -2336,7 +2009,7 @@
       "history": []
     },
     "nextInspectionDate": "02/2027",
-    "sellerTypeOrName": "Autohaus Kühnert GmbH & Co. KG ★4.7",
+    "sellerTypeOrName": "Autohaus Kühnert GmbH & Co. KG ★4.8",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 170,
     "listingLocation": "🇩🇪 08468 Reichenbach",
@@ -2385,7 +2058,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T04:52:38.000Z",
-      "modifiedTime": "2026-05-19T15:19:03.000Z",
+      "modifiedTime": "2026-05-26T15:30:20.000Z",
       "renewedTime": "2026-04-14T04:52:38.000Z"
     },
     "auditHistory": [
@@ -2417,6 +2090,17 @@
           }
         },
         "auditDate": "2026-05-08T20:08:43.944Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Autohaus Kühnert GmbH & Co. KG ★4.7",
+            "new": "Autohaus Kühnert GmbH & Co. KG ★4.8"
+          }
+        },
+        "auditDate": "2026-05-26T17:27:34.153Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2507,7 +2191,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
-      "modifiedTime": "2026-05-20T10:25:06.000Z",
+      "modifiedTime": "2026-05-26T15:29:08.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
     "overrideFeatures": {
@@ -2642,7 +2326,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T11:42:34.000Z",
-      "modifiedTime": "2026-05-19T15:10:57.000Z",
+      "modifiedTime": "2026-05-26T15:09:34.000Z",
       "renewedTime": "2026-04-16T11:42:34.000Z"
     },
     "auditHistory": [
@@ -2745,7 +2429,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T13:23:42.000Z",
-      "modifiedTime": "2026-05-19T15:24:01.000Z",
+      "modifiedTime": "2026-05-26T15:19:59.000Z",
       "renewedTime": "2026-04-16T13:23:42.000Z"
     },
     "auditHistory": [
@@ -2855,7 +2539,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-21T14:16:19.000Z",
-      "modifiedTime": "2026-05-19T22:16:42.000Z",
+      "modifiedTime": "2026-05-26T15:15:21.000Z",
       "renewedTime": "2026-05-11T09:58:59.000Z"
     },
     "auditHistory": [
@@ -2977,7 +2661,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-01T13:28:14.000Z",
-      "modifiedTime": "2026-05-19T14:38:33.000Z",
+      "modifiedTime": "2026-05-26T16:35:30.000Z",
       "renewedTime": "2026-05-01T13:28:14.000Z"
     },
     "auditHistory": [
@@ -3093,7 +2777,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-11T07:16:59.000Z",
-      "modifiedTime": "2026-05-19T13:58:43.000Z",
+      "modifiedTime": "2026-05-26T14:52:29.000Z",
       "renewedTime": "2026-05-11T07:16:59.000Z"
     },
     "auditHistory": [
@@ -3205,7 +2889,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-11T14:20:34.000Z",
-      "modifiedTime": "2026-05-19T14:00:10.000Z",
+      "modifiedTime": "2026-05-26T15:27:54.000Z",
       "renewedTime": "2026-05-11T14:20:34.000Z"
     },
     "auditHistory": [
@@ -3304,7 +2988,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-14T20:27:02.000Z",
-      "modifiedTime": "2026-05-19T13:49:04.000Z",
+      "modifiedTime": "2026-05-26T14:09:43.000Z",
       "renewedTime": "2026-05-14T20:27:02.000Z"
     },
     "auditHistory": [
@@ -3405,7 +3089,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-15T08:10:43.000Z",
-      "modifiedTime": "2026-05-21T15:56:17.000Z",
+      "modifiedTime": "2026-05-26T15:56:20.000Z",
       "renewedTime": "2026-05-15T08:10:43.000Z"
     },
     "auditHistory": [
@@ -3515,7 +3199,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-15T13:03:07.000Z",
-      "modifiedTime": "2026-05-19T13:32:41.000Z",
+      "modifiedTime": "2026-05-26T14:28:37.000Z",
       "renewedTime": "2026-05-15T13:03:07.000Z"
     },
     "auditHistory": [
@@ -3614,7 +3298,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-16T18:06:12.000Z",
-      "modifiedTime": "2026-05-20T20:21:39.000Z",
+      "modifiedTime": "2026-05-26T14:39:31.000Z",
       "renewedTime": "2026-05-16T18:06:12.000Z"
     },
     "auditHistory": [
@@ -3728,8 +3412,8 @@
     },
     "listingDates": {
       "createdTime": "2026-05-17T12:08:28.000Z",
-      "modifiedTime": "2026-05-19T13:28:12.000Z",
-      "renewedTime": "2026-05-17T12:08:28.000Z"
+      "modifiedTime": "2026-05-26T14:13:14.000Z",
+      "renewedTime": "2026-05-23T18:36:30.000Z"
     },
     "auditHistory": [
       {
@@ -3749,6 +3433,12 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-17T16:36:46.620Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-23T18:36:30.000Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3829,7 +3519,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-18T09:18:47.000Z",
-      "modifiedTime": "2026-05-19T13:23:33.000Z",
+      "modifiedTime": "2026-05-26T14:20:06.000Z",
       "renewedTime": "2026-05-18T09:18:47.000Z"
     },
     "auditHistory": [
@@ -3928,7 +3618,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-19T16:53:07.000Z",
-      "modifiedTime": "2026-05-19T22:08:21.000Z",
+      "modifiedTime": "2026-05-26T13:48:15.000Z",
       "renewedTime": "2026-05-19T16:53:07.000Z"
     },
     "auditHistory": [
@@ -3953,107 +3643,6 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
-  },
-  {
-    "listingId": "C273",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-a-coupe-gsd-ahk-standhzg-lcprof-dab-memmingen/456216212.html",
-    "mobileDeId": "456216212",
-    "exteriorColorName": "Saphirschwarz metallic",
-    "interiorColorName": "Other, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": false,
-    "basePriceEuro": 47990,
-    "estimatedImportTaxEuro": 4112,
-    "mileageKm": 46170,
-    "firstRegistrationYearAndMonth": [
-      2021,
-      12
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "Autohaus Reisacher GmbH ★4.1",
-    "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 174,
-    "listingLocation": "🇩🇪 87700 Memmingen",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "unknown",
-      "S5AUA": "unknown",
-      "S688A": "yes",
-      "S2T4A": "unknown",
-      "S610A": "unknown",
-      "S5DN_360": "unknown",
-      "KGNL": "unknown",
-      "S322A": "unknown",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "unknown",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "unknown",
-      "S494A": "unknown",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "yes",
-      "S493A": "yes",
-      "S536A": "yes",
-      "S2NHA": "yes",
-      "S3ACA": "yes",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "unknown",
-      "S265A": "yes",
-      "S216A": "yes",
-      "S302A": "yes",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-05-20T02:54:35.000Z",
-      "modifiedTime": "2026-05-21T13:28:14.000Z",
-      "renewedTime": "2026-05-20T02:54:35.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-05-20T02:54:35.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-05-20T02:54:35.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-05-20T18:18:44.660Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
-    ]
   },
   {
     "listingId": "C278",
@@ -4128,7 +3717,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-20T17:50:10.000Z",
-      "modifiedTime": "2026-05-21T17:51:32.000Z",
+      "modifiedTime": "2026-05-26T13:42:42.000Z",
       "renewedTime": "2026-05-20T17:50:10.000Z"
     },
     "auditHistory": [

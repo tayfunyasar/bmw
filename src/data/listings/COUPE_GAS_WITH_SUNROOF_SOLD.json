@@ -7806,5 +7806,462 @@
     "aiCommentary": [
       "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
     ]
+  },
+  {
+    "listingId": "C123",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-laser-hud-navi-egsd-mem-keyle-teltow/451142156.html",
+    "mobileDeId": "451142156",
+    "exteriorColorName": "arctic race blue",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
+    "basePriceEuro": 42950,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 25396,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      6
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 14513 Teltow",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "unknown",
+      "S688A": "no",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "unknown",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-23T14:17:43.000Z",
+      "modifiedTime": "2026-05-21T16:59:34.000Z",
+      "renewedTime": "2026-04-02T08:17:39.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-23T14:17:43.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-23T14:17:43.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "yes",
+            "new": "no"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S688A": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.864Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.212Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-02T08:17:39.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "equipmentFeatures.S494A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S488A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 50950,
+            "new": 45950
+          },
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-05-05T18:11:59.154Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟢 9 gündür satışta — yeni ilan",
+              "🟠 Toplam €58,271 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-05-11T09:27:26.563Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3",
+            "new": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2"
+          }
+        },
+        "auditDate": "2026-05-16T07:19:57.515Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.2",
+            "new": "Riller & Schnauck GmbH, BMW und MINI Vertragshändler ★4.3"
+          }
+        },
+        "auditDate": "2026-05-18T17:21:40.315Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 45950,
+            "new": 42950
+          },
+          "drivetrainCertain": {
+            "old": true,
+            "new": false
+          },
+          "aiCommentary": {
+            "old": null,
+            "new": [
+              "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+            ]
+          }
+        },
+        "auditDate": "2026-05-21T20:52:30.822Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-05-26T17:27:34.150Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+    ]
+  },
+  {
+    "listingId": "C273",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-a-coupe-gsd-ahk-standhzg-lcprof-dab-memmingen/456216212.html",
+    "mobileDeId": "456216212",
+    "exteriorColorName": "Saphirschwarz metallic",
+    "interiorColorName": "Other, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
+    "basePriceEuro": 47990,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 46170,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Reisacher GmbH ★4.1",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 174,
+    "listingLocation": "🇩🇪 87700 Memmingen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "unknown",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "unknown",
+      "S5DN_360": "unknown",
+      "KGNL": "unknown",
+      "S322A": "unknown",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "unknown",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "unknown",
+      "S494A": "unknown",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-20T02:54:35.000Z",
+      "modifiedTime": "2026-05-21T13:28:14.000Z",
+      "renewedTime": "2026-05-20T02:54:35.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-20T02:54:35.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-20T02:54:35.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-20T18:18:44.660Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-05-26T17:27:55.803Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+    ]
   }
 ]

@@ -1,11 +1,11 @@
 ---
 name: mobilede-tara
-description: BOOKMARKS.json icindeki mobile.de M440i/M440d arama linkini Chrome'da acar, yeni ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla tarar. Ardisik 5 existing gorunce durur (ust sinir 10 sayfa), yeni ID'leri `npm run import:apify` ile ceker. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "/mobilede-tara" yazdiginda — slash olsun olmasin, bu cumlelerden biri gectiginde DOGRUDAN bu skill'i calistir, kullaniciya secenek sunma.
+description: BOOKMARKS.json icindeki mobile.de M440i/M440d arama linkini Chrome'da acar, yeni ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla tarar. Ardisik 10 existing gorunce durur (ust sinir 10 sayfa), yeni ID'leri `npm run import:apify` ile ceker. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "/mobilede-tara" yazdiginda — slash olsun olmasin, bu cumlelerden biri gectiginde DOGRUDAN bu skill'i calistir, kullaniciya secenek sunma.
 ---
 
 # mobile.de Tara
 
-Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — M440i/M440d xDrive ..." linkini Chrome'da yeni bir sekmede ac. Sayfa sayfa ilan topla; **kept (filtreden gecmis) listede ardisik 5 existing** gorduktan sonra dur. Sponsorlu reklamlari ve Gran Coupé / Cabrio araclari listeleme — bu eleme `scripts/filter-listings.js` (kaynak: `scripts/lib/body-style.js`) uzerinden yapilir; ayni kural `parse-car-json.js`'de de kullaniliyor, asla buraya inline kopyalama.
+Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — M440i/M440d xDrive ..." linkini Chrome'da yeni bir sekmede ac. Sayfa sayfa ilan topla; **kept (filtreden gecmis) listede ardisik 10 existing** gorduktan sonra dur. Sponsorlu reklamlari ve Gran Coupé / Cabrio araclari listeleme — bu eleme `scripts/filter-listings.js` (kaynak: `scripts/lib/body-style.js`) uzerinden yapilir; ayni kural `parse-car-json.js`'de de kullaniliyor, asla buraya inline kopyalama.
 
 ## Adimlar
 
@@ -29,8 +29,8 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
    - `kept[i].existingListingId`: existing ise lokal listingId (orn. `C36`).
 
    **Eleme + existing/new kurallarini kendin yazma — sadece bu CLI'yi cagir.**
-5. **Durdurma sinyalini kontrol et.** O ana kadar toplanmis tum sayfalarin `kept` dizisini sirayla birlestir ve sondan basa dogru bak: **son 5 oge `status === 'existing'`** ise dur, sayfa cevirme. Bunun icin sayfa basina degil, kumulatif `kept` listesi uzerinden saymak onemli — sayfa sinirinda da tetiklenebilmeli.
-   - Ardisik 5 existing tetiklendiyse → Adim 7'ye gec.
+5. **Durdurma sinyalini kontrol et.** O ana kadar toplanmis tum sayfalarin `kept` dizisini sirayla birlestir ve sondan basa dogru bak: **son 10 oge `status === 'existing'`** ise dur, sayfa cevirme. Bunun icin sayfa basina degil, kumulatif `kept` listesi uzerinden saymak onemli — sayfa sinirinda da tetiklenebilmeli.
+   - Ardisik 10 existing tetiklendiyse → Adim 7'ye gec.
    - Tetiklenmediyse → Adim 6.
 6. **Bir sonraki sayfaya gec.** URL'ye `&pageNumber=N` ekleyerek (N=2,3,...) ayni sekmede `mcp__claude-in-chrome__navigate` ile gec. Adim 3-5'i tekrarla.
    - **Guvenlik ust siniri: 10 sayfa.** Bu noktaya gelinmemeli ama gelirse tetiklenmemis olsa bile dur ve raporda "10 sayfa limitine ulasildi, durdurma sinyali tetiklenmedi" notu dus.
@@ -51,6 +51,6 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
 ## Notlar
 
 - Sadece arama listesini gez — detay sayfalarini ziyaret etme.
-- Durdurma kurali: **kept icinde ardisik 5 existing**. Ust sinir 10 sayfa.
+- Durdurma kurali: **kept icinde ardisik 10 existing**. Ust sinir 10 sayfa.
 - mobile.de bazen cookie / GDPR banner gosterebilir. Banner ilan kartlarini engelliyorsa konsol uzerinden kapat veya `console.log` ile durumu raporla; tekrar tekrar tiklayarak rabbit-hole'a girme — 2-3 denemeden sonra kullaniciya sor.
 - Eger filter-listings.js cagrisi kart sayisindan farkli bir toplam donerse, kart toplama JS'inde sponsored bayragini dogru cektigini dogrula.

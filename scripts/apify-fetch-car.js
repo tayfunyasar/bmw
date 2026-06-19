@@ -14,8 +14,6 @@ if (!APIFY_TOKEN || APIFY_TOKEN === 'your_apify_token_here') {
     process.exit(1);
 }
 
-const carJsonPath = path.resolve(__dirname, '../car.json');
-
 const client = new ApifyClient({
     token: APIFY_TOKEN,
 });
@@ -37,64 +35,78 @@ const urls = args.map(arg => {
     return arg;
 });
 
+// ivanvs/mobile-de-scraper tek run'da yalnizca `maxRecords` kadar kayit
+// dondurur. Bu yuzden URL'leri parca parca (chunk) isleyip sonuclari
+// biriktiriyoruz; boylece tek `import:apify` cagrisi herhangi bir sayida
+// ilani cekebilir. CHUNK_SIZE, run basina gonderilen URL sayisidir ve
+// maxRecords ona esitlenir.
+const ACTOR_ID = 'ivanvs/mobile-de-scraper';
+const CHUNK_SIZE = 20;
+
+function chunk(arr, size) {
+    const out = [];
+    for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+    return out;
+}
+
 async function fetchCarData() {
-    // ivanvs/mobile-de-scraper için çoklu URL desteği ve maxRecords 20
-    const actors = [
-        { 
-            id: 'ivanvs/mobile-de-scraper', 
-            input: { 
-                "maxRecords": 20,
-                "urls": urls.map(u => ({ "url": u }))
-            } 
-        }
-    ];
+    const dumpDir = path.resolve(__dirname, '../dump');
+    if (!fs.existsSync(dumpDir)) {
+        fs.mkdirSync(dumpDir, { recursive: true });
+    }
 
-    for (const actor of actors) {
+    const timestamp = Date.now();
+    const chunks = chunk(urls, CHUNK_SIZE);
+    const newFiles = [];
+    let fetched = 0;
+    let failedChunks = 0;
+
+    console.log(`\n--- Apify Actor: ${ACTOR_ID} ---`);
+    console.log(`İşlenecek URL sayısı: ${urls.length} (${chunks.length} parça, parça başına ≤${CHUNK_SIZE})`);
+
+    for (let i = 0; i < chunks.length; i++) {
+        const batch = chunks[i];
+        const input = {
+            maxRecords: batch.length,
+            urls: batch.map(u => ({ url: u })),
+        };
         try {
-            console.log(`\n--- Apify Actor Deneniyor: ${actor.id} ---`);
-            console.log(`İşlenecek URL sayısı: ${urls.length}`);
-
-            console.log(`Actor ${actor.id} başlatılıyor...`);
-            const run = await client.actor(actor.id).call(actor.input);
-
-            console.log('Veriler indiriliyor...');
+            console.log(`\nParça ${i + 1}/${chunks.length} (${batch.length} URL) başlatılıyor...`);
+            const run = await client.actor(ACTOR_ID).call(input);
             const { items } = await client.dataset(run.defaultDatasetId).listItems();
 
             if (items && items.length > 0) {
-                // Dump klasörünü oluştur ve her bir yanıtı ayrı ayrı kaydet
-                const dumpDir = path.resolve(__dirname, '../dump');
-                if (!fs.existsSync(dumpDir)) {
-                    fs.mkdirSync(dumpDir, { recursive: true });
-                }
-
-                const timestamp = Date.now();
-                const newFiles = [];
                 items.forEach(item => {
                     const idMatch = item.url?.match(/id=(\d+)/) || item.url?.match(/\/(\d+)\.html/);
                     const carId = item.id || (idMatch ? idMatch[1] : 'unknown');
                     const filename = `${carId}_${timestamp}.json`;
-                    const dumpFilePath = path.join(dumpDir, filename);
-                    fs.writeFileSync(dumpFilePath, JSON.stringify(item, null, 2));
+                    fs.writeFileSync(path.join(dumpDir, filename), JSON.stringify(item, null, 2));
                     newFiles.push(filename);
                 });
-
-                // İşlenecek dosyaların listesini gecici bir dosyaya yaz (sadece dosya adları)
-                fs.writeFileSync(path.join(dumpDir, '.latest_import'), newFiles.join('\n'));
-
-                console.log(`Başarılı! ${items.length} araç verisi ${actor.id} ile çekildi.`);
-                console.log(`Ham veriler 'dump/' klasörüne kaydedildi.`);
-                return; 
+                fetched += items.length;
+                console.log(`Parça ${i + 1}: ${items.length} araç verisi çekildi.`);
             } else {
-                console.warn(`${actor.id} ile veri bulunamadı.`);
+                console.warn(`Parça ${i + 1}: veri bulunamadı.`);
             }
-
         } catch (error) {
-            console.error(`${actor.id} hatası:`, error.message);
+            failedChunks++;
+            console.error(`Parça ${i + 1} hatası:`, error.message);
         }
     }
 
-    console.error('\nMaalesef hiçbir Apify Actor\'ü ile veri çekilemedi.');
-    process.exit(1);
+    if (newFiles.length === 0) {
+        console.error('\nMaalesef hiçbir araç verisi çekilemedi.');
+        process.exit(1);
+    }
+
+    // İşlenecek dosyaların listesini gecici bir dosyaya yaz (sadece dosya adları)
+    fs.writeFileSync(path.join(dumpDir, '.latest_import'), newFiles.join('\n'));
+
+    console.log(`\nBaşarılı! Toplam ${fetched} araç verisi çekildi (${chunks.length - failedChunks}/${chunks.length} parça başarılı).`);
+    if (failedChunks > 0) {
+        console.warn(`Uyarı: ${failedChunks} parça başarısız oldu, bu parçalardaki ilanlar çekilemedi.`);
+    }
+    console.log(`Ham veriler 'dump/' klasörüne kaydedildi.`);
 }
 
 fetchCarData();

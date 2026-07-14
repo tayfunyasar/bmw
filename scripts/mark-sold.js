@@ -1,5 +1,5 @@
 import path from 'path';
-import { moveListing, listingsDir } from './lib/move-listing.js';
+import { moveListing, listingsDir, DEFAULT_SOURCE_FILES } from './lib/move-listing.js';
 import { pushSoldAudit } from './lib/sold.js';
 
 const soldArchive = {
@@ -15,6 +15,7 @@ if (!id) {
 
 const result = moveListing({
   id,
+  sourceFiles: [...DEFAULT_SOURCE_FILES, 'CABRIO.json'],
   pickArchive: () => soldArchive,
   mutateCar: (car, { sourceFile }) => pushSoldAudit(car, sourceFile)
 });

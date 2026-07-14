@@ -5,6 +5,7 @@ import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } f
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
 import { useFrozenCars } from '../FrozenCarsContext';
+import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
 
 const { Text, Link } = Typography;
 const TODAY = new Date();
@@ -82,7 +83,13 @@ export const CarTable = ({
           return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
         }
         if (record.isInterior) {
-          return <InteriorDisplay colorCode={getInteriorHex(car.interiorColorName)} colorName={car.interiorColorName} />;
+          return (
+            <InteriorDisplay
+              colorCode={getInteriorHex(car.interiorColorName)}
+              colorName={car.interiorColorName}
+              alcantara={car.equipmentFeatures?.KGNL === 'yes'}
+            />
+          );
         }
         if (record.isFeatureIcon) {
           return <FeatureIcon type={car.equipmentFeatures?.[record.propName]} />;
@@ -126,10 +133,24 @@ export const CarTable = ({
     { key: 'color', prop: 'Dış Renk', isColor: true },
     { key: 'interior', prop: 'İç Renk', isInterior: true },
     Object.assign({ key: 'drive', prop: 'Tahrik' }, Object.fromEntries(cars.map(car => {
-      const weak = car.drivetrainCertain === false;
-      const cell = weak
-        ? <Tooltip title="Zayıf sinyal: sadece Apify 'Rear wheel drive' etiketi var, ilan metninde teyit yok. Satıcıdan doğrulanmalı."><Text type="warning">{car.drivetrainType} ⚠️</Text></Tooltip>
-        : <Tooltip title="Güçlü sinyal: ilan başlığı/açıklaması doğrudan tahrik tipini belirtiyor."><Text>{car.drivetrainType} ✅</Text></Tooltip>;
+      const override = car.overrideFeatures?.drivetrainType;
+      const weak = car.drivetrainCertain === false && !override;
+      const reason = override
+        ? `Manuel override${getOverrideReason(override) ? `: ${getOverrideReason(override)}` : ' (kullanıcı teyidi)'}`
+        : (car.drivetrainReason || (weak
+            ? 'Sinyal yok: ne ilan metninde (xDrive/Allrad/Heckantrieb) ne de mobile.de checkbox\'ında tahrik bilgisi var. xDrive varsayıldı — satıcıdan doğrulanmalı.'
+            : 'Doğrulanmış: ilan metni tahrik tipini yazıyor, ya da metin sessizken mobile.de checkbox\'ı işaretli.'));
+      const tooltip = (
+        <>
+          <div>{reason}</div>
+          <div style={{ marginTop: 6, opacity: 0.8 }}>{DRIVETRAIN_FORMULA}</div>
+        </>
+      );
+      const cell = (
+        <Tooltip title={tooltip}>
+          <Text type={weak ? 'warning' : undefined}>{car.drivetrainType} {weak ? '⚠️' : '✅'}</Text>
+        </Tooltip>
+      );
       return [car.listingId, cell];
     }))),
     Object.assign({ key: 'price', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
@@ -252,8 +273,21 @@ export const CarTable = ({
     Object.assign({ key: 'age_row', prop: 'Yaş' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.metrics?.ageInMonths || '?'} ay → €${car.metrics?.agePenalty?.toLocaleString() || '?'}`]))),
     Object.assign({ key: 'kmpen_row', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString() || '?'} km → €${car.metrics?.mileagePenalty?.toLocaleString() || '?'}`]))),
     Object.assign({ key: 'depreciation_row', prop: 'Yıpranma' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.metrics?.totalDepreciation?.toLocaleString() || '?'}`]))),
-    Object.assign({ key: 'extfeat_row', prop: '− Donanım' }, Object.fromEntries(cars.map(car => [car.listingId, `−€${car.metrics?.extraFeaturesValue?.toLocaleString() || '?'}`]))),
-    Object.assign({ key: 'deal_score_row', prop: 'FIRSAT FİYATI', isDealScore: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.personalDealScore]))),
+    Object.assign({ key: 'extfeat_row', prop: '− Donanım (beklenen dahil)' }, Object.fromEntries(cars.map(car => {
+      const m = car.metrics || {};
+      if (m.extraFeaturesValue == null) return [car.listingId, '?'];
+      return [car.listingId, `−€${(m.extraFeaturesValue + (m.upsideGap || 0)).toLocaleString()}`];
+    }))),
+    Object.assign({ key: 'deal_score_row', prop: 'FIRSAT FİYATI', isDealScore: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.expectedDealScore ?? car.metrics?.personalDealScore]))),
+    Object.assign({ key: 'upside_row', prop: '🔍 Belirsiz Donanım' }, Object.fromEntries(cars.map(car => {
+      const m = car.metrics || {};
+      const cnt = m.unknownsCount || 0;
+      if (!cnt) return [car.listingId, '—'];
+      const parts = [`${cnt} kalem`];
+      if (m.upsideGap != null) parts.push(`beklenen +€${m.upsideGap.toLocaleString()}`);
+      if (m.unknownsPotentialValue != null) parts.push(`max +€${m.unknownsPotentialValue.toLocaleString()}`);
+      return [car.listingId, parts.join(' • ')];
+    }))),
   ];
 
   const renderTitle = () => {

@@ -67,29 +67,36 @@ export const RulesTab = () => {
           <div>
             <Title level={5}>Kategoriler</Title>
             <ul style={{ paddingLeft: 20 }}>
-              <li>🏆 <Text type="warning" strong>Top Pick:</Text> Genel en iyi seçim — tüm faktörler dengeli</li>
-              <li>💰 <Text type="success" strong>Budget Pick:</Text> En düşük toplam maliyetle en iyi değer</li>
-              <li>⚖️ <Text style={{ color: '#1677ff' }} strong>Balanced Pick:</Text> Fiyat/donanım dengesi en iyi</li>
-              <li>👑 <Text style={{ color: '#eb2f96' }} strong>Best Spec:</Text> Donanım açısından en zengin</li>
+              <li>🏆 <Text type="warning" strong>Genel en iyi:</Text> Holistik skor — <Text italic>renk/arzu ağırlıklı</Text> genel favori</li>
+              <li>💰 <Text type="success" strong>En iyi değer:</Text> <Text italic>Bang-for-buck</Text> — donanım€ / toplam maliyet€ oranı</li>
+              <li>⚖️ <Text style={{ color: '#1677ff' }} strong>Dengeli seçim:</Text> <Text italic>Hiçbir yönü zayıf değil</Text> — 4 boyutun geometrik ortalaması</li>
+              <li>👑 <Text style={{ color: '#eb2f96' }} strong>En iyi donanım:</Text> En yüklü araç (<Text italic>donanımın € değeri</Text>) — fiyat önemsiz</li>
+              <li>📉 <Text type="danger" strong>Fiyatı düşenler:</Text> Satıcı fiyat kırmış → <Text italic>motivasyonlu satıcı, pazarlık şansı</Text></li>
+              <li><Text strong>Her kategori FARKLI bir algoritma kullanır</Text> → farklı araçlar önerir (aşağıda formüller)</li>
             </ul>
           </div>
           <div>
-            <Title level={5}>Puanlama Kriterleri (ağırlıklı)</Title>
+            <Title level={5}>Puanlama Kriterleri — <Text strong>Toplam Skor 0-100</Text> (çekirdek 100 + ek puanlar, clamp)</Title>
+            <Text type="secondary" style={{ fontSize: '12px' }}>4 çekirdek boyut (ağırlık toplam 100) + servis/garanti bonusu ve risk cezası.</Text>
             <ul style={{ paddingLeft: 20 }}>
-              <li><Text type="warning" strong>Donanım skoru (30%):</Text> Kritik donanım sayısı (Laser, DA+, HK, M Diff, HUD, 360°). Her ✅ = +1, her ❌ = 0, ? = +0.3 (yazılmamışsa büyük ihtimal yok)</li>
-              <li><Text type="success" strong>Fiyat/değer (25%):</Text> Toplam maliyet (fiyat+BPM) ne kadar düşükse o kadar iyi. Düzeltilmiş maliyet formülü kullanılır</li>
-              <li><Text style={{ color: '#1677ff' }} strong>Güvenilirlik (20%):</Text> 1 sahip (+3), tam servis (+2), kazasızlık (+2), bayi puanı (★×1), düşük km (+1 per 10K altı ortalama)</li>
-              <li><Text style={{ color: '#eb2f96' }} strong>Risk faktörleri (15%):</Text> Özel satıcı (-2), aftermarket modifikasyon (-2), yabancı ülke ithalatı (-1)</li>
-              <li><Text type="warning" strong>Bonus (10%):</Text> LCI nesil (+2), Pre-Heater (+2), M Brake (+1), aktif garanti (+2), nadir/güzel dış renk (+1), Alcantara/renkli iç mekan (+1), siyah iç mekan (0), bilinmeyen iç (-0.5)</li>
+              <li><Text type="success" strong>Fiyat (25%):</Text> <Text strong>Exact fiyat</Text> (TOPLAM = fiyat+BPM): (€66K − fiyat) / €24K → <Text italic>ucuz = daha çok puan</Text> (sürekli, band değil). Düşük ağırlık; bütçe aşımı ayrı ceza (aşağı).</li>
+              <li><Text type="warning" strong>Donanım (25%):</Text> Doğrulanmış + beklenen donanımın <Text strong>€ değeri</Text> / maksimum € (Laser/DAPRO/HK gibi pahalı kalemler daha çok puan). ✅ = tam, ❌ = 0, ? = base-rate ile kısmi</li>
+              <li><Text style={{ color: '#1677ff' }} strong>km / yaş (15%):</Text> Düşük yıpranma (az km + yeni) = yüksek — dataset yüzdelik sırası</li>
+              <li><Text type="warning" strong>Arzu (35%):</Text> LCI facelift (0.4) + dış renk (favori 0.3 / nötr 0.15 / sevilmeyen 0) + iç renk (favori 0.3 / nötr 0.15 / sevilmeyen 0) — <Text italic>en yüksek ağırlık</Text></li>
             </ul>
+            <Text type="secondary" style={{ fontSize: '12px' }}>
+              <Text strong>Alcantara koltuk</Text> Arzu'da değil <Text strong>Donanım'da</Text> puanlanır (KGNL, 900€ ×2) — <Text italic>çift sayım olmasın diye</Text>. Tespit: açıklama <Text strong>VEYA</Text> döşeme alanı (<Text code>upholstery</Text>); bayiler döşemeyi sık sık yanlış işaretlediği için ikisi de taranır. ⭐ ikonu bu kuraldan gelir.
+            </Text>
+            <Text type="secondary" style={{ fontSize: '12px' }}>Ek puanlar: <Text strong>Tam servis +5</Text> (belgesiz/? ceza YEMEZ), <Text strong>Garanti +4</Text>; <Text type="danger">Özel satıcı −5, Aftermarket −7, Bütçe aşımı (&gt;€66K) −25</Text>.</Text>
           </div>
           <div>
             <Title level={5}>Seçim Kuralları</Title>
             <ul style={{ paddingLeft: 20 }}>
-              <li>🏆 Top Pick: En yüksek toplam puan. Ciddi risk faktörü varsa seçilmez</li>
-              <li>💰 Budget: Toplam maliyet €57K altı + en iyi güvenilirlik/donanım oranı</li>
-              <li>⚖️ Balanced: Donanım skoru ≥4/7 kritik + toplam maliyet ≤€58K</li>
-              <li>👑 Best Spec: En yüksek donanım skoru (fiyat önemsiz, sadece donanım)</li>
+              <li>🏆 <Text strong>Genel:</Text> fiyat×25 + donanım×25 + km/yaş×15 + <Text strong>arzu×35</Text> + bonus − ceza</li>
+              <li>💰 <Text strong>Değer:</Text> <Text strong>(donanım€ / toplam maliyet€) × 100</Text> + bonus − ceza <Text type="secondary">(bang-for-buck oranı)</Text></li>
+              <li>⚖️ <Text strong>Dengeli:</Text> <Text strong>⁴√(fiyat × donanım × km/yaş × arzu) × 100</Text> − ceza <Text type="secondary">(geo. ort.; bir yönü sıfırsa sıfır)</Text></li>
+              <li>👑 <Text strong>Donanım:</Text> beklenen donanımın <Text strong>€ değeri</Text> (fiyat/renk hiç sayılmaz)</li>
+              <li>📉 <Text strong>Fiyat düşüşü:</Text> auditHistory'deki toplam € kırım (bütçe içi araçlarda) <Text type="secondary">— çok/sık düşüren = motivasyonlu</Text></li>
               <li>Bir araç birden fazla kategori alabilir (ör. 🏆💰)</li>
               <li>Her yeni araç eklendiğinde tüm kategoriler yeniden değerlendirilir</li>
             </ul>

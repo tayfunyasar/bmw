@@ -7,6 +7,7 @@
     "interiorColorName": "Alcantara Black",
     "drivetrainType": "RWD",
     "drivetrainCertain": null,
+    "drivetrainReason": null,
     "basePriceEuro": 55000,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 23500,
@@ -96,6 +97,7 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
     "drivetrainCertain": null,
+    "drivetrainReason": null,
     "basePriceEuro": 45900,
     "estimatedImportTaxEuro": 4112,
     "mileageKm": 40006,
@@ -171,5 +173,1000 @@
     "aiCommentary": [
       "🟡 Servis geçmişi bilinmiyor"
     ]
+  },
+  {
+    "listingId": "C146",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-driv-assist-prof-harman-k-head-up-berlin/448958569.html",
+    "mobileDeId": "448958569",
+    "exteriorColorName": "saphirschwarz",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 54700,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 50040,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2028",
+    "sellerTypeOrName": "BMW AG - Niederlassung Berlin - Hauptbetrieb - Verkauf Gebrauchte Automobile ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 14057 Berlin",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-02-27T04:20:53.000Z",
+      "modifiedTime": "2026-04-02T03:15:38.000Z",
+      "renewedTime": "2026-02-27T04:20:53.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-27T04:20:53.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-02-27T04:20:53.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-04T10:59:37.372Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S265A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S302A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:30:51.820Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S2T4A": {
+            "old": "unknown",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T20:32:16.852Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → COUPE_GAS_RWD_WITHOUT_SUNROOF",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-04-13T18:46:27.886Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_RWD_WITHOUT_SUNROOF → COUPE_GAS_WITHOUT_SUNROOF",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-04-17T09:56:17.402Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.137Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C247",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-m-sport-coupe-laser-ahk-hud-memory-michelfeld/455123831.html",
+    "mobileDeId": "455123831",
+    "exteriorColorName": "Tansanitblau",
+    "interiorColorName": "Alcantara",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 45900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 52547,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      12
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 159,
+    "listingLocation": "🇩🇪 74545 Michelfeld",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-06T17:02:20.000Z",
+      "modifiedTime": "2026-05-06T17:02:28.000Z",
+      "renewedTime": "2026-05-06T17:02:20.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T17:02:20.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T17:02:20.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-07T15:51:33.286Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainType": {
+            "old": "RWD",
+            "new": "xDrive AWD"
+          },
+          "drivetrainCertain": {
+            "old": true,
+            "new": false
+          }
+        },
+        "auditDate": "2026-05-07T16:03:18.092Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_RWD_WITHOUT_SUNROOF → COUPE_GAS_WITHOUT_SUNROOF",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-05-07T16:03:18.094Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.144Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C249",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-spurass-hifi-navi-rfk-aut-schneeberg/455289065.html",
+    "mobileDeId": "455289065",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 47755,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 31279,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Kühnert GmbH & Co. KG ★4.9",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 167,
+    "listingLocation": "🇩🇪 08289 Schneeberg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "no",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-08T12:50:24.000Z",
+      "modifiedTime": "2026-05-08T14:45:21.000Z",
+      "renewedTime": "2026-05-08T12:50:24.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-08T12:50:24.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-08T19:57:14.618Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.147Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C268",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-sport-pro-driving-assistant-profes-bergheim/456083561.html",
+    "mobileDeId": "456083561",
+    "exteriorColorName": "M Brooklyn Grau metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 49980,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 46020,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      6
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "KOHL automobile GmbH - Filiale Bergheim ★4.5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 184,
+    "listingLocation": "🇩🇪 50126 Bergheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-18T14:07:45.000Z",
+      "modifiedTime": "2026-05-18T14:07:59.000Z",
+      "renewedTime": "2026-05-18T14:07:45.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-18T14:07:45.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-18T17:23:41.587Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.148Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C299",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-coupe-8-fach-virtualcockpit-lhz-shz-vze-neunkirchen-br/457052707.html",
+    "mobileDeId": "457052707",
+    "exteriorColorName": "SAPHIRSCHWARZ",
+    "interiorColorName": "Full leather, Red",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 44990,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 31479,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Kök GmbH ★4.5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 149,
+    "listingLocation": "🇩🇪 91077 Neunkirchen Br.",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "unknown",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-30T21:46:17.000Z",
+      "modifiedTime": "2026-05-30T21:50:04.000Z",
+      "renewedTime": "2026-05-30T21:46:17.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-30T21:46:17.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-01T07:02:18.532Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.151Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C335",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-drivass-laser-headup-hifi-keyless-me-g%C3%BCtersloh/458494549.html",
+    "mobileDeId": "458494549",
+    "exteriorColorName": "Alpinweiss ",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 49890,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 35900,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Kattenstroth Automobile & Service GmbH ★5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 33330 Gütersloh",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-06-17T12:43:27.000Z",
+      "modifiedTime": "2026-06-17T13:21:07.000Z",
+      "renewedTime": "2026-06-17T12:43:27.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-17T12:43:27.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-17T19:56:53.219Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.153Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C471",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-harman-k-livecockpitprof-head-up-dortmund/458558929.html",
+    "mobileDeId": "458558929",
+    "exteriorColorName": "M Brooklyn Grau",
+    "interiorColorName": "Cloth, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 46490,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 63203,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "05/2027",
+    "sellerTypeOrName": "BMW AG Niederlassung Dortmund ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 44263 Dortmund",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-06-18T08:31:19.000Z",
+      "modifiedTime": "2026-06-19T08:17:24.000Z",
+      "renewedTime": "2026-06-18T08:31:19.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-18T08:31:19.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-19T21:37:29.574Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.156Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C577",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-spurass-hifi-navi-rfk-aut-schneeberg/459755064.html",
+    "mobileDeId": "459755064",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 46655,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 31279,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Kühnert GmbH & Co. KG ★4.9",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 167,
+    "listingLocation": "🇩🇪 08289 Schneeberg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "no",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-03T13:41:02.000Z",
+      "modifiedTime": "2026-07-03T13:50:57.000Z",
+      "renewedTime": "2026-07-03T13:41:02.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-03T13:41:02.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-03T17:41:52.889Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.158Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C596",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-navi-harman-k-laser-pdc-hannover/460033754.html",
+    "mobileDeId": "460033754",
+    "exteriorColorName": "BMW Individual Dravitgrau",
+    "interiorColorName": "Cloth, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 51907,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 37449,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      6
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "06/2026",
+    "sellerTypeOrName": "BMW AG Niederlassung Hannover ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 30539 Hannover",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "no",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "no",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-07T08:16:36.000Z",
+      "modifiedTime": "2026-07-07T13:07:49.000Z",
+      "renewedTime": "2026-07-07T08:16:36.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-07T08:16:36.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-07T20:36:07.460Z"
+      },
+      {
+        "action": "Tahrik Tipi Düzeltildi",
+        "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+        "changes": null,
+        "auditDate": "2026-07-13T18:19:57.160Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

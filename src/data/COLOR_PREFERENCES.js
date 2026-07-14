@@ -1,6 +1,8 @@
 export const EXTERIOR_COLORS = {
   "Portimao Blue":                          { hex: "#1e5fa8", preference: "favorite" },
   "Portimao Blau":                          { hex: "#1e5fa8", preference: "favorite" },
+  "White":                                  { hex: "#f0f0f0", preference: "disliked" },
+  "Weiss":                                  { hex: "#f0f0f0", preference: "disliked" },
   "Alpine White":                           { hex: "#f0f0f0", preference: "disliked" },
   "Alpinweiß":                              { hex: "#f0f0f0", preference: "disliked" },
   "Alpinweiss":                             { hex: "#f0f0f0", preference: "disliked" },
@@ -34,14 +36,10 @@ export const EXTERIOR_COLORS = {
   "San Remo Green":                         { hex: "#2d5a3d", preference: "disliked" },
   "Sanremo Green Metallic":                 { hex: "#2d5a3d", preference: "disliked" },
   "Sanremo Grün":                           { hex: "#2d5a3d", preference: "disliked" },
-  "Tansanitblau":                           { hex: "#1a3a5c", preference: "favorite" },
-  "Tansanitblau II":                        { hex: "#1a3a5c", preference: "favorite" },
-  "Tansanitblau II metallic":               { hex: "#1a3a5c", preference: "favorite" },
-  "Tansanit Blue":                          { hex: "#1a3a5c", preference: "favorite" },
-  "Tansanit Blue II":                       { hex: "#1a3a5c", preference: "favorite" },
-  "Tanzanit Blue":                          { hex: "#1a3a5c", preference: "favorite" },
-  "Tanzanit Blue II":                       { hex: "#1a3a5c", preference: "favorite" },
-  "Ind. Tansanit-Blau II":                  { hex: "#1a3a5c", preference: "favorite" },
+  // Stem keys — match every variant (Tansanitblau/-blau II/-metallic, English
+  // Tanzanit spelling, and truncated dumps like "BMW Individual Tansanitbl").
+  "Tansanit":                               { hex: "#1a3a5c", preference: "favorite" },
+  "Tanzanit":                               { hex: "#1a3a5c", preference: "favorite" },
   "Fire Red":                               { hex: "#c8102e" },
   "Fire Red Metallic":                      { hex: "#c8102e" },
   "Feuerrot":                               { hex: "#c8102e" },
@@ -52,37 +50,51 @@ export const EXTERIOR_COLORS = {
   "Toronto Red Metallic":                   { hex: "#b5121c" },
   "Red":                                    { hex: "#c8102e" },
   "Kırmızı":                                { hex: "#c8102e" },
-  "?":                                      { hex: "#888" },
 };
 
-const EXTERIOR_ENTRIES = Object.entries(EXTERIOR_COLORS).map(([name, data]) => [name.toLowerCase(), data]);
+// Normalize for matching: lowercase + German ß → ss, so "Mineralweiß" matches "Mineralweiss".
+const norm = (s) => s.toLowerCase().replace(/ß/g, "ss");
 
-const matchesAny = (color, predicate) => {
+const toEntries = (map) => Object.entries(map).map(([name, data]) => [norm(name), data]);
+const EXTERIOR_ENTRIES = toEntries(EXTERIOR_COLORS);
+
+const matchesAny = (entries, color, predicate) => {
   if (!color) return false;
-  const needle = color.toLowerCase();
-  return EXTERIOR_ENTRIES.some(([name, data]) => predicate(data) && needle.includes(name));
+  const needle = norm(color);
+  return entries.some(([name, data]) => predicate(data) && needle.includes(name));
 };
 
-export const isColorFav = (color) => matchesAny(color, data => data.preference === "favorite");
-export const isColorNotFav = (color) => matchesAny(color, data => data.preference === "disliked");
+export const isColorFav = (color) => matchesAny(EXTERIOR_ENTRIES, color, data => data.preference === "favorite");
+export const isColorNotFav = (color) => matchesAny(EXTERIOR_ENTRIES, color, data => data.preference === "disliked");
 
-// Case-insensitive lookup helper
+// Case-insensitive lookup helper. Returns null when the color isn't known,
+// so the UI can render a "?" icon instead of a misleading gray swatch.
 function buildLookup(map, getValue) {
-  const entries = Object.entries(map).map(([key, val]) => [key.toLowerCase(), getValue(val)]);
+  const entries = Object.entries(map).map(([key, val]) => [norm(key), getValue(val)]);
   return (name) => {
-    if (!name) return "#888";
-    const n = name.toLowerCase();
+    if (!name) return null;
+    const n = norm(name);
     const exact = entries.find(([k]) => k === n);
     if (exact) return exact[1];
-    const partial = entries.find(([k]) => n.includes(k) || k.includes(n));
-    return partial ? partial[1] : "#888";
+    // Prefer the longest (most specific) matching key so e.g. "Tansanit Blue"
+    // resolves to Tansanit and not the generic "Blue".
+    const partial = entries
+      .filter(([k]) => n.includes(k) || k.includes(n))
+      .sort((a, b) => b[0].length - a[0].length)[0];
+    return partial ? partial[1] : null;
   };
 }
 
 export const getColorHex = buildLookup(EXTERIOR_COLORS, data => data.hex);
 
 export const INTERIOR_CODES = {
+  // Stem key — her Alcantara varyantının (Siyah/Black/Sensatec/dikiş…) hex'ini verir.
+  // BİLİNÇLİ OLARAK "favorite" DEĞİL: Alcantara koltuk artık KGNL donanım kuralıyla
+  // (900€ ×2) puanlanıyor; burada da favori saymak aynı özelliği ÇİFT sayardı.
+  // ⭐ rozeti tabloda KGNL === "yes" üzerinden gösterilir (bkz. InteriorDisplay).
+  "Alcantara": "#1a1a2e",
   "Deri Siyah": "#1a1a1a",
+  "Other, Black": "#1a1a1a",
   "Siyah": "#1a1a1a",
   "Vernasca Siyah": "#1a1a1a",
   "Leder Vernasca Schwarz": "#1a1a1a",
@@ -111,13 +123,20 @@ export const INTERIOR_CODES = {
   "Leder Vernasca Schwarz/Blau": "#1a1a2e",
   "Deri Kahve (Vernasca)": "#604020",
   "Full leather, Brown": "#604020",
+  "Full leather, Red": { hex: "#8b1a2a", preference: "disliked" },
   "Merino Tartufo": "#8b7355",
   "Individual Merino Elfenbeinweiß": "#e6e3df",
   "Alcantara Bej": "#c8b89a",
   "Deri": "#1a1a1a",
-  "Deri Diğer": "#888",
-  "Deri ?": "#888",
-  "?": "#888"
+  // Unknown interior placeholders map to nothing → UI renders a "?" icon.
 };
 
-export const getInteriorHex = buildLookup(INTERIOR_CODES, v => v);
+// Interior values are either a plain hex string or { hex, preference } like EXTERIOR_COLORS.
+export const getInteriorHex = buildLookup(INTERIOR_CODES, v => (typeof v === "string" ? v : v.hex));
+
+// Preference matching uses stem semantics (needle contains key) like the exterior
+// helpers, so "Alcantara Siyah (mavi dikiş)" inherits the "Alcantara" stem's preference.
+const INTERIOR_ENTRIES = toEntries(INTERIOR_CODES);
+const interiorPref = (v) => (typeof v === "string" ? null : v.preference ?? null);
+export const isInteriorFav = (name) => matchesAny(INTERIOR_ENTRIES, name, v => interiorPref(v) === "favorite");
+export const isInteriorNotFav = (name) => matchesAny(INTERIOR_ENTRIES, name, v => interiorPref(v) === "disliked");

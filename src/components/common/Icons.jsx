@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Space } from 'antd';
 import { CheckCircleFilled, CloseCircleFilled, QuestionCircleOutlined, StarFilled } from '@ant-design/icons';
-import { isColorFav, isColorNotFav } from '../../data';
+import { isColorFav, isColorNotFav, isInteriorNotFav } from '../../data';
 
 const { Text } = Typography;
 
@@ -17,18 +17,30 @@ export const StarRating = ({ count }) => (
   </Space>
 );
 
+// A known color renders its swatch; an unknown one (colorCode == null) renders
+// a "?" icon instead of a misleading gray box.
+const ColorSwatch = ({ colorCode }) => (
+  colorCode
+    ? <div style={{ width: 28, height: 28, borderRadius: 6, background: colorCode, border: '1px solid rgba(0,0,0,0.1)', flexShrink: 0 }} />
+    : <QuestionCircleOutlined style={{ fontSize: 22, color: '#999', flexShrink: 0 }} />
+);
+
 export const ColorDisplay = ({ colorCode, colorName }) => (
   <Space size={4}>
-    {colorName ? <div style={{ width: 28, height: 28, borderRadius: 6, background: colorCode, border: '1px solid rgba(0,0,0,0.1)', flexShrink: 0 }} /> : null}
+    {colorName ? <ColorSwatch colorCode={colorCode} /> : null}
     <Text>{colorName || "—"}</Text>
     {isColorFav(colorName) && <Text>⭐</Text>}
     {isColorNotFav(colorName) && <Text>👎</Text>}
   </Space>
 );
 
-export const InteriorDisplay = ({ colorCode, colorName }) => (
+// ⭐ = Alcantara koltuk. Kaynak: KGNL donanim kurali (description + props.upholstery
+// birlikte taranir) — dosemenin adi guvenilmez oldugu icin renk adindan cikarilmaz.
+export const InteriorDisplay = ({ colorCode, colorName, alcantara }) => (
   <Space size={4}>
-    <div style={{ width: 28, height: 28, borderRadius: 6, background: colorCode, border: '1px solid rgba(0,0,0,0.1)', flexShrink: 0 }} />
+    <ColorSwatch colorCode={colorCode} />
     <Text>{colorName}</Text>
+    {alcantara && <Text>⭐</Text>}
+    {isInteriorNotFav(colorName) && <Text>👎</Text>}
   </Space>
 );

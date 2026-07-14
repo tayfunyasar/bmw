@@ -17,6 +17,8 @@
     "move:kazali": "node scripts/mark-kazali.js",
     "move:withoutsunroof": "node scripts/mark-withoutsunroof.js",
     "refresh": "node scripts/refresh-stale.js",
+    "rematch:equipment": "node scripts/rematch-equipment.js && npm run format:data",
+    "rematch:drivetrain": "node scripts/rematch-drivetrain.js && npm run format:data",
     "deploy": "vercel --prod",
     "test": "node --test scripts/lib/*.test.js"
   },

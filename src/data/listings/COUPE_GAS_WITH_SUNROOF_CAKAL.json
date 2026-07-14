@@ -89,7 +89,9 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C43",
@@ -418,7 +420,9 @@
       "modifiedTime": "2026-03-31T15:05:03.000Z",
       "renewedTime": "2026-03-05T07:07:56.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C125",
@@ -599,7 +603,9 @@
       "modifiedTime": "2026-03-31T16:42:41.000Z",
       "renewedTime": "2026-03-21T02:08:15.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C23",
@@ -801,7 +807,9 @@
       "modifiedTime": "2026-03-31T14:53:57.000Z",
       "renewedTime": "2026-03-03T13:44:10.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C54",
@@ -1053,7 +1061,9 @@
       "modifiedTime": "2026-03-31T14:41:19.000Z",
       "renewedTime": "2026-03-30T16:31:42.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C148",
@@ -1134,7 +1144,9 @@
       "modifiedTime": "2026-03-31T15:12:34.000Z",
       "renewedTime": "2026-03-03T09:51:48.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C7",
@@ -1477,7 +1489,9 @@
       "modifiedTime": "2026-03-31T17:03:26.000Z",
       "renewedTime": "2025-09-24T10:40:26.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C168",
@@ -1485,7 +1499,7 @@
     "mobileDeId": "452441469",
     "exteriorColorName": "GREY",
     "interiorColorName": null,
-    "drivetrainType": "xDrive AWD",
+    "drivetrainType": "RWD",
     "basePriceEuro": 45000,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 60000,
@@ -1597,15 +1611,15 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2026-04-07T12:41:57.000Z",
       "modifiedTime": "2026-04-07T13:11:37.000Z",
       "renewedTime": "2026-04-07T12:41:57.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)"
   },
   {
     "listingId": "C169",
@@ -1613,7 +1627,7 @@
     "mobileDeId": "452478312",
     "exteriorColorName": "Grey",
     "interiorColorName": "Part leather, Black",
-    "drivetrainType": "xDrive AWD",
+    "drivetrainType": "RWD",
     "basePriceEuro": 46900,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 69000,
@@ -1715,15 +1729,15 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2026-04-07T18:18:19.000Z",
       "modifiedTime": "2026-04-07T18:36:13.000Z",
       "renewedTime": "2026-04-07T18:18:19.000Z",
       "lastCrawlTime": null
-    }
+    },
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli"
   },
   {
     "listingId": "C143",
@@ -1865,6 +1879,225 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+  },
+  {
+    "listingId": "C589",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-head-up-gro%C3%9Fniedesheim/459920486.html",
+    "mobileDeId": "459920486",
+    "exteriorColorName": "Grey",
+    "interiorColorName": "Part leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 44700,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 69000,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      5
+    ],
+    "numberOfPreviousOwners": "3",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "09/2027",
+    "sellerTypeOrName": "David Zuber",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 67259 Großniedesheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "unknown",
+      "S2NHA": "yes",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-05T19:26:22.000Z",
+      "modifiedTime": "2026-07-07T13:24:51.000Z",
+      "renewedTime": "2026-07-05T19:26:22.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-05T19:26:22.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-07T20:36:07.456Z"
+      },
+      {
+        "action": "Çakal Kasa İşaretlendi",
+        "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından CAKAL olarak taşındı",
+        "changes": null,
+        "auditDate": "2026-07-08T11:26:16.281Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli"
+  },
+  {
+    "listingId": "C314",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-xdrive-voluntari/457922875.html",
+    "mobileDeId": "457922875",
+    "exteriorColorName": "Portimao Blue",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "basePriceEuro": 49900,
+    "estimatedImportTaxEuro": 4112,
+    "mileageKm": 45465,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      4
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "One Cars Collection SRL ★5",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 155,
+    "listingLocation": "🇪🇺 077190 Voluntari",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "unknown",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "unknown",
+      "S322A": "yes",
+      "S2VFA": "unknown",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "unknown",
+      "S420A": "unknown",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "unknown",
+      "S2NHA": "unknown",
+      "S3ACA": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "unknown",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-06-10T14:02:03.000Z",
+      "modifiedTime": "2026-07-02T09:03:21.000Z",
+      "renewedTime": "2026-06-10T14:02:03.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-10T14:02:03.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-10T14:02:03.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-10T18:55:38.673Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 51900,
+            "new": 49900
+          }
+        },
+        "auditDate": "2026-07-03T20:16:44.989Z"
+      },
+      {
+        "action": "Çakal Kasa İşaretlendi",
+        "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından CAKAL olarak taşındı",
+        "changes": null,
+        "auditDate": "2026-07-08T11:47:10.708Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
   }
 ]

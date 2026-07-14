@@ -46,7 +46,9 @@
     "price": 2500,
     "score": 3,
     "tag": "ACC + lane keep",
-    "features": [],
+    "features": [
+      "Adaptive Cruise Control"
+    ],
     "description": [
       "DRIVING ASSISTANT PROFESSIONAL",
       "Driving Assistant Plus",
@@ -66,7 +68,6 @@
     "features": [],
     "description": [
       "Harman Kardon",
-      "Harman-Kardon",
       "Harman/Kardon",
       "H/K"
     ],
@@ -141,7 +142,11 @@
     "description": [
       "Alcantara"
     ],
-    "props": {},
+    "props": {
+      "upholstery": [
+        "Alcantara"
+      ]
+    },
     "defaultStatus": "no"
   },
   {
@@ -151,7 +156,7 @@
     "score": 2,
     "features": [],
     "description": [
-      "M Sportabgasanlage",
+      "Sportabgasanlage",
       "M Sport Abgasanlage",
       "Sportauspuff",
       "Sport-Auspuffanlage"
@@ -165,7 +170,9 @@
     "price": 1500,
     "score": 2,
     "tag": "Standheizung/Fernstart",
-    "features": [],
+    "features": [
+      "Auxiliary heating"
+    ],
     "description": [
       "Standheizung"
     ],
@@ -250,7 +257,11 @@
       "Parking Assistance System Plus",
       "Automatisches Einparken"
     ],
-    "props": {},
+    "props": {
+      "parkingSensors": [
+        "Self-steering systems"
+      ]
+    },
     "defaultStatus": "no"
   },
   {
@@ -316,7 +327,9 @@
     "name": "Sun Protection Glass",
     "price": 350,
     "score": 1,
-    "features": [],
+    "features": [
+      "Tinted windows"
+    ],
     "description": [
       "Abgedunkelte Verglasung",
       "Sonnenschutzverglasung",
@@ -378,10 +391,10 @@
     "price": 100,
     "score": 1,
     "features": [],
+    "matchType": "ALL_DESCRIPTION",
     "description": [
-      "Sensatec",
       "Instrumententafel",
-      "Dashboard"
+      "Sensatec"
     ],
     "matchType": "ALL_DESCRIPTION",
     "props": {},
@@ -433,8 +446,9 @@
     "price": 500,
     "score": 0,
     "features": [
-      "Trailer coupling",
-      "Tow bar"
+      "Trailer coupling, swiveling",
+      "Trailer coupling, detachable",
+      "Fixed trailer coupling"
     ],
     "description": [
       "Anhängerkupplung",
@@ -510,7 +524,7 @@
     "price": 0,
     "score": 0,
     "features": [
-      "Automatic headlights"
+      "Light sensor"
     ],
     "description": [
       "Lichtautomatik",

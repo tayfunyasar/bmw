@@ -1,6 +1,17 @@
-import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, isColorFav, isColorNotFav } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, isColorFav, isColorNotFav, isInteriorFav, isInteriorNotFav } from '../data';
+import { computeBaseRates, unknownsExpectedValue, unknownsExpectedScore } from './expectedValue.js';
 
 const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
+
+// Model-geneli donanim base-rate'leri (bir kez, aktif referans populasyon uzerinden).
+// calculateCarMetrics her arac icin beklenen (base-rate agirlikli) belirsiz deger/skor
+// kredisini bununla hesaplar → tum sekmelerde (ana + diesel/rwd/kazali) tutarli.
+const equipmentBaseRates = computeBaseRates(CoupeGasWithSunroof, equipmentRules);
+
+// Tum kritik donanimin maksimum € degeri (Σ price×score, score>0). Donanim skoru
+// artik "kac ozellik" (breadth) degil € DEGERE gore hesaplaniyor → premium yuklu
+// (Laser/DAPRO/HK gibi pahali donanimli) araclar hak ettikleri agirligi alir.
+const MAX_FEATURES_VALUE = equipmentRules.reduce((s, r) => s + (r.score > 0 ? r.price * r.score : 0), 0);
 
 // --- Time Calculations ---
 const calculateAgeInMonths = (registrationYear, registrationMonth) => {
@@ -65,6 +76,21 @@ const calculateUnknownsInfo = (evaluatedFeatures) => {
     unknownsCount: unknowns.length,
     unknownsPotentialValue: unknowns.reduce((sum, f) => sum + (f.price * f.score), 0),
   };
+};
+
+// Satıcının fiyat kırma geçmişi: auditHistory'deki basePriceEuro düşüşlerini toplar.
+// Çok/sık düşüren satıcı = motivasyonlu → pazarlık şansı yüksek (📉 kategorisi).
+const calculatePriceDrop = (auditHistory = []) => {
+  let priceDropTotal = 0;
+  let priceDropCount = 0;
+  for (const entry of auditHistory) {
+    const change = entry.changes?.basePriceEuro;
+    if (change && typeof change.old === 'number' && typeof change.new === 'number' && change.new < change.old) {
+      priceDropTotal += change.old - change.new;
+      priceDropCount++;
+    }
+  }
+  return { priceDropTotal, priceDropCount };
 };
 
 const calculateOwnerAdjustment = (numberOfPreviousOwners) => {
@@ -216,8 +242,15 @@ export function calculateCarMetrics(car) {
   // 5. Owner adjustment (1 sahip = bonus, 3+ sahip = ceza)
   const ownerAdjustment = calculateOwnerAdjustment(car.numberOfPreviousOwners);
 
-  // 6. Final Personal Deal Score (€ — düşük = iyi fırsat)
+  // 6. Final Personal Deal Score (€ — düşük = iyi fırsat, yalnizca dogrulanmis donanim)
   const personalDealScore = baseTotalCost + depreciation.totalDepreciation - extraFeaturesValue + ownerAdjustment;
+
+  // 7. Beklenen (base-rate agirlikli) belirsiz donanim kredisi — belgelenmemis ama
+  //    muhtemel donanimli araclar hem deger hem donanim skorunda gozden kacmasin diye.
+  const expectedUnknownValue = unknownsExpectedValue(car.equipmentFeatures, equipmentRules, equipmentBaseRates);
+  const expectedDealScore = personalDealScore - expectedUnknownValue;
+  const expectedCriticalScore = featureScores.currentScore
+    + unknownsExpectedScore(car.equipmentFeatures, equipmentRules, equipmentBaseRates);
 
   return Object.assign({ ageInMonths }, depreciation, {
     baseTotalCost,
@@ -229,82 +262,120 @@ export function calculateCarMetrics(car) {
     unknownsCount: unknownsInfo.unknownsCount,
     unknownsPotentialValue: unknownsInfo.unknownsPotentialValue,
     personalDealScore,
+    expectedDealScore,
+    upsideGap: expectedUnknownValue,
+    expectedCriticalScore,
+    expectedFeaturesValue: extraFeaturesValue + expectedUnknownValue, // € (doğrulanmış + beklenen belirsiz)
+    maxFeaturesValue: MAX_FEATURES_VALUE,                             // € (👑 kategorisinin maksimumu)
+    ...calculatePriceDrop(car.auditHistory),                          // priceDropTotal, priceDropCount (📉)
     bpmCalculation: bpm
   });
 }
 
-// Dataset'ten türeyen, outlier-dayanıklı maliyet skoru.
-// Anchor = medyan (sabit magic number değil), birim = MAD (Median Absolute Deviation),
-// ±5 ile clamp (tek bir aşırı ilan diğer sinyalleri ezmesin diye).
-const robustCostStats = (values) => {
+// --- totalScore: kullanıcı kriterlerine göre 0-100 kompozit ---
+// Çekirdek 4 boyut (ağırlık toplam 100) + ek bonus/ceza → sonuç 0-100'e clamp.
+// Ağırlıklar/sabitler modelin tek ayar noktası.
+const SCORE_WEIGHTS = {
+  price: 25,         // Fiyat (exact, baseTotalCost) — düşük ağırlık; bütçe aşımı ayrı ceza
+  equipment: 25,     // Donanım € değeri (doğrulanmış + beklenen belirsiz)
+  kmAge: 15,         // Düşük km/yaş (yıpranma percentile)
+  desirability: 35,  // Arzu: LCI + dış renk + iç renk (ağırlık artırıldı)
+};
+const SCORE_LABELS = {
+  price: 'Fiyat (bütçe)',
+  equipment: 'Donanım',
+  kmAge: 'km/yaş',
+  desirability: 'Arzu (LCI/renk)',
+};
+// Ek puanlar: bonus = VAR → +, yok → nötr (ceza değil); ceza = kötü → −.
+const SERVICE_BONUS = 5;        // tam servis geçmişi (belgesiz/unknown ceza YEMEZ)
+const WARRANTY_BONUS = 4;       // aktif garanti
+const PRIVATE_PENALTY = 5;      // özel satıcı
+const AFTERMARKET_PENALTY = 7;  // aftermarket modifikasyon
+const OVER_BUDGET_PENALTY = 25; // bütçe aşımı (baseTotalCost > PRICE_MAX) → sert eleme
+
+// Exact fiyat skoru: ucuz = yüksek, DOĞRUSAL ve sürekli (band değil → her fiyat farklı puan).
+// ≤FLOOR tam puan, FLOOR→MAX doğrusal azalır, >MAX = 0 (ağır ceza, bütçe dışı).
+const PRICE_FLOOR = 42000;
+const PRICE_MAX = 66000;
+const priceScore = (cost) => Math.max(0, Math.min(1, (PRICE_MAX - cost) / (PRICE_MAX - PRICE_FLOOR)));
+
+// Bir metrigin dataset icindeki yuzdelik sirasi (0-1). invert=true → dusuk deger yuksek skor.
+const percentileScorer = (values, invert = false) => {
   const sorted = [...values].sort((a, b) => a - b);
-  const median = sorted[Math.floor(sorted.length / 2)];
-  const deviations = sorted.map(v => Math.abs(v - median)).sort((a, b) => a - b);
-  const mad = deviations[Math.floor(deviations.length / 2)] || 1;
-  return { median, mad };
+  const n = sorted.length;
+  return (v) => {
+    if (n <= 1) return 0.5;
+    const pct = sorted.filter(x => x < v).length / (n - 1);
+    return invert ? 1 - pct : pct;
+  };
 };
 
-const COST_DELTA_CAP = 5;
-const clampedCostDelta = (value, { median, mad }) => {
-  const z = (median - value) / mad;
-  return Math.max(-COST_DELTA_CAP, Math.min(COST_DELTA_CAP, z));
-};
+const round1 = (n) => Math.round(n * 10) / 10;
+const eur = (n) => '€' + Math.round(n).toLocaleString('tr-TR');
 
-const assignRecommendations = (evaluated) => {
-  const dealStats = robustCostStats(evaluated.map(c => c.metrics.personalDealScore));
-  const baseStats = robustCostStats(evaluated.map(c => c.metrics.baseTotalCost));
+const assignRecommendations = (evaluated, referencePool = evaluated) => {
+  // km/yaş referansı = referencePool (aktif pazar): düşük yıpranma (yeni/az km) = iyi.
+  const kmAgeScorer = percentileScorer(referencePool.map(c => c.metrics.totalDepreciation), true);
 
   evaluated.forEach(car => {
-     const breakdown = [];
-     const add = (label, delta) => {
-       if (delta === 0) return;
-       breakdown.push({ label, delta: Math.round(delta * 10) / 10 });
-     };
+    const m = car.metrics;
+    const W = SCORE_WEIGHTS;
+    // Çekirdek boyutların normalize (0-1) değerleri
+    const priceN = priceScore(m.baseTotalCost);
+    const equipN = MAX_FEATURES_VALUE > 0 ? Math.min(m.expectedFeaturesValue / MAX_FEATURES_VALUE, 1) : 0;
+    const kmAgeN = kmAgeScorer(m.totalDepreciation);
+    const lci = car.modelGeneration === 'LCI' ? 0.4 : 0;
+    const extC = isColorFav(car.exteriorColorName) ? 0.3 : isColorNotFav(car.exteriorColorName) ? 0 : 0.15;
+    const intC = isInteriorFav(car.interiorColorName) ? 0.3 : isInteriorNotFav(car.interiorColorName) ? 0 : 0.15;
+    const desirN = Math.min(lci + extC + intC, 1);
 
-     // 1a. Personal deal score: KM + yaş + donanım + sahip etkisi içinde (düşük = iyi)
-     add('Fırsat skoru', clampedCostDelta(car.metrics.personalDealScore, dealStats));
+    // Ek puanlar (bonus/ceza) — hem tooltip breakdown'a hem tüm kategori skorlarına.
+    const extras = [];
+    if (car.service?.type === 'yes') extras.push({ label: 'Tam servis', delta: SERVICE_BONUS, formula: 'belgeli servis bonusu' });
+    if (car.warranty?.exists === 'yes' || car.warranty?.exists === true) extras.push({ label: 'Garanti', delta: WARRANTY_BONUS, formula: 'aktif garanti bonusu' });
+    const seller = car.sellerTypeOrName?.toLowerCase() || '';
+    if (seller.includes('private') || seller.includes('özel') || seller.includes('privat')) extras.push({ label: 'Özel satıcı', delta: -PRIVATE_PENALTY, formula: 'risk cezası' });
+    if (car.listingAdditionalFeatures?.some(f => f.toLowerCase().includes('aftermarket'))) extras.push({ label: 'Aftermarket', delta: -AFTERMARKET_PENALTY, formula: 'risk cezası' });
+    if (m.baseTotalCost > PRICE_MAX) extras.push({ label: 'Bütçe aşımı', delta: -OVER_BUDGET_PENALTY, formula: `${eur(m.baseTotalCost)} > €66K` });
+    const adj = extras.reduce((s, x) => s + x.delta, 0);
+    const penaltyOnly = extras.filter(x => x.delta < 0).reduce((s, x) => s + x.delta, 0); // ≤0
+    const clamp100 = (v) => Math.max(0, Math.min(100, round1(v)));
 
-     // 1b. Toplam alım maliyeti cezası: fiyat + BPM (yüksek = ceza, donanım/sahipten bağımsız)
-     add('Toplam alım maliyeti', clampedCostDelta(car.metrics.baseTotalCost, baseStats));
+    // 🏆 Genel (holistik, senin ağırlıkların — renk baskın). Tooltip breakdown bununla.
+    car.totalScore = clamp100(priceN * W.price + equipN * W.equipment + kmAgeN * W.kmAge + desirN * W.desirability + adj);
+    // 💰 Değer: GERÇEK ORAN — donanım€ / toplam maliyet€ (bang-for-buck). Bütçe aşımı adj ile cezalanır.
+    car.valueScore = clamp100((m.expectedFeaturesValue / m.baseTotalCost) * 100 + adj);
+    // ⚖️ Dengeli: 4 boyutun GEOMETRİK ORTALAMASI — bir yönü sıfırsa sıfır (bütçe aşımı → priceN 0),
+    //    ama min'den daha yüksek/normalize skala (diğer kategorilerle kıyaslanabilir).
+    car.balanceScore = clamp100(Math.pow(priceN * equipN * kmAgeN * desirN, 0.25) * 100 + penaltyOnly);
 
-     // 2. Güvenilirlik: servis, bayi (sahip sayısı artık personalDealScore'da)
-     if (car.service?.type === 'yes') add('Tam servis', 1);
-
-     // 3. Risk faktörleri
-     const sellerLower = car.sellerTypeOrName?.toLowerCase() || '';
-     if (sellerLower.includes('private') || sellerLower.includes('özel') || sellerLower.includes('privat')) {
-       add('Özel satıcı', -2);
-     }
-     if (car.listingAdditionalFeatures?.some(feat => feat.toLowerCase().includes('aftermarket'))) {
-       add('Aftermarket donanım', -3);
-     }
-
-     // 4. LCI bonusu
-     if (car.modelGeneration === 'LCI') add('LCI (facelift)', 5);
-
-     // 5. Tescil yılı
-     const registrationYear = car.firstRegistrationYearAndMonth?.[0];
-     if (registrationYear >= 2023) add('2023+ tescil', 3);
-     else if (registrationYear === 2021) add('2021 tescil', -2);
-
-     // 6. Dış renk tercihi
-     if (isColorFav(car.exteriorColorName)) add('Favori renk', 2);
-     else if (isColorNotFav(car.exteriorColorName)) add('Sevilmeyen renk', -2);
-
-     car.curatorPickBadge = '';
-     car.scoreBreakdown = breakdown;
-     car.totalScore = Math.round(breakdown.reduce((sum, b) => sum + b.delta, 0) * 10) / 10;
+    car.curatorPickBadge = '';
+    car.scoreBreakdown = [
+      { label: SCORE_LABELS.price, delta: round1(priceN * W.price), formula: `${eur(m.baseTotalCost)} → (66K−fiyat)/24K = ${priceN.toFixed(2)} × ${W.price}` },
+      { label: SCORE_LABELS.equipment, delta: round1(equipN * W.equipment), formula: `${eur(m.expectedFeaturesValue)} / ${eur(MAX_FEATURES_VALUE)} → ${equipN.toFixed(2)} × ${W.equipment}` },
+      { label: SCORE_LABELS.kmAge, delta: round1(kmAgeN * W.kmAge), formula: `yıpranma ${eur(m.totalDepreciation)} → yüzdelik ${kmAgeN.toFixed(2)} × ${W.kmAge}` },
+      { label: SCORE_LABELS.desirability, delta: round1(desirN * W.desirability), formula: `LCI ${lci} + dış ${extC} + iç ${intC} → ${desirN.toFixed(2)} × ${W.desirability}` },
+      ...extras,
+    ];
   });
 
-  const bestSpec = [...evaluated].sort((a,b) => b.metrics.criticalFeaturesScore - a.metrics.criticalFeaturesScore)[0];
-  const topPick = [...evaluated].sort((a,b) => b.totalScore - a.totalScore)[0];
-  const budgetPick = [...evaluated].filter(c => c.metrics.personalDealScore < 70000).sort((a,b) => b.totalScore - a.totalScore)[0];
-  const balancedPick = [...evaluated].filter(c => c.metrics.criticalFeaturesScore >= 4 && c.metrics.personalDealScore <= 75000).sort((a,b) => b.totalScore - a.totalScore)[0];
+  // Tek-kazanan rozetler yalnızca ALINABILIR araçlar arasından (satılmış araç 👑🏆💰⚖️ almaz).
+  // Her rozet, kendi kategorisinin skoruyla seçilir (kategoriler artık farklı sıralıyor).
+  const buyable = evaluated.filter(c => !c.isSold);
+  const bestSpec = [...buyable].sort((a,b) => b.metrics.expectedFeaturesValue - a.metrics.expectedFeaturesValue)[0]; // 👑 donanım (€)
+  const topPick = [...buyable].sort((a,b) => b.totalScore - a.totalScore)[0];        // 🏆 genel
+  const budgetPick = [...buyable].sort((a,b) => b.valueScore - a.valueScore)[0];     // 💰 değer (oran)
+  const balancedPick = [...buyable].sort((a,b) => b.balanceScore - a.balanceScore)[0]; // ⚖️ dengeli (geo. ort.)
+  const dropPick = [...buyable]                                                        // 📉 fiyat düşüşü
+    .filter(c => c.metrics.priceDropTotal > 0 && c.metrics.baseTotalCost <= PRICE_MAX)
+    .sort((a,b) => b.metrics.priceDropTotal - a.metrics.priceDropTotal)[0];
 
   if (bestSpec) bestSpec.curatorPickBadge += '👑';
   if (topPick && !topPick.curatorPickBadge.includes('🏆')) topPick.curatorPickBadge += '🏆';
   if (budgetPick && !budgetPick.curatorPickBadge.includes('💰')) budgetPick.curatorPickBadge += '💰';
   if (balancedPick && !balancedPick.curatorPickBadge.includes('⚖️')) balancedPick.curatorPickBadge += '⚖️';
+  if (dropPick && !dropPick.curatorPickBadge.includes('📉')) dropPick.curatorPickBadge += '📉';
 
   // If a car has no badges, reset to null
   evaluated.forEach(car => {
@@ -321,14 +392,10 @@ export const sortByTotalCost = (listings) => [...listings]
   .sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);
 
 // --- Data Aggregation ---
-const createEvaluatedListings = (listings) => {
-  const evaluated = listings.map((car, index) => Object.assign({}, car, { 
-    metrics: calculateCarMetrics(car), 
-    originalIndex: index 
-  })).sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);
-  
-  return assignRecommendations(evaluated);
-};
+// Metrikleri iliştir (skorlama öncesi); baseTotalCost'a göre artan sıralar.
+const attachMetrics = (listings) => listings
+  .map((car, index) => Object.assign({}, car, { metrics: calculateCarMetrics(car), originalIndex: index }))
+  .sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);
 
 const groupListingsByYear = (listings) => {
   return listings.reduce((groups, car) => {
@@ -343,8 +410,15 @@ const extractSortedYears = (groupedListings) => {
   return Object.keys(groupedListings).sort((yearA, yearB) => Number(yearB) - Number(yearA));
 };
 
-export const evaluatedListings = createEvaluatedListings(CoupeGasWithSunroof);
-const evaluatedSold = createEvaluatedListings(soldGasListings).map(car => Object.assign(car, { isSold: true }));
+const activeCars = attachMetrics(CoupeGasWithSunroof);
+const soldCars = attachMetrics(soldGasListings).map(car => Object.assign(car, { isSold: true }));
+
+// Öneri skorları TEK referans dağılıma (aktif pazar) göre hesaplanır → sold araçlar
+// aktiflerle kıyaslanabilir. Rozetler yalnız alınabilir araçlarda (fonksiyon içinde).
+assignRecommendations([...activeCars, ...soldCars], activeCars);
+
+export const evaluatedListings = activeCars;
+const evaluatedSold = soldCars;
 export const yearGroups = groupListingsByYear(evaluatedListings);
 export const sortedYears = extractSortedYears(yearGroups);
 

@@ -52,9 +52,100 @@ test('matchEquipmentFeatures — props match → yes', () => {
   );
 });
 
-test('matchEquipmentFeatures — no signal → unknown', () => {
+test('matchEquipmentFeatures — no signal + non-informative description → unknown (fren)', () => {
   const rules = [{ code: 'X', description: ['ABC'], features: ['F'] }];
   assert.equal(matchEquipmentFeatures({ description: 'nothing here' }, rules).X, 'unknown');
+});
+
+// --- Fallback: bilgilendirici description → "no", aksi halde "unknown" (fren) ---
+
+test('matchEquipmentFeatures — informative description (≥3 hit) → eslesmeyen kural "no"', () => {
+  const rules = [
+    { code: 'A', description: ['aaa'] },
+    { code: 'B', description: ['bbb'] },
+    { code: 'C', description: ['ccc'] },
+    { code: 'MISSING', description: ['zzz'], defaultStatus: 'no' },
+  ];
+  const r = matchEquipmentFeatures({ description: 'aaa bbb ccc' }, rules);
+  assert.equal(r.A, 'yes');
+  assert.equal(r.MISSING, 'no'); // prose bilgilendirici, "zzz" yok → gercekten yok
+});
+
+test('matchEquipmentFeatures — non-informative description → fren "unknown" birakir', () => {
+  const rules = [
+    { code: 'A', description: ['aaa'] },
+    { code: 'MISSING', description: ['zzz'], defaultStatus: 'no' },
+  ];
+  // sadece 1 hit (<3) → bilgilendirici degil → absence guvenilmez
+  const r = matchEquipmentFeatures({ description: 'aaa only, rest is marketing prose' }, rules);
+  assert.equal(r.MISSING, 'unknown');
+});
+
+test('matchEquipmentFeatures — defaultStatus "unknown", bilgilendirici description\'da bile korunur', () => {
+  const rules = [
+    { code: 'A', description: ['aaa'] },
+    { code: 'B', description: ['bbb'] },
+    { code: 'C', description: ['ccc'] },
+    { code: 'AMBIG', description: ['zzz'], defaultStatus: 'unknown' },
+  ];
+  const r = matchEquipmentFeatures({ description: 'aaa bbb ccc' }, rules);
+  assert.equal(r.AMBIG, 'unknown'); // kurator bilerek ambigü birakmis (ör. Harman Kardon)
+});
+
+test('matchEquipmentFeatures — checkbox eslesmesi frenden bagimsiz "yes" verir', () => {
+  const rules = [
+    { code: 'A', description: ['aaa'] },
+    { code: 'CHK', description: ['zzz'], features: ['SomeFeature'] },
+  ];
+  // description bilgilendirici olmasa da checkbox pozitif sinyal → yes
+  const r = matchEquipmentFeatures({ description: 'aaa', features: ['SomeFeature'] }, rules);
+  assert.equal(r.CHK, 'yes');
+});
+
+test('matchEquipmentFeatures — defaultStatus yoksa bilgilendirici description\'da "no"', () => {
+  const rules = [
+    { code: 'A', description: ['aaa'] },
+    { code: 'B', description: ['bbb'] },
+    { code: 'C', description: ['ccc'] },
+    { code: 'NODEFAULT', description: ['zzz'] }, // defaultStatus tanimsiz
+  ];
+  const r = matchEquipmentFeatures({ description: 'aaa bbb ccc' }, rules);
+  assert.equal(r.NODEFAULT, 'no');
+});
+
+// --- Checkbox otoritesi: zengin checkbox'ta eslesmeyen mappable donanim → "no" ---
+
+const richCheckbox = (extra = []) => [...Array.from({ length: 20 }, (_, i) => `F${i}`), ...extra];
+
+test('matchEquipmentFeatures — checkbox-mappable + zengin checkbox + eslesme yok → no', () => {
+  const rules = [{ code: 'X', description: [], features: ['SomeFeature'] }];
+  // 20 kalemlik zengin checkbox, X'in token'i yok, aciklama bos → yine de "no"
+  assert.equal(matchEquipmentFeatures({ features: richCheckbox() }, rules).X, 'no');
+});
+
+test('matchEquipmentFeatures — checkbox-mappable + SPARSE checkbox → unknown (eski fallback korunur)', () => {
+  const rules = [{ code: 'X', description: [], features: ['SomeFeature'] }];
+  // 3 kalem (<15) → checkbox otoritesi devreye girmez, absence guvenilmez
+  assert.equal(matchEquipmentFeatures({ features: ['A', 'B', 'C'] }, rules).X, 'unknown');
+});
+
+test('matchEquipmentFeatures — props-mappable + zengin checkbox + props yok → no', () => {
+  const rules = [{ code: 'X', description: [], props: { parkingSensors: ['Self-steering systems'] } }];
+  const r = matchEquipmentFeatures({ features: richCheckbox(), props: { parkingSensors: 'Rear, Front' } }, rules);
+  assert.equal(r.X, 'no');
+});
+
+test('matchEquipmentFeatures — props-mappable + zengin checkbox + props VAR → yes', () => {
+  const rules = [{ code: 'X', description: [], props: { parkingSensors: ['Self-steering systems'] } }];
+  const r = matchEquipmentFeatures({ features: richCheckbox(), props: { parkingSensors: 'Rear, Self-steering systems' } }, rules);
+  assert.equal(r.X, 'yes');
+});
+
+test('matchEquipmentFeatures — sadece-aciklama kurali zengin checkbox\'a ragmen "no" OLMAZ', () => {
+  // features/props yok → checkbox-eslesemez; zengin checkbox onu "no" yapmamali.
+  const rules = [{ code: 'X', description: ['zzz'] }];
+  const r = matchEquipmentFeatures({ description: 'alakasiz metin', features: richCheckbox() }, rules);
+  assert.equal(r.X, 'unknown'); // aciklama bilgilendirici degil → belirsiz kalir
 });
 
 test('matchEquipmentFeatures — ALL_DESCRIPTION needs every keyword', () => {

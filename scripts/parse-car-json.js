@@ -1,9 +1,11 @@
+/* global process */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { pushSoldAudit } from './lib/sold.js';
 import { classifyBodyStyle, rawCarToTextObj, rawCarApifyCategory } from './lib/body-style.js';
 import { matchEquipmentFeatures } from './lib/equipment-match.js';
+import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -39,27 +41,7 @@ function getNextListingId(existingListings) {
   return `C${maxId + 1}`;
 }
 
-function determineDrivetrain(title, description, url, features = []) {
-  const allText = `${title} ${description} ${url}`;
-  const hasXDrive = /x[- ]?drive/i.test(allText);
-  const hasAllrad = /allrad/i.test(description);
-  // KESIN RWD sinyali: SADECE title'da literal "RWD" geçiyorsa.
-  // Heckantrieb / Hinterradantrieb / Apify "Rear wheel drive" yanıltıcı olabiliyor —
-  // bunlar şüphe yaratır ama "RWD" kararı verdirmez. Default = xDrive (uncertain).
-  const hasExplicitRWD = /\bRWD\b/.test(title);
-  const hasSuspectRWD = /hinterradantrieb/i.test(allText)
-    || /heckantrieb/i.test(allText)
-    || features.includes("Rear wheel drive");
-
-  if (hasXDrive || hasAllrad) return { type: "xDrive AWD", certain: true };
-  if (hasExplicitRWD) return { type: "RWD", certain: true };
-  if (hasSuspectRWD) return {
-    type: "xDrive AWD",
-    certain: false,
-    note: "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
-  };
-  return { type: "xDrive AWD", certain: false };
-}
+// Tahrik mantigi scripts/lib/drivetrain.js icinde — tek kaynak.
 
 function parseCar(car, nextId) {
   const features = car.features || [];
@@ -120,7 +102,7 @@ function parseCar(car, nextId) {
 
   const serviceType = description.includes("Scheckheftgepflegt") || features.includes("Full Service History") ? "yes" : "unknown";
   const hasWarranty = features.includes("Warranty") ? "yes" : "no";
-  const drivetrain = determineDrivetrain(car.title || "", description, car.url || "", features);
+  const drivetrain = determineDrivetrainFromRaw(car);
 
   return {
     listingId: nextId,
@@ -130,6 +112,7 @@ function parseCar(car, nextId) {
     interiorColorName: props.upholstery,
     drivetrainType: drivetrain.type,
     drivetrainCertain: drivetrain.certain,
+    drivetrainReason: drivetrain.reason,
     basePriceEuro: car.price?.amount,
     estimatedImportTaxEuro: estimatedImportTaxEuro,
     mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
@@ -192,11 +175,13 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
       'basePriceEuro', 'mileageKm', 'sellerTypeOrName',
       'listingLocation', 'exteriorColorName', 'interiorColorName',
       'numberOfPreviousOwners', 'warranty', 'service', 'nextInspectionDate', 'co2EmissionsGramPerKm',
-      'drivetrainType', 'drivetrainCertain', 'aiCommentary'
+      'drivetrainType', 'drivetrainCertain', 'drivetrainReason', 'aiCommentary'
   ];
   const overrides = existingCar.overrideFeatures || {};
   fieldsToCheck.forEach(key => {
       if (overrides[key]) return; // Manuel override korunuyor (obje veya değer varsa atla)
+      // Tahrik override'lıysa turetilmis yan alanlari da dondur (celiski olmasin)
+      if ((key === 'drivetrainCertain' || key === 'drivetrainReason') && overrides.drivetrainType) return;
       if (newCar[key] !== undefined && existingCar[key] !== newCar[key] && JSON.stringify(existingCar[key]) !== JSON.stringify(newCar[key])) {
           changes[key] = { old: existingCar[key], new: newCar[key] };
           existingCar[key] = newCar[key];
@@ -315,9 +300,10 @@ async function run() {
   function determineTargetFile(car, rawCar) {
     const overrides = car.overrideFeatures || {};
     const isSunroof = car.equipmentFeatures.S403A === "yes";
-    const driveResult = determineDrivetrain(rawCar.title || "", rawCar.description || "", rawCar.url || "", rawCar.features || []);
+    const driveResult = determineDrivetrainFromRaw(rawCar);
     const driveOverride = overrides.drivetrainType?.value || overrides.drivetrainType;
-    const isRWD = driveOverride === "RWD" || (driveResult.type === "RWD" && driveResult.certain);
+    // RWD artik hep "certain" turetilir (checkbox veya metin); ek certain sarti yok.
+    const isRWD = driveOverride === RWD || driveResult.type === RWD;
     const textObj = rawCarToTextObj(rawCar);
     const apifyCategory = rawCarApifyCategory(rawCar);
     const bodyStyle = classifyBodyStyle(textObj, { apifyCategory });

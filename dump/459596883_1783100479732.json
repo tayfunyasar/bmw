@@ -1,0 +1,189 @@
+{
+  "id": 459596883,
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-m%C3%BChlacker/459596883.html",
+  "shortTitle": "BMW M440",
+  "subTitle": "i xDrive Cabrio ",
+  "title": "BMW M440i xDrive Cabrio ",
+  "properties": {
+    "milage": "62,000 km",
+    "gearbox": "Automatic",
+    "fuelType": "Petrol",
+    "power": "275 kW (374 hp)",
+    "firstRegistration": "05/2023",
+    "seats": null,
+    "doors": "2/3",
+    "generalInspection": "New",
+    "lastService": null,
+    "lastServiceMilage": null,
+    "productionDate": null,
+    "engineSize": "2,998 ccm",
+    "cylinders": null,
+    "emptyWeight": null,
+    "emissionClass": null,
+    "emissionSticker": "4 (Green)",
+    "co2Emission": "-- g/km",
+    "co2Class": null,
+    "fuelConsumption": null,
+    "costPer1500km": null,
+    "colour": "Blue Metallic",
+    "manufacturerColour": "Arctic Race Blue metallic",
+    "upholstery": "Cloth, Black",
+    "countryVersion": null,
+    "vehicleNumber": "CM32438",
+    "numberOfOwners": "2",
+    "climatisation": "No climatisation",
+    "parkingSensors": null,
+    "airbags": "Driver Airbag",
+    "tankCapacity": null,
+    "range": null,
+    "powerConsumption": null,
+    "energyConsumption": "-- l/100km",
+    "otherEnergySources": null,
+    "driveType": "Internal combustion engine"
+  },
+  "descriptionHtml": "<b></b><br><b>(Änderungen, Irrtümer und Zwischenverkauf vorbehalten!)</b><br>",
+  "description": "\n(Änderungen, Irrtümer und Zwischenverkauf vorbehalten!)\n",
+  "isNew": true,
+  "isReadyToDrive": true,
+  "isConditionNew": false,
+  "segment": "Car",
+  "category": "Cabrio",
+  "sellerId": 456175,
+  "manufacturer": "BMW",
+  "model": "M440",
+  "price": {
+    "priceType": "FIXED",
+    "amount": 52830,
+    "currency": "EUR",
+    "formatted": "€52,830",
+    "vat": 19
+  },
+  "netPrice": {
+    "amount": 44394.96,
+    "currency": "EUR",
+    "formatted": "€44,395"
+  },
+  "createdTime": "2026-07-01T17:24:51.000Z",
+  "modifiedTime": "2026-07-03T03:19:00.000Z",
+  "renewedTime": "2026-07-01T17:24:51.000Z",
+  "attributes": {
+    "Vehicle condition": "Used vehicle",
+    "Category": "Convertible/Roadster",
+    "Vehicle Number": "CM32438",
+    "Availability": "Now",
+    "Mileage": "62,000 km",
+    "Cubic Capacity": "2,998 ccm",
+    "Power": "275 kW (374 hp)",
+    "Drive type": "Internal combustion engine",
+    "Fuel": "Petrol",
+    "Door Count": "2/3",
+    "Transmission": "Automatic",
+    "Emissions Sticker": "4 (Green)",
+    "First Registration": "05/2023",
+    "Number of Vehicle Owners": "2",
+    "HU": "New",
+    "Climatisation": "No climatisation",
+    "Airbags": "Driver Airbag",
+    "Colour (Manufacturer)": "Arctic Race Blue metallic",
+    "Colour": "Blue Metallic",
+    "Interior Design": "Cloth, Black",
+    "Energy consumption (comb.)": "-- l/100km",
+    "CO₂ emissions (comb.)": "-- g/km"
+  },
+  "batteryInformation": null,
+  "features": [
+    "DAB radio",
+    "Warranty"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/43/438b9b16-11ad-4af9-ae7f-06608b46c186?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2b/2becdbb6-1f5a-4278-b4eb-7fb092ce0b6b?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/76/7659ff90-3afd-4b79-9449-40579bfa9268?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/76/766d345e-c176-4b9d-ac82-58b708827c96?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d4e8359-26cd-4218-a227-0c70f953c243?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ce/ce9d332c-5ffe-4238-9ee5-abd954121586?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/3382720e-0de3-43ae-aad6-44a962760eec?rule=mo-1600.jpg"
+  ],
+  "version": 9,
+  "priceRating": {
+    "rating": "Increased price",
+    "priceRanges": [
+      {
+        "label": "Very good price",
+        "min": 33000,
+        "max": 43000
+      },
+      {
+        "label": "Good price",
+        "min": 43000,
+        "max": 46300
+      },
+      {
+        "label": "Fair price",
+        "min": 46300,
+        "max": 51400
+      },
+      {
+        "label": "Increased price",
+        "min": 51400,
+        "max": 55200
+      },
+      {
+        "label": "High price",
+        "min": 55200,
+        "max": 61400
+      }
+    ]
+  },
+  "dealer": {
+    "id": 456175,
+    "contry": "DE",
+    "name": "ahg Autohandelsgesellschaft mbH",
+    "phones": [
+      "+49 (0)7041 963222",
+      "+49 7041 963216"
+    ],
+    "messengers": [],
+    "languages": [
+      "Deutsch"
+    ],
+    "activeSince": "",
+    "homePageUrl": "https://home.mobile.de/home/redirect.html?customerId=456175",
+    "logoUrl": "https://img.classistatic.de/api/v1/mo-prod/images/24/24da819b-12a8-457f-913d-0cf699f00202?rule=mo-1600.jpg",
+    "reviewPageUrl": "https://www.mobile.de/bewertungen/AHG-MUEHLACKER?lang=en",
+    "sellerType": "Dealer",
+    "addesses": [
+      "Vetterstrasse 27",
+      "DE-75417 Mühlacker"
+    ],
+    "location": {
+      "latitude": 48.9572429,
+      "longitude": 8.848526399999999
+    },
+    "rating": {
+      "advice": 4.5,
+      "total": 4.8,
+      "responseTime": 5,
+      "friendliness": 5,
+      "adRealityRate": 100,
+      "ratingCount": 4,
+      "recommendationRate": 100
+    },
+    "openingHours": [
+      {
+        "day": "Mon - Fri",
+        "time": "07:30 h - 18:00 h"
+      },
+      {
+        "day": "Sat",
+        "time": "09:00 h - 12:00 h"
+      }
+    ],
+    "person": {}
+  },
+  "footnotes": [
+    "The information is provided in accordance with the Passenger Car Energy Consumption Labelling Regulation. The values stated were determined in accordance with the prescribed WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) measurement method. The fuel consumption and CO₂ emissions of a car depend not only on the efficient utilisation of fuel by the car, but also on driving style and other non-technical factors. CO₂ is the main greenhouse gas responsible for global warming. A guide to the fuel consumption and CO₂ emissions of all new car models offered in Germany can be viewed free of charge at any point of sale in Germany where new cars are displayed or offered for sale. The guide is also available here: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+    "The terms and conditions of the service provider apply."
+  ],
+  "vat": "19.00% VAT"
+}

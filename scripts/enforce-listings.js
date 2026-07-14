@@ -15,6 +15,7 @@ const ROOT_KEYS_ORDER = [
   'interiorColorName',
   'drivetrainType',
   'drivetrainCertain',
+  'drivetrainReason',
   'basePriceEuro',
   'estimatedImportTaxEuro',
   'mileageKm',

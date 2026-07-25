@@ -1,11 +1,20 @@
 import React from 'react';
 import { Card, Flex, Typography, Tooltip } from 'antd';
+import { CATEGORIES, TIERS, rankPicks } from '../utils/recommendations';
+import { listingAgeInDays } from '../utils/pricingCalculator';
 
 const { Text, Link } = Typography;
 
 const formatDelta = (d) => (d > 0 ? `+${d}` : `${d}`);
-const formatEuro = (v) => `€${Math.round(v).toLocaleString('tr-TR')}`;
-const formatDrop = (v) => `−€${Math.round(v).toLocaleString('tr-TR')}`;
+const formatScore = (n) => (typeof n === 'number' ? Math.round(n * 10) / 10 : n);
+
+// İlan yaşı rozeti: yeni (≤5g) yeşil, orta sarı, bayat (≥30g) kırmızı. Staleness cezası ile hizalı.
+const ageBadge = (days) => {
+  if (days == null) return null;
+  const color = days <= 5 ? '#52c41a' : days < 30 ? '#d4a017' : '#ff4d4f';
+  const label = days <= 5 ? `🆕 ${days} gün` : `🕐 ${days} gün`;
+  return <Text style={{ fontSize: '11px', color, fontWeight: 600 }}>{label}</Text>;
+};
 
 const ScoreBreakdown = ({ breakdown, total }) => (
   <Flex vertical gap={3} style={{ fontSize: '11px', textAlign: 'left', width: 210, maxWidth: '78vw', wordBreak: 'break-word' }}>
@@ -27,68 +36,6 @@ const ScoreBreakdown = ({ breakdown, total }) => (
     )}
   </Flex>
 );
-
-const CATEGORIES = [
-  {
-    icon: '👑',
-    label: 'En iyi donanım',
-    scoreLabel: 'Donanım',
-    hint: 'En yüklü araç — donanımın € değeri (fiyat/renk sayılmaz).',
-    scoreOf: c => c.metrics.expectedFeaturesValue,
-    maxScoreOf: c => c.metrics.maxFeaturesValue,
-    format: formatEuro,
-  },
-  {
-    icon: '🏆',
-    label: 'Genel en iyi',
-    scoreLabel: 'Toplam',
-    hint: 'Tüm kriterler dengeli (renk/arzu ağırlıklı genel favori).',
-    scoreOf: c => c.totalScore,
-    maxScoreOf: () => 100,
-  },
-  {
-    icon: '💰',
-    label: 'En iyi değer',
-    scoreLabel: 'Değer',
-    hint: 'Bang-for-buck: donanım€ / toplam maliyet€ — en çok araba, en az para.',
-    scoreOf: c => c.valueScore,
-    maxScoreOf: () => 100,
-  },
-  {
-    icon: '⚖️',
-    label: 'Dengeli seçim',
-    scoreLabel: 'Denge',
-    hint: 'Hiçbir yönü zayıf değil — 4 boyutun geometrik ortalaması.',
-    scoreOf: c => c.balanceScore,
-    maxScoreOf: () => 100,
-  },
-  {
-    icon: '📉',
-    label: 'Fiyatı düşenler',
-    scoreLabel: 'Düşüş',
-    hint: 'Satıcı fiyat kırmış → motivasyonlu, pazarlık şansı yüksek.',
-    filter: c => c.metrics.priceDropTotal > 0 && c.metrics.baseTotalCost <= 66000,
-    scoreOf: c => c.metrics.priceDropTotal,
-    format: formatDrop,
-  },
-];
-
-const PICKS_PER_CATEGORY = 12;
-
-const rankPicks = (evaluatedListings, category) => {
-  const pool = category.filter ? evaluatedListings.filter(category.filter) : evaluatedListings;
-  return [...pool].sort((a, b) => category.scoreOf(b) - category.scoreOf(a)).slice(0, PICKS_PER_CATEGORY);
-};
-
-export const computeSuggestedIds = (evaluatedListings) => {
-  const ids = new Set();
-  CATEGORIES.forEach(category => {
-    rankPicks(evaluatedListings, category).forEach(c => ids.add(c.listingId));
-  });
-  return [...ids];
-};
-
-const formatScore = (n) => (typeof n === 'number' ? Math.round(n * 10) / 10 : n);
 
 const RankedPick = ({ car, rank, category }) => {
   const sold = !!car.isSold;
@@ -120,7 +67,7 @@ const RankedPick = ({ car, rank, category }) => {
         <Text type={sold ? 'danger' : 'secondary'}>
           €{car.basePriceEuro.toLocaleString()} • {car.mileageKm.toLocaleString()} km
         </Text>
-        {sold && <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text>}
+        {sold ? <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text> : ageBadge(listingAgeInDays(car.listingDates?.createdTime))}
         <Tooltip
           title={showBreakdown && car.scoreBreakdown?.length ? <ScoreBreakdown breakdown={car.scoreBreakdown} total={car.totalScore} /> : null}
           placement="bottom"
@@ -137,22 +84,37 @@ const RankedPick = ({ car, rank, category }) => {
   );
 };
 
+const CategoryRow = ({ category, evaluatedListings }) => {
+  const picks = rankPicks(evaluatedListings, category);
+  if (picks.length === 0) return null;
+  return (
+    <Flex vertical gap="small">
+      <Text strong>{category.icon} {category.label}</Text>
+      {category.hint && <Text type="secondary" style={{ fontSize: '12px', marginTop: -6 }}>{category.hint}</Text>}
+      {/* Tek satır: kartlar sarmalanmaz, kutunun İÇİNDE yatay kaydırılır (sayfa taşmaz). */}
+      <Flex gap="middle" wrap="nowrap" style={{ overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'thin' }}>
+        {picks.map((car, index) => (
+          <RankedPick key={car.listingId} car={car} rank={index + 1} category={category} />
+        ))}
+      </Flex>
+    </Flex>
+  );
+};
+
 export const Recommendations = ({ evaluatedListings }) => (
   <Card title="🎯 Claude'un Önerileri">
-    <Flex vertical gap="middle">
-      {CATEGORIES.map(category => {
-        const picks = rankPicks(evaluatedListings, category);
-        if (picks.length === 0) return null;
+    <Flex vertical gap="large">
+      {TIERS.map(tier => {
+        const cats = CATEGORIES.filter(c => c.tier === tier.key);
+        // Bu katmandaki tüm kategoriler boşsa (hiç pick yok) başlığı da gizle.
+        const anyPicks = cats.some(c => rankPicks(evaluatedListings, c).length > 0);
+        if (!anyPicks) return null;
         return (
-          <Flex key={category.label} vertical gap="small">
-            <Text strong>{category.icon} {category.label}</Text>
-            {category.hint && <Text type="secondary" style={{ fontSize: '12px', marginTop: -6 }}>{category.hint}</Text>}
-            {/* Tek satır: kartlar sarmalanmaz, kutunun İÇİNDE yatay kaydırılır (sayfa taşmaz). */}
-            <Flex gap="middle" wrap="nowrap" style={{ overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'thin' }}>
-              {picks.map((car, index) => (
-                <RankedPick key={car.listingId} car={car} rank={index + 1} category={category} />
-              ))}
-            </Flex>
+          <Flex key={tier.key} vertical gap="middle">
+            <Text strong style={{ fontSize: '15px' }}>{tier.icon} {tier.title}</Text>
+            {cats.map(category => (
+              <CategoryRow key={category.label} category={category} evaluatedListings={evaluatedListings} />
+            ))}
           </Flex>
         );
       })}

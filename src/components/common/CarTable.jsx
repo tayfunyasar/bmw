@@ -4,7 +4,7 @@ import { ClockCircleOutlined, PushpinOutlined, PushpinFilled } from '@ant-design
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
-import { useFrozenCars } from '../FrozenCarsContext';
+import { useFrozenCars } from '../useFrozenCars';
 import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
 
 const { Text, Link } = Typography;
@@ -308,6 +308,9 @@ export const CarTable = ({
     return row;
   };
 
+  // Yıldız bölümü boşsa (o skorda hiç donanım yok) başlığı da gizle — boş "3 Yıldızlı" başlığı çıkmasın.
+  const starSection = (label, source) => source.length ? [sectionHeader(label), ...source] : [];
+
   const unifiedSource = [
     ...dataSource,
     sectionHeader(`🇳🇱 BPM & Toplam Maliyet ${yearLabel}`),
@@ -316,14 +319,10 @@ export const CarTable = ({
     ...evaluationSource,
     sectionHeader(`📋 İlan Bilgisi ${yearLabel}`),
     ...listingInfoSource,
-    sectionHeader(`⭐⭐⭐ 3 Yıldızlı Donanımlar ${yearLabel}`),
-    ...threeStarSource,
-    sectionHeader(`⭐⭐ 2 Yıldızlı Donanımlar ${yearLabel}`),
-    ...twoStarSource,
-    sectionHeader(`⭐ 1 Yıldızlı Donanımlar ${yearLabel}`),
-    ...oneStarSource,
-    sectionHeader(`Opsiyonel Donanımlar ${yearLabel}`),
-    ...zeroStarSource,
+    ...starSection(`⭐⭐⭐ 3 Yıldızlı Donanımlar ${yearLabel}`, threeStarSource),
+    ...starSection(`⭐⭐ 2 Yıldızlı Donanımlar ${yearLabel}`, twoStarSource),
+    ...starSection(`⭐ 1 Yıldızlı Donanımlar ${yearLabel}`, oneStarSource),
+    ...starSection(`Opsiyonel Donanımlar ${yearLabel}`, zeroStarSource),
   ];
 
   return (

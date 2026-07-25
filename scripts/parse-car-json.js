@@ -1,4 +1,3 @@
-/* global process */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -6,12 +5,12 @@ import { pushSoldAudit } from './lib/sold.js';
 import { classifyBodyStyle, rawCarToTextObj, rawCarApifyCategory } from './lib/body-style.js';
 import { matchEquipmentFeatures } from './lib/equipment-match.js';
 import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
+import { soldArchiveFor, SOLD_FILES } from './lib/move-listing.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const carJsonPath = path.resolve(__dirname, '../car.json');
 const equipmentRulesPath = path.resolve(__dirname, '../src/data/metadata/EQUIPMENT_RULES.json');
 
 const CoupeWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF.json');
@@ -22,7 +21,9 @@ const granCoupeKazaliPath = path.join(listingsDir, 'GRAN_COUPE_KAZALI.json');
 const cabrioPath = path.join(listingsDir, 'CABRIO.json');
 const rwdGasWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITH_SUNROOF.json');
 const rwdGasWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json');
-const soldPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_SOLD.json');
+const soldPath = path.join(listingsDir, SOLD_FILES.xdrive);
+const rwdSoldWithSunroofPath = path.join(listingsDir, SOLD_FILES.rwdSunroof);
+const rwdSoldWithoutSunroofPath = path.join(listingsDir, SOLD_FILES.rwdNoSunroof);
 const kazaliPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_KAZALI.json');
 const cakalPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_CAKAL.json');
 const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
@@ -47,7 +48,6 @@ function parseCar(car, nextId) {
   const features = car.features || [];
   const description = car.description || "";
   const props = car.properties || {};
-  const attributes = car.attributes || {};
 
   // Donanim eslestirme mantigi scripts/lib/equipment-match.js icinde — tek kaynak.
   const equipmentFeatures = matchEquipmentFeatures(
@@ -253,6 +253,8 @@ async function run() {
   const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
   const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
   const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
+  const rwdSoldWithSunroof = fs.existsSync(rwdSoldWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdSoldWithSunroofPath, 'utf-8')) : [];
+  const rwdSoldWithoutSunroof = fs.existsSync(rwdSoldWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdSoldWithoutSunroofPath, 'utf-8')) : [];
   const kazali = JSON.parse(fs.readFileSync(kazaliPath, 'utf-8'));
   const cakal = JSON.parse(fs.readFileSync(cakalPath, 'utf-8'));
   const deleted = JSON.parse(fs.readFileSync(deletedPath, 'utf-8'));
@@ -271,9 +273,18 @@ async function run() {
   ];
   const frozenFiles = [
     { name: 'SOLD', data: sold },
+    { name: 'RWD_SOLD_WITH_SUNROOF', data: rwdSoldWithSunroof },
+    { name: 'RWD_SOLD_WITHOUT_SUNROOF', data: rwdSoldWithoutSunroof },
     { name: 'CAKAL', data: cakal },
     { name: 'DELETED', data: deleted },
   ];
+
+  // Kalkmış (satılmış) ilan hangi SOLD dosyasına gider — merkezi soldArchiveFor ile.
+  const soldArraysByFileName = {
+    [SOLD_FILES.xdrive]: sold,
+    [SOLD_FILES.rwdSunroof]: rwdSoldWithSunroof,
+    [SOLD_FILES.rwdNoSunroof]: rwdSoldWithoutSunroof,
+  };
 
   let currentAllListings = [...activeFiles, ...frozenFiles].flatMap(f => f.data);
 
@@ -341,9 +352,10 @@ async function run() {
       }
       const idx = source.data.indexOf(existingCar);
       source.data.splice(idx, 1);
+      const soldArchive = soldArchiveFor(existingCar);
       pushSoldAudit(existingCar, `${source.name}.json`, "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)");
-      sold.push(existingCar);
-      console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → SOLD`);
+      soldArraysByFileName[soldArchive.name].push(existingCar);
+      console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → ${soldArchive.name}`);
       continue;
     }
 
@@ -443,6 +455,8 @@ async function run() {
   fs.writeFileSync(cabrioPath, JSON.stringify(cabrio, null, 2));
   fs.writeFileSync(kazaliPath, JSON.stringify(kazali, null, 2));
   fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2));
+  fs.writeFileSync(rwdSoldWithSunroofPath, JSON.stringify(rwdSoldWithSunroof, null, 2));
+  fs.writeFileSync(rwdSoldWithoutSunroofPath, JSON.stringify(rwdSoldWithoutSunroof, null, 2));
 }
 
 run().catch(console.error);

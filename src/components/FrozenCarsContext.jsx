@@ -1,6 +1,5 @@
-import { createContext, useContext, useState } from 'react';
-
-const FrozenCarsContext = createContext(null);
+import { useState } from 'react';
+import { FrozenCarsContext } from './useFrozenCars';
 
 export const FrozenCarsProvider = ({ children, initialIds = [] }) => {
   const [frozenIds, setFrozenIds] = useState(initialIds);
@@ -27,5 +26,3 @@ export const FrozenCarsProvider = ({ children, initialIds = [] }) => {
     </FrozenCarsContext.Provider>
   );
 };
-
-export const useFrozenCars = () => useContext(FrozenCarsContext);

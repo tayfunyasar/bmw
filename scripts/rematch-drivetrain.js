@@ -1,4 +1,3 @@
-/* global process */
 // Mevcut kayitli ilanlarin tahrik tipini (drivetrainType / drivetrainCertain)
 // GUNCEL determineDrivetrain mantigiyla yeniden turetir ve gerekiyorsa ilani
 // dogru dosyaya TASIR.
@@ -10,11 +9,10 @@
 //
 // Koruma: overrideFeatures.drivetrainType olan ilanlara (kullanici teyidi) dokunmaz.
 //
-// Dosya tasimasi YALNIZCA tahrikin routing'i belirledigi 4 coupe dosyasi arasinda
-// yapilir. CABRIO / GRAN_COUPE / DIZEL'de govde-stili ve yakit kurallari
-// parse-car-json.js:determineTargetFile icinde RWD kontrolunden ONCE geldigi icin
-// tahrik o dosyalari etkilemez. Arsivler (SOLD / CAKAL / KAZALI / DELETED) donuktur:
-// alanlari duzeltilir ama tasinmazlar.
+// Dosya tasimasi: (1) aktif 4 coupe dosyasi arasinda ROUTE ile; (2) SOLD arsivleri
+// arasinda soldArchiveFor ile (satilmis RWD arac da dogru RWD SOLD dosyasinda olmali).
+// CABRIO / GRAN_COUPE / DIZEL'de govde/yakit kurallari RWD'den ONCE geldigi icin tahrik
+// o dosyalari etkilemez. CAKAL / KAZALI / DELETED donuktur: alanlari duzeltilir, tasinmaz.
 //
 // Kullanim:
 //   node scripts/rematch-drivetrain.js --dry   → sadece raporla, yazma
@@ -25,7 +23,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
-import { moveListing, pushAudit, listingsDir } from './lib/move-listing.js';
+import { moveListing, pushAudit, listingsDir, soldArchiveFor, ALL_SOLD_FILES } from './lib/move-listing.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,6 +35,8 @@ const ALL_FILES = [
   'COUPE_GAS_WITH_SUNROOF.json',
   'COUPE_GAS_WITHOUT_SUNROOF.json',
   'COUPE_GAS_WITH_SUNROOF_SOLD.json',
+  'COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json',
+  'COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json',
   'COUPE_DIESEL_WITH_SUNROOF.json',
   'COUPE_GAS_RWD_WITH_SUNROOF.json',
   'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
@@ -126,7 +126,14 @@ for (const file of ALL_FILES) {
       listing.aiCommentary = notes.length ? notes : null;
     }
 
-    const target = ROUTE[file]?.[fresh.type];
+    let target = ROUTE[file]?.[fresh.type];
+    // SOLD arşivleri arası tutarlılık: satılmış araç da tahrik+sunroof'a göre doğru
+    // SOLD dosyasında olmalı (soldArchiveFor tek kaynak). listing.drivetrainType bu
+    // noktada fresh.type'a eşit (yukarıda güncellendi ya da zaten eşitti).
+    if (!target && ALL_SOLD_FILES.includes(file)) {
+      const correctSold = soldArchiveFor(listing).name;
+      if (correctSold !== file) target = correctSold;
+    }
     if (target) {
       summary.moves.push({ id: listing.mobileDeId, listingId: listing.listingId, from: file, to: target, type: fresh.type });
     }

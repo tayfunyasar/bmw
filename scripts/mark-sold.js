@@ -1,11 +1,5 @@
-import path from 'path';
-import { moveListing, listingsDir, DEFAULT_SOURCE_FILES } from './lib/move-listing.js';
+import { moveListing, DEFAULT_SOURCE_FILES, soldArchiveFor } from './lib/move-listing.js';
 import { pushSoldAudit } from './lib/sold.js';
-
-const soldArchive = {
-  path: path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_SOLD.json'),
-  name: 'COUPE_GAS_WITH_SUNROOF_SOLD.json'
-};
 
 const id = process.argv[2];
 if (!id) {
@@ -16,7 +10,7 @@ if (!id) {
 const result = moveListing({
   id,
   sourceFiles: [...DEFAULT_SOURCE_FILES, 'CABRIO.json'],
-  pickArchive: () => soldArchive,
+  pickArchive: (sourceFile, car) => soldArchiveFor(car),
   mutateCar: (car, { sourceFile }) => pushSoldAudit(car, sourceFile)
 });
 

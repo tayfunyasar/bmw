@@ -45,7 +45,7 @@ try {
     execSync('npm run format:data', { stdio: 'inherit' });
 
     console.log('\n--- İşlem başarıyla tamamlandı! ---');
-} catch (error) {
+} catch {
     console.error('\nBir hata oluştu. Lütfen Apify Token\'ınızı .env dosyasında kontrol edin.');
     process.exit(1);
 }

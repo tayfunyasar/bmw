@@ -3,7 +3,7 @@
     "code": "S403A",
     "name": "Sunroof",
     "price": 1000,
-    "score": 3,
+    "score": 2,
     "tag": "GATE — must have",
     "features": [
       "Sunroof",
@@ -27,7 +27,7 @@
     "code": "S5AZA",
     "name": "Laser Light",
     "price": 3200,
-    "score": 2,
+    "score": 1,
     "tag": "Rare & expensive",
     "features": [
       "Laser headlights"
@@ -44,7 +44,7 @@
     "code": "S5AUA",
     "name": "Driving Assistant Professional",
     "price": 2500,
-    "score": 3,
+    "score": 2,
     "tag": "ACC + lane keep",
     "features": [
       "Adaptive Cruise Control"
@@ -63,7 +63,7 @@
     "code": "S688A",
     "name": "Harman Kardon Sound",
     "price": 1600,
-    "score": 2,
+    "score": 1,
     "tag": "Audio upgrade",
     "features": [],
     "description": [
@@ -82,10 +82,14 @@
     "code": "S2T4A",
     "name": "M Sport Diff",
     "price": 1500,
-    "score": 3,
+    "score": 2,
     "tag": "Drift & cornering",
     "features": [],
-    "impliedBy": ["M Sportpaket Pro", "M Sport Pro", "M Sport Package Pro"],
+    "impliedBy": [
+      "M Sportpaket Pro",
+      "M Sport Pro",
+      "M Sport Package Pro"
+    ],
     "description": [
       "M Sportdifferential",
       "M Sportdifferenzial",
@@ -101,7 +105,7 @@
     "code": "S610A",
     "name": "Head-Up Display",
     "price": 1400,
-    "score": 2,
+    "score": 1,
     "tag": "Safety",
     "features": [
       "Head-up display"
@@ -118,7 +122,7 @@
     "code": "S5DN_360",
     "name": "360° Camera",
     "price": 900,
-    "score": 2,
+    "score": 1,
     "tag": "Parking",
     "features": [],
     "description": [
@@ -136,7 +140,7 @@
     "code": "KGNL",
     "name": "Alcantara Seats",
     "price": 900,
-    "score": 2,
+    "score": 1,
     "tag": "Interior upgrade",
     "features": [],
     "description": [
@@ -153,7 +157,7 @@
     "code": "S1MAA",
     "name": "Sport Exhaust",
     "price": 350,
-    "score": 2,
+    "score": 1,
     "features": [],
     "description": [
       "Sportabgasanlage",
@@ -168,7 +172,7 @@
     "code": "S536A",
     "name": "Pre-Heater",
     "price": 1500,
-    "score": 2,
+    "score": 1,
     "tag": "Standheizung/Fernstart",
     "features": [
       "Auxiliary heating"
@@ -183,7 +187,7 @@
     "code": "S322A",
     "name": "Comfort Access",
     "price": 800,
-    "score": 1,
+    "score": 0,
     "features": [
       "Keyless central locking"
     ],
@@ -198,7 +202,7 @@
     "code": "S2NHA",
     "name": "M Sport Brake (mavi kaliper)",
     "price": 800,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "M Sportbremse",
@@ -211,7 +215,7 @@
     "code": "S2VFA",
     "name": "Adaptive M Suspension",
     "price": 700,
-    "score": 2,
+    "score": 1,
     "tag": "Handling upgrade",
     "features": [
       "Dynamic chassis control"
@@ -231,7 +235,7 @@
     "code": "S459A",
     "name": "Electric Seats / Memory",
     "price": 700,
-    "score": 1,
+    "score": 0,
     "features": [
       "Electric seat adjustment",
       "Eletric seat adjustment with memory function"
@@ -248,7 +252,7 @@
     "code": "S5DNA",
     "name": "Park Assist+",
     "price": 700,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "PARKING ASSISTANT PLUS",
@@ -268,7 +272,7 @@
     "code": "S6U3A",
     "name": "Live Cockpit Professional",
     "price": 650,
-    "score": 1,
+    "score": 0,
     "features": [
       "Digital cockpit"
     ],
@@ -284,7 +288,7 @@
     "code": "S2VLA",
     "name": "Variable Sport Steering",
     "price": 500,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "Variable Sportlenkung"
@@ -296,7 +300,7 @@
     "code": "S494A",
     "name": "Heated Front Seats",
     "price": 400,
-    "score": 1,
+    "score": 0,
     "features": [
       "Heated seats"
     ],
@@ -311,7 +315,7 @@
     "code": "S248A",
     "name": "Heated Steering Wheel",
     "price": 250,
-    "score": 1,
+    "score": 0,
     "features": [
       "Heated steering wheel"
     ],
@@ -326,7 +330,7 @@
     "code": "S420A",
     "name": "Sun Protection Glass",
     "price": 350,
-    "score": 1,
+    "score": 0,
     "features": [
       "Tinted windows"
     ],
@@ -343,7 +347,7 @@
     "code": "S5ACA",
     "name": "High Beam Assistant",
     "price": 200,
-    "score": 1,
+    "score": 0,
     "features": [
       "High beam assist"
     ],
@@ -357,7 +361,7 @@
     "code": "S6C4A",
     "name": "BMW Connected Pro",
     "price": 200,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "Connected Package Professional",
@@ -370,7 +374,7 @@
     "code": "S430A",
     "name": "Mirror Package",
     "price": 100,
-    "score": 1,
+    "score": 0,
     "features": [
       "Autom. dimming interior mirror"
     ],
@@ -389,14 +393,13 @@
     "code": "S4AWA",
     "name": "Sensatec Dashboard",
     "price": 100,
-    "score": 1,
+    "score": 0,
     "features": [],
     "matchType": "ALL_DESCRIPTION",
     "description": [
       "Instrumententafel",
       "Sensatec"
     ],
-    "matchType": "ALL_DESCRIPTION",
     "props": {},
     "defaultStatus": "no"
   },
@@ -404,7 +407,7 @@
     "code": "S775A",
     "name": "Black Headliner",
     "price": 100,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "Dachhimmel anthrazit",
@@ -417,7 +420,7 @@
     "code": "S3ADA",
     "name": "Remote Engine Start",
     "price": 300,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "Fernstart",
@@ -430,7 +433,7 @@
     "code": "S3AGA",
     "name": "Drive Recorder (dashcam)",
     "price": 300,
-    "score": 1,
+    "score": 0,
     "features": [],
     "description": [
       "Drive Recorder",

@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import 'dotenv/config';
+import { writeRunLog } from './lib/run-log.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,6 +36,13 @@ const urls = args.map(arg => {
     return arg;
 });
 
+// İstenen ID'ler (dönen carId ile aynı formatta) — log'da "hangisi çekilemedi" için.
+const idFromUrl = (u) => {
+    const m = String(u).match(/id=(\d+)/) || String(u).match(/\/(\d+)\.html/);
+    return m ? m[1] : String(u);
+};
+const requestedIds = urls.map(idFromUrl);
+
 // ivanvs/mobile-de-scraper tek run'da yalnizca `maxRecords` kadar kayit
 // dondurur. Bu yuzden URL'leri parca parca (chunk) isleyip sonuclari
 // biriktiriyoruz; boylece tek `import:apify` cagrisi herhangi bir sayida
@@ -58,6 +66,8 @@ async function fetchCarData() {
     const timestamp = Date.now();
     const chunks = chunk(urls, CHUNK_SIZE);
     const newFiles = [];
+    const fetchedIds = [];
+    const chunkErrors = [];
     let fetched = 0;
     let failedChunks = 0;
 
@@ -78,21 +88,41 @@ async function fetchCarData() {
             if (items && items.length > 0) {
                 items.forEach(item => {
                     const idMatch = item.url?.match(/id=(\d+)/) || item.url?.match(/\/(\d+)\.html/);
-                    const carId = item.id || (idMatch ? idMatch[1] : 'unknown');
+                    const carId = String(item.id || (idMatch ? idMatch[1] : 'unknown'));
                     const filename = `${carId}_${timestamp}.json`;
                     fs.writeFileSync(path.join(dumpDir, filename), JSON.stringify(item, null, 2));
                     newFiles.push(filename);
+                    fetchedIds.push(carId);
                 });
                 fetched += items.length;
                 console.log(`Parça ${i + 1}: ${items.length} araç verisi çekildi.`);
             } else {
                 console.warn(`Parça ${i + 1}: veri bulunamadı.`);
+                chunkErrors.push({ chunk: i + 1, ids: batch.map(idFromUrl), error: 'Apify boş sonuç döndürdü (veri bulunamadı)' });
             }
         } catch (error) {
             failedChunks++;
             console.error(`Parça ${i + 1} hatası:`, error.message);
+            chunkErrors.push({ chunk: i + 1, ids: batch.map(idFromUrl), error: error.message });
         }
     }
+
+    // İstenip de dönmeyen ID'ler = çekilemeyenler (403/session error/ilan kalkmış).
+    const missingIds = requestedIds.filter(id => !fetchedIds.includes(id));
+    const logFile = writeRunLog('apify', {
+        actor: ACTOR_ID,
+        requestedCount: requestedIds.length,
+        fetchedCount: fetchedIds.length,
+        missingCount: missingIds.length,
+        requestedIds,
+        fetchedIds,
+        missingIds,
+        chunkErrors,
+    });
+    if (missingIds.length > 0) {
+        console.warn(`\n⚠️  Çekilemeyen ${missingIds.length} ilan: ${missingIds.join(', ')}`);
+    }
+    console.log(`📝 Apify log: ${path.relative(path.resolve(__dirname, '..'), logFile)}`);
 
     if (newFiles.length === 0) {
         console.error('\nMaalesef hiçbir araç verisi çekilemedi.');

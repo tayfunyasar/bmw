@@ -1,6 +1,6 @@
 ---
 name: mobilede-tara
-description: BOOKMARKS.json icindeki mobile.de M440i/M440d arama linkini Chrome'da acar, yeni ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla tarar. Ardisik 7 existing gorunce durur (ust sinir 10 sayfa), yeni ID'leri `npm run import:apify` ile ceker. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "/mobilede-tara" yazdiginda — slash olsun olmasin, bu cumlelerden biri gectiginde DOGRUDAN bu skill'i calistir, kullaniciya secenek sunma.
+description: BOOKMARKS.json icindeki mobile.de M440i/M440d arama linkini Chrome'da acar, yeni ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla tarar. Ardisik 7 existing gorunce durur (ust sinir 10 sayfa), yeni ID'leri `npm run import:apify` ile ceker; ardindan 2 gunluk esikle stale ilanlari `refresh` skill akisiyla (403 kurtarma + move:sell dahil) yeniler ve session-bound 3h loop'u yeniden kurar. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "/mobilede-tara" yazdiginda — slash olsun olmasin, bu cumlelerden biri gectiginde DOGRUDAN bu skill'i calistir, kullaniciya secenek sunma.
 ---
 
 # mobile.de Tara
@@ -50,6 +50,17 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
    - **Durum** sutunu: `new` ise `🆕 new`, `existing` ise `✅ <existingListingId> (<existingIn>)` (orn. `✅ C36 (COUPE_GAS_WITH_SUNROOF)`).
    - Tablonun altinda atlanan kalemleri kisa ozetle: kac sponsorlu, kac GC, kac Cabrio.
    - Ayrica kept icindeki existing/new dagilimini, kac sayfa gezildigini, durdurma nedenini ve adim 7'deki Apify import sonucunu da rapor et (orn. `Sayfa 1-3 gezildi, 12 yeni + 4 existing — 12 yeni ID Apify ile import edildi`).
+9. **Stale ilanlari da yenile (refresh, 2 gun esigi).** Tarama + import bittikten sonra bu adim ATLANMAZ — `refresh` skill'inin (`.claude/skills/refresh/SKILL.md`) TAM akisini, gun esigini **2** yaparak calistir:
+   1. `npm run refresh -- 2` (Bash). Ciktida `403` / "Detected a session error" / "veri bulunamadi" / "Batch N hata verdi" basarisizlik sinyalidir.
+   2. `node scripts/refresh-stale.js --list 2` ile hala stale kalan (= 403 yiyip cekilemeyen) `mobileDeId`'leri bul. Bos ise bu adim biter, dogrudan rapora gec.
+   3. Her basarisiz ID icin `src/data/listings/COUPE_GAS_WITH_SUNROOF.json` icinden `listingUrl`'i bul, Chrome'da `navigate` + `get_page_text` ile ac: sayfa "Bu arac mevcut degil" / bos donuyorsa **kayip/satilmis**, ilan icerigi (fiyat, km) doluysa **gecerli** (dokunma).
+   4. Kayip tespit edilen ID'ler icin `npm run move:sell -- <mobileDeId>` calistir.
+   - **Onay istisnasi:** `refresh` skill'inin manuel calistirilmasinda birden fazla kayip ilan varsa tasimadan once kullaniciya onay sorulur; **bu otomatik loop icinde onay beklenemez** (kimse izlemiyor olabilir) — bu yuzden burada kayip ilanlar dogrudan `move:sell` ile tasinir, onay istenmez. Tasinan her ilan raporda acikca listelenir ki kullanici sonradan gozden gecirebilsin.
+   - Rapora ekle: kac ilan stale bulundu, kac tanesi basariyla yenilendi, kac tanesi 403 yedi, 403 yiyenlerden kaci gecerli/kayip, `move:sell` ile SOLD'a tasinanlarin `listingId (mobileDeId)` listesi.
+10. **Session-bound 3h re-scan loop'u ara.** Rapor sunulduktan sonra bu adim ATLANMAZ: `ScheduleWakeup` ile bu taramayi (adim 1-9, refresh dahil) 3 saat sonra tekrar tetikleyecek bir uyanma kur (dynamic `/loop` modu, ayni skill prompt'unu geri gonder).
+    - **Sadece 09:00–20:00 (yerel saat) araliginda calistir.** Pencere disindaysa bir sonraki gunun 09:00'ina ertele.
+    - `ScheduleWakeup` en fazla 3600s (1s) kabul eder; 3h'lik araligi tutturmak icin saatte bir yeniden kur (check → due degilse kalan sureyle tekrar ScheduleWakeup, due ise taramayi calistir).
+    - Bu loop **session'a bagli** — session kapaninca biter, `/schedule` ile cloud cron KURMA (Chrome extension'i sadece kullanicinin acik oturumunda calisir).
 
 ## Notlar
 

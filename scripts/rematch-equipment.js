@@ -1,4 +1,3 @@
-/* global process */
 // Mevcut kayitli ilanlarin equipmentFeatures'ini GUNCEL matcher mantigiyla
 // yeniden turetir (unknown → no "guvenlik frenli" fallback dahil).
 //

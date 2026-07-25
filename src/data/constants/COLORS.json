@@ -1,0 +1,646 @@
+{
+  "exterior": {
+    " M Brooklyn Grau": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "?": {},
+    "A300 ": {},
+    "ALPINWEISS  III": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "ALPINWEISS III": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "ALPINWEISS UNI": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "ARCTIC RACE BLUE": {
+      "hex": "#1a4a8a"
+    },
+    "ARCTIC RACE BLUE METALLIC": {
+      "hex": "#1a4a8a"
+    },
+    "AVENTURINROT III": {
+      "hex": "#6d1f2a"
+    },
+    "Alpinweiss ": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Alpinweiss 3": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Alpinweiß": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Alpinweiß Uni": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Alpinweiß uni": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Arctic Race Blue": {
+      "hex": "#1a4a8a"
+    },
+    "Arctic Race Blue metallic": {
+      "hex": "#1a4a8a"
+    },
+    "Arctic race blue": {
+      "hex": "#1a4a8a"
+    },
+    "Arctic race blue metallic": {
+      "hex": "#1a4a8a"
+    },
+    "Aventurin-Rot II": {
+      "hex": "#6d1f2a"
+    },
+    "Aventurinrot": {
+      "hex": "#6d1f2a"
+    },
+    "Aventurinrot III": {
+      "hex": "#6d1f2a"
+    },
+    "BLACK": {
+      "hex": "#050508"
+    },
+    "BLACK SAPPHIRE": {
+      "hex": "#050508"
+    },
+    "BLACK SAPPHIRE METALLIC": {
+      "hex": "#050508"
+    },
+    "BLACK SAPPHIRE METALLIC (475)": {
+      "hex": "#050508"
+    },
+    "BLUE": {
+      "hex": "#2563eb",
+      "preference": "favorite"
+    },
+    "BMW Ind. Dravitgrau": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "BMW Individual Dravitgrau": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "BMW Individual Dravitgrau ": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "BMW Individual Dravitgrau metal": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "BMW Individual Frozen Portimao B": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "BMW Individual Frozen Pure Grey": {
+      "hex": "#8a8d8f"
+    },
+    "BMW Individual Tansanitbl": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "BMW Individual Tansanitblau": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "BMW Individual Tansanitblau II": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "BMW Individual Tansanitblau c": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "BMW Individual Tansanitblau me": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "BMW Individuallackierung ": {},
+    "BROOKLYN GRAU": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "BROOKLYN GRAU METALLIC": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "Beyaz": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Black": {
+      "hex": "#050508"
+    },
+    "Black Metallic": {
+      "hex": "#050508"
+    },
+    "Black Sapphire": {
+      "hex": "#050508"
+    },
+    "Black Sapphire ": {
+      "hex": "#050508"
+    },
+    "Black Sapphire Metallic (475)": {
+      "hex": "#050508"
+    },
+    "Black-Sapphire Metallic": {
+      "hex": "#050508"
+    },
+    "Blue Metallic": {
+      "hex": "#2a4a7a",
+      "preference": "favorite"
+    },
+    "Bmw individual tansanit metallic": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "Brooklyn Grau": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "Brooklyn Grau ": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "Brooklyn Grau (C4P)": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "Brooklyn Grau Metallic (C4P)": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "Brooklyn Grau metallic": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "Brooklyn grau": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "DRAVITGRAU": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "DRAVITGRAU ": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "DRAVITGRAU METALLIC": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "DRAVITGRAU METALLIC (C36)": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "Dravit-Grau Metallic": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "Dravitgrau": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "Dravitgrau Metallic": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "Dravitgrau Metallic (C36)": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "Dravitgrau metallic": {
+      "hex": "#7a7d7f",
+      "preference": "favorite"
+    },
+    "FROZEN PURE GREY II METALLIC": {
+      "hex": "#8a8d8f"
+    },
+    "FROZEN PURE GREY METALLIC": {
+      "hex": "#7a7d7f"
+    },
+    "Fire Red": {
+      "hex": "#c8102e"
+    },
+    "Frozen Portimao Blau": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Frozen Portimao Blau metallic": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Frozen Pure Grey II": {
+      "hex": "#8a8d8f"
+    },
+    "GREY": {
+      "hex": "#5e5e5e"
+    },
+    "Grau": {
+      "hex": "#6b7b8a"
+    },
+    "Gray": {
+      "hex": "#808080"
+    },
+    "Green Metallic": {
+      "hex": "#2d5a3d"
+    },
+    "Grey": {
+      "hex": "#5e5e5e"
+    },
+    "Grey Metallic": {
+      "hex": "#7a7d7f"
+    },
+    "Lackierung: Metallic": {},
+    "M Brooklyn Grau": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "M Brooklyn Grau - C4P": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "M Brooklyn Grau Metallic": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "M Brooklyn Grau metallic": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "M Portimao Blau": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "MINERALWEISS": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "MINERALWEISS MET.": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "MINERALWEISS METALLIC": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Mineralweiss": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Mineralweiss Metallic": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Mineralweiss metallic": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Mineralweiß": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Mineralweiß Metallic": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Mineralweiß Metallic (A96)": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Oxide Grey II Metallic": {
+      "hex": "#6b6b6b"
+    },
+    "PORTIMAO BLAU": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "PORTIMAO BLAU METALLIC": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Portimao Blau": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Portimao Blau metallic": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Portimao Blue": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Portimao blau": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "Purple": {
+      "hex": "#6a0dad"
+    },
+    "Red Metallic": {
+      "hex": "#7a1a22"
+    },
+    "SAN REMO GREEN": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "SAN REMO GREEN METALLIC": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "SANREMO GREEN": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "SANREMO GREEN METALLIC": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "SAPHIRSCHWARZ": {
+      "hex": "#050508"
+    },
+    "SCHWARZ": {
+      "hex": "#050508"
+    },
+    "SONDERLACKIERUNG": {},
+    "SUNSET ORANGE": {
+      "hex": "#cc5500"
+    },
+    "San Remo Green": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Sanremo Green": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Sanremo Green Metallic": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Sanremo Green metallic": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Sanremo Grun metallic (C4E)": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Sanremo Grün": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Sanremo green metallic": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "Saphirschwarz": {
+      "hex": "#050508"
+    },
+    "Saphirschwarz ": {
+      "hex": "#050508"
+    },
+    "Saphirschwarz  - 475": {
+      "hex": "#050508"
+    },
+    "Saphirschwarz - 475": {
+      "hex": "#050508"
+    },
+    "Saphirschwarz Metallic": {
+      "hex": "#050508"
+    },
+    "Saphirschwarz metallic": {
+      "hex": "#050508"
+    },
+    "Saphirschwarz metallic-475": {
+      "hex": "#050508"
+    },
+    "Silver Metallic": {
+      "hex": "#c0c0c0"
+    },
+    "Sophistograu Brillianteffekt": {
+      "hex": "#5e5e5e",
+      "preference": "favorite"
+    },
+    "Sophistograu-metallic": {
+      "hex": "#5e5e5e",
+      "preference": "favorite"
+    },
+    "Sunset Orange": {
+      "hex": "#cc5500"
+    },
+    "TANSANITBLAU": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "TANSANITBLAU II": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "TANSANITBLAU II METALLIC": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "Tansanit Blue II": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "Tansanitblau": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "Tansanitblau II": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "Tansanitblau II metallic": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "White": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "White Metallic": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "arctic race blue": {
+      "hex": "#1a4a8a"
+    },
+    "black sapphire metallic": {
+      "hex": "#050508"
+    },
+    "black-sapphire ": {
+      "hex": "#050508"
+    },
+    "brooklyn grey": {
+      "hex": "#6b7b8a",
+      "preference": "disliked"
+    },
+    "grün": {
+      "hex": "#2d5a3d"
+    },
+    "mineralweiss": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "san remo green": {
+      "hex": "#2d5a3d",
+      "preference": "disliked"
+    },
+    "saphirschwarz": {
+      "hex": "#050508"
+    },
+    "tansanitblau ii": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "weiss": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "wählbar": {}
+  },
+  "interior": {
+    "?": {},
+    "Alcantara": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara / Sensatec Siyah": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara Bej": {
+      "hex": "#c8b89a"
+    },
+    "Alcantara Black": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara Siyah": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara Siyah (Blau stitch)": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara, Black": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara, Blue": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara, Brown": {
+      "hex": "#604020",
+      "preference": "disliked"
+    },
+    "Alcantara, Other": {
+      "hex": "#1a1a2e"
+    },
+    "Alcantara-Leder": {
+      "hex": "#1a1a2e"
+    },
+    "Black": {
+      "hex": "#1a1a1a"
+    },
+    "Blue": {
+      "hex": "#2a4a7a"
+    },
+    "Cloth, Black": {
+      "hex": "#1a1a1a"
+    },
+    "Cloth, Other": {},
+    "Deri": {
+      "hex": "#1a1a1a"
+    },
+    "Deri Siyah": {
+      "hex": "#1a1a1a"
+    },
+    "Full leather": {
+      "hex": "#1a1a1a"
+    },
+    "Full leather, Beige": {
+      "hex": "#c8b89a"
+    },
+    "Full leather, Black": {
+      "hex": "#1a1a1a"
+    },
+    "Full leather, Blue": {
+      "hex": "#2a4a7a"
+    },
+    "Full leather, Brown": {
+      "hex": "#604020",
+      "preference": "disliked"
+    },
+    "Full leather, Grey": {
+      "hex": "#808080"
+    },
+    "Full leather, Other": {},
+    "Full leather, Red": {
+      "hex": "#8b1a2a",
+      "preference": "disliked"
+    },
+    "Imitation leather, Beige": {
+      "hex": "#c8b89a"
+    },
+    "Imitation leather, Black": {
+      "hex": "#1a1a1a"
+    },
+    "Imitation leather, Other": {},
+    "Imitation leather, Red": {
+      "hex": "#8b1a2a",
+      "preference": "disliked"
+    },
+    "Leder Vernasca Schwarz": {
+      "hex": "#1a1a1a"
+    },
+    "Leder Vernasca Schwarz/Blau": {
+      "hex": "#1a1a2e"
+    },
+    "Merino Siyah (Individual)": {
+      "hex": "#1a1a1a"
+    },
+    "Other": {
+      "hex": "#1a1a1a"
+    },
+    "Other, Black": {
+      "hex": "#1a1a1a"
+    },
+    "Other, Other": {},
+    "Part leather": {
+      "hex": "#1a1a1a"
+    },
+    "Part leather, Black": {
+      "hex": "#1a1a1a"
+    },
+    "Part leather, Red": {
+      "hex": "#1a1a1a",
+      "preference": "disliked"
+    },
+    "Red": {
+      "hex": "#8b1a2a",
+      "preference": "disliked"
+    },
+    "Velour, Black": {
+      "hex": "#1a1a1a"
+    },
+    "Vernasca Leather Black with Blue Contrast Stitching": {
+      "hex": "#1a1a1a"
+    },
+    "Vernasca Siyah": {
+      "hex": "#1a1a1a"
+    }
+  }
+}

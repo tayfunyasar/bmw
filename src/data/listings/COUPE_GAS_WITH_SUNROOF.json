@@ -75,7 +75,7 @@
     },
     "listingDates": {
       "createdTime": "2025-10-16T09:37:41.000Z",
-      "modifiedTime": "2026-06-30T15:28:05.000Z",
+      "modifiedTime": "2026-07-21T16:52:45.000Z",
       "renewedTime": "2026-06-15T12:35:32.000Z"
     },
     "auditHistory": [
@@ -423,7 +423,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-09T13:42:58.000Z",
-      "modifiedTime": "2026-07-07T17:32:13.000Z",
+      "modifiedTime": "2026-07-21T19:24:16.000Z",
       "renewedTime": "2026-07-07T12:54:16.000Z"
     },
     "auditHistory": [
@@ -578,7 +578,7 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 53180,
+    "basePriceEuro": 52520,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 38926,
     "firstRegistrationYearAndMonth": [
@@ -654,7 +654,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
-      "modifiedTime": "2026-07-07T15:24:17.000Z",
+      "modifiedTime": "2026-07-23T08:18:23.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
     "overrideFeatures": {
@@ -733,6 +733,17 @@
           }
         },
         "auditDate": "2026-07-03T20:16:44.981Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 53180,
+            "new": 52520
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.706Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -812,7 +823,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T11:42:34.000Z",
-      "modifiedTime": "2026-07-03T00:40:37.000Z",
+      "modifiedTime": "2026-07-21T18:50:07.000Z",
       "renewedTime": "2026-04-16T11:42:34.000Z"
     },
     "auditHistory": [
@@ -923,7 +934,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-15T13:03:07.000Z",
-      "modifiedTime": "2026-07-07T16:52:17.000Z",
+      "modifiedTime": "2026-07-21T18:57:04.000Z",
       "renewedTime": "2026-07-02T08:38:29.000Z"
     },
     "auditHistory": [
@@ -1008,7 +1019,7 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 50950,
+    "basePriceEuro": 49950,
     "estimatedImportTaxEuro": 11097,
     "mileageKm": 31922,
     "firstRegistrationYearAndMonth": [
@@ -1073,7 +1084,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-16T18:06:12.000Z",
-      "modifiedTime": "2026-07-07T18:42:28.000Z",
+      "modifiedTime": "2026-07-21T18:07:00.000Z",
       "renewedTime": "2026-05-16T18:06:12.000Z"
     },
     "auditHistory": [
@@ -1146,6 +1157,17 @@
           }
         },
         "auditDate": "2026-07-11T22:39:27.764Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 50950,
+            "new": 49950
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.709Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1225,8 +1247,8 @@
     },
     "listingDates": {
       "createdTime": "2026-05-18T09:18:47.000Z",
-      "modifiedTime": "2026-07-07T14:44:24.000Z",
-      "renewedTime": "2026-06-27T01:00:16.000Z"
+      "modifiedTime": "2026-07-21T15:43:15.000Z",
+      "renewedTime": "2026-07-17T01:02:18.000Z"
     },
     "auditHistory": [
       {
@@ -1269,6 +1291,12 @@
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-27T01:00:16.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-17T01:02:18.000Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1348,7 +1376,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-08T05:29:33.000Z",
-      "modifiedTime": "2026-07-07T14:27:08.000Z",
+      "modifiedTime": "2026-07-21T16:24:54.000Z",
       "renewedTime": "2026-06-08T05:29:33.000Z"
     },
     "auditHistory": [
@@ -1459,7 +1487,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-08T10:45:05.000Z",
-      "modifiedTime": "2026-07-07T22:42:05.000Z",
+      "modifiedTime": "2026-07-21T16:17:51.000Z",
       "renewedTime": "2026-06-08T10:45:05.000Z"
     },
     "auditHistory": [
@@ -1494,7 +1522,7 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 49980,
+    "basePriceEuro": 49460.01,
     "estimatedImportTaxEuro": 7428,
     "mileageKm": 31720,
     "firstRegistrationYearAndMonth": [
@@ -1559,7 +1587,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-10T06:16:35.000Z",
-      "modifiedTime": "2026-07-08T09:02:34.000Z",
+      "modifiedTime": "2026-07-21T15:16:10.000Z",
       "renewedTime": "2026-06-10T06:16:35.000Z"
     },
     "auditHistory": [
@@ -1623,6 +1651,17 @@
           }
         },
         "auditDate": "2026-07-11T22:39:27.767Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 49980,
+            "new": 49460.01
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.712Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1637,7 +1676,7 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 51980,
+    "basePriceEuro": 51107,
     "estimatedImportTaxEuro": 11097,
     "mileageKm": 59507,
     "firstRegistrationYearAndMonth": [
@@ -1702,7 +1741,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-23T06:56:09.000Z",
-      "modifiedTime": "2026-07-07T15:03:16.000Z",
+      "modifiedTime": "2026-07-21T20:35:34.000Z",
       "renewedTime": "2026-06-23T06:56:09.000Z"
     },
     "auditHistory": [
@@ -1723,6 +1762,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-06-23T08:06:05.474Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 51980,
+            "new": 51107
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.712Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1753,7 +1803,7 @@
       "history": []
     },
     "nextInspectionDate": "02/2027",
-    "sellerTypeOrName": "BMW AG Niederlassung Dreieich ★4.6",
+    "sellerTypeOrName": "BMW AG Niederlassung Dreieich ★4.5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
     "listingLocation": "🇩🇪 Sprendlingen",
@@ -1802,7 +1852,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-02T03:26:46.000Z",
-      "modifiedTime": "2026-07-07T13:35:57.000Z",
+      "modifiedTime": "2026-07-21T14:28:16.000Z",
       "renewedTime": "2026-07-02T03:26:46.000Z"
     },
     "auditHistory": [
@@ -1823,6 +1873,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-03T17:41:52.881Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "BMW AG Niederlassung Dreieich ★4.6",
+            "new": "BMW AG Niederlassung Dreieich ★4.5"
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.713Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1902,7 +1963,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-03T20:48:53.000Z",
-      "modifiedTime": "2026-07-07T13:44:15.000Z",
+      "modifiedTime": "2026-07-21T15:44:25.000Z",
       "renewedTime": "2026-07-03T20:48:53.000Z"
     },
     "auditHistory": [
@@ -2002,7 +2063,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-08T11:39:54.000Z",
-      "modifiedTime": "2026-07-09T05:55:35.000Z",
+      "modifiedTime": "2026-07-21T15:17:16.000Z",
       "renewedTime": "2026-07-08T11:39:54.000Z"
     },
     "auditHistory": [
@@ -2032,8 +2093,8 @@
     "listingId": "C618",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-head-up-hk-hifi-dab-wlan-gsd-komfortzg-t%C3%BCbingen/460247669.html",
     "mobileDeId": "460247669",
-    "exteriorColorName": "DRAVITGRAU",
-    "interiorColorName": "Other",
+    "exteriorColorName": "Dravitgrau metallic",
+    "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
@@ -2046,7 +2107,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "no"
+      "exists": "yes"
     },
     "service": {
       "type": "unknown",
@@ -2102,7 +2163,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-09T14:08:10.000Z",
-      "modifiedTime": "2026-07-09T15:21:41.000Z",
+      "modifiedTime": "2026-07-21T15:01:51.000Z",
       "renewedTime": "2026-07-09T14:08:10.000Z"
     },
     "auditHistory": [
@@ -2123,40 +2184,174 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-09T15:08:51.417Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "exteriorColorName": {
+            "old": "DRAVITGRAU",
+            "new": "Dravitgrau metallic"
+          },
+          "interiorColorName": {
+            "old": "Other",
+            "new": "Full leather, Brown"
+          },
+          "warranty": {
+            "old": {
+              "exists": "no"
+            },
+            "new": {
+              "exists": "yes"
+            }
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.714Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
   },
   {
-    "listingId": "C623",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-hud-laser-led-sportabgasanlage-navi-waldbr%C3%B6l/460276780.html",
-    "mobileDeId": "460276780",
-    "exteriorColorName": "grün",
-    "interiorColorName": "Imitation leather, Beige",
+    "listingId": "C647",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-m-sport-laserlicht-memory-shz-fulda/460722379.html",
+    "mobileDeId": "460722379",
+    "exteriorColorName": "ARCTIC RACE BLUE METALLIC",
+    "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 47890,
-    "estimatedImportTaxEuro": 7428,
-    "mileageKm": 52509,
+    "basePriceEuro": 50800,
+    "estimatedImportTaxEuro": 11097,
+    "mileageKm": 51557,
     "firstRegistrationYearAndMonth": [
-      2022,
-      12
+      2023,
+      10
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "no"
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
       "history": []
     },
     "nextInspectionDate": "New",
-    "sellerTypeOrName": "Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.8",
+    "sellerTypeOrName": "Autohaus Fulda Krah & Enders GmbH ★4.9",
+    "modelGeneration": "LCI",
+    "co2EmissionsGramPerKm": 186,
+    "listingLocation": "🇩🇪 36043 Fulda",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-15T13:42:23.000Z",
+      "modifiedTime": "2026-07-22T01:09:57.000Z",
+      "renewedTime": "2026-07-15T13:42:23.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-15T13:42:23.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-15T13:42:23.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-15T16:12:02.389Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 49800,
+            "new": 50800
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.715Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C662",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ia-xdrive-coupe-unfallfrei-deutsch-laser-2hd-nieder-olm-bei-mainz/460824379.html",
+    "mobileDeId": "460824379",
+    "exteriorColorName": "MINERALWEISS MET.",
+    "interiorColorName": "Alcantara, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 49900,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 44122,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      5
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "EXKLUSIV Automobile by D&D GmbH ★4.8",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 51545 Waldbröl",
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇩🇪 55268 Nieder Olm (bei Mainz)",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -2168,7 +2363,107 @@
       "S688A": "yes",
       "S2T4A": "yes",
       "S610A": "yes",
-      "S5DN_360": "no",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-16T16:15:58.000Z",
+      "modifiedTime": "2026-07-21T13:55:54.000Z",
+      "renewedTime": "2026-07-16T16:15:58.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T16:15:58.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T16:15:58.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-17T07:02:50.760Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C669",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-shadow-lsr-acc-hud-egsd-360-m-sitze-hagen/460877499.html",
+    "mobileDeId": "460877499",
+    "exteriorColorName": "BROOKLYN GRAU METALLIC",
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 54933,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 21726,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      1
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Reinhardt Automobile GmbH ★4.7",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 184,
+    "listingLocation": "🇩🇪 58091 Hagen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
       "KGNL": "no",
       "S322A": "yes",
       "S2VFA": "no",
@@ -2178,54 +2473,276 @@
       "S715A": "yes",
       "S2VLA": "no",
       "S494A": "yes",
-      "S248A": "yes",
+      "S248A": "no",
       "S420A": "yes",
-      "S1MAA": "yes",
+      "S1MAA": "unknown",
       "S5ACA": "yes",
       "S6C4A": "yes",
       "S430A": "yes",
-      "S4AWA": "yes",
+      "S4AWA": "no",
       "S775A": "yes",
       "S493A": "yes",
       "S536A": "no",
-      "S2NHA": "no",
-      "S3ACA": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
       "S3ADA": "no",
       "S3AGA": "no",
-      "S488A": "no",
+      "S488A": "yes",
       "S521A": "yes",
       "S524A": "yes",
       "S265A": "yes",
-      "S216A": "yes",
+      "S216A": "no",
       "S302A": "yes",
       "S4NHA": "no"
     },
     "listingDates": {
-      "createdTime": "2026-07-09T19:39:46.000Z",
-      "modifiedTime": "2026-07-10T06:11:50.000Z",
-      "renewedTime": "2026-07-09T19:39:46.000Z"
+      "createdTime": "2026-07-17T10:53:16.000Z",
+      "modifiedTime": "2026-07-24T08:11:23.000Z",
+      "renewedTime": "2026-07-17T10:53:16.000Z"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
         "detail": null,
         "changes": null,
-        "auditDate": "2026-07-09T19:39:46.000Z"
+        "auditDate": "2026-07-17T10:53:16.000Z"
       },
       {
         "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
-        "auditDate": "2026-07-09T19:39:46.000Z"
+        "auditDate": "2026-07-17T10:53:16.000Z"
       },
       {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-07-10T07:03:51.504Z"
+        "auditDate": "2026-07-17T13:08:37.279Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 54950,
+            "new": 54933
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.716Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C687",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-grolsheim/461084745.html",
+    "mobileDeId": "461084745",
+    "exteriorColorName": "Grey Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 52990,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 32000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "06/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 55459 Grolsheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "no",
+      "S2NHA": "unknown",
+      "S3ACA": "yes",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-20T10:43:12.000Z",
+      "modifiedTime": "2026-07-21T13:21:11.000Z",
+      "renewedTime": "2026-07-20T10:43:12.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-20T10:43:12.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-23T16:29:16.950Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C692",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-navi-leder-acc-glasdach-elektr-sitz-esslingen-am-neckar/461121733.html",
+    "mobileDeId": "461121733",
+    "exteriorColorName": "BMW Individuallackierung ",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": false,
+    "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+    "basePriceEuro": 53930,
+    "estimatedImportTaxEuro": 7428,
+    "mileageKm": 43193,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      5
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.9",
+    "modelGeneration": "Pre-LCI",
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 73730 Esslingen am Neckar",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "yes",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "no",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-20T17:14:52.000Z",
+      "modifiedTime": "2026-07-24T17:18:39.000Z",
+      "renewedTime": "2026-07-20T17:14:52.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-20T17:14:52.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-20T17:14:52.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-23T16:29:16.955Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "mileageKm": {
+            "old": 12566,
+            "new": 43193
+          },
+          "exteriorColorName": {
+            "old": "BMW Individual Tansanitbl",
+            "new": "BMW Individuallackierung "
+          }
+        },
+        "auditDate": "2026-07-24T21:40:14.486Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": [
+      "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+    ]
   }
 ]

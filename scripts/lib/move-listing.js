@@ -1,11 +1,34 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { RWD } from './drivetrain.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const listingsDir = path.resolve(__dirname, '../../src/data/listings');
+
+// SOLD arşivi artık tahrik + sunroof'a göre ayrık (aktif dosya yapısıyla simetri).
+// Tek kaynak: parse-car-json / mark-sold / rematch-drivetrain hepsi buradan seçer.
+export const SOLD_FILES = {
+  xdrive:       'COUPE_GAS_WITH_SUNROOF_SOLD.json',
+  rwdSunroof:   'COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json',
+  rwdNoSunroof: 'COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json',
+};
+
+export const ALL_SOLD_FILES = Object.values(SOLD_FILES);
+
+const archiveObj = (name) => ({ path: path.join(listingsDir, name), name });
+
+// Bir aracın gitmesi gereken SOLD dosyası: xDrive → tek dosya; RWD → sunroof'a göre
+// (S403A==="no" ise WITHOUT, aksi halde — yes/unknown — WITH). Override drivetrain öncelikli.
+export function soldArchiveFor(car) {
+  const ov = car.overrideFeatures?.drivetrainType;
+  const drive = (ov && (ov.value ?? ov)) || car.drivetrainType;
+  if (drive !== RWD) return archiveObj(SOLD_FILES.xdrive);
+  const noSunroof = car.equipmentFeatures?.S403A === 'no';
+  return archiveObj(noSunroof ? SOLD_FILES.rwdNoSunroof : SOLD_FILES.rwdSunroof);
+}
 
 export const DEFAULT_SOURCE_FILES = [
   'COUPE_GAS_WITH_SUNROOF.json',
@@ -51,7 +74,7 @@ export function moveListing({ id, sourceFiles = DEFAULT_SOURCE_FILES, pickArchiv
     return { found: false };
   }
 
-  const archive = pickArchive(sourceFile);
+  const archive = pickArchive(sourceFile, foundCar);
   mutateCar(foundCar, { sourceFile, archive });
 
   const archiveData = JSON.parse(fs.readFileSync(archive.path, 'utf-8'));

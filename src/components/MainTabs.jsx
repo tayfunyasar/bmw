@@ -2,12 +2,12 @@ import React, { useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Tabs } from 'antd';
 import { yearGroups, sortedYears, allByTotalCost, sortByTotalCost } from '../utils/pricingCalculator';
-import { soldGasListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
-import { useFrozenCars } from './FrozenCarsContext';
+import { soldGasListings, rwdSoldWithSunroofListings, rwdSoldWithoutSunroofListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
+import { useFrozenCars } from './useFrozenCars';
 import { VehicleTableCard } from './VehicleTableCard';
 import { CarTable } from './common/CarTable';
 import { CarsWithRecentSubTabs } from './CarsWithRecentSubTabs';
-import { computeSuggestedIds } from './Recommendations';
+import { computeSuggestedIds } from '../utils/recommendations';
 import { YearlyComparisonTab } from './tabs/YearlyComparisonTab';
 import { RulesTab } from './tabs/RulesTab';
 import { BookmarksTab } from './tabs/BookmarksTab';
@@ -25,7 +25,8 @@ export const MainTabs = () => {
   };
 
   const sorted = useMemo(() => ({
-    sold: sortByTotalCost(soldGasListings),
+    // SOLD sekmesi tüm satılmışları gösterir (xDrive + RWD); dosyalar ayrık, görünüm birleşik.
+    sold: sortByTotalCost([...soldGasListings, ...rwdSoldWithSunroofListings, ...rwdSoldWithoutSunroofListings]),
     rwdSunroof: sortByTotalCost(rwdGasWithSunroofListings),
     rwdNoSunroof: sortByTotalCost(rwdGasWithoutSunroofListings),
     noSunroof: sortByTotalCost(noSunroofGas),

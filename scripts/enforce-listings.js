@@ -1,4 +1,3 @@
-/* global process */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -53,9 +52,11 @@ const listingsDir = path.resolve(__dirname, '../src/data/listings');
 const files = [
   'COUPE_GAS_WITH_SUNROOF.json', 
   'COUPE_GAS_WITHOUT_SUNROOF.json', 
-  'COUPE_GAS_WITH_SUNROOF_SOLD.json', 
-  'COUPE_DIESEL_WITH_SUNROOF.json', 
-  'COUPE_GAS_RWD_WITH_SUNROOF.json', 
+  'COUPE_GAS_WITH_SUNROOF_SOLD.json',
+  'COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json',
+  'COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json',
+  'COUPE_DIESEL_WITH_SUNROOF.json',
+  'COUPE_GAS_RWD_WITH_SUNROOF.json',
   'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
   'DELETED_CARS.json',
   'GRAN_COUPE.json',

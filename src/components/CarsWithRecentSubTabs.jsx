@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { Tabs } from 'antd';
 import { sortByTotalCost } from '../utils/pricingCalculator';
 import { CarTable } from './common/CarTable';
+import { APP } from '../data';
 
-const RECENT_DAYS_OPTIONS = [1, 3, 7, 14, 30];
+const RECENT_DAYS_OPTIONS = APP.recentDaysOptions;
 
 const getCarPublishedDate = (car) => {
   const published = car.auditHistory?.find(h => h.action?.includes('İlan Yayınlandı'));

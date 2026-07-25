@@ -5,63 +5,13 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ROOT_KEYS_ORDER = [
-  'listingId',
-  'listingUrl',
-  'dealerListingUrl',
-  'mobileDeId',
-  'exteriorColorName',
-  'interiorColorName',
-  'drivetrainType',
-  'drivetrainCertain',
-  'drivetrainReason',
-  'basePriceEuro',
-  'estimatedImportTaxEuro',
-  'mileageKm',
-  'firstRegistrationYearAndMonth',
-  'numberOfPreviousOwners',
-  'warranty',
-  'service',
-  'nextInspectionDate',
-  'sellerTypeOrName',
-  'modelGeneration',
-  'co2EmissionsGramPerKm',
-  'listingLocation',
-  'curatorPickBadge',
-  'curatorPersonalNotes',
-  'listingDescriptionNotes',
-  'listingAdditionalFeatures',
-  'equipmentFeatures',
-  'listingDates',
-  'overrideFeatures',
-  'auditHistory',
-  'cardThemeColorHex',
-  'aiCommentary'
-];
-
-const EQUIP_KEYS_ORDER = [
-  'S403A', 'S5AZA', 'S5AUA', 'S688A', 'S2T4A',
-  'S610A', 'S5DN_360', 'KGNL', 'S322A', 'S2VFA', 'S459A',
-  'S5DNA', 'S6U3A', 'S715A', 'S2VLA', 'S494A', 'S248A',
-  'S420A', 'S1MAA', 'S5ACA', 'S6C4A', 'S430A', 'S4AWA',
-  'S775A', 'S493A', 'S536A', 'S2NHA', 'S3ACA', 'S3ADA', 'S3AGA',
-  'S488A', 'S521A', 'S524A', 'S265A', 'S216A', 'S302A', 'S4NHA'
-];
+// Şema (anahtar sırası) + dosya listesi veri olarak LISTING_FILES.json'da (config-driven).
+const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
+const ROOT_KEYS_ORDER = LISTING_FILES.rootKeysOrder;
+const EQUIP_KEYS_ORDER = LISTING_FILES.equipKeysOrder;
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const files = [
-  'COUPE_GAS_WITH_SUNROOF.json', 
-  'COUPE_GAS_WITHOUT_SUNROOF.json', 
-  'COUPE_GAS_WITH_SUNROOF_SOLD.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json',
-  'COUPE_DIESEL_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
-  'DELETED_CARS.json',
-  'GRAN_COUPE.json',
-  'CABRIO.json'
-];
+const files = LISTING_FILES.enforceFiles;
 
 const isFix = process.argv.includes('--fix');
 let hasError = false;

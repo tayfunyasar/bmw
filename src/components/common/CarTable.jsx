@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline, Tooltip } from 'antd';
+import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline, Tooltip, Grid } from 'antd';
 import { ClockCircleOutlined, PushpinOutlined, PushpinFilled } from '@ant-design/icons';
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
+import { MobileCarCards } from './MobileCarCards';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
 import { useFrozenCars } from '../useFrozenCars';
 import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
@@ -24,6 +25,8 @@ export const CarTable = ({
   const [selectedCarHistory, setSelectedCarHistory] = useState(null);
   const { frozenIds, toggle: toggleFreeze } = useFrozenCars() || { frozenIds: [], toggle: () => {} };
   const isFrozen = (id) => frozenIds.includes(id);
+  const screens = Grid.useBreakpoint();
+  const isMobile = screens.md === false; // md altı (telefon/dar) → kart görünümü
 
   const showHistory = (car) => {
     setSelectedCarHistory(car);
@@ -40,7 +43,7 @@ export const CarTable = ({
       render: (text, record) => record.isSection
         ? <Text strong style={{ fontSize: '13px' }}>{text}</Text>
         : <Text strong={record.isFeature} type={record.isFeature ? "warning" : "secondary"}>{text}</Text>,
-      onCell: (record) => record.isSection ? { style: { backgroundColor: '#fafafa', borderBottom: '2px solid #d9d9d9' } } : {}
+      onCell: (record) => record.isSection ? { style: { backgroundColor: UI_COLORS.sectionBg, borderBottom: `2px solid ${UI_COLORS.sectionBorder}` } } : {}
     }
   ].concat(cars.map((car, index) => ({
       title: (
@@ -54,7 +57,7 @@ export const CarTable = ({
             size="small"
             icon={isFrozen(car.listingId) ? <PushpinFilled /> : <PushpinOutlined />}
             onClick={() => toggleFreeze(car.listingId)}
-            style={{ marginTop: 4, fontSize: '12px', color: isFrozen(car.listingId) ? '#1677ff' : undefined }}
+            style={{ marginTop: 4, fontSize: '12px', color: isFrozen(car.listingId) ? UI_COLORS.linkActive : undefined }}
           >
             {isFrozen(car.listingId) ? 'Unfreeze' : 'Freeze'}
           </Button>
@@ -71,7 +74,7 @@ export const CarTable = ({
       width: 120,
       onCell: (record) => {
         const style = {};
-        if (record.isSection) Object.assign(style, { backgroundColor: '#fafafa', borderBottom: '2px solid #d9d9d9' });
+        if (record.isSection) Object.assign(style, { backgroundColor: UI_COLORS.sectionBg, borderBottom: `2px solid ${UI_COLORS.sectionBorder}` });
         else if (car.isSold) Object.assign(style, { backgroundColor: 'rgba(255, 77, 79, 0.06)' });
         else if (car.curatorPickBadge) Object.assign(style, { backgroundColor: 'rgba(82, 196, 26, 0.06)' });
         return { style };
@@ -327,8 +330,10 @@ export const CarTable = ({
 
   return (
     <Flex vertical gap="large">
-      <Card title={renderTitle()}>
-        <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} rowHoverable={false} />
+      <Card title={renderTitle()} styles={{ body: isMobile ? { padding: 10 } : undefined }}>
+        {isMobile
+          ? <MobileCarCards cars={cars} isRejected={isRejected} rejectedLabel={rejectedLabel} />
+          : <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} rowHoverable={false} />}
       </Card>
 
       <Modal

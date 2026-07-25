@@ -1,14 +1,17 @@
 import React from 'react';
-import { Typography, Space } from 'antd';
+import { Typography, Space, Tooltip } from 'antd';
 import { CheckCircleFilled, CloseCircleFilled, QuestionCircleOutlined, StarFilled } from '@ant-design/icons';
-import { isColorFav, isColorNotFav, isInteriorNotFav } from '../../data';
+import { isColorFav, isColorNotFav, isInteriorNotFav, UI_COLORS } from '../../data';
 
 const { Text } = Typography;
 
-export const FeatureIcon = ({ type }) => {
-  if (type === "yes") return <Text type="success"><CheckCircleFilled /></Text>;
-  if (type === "no") return <Text type="danger"><CloseCircleFilled /></Text>;
-  return <Text type="warning"><QuestionCircleOutlined /></Text>;
+// name (donanım adı) verilirse ikon tooltip'te "Ad — durum" gösterir.
+export const FeatureIcon = ({ type, name }) => {
+  const s = type === "yes" ? { el: <CheckCircleFilled />, t: "success", txt: "Var ✅" }
+    : type === "no" ? { el: <CloseCircleFilled />, t: "danger", txt: "Yok ❌" }
+    : { el: <QuestionCircleOutlined />, t: "warning", txt: "Belirsiz — bayi linkiyle çözülür" };
+  const title = name ? `${name} — ${s.txt}` : s.txt;
+  return <Tooltip title={title}><Text type={s.t}>{s.el}</Text></Tooltip>;
 };
 
 export const StarRating = ({ count }) => (
@@ -22,15 +25,15 @@ export const StarRating = ({ count }) => (
 const ColorSwatch = ({ colorCode }) => (
   colorCode
     ? <div style={{ width: 28, height: 28, borderRadius: 6, background: colorCode, border: '1px solid rgba(0,0,0,0.1)', flexShrink: 0 }} />
-    : <QuestionCircleOutlined style={{ fontSize: 22, color: '#999', flexShrink: 0 }} />
+    : <QuestionCircleOutlined style={{ fontSize: 22, color: UI_COLORS.muted, flexShrink: 0 }} />
 );
 
 export const ColorDisplay = ({ colorCode, colorName }) => (
   <Space size={4}>
     {colorName ? <ColorSwatch colorCode={colorCode} /> : null}
     <Text>{colorName || "—"}</Text>
-    {isColorFav(colorName) && <Text>⭐</Text>}
-    {isColorNotFav(colorName) && <Text>👎</Text>}
+    {isColorFav(colorName) && <Tooltip title="Favori dış renk — skorda +7.5"><Text>⭐</Text></Tooltip>}
+    {isColorNotFav(colorName) && <Tooltip title="Sevilmeyen dış renk — skorda −15"><Text>👎</Text></Tooltip>}
   </Space>
 );
 
@@ -40,7 +43,7 @@ export const InteriorDisplay = ({ colorCode, colorName, alcantara }) => (
   <Space size={4}>
     <ColorSwatch colorCode={colorCode} />
     <Text>{colorName}</Text>
-    {alcantara && <Text>⭐</Text>}
-    {isInteriorNotFav(colorName) && <Text>👎</Text>}
+    {alcantara && <Tooltip title="Alcantara koltuk — Donanım'da puanlanır (KGNL), Arzu'da değil"><Text>⭐</Text></Tooltip>}
+    {isInteriorNotFav(colorName) && <Tooltip title="Sevilmeyen iç renk (kırmızı/kahve) — skorda −15"><Text>👎</Text></Tooltip>}
   </Space>
 );

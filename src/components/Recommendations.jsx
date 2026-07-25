@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Flex, Typography, Tooltip } from 'antd';
 import { CATEGORIES, TIERS, rankPicks } from '../utils/recommendations';
 import { listingAgeInDays } from '../utils/pricingCalculator';
+import { UI_COLORS } from '../data';
 
 const { Text, Link } = Typography;
 
@@ -11,7 +12,7 @@ const formatScore = (n) => (typeof n === 'number' ? Math.round(n * 10) / 10 : n)
 // İlan yaşı rozeti: yeni (≤5g) yeşil, orta sarı, bayat (≥30g) kırmızı. Staleness cezası ile hizalı.
 const ageBadge = (days) => {
   if (days == null) return null;
-  const color = days <= 5 ? '#52c41a' : days < 30 ? '#d4a017' : '#ff4d4f';
+  const color = days <= 5 ? UI_COLORS.statusFresh : days < 30 ? UI_COLORS.gaugeMid : UI_COLORS.statusStale;
   const label = days <= 5 ? `🆕 ${days} gün` : `🕐 ${days} gün`;
   return <Text style={{ fontSize: '11px', color, fontWeight: 600 }}>{label}</Text>;
 };
@@ -23,9 +24,9 @@ const ScoreBreakdown = ({ breakdown, total }) => (
       <Flex key={i} vertical gap={0}>
         <Flex justify="space-between" gap={10}>
           <Text style={{ color: '#eee' }}>{b.label}</Text>
-          <Text strong style={{ color: b.delta >= 0 ? '#52c41a' : '#ff4d4f', whiteSpace: 'nowrap' }}>{formatDelta(b.delta)}</Text>
+          <Text strong style={{ color: b.delta >= 0 ? UI_COLORS.statusFresh : UI_COLORS.statusStale, whiteSpace: 'nowrap' }}>{formatDelta(b.delta)}</Text>
         </Flex>
-        {b.formula ? <Text style={{ color: '#999', fontSize: '10px' }}>{b.formula}</Text> : null}
+        {b.formula ? <Text style={{ color: UI_COLORS.muted, fontSize: '10px' }}>{b.formula}</Text> : null}
       </Flex>
     ))}
     {total != null && (

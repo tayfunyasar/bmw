@@ -1,8 +1,13 @@
 import React from 'react';
 import { Card, Typography, Space, Divider } from 'antd';
-import { bookmarks } from '../../data';
+import { bookmarks, colorNamesByPreference } from '../../data';
 
 const { Title, Text, Link } = Typography;
+
+// Renk tercihleri COLORS.json'dan türetilir (hardcoded liste yok → drift olmaz).
+const favColors = colorNamesByPreference('exterior', 'favorite').join(', ');
+const dislikedColors = colorNamesByPreference('exterior', 'disliked').join(', ');
+const dislikedInterior = colorNamesByPreference('interior', 'disliked').join(', ');
 
 export const BookmarksTab = () => (
   <Card title="🔖 Kontrol Edilecek Siteler & Bookmarklar">
@@ -26,10 +31,13 @@ export const BookmarksTab = () => (
         <Title level={5}>🎨 Renk Tercihleri</Title>
         <ul style={{ listStyleType: 'disc', paddingLeft: 20 }}>
           <li>
-            <Text>⭐ </Text><Text strong style={{ color: '#52c41a' }}>Favori: </Text><Text>Tanzanit Blue / Tansanit Blue (II)</Text>
+            <Text>⭐ </Text><Text strong style={{ color: '#52c41a' }}>Favori dış: </Text><Text>{favColors}</Text>
           </li>
           <li>
-            <Text>👎 </Text><Text strong style={{ color: '#ff4d4f' }}>Favori değil: </Text><Text>Arctic Race Blue, San Remo Green, M Brooklyn Grau / Brooklyn Grau</Text>
+            <Text>👎 </Text><Text strong style={{ color: '#ff4d4f' }}>Sevilmeyen dış: </Text><Text>{dislikedColors}</Text>
+          </li>
+          <li>
+            <Text>👎 </Text><Text strong style={{ color: '#ff4d4f' }}>Sevilmeyen iç (koltuk): </Text><Text>{dislikedInterior}</Text>
           </li>
         </ul>
       </div>

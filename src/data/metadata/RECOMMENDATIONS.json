@@ -1,0 +1,16 @@
+{
+  "picksPerCategory": 25,
+  "tiers": [
+    { "key": "AL", "icon": "🟢", "title": "AL — Karar ver" },
+    { "key": "İNCELE", "icon": "🔵", "title": "İNCELE — Derine in" },
+    { "key": "KEŞİF", "icon": "⚪", "title": "KEŞİF — Referans" }
+  ],
+  "categories": [
+    { "id": "genel", "tier": "AL", "icon": "🏆", "label": "Genel en iyi", "scoreLabel": "Toplam", "hint": "Tüm kriterler dengeli (renk/arzu, km, fiyat, donanım) — satın alma referansı." },
+    { "id": "firsat", "tier": "AL", "icon": "💎", "label": "Gerçek Fırsat", "scoreLabel": "Fırsat", "hint": "Piyasa değerine göre en ucuz fiyatlanmış — donanımı düşülmüş net maliyet (düşük=iyi).", "lowerIsBetter": true },
+    { "id": "deger", "tier": "AL", "icon": "💰", "label": "En iyi değer", "scoreLabel": "Değer", "hint": "Bang-for-buck: donanım€ / toplam maliyet€ — en çok araba, en az para." },
+    { "id": "pazarlik", "tier": "İNCELE", "icon": "📉", "label": "Pazarlık fırsatı", "scoreLabel": "Düşüş", "hint": "Satıcı fiyat kırmış → motivasyonlu; sık kıran daha da açık pazarlığa." },
+    { "id": "gizli", "tier": "İNCELE", "icon": "🔍", "label": "Gizli Değer", "scoreLabel": "Upside", "hint": "Belgelenmemiş donanımı çok — bayi linkiyle doğrulanınca değeri artabilecek adaylar." },
+    { "id": "donanim", "tier": "KEŞİF", "icon": "👑", "label": "En iyi donanım", "scoreLabel": "Donanım", "hint": "En yüklü araç — donanımın € değeri (fiyat/renk sayılmaz)." }
+  ]
+}

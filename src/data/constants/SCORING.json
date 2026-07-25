@@ -1,0 +1,12 @@
+{
+  "weights": { "price": 25, "equipment": 25, "kmAge": 25, "desirability": 25 },
+  "labels": { "price": "Fiyat (bütçe)", "equipment": "Donanım", "kmAge": "km/yaş", "desirability": "Arzu (LCI/renk)" },
+  "bonuses": { "service": 5, "warranty": 4 },
+  "penalties": { "private": 10, "aftermarket": 7, "overBudget": 25 },
+  "color": { "favorite": 0.3, "neutral": 0.15, "disliked": -0.6 },
+  "staleness": { "stepDays": 5, "stepPenalty": 2, "cap": 20 },
+  "priceFloor": 42000,
+  "budgetMax": 66000,
+  "lci": 0.4,
+  "defaultAlpha": 1
+}

@@ -22,5 +22,10 @@
   "cardBgSubtle": "rgba(255,255,255,0.03)",
   "statusFresh": "#52c41a",
   "statusWarning": "#faad14",
-  "statusStale": "#ff4d4f"
+  "statusStale": "#ff4d4f",
+  "gaugeMid": "#d4a017",
+  "sectionBg": "#fafafa",
+  "sectionBorder": "#d9d9d9",
+  "muted": "#999",
+  "linkActive": "#1677ff"
 }

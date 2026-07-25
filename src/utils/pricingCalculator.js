@@ -1,12 +1,19 @@
-import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, isColorFav, isColorNotFav, isInteriorFav, isInteriorNotFav } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta } from '../data';
 import { computeBaseRates, unknownsExpectedValue, unknownsExpectedScore } from './expectedValue.js';
 
-const { EVALUATION_DATE, TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
+const { TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
+// Değerlendirme tarihi = BUGÜN (dinamik, türetilmiş). Sabit tarih araç yaşını/BPM'i
+// dondurup skorları eskitirdi; bu yüzden JSON'da tutulmaz, runtime hesaplanır.
+const _now = new Date();
+const EVALUATION_DATE = { year: _now.getFullYear(), month: _now.getMonth(), day: _now.getDate() };
+// BPM tarife/afschrijving tabloları veri olarak BPM_RATES.json'da; null (üst-dilim) → Infinity.
+const BPM_TARIEVEN = BPM_RATES.tarieven;
+const BPM_DEPRECIATION_TABLE = BPM_RATES.depreciationTable;
 
 // Model-geneli donanim base-rate'leri (bir kez, aktif referans populasyon uzerinden).
 // calculateCarMetrics her arac icin beklenen (base-rate agirlikli) belirsiz deger/skor
 // kredisini bununla hesaplar → tum sekmelerde (ana + diesel/rwd/kazali) tutarli.
-const equipmentBaseRates = computeBaseRates(CoupeGasWithSunroof, equipmentRules);
+const equipmentBaseRates = computeBaseRates(CoupeGasWithSunroof, equipmentRules, SCORING.defaultAlpha);
 
 // Tum kritik donanimin maksimum € degeri (Σ price×score, score>0). Donanim skoru
 // artik "kac ozellik" (breadth) degil € DEGERE gore hesaplaniyor → premium yuklu
@@ -116,76 +123,10 @@ const calculateCriticalFeaturesScore = (evaluatedFeatures) => {
   }, { currentScore: 0, maximumPossibleScore: 0 });
 };
 
-// --- BPM Calculator (historisch tarief + afschrijvingstabel) ---
-// Belastingdienst: "U mag het laagste bpm-tarief gebruiken tussen de datum van
-// ingebruikname en de datum van de goedkeuring door de RDW."
-// Bron: external/bpm_tarieven_bpm0651z16fd.pdf (Belastingdienst tarievenlijst)
-const BPM_TARIEVEN = {
-  2021: [
-    { min: 0, max: 79, base: 360, rate: 2 },
-    { min: 79, max: 106, base: 518, rate: 60 },
-    { min: 106, max: 155, base: 2138, rate: 131 },
-    { min: 155, max: 173, base: 8557, rate: 213 },
-    { min: 173, max: Infinity, base: 12391, rate: 424 },
-  ],
-  2022: [
-    { min: 0, max: 81, base: 380, rate: 2 },
-    { min: 81, max: 105, base: 528, rate: 64 },
-    { min: 105, max: 147, base: 2064, rate: 139 },
-    { min: 147, max: 164, base: 7902, rate: 228 },
-    { min: 164, max: Infinity, base: 11778, rate: 457 },
-  ],
-  2023: [
-    { min: 0, max: 82, base: 400, rate: 2 },
-    { min: 82, max: 106, base: 564, rate: 68 },
-    { min: 106, max: 148, base: 2196, rate: 149 },
-    { min: 148, max: 165, base: 8454, rate: 244 },
-    { min: 165, max: Infinity, base: 12602, rate: 488 },
-  ],
-  2024: [
-    { min: 0, max: 80, base: 440, rate: 2 },
-    { min: 80, max: 104, base: 600, rate: 76 },
-    { min: 104, max: 145, base: 2424, rate: 167 },
-    { min: 145, max: 161, base: 9271, rate: 274 },
-    { min: 161, max: Infinity, base: 13655, rate: 549 },
-  ],
-  2025: [
-    { min: 0, max: 79, base: 667, rate: 2 },
-    { min: 79, max: 101, base: 825, rate: 79 },
-    { min: 101, max: 141, base: 2563, rate: 173 },
-    { min: 141, max: 157, base: 9483, rate: 284 },
-    { min: 157, max: Infinity, base: 14027, rate: 568 },
-  ],
-  2026: [
-    { min: 0, max: 77, base: 687, rate: 2 },
-    { min: 77, max: 100, base: 841, rate: 82 },
-    { min: 100, max: 139, base: 2727, rate: 181 },
-    { min: 139, max: 155, base: 9786, rate: 297 },
-    { min: 155, max: Infinity, base: 14538, rate: 594 },
-  ],
-};
-
-const BPM_DEPRECIATION_TABLE = [
-  { minMonth: 0, maxMonth: 1, basePercent: 0, monthlyAdd: 12 },
-  { minMonth: 1, maxMonth: 3, basePercent: 12, monthlyAdd: 4 },
-  { minMonth: 3, maxMonth: 5, basePercent: 20, monthlyAdd: 3.5 },
-  { minMonth: 5, maxMonth: 9, basePercent: 27, monthlyAdd: 1.5 },
-  { minMonth: 9, maxMonth: 18, basePercent: 33, monthlyAdd: 1 },
-  { minMonth: 18, maxMonth: 30, basePercent: 42, monthlyAdd: 0.75 },
-  { minMonth: 30, maxMonth: 42, basePercent: 51, monthlyAdd: 0.5 },
-  { minMonth: 42, maxMonth: 54, basePercent: 57, monthlyAdd: 0.42 },
-  { minMonth: 54, maxMonth: 66, basePercent: 62, monthlyAdd: 0.42 },
-  { minMonth: 66, maxMonth: 78, basePercent: 67, monthlyAdd: 0.42 },
-  { minMonth: 78, maxMonth: 90, basePercent: 72, monthlyAdd: 0.25 },
-  { minMonth: 90, maxMonth: 102, basePercent: 75, monthlyAdd: 0.25 },
-  { minMonth: 102, maxMonth: 114, basePercent: 78, monthlyAdd: 0.25 },
-  { minMonth: 114, maxMonth: Infinity, basePercent: 81, monthlyAdd: 0.19 },
-];
-
 const calcBrutoBpmForYear = (co2, year) => {
   const brackets = BPM_TARIEVEN[year];
   if (!brackets) return Infinity;
-  const bracket = brackets.find(b => co2 > b.min && co2 <= b.max) || brackets[brackets.length - 1];
+  const bracket = brackets.find(b => co2 > b.min && co2 <= (b.max ?? Infinity)) || brackets[brackets.length - 1];
   return bracket.base + ((co2 - bracket.min) * bracket.rate);
 };
 
@@ -212,7 +153,7 @@ const calculateBpm = (co2, registrationYear, registrationMonth) => {
   const regDate = new Date(registrationYear, registrationMonth - 1);
   const ageMonths = Math.round((today - regDate) / (TIME_CONSTANTS.millisecondsInADay * TIME_CONSTANTS.daysInAverageMonth));
 
-  const row = BPM_DEPRECIATION_TABLE.find(d => ageMonths >= d.minMonth && ageMonths < d.maxMonth) || BPM_DEPRECIATION_TABLE[BPM_DEPRECIATION_TABLE.length - 1];
+  const row = BPM_DEPRECIATION_TABLE.find(d => ageMonths >= d.minMonth && ageMonths < (d.maxMonth ?? Infinity)) || BPM_DEPRECIATION_TABLE[BPM_DEPRECIATION_TABLE.length - 1];
   const depPercent = Math.min(row.basePercent + ((ageMonths - row.minMonth) * row.monthlyAdd), 100);
   const bpmCalculated = Math.round(bpmBruto * (100 - depPercent) / 100);
 
@@ -275,42 +216,32 @@ export function calculateCarMetrics(car) {
 // --- totalScore: kullanıcı kriterlerine göre 0-100 kompozit ---
 // Çekirdek 4 boyut (ağırlık toplam 100) + ek bonus/ceza → sonuç 0-100'e clamp.
 // Ağırlıklar/sabitler modelin tek ayar noktası.
-const SCORE_WEIGHTS = {
-  price: 25,         // Fiyat (exact, baseTotalCost) — düşük ağırlık; bütçe aşımı ayrı ceza
-  equipment: 25,     // Donanım € değeri (doğrulanmış + beklenen belirsiz)
-  kmAge: 25,         // Düşük km/yaş (yıpranma percentile², ağırlık 15→25 artırıldı)
-  desirability: 25,  // Arzu: LCI + dış renk + iç renk (35→25: km lehine kaydırıldı)
-};
-const SCORE_LABELS = {
-  price: 'Fiyat (bütçe)',
-  equipment: 'Donanım',
-  kmAge: 'km/yaş',
-  desirability: 'Arzu (LCI/renk)',
-};
-// Ek puanlar: bonus = VAR → +, yok → nötr (ceza değil); ceza = kötü → −.
-const SERVICE_BONUS = 5;        // tam servis geçmişi (belgesiz/unknown ceza YEMEZ)
-const WARRANTY_BONUS = 4;       // aktif garanti
-const PRIVATE_PENALTY = 10;     // özel satıcı (bayi güvencesi yok → risk)
-const AFTERMARKET_PENALTY = 7;  // aftermarket modifikasyon
-const OVER_BUDGET_PENALTY = 25; // bütçe aşımı (baseTotalCost > PRICE_MAX) → sert eleme
+// Tüm skorlama sabitleri veri olarak SCORING.json'da (tek ayar noktası); burada türetilir.
+const SCORE_WEIGHTS = SCORING.weights;          // {price,equipment,kmAge,desirability}
+const SCORE_LABELS = SCORING.labels;
+const SERVICE_BONUS = SCORING.bonuses.service;
+const WARRANTY_BONUS = SCORING.bonuses.warranty;
+const PRIVATE_PENALTY = SCORING.penalties.private;
+const AFTERMARKET_PENALTY = SCORING.penalties.aftermarket;
+const OVER_BUDGET_PENALTY = SCORING.penalties.overBudget;
 // Renk skoru (arzu boyutu içinde, hem iç hem dış aynı formül); ağırlık ×25 puana çevirir:
 //   favori  → +0.3  (+7.5 puan, iyi renk artı)
 //   nötr    → +0.15 (+3.75 puan, bilinmeyen/kayıtsız)
 //   disliked→ −0.6  (−15 puan, beyaz dış / kırmızı koltuk → SERT eksi; ceza artırıldı)
 // Böylece "iyi renk +, sevilmeyen renk −" tek yerde, çift sayım olmadan uygulanır.
-const COLOR_FAV = 0.3;
-const COLOR_NEUTRAL = 0.15;
-const COLOR_DISLIKED = -0.6;
-const colorScore = (isFav, isNotFav) => isFav ? COLOR_FAV : isNotFav ? COLOR_DISLIKED : COLOR_NEUTRAL;
+const COLOR_FAV = SCORING.color.favorite;
+const COLOR_NEUTRAL = SCORING.color.neutral;
+const COLOR_DISLIKED = SCORING.color.disliked;
+const colorScore = (pref) => pref === 'favorite' ? COLOR_FAV : pref === 'disliked' ? COLOR_DISLIKED : COLOR_NEUTRAL;
 
 // Yayında bekleme (staleness) cezası — kullanıcı modeli:
 //   "yeni olması yüksek puan ALMAZ, ama eski olması düşük puan ALIR".
 // Yani yeni ilana BONUS yok (nötr); eskiye kademeli CEZA. Her 5 günde bir basamak.
 // SADECE createdTime'a (kesin veri) dayanır → 'ilan ne zaman kayboldu' belirsizliğinden
 // etkilenmez; en fazla, satılmış ama henüz SOLD'a taşınmamış bir ilan geçici ceza alır.
-const STALENESS_STEP_DAYS = 5;     // 0-5 nötr, 5-10 birinci basamak, 10-15 ikinci...
-const STALENESS_STEP_PENALTY = 2;  // her basamak −2 puan
-const STALENESS_CAP = 20;          // tavan: çok eski ilan skoru büsbütün sıfırlamasın
+const STALENESS_STEP_DAYS = SCORING.staleness.stepDays;
+const STALENESS_STEP_PENALTY = SCORING.staleness.stepPenalty;
+const STALENESS_CAP = SCORING.staleness.cap;
 const TODAY_MS = Date.now();       // modül yüklenirken sabitlenir (oturum boyu tutarlı)
 
 export const listingAgeInDays = (createdTime) => {
@@ -328,10 +259,10 @@ const stalenessPenalty = (ageDays) => {
 
 // Exact fiyat skoru: ucuz = yüksek, DOĞRUSAL ve sürekli (band değil → her fiyat farklı puan).
 // ≤FLOOR tam puan, FLOOR→MAX doğrusal azalır, >MAX = 0 (ağır ceza, bütçe dışı).
-const PRICE_FLOOR = 42000;
-// Bütçe tavanı — tek kaynak: priceScore, bütçe-aşımı cezası ve recommendations.js
-// filtreleri (💎/🔍/📉) hep bunu kullanır (66000 literali tekrarını bitirir).
-export const BUDGET_MAX = 66000;
+const PRICE_FLOOR = SCORING.priceFloor;
+// Bütçe tavanı — tek kaynak SCORING.json; priceScore, bütçe-aşımı cezası ve
+// recommendations.js filtreleri (💎/🔍/📉) hep bunu kullanır.
+export const BUDGET_MAX = SCORING.budgetMax;
 const priceScore = (cost) => Math.max(0, Math.min(1, (BUDGET_MAX - cost) / (BUDGET_MAX - PRICE_FLOOR)));
 
 // Bir metrigin dataset icindeki yuzdelik sirasi (0-1). invert=true → dusuk deger yuksek skor.
@@ -362,9 +293,9 @@ const assignRecommendations = (evaluated, referencePool = evaluated) => {
     // yıpranma yüzdeliği kötüleştikçe puan karesel (progresif) düşer.
     const kmAgePct = kmAgeScorer(m.totalDepreciation);
     const kmAgeN = kmAgePct * kmAgePct;
-    const lci = car.modelGeneration === 'LCI' ? 0.4 : 0;
-    const extC = colorScore(isColorFav(car.exteriorColorName), isColorNotFav(car.exteriorColorName));
-    const intC = colorScore(isInteriorFav(car.interiorColorName), isInteriorNotFav(car.interiorColorName));
+    const lci = car.modelGeneration === 'LCI' ? SCORING.lci : 0;
+    const extC = colorScore(colorMeta(car.exteriorColorName)?.preference);
+    const intC = colorScore(interiorMeta(car.interiorColorName)?.preference);
     // Üst sınır 1; alt sınır yok — iki sevilmeyen renk desirN'i negatife çekebilir (ceza).
     const desirN = Math.min(lci + extC + intC, 1);
 

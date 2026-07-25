@@ -1,6 +1,11 @@
 export * from './colors.js';
-import UI_COLORS from './constants/THEME_CONSTANTS.json';
-import PRICING_CONSTANTS from './constants/PRICING_CONSTANTS.json';
+import UI_COLORS from './constants/THEME.json';
+import PRICING_CONSTANTS from './constants/PRICING.json';
+import SCORING from './constants/SCORING.json';
+import APP from './constants/APP.json';
+import BPM_RATES from './metadata/BPM_RATES.json';
+import COUNTRY_FLAGS from './metadata/COUNTRY_FLAGS.json';
+import RECOMMENDATIONS from './metadata/RECOMMENDATIONS.json';
 import equipmentRules from './metadata/EQUIPMENT_RULES.json';
 import CoupeGasWithSunroof from './listings/COUPE_GAS_WITH_SUNROOF.json';
 import CoupeDieselWithSunroof from './listings/COUPE_DIESEL_WITH_SUNROOF.json';
@@ -25,6 +30,11 @@ import actionPlan from './user_data/ACTION_PLAN.json';
 export {
   UI_COLORS,
   PRICING_CONSTANTS,
+  SCORING,
+  APP,
+  BPM_RATES,
+  COUNTRY_FLAGS,
+  RECOMMENDATIONS,
   equipmentRules,
   CoupeGasWithSunroof,
   CoupeDieselWithSunroof,

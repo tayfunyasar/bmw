@@ -1,5 +1,8 @@
 import React from 'react';
+import { Tooltip, Typography } from 'antd';
 import FEATURE_PRICES from '../data/metadata/FEATURE_PRICES.json';
+
+const { Text } = Typography;
 
 export const getPickLabel = (pick) => {
   if (!pick) return "";
@@ -9,14 +12,22 @@ export const getPickLabel = (pick) => {
   return "En iyi donanım";
 };
 
+// Uzun notları kısaltıp hover/dokunuşla tam gösterir (hücreyi şişirmez).
+const NOTE_PREVIEW = 84;
 export const formatNotes = (notes) => {
-  if (!Array.isArray(notes)) return "—";
-  return notes.map((note, idx) => (
-    <span key={idx}>
-      • {note}
-      <br />
-    </span>
-  ));
+  if (!Array.isArray(notes) || notes.length === 0) return "—";
+  const full = notes.map((note, idx) => <span key={idx}>• {note}<br /></span>);
+  const total = notes.join(' ').length;
+  if (total <= NOTE_PREVIEW) return full;
+  const first = notes[0];
+  const preview = first.length > NOTE_PREVIEW ? first.slice(0, NOTE_PREVIEW).trimEnd() + '…' : first + (notes.length > 1 ? ' …' : '');
+  return (
+    <Tooltip title={<div style={{ maxWidth: 300, lineHeight: 1.5 }}>{full}</div>} styles={{ root: { maxWidth: 340 } }}>
+      <Text style={{ cursor: 'help', borderBottom: '1px dashed currentColor' }}>
+        • {preview} <Text type="secondary" style={{ fontSize: 11 }}>({notes.length} not ▾)</Text>
+      </Text>
+    </Tooltip>
+  );
 };
 
 export const findDealerForListing = (sellerTypeOrName, dealers) => {

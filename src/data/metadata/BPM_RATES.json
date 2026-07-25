@@ -1,0 +1,62 @@
+{
+  "tarieven": {
+    "2021": [
+      { "min": 0, "max": 79, "base": 360, "rate": 2 },
+      { "min": 79, "max": 106, "base": 518, "rate": 60 },
+      { "min": 106, "max": 155, "base": 2138, "rate": 131 },
+      { "min": 155, "max": 173, "base": 8557, "rate": 213 },
+      { "min": 173, "max": null, "base": 12391, "rate": 424 }
+    ],
+    "2022": [
+      { "min": 0, "max": 81, "base": 380, "rate": 2 },
+      { "min": 81, "max": 105, "base": 528, "rate": 64 },
+      { "min": 105, "max": 147, "base": 2064, "rate": 139 },
+      { "min": 147, "max": 164, "base": 7902, "rate": 228 },
+      { "min": 164, "max": null, "base": 11778, "rate": 457 }
+    ],
+    "2023": [
+      { "min": 0, "max": 82, "base": 400, "rate": 2 },
+      { "min": 82, "max": 106, "base": 564, "rate": 68 },
+      { "min": 106, "max": 148, "base": 2196, "rate": 149 },
+      { "min": 148, "max": 165, "base": 8454, "rate": 244 },
+      { "min": 165, "max": null, "base": 12602, "rate": 488 }
+    ],
+    "2024": [
+      { "min": 0, "max": 80, "base": 440, "rate": 2 },
+      { "min": 80, "max": 104, "base": 600, "rate": 76 },
+      { "min": 104, "max": 145, "base": 2424, "rate": 167 },
+      { "min": 145, "max": 161, "base": 9271, "rate": 274 },
+      { "min": 161, "max": null, "base": 13655, "rate": 549 }
+    ],
+    "2025": [
+      { "min": 0, "max": 79, "base": 667, "rate": 2 },
+      { "min": 79, "max": 101, "base": 825, "rate": 79 },
+      { "min": 101, "max": 141, "base": 2563, "rate": 173 },
+      { "min": 141, "max": 157, "base": 9483, "rate": 284 },
+      { "min": 157, "max": null, "base": 14027, "rate": 568 }
+    ],
+    "2026": [
+      { "min": 0, "max": 77, "base": 687, "rate": 2 },
+      { "min": 77, "max": 100, "base": 841, "rate": 82 },
+      { "min": 100, "max": 139, "base": 2727, "rate": 181 },
+      { "min": 139, "max": 155, "base": 9786, "rate": 297 },
+      { "min": 155, "max": null, "base": 14538, "rate": 594 }
+    ]
+  },
+  "depreciationTable": [
+    { "minMonth": 0, "maxMonth": 1, "basePercent": 0, "monthlyAdd": 12 },
+    { "minMonth": 1, "maxMonth": 3, "basePercent": 12, "monthlyAdd": 4 },
+    { "minMonth": 3, "maxMonth": 5, "basePercent": 20, "monthlyAdd": 3.5 },
+    { "minMonth": 5, "maxMonth": 9, "basePercent": 27, "monthlyAdd": 1.5 },
+    { "minMonth": 9, "maxMonth": 18, "basePercent": 33, "monthlyAdd": 1 },
+    { "minMonth": 18, "maxMonth": 30, "basePercent": 42, "monthlyAdd": 0.75 },
+    { "minMonth": 30, "maxMonth": 42, "basePercent": 51, "monthlyAdd": 0.5 },
+    { "minMonth": 42, "maxMonth": 54, "basePercent": 57, "monthlyAdd": 0.42 },
+    { "minMonth": 54, "maxMonth": 66, "basePercent": 62, "monthlyAdd": 0.42 },
+    { "minMonth": 66, "maxMonth": 78, "basePercent": 67, "monthlyAdd": 0.42 },
+    { "minMonth": 78, "maxMonth": 90, "basePercent": 72, "monthlyAdd": 0.25 },
+    { "minMonth": 90, "maxMonth": 102, "basePercent": 75, "monthlyAdd": 0.25 },
+    { "minMonth": 102, "maxMonth": 114, "basePercent": 78, "monthlyAdd": 0.25 },
+    { "minMonth": 114, "maxMonth": null, "basePercent": 81, "monthlyAdd": 0.19 }
+  ]
+}

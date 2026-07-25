@@ -1,8 +1,12 @@
 import React from 'react';
 import { Card, Typography, Space, Table } from 'antd';
-import { bpmData } from '../../data';
+import { bpmData, SCORING, UI_COLORS } from '../../data';
 
 const { Title, Text, Link } = Typography;
+// Skorlama sayıları tek kaynak SCORING.json'dan türetilir (metin ile kod drift'i biter).
+const W = SCORING.weights, C = SCORING.color, B = SCORING.bonuses, P = SCORING.penalties;
+const budgetK = Math.round(SCORING.budgetMax / 1000);
+const spanK = Math.round((SCORING.budgetMax - SCORING.priceFloor) / 1000);
 
 export const RulesTab = () => {
   const bpmColumns = [
@@ -69,7 +73,7 @@ export const RulesTab = () => {
             <ul style={{ paddingLeft: 20 }}>
               <li>🏆 <Text type="warning" strong>Genel en iyi:</Text> Holistik skor — <Text italic>renk/arzu ağırlıklı</Text> genel favori</li>
               <li>💰 <Text type="success" strong>En iyi değer:</Text> <Text italic>Bang-for-buck</Text> — donanım€ / toplam maliyet€ oranı</li>
-              <li>⚖️ <Text style={{ color: '#1677ff' }} strong>Dengeli seçim:</Text> <Text italic>Hiçbir yönü zayıf değil</Text> — 4 boyutun geometrik ortalaması</li>
+              <li>⚖️ <Text style={{ color: UI_COLORS.linkActive }} strong>Dengeli seçim:</Text> <Text italic>Hiçbir yönü zayıf değil</Text> — 4 boyutun geometrik ortalaması</li>
               <li>👑 <Text style={{ color: '#eb2f96' }} strong>En iyi donanım:</Text> En yüklü araç (<Text italic>donanımın € değeri</Text>) — fiyat önemsiz</li>
               <li>📉 <Text type="danger" strong>Fiyatı düşenler:</Text> Satıcı fiyat kırmış → <Text italic>motivasyonlu satıcı, pazarlık şansı</Text></li>
               <li><Text strong>Her kategori FARKLI bir algoritma kullanır</Text> → farklı araçlar önerir (aşağıda formüller)</li>
@@ -79,22 +83,23 @@ export const RulesTab = () => {
             <Title level={5}>Puanlama Kriterleri — <Text strong>Toplam Skor 0-100</Text> (çekirdek 100 + ek puanlar, clamp)</Title>
             <Text type="secondary" style={{ fontSize: '12px' }}>4 çekirdek boyut (ağırlık toplam 100) + servis/garanti bonusu ve risk cezası.</Text>
             <ul style={{ paddingLeft: 20 }}>
-              <li><Text type="success" strong>Fiyat (25%):</Text> <Text strong>Exact fiyat</Text> (TOPLAM = fiyat+BPM): (€66K − fiyat) / €24K → <Text italic>ucuz = daha çok puan</Text> (sürekli, band değil). Düşük ağırlık; bütçe aşımı ayrı ceza (aşağı).</li>
-              <li><Text type="warning" strong>Donanım (25%):</Text> Doğrulanmış + beklenen donanımın <Text strong>€ değeri</Text> / maksimum € (Laser/DAPRO/HK gibi pahalı kalemler daha çok puan). ✅ = tam, ❌ = 0, ? = base-rate ile kısmi</li>
-              <li><Text style={{ color: '#1677ff' }} strong>km / yaş (15%):</Text> Düşük yıpranma (az km + yeni) = yüksek — dataset yüzdelik sırası</li>
-              <li><Text type="warning" strong>Arzu (35%):</Text> LCI facelift (0.4) + dış renk (favori 0.3 / nötr 0.15 / sevilmeyen 0) + iç renk (favori 0.3 / nötr 0.15 / sevilmeyen 0) — <Text italic>en yüksek ağırlık</Text></li>
+              <li><Text type="success" strong>Fiyat ({W.price}%):</Text> <Text strong>Exact fiyat</Text> (TOPLAM = fiyat+BPM): (€{budgetK}K − fiyat) / €{spanK}K → <Text italic>ucuz = daha çok puan</Text> (sürekli, band değil). Düşük ağırlık; bütçe aşımı ayrı ceza (aşağı).</li>
+              <li><Text type="warning" strong>Donanım ({W.equipment}%):</Text> Doğrulanmış + beklenen donanımın <Text strong>€ değeri</Text> / maksimum € (Laser/DAPRO/HK gibi pahalı kalemler daha çok puan). ✅ = tam, ❌ = 0, ? = base-rate ile kısmi</li>
+              <li><Text style={{ color: UI_COLORS.linkActive }} strong>km / yaş ({W.kmAge}%):</Text> Düşük yıpranma (az km + yeni) = yüksek — dataset yüzdelik sırası (kare ile progresif)</li>
+              <li><Text type="warning" strong>Arzu ({W.desirability}%):</Text> LCI facelift ({SCORING.lci}) + dış renk (favori {C.favorite} / nötr {C.neutral} / sevilmeyen {C.disliked}) + iç renk (favori {C.favorite} / nötr {C.neutral} / sevilmeyen {C.disliked})</li>
             </ul>
             <Text type="secondary" style={{ fontSize: '12px' }}>
               <Text strong>Alcantara koltuk</Text> Arzu'da değil <Text strong>Donanım'da</Text> puanlanır (KGNL, 900€ ×2) — <Text italic>çift sayım olmasın diye</Text>. Tespit: açıklama <Text strong>VEYA</Text> döşeme alanı (<Text code>upholstery</Text>); bayiler döşemeyi sık sık yanlış işaretlediği için ikisi de taranır. ⭐ ikonu bu kuraldan gelir.
             </Text>
-            <Text type="secondary" style={{ fontSize: '12px' }}>Ek puanlar: <Text strong>Tam servis +5</Text> (belgesiz/? ceza YEMEZ), <Text strong>Garanti +4</Text>; <Text type="danger">Özel satıcı −5, Aftermarket −7, Bütçe aşımı (&gt;€66K) −25</Text>.</Text>
+            <Text type="secondary" style={{ fontSize: '12px' }}>Ek puanlar: <Text strong>Tam servis +{B.service}</Text> (belgesiz/? ceza YEMEZ), <Text strong>Garanti +{B.warranty}</Text>; <Text type="danger">Özel satıcı −{P.private}, Aftermarket −{P.aftermarket}, Bütçe aşımı (&gt;€{budgetK}K) −{P.overBudget}</Text>.</Text>
           </div>
           <div>
             <Title level={5}>Seçim Kuralları</Title>
             <ul style={{ paddingLeft: 20 }}>
-              <li>🏆 <Text strong>Genel:</Text> fiyat×25 + donanım×25 + km/yaş×15 + <Text strong>arzu×35</Text> + bonus − ceza</li>
+              <li>🏆 <Text strong>Genel:</Text> fiyat×{W.price} + donanım×{W.equipment} + km/yaş×{W.kmAge} + <Text strong>arzu×{W.desirability}</Text> + bonus − ceza</li>
+              <li>💎 <Text strong>Gerçek Fırsat:</Text> düzeltilmiş net maliyet (donanım düşülmüş) <Text type="secondary">— düşük=iyi</Text></li>
               <li>💰 <Text strong>Değer:</Text> <Text strong>(donanım€ / toplam maliyet€) × 100</Text> + bonus − ceza <Text type="secondary">(bang-for-buck oranı)</Text></li>
-              <li>⚖️ <Text strong>Dengeli:</Text> <Text strong>⁴√(fiyat × donanım × km/yaş × arzu) × 100</Text> − ceza <Text type="secondary">(geo. ort.; bir yönü sıfırsa sıfır)</Text></li>
+              <li>🔍 <Text strong>Gizli Değer:</Text> belgelenmemiş donanım potansiyeli <Text type="secondary">(bayi linkiyle çözülecek)</Text></li>
               <li>👑 <Text strong>Donanım:</Text> beklenen donanımın <Text strong>€ değeri</Text> (fiyat/renk hiç sayılmaz)</li>
               <li>📉 <Text strong>Fiyat düşüşü:</Text> auditHistory'deki toplam € kırım (bütçe içi araçlarda) <Text type="secondary">— çok/sık düşüren = motivasyonlu</Text></li>
               <li>Bir araç birden fazla kategori alabilir (ör. 🏆💰)</li>

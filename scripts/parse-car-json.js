@@ -29,6 +29,9 @@ const cakalPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_CAKAL.json');
 const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
 
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
+// Config veri JSON'dan (Node fs deseni) — ülke bayrakları + import-vergi eşikleri.
+const COUNTRY_FLAGS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/COUNTRY_FLAGS.json'), 'utf8'));
+const APP = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/constants/APP.json'), 'utf8'));
 
 function getNextListingId(existingListings) {
   let maxId = 0;
@@ -65,30 +68,16 @@ function parseCar(car, nextId) {
 
   let estimatedImportTaxEuro = 0;
   if (modelGeneration === "Pre-LCI") {
-    if (firstRegistrationYearAndMonth[0] <= 2021) estimatedImportTaxEuro = 4112;
-    else estimatedImportTaxEuro = 7428;
+    estimatedImportTaxEuro = firstRegistrationYearAndMonth[0] <= 2021 ? APP.importTax.preLciOld : APP.importTax.preLciNew;
   } else {
-    estimatedImportTaxEuro = 11097;
+    estimatedImportTaxEuro = APP.importTax.lci;
   }
 
   const sellerName = car.dealer?.name || "Unknown Dealer";
   const sellerRating = car.dealer?.rating?.total ? ` ★${car.dealer.rating.total}` : "";
 
-  const countryFlags = {
-    "DE": "🇩🇪",
-    "LT": "🇱🇹",
-    "AT": "🇦🇹",
-    "NL": "🇳🇱",
-    "BE": "🇧🇪",
-    "CH": "🇨🇭",
-    "PL": "🇵🇱",
-    "CZ": "🇨🇿",
-    "IT": "🇮🇹",
-    "FR": "🇫🇷",
-    "ES": "🇪🇸"
-  };
   const countryCode = car.dealer?.contry || "DE";
-  const flag = countryFlags[countryCode] || "🇪🇺"; // fallback to EU
+  const flag = COUNTRY_FLAGS[countryCode] || COUNTRY_FLAGS.fallback;
   
   // Extract city: sometimes it's "DE-88131 Lindau" in [1], sometimes in [0] if private seller.
   let rawCity = "Unknown";

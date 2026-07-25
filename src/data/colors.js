@@ -16,3 +16,19 @@ export const isColorFav = (name) => colorMeta(name)?.preference === 'favorite';
 export const isColorNotFav = (name) => colorMeta(name)?.preference === 'disliked';
 export const isInteriorFav = (name) => interiorMeta(name)?.preference === 'favorite';
 export const isInteriorNotFav = (name) => interiorMeta(name)?.preference === 'disliked';
+
+// Bir aracın dış VEYA iç rengi sevilmeyen mi (beyaz dış / kırmızı-kahve koltuk).
+export const hasDislikedColor = (car) =>
+  colorMeta(car.exteriorColorName)?.preference === 'disliked' ||
+  interiorMeta(car.interiorColorName)?.preference === 'disliked';
+
+// Legend/liste için: bir kind+preference'ın temsili renk adları (hex-benzersiz).
+// Tek kaynak COLORS.json → gösterim ile veri asla drift etmez.
+export const colorNamesByPreference = (kind, preference) => {
+  const map = kind === 'interior' ? INT : EXT;
+  const seen = new Set(), out = [];
+  for (const [name, v] of Object.entries(map)) {
+    if (v.preference === preference && v.hex && !seen.has(v.hex)) { seen.add(v.hex); out.push(name); }
+  }
+  return out;
+};

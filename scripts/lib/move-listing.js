@@ -8,13 +8,11 @@ const __dirname = path.dirname(__filename);
 
 export const listingsDir = path.resolve(__dirname, '../../src/data/listings');
 
-// SOLD arşivi artık tahrik + sunroof'a göre ayrık (aktif dosya yapısıyla simetri).
-// Tek kaynak: parse-car-json / mark-sold / rematch-drivetrain hepsi buradan seçer.
-export const SOLD_FILES = {
-  xdrive:       'COUPE_GAS_WITH_SUNROOF_SOLD.json',
-  rwdSunroof:   'COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json',
-  rwdNoSunroof: 'COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json',
-};
+// Dosya-yönlendirme tabloları veri olarak LISTING_FILES.json'da (config-driven).
+const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../src/data/metadata/LISTING_FILES.json'), 'utf8'));
+
+// SOLD arşivi tahrik + sunroof'a göre ayrık; tek kaynak: parse-car-json / mark-sold / rematch.
+export const SOLD_FILES = LISTING_FILES.soldFiles;
 
 export const ALL_SOLD_FILES = Object.values(SOLD_FILES);
 
@@ -30,14 +28,7 @@ export function soldArchiveFor(car) {
   return archiveObj(noSunroof ? SOLD_FILES.rwdNoSunroof : SOLD_FILES.rwdSunroof);
 }
 
-export const DEFAULT_SOURCE_FILES = [
-  'COUPE_GAS_WITH_SUNROOF.json',
-  'COUPE_GAS_WITHOUT_SUNROOF.json',
-  'COUPE_DIESEL_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
-  'GRAN_COUPE.json'
-];
+export const DEFAULT_SOURCE_FILES = LISTING_FILES.defaultSourceFiles;
 
 export function pushAudit(car, action, detail) {
   car.auditHistory = car.auditHistory || [];

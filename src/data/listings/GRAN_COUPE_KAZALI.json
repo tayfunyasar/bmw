@@ -7,7 +7,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 31990,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 31126,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -25,7 +24,7 @@
     "sellerTypeOrName": "gamma futura GmbH ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 12109 Berlin",
+    "listingLocation": "🇩🇪 DE-12109 Berlin",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -112,7 +111,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli"
+    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C331",
@@ -123,7 +123,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 50990,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 32927,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -141,7 +140,7 @@
     "sellerTypeOrName": "Autohaus Unterberger GmbH ★2.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 84453 Mühldorf am Inn",
+    "listingLocation": "🇩🇪 DE-84453 Mühldorf am Inn",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -208,7 +207,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C342",
@@ -219,7 +219,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 52500,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 49267,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -237,7 +236,7 @@
     "sellerTypeOrName": "Autohaus J. B. Lell GmbH ★4.5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 95632 Wunsiedel",
+    "listingLocation": "🇩🇪 DE-95632 Wunsiedel",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -310,7 +309,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C350",
@@ -321,7 +321,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 49490,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 47321,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -339,7 +338,7 @@
     "sellerTypeOrName": "Autohaus Wormser GmbH - BMW Vertragshändler ★4.6",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 91058 Erlangen",
+    "listingLocation": "🇩🇪 DE-91058 Erlangen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -406,7 +405,8 @@
     ],
     "cardThemeColorHex": "#e2e8f0",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C361",
@@ -417,7 +417,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 48880,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 64900,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -435,7 +434,7 @@
     "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 88131 Lindau",
+    "listingLocation": "🇩🇪 DE-88131 Lindau",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -508,7 +507,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C404",
@@ -519,7 +519,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 50850,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 22608,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -537,7 +536,7 @@
     "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 83026 Rosenheim",
+    "listingLocation": "🇩🇪 DE-83026 Rosenheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -610,7 +609,8 @@
     ],
     "cardThemeColorHex": "#e2e8f0",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C408",
@@ -621,7 +621,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 49270,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 56881,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -639,7 +638,7 @@
     "sellerTypeOrName": "Vögl GmbH & Co. Am Ring KG ★4.6",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 94315 Straubing",
+    "listingLocation": "🇩🇪 DE-94315 Straubing",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -712,7 +711,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C411",
@@ -723,7 +723,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 56850,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 22155,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -741,7 +740,7 @@
     "sellerTypeOrName": "Autohaus J. B. Lell e.K. ★4.8",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 92421 Schwandorf",
+    "listingLocation": "🇩🇪 DE-92421 Schwandorf",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -814,7 +813,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C422",
@@ -825,7 +825,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 16490,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 43071,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -843,7 +842,7 @@
     "sellerTypeOrName": "AUTO-CENTRUM S.C RYSZARD ZAROW, NIKODEM ZAROW ★4.2",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 181,
-    "listingLocation": "🇵🇱 144 NIEBOROWICE",
+    "listingLocation": "🇵🇱 PL-44-144 NIEBOROWICE",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -916,7 +915,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C602",
@@ -927,7 +927,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 39999,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 21212,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -945,7 +944,7 @@
     "sellerTypeOrName": "Fischer US Dreams ★4.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 181,
-    "listingLocation": "🇩🇪 96264 Altenkunstadt",
+    "listingLocation": "🇩🇪 DE-96264 Altenkunstadt",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1012,7 +1011,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C643",
@@ -1024,7 +1024,6 @@
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "basePriceEuro": 50950,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 49267,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -1042,7 +1041,7 @@
     "sellerTypeOrName": "Autohaus J.B. Lell GmbH & Co. KG ★4.5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 92637 Weiden",
+    "listingLocation": "🇩🇪 DE-92637 Weiden",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1108,7 +1107,8 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C654",
@@ -1120,7 +1120,6 @@
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "basePriceEuro": 52850,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 52264,
     "firstRegistrationYearAndMonth": [
       2024,
@@ -1138,7 +1137,7 @@
     "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.4",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 83026 Rosenheim",
+    "listingLocation": "🇩🇪 DE-83026 Rosenheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1231,6 +1230,7 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "modelGenerationCertain": true
   }
 ]

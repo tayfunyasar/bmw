@@ -7,7 +7,6 @@
     "interiorColorName": "Vernasca Leather Black with Blue Contrast Stitching",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 48500,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 29581,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -140,7 +139,8 @@
     "isDamaged": "Unfallvorschaden: Ja",
     "attributes": {
       "Vehicle condition": "accident"
-    }
+    },
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C201",
@@ -150,7 +150,6 @@
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 45899,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 35600,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -168,7 +167,7 @@
     "sellerTypeOrName": "Maxxus Handelsagentur ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 170,
-    "listingLocation": "🇩🇪 30176 Hannover",
+    "listingLocation": "🇩🇪 DE-30176 Hannover",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -246,7 +245,8 @@
       "Vehicle condition": "accident - Canada import"
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C130",
@@ -256,7 +256,6 @@
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 55900,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 15474,
     "firstRegistrationYearAndMonth": [
       2024,
@@ -274,7 +273,7 @@
     "sellerTypeOrName": "Auto-Zentrum Bernhard Ernst GmbH & Co. KG ★4.5",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 58455 Witten",
+    "listingLocation": "🇩🇪 DE-58455 Witten",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -421,7 +420,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C126",
@@ -431,7 +431,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "RWD",
     "basePriceEuro": 51899,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 37999,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -449,7 +448,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇱🇹 50300 Kaunas",
+    "listingLocation": "🇱🇹 LT-50300 Kaunas",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -672,7 +671,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C142",
@@ -682,7 +682,6 @@
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 48000,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 67000,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -700,7 +699,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 80807 München",
+    "listingLocation": "🇩🇪 DE-80807 München",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -802,7 +801,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C56",
@@ -812,7 +812,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 48790,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 16900,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -830,7 +829,7 @@
     "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 88131 Lindau",
+    "listingLocation": "🇩🇪 DE-88131 Lindau",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
       "Dandik jant var"
@@ -1127,7 +1126,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C170",
@@ -1137,7 +1137,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 42890,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 17000,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -1155,7 +1154,7 @@
     "sellerTypeOrName": "DB.Autohandel Inh.Denis Baron ★4.1",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 170,
-    "listingLocation": "🇩🇪 74613 Öhringen",
+    "listingLocation": "🇩🇪 DE-74613 Öhringen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1228,7 +1227,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C209",
@@ -1238,7 +1238,6 @@
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 57000,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 12000,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -1256,7 +1255,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 57250 Netphen",
+    "listingLocation": "🇩🇪 DE-57250 Netphen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1336,7 +1335,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C129",
@@ -1346,7 +1346,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 55990,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 6852,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -1364,7 +1363,7 @@
     "sellerTypeOrName": "Ai-Quakenbrücker-Automobile GmbH ★4.5",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 49610 Quakenbrück",
+    "listingLocation": "🇩🇪 DE-49610 Quakenbrück",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1508,7 +1507,8 @@
       "🔴 Toplam €67,942 — bütçe aşımı"
     ],
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C212",
@@ -1519,7 +1519,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 45799,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 50015,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -1537,7 +1536,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 87435 Kempten",
+    "listingLocation": "🇩🇪 DE-87435 Kempten",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1610,7 +1609,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C231",
@@ -1621,7 +1621,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 28999,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 62000,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -1639,7 +1638,7 @@
     "sellerTypeOrName": "MNS- Automobile GmbH ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 155,
-    "listingLocation": "🇦🇹 3041 Grabensee Österreich",
+    "listingLocation": "🇦🇹 AT-3041 Grabensee Österreich",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1712,7 +1711,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C232",
@@ -1723,7 +1723,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 45799,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 50045,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -1741,7 +1740,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 87439 Kempten",
+    "listingLocation": "🇩🇪 DE-87439 Kempten",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1814,7 +1813,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C133",
@@ -1825,7 +1825,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 55870,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 52819,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -1843,7 +1842,7 @@
     "sellerTypeOrName": "Procar Automobile Wuppertal GmbH & Co. KG ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 42117 Wuppertal",
+    "listingLocation": "🇩🇪 DE-42117 Wuppertal",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2050,7 +2049,8 @@
       "⚠️ Satıcıdan onarım belgesi ve detayı mutlaka istenmelidir",
       "🔴 Toplam €64,361 — bütçe aşımı"
     ],
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C284",
@@ -2061,7 +2061,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 46900,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 47300,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -2079,7 +2078,7 @@
     "sellerTypeOrName": "Fahrzeugcenter57 OHG ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 149,
-    "listingLocation": "🇩🇪 57482 Wenden",
+    "listingLocation": "🇩🇪 DE-57482 Wenden",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2152,7 +2151,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C297",
@@ -2163,7 +2163,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 42900,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 39354,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -2181,7 +2180,7 @@
     "sellerTypeOrName": "FF Performance ★4.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 162,
-    "listingLocation": "🇩🇪 49451 Holdorf",
+    "listingLocation": "🇩🇪 DE-49451 Holdorf",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2248,7 +2247,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C336",
@@ -2259,7 +2259,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 48900,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 30000,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -2277,7 +2276,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 40667 Meerbusch",
+    "listingLocation": "🇩🇪 DE-40667 Meerbusch",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2344,7 +2343,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C345",
@@ -2355,7 +2355,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 51000,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 30140,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -2371,9 +2370,9 @@
     },
     "nextInspectionDate": "06/2026",
     "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
+    "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 14193 Berlin",
+    "listingLocation": "🇩🇪 DE-14193 Berlin",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2446,7 +2445,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C469",
@@ -2457,7 +2457,6 @@
     "drivetrainType": "RWD",
     "drivetrainCertain": true,
     "basePriceEuro": 47599,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 39199,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -2475,7 +2474,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇱🇹 50300 Kaunas",
+    "listingLocation": "🇱🇹 LT-50300 Kaunas",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2542,7 +2541,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C472",
@@ -2553,7 +2553,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 49900,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 30000,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -2571,7 +2570,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 40667 Meerbusch",
+    "listingLocation": "🇩🇪 DE-40667 Meerbusch",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2638,7 +2637,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C486",
@@ -2649,7 +2649,6 @@
     "drivetrainType": "RWD",
     "drivetrainCertain": true,
     "basePriceEuro": 44900,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 45795,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -2667,7 +2666,7 @@
     "sellerTypeOrName": "Justus Automobile GmbH ★4.8",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 65549 Limburg an der Lahn",
+    "listingLocation": "🇩🇪 DE-65549 Limburg an der Lahn",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2734,7 +2733,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli"
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C588",
@@ -2745,7 +2745,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 55990,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 6852,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -2763,7 +2762,7 @@
     "sellerTypeOrName": "Ai-Quakenbrücker-Automobile GmbH ★4.6",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 49610 Quakenbrück",
+    "listingLocation": "🇩🇪 DE-49610 Quakenbrück",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2830,7 +2829,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C315",
@@ -2841,7 +2841,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 44490,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 17700,
     "firstRegistrationYearAndMonth": [
       2025,
@@ -2859,7 +2858,7 @@
     "sellerTypeOrName": "Auto Alexander Höß ★4.7",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 89407 Dillingen a. d. Donau",
+    "listingLocation": "🇩🇪 DE-89407 Dillingen a. d. Donau",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -2949,7 +2948,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli"
+    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C290",
@@ -2960,7 +2960,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 50450,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 33605,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -2978,7 +2977,7 @@
     "sellerTypeOrName": "Kohl automobile GmbH ★4.5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 186,
-    "listingLocation": "🇩🇪 52078 Aachen",
+    "listingLocation": "🇩🇪 DE-52078 Aachen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -3068,7 +3067,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C620",
@@ -3079,7 +3079,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 45900,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 18977,
     "firstRegistrationYearAndMonth": [
       2025,
@@ -3097,7 +3096,7 @@
     "sellerTypeOrName": "Hochfelsen Automobile GmbH ★4.1",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 58256 Ennepetal",
+    "listingLocation": "🇩🇪 DE-58256 Ennepetal",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -3164,7 +3163,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C334",
@@ -3175,7 +3175,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": false,
     "basePriceEuro": 47950,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 29550,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -3193,7 +3192,7 @@
     "sellerTypeOrName": "AUTOHAUS UNTERBERGER GmbH (BMW Vertragshändler) ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 83209 Prien am Chiemsee",
+    "listingLocation": "🇩🇪 DE-83209 Prien am Chiemsee",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -3285,7 +3284,8 @@
     "aiCommentary": [
       "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
     ],
-    "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı"
+    "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C686",
@@ -3297,7 +3297,6 @@
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "basePriceEuro": 46900,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 47206,
     "firstRegistrationYearAndMonth": [
       2024,
@@ -3315,7 +3314,7 @@
     "sellerTypeOrName": "Fahrzeugcenter57 OHG ★4.4",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 162,
-    "listingLocation": "🇩🇪 57482 Wenden",
+    "listingLocation": "🇩🇪 DE-57482 Wenden",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -3381,7 +3380,8 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C706",
@@ -3393,7 +3393,6 @@
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "basePriceEuro": 44900,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 48234,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -3411,7 +3410,7 @@
     "sellerTypeOrName": "Fahrzeugcenter57 OHG ★4.4",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 57482 Wenden",
+    "listingLocation": "🇩🇪 DE-57482 Wenden",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -3477,6 +3476,7 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "modelGenerationCertain": true
   }
 ]

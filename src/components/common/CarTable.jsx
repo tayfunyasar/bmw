@@ -1,18 +1,28 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline, Tooltip, Grid } from 'antd';
-import { ClockCircleOutlined, PushpinOutlined, PushpinFilled } from '@ant-design/icons';
+import { ClockCircleOutlined } from '@ant-design/icons';
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { MobileCarCards } from './MobileCarCards';
+import { FreezeButton } from './FreezeButton';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
-import { useFrozenCars } from '../useFrozenCars';
 import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
 
 const { Text, Link } = Typography;
 const TODAY = new Date();
 const TODAY_MS = TODAY.getTime();
 
-export const CarTable = ({
+// extraHeaderActions her render'da yeni referans alır (inline JSX, örn. yıl sekmesindeki
+// "Tüm İlanları Aç" butonu) — bilerek karşılaştırma dışı: aksi halde memo hiç iş yapmaz.
+const carTablePropsAreEqual = (prev, next) =>
+  prev.cars === next.cars &&
+  prev.title === next.title &&
+  prev.winningCarIndex === next.winningCarIndex &&
+  prev.isRejected === next.isRejected &&
+  prev.rejectedLabel === next.rejectedLabel &&
+  prev.yearLabel === next.yearLabel;
+
+const CarTableComponent = ({
   cars,
   title,
   extraHeaderActions,
@@ -23,8 +33,6 @@ export const CarTable = ({
 }) => {
   const [historyModalVisible, setHistoryModalVisible] = useState(false);
   const [selectedCarHistory, setSelectedCarHistory] = useState(null);
-  const { frozenIds, toggle: toggleFreeze } = useFrozenCars() || { frozenIds: [], toggle: () => {} };
-  const isFrozen = (id) => frozenIds.includes(id);
   const screens = Grid.useBreakpoint();
   const isMobile = screens.md === false; // md altı (telefon/dar) → kart görünümü
 
@@ -52,15 +60,7 @@ export const CarTable = ({
           {isRejected && <Text type="danger">{rejectedLabel}</Text>}
           {car.isSold && !isRejected && <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text>}
           {car.curatorPickBadge && !isRejected && !car.isSold && <Text>{car.curatorPickBadge}</Text>}
-          <Button
-            type="text"
-            size="small"
-            icon={isFrozen(car.listingId) ? <PushpinFilled /> : <PushpinOutlined />}
-            onClick={() => toggleFreeze(car.listingId)}
-            style={{ marginTop: 4, fontSize: '12px', color: isFrozen(car.listingId) ? UI_COLORS.linkActive : undefined }}
-          >
-            {isFrozen(car.listingId) ? 'Unfreeze' : 'Freeze'}
-          </Button>
+          <FreezeButton listingId={car.listingId} showLabel />
           {car.auditHistory && car.auditHistory.length > 0 && (
             <Button type="text" size="small" icon={<ClockCircleOutlined />} onClick={() => showHistory(car)} style={{ marginTop: 4, fontSize: '12px' }}>
               Geçmiş
@@ -82,8 +82,8 @@ export const CarTable = ({
       render: (val, record) => {
         if (record.isSection) return null;
         if (record.isColor) {
-          if (car.overrideFeatures?.exteriorColorName) return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
-          return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />;
+          if (car.overrideFeatures?.exteriorColorName) return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} paintLabel={car.exteriorPaintLabel} />;
+          return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} paintLabel={car.exteriorPaintLabel} />;
         }
         if (record.isInterior) {
           return (
@@ -162,7 +162,7 @@ export const CarTable = ({
       const [y, m] = car.firstRegistrationYearAndMonth || [];
       return [car.listingId, (y != null && m != null) ? `${m.toString().padStart(2, '0')}/${y}` : '?'];
     }))),
-    Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration]))),
+    Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGenerationCertain === false ? '⚠️ Belirsiz (LCI?)' : (car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration)]))),
     Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?']))),
     Object.assign({ key: 'overrides', prop: '🔧 Override' }, Object.fromEntries(cars.map(car => {
       const text = formatOverrides(car);
@@ -367,3 +367,5 @@ export const CarTable = ({
     </Flex>
   );
 };
+
+export const CarTable = memo(CarTableComponent, carTablePropsAreEqual);

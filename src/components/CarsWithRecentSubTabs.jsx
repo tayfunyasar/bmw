@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { Tabs } from 'antd';
 import { sortByTotalCost } from '../utils/pricingCalculator';
 import { CarTable } from './common/CarTable';
@@ -12,7 +12,9 @@ const getCarPublishedDate = (car) => {
   return raw ? new Date(raw) : null;
 };
 
-export const CarsWithRecentSubTabs = ({ cars, recentPool, baseLabel, titlePrefix, emptyMessage }) => {
+// memo + üstte (MainTabs'ta) referansı sabitlenen cars/recentPool: freeze toggle gibi
+// ilgisiz bir üst render, burada buildUnion'ı (ve altındaki dev CarTable'ı) tetiklemesin.
+const CarsWithRecentSubTabsComponent = ({ cars, recentPool, baseLabel, titlePrefix, emptyMessage }) => {
   const [activeSubTab, setActiveSubTab] = useState('base');
   const [nowMs] = useState(() => Date.now());
 
@@ -46,5 +48,7 @@ export const CarsWithRecentSubTabs = ({ cars, recentPool, baseLabel, titlePrefix
     })),
   ];
 
-  return <Tabs activeKey={activeSubTab} onChange={setActiveSubTab} items={subItems} />;
+  return <Tabs activeKey={activeSubTab} onChange={setActiveSubTab} destroyOnHidden items={subItems} />;
 };
+
+export const CarsWithRecentSubTabs = memo(CarsWithRecentSubTabsComponent);

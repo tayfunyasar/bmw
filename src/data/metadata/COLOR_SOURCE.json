@@ -1,0 +1,6 @@
+{
+  "_comment": "Üretici renk alanı (manufacturerColour) genelde daha spesifiktir ve tercih edilir. Ancak rengi söylemeyen jenerik boya etiketleri burada listelenir; bu durumda gerçek renge (colour) düşülür ve HAM üretici etiketi exteriorPaintLabel olarak olduğu gibi korunur.",
+  "genericManufacturerPaint": [
+    "BMW Individuallackierung"
+  ]
+}

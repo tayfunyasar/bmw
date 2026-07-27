@@ -90,14 +90,20 @@ const calculateUnknownsInfo = (evaluatedFeatures) => {
 const calculatePriceDrop = (auditHistory = []) => {
   let priceDropTotal = 0;
   let priceDropCount = 0;
+  // auditHistory eskiden yeniye sıralı → ilk düşüşün "old"u ilk fiyat, son düşüş en güncel değişiklik.
+  let firstPriceEuro = null, lastDropOldEuro = null, lastDropNewEuro = null, lastDropDate = null;
   for (const entry of auditHistory) {
     const change = entry.changes?.basePriceEuro;
     if (change && typeof change.old === 'number' && typeof change.new === 'number' && change.new < change.old) {
       priceDropTotal += change.old - change.new;
       priceDropCount++;
+      if (firstPriceEuro === null) firstPriceEuro = change.old; // ilk fiyat (en eski düşüşün öncesi)
+      lastDropOldEuro = change.old;   // son düşüş: kaçtan
+      lastDropNewEuro = change.new;   // son düşüş: kaça
+      lastDropDate = entry.auditDate; // son fiyat değişikliği tarihi
     }
   }
-  return { priceDropTotal, priceDropCount };
+  return { priceDropTotal, priceDropCount, firstPriceEuro, lastDropOldEuro, lastDropNewEuro, lastDropDate };
 };
 
 const calculateOwnerAdjustment = (numberOfPreviousOwners) => {

@@ -12,6 +12,20 @@ const __dirname = path.dirname(__filename);
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
 const equipmentRulesPath = path.resolve(__dirname, '../src/data/metadata/EQUIPMENT_RULES.json');
+const colorSourcePath = path.resolve(__dirname, '../src/data/metadata/COLOR_SOURCE.json');
+
+// Rengi söylemeyen jenerik üretici boya etiketleri (ör. "BMW Individuallackierung").
+// Bu durumda exteriorColorName gerçek renge (colour) düşer, etiket paintLabel'de korunur.
+const COLOR_SOURCE = JSON.parse(fs.readFileSync(colorSourcePath, 'utf8'));
+function resolveExteriorColor(props) {
+  const manuf = (props.manufacturerColour || '').trim();
+  const isGenericPaint = COLOR_SOURCE.genericManufacturerPaint.includes(manuf);
+  return {
+    exteriorColorName: isGenericPaint ? props.colour : (props.manufacturerColour || props.colour),
+    // Ham üretici etiketi olduğu gibi korunur (ör. "BMW Individuallackierung") — kaybolmaz.
+    exteriorPaintLabel: isGenericPaint ? manuf : undefined,
+  };
+}
 
 const CoupeWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF.json');
 const CoupeWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITHOUT_SUNROOF.json');
@@ -29,9 +43,8 @@ const cakalPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_CAKAL.json');
 const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
 
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
-// Config veri JSON'dan (Node fs deseni) — ülke bayrakları + import-vergi eşikleri.
+// Config veri JSON'dan (Node fs deseni) — ülke bayrakları.
 const COUNTRY_FLAGS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/COUNTRY_FLAGS.json'), 'utf8'));
-const APP = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/constants/APP.json'), 'utf8'));
 
 function getNextListingId(existingListings) {
   let maxId = 0;
@@ -61,16 +74,21 @@ function parseCar(car, nextId) {
   const regMatch = (props.firstRegistration || "").match(/(\d+)\/(\d+)/);
   const firstRegistrationYearAndMonth = regMatch ? [parseInt(regMatch[2]), parseInt(regMatch[1])] : [null, null];
 
+  // G22 LCI/Pre-LCI geçişi TESCİLDEN kesin ayrılamaz — geçiş döneminde iki nesil birlikte
+  // tescil edilir (kanıt: 05/2023'te hem LCI hem Pre-LCI araçlar var). Bu yüzden:
+  //   ≤2022/12        → kesin Pre-LCI
+  //   2023/01–2023/05 → BELİRSİZ (certain=false) → UI ⚠️, foto teyidi gerek
+  //   ≥2023/06        → kesin LCI
+  // Foto ile teyit edilen araçlar bu varsayımı override eder (certain=true, elle).
+  const [regY, regM] = firstRegistrationYearAndMonth;
   let modelGeneration = "Pre-LCI";
-  if (firstRegistrationYearAndMonth[0] > 2023 || (firstRegistrationYearAndMonth[0] === 2023 && firstRegistrationYearAndMonth[1] >= 7)) {
+  let modelGenerationCertain = true;
+  if (regY == null) {
+    modelGenerationCertain = false;
+  } else if (regY > 2023 || (regY === 2023 && regM >= 6)) {
     modelGeneration = "LCI";
-  }
-
-  let estimatedImportTaxEuro = 0;
-  if (modelGeneration === "Pre-LCI") {
-    estimatedImportTaxEuro = firstRegistrationYearAndMonth[0] <= 2021 ? APP.importTax.preLciOld : APP.importTax.preLciNew;
-  } else {
-    estimatedImportTaxEuro = APP.importTax.lci;
+  } else if (regY === 2023 && regM <= 5) {
+    modelGenerationCertain = false; // geçiş dönemi — varsayım Pre-LCI ama belirsiz
   }
 
   const sellerName = car.dealer?.name || "Unknown Dealer";
@@ -79,11 +97,11 @@ function parseCar(car, nextId) {
   const countryCode = car.dealer?.contry || "DE";
   const flag = COUNTRY_FLAGS[countryCode] || COUNTRY_FLAGS.fallback;
   
-  // Extract city: sometimes it's "DE-88131 Lindau" in [1], sometimes in [0] if private seller.
-  let rawCity = "Unknown";
+  // Ham adres satırı olduğu gibi korunur (ör. "DE-73730 Esslingen am Neckar") — şehir/posta kırpılmaz.
+  // Sadece nbsp → normal boşluk (görünmez karakter temizliği; anlam değişmez).
+  let rawAddressLine = "Unknown";
   if (car.dealer?.addesses && car.dealer.addesses.length > 0) {
-    const addressLine = car.dealer.addesses[car.dealer.addesses.length - 1]; // usually the last line is Zip + City
-    rawCity = addressLine.split('-').pop().trim();
+    rawAddressLine = car.dealer.addesses[car.dealer.addesses.length - 1].replace(/ /g, ' ').trim();
   }
 
   const mobileDeIdMatch = car.url?.match(/id=(\d+)/) || car.url?.match(/\/(\d+)\.html/);
@@ -92,18 +110,19 @@ function parseCar(car, nextId) {
   const serviceType = description.includes("Scheckheftgepflegt") || features.includes("Full Service History") ? "yes" : "unknown";
   const hasWarranty = features.includes("Warranty") ? "yes" : "no";
   const drivetrain = determineDrivetrainFromRaw(car);
+  const { exteriorColorName, exteriorPaintLabel } = resolveExteriorColor(props);
 
   return {
     listingId: nextId,
     listingUrl: car.url,
     mobileDeId: mobileDeId,
-    exteriorColorName: props.manufacturerColour || props.colour,
+    exteriorColorName: exteriorColorName,
+    ...(exteriorPaintLabel ? { exteriorPaintLabel } : {}),
     interiorColorName: props.upholstery,
     drivetrainType: drivetrain.type,
     drivetrainCertain: drivetrain.certain,
     drivetrainReason: drivetrain.reason,
     basePriceEuro: car.price?.amount,
-    estimatedImportTaxEuro: estimatedImportTaxEuro,
     mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
     firstRegistrationYearAndMonth: firstRegistrationYearAndMonth,
     numberOfPreviousOwners: props.numberOfOwners || "?",
@@ -117,8 +136,9 @@ function parseCar(car, nextId) {
     nextInspectionDate: props.generalInspection || "?",
     sellerTypeOrName: `${sellerName}${sellerRating}`,
     modelGeneration: modelGeneration,
+    modelGenerationCertain: modelGenerationCertain,
     co2EmissionsGramPerKm: parseInt(props.co2Emission) || 0,
-    listingLocation: `${flag} ${rawCity}`,
+    listingLocation: `${flag} ${rawAddressLine}`,
     curatorPickBadge: null,
     curatorPersonalNotes: [],
     listingDescriptionNotes: [],

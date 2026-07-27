@@ -7,7 +7,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 43200,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 53350,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -25,7 +24,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 18184 Roggentin",
+    "listingLocation": "🇩🇪 DE-18184 Roggentin",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -91,7 +90,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C43",
@@ -101,7 +101,6 @@
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 49900,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 48000,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -119,7 +118,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "LCI?",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 16548 Glienicke/Nordbahn",
+    "listingLocation": "🇩🇪 DE-16548 Glienicke/Nordbahn",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
       "Renk / jant kombinasyonu çok iyi"
@@ -422,7 +421,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C125",
@@ -432,7 +432,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 44998,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 43250,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -450,7 +449,7 @@
     "sellerTypeOrName": "UAB Vin Motors ★4.8",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 170,
-    "listingLocation": "🇱🇹 14184 Vilnius",
+    "listingLocation": "🇱🇹 LT-14184 Vilnius",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -605,7 +604,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C23",
@@ -615,7 +615,6 @@
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 53990,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 24927,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -633,7 +632,7 @@
     "sellerTypeOrName": "MEYER-HAFNER GmbH ★4.6",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇦🇹 9020 Klagenfurt",
+    "listingLocation": "🇦🇹 AT-9020 Klagenfurt",
     "curatorPickBadge": "👑",
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -809,7 +808,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C54",
@@ -819,7 +819,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 44000,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 2258,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -837,7 +836,7 @@
     "sellerTypeOrName": "PRO-GUM SERVICE SPOLKA JAWNA ★3.7",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 170,
-    "listingLocation": "🇵🇱 983 Krakau",
+    "listingLocation": "🇵🇱 PL-31-983 Krakau",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
@@ -1063,7 +1062,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C148",
@@ -1073,7 +1073,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 46900,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 51249,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -1091,7 +1090,7 @@
     "sellerTypeOrName": "Aasta Auto AS ★3.3",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇪🇺 50113 Tartu",
+    "listingLocation": "🇪🇺 EE-50113 Tartu",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1146,7 +1145,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C7",
@@ -1156,7 +1156,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 42900,
-    "estimatedImportTaxEuro": 6500,
     "mileageKm": 6500,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -1174,7 +1173,7 @@
     "sellerTypeOrName": "TRIMIA GMBH ★4.7",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 152,
-    "listingLocation": "🇩🇪 49356 Diepholz",
+    "listingLocation": "🇩🇪 DE-49356 Diepholz",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
       "Kazalı olduğuna inanıyoruz",
@@ -1491,7 +1490,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C168",
@@ -1501,7 +1501,6 @@
     "interiorColorName": null,
     "drivetrainType": "RWD",
     "basePriceEuro": 45000,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 60000,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -1519,7 +1518,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 66663 Merzig",
+    "listingLocation": "🇩🇪 DE-66663 Merzig",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1619,7 +1618,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C169",
@@ -1629,7 +1629,6 @@
     "interiorColorName": "Part leather, Black",
     "drivetrainType": "RWD",
     "basePriceEuro": 46900,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 69000,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -1647,7 +1646,7 @@
     "sellerTypeOrName": "David Zuber",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 67259 Großniedesheim",
+    "listingLocation": "🇩🇪 DE-67259 Großniedesheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1737,7 +1736,8 @@
       "lastCrawlTime": null
     },
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli"
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C143",
@@ -1747,7 +1747,6 @@
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "basePriceEuro": 48900,
-    "estimatedImportTaxEuro": 11097,
     "mileageKm": 57000,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -1765,7 +1764,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 81737 München",
+    "listingLocation": "🇩🇪 DE-81737 München",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1881,7 +1880,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C589",
@@ -1892,7 +1892,6 @@
     "drivetrainType": "RWD",
     "drivetrainCertain": true,
     "basePriceEuro": 44700,
-    "estimatedImportTaxEuro": 7428,
     "mileageKm": 69000,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -1910,7 +1909,7 @@
     "sellerTypeOrName": "David Zuber",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 67259 Großniedesheim",
+    "listingLocation": "🇩🇪 DE-67259 Großniedesheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1981,7 +1980,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli"
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "modelGenerationCertain": true
   },
   {
     "listingId": "C314",
@@ -1992,7 +1992,6 @@
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "basePriceEuro": 49900,
-    "estimatedImportTaxEuro": 4112,
     "mileageKm": 45465,
     "firstRegistrationYearAndMonth": [
       2021,
@@ -2010,7 +2009,7 @@
     "sellerTypeOrName": "One Cars Collection SRL ★5",
     "modelGeneration": "Pre-LCI",
     "co2EmissionsGramPerKm": 155,
-    "listingLocation": "🇪🇺 077190 Voluntari",
+    "listingLocation": "🇪🇺 RO-077190 Voluntari",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -2098,6 +2097,7 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)"
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "modelGenerationCertain": true
   }
 ]

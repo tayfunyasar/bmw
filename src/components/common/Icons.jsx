@@ -28,14 +28,21 @@ const ColorSwatch = ({ colorCode }) => (
     : <QuestionCircleOutlined style={{ fontSize: 22, color: UI_COLORS.muted, flexShrink: 0 }} />
 );
 
-export const ColorDisplay = ({ colorCode, colorName }) => (
-  <Space size={4}>
-    {colorName ? <ColorSwatch colorCode={colorCode} /> : null}
-    <Text>{colorName || "—"}</Text>
-    {isColorFav(colorName) && <Tooltip title="Favori dış renk — skorda +7.5"><Text>⭐</Text></Tooltip>}
-    {isColorNotFav(colorName) && <Tooltip title="Sevilmeyen dış renk — skorda −15"><Text>👎</Text></Tooltip>}
-  </Space>
-);
+// compact: dar kartlarda uzun renk adı tek satıra kısaltılır (tam ad tooltip'te).
+// paintLabel: üretici boya etiketi (ham) — varsa renk adıyla BİRLEŞİK gösterilir: "Blue · BMW Individuallackierung".
+export const ColorDisplay = ({ colorCode, colorName, paintLabel, compact = false }) => {
+  const fullName = paintLabel ? `${colorName || "—"} · ${paintLabel}` : (colorName || "—");
+  return (
+    <Space size={4} style={compact ? { maxWidth: '100%' } : undefined}>
+      {colorName ? <ColorSwatch colorCode={colorCode} /> : null}
+      {compact
+        ? <Tooltip title={fullName}><Text style={{ maxWidth: 150, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', display: 'inline-block', verticalAlign: 'bottom' }}>{fullName}</Text></Tooltip>
+        : <Text>{fullName}</Text>}
+      {isColorFav(colorName) && <Tooltip title="Favori dış renk — skorda +7.5"><Text>⭐</Text></Tooltip>}
+      {isColorNotFav(colorName) && <Tooltip title="Sevilmeyen dış renk — skorda −15"><Text>👎</Text></Tooltip>}
+    </Space>
+  );
+};
 
 // ⭐ = Alcantara koltuk. Kaynak: KGNL donanim kurali (description + props.upholstery
 // birlikte taranir) — dosemenin adi guvenilmez oldugu icin renk adindan cikarilmaz.

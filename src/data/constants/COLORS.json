@@ -158,6 +158,10 @@
     "Black-Sapphire Metallic": {
       "hex": "#050508"
     },
+    "Blue": {
+      "hex": "#2563eb",
+      "preference": "favorite"
+    },
     "Blue Metallic": {
       "hex": "#2a4a7a",
       "preference": "favorite"

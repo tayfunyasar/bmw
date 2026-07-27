@@ -1,9 +1,10 @@
-import React, { useMemo } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Tabs } from 'antd';
 import { yearGroups, sortedYears, allByTotalCost, sortByTotalCost } from '../utils/pricingCalculator';
-import { soldGasListings, rwdSoldWithSunroofListings, rwdSoldWithoutSunroofListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings, hasDislikedColor } from '../data';
-import { useFrozenCars } from './useFrozenCars';
+import { soldGasListings, rwdSoldWithSunroofListings, rwdSoldWithoutSunroofListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
+import { carMatchesFilters } from '../utils/carFilters';
+import { FrozenTab, FrozenTabLabel } from './tabs/FrozenTab';
 import { VehicleTableCard } from './VehicleTableCard';
 import { CarTable } from './common/CarTable';
 import { CarsWithRecentSubTabs } from './CarsWithRecentSubTabs';
@@ -22,24 +23,28 @@ const SORTERS = {
   score: (a, b) => (b.totalScore || 0) - (a.totalScore || 0),
 };
 
-export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 0 }) => {
+export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 0, kmMax = 0, lciOnly = false, twoStarSure = false }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentTab = location.pathname.replace('/', '') || 'all-adjusted';
-  const { frozenIds } = useFrozenCars();
 
-  // Renk + bütçe filtreleri ve seçilen sıralama — tüm ana havuzlara tek noktadan uygulanır.
-  const arrange = (list) => {
-    let r = sortByTotalCost(list); // metrikleri iliştirir + fiyat baseline'ı
-    if (!showDisliked) r = r.filter(c => !hasDislikedColor(c));
-    if (budgetMax) r = r.filter(c => c.metrics.baseTotalCost <= budgetMax);
+  // Filtreler (carFilters — TEK kaynak: renk/km/bütçe/lci) + seçilen sıralama; tüm ana havuzlara
+  // tek noktadan. useCallback: kimliği yalnızca gerçek girdileri değişince yenilenir — freeze
+  // toggle gibi ilgisiz bir render bunu etkilemez, visibleAll/yearlyArranged yeniden hesaplanmaz.
+  const arrange = useCallback((list) => {
+    const r = sortByTotalCost(list).filter(c => carMatchesFilters(c, { showDisliked, kmMax, budgetMax, lciOnly, twoStarSure }));
     return sortKey === 'price' ? r : [...r].sort(SORTERS[sortKey] || SORTERS.price);
-  };
-  const colorFilter = arrange; // yıl grupları da aynı düzeni kullanır
-  const visibleAll = arrange(allByTotalCost);
+  }, [showDisliked, budgetMax, kmMax, lciOnly, twoStarSure, sortKey]);
+  const visibleAll = useMemo(() => arrange(allByTotalCost), [arrange]);
+  const yearlyArranged = useMemo(() => {
+    const map = {};
+    sortedYears.forEach(year => { map[year] = arrange(yearGroups[year]); });
+    return map;
+  }, [arrange]);
 
   const handleTabChange = (key) => {
-    navigate(`/${key}`);
+    // Filtreler query'de tutulur — tab değişince kaybolmasın diye search korunur.
+    navigate({ pathname: `/${key}`, search: location.search });
   };
 
   const sorted = useMemo(() => ({
@@ -69,8 +74,6 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
     return map;
   }, [sorted]);
 
-  const frozenCars = sortByTotalCost(frozenIds.map(id => allCarsById.get(id)).filter(Boolean));
-
   const suggestedCars = useMemo(() => {
     const ids = computeSuggestedIds(visibleAll);
     return sortByTotalCost(ids.map(id => allCarsById.get(id)).filter(Boolean));
@@ -80,12 +83,11 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
     <Tabs
       activeKey={currentTab}
       onChange={handleTabChange}
+      destroyOnHidden
       items={[{
           key: 'frozen',
-          label: `📌 Freeze Edilenler — ${frozenCars.length} araç`,
-          children: frozenCars.length > 0
-            ? <CarTable cars={frozenCars} title="📌 Freeze Edilenler — Yan Yana Karşılaştırma" />
-            : <div style={{ padding: 24, textAlign: 'center', color: '#888' }}>Bu görünümde araç yok. Diğer sekmelerde araç başlığındaki 📌 Freeze butonuna tıkla.</div>
+          label: <FrozenTabLabel allCarsById={allCarsById} />,
+          children: <FrozenTab allCarsById={allCarsById} />
         }, {
           key: 'suggested',
           label: `🎯 Önerilen Araçlar — ${suggestedCars.length} araç`,
@@ -103,7 +105,7 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
           label: `💰 TOPLAM MALİYET — ${visibleAll.length} araç`,
           children: <CarTable cars={visibleAll} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} />
         }].concat(sortedYears.map(year => {
-          const yearlyCars = colorFilter(yearGroups[year]);
+          const yearlyCars = yearlyArranged[year];
           if (yearlyCars.length === 0) return null;
           const winningCarIndex = yearlyCars.reduce((bestIndex, car, currentIndex) => car.metrics.baseTotalCost < yearlyCars[bestIndex].metrics.baseTotalCost ? currentIndex : bestIndex, 0);
 
@@ -116,7 +118,7 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
         {
           key: 'bilgi',
           label: '📚 Bilgi & Kurallar',
-          children: <Tabs items={[
+          children: <Tabs destroyOnHidden items={[
             { key: 'bookmarks', label: '🔖 Bookmarklar', children: <BookmarksTab /> },
             { key: 'notes', label: '📝 Notlar', children: <NotesTab /> },
             { key: 'rules', label: '📋 Kurallar', children: <RulesTab /> },
@@ -125,7 +127,7 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
         {
           key: 'elenenler',
           label: '🚫 Elenenler',
-          children: <Tabs items={[
+          children: <Tabs destroyOnHidden items={[
             { key: 'sold', label: `🚫 Satılan (${sorted.sold.length})`, children: <VehicleTableCard carList={sorted.sold} title="🚫 Satılan Araçlar" isRejected rejectedLabel="SATILDI" /> },
             { key: 'cakal', label: `🐺 Çakal (${sorted.cakal.length})`, children: <VehicleTableCard carList={sorted.cakal} title="🐺 Çakal Kasalar — Modifiyeli / Şüpheli" isRejected rejectedLabel="ÇAKAL" /> },
             { key: 'kazali', label: `💥 Kazalı (${sorted.kazali.length})`, children: <VehicleTableCard carList={sorted.kazali} title="💥 Kazalı Araçlar — Onarılmış Hasar" isRejected rejectedLabel="KAZALI" /> },

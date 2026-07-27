@@ -8,7 +8,6 @@ const formatEuro = (v) => `€${Math.round(v).toLocaleString('tr-TR')}`;
 const formatDrop = (v) => `−€${Math.round(v).toLocaleString('tr-TR')}`;
 
 export const TIERS = RECOMMENDATIONS.tiers;
-const PICKS_PER_CATEGORY = RECOMMENDATIONS.picksPerCategory;
 
 // id → davranış (fonksiyon alanları JSON'a taşınamaz, burada kalır)
 const BEHAVIOR = {
@@ -16,6 +15,8 @@ const BEHAVIOR = {
   firsat:   { scoreOf: c => c.metrics.expectedDealScore, filter: c => c.metrics.baseTotalCost <= BUDGET_MAX, format: formatEuro },
   deger:    { scoreOf: c => c.valueScore, maxScoreOf: () => 100 },
   pazarlik: { scoreOf: c => c.metrics.priceDropTotal, filter: c => c.metrics.priceDropTotal > 0 && c.metrics.baseTotalCost <= BUDGET_MAX, format: formatDrop },
+  // Fiyatı düşenler: sıralama SON fiyat değişikliği tarihine göre (en yeni indirim başta). Gösterim özel (priceDropView).
+  fiyatDusen: { scoreOf: c => (c.metrics.lastDropDate ? new Date(c.metrics.lastDropDate).getTime() : 0), filter: c => c.metrics.priceDropTotal > 0, priceDropView: true },
   gizli:    { scoreOf: c => c.metrics.unknownsPotentialValue, filter: c => c.metrics.unknownsCount > 0 && c.metrics.baseTotalCost <= BUDGET_MAX, format: v => `+${formatEuro(v)}` },
   donanim:  { scoreOf: c => c.metrics.expectedFeaturesValue, maxScoreOf: c => c.metrics.maxFeaturesValue, format: formatEuro },
 };
@@ -27,9 +28,8 @@ export const rankPicks = (evaluatedListings, category) => {
   const pool = category.filter ? evaluatedListings.filter(category.filter) : evaluatedListings;
   // lowerIsBetter (💎 Gerçek Fırsat) → sıralama tersine; scoreOf yine gerçek pozitif değeri döndürür.
   const dir = category.lowerIsBetter ? -1 : 1;
-  return [...pool]
-    .sort((a, b) => dir * (category.scoreOf(b) - category.scoreOf(a)))
-    .slice(0, PICKS_PER_CATEGORY);
+  // Limit yok — her kategori, (filtrelenmiş) havuzdaki tüm uygun araçları sıralı gösterir.
+  return [...pool].sort((a, b) => dir * (category.scoreOf(b) - category.scoreOf(a)));
 };
 
 export const computeSuggestedIds = (evaluatedListings) => {

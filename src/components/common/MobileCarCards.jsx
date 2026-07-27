@@ -1,10 +1,9 @@
 import React from 'react';
-import { Card, Flex, Typography, Button, Space, Tag } from 'antd';
-import { PushpinOutlined, PushpinFilled } from '@ant-design/icons';
+import { Card, Flex, Typography, Space, Tag, Tooltip } from 'antd';
 import { equipmentRules, UI_COLORS, getColorHex, getInteriorHex } from '../../data';
 import { ColorDisplay, InteriorDisplay, FeatureIcon } from './Icons';
+import { FreezeButton } from './FreezeButton';
 import { formatNotes } from '../../utils/helpers';
-import { useFrozenCars } from '../useFrozenCars';
 
 const { Text, Link } = Typography;
 
@@ -16,9 +15,6 @@ const KEY_FEATURES = equipmentRules.filter(r => r.score > 0).sort((a, b) => (b.p
 // Hibrit tasarımın MOBİL yüzü: her araç dikey bir kart (transpoze tablo yerine).
 // Aynı veri; masaüstünde CarTable'ın tablosu, mobilde bu kartlar gösterilir.
 export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED' }) => {
-  const { frozenIds, toggle } = useFrozenCars() || { frozenIds: [], toggle: () => {} };
-  const isFrozen = (id) => frozenIds.includes(id);
-
   return (
     <Flex vertical gap={12}>
       {cars.map(car => {
@@ -44,12 +40,12 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
                   {isRejected && <Tag color="error" style={{ margin: 0 }}>{rejectedLabel}</Tag>}
                   {car.isSold && !isRejected && <Tag color="error" style={{ margin: 0 }}>SATILDI</Tag>}
                   {car.curatorPickBadge && !isRejected && !car.isSold && <Text>{car.curatorPickBadge}</Text>}
-                  {car.modelGeneration === 'LCI' && <Tag color="warning" style={{ margin: 0 }}>🔥 LCI</Tag>}
+                  {car.modelGenerationCertain === false
+                    ? <Tooltip title="LCI/Pre-LCI belirsiz — 01–05/2023 geçiş döneminde iki nesil birlikte tescil edildi. Foto ile teyit gerek."><Tag style={{ margin: 0 }}>⚠️ LCI?</Tag></Tooltip>
+                    : car.modelGeneration === 'LCI' && <Tag color="warning" style={{ margin: 0 }}>🔥 LCI</Tag>}
                 </Space>
               </Flex>
-              <Button type="text" size="small" aria-label="Favori"
-                icon={isFrozen(car.listingId) ? <PushpinFilled style={{ color: UI_COLORS.linkActive }} /> : <PushpinOutlined />}
-                onClick={() => toggle(car.listingId)} />
+              <FreezeButton listingId={car.listingId} />
             </Flex>
 
             {/* Fiyat bloğu */}
@@ -73,7 +69,7 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
                 <Text type="secondary">👤 {car.numberOfPreviousOwners} sahip</Text>
               </Flex>
               <Flex gap={12} wrap align="center">
-                <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} />
+                <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} paintLabel={car.exteriorPaintLabel} />
                 <InteriorDisplay colorCode={getInteriorHex(car.interiorColorName)} colorName={car.interiorColorName} alcantara={car.equipmentFeatures?.KGNL === 'yes'} />
               </Flex>
               <Text>⚙️ {car.drivetrainType} {car.drivetrainCertain === false ? '⚠️' : '✅'}</Text>

@@ -223,7 +223,9 @@
     "description": [
       "Adaptives M Fahrwerk",
       "Adaptives M-Technik Sportfahrwerk",
-      "Adaptives Fahrwerk M"
+      "Adaptives Fahrwerk M",
+      "Adaptives Stoßdämpfungssystem",
+      "Adaptives Stossdaempfungssystem"
     ],
     "negativeDescription": [
       "M Sportfahrwerk"
@@ -560,7 +562,8 @@
     "score": 0,
     "features": [],
     "description": [
-      "Servotronic"
+      "Servotronic",
+      "Geschwindigkeitsabhängige Servolenkung"
     ],
     "props": {},
     "defaultStatus": "no"

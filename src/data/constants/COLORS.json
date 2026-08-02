@@ -251,7 +251,8 @@
       "hex": "#8a8d8f"
     },
     "GREY": {
-      "hex": "#5e5e5e"
+      "hex": "#5e5e5e",
+      "preference": "favorite"
     },
     "Grau": {
       "hex": "#6b7b8a"
@@ -263,7 +264,8 @@
       "hex": "#2d5a3d"
     },
     "Grey": {
-      "hex": "#5e5e5e"
+      "hex": "#5e5e5e",
+      "preference": "favorite"
     },
     "Grey Metallic": {
       "hex": "#7a7d7f"
@@ -286,6 +288,10 @@
       "preference": "disliked"
     },
     "M Portimao Blau": {
+      "hex": "#1e5fa8",
+      "preference": "favorite"
+    },
+    "M Portimao Blau metallic": {
       "hex": "#1e5fa8",
       "preference": "favorite"
     },
@@ -486,6 +492,9 @@
     "arctic race blue": {
       "hex": "#1a4a8a"
     },
+    "black sapphire": {
+      "hex": "#050508"
+    },
     "black sapphire metallic": {
       "hex": "#050508"
     },
@@ -508,6 +517,9 @@
       "preference": "disliked"
     },
     "saphirschwarz": {
+      "hex": "#050508"
+    },
+    "schwarz": {
       "hex": "#050508"
     },
     "tansanitblau ii": {
@@ -576,7 +588,8 @@
       "hex": "#1a1a1a"
     },
     "Full leather, Beige": {
-      "hex": "#c8b89a"
+      "hex": "#c8b89a",
+      "preference": "disliked"
     },
     "Full leather, Black": {
       "hex": "#1a1a1a"

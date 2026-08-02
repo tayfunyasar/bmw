@@ -1232,5 +1232,197 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "modelGenerationCertain": true
+  },
+  {
+    "listingId": "C776",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gc-m-sport-glasdach-acc-360-essen/460792195.html",
+    "mobileDeId": "460792195",
+    "exteriorColorName": "Brooklyn Grau",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 60940,
+    "mileageKm": 11818,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Ernst & Lappe GmbH ★4.8",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-45134 Essen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ GRAN_COUPE_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S536A": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S5ACA": "no",
+      "S430A": "yes",
+      "S3ACA": "no",
+      "S488A": "yes",
+      "S715A": "yes",
+      "S493A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S302A": "yes",
+      "S1MAA": "unknown",
+      "S2NHA": "no",
+      "S6C4A": "no",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S216A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-16T10:32:37.000Z",
+      "modifiedTime": "2026-07-29T09:20:53.000Z",
+      "renewedTime": "2026-07-16T10:32:37.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T10:32:37.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-31T20:38:01.687Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C787",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-laser-19-harman-glasdac-kaarst/460894921.html",
+    "mobileDeId": "460894921",
+    "exteriorColorName": "BMW Individual Frozen Portimao",
+    "interiorColorName": "Full leather, Blue",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 58430,
+    "mileageKm": 14474,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.9",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 184,
+    "listingLocation": "🇩🇪 DE-41564 Kaarst",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ GRAN_COUPE_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S536A": "yes",
+      "S322A": "yes",
+      "S2NHA": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S5ACA": "yes",
+      "S430A": "yes",
+      "S775A": "yes",
+      "S3AGA": "yes",
+      "S3ACA": "no",
+      "S488A": "no",
+      "S715A": "yes",
+      "S493A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S302A": "yes",
+      "S1MAA": "unknown",
+      "S6C4A": "no",
+      "S4AWA": "no",
+      "S3ADA": "no",
+      "S216A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-17T13:40:17.000Z",
+      "modifiedTime": "2026-07-28T23:01:55.000Z",
+      "renewedTime": "2026-07-17T13:40:17.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-17T13:40:17.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-07-31T20:38:01.694Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

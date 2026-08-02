@@ -22,6 +22,7 @@
     "overflowRate": 220.066875
   },
   "BPM_DEFAULT_CO2": 188,
+  "BPM_EXEMPT_COUNTRIES": ["NL"],
   "OWNER_ADJUSTMENT_EUR": {
     "1": -1000,
     "2": 0,

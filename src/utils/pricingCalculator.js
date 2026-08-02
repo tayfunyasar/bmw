@@ -1,7 +1,7 @@
-import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf } from '../data';
 import { computeBaseRates, unknownsExpectedValue, unknownsExpectedScore } from './expectedValue.js';
 
-const { TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
+const { TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, BPM_EXEMPT_COUNTRIES, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
 // Değerlendirme tarihi = BUGÜN (dinamik, türetilmiş). Sabit tarih araç yaşını/BPM'i
 // dondurup skorları eskitirdi; bu yüzden JSON'da tutulmaz, runtime hesaplanır.
 const _now = new Date();
@@ -166,6 +166,15 @@ const calculateBpm = (co2, registrationYear, registrationMonth) => {
   return { bpmBruto, bpmCalculated, depreciationPercent: Math.round(depPercent * 10) / 10, tariefYear };
 };
 
+// Araç zaten BPM'in tahsil edildiği ülkede satılıyorsa (NL) ithalat/BPM maliyeti YOK —
+// tescil orada, vergi ödenmiş. Muaf ülke listesi veri olarak PRICING.json'da.
+// bpmBruto referans olarak korunur (muaf olmasa ne öderdik), bpmCalculated 0'a çekilir.
+const applyBpmExemption = (car, bpm) => {
+  const countryCode = countryCodeOf(car);
+  if (!BPM_EXEMPT_COUNTRIES.includes(countryCode)) return bpm;
+  return Object.assign({}, bpm, { bpmCalculated: 0, exempt: true, exemptCountry: countryCode });
+};
+
 // --- Main Calculator ---
 export function calculateCarMetrics(car) {
   const [registrationYear, registrationMonth] = car.firstRegistrationYearAndMonth;
@@ -174,8 +183,8 @@ export function calculateCarMetrics(car) {
   const ageInMonths = calculateAgeInMonths(registrationYear, registrationMonth);
   const depreciation = calculateDepreciation(ageInMonths, car.mileageKm);
   
-  // 2. BPM Calculation
-  const bpm = calculateBpm(car.co2EmissionsGramPerKm, registrationYear, registrationMonth);
+  // 2. BPM Calculation (NL'de satılan araç muaf — bkz. applyBpmExemption)
+  const bpm = applyBpmExemption(car, calculateBpm(car.co2EmissionsGramPerKm, registrationYear, registrationMonth));
 
   // 3. Base Cost (fiyat + hesaplanan BPM)
   const baseTotalCost = car.basePriceEuro + (bpm.bpmCalculated || 0);

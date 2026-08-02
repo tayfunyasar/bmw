@@ -1441,7 +1441,7 @@
     "drivetrainType": "RWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 38900,
+    "basePriceEuro": 34900,
     "mileageKm": 53976,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -1506,8 +1506,8 @@
     },
     "listingDates": {
       "createdTime": "2026-07-26T12:15:16.000Z",
-      "modifiedTime": "2026-07-26T12:15:19.000Z",
-      "renewedTime": "2026-07-26T12:15:16.000Z"
+      "modifiedTime": "2026-08-02T13:53:27.000Z",
+      "renewedTime": "2026-07-31T12:27:39.000Z"
     },
     "auditHistory": [
       {
@@ -1521,6 +1521,23 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-26T13:06:30.274Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-31T12:27:39.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 38900,
+            "new": 34900
+          }
+        },
+        "auditDate": "2026-08-02T16:16:19.191Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

@@ -262,13 +262,15 @@ const CarTableComponent = ({
     Object.assign({ key: 'price_row', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
     Object.assign({ key: 'bpm_calc_row', prop: '+ BPM' }, Object.fromEntries(cars.map(car => {
       const calc = car.metrics?.bpmCalculation;
+      // Muaf (NL) → 0 falsy olduğu için '?' branch'inden ÖNCE kontrol edilmeli.
+      if (calc?.exempt) return [car.listingId, `€0 — ${calc.exemptCountry} tescilli, BPM ödenmiş`];
       if (!calc?.bpmCalculated) return [car.listingId, '?'];
       return [car.listingId, `€${calc.bpmCalculated.toLocaleString()} (${calc.depreciationPercent}% afs., ${calc.tariefYear} tarief)`];
     }))),
     Object.assign({ key: 'total_calc_row', prop: 'TOPLAM', isTotal: true }, Object.fromEntries(cars.map(car => {
-      const bpm = car.metrics?.bpmCalculation?.bpmCalculated;
-      if (!bpm) return [car.listingId, null];
-      return [car.listingId, (car.basePriceEuro || 0) + bpm];
+      const calc = car.metrics?.bpmCalculation;
+      if (!calc?.exempt && !calc?.bpmCalculated) return [car.listingId, null];
+      return [car.listingId, (car.basePriceEuro || 0) + (calc.bpmCalculated || 0)];
     }))),
   ];
 

@@ -21,6 +21,8 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
         const m = car.metrics || {};
         const bpm = m.bpmCalculation?.bpmCalculated;
         const total = bpm != null ? (car.basePriceEuro || 0) + bpm : null;
+        // NL tescilli araçta BPM yok — "(+BPM)" etiketi yanıltıcı olurdu.
+        const totalNote = m.bpmCalculation?.exempt ? `(${m.bpmCalculation.exemptCountry} — BPM yok)` : '(+BPM)';
         const deal = m.expectedDealScore ?? m.personalDealScore;
         const [ry, rm] = car.firstRegistrationYearAndMonth || [];
         const reg = (ry != null && rm != null) ? `${String(rm).padStart(2, '0')}/${ry}` : '?';
@@ -53,7 +55,7 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
               <Flex vertical>
                 <Text type="secondary" style={{ fontSize: 11 }}>Fiyat / Toplam</Text>
                 <Text strong style={{ fontSize: 18 }}>{euro(car.basePriceEuro)}</Text>
-                <Text type="secondary" style={{ fontSize: 12 }}>{total != null ? `${euro(total)} (+BPM)` : ''}</Text>
+                <Text type="secondary" style={{ fontSize: 12 }}>{total != null ? `${euro(total)} ${totalNote}` : ''}</Text>
               </Flex>
               <Flex vertical style={{ padding: '2px 10px', borderRadius: 8, background: 'rgba(82,196,26,0.08)' }}>
                 <Text type="secondary" style={{ fontSize: 11 }}>💎 Fırsat fiyatı</Text>

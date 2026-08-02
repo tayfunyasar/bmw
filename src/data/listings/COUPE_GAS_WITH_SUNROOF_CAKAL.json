@@ -81,6 +81,12 @@
         "auditDate": "2026-04-17T11:39:24.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-17T11:39:24.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -108,10 +114,10 @@
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
-      "type": "unknown",
+      "type": "yes",
       "history": []
     },
     "nextInspectionDate": "02/2028",
@@ -174,6 +180,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-05T07:07:56.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-05T07:07:56.000Z"
@@ -403,6 +415,45 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "aiCommentary": {
+            "old": [
+              "🟢 28 gündür satışta — yeni ilan",
+              "🟡 Servis geçmişi bilinmiyor",
+              "🟡 Özel satıcı — bayi güvencesi yok",
+              "285 kW / 387 BG — LCI güç seviyesi! Pre-LCI 275 kW. BPM etkisi: LCI ise ~€11K",
+              "Özel satıcı (Kleinanzeigen) — bayi güvencesi yok ama BMW garanti devam ediyor",
+              "⚠️ Çakal kasa: Sportfedern (spor yay) = daha sert ve daha düşük duruş, fabrika EDC'ye kıyasla alçaltılmış",
+              "⚠️ Çakal kasa: Spurverbreiterung (iz genişletici) = tekerlekleri dışa taşıyor, daha agresif duruş + iz stabilitesi",
+              "⚠️ Çakal kasa: Geliştirilmiş motor yazılımı / ECU optimizasyonu, yüksek performanslı filtrasyon, bazı versiyonlarda şanzıman kalibrasyonu",
+              "🟠 Toplam €58,114 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T19:24:22.609Z"
       }
     ],
     "cardThemeColorHex": "#c084fc",
@@ -412,17 +463,7 @@
         "reason": "Fotoğraflardan sunroof teyit edildi"
       }
     },
-    "aiCommentary": [
-      "🟢 28 gündür satışta — yeni ilan",
-      "🟡 Servis geçmişi bilinmiyor",
-      "🟡 Özel satıcı — bayi güvencesi yok",
-      "285 kW / 387 BG — LCI güç seviyesi! Pre-LCI 275 kW. BPM etkisi: LCI ise ~€11K",
-      "Özel satıcı (Kleinanzeigen) — bayi güvencesi yok ama BMW garanti devam ediyor",
-      "⚠️ Çakal kasa: Sportfedern (spor yay) = daha sert ve daha düşük duruş, fabrika EDC'ye kıyasla alçaltılmış",
-      "⚠️ Çakal kasa: Spurverbreiterung (iz genişletici) = tekerlekleri dışa taşıyor, daha agresif duruş + iz stabilitesi",
-      "⚠️ Çakal kasa: Geliştirilmiş motor yazılımı / ECU optimizasyonu, yüksek performanslı filtrasyon, bazı versiyonlarda şanzıman kalibrasyonu",
-      "🟠 Toplam €58,114 — bütçe üst sınırına yakın"
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2026-03-05T07:07:56.000Z",
       "modifiedTime": "2026-03-31T15:05:03.000Z",
@@ -448,7 +489,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": true
+      "exists": "yes"
     },
     "service": {
       "type": "yes",
@@ -608,13 +649,32 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.212Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "aiCommentary": {
+            "old": [
+              "🔴 183 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+              "⚠️ İlan 171 gün sonra yenilendi — ilgi düşük olabilir"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T19:24:22.590Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🔴 183 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
-      "⚠️ İlan 171 gün sonra yenilendi — ilgi düşük olabilir"
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2025-10-01T09:44:37.000Z",
       "modifiedTime": "2026-03-31T16:42:41.000Z",
@@ -640,7 +700,7 @@
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
       "type": "yes",
@@ -701,6 +761,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-03T13:44:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-03T13:44:10.000Z"
@@ -819,15 +885,34 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "aiCommentary": {
+            "old": [
+              "🟢 29 gündür satışta — yeni ilan",
+              "CO₂ 0 g/km kayıtlı (Avusturya hatalı kayıt), gerçek ~183 g/km",
+              "🇦🇹 Avusturya ithalatı",
+              "🟠 Toplam €60,939 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T19:24:22.607Z"
       }
     ],
     "cardThemeColorHex": "#f472b6",
-    "aiCommentary": [
-      "🟢 29 gündür satışta — yeni ilan",
-      "CO₂ 0 g/km kayıtlı (Avusturya hatalı kayıt), gerçek ~183 g/km",
-      "🇦🇹 Avusturya ithalatı",
-      "🟠 Toplam €60,939 — bütçe üst sınırına yakın"
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2026-03-03T13:44:10.000Z",
       "modifiedTime": "2026-03-31T14:53:57.000Z",
@@ -853,7 +938,7 @@
     ],
     "numberOfPreviousOwners": "1",
     "warranty": {
-      "exists": "unknown"
+      "exists": "no"
     },
     "service": {
       "type": "unknown",
@@ -1081,16 +1166,35 @@
           }
         },
         "auditDate": "2026-04-01T20:22:48.210Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "aiCommentary": {
+            "old": [
+              "🟢 23 gündür satışta — yeni ilan",
+              "ℹ️ İlan 20 gün sonra yenilendi",
+              "🔴 2,258 km / 59 ay — anormal düşük km riski",
+              "🟡 Servis geçmişi bilinmiyor",
+              "⚠️ 2,258 km — neden 5 yıldır kullanılmamış?"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T19:24:22.610Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
-    "aiCommentary": [
-      "🟢 23 gündür satışta — yeni ilan",
-      "ℹ️ İlan 20 gün sonra yenilendi",
-      "🔴 2,258 km / 59 ay — anormal düşük km riski",
-      "🟡 Servis geçmişi bilinmiyor",
-      "⚠️ 2,258 km — neden 5 yıldır kullanılmamış?"
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2026-03-10T07:13:59.000Z",
       "modifiedTime": "2026-03-31T14:41:19.000Z",
@@ -1173,6 +1277,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-03T09:51:48.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-03-03T09:51:48.000Z"
@@ -1518,19 +1628,30 @@
         "detail": "Kullanıcı kararı: araç çok şüpheli",
         "changes": null,
         "auditDate": "2026-04-07T20:56:50.167Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🔴 310 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+              "⚠️ İlan 121 gün sonra yenilendi — ilgi düşük olabilir",
+              "🔴 TÜV/HU süresi dolmuş (02/2026)",
+              "🟡 Servis geçmişi bilinmiyor",
+              "CO₂ 152 g/km (olması gereken ~183) — şüpheli",
+              "⚠️ Adres uyuşmazlığı (kayıt: Stemshorn, ilan: Diepholz)",
+              "HU 02/2026 dolmuş",
+              "mobile.de: Çok iyi fiyat etiketi"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T19:24:22.587Z"
       }
     ],
     "cardThemeColorHex": "#22d3ee",
-    "aiCommentary": [
-      "🔴 310 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
-      "⚠️ İlan 121 gün sonra yenilendi — ilgi düşük olabilir",
-      "🔴 TÜV/HU süresi dolmuş (02/2026)",
-      "🟡 Servis geçmişi bilinmiyor",
-      "CO₂ 152 g/km (olması gereken ~183) — şüpheli",
-      "⚠️ Adres uyuşmazlığı (kayıt: Stemshorn, ilan: Diepholz)",
-      "HU 02/2026 dolmuş",
-      "mobile.de: Çok iyi fiyat etiketi"
-    ],
+    "aiCommentary": null,
     "listingDates": {
       "createdTime": "2025-05-26T13:00:09.000Z",
       "modifiedTime": "2026-03-31T17:03:26.000Z",
@@ -2009,6 +2130,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-05T19:26:22.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-05T19:26:22.000Z"

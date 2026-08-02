@@ -483,6 +483,12 @@ async function run() {
   fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2));
   fs.writeFileSync(rwdSoldWithSunroofPath, JSON.stringify(rwdSoldWithSunroof, null, 2));
   fs.writeFileSync(rwdSoldWithoutSunroofPath, JSON.stringify(rwdSoldWithoutSunroof, null, 2));
+  // CAKAL ve DELETED de yazılır: ikisi de yukarıda okunup applyUpdatesAndGetChanges ile
+  // GÜNCELLENİYOR (audit kaydı dahil) ama eskiden diske yazılmıyordu — değişiklikler her
+  // çalıştırmada yeniden hesaplanıp atılıyor, script "güncellendi" deyip hiçbir şey
+  // kaydetmiyordu (idempotent değildi).
+  fs.writeFileSync(cakalPath, JSON.stringify(cakal, null, 2));
+  fs.writeFileSync(deletedPath, JSON.stringify(deleted, null, 2));
 }
 
 run().catch(console.error);

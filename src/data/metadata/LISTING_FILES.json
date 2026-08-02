@@ -113,5 +113,12 @@
     "COUPE_GAS_RWD_WITH_SUNROOF.json",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
     "GRAN_COUPE.json"
+  ],
+  "autoSoldSourceFiles": [
+    "COUPE_GAS_WITH_SUNROOF.json",
+    "COUPE_GAS_WITHOUT_SUNROOF.json",
+    "COUPE_DIESEL_WITH_SUNROOF.json",
+    "COUPE_GAS_RWD_WITH_SUNROOF.json",
+    "COUPE_GAS_RWD_WITHOUT_SUNROOF.json"
   ]
 }

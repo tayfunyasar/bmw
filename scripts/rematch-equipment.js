@@ -18,51 +18,31 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { matchEquipmentFeatures } from './lib/equipment-match.js';
+import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const dumpDir = path.resolve(__dirname, '../dump');
 const equipmentRulesPath = path.resolve(__dirname, '../src/data/metadata/EQUIPMENT_RULES.json');
+const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
 
-// enforce-listings.js'teki kanonik dosya listesiyle ayni (o dosyalar --fix ile
-// sema/sira acisindan dogrulaniyor; burada da onlari tazeliyoruz).
-const files = [
-  'COUPE_GAS_WITH_SUNROOF.json',
-  'COUPE_GAS_WITHOUT_SUNROOF.json',
-  'COUPE_GAS_WITH_SUNROOF_SOLD.json',
-  'COUPE_DIESEL_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
-  'DELETED_CARS.json',
-  'GRAN_COUPE.json',
-  'CABRIO.json',
-];
+// Kanonik TAM dosya listesi (arsiv/cakal/kazali dahil) — tek kaynak LISTING_FILES.json.
+// Burada hardcode liste TUTULMAZ: eskiden 9 dosya sayiliyordu ve CAKAL/KAZALI/
+// GRAN_COUPE_KAZALI hic yeniden turetilmiyordu.
+const files = LISTING_FILES.allFiles;
 
 const isDry = process.argv.includes('--dry');
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
 
-// Her mobileDeId icin en yeni dump dosyasini bul (flip-flop onleme).
-function buildLatestDumps() {
-  const latest = {};
-  for (const filename of fs.readdirSync(dumpDir)) {
-    if (!filename.endsWith('.json')) continue;
-    const [id, tsRaw] = filename.replace('.json', '').split('_');
-    if (!id) continue;
-    const ts = parseInt(tsRaw) || 0;
-    if (!latest[id] || ts > latest[id].ts) latest[id] = { ts, filename };
-  }
-  return latest;
-}
-
-const latestDumps = buildLatestDumps();
+const dumpIndex = buildDumpIndex();
 
 // Ozet sayaclar
 const summary = {
   totalListings: 0,
   noDump: 0,
   deadDump: 0,
+  staleFallback: 0,
   updatedListings: 0,
   overrideSkips: 0,
   transitions: {}, // "unknown→no" gibi
@@ -70,24 +50,14 @@ const summary = {
 
 function rematchListing(listing) {
   summary.totalListings++;
-  const id = listing.mobileDeId;
-  const dumpRef = id ? latestDumps[id] : null;
-  if (!dumpRef) {
-    summary.noDump++;
+  // En yeni CANLI dump — en yeni dump "ilan kalkmis" bos kaydiysa daha eskisine duser.
+  const { raw, reason, staleFallback } = readLiveDump(listing.mobileDeId, dumpIndex);
+  if (!raw) {
+    if (reason === 'deadDump') summary.deadDump++;
+    else summary.noDump++;
     return false;
   }
-
-  let raw;
-  try {
-    raw = JSON.parse(fs.readFileSync(path.join(dumpDir, dumpRef.filename), 'utf8'));
-  } catch {
-    summary.noDump++;
-    return false;
-  }
-  if (raw.title === 'Listing does not exists anymore') {
-    summary.deadDump++;
-    return false;
-  }
+  if (staleFallback) summary.staleFallback++;
 
   const fresh = matchEquipmentFeatures(
     { description: raw.description || '', features: raw.features || [], props: raw.properties || {} },
@@ -137,6 +107,7 @@ console.log(`Toplam ilan            : ${summary.totalListings}`);
 console.log(`Guncellenen ilan       : ${summary.updatedListings}`);
 console.log(`Dump'i olmayan (atlandi): ${summary.noDump}`);
 console.log(`Kalkmis dump (atlandi) : ${summary.deadDump}`);
+console.log(`Eski canli dump'a dusen: ${summary.staleFallback}`);
 console.log(`Override korunan kod   : ${summary.overrideSkips}`);
 console.log('Durum gecisleri:');
 for (const [k, v] of Object.entries(summary.transitions).sort((a, b) => b[1] - a[1])) {

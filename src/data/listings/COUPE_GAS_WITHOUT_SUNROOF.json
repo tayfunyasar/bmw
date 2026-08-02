@@ -815,12 +815,23 @@
           }
         },
         "auditDate": "2026-04-12T10:10:36.089Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🔴 Toplam €72,291 — bütçe aşımı"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.065Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
-    "aiCommentary": [
-      "🔴 Toplam €72,291 — bütçe aşımı"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C102",
@@ -1095,12 +1106,23 @@
           }
         },
         "auditDate": "2026-04-23T20:31:59.366Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟠 Toplam €58,363 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.067Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟠 Toplam €58,363 — bütçe üst sınırına yakın"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C117",
@@ -1507,14 +1529,25 @@
           }
         },
         "auditDate": "2026-04-07T21:08:00.716Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟢 27 gündür satışta — yeni ilan",
+              "ℹ️ İlan 7 gün sonra yenilendi",
+              "🔴 Toplam €69,796 — bütçe aşımı"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.078Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🟢 27 gündür satışta — yeni ilan",
-      "ℹ️ İlan 7 gün sonra yenilendi",
-      "🔴 Toplam €69,796 — bütçe aşımı"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C135",
@@ -2361,13 +2394,24 @@
           }
         },
         "auditDate": "2026-04-07T20:39:29.180Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🔴 274 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+              "🔴 Toplam €68,826 — bütçe aşımı"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.057Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
-    "aiCommentary": [
-      "🔴 274 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
-      "🔴 Toplam €68,826 — bütçe aşımı"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C48",
@@ -2658,12 +2702,23 @@
           }
         },
         "auditDate": "2026-04-07T20:51:17.483Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🔴 240 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.060Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "🔴 240 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C171",
@@ -4480,16 +4535,27 @@
         "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
         "changes": null,
         "auditDate": "2026-05-05T14:48:29.323Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟡 Servis geçmişi bilinmiyor",
+              "💰 LCI 04/2024 BPM ~€11K → toplam ~€66K (limit aşımı!)",
+              "⭐ Ind. Tansanit-Blau II (favori renk!)",
+              "🚫 Sunroof YOK",
+              "🔴 Toplam €66,737 — bütçe aşımı"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.063Z"
       }
     ],
     "cardThemeColorHex": "#60a5fa",
-    "aiCommentary": [
-      "🟡 Servis geçmişi bilinmiyor",
-      "💰 LCI 04/2024 BPM ~€11K → toplam ~€66K (limit aşımı!)",
-      "⭐ Ind. Tansanit-Blau II (favori renk!)",
-      "🚫 Sunroof YOK",
-      "🔴 Toplam €66,737 — bütçe aşımı"
-    ]
+    "aiCommentary": null
   },
   {
     "listingId": "C246",
@@ -4572,6 +4638,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-06T15:35:24.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-05-06T15:35:24.000Z"
@@ -4674,6 +4746,12 @@
         "auditDate": "2026-05-10T19:11:18.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-10T19:11:18.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -4771,6 +4849,12 @@
         "auditDate": "2026-05-11T15:27:54.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-11T15:27:54.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -4861,6 +4945,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-12T04:14:38.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-05-12T04:14:38.000Z"
@@ -4963,6 +5053,12 @@
         "auditDate": "2026-05-18T11:38:04.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-18T11:38:04.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -5058,6 +5154,12 @@
         "auditDate": "2026-05-19T18:05:41.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-19T18:05:41.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -5148,6 +5250,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-20T09:10:34.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-05-20T09:10:34.000Z"
@@ -5349,6 +5457,12 @@
         "auditDate": "2026-05-28T15:13:43.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-28T15:13:43.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -5439,6 +5553,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-28T15:15:42.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-05-28T15:15:42.000Z"
@@ -5539,6 +5659,12 @@
         "auditDate": "2026-05-30T15:58:18.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-30T15:58:18.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -5629,6 +5755,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-01T11:04:19.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-01T11:04:19.000Z"
@@ -5729,6 +5861,12 @@
         "auditDate": "2026-06-08T11:29:49.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-08T11:29:49.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -5819,6 +5957,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-11T13:56:22.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-11T13:56:22.000Z"
@@ -5919,6 +6063,12 @@
         "auditDate": "2026-06-11T13:57:11.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-11T13:57:11.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -6009,6 +6159,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-19T04:13:56.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-19T04:13:56.000Z"
@@ -6109,6 +6265,12 @@
         "auditDate": "2026-06-19T07:55:20.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-19T07:55:20.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -6199,6 +6361,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-20T08:29:12.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-20T08:29:12.000Z"
@@ -6299,6 +6467,12 @@
         "auditDate": "2026-06-21T10:54:15.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-21T10:54:15.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -6394,6 +6568,12 @@
         "auditDate": "2026-06-24T07:44:54.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-24T07:44:54.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -6484,6 +6664,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-27T09:54:39.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-27T09:54:39.000Z"
@@ -6685,6 +6871,12 @@
         "auditDate": "2026-07-03T17:08:07.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-03T17:08:07.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -6775,6 +6967,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-06T11:36:20.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-06T11:36:20.000Z"
@@ -6875,6 +7073,12 @@
         "auditDate": "2026-07-07T14:37:53.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-07T14:37:53.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -6965,6 +7169,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-08T22:27:41.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-08T22:27:41.000Z"
@@ -7065,6 +7275,12 @@
         "auditDate": "2026-07-13T12:42:33.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-13T12:42:33.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -7155,6 +7371,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-15T14:36:08.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-15T14:36:08.000Z"
@@ -7255,6 +7477,12 @@
         "auditDate": "2026-07-15T15:57:23.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-15T15:57:23.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -7345,6 +7573,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-15T19:55:59.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-15T19:55:59.000Z"
@@ -7445,6 +7679,12 @@
         "auditDate": "2026-07-16T17:23:48.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T17:23:48.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -7535,6 +7775,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-17T06:43:21.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-17T06:43:21.000Z"
@@ -7635,6 +7881,12 @@
         "auditDate": "2026-07-17T09:34:04.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-17T09:34:04.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -7725,6 +7977,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-19T15:28:34.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-19T15:28:34.000Z"
@@ -7825,6 +8083,12 @@
         "auditDate": "2026-07-20T17:13:00.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-20T17:13:00.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -7915,6 +8179,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-24T10:50:17.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-24T10:50:17.000Z"
@@ -8015,6 +8285,12 @@
         "auditDate": "2026-07-29T03:26:56.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-29T03:26:56.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -8110,6 +8386,12 @@
         "auditDate": "2026-07-29T14:52:52.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-29T14:52:52.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -8200,6 +8482,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-30T10:32:07.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-30T10:32:07.000Z"
@@ -8603,6 +8891,12 @@
         "auditDate": "2026-07-20T07:09:15.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-20T07:09:15.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -8693,6 +8987,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-24T09:59:52.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-24T09:59:52.000Z"
@@ -8793,6 +9093,12 @@
         "auditDate": "2026-07-24T17:29:01.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-24T17:29:01.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -8888,6 +9194,12 @@
         "auditDate": "2026-07-25T03:43:00.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-25T03:43:00.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -8978,6 +9290,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-27T08:52:28.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-27T08:52:28.000Z"

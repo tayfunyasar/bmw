@@ -5,7 +5,8 @@ import { pushSoldAudit } from './lib/sold.js';
 import { classifyBodyStyle, rawCarToTextObj, rawCarApifyCategory } from './lib/body-style.js';
 import { matchEquipmentFeatures } from './lib/equipment-match.js';
 import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
-import { soldArchiveFor, SOLD_FILES } from './lib/move-listing.js';
+import { SOLD_FILES, soldArchiveFor, isManuallyMarkedKazali } from './lib/move-listing.js';
+import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,6 +46,8 @@ const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
 // Config veri JSON'dan (Node fs deseni) — ülke bayrakları.
 const COUNTRY_FLAGS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/COUNTRY_FLAGS.json'), 'utf8'));
+// Otomatik "kalkti -> SATILDI" yalnizca bu kaynak dosyalarda calisir (coupe ailesi).
+const AUTO_SOLD_SOURCE_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8')).autoSoldSourceFiles;
 
 function getNextListingId(existingListings) {
   let maxId = 0;
@@ -218,10 +221,9 @@ function applyUpdatesAndGetChanges(existingCar, newCar) {
 }
 
 async function run() {
-  const dumpDir = path.resolve(__dirname, '../dump');
-  const allDumpFiles = fs.readdirSync(dumpDir).filter(f => f.endsWith('.json'));
+  const dumpIndex = buildDumpIndex();
 
-  if (allDumpFiles.length === 0) {
+  if (Object.keys(dumpIndex).length === 0) {
       console.error('dump/ dizininde işlenecek JSON dosyası bulunamadı.');
       process.exit(0);
   }
@@ -232,21 +234,25 @@ async function run() {
       console.log(`🔎 Filtre aktif: sadece ${filterIds.length} ID işlenecek (${filterIds.join(', ')})`);
   }
 
-  // Her mobileDeId için sadece en yeni dump dosyasını al (flip-flop önleme)
-  const latestDumps = {};
-  for (const filename of allDumpFiles) {
-      const [id, tsRaw] = filename.replace('.json', '').split('_');
-      if (filterIds.length > 0 && !filterIds.includes(id)) continue;
-      const ts = parseInt(tsRaw);
-      if (!latestDumps[id] || ts > latestDumps[id].ts) {
-          latestDumps[id] = { ts, filename };
-      }
-  }
+  // Her mobileDeId için İKİ AYRI şey çıkarılır (bkz. lib/dumps.js):
+  //   içerik       → en yeni CANLI dump. En yenisi ölüyse daha eski dolu dump'a
+  //                  düşülür, böylece ilan yeniden türetilebilir kalır.
+  //   piyasa durumu→ en yeni dump ölüyse ilan mobile.de'den kalkmış demektir.
+  // Eskiden bu ikisi aynı şeymiş gibi ele alınıyordu: ölü dump görülünce ilan
+  // SOLD'a taşınıyor ama verisi hiç tazelenmiyordu (69 ilan bu yüzden eski kaldı).
   const carData = [];
-  for (const { filename } of Object.values(latestDumps)) {
-      const filePath = path.join(dumpDir, filename);
-      carData.push(JSON.parse(fs.readFileSync(filePath, 'utf-8')));
+  const removedFromMarket = new Set();
+  let recovered = 0, unrecoverable = 0;
+  for (const id of Object.keys(dumpIndex)) {
+      if (filterIds.length > 0 && !filterIds.includes(id)) continue;
+      const { raw, staleFallback, newestIsDead } = readLiveDump(id, dumpIndex);
+      if (newestIsDead) removedFromMarket.add(id);
+      if (!raw) { unrecoverable++; continue; }
+      if (staleFallback) recovered++;
+      carData.push(raw);
   }
+  if (recovered > 0) console.log(`♻️  ${recovered} ilan için en yeni dump ölüydü, veri daha eski dolu dump'tan tazelendi.`);
+  if (unrecoverable > 0) console.log(`⏭️  ${unrecoverable} ilanın kullanılabilir dump'ı yok, atlandı.`);
 
   if (carData.length === 0) {
       console.error('İşlenecek geçerli araç verisi bulunamadı.');
@@ -342,32 +348,10 @@ async function run() {
     return { target: isSunroof ? 'COUPE_GAS_WITH_SUNROOF' : 'COUPE_GAS_WITHOUT_SUNROOF' };
   }
 
+  // Kalkmış ilanların SOLD'a taşınması AŞAĞIDA, ana döngüden SONRA yapılır —
+  // önce veriler tazelensin, sonra taşınsın (eskiden taşıma `continue` ile ana
+  // döngüyü atladığı için bu ilanların verisi hiç güncellenmiyordu).
   for (const car of carData) {
-    // Apify "Listing does not exists anymore" cevabı: ilan mobile.de'den kalkmış → otomatik SOLD'a taşı
-    if (car.title === 'Listing does not exists anymore') {
-      const deadId = String(car.id ?? car.url?.match(/\/a\/(\d+)/)?.[1] ?? '').trim();
-      if (!deadId) {
-        console.warn(`⚠️ Kalkmış ilan ama mobileDeId tespit edilemedi — url: ${car.url}`);
-        continue;
-      }
-      const { car: existingCar, source } = findCarAndSource(deadId);
-      if (!existingCar) {
-        console.log(`ℹ️ Kalkmış ilan ${deadId} aktif listelerde zaten yok, atlanıyor.`);
-        continue;
-      }
-      if (frozenFiles.includes(source)) {
-        console.log(`ℹ️ ${existingCar.listingId} (${deadId}) zaten ${source.name}'da — atlanıyor.`);
-        continue;
-      }
-      const idx = source.data.indexOf(existingCar);
-      source.data.splice(idx, 1);
-      const soldArchive = soldArchiveFor(existingCar);
-      pushSoldAudit(existingCar, `${source.name}.json`, "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)");
-      soldArraysByFileName[soldArchive.name].push(existingCar);
-      console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → ${soldArchive.name}`);
-      continue;
-    }
-
     const mobileDeIdMatch = car.url?.match(/id=(\d+)/) || car.url?.match(/\/(\d+)\.html/);
     const mobileDeId = mobileDeIdMatch ? mobileDeIdMatch[1] : null;
 
@@ -412,9 +396,15 @@ async function run() {
             console.log(`ℹ️ ${existingCar.listingId} tarandı ancak değişen bir veri bulunamadı.`);
         }
 
-        // Dosya yerleşim kontrolü — sadece aktif dosyalardaki araçlar taşınabilir
+        // Dosya yerleşim kontrolü — sadece aktif dosyalardaki araçlar taşınabilir.
+        // Elle KAZALI işaretlenmiş ilan sabitlenir: Apify metninde hasar kelimesi
+        // geçmemesi, insanın verdiği kazalı kararını ezmez.
         const isFrozen = frozenFiles.some(f => f === source);
-        if (!isFrozen) {
+        const pinnedKazali = source.name.includes('KAZALI') && isManuallyMarkedKazali(existingCar);
+        if (pinnedKazali) {
+            console.log(`📌 ${existingCar.listingId} elle KAZALI işaretli — ${source.name}'da sabit tutuldu.`);
+        }
+        if (!isFrozen && !pinnedKazali) {
             const { target: targetName, reason } = determineTargetFile(existingCar, car);
             if (targetName !== source.name) {
                 const idx = source.data.indexOf(existingCar);
@@ -451,6 +441,33 @@ async function run() {
         targetFile.data.push(parsedCar);
         console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)${reason ? ` — ${reason}` : ''}`);
     }
+  }
+
+  // --- Kalkmış ilanlar → SOLD (veriler yukarıda tazelendikten SONRA) ---
+  // Sinyal: en yeni dump "Listing does not exists anymore". Bu, Apify'ın BAŞARILI
+  // cevabıdır — mobile.de'ye ulaşılmış ve "ilan yok" denmiştir. 403/oturum hatasında
+  // apify-fetch-car.js hiç dump YAZMAZ, dolayısıyla bu sinyal "çekemedik" ile karışmaz.
+  for (const deadId of removedFromMarket) {
+    const { car: existingCar, source } = findCarAndSource(deadId);
+    if (!existingCar) continue;                                  // zaten listelerde yok
+    if (frozenFiles.includes(source)) continue;                  // zaten SOLD/CAKAL/DELETED
+    // soldArchiveFor yalnızca tahrike göre yönlendirir, gövde tipi bilmez — CABRIO /
+    // GRAN_COUPE ilanları coupe SOLD arşivine düşer ve oradan uygulamanın karşılaştırma
+    // havuzuna sızar (pricingCalculator: soldGasListings → allByTotalCost). Bu gövdeler
+    // zaten alım hunisinin dışında; otomatik satış yalnızca coupe ailesinde çalışır.
+    // Elle `npm run move:sell` hâlâ mümkün (insan kararı sınırlanmaz).
+    if (!AUTO_SOLD_SOURCE_FILES.includes(`${source.name}.json`)) continue;
+    // Elle KAZALI işaretli ilan burada da sabit kalır — insan kararı korunur,
+    // gerekiyorsa `npm run move:sell` ile elle taşınır.
+    if (source.name.includes('KAZALI') && isManuallyMarkedKazali(existingCar)) {
+      console.log(`📌 ${existingCar.listingId} (${deadId}) kalkmış ama elle KAZALI işaretli — ${source.name}'da bırakıldı.`);
+      continue;
+    }
+    source.data.splice(source.data.indexOf(existingCar), 1);
+    const soldArchive = soldArchiveFor(existingCar);
+    pushSoldAudit(existingCar, `${source.name}.json`, "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)");
+    soldArraysByFileName[soldArchive.name].push(existingCar);
+    console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → ${soldArchive.name}`);
   }
 
   // Tüm değişiklikleri diske yaz

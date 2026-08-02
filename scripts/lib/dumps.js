@@ -36,23 +36,41 @@ export function buildDumpIndex(dir = dumpDir) {
 }
 
 // Bir ilan icin kullanilabilir en yeni CANLI dump'i okur.
-//   donus: { raw, filename, ts, staleFallback }  — staleFallback: en yeni dump oluydu,
-//          daha eski bir canli dump'a dusuldu (veri guncel olmayabilir).
-//   bulunamazsa: { raw: null, reason: 'noDump' | 'deadDump' | 'unreadable' }
+//
+// IKI AYRI SINYAL dondurur, karistirilmamali:
+//   raw          → ICERIK: en yeni canli dump (donanim/tahrik bundan turetilir)
+//   newestIsDead → PIYASA DURUMU: en yeni dump "ilan kalkmis" cevabi mi?
+//
+// newestIsDead neden guvenilir: apify-fetch-car.js dump dosyasini YALNIZCA Apify bir
+// item dondurdugunde yazar. 403/oturum hatasinda chunk catch'e duser ve hic dosya
+// yazilmaz (ilan sadece stale kalir). Dolayisiyla olu dump = Apify mobile.de'ye
+// ulasti ve "bu ilan yok" cevabini aldi → satilmis/kaldirilmis sinyali.
+//
+//   donus: { raw, filename, ts, staleFallback, newestIsDead }
+//          staleFallback: en yeni dump kullanilamadi, daha eskiye dusuldu.
+//   icerik bulunamazsa: { raw: null, reason: 'noDump' | 'deadDump' | 'unreadable', newestIsDead }
 export function readLiveDump(mobileDeId, index, dir = dumpDir) {
   const candidates = mobileDeId ? index[String(mobileDeId)] : null;
-  if (!candidates?.length) return { raw: null, reason: 'noDump' };
+  if (!candidates?.length) return { raw: null, reason: 'noDump', newestIsDead: false };
+
+  const readDump = (filename) => {
+    try {
+      return JSON.parse(fs.readFileSync(path.join(dir, filename), 'utf8'));
+    } catch {
+      return null; // bozuk dosya
+    }
+  };
+
+  const newest = readDump(candidates[0].filename);
+  // Yalnizca GERCEK olu cevap sinyal sayilir; okunamayan dosya "kalkmis" demek degil.
+  const newestIsDead = newest !== null && isDeadDump(newest);
 
   let sawDead = false;
   for (const [position, candidate] of candidates.entries()) {
-    let raw;
-    try {
-      raw = JSON.parse(fs.readFileSync(path.join(dir, candidate.filename), 'utf8'));
-    } catch {
-      continue; // bozuk dosya — bir sonraki adaya gec
-    }
+    const raw = position === 0 ? newest : readDump(candidate.filename);
+    if (raw === null) continue;           // bozuk dosya — bir sonraki adaya gec
     if (isDeadDump(raw)) { sawDead = true; continue; }
-    return { raw, filename: candidate.filename, ts: candidate.ts, staleFallback: position > 0 };
+    return { raw, filename: candidate.filename, ts: candidate.ts, staleFallback: position > 0, newestIsDead };
   }
-  return { raw: null, reason: sawDead ? 'deadDump' : 'unreadable' };
+  return { raw: null, reason: sawDead ? 'deadDump' : 'unreadable', newestIsDead };
 }

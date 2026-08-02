@@ -30,6 +30,15 @@ export function soldArchiveFor(car) {
 
 export const DEFAULT_SOURCE_FILES = LISTING_FILES.defaultSourceFiles;
 
+// mark-kazali.js'in yazdigi audit action'i — INSAN karari isareti.
+// KAZALI dosyalari activeFiles'ta oldugu icin parse-car-json.js onlari otomatik
+// tasiyabiliyor; Apify metninde hasar kelimesi gecmiyorsa ilan temiz havuza geri
+// donuyordu. Manuel isaret varsa otomatik siniflandirma ONU EZEMEZ.
+// (CAKAL zaten frozenFiles'ta korunuyor; KAZALI'da bu koruma yoktu.)
+export const KAZALI_AUDIT_ACTION = 'Kazalı İşaretlendi';
+export const isManuallyMarkedKazali = (car) =>
+  (car?.auditHistory || []).some(entry => entry.action === KAZALI_AUDIT_ACTION);
+
 export function pushAudit(car, action, detail) {
   car.auditHistory = car.auditHistory || [];
   car.auditHistory.push({

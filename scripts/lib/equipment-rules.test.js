@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { matchEquipmentFeatures, normalizeText } from './equipment-match.js';
+import { matchEquipmentFeatures, normalizeText, optionCodeOf } from './equipment-match.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const EQUIPMENT_RULES = JSON.parse(
@@ -193,4 +193,107 @@ test('matchEquipmentFeatures — full "Driving Assistant Professional" phrase st
     EQUIPMENT_RULES
   );
   assert.equal(r.S5AUA, 'yes');
+});
+
+// --- Fabrika opsiyon kodu eslesmesi (oncelik 0) ---
+// C310 (457717928) gercek vakasi: bayi "Laserscheinwerfer (05AZ)" yazmis, kural kalibi
+// "Laserlicht" idi → eslesmedi, checkbox otoritesi devreye girip yanlislikla "no" dedi.
+
+test('optionCodeOf — kural kodundan mobile.de opsiyon kodunu turetir', () => {
+  assert.equal(optionCodeOf('S5AZA'), '05az');   // Laser Light
+  assert.equal(optionCodeOf('S688A'), '0688');   // Harman Kardon
+  assert.equal(optionCodeOf('S488A'), '0488');   // Lendenstützen
+  assert.equal(optionCodeOf('S2T4A'), '02t4');   // M Sport Diff
+  assert.equal(optionCodeOf('S403A'), '0403');   // Sunroof
+});
+
+test('optionCodeOf — sentetik/uymayan kodlar icin null', () => {
+  assert.equal(optionCodeOf('S5DN_360'), null);
+  assert.equal(optionCodeOf('KGNL'), null);
+  assert.equal(optionCodeOf(''), null);
+  assert.equal(optionCodeOf(), null);
+});
+
+test('EQUIPMENT_RULES — her kod ya opsiyon kodu turetir ya da bilinen sentetik koddur', () => {
+  const synthetic = ['S5DN_360', 'KGNL'];
+  for (const rule of EQUIPMENT_RULES) {
+    if (synthetic.includes(rule.code)) continue;
+    assert.ok(optionCodeOf(rule.code), `${rule.code} opsiyon kodu turetmeli`);
+  }
+});
+
+test('matchEquipmentFeatures — parantezli opsiyon kodu → yes (C310 lazer vakasi)', () => {
+  const r = matchEquipmentFeatures(
+    { description: 'Weitere Ausstattung:\n * Laserscheinwerfer (05AZ)\n * Soundsystem (0688)' },
+    EQUIPMENT_RULES
+  );
+  assert.equal(r.S5AZA, 'yes', 'Laserscheinwerfer (05AZ) → S5AZA yes');
+  assert.equal(r.S688A, 'yes', 'Soundsystem (0688) → S688A yes');
+});
+
+test('matchEquipmentFeatures — opsiyon kodu, checkbox otoritesinin "no" damgasini ezer', () => {
+  // Kapsamli checkbox listesi var ve "Laser headlights" isaretli DEGIL → eskiden "no" olurdu.
+  const richCheckbox = Array.from({ length: 20 }, (_, i) => `Feature ${i}`);
+  const r = matchEquipmentFeatures(
+    { description: 'Laserscheinwerfer (05AZ)', features: richCheckbox },
+    EQUIPMENT_RULES
+  );
+  assert.equal(r.S5AZA, 'yes');
+});
+
+test('matchEquipmentFeatures — opsiyon kodu negativeDescription\'i da ezer', () => {
+  const rules = [{ code: 'S2VFA', description: ['Adaptives M Fahrwerk'], negativeDescription: ['M Sportfahrwerk'] }];
+  const r = matchEquipmentFeatures({ description: 'M Sportfahrwerk, Adaptivfahrwerk (02VF)' }, rules);
+  assert.equal(r.S2VFA, 'yes');
+});
+
+test('matchEquipmentFeatures — opsiyon kodu daha uzun sayinin ICINDE eslesmez', () => {
+  // "0610" (Head-Up Display) telefon numarasindaki "06104"e eslesmemeli.
+  // Kisa aciklamada fallback "unknown" olur; onemli olan YANLIS "yes" uretilmemesi.
+  const r = matchEquipmentFeatures(
+    { description: 'Rufen Sie uns an: 06104 123456. Ausstattung: Klimaanlage' },
+    EQUIPMENT_RULES
+  );
+  assert.notEqual(r.S610A, 'yes');
+});
+
+test('matchEquipmentFeatures — opsiyon kodu satir sonunda/basinda da eslesir', () => {
+  const rules = [{ code: 'S403A', description: [] }];
+  assert.equal(matchEquipmentFeatures({ description: '0403' }, rules).S403A, 'yes');
+  assert.equal(matchEquipmentFeatures({ description: 'Schiebedach 0403\nWeiteres' }, rules).S403A, 'yes');
+});
+
+// --- C310 vakasinda eklenen serbest-metin varyantlari ---
+
+test('matchEquipmentFeatures — "Adaptives Stoßdämpfungssystem" → S2VFA yes', () => {
+  const r = matchEquipmentFeatures({ description: 'Adaptives Stoßdämpfungssystem, Sportfahrwerk' }, EQUIPMENT_RULES);
+  assert.equal(r.S2VFA, 'yes');
+});
+
+test('matchEquipmentFeatures — "Geschwindigkeitsabhängige Servolenkung" → S216A yes', () => {
+  const r = matchEquipmentFeatures({ description: 'Geschwindigkeitsabhängige Servolenkung' }, EQUIPMENT_RULES);
+  assert.equal(r.S216A, 'yes');
+});
+
+test('matchEquipmentFeatures — duz "Geschwindigkeitsregelanlage" DAP tetiklemez', () => {
+  // C310 vakasi: adaptif olmayan duz hiz sabitleyici + serit/carpisma uyaricilari var,
+  // ACC yok → S5AUA "no" kalmali. Aciklama bilgilendirici (3+ opsiyon kodu eslesiyor),
+  // yani fallback "unknown" degil gercek "no" uretilir.
+  const r = matchEquipmentFeatures(
+    {
+      description: [
+        'Weitere Ausstattung:',
+        ' * Laserscheinwerfer (05AZ)',
+        ' * Soundsystem (0688)',
+        ' * Lendenstützen (0488)',
+        ' * Geschwindigkeitsregelanlage',
+        ' * Spurhalteassistent',
+        ' * Kollisionswarnsystem',
+        ' * Notbremsassistent',
+      ].join('\n'),
+    },
+    EQUIPMENT_RULES
+  );
+  assert.equal(r.S5AUA, 'no');
+  assert.equal(r.S5AZA, 'yes'); // ayni aciklamada lazer VAR
 });

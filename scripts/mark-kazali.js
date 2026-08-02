@@ -1,5 +1,5 @@
 import path from 'path';
-import { moveListing, listingsDir, DEFAULT_SOURCE_FILES, pushAudit } from './lib/move-listing.js';
+import { moveListing, listingsDir, DEFAULT_SOURCE_FILES, pushAudit, KAZALI_AUDIT_ACTION } from './lib/move-listing.js';
 
 const coupeKazaliArchive = {
   path: path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_KAZALI.json'),
@@ -26,7 +26,7 @@ const result = moveListing({
   sourceFiles: [...DEFAULT_SOURCE_FILES, 'CABRIO.json'],
   pickArchive: pickKazaliArchive,
   mutateCar: (car, { sourceFile, archive }) => {
-    pushAudit(car, 'Kazalı İşaretlendi', `${sourceFile} dosyasından ${archive.name} dosyasına taşındı — ${reason}`);
+    pushAudit(car, KAZALI_AUDIT_ACTION, `${sourceFile} dosyasından ${archive.name} dosyasına taşındı — ${reason}`);
     car.listingDescriptionNotes = car.listingDescriptionNotes || [];
     const note = `⚠️ KAZALI olarak işaretlendi — ${reason}`;
     if (!car.listingDescriptionNotes.includes(note)) {

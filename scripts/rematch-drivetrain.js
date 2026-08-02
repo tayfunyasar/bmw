@@ -24,29 +24,15 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
 import { moveListing, pushAudit, listingsDir, soldArchiveFor, ALL_SOLD_FILES } from './lib/move-listing.js';
+import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dumpDir = path.resolve(__dirname, '../dump');
+const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
 
-// Alanlari tazelenecek TUM dosyalar (arsivler dahil).
-const ALL_FILES = [
-  'COUPE_GAS_WITH_SUNROOF.json',
-  'COUPE_GAS_WITHOUT_SUNROOF.json',
-  'COUPE_GAS_WITH_SUNROOF_SOLD.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json',
-  'COUPE_DIESEL_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF.json',
-  'COUPE_GAS_WITH_SUNROOF_CAKAL.json',
-  'COUPE_GAS_WITH_SUNROOF_KAZALI.json',
-  'DELETED_CARS.json',
-  'GRAN_COUPE.json',
-  'GRAN_COUPE_KAZALI.json',
-  'CABRIO.json',
-];
+// Alanlari tazelenecek TUM dosyalar (arsivler dahil) — tek kaynak LISTING_FILES.json.
+const ALL_FILES = LISTING_FILES.allFiles;
 
 // Tahrik degisirse ilanin gitmesi gereken dosya (yalnizca bu 4'u arasinda tasima).
 const ROUTE = {
@@ -58,34 +44,22 @@ const ROUTE = {
 
 const isDry = process.argv.includes('--dry') || process.argv.includes('--dry-run');
 
-// Her mobileDeId icin en yeni dump (flip-flop onleme) — rematch-equipment.js ile ayni.
-function buildLatestDumps() {
-  const latest = {};
-  for (const filename of fs.readdirSync(dumpDir)) {
-    if (!filename.endsWith('.json')) continue;
-    const [id, tsRaw] = filename.replace('.json', '').split('_');
-    if (!id) continue;
-    const ts = parseInt(tsRaw) || 0;
-    if (!latest[id] || ts > latest[id].ts) latest[id] = { ts, filename };
-  }
-  return latest;
-}
-const latestDumps = buildLatestDumps();
+const dumpIndex = buildDumpIndex();
 
 // aiCommentary'de tahrikle ilgili eski uyarilari ayikla (diger notlar korunur).
 const isDrivetrainNote = (note) => /tahrik|rear wheel drive|rwd sinyali/i.test(String(note));
 
-const summary = { total: 0, noDump: 0, deadDump: 0, overrideSkips: 0, fieldChanges: 0, moves: [] };
+const summary = { total: 0, noDump: 0, deadDump: 0, staleFallback: 0, overrideSkips: 0, fieldChanges: 0, moves: [] };
 
 function freshDrivetrain(listing) {
-  const id = listing.mobileDeId;
-  const dumpRef = id ? latestDumps[id] : null;
-  if (!dumpRef) { summary.noDump++; return null; }
-  let raw;
-  try {
-    raw = JSON.parse(fs.readFileSync(path.join(dumpDir, dumpRef.filename), 'utf8'));
-  } catch { summary.noDump++; return null; }
-  if (raw.title === 'Listing does not exists anymore') { summary.deadDump++; return null; }
+  // En yeni CANLI dump — "ilan kalkmis" bos kaydi en yenisiyse daha eskisine duser.
+  const { raw, reason, staleFallback } = readLiveDump(listing.mobileDeId, dumpIndex);
+  if (!raw) {
+    if (reason === 'deadDump') summary.deadDump++;
+    else summary.noDump++;
+    return null;
+  }
+  if (staleFallback) summary.staleFallback++;
   return determineDrivetrainFromRaw(raw);
 }
 
@@ -170,5 +144,6 @@ console.log(`Dosya degistiren ilan   : ${summary.moves.length}`);
 console.log(`Override korunan (atlandi): ${summary.overrideSkips}`);
 console.log(`Dump'i olmayan (atlandi): ${summary.noDump}`);
 console.log(`Kalkmis dump (atlandi)  : ${summary.deadDump}`);
+console.log(`Eski canli dump'a dusen : ${summary.staleFallback}`);
 if (isDry) console.log('\n(--dry: hicbir dosya yazilmadi)');
 else console.log('\nBitti. Simdi calistir: npm run format:data');

@@ -3176,6 +3176,12 @@
         "auditDate": "2026-07-16T18:32:14.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T18:32:14.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -3272,6 +3278,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T18:39:37.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-16T18:39:37.000Z"
@@ -3378,6 +3390,12 @@
         "auditDate": "2026-07-16T18:39:48.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-16T18:39:48.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -3479,6 +3497,12 @@
         "auditDate": "2026-07-18T08:48:54.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-18T08:48:54.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -3569,6 +3593,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-18T09:06:29.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-18T09:06:29.000Z"
@@ -3669,6 +3699,12 @@
         "auditDate": "2026-07-18T18:41:45.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-18T18:41:45.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -3759,6 +3795,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-21T10:07:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-21T10:07:10.000Z"
@@ -3865,6 +3907,12 @@
         "auditDate": "2026-07-24T12:41:56.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-24T12:41:56.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -3955,6 +4003,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-27T09:49:05.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-27T09:49:05.000Z"
@@ -4055,6 +4109,12 @@
         "auditDate": "2026-07-29T03:21:30.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-29T03:21:30.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -4145,6 +4205,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-30T06:35:30.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-30T06:35:30.000Z"
@@ -4245,6 +4311,12 @@
         "auditDate": "2026-07-30T12:33:13.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-30T12:33:13.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
@@ -4335,6 +4407,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-31T08:35:34.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-07-31T08:35:34.000Z"
@@ -4435,10 +4513,270 @@
         "auditDate": "2026-07-31T15:37:24.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-31T15:37:24.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.722Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C133",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-da-prof-pa-glasd-wuppertal/452097976.html",
+    "mobileDeId": "452097976",
+    "exteriorColorName": "Brooklyn Grau ",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 55870,
+    "mileageKm": 52819,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Procar Automobile Wuppertal GmbH & Co. KG ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-42117 Wuppertal",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ KAZALI olarak işaretlendi — Manuel işaretlendi"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-02T17:43:45.000Z",
+      "modifiedTime": "2026-05-05T15:11:49.000Z",
+      "renewedTime": "2026-04-02T17:43:45.000Z"
+    },
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": {
+        "value": 177,
+        "reason": "Crawl verisi eksik, manuel girildi"
+      },
+      "vin": {
+        "value": "WBA11AR090CM35217",
+        "reason": "Manuel girildi"
+      }
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-02T17:43:45.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-02T17:43:45.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-03T07:51:10.735Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 177,
+            "new": 0
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:08:33.666Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T07:12:39.558Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S488A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S715A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-07T13:29:12.995Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "mileageKm": {
+            "old": 20583,
+            "new": 52819
+          }
+        },
+        "auditDate": "2026-04-10T20:15:38.532Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Procar Automobile Wuppertal GmbH & Co. KG ★4.4",
+            "new": "Procar Automobile Wuppertal GmbH & Co. KG ★4.5"
+          }
+        },
+        "auditDate": "2026-04-17T09:56:17.409Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Procar Automobile Wuppertal GmbH & Co. KG ★4.5",
+            "new": "Procar Automobile Wuppertal GmbH & Co. KG ★4.4"
+          },
+          "drivetrainCertain": {
+            "new": true
+          }
+        },
+        "auditDate": "2026-04-23T20:50:28.125Z"
+      },
+      {
+        "action": "Kazalı İşaretlendi",
+        "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından COUPE_GAS_WITH_SUNROOF_KAZALI.json dosyasına taşındı — Manuel işaretlendi",
+        "changes": null,
+        "auditDate": "2026-05-06T16:29:22.814Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟡 Servis geçmişi bilinmiyor",
+              "🔴 CARFAX: 28.05.2023 tarihinde ön kısımda hasar rapor edilmiş (Duitsland)",
+              "🔴 CARFAX: Tahmini onarım maliyeti €1.000–€2.000, carrosserie onderdelen etkilenmiş",
+              "ℹ️ CARFAX: 08/2023 itibarıyla 5.000 km kayıtlı",
+              "⚠️ Satıcıdan onarım belgesi ve detayı mutlaka istenmelidir",
+              "🔴 Toplam €64,361 — bütçe aşımı"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.091Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF_KAZALI → COUPE_GAS_WITH_SUNROOF",
+        "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+        "changes": null,
+        "auditDate": "2026-08-02T18:10:17.092Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

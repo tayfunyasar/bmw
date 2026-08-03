@@ -3327,107 +3327,6 @@
     "aiCommentary": null
   },
   {
-    "listingId": "C366",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-ix-cabrio-hud-harman-laser-kamera-panevezys/457637963.html",
-    "mobileDeId": "457637963",
-    "exteriorColorName": "White",
-    "exteriorPaintLabel": null,
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
-    "basePriceEuro": 13500,
-    "mileageKm": 39000,
-    "firstRegistrationYearAndMonth": [
-      2023,
-      1
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "modelGenerationCertain": false,
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇱🇹 LT-35152 Panevezys",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "no",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "no",
-      "KGNL": "no",
-      "S322A": "yes",
-      "S2VFA": "yes",
-      "S459A": "yes",
-      "S5DNA": "no",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "yes",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "no",
-      "S1MAA": "unknown",
-      "S5ACA": "yes",
-      "S6C4A": "no",
-      "S430A": "yes",
-      "S4AWA": "yes",
-      "S775A": "no",
-      "S493A": "no",
-      "S536A": "no",
-      "S2NHA": "yes",
-      "S3ACA": "no",
-      "S3ADA": "no",
-      "S3AGA": "no",
-      "S488A": "no",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "yes",
-      "S216A": "no",
-      "S302A": "yes",
-      "S4NHA": "yes"
-    },
-    "listingDates": {
-      "createdTime": "2026-06-07T10:12:15.000Z",
-      "modifiedTime": "2026-06-16T14:09:21.000Z",
-      "renewedTime": "2026-06-07T10:12:15.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-06-07T10:12:15.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-06-07T10:12:15.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-06-17T19:57:39.561Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
     "listingId": "C368",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-m%C3%BCnchen/457778830.html",
     "mobileDeId": "457778830",
@@ -8775,107 +8674,6 @@
         "detail": null,
         "changes": null,
         "auditDate": "2026-06-21T08:45:47.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-06-21T10:49:20.707Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C493",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ix-cabrio-hud-harman-kameras-individual-panevezys/458786286.html",
-    "mobileDeId": "458786286",
-    "exteriorColorName": "Green Metallic",
-    "exteriorPaintLabel": null,
-    "interiorColorName": "Full leather, Other",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"Xdrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 14000,
-    "mileageKm": 47000,
-    "firstRegistrationYearAndMonth": [
-      2021,
-      5
-    ],
-    "numberOfPreviousOwners": "2",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇱🇹 LT-35111 Panevezys",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "no",
-      "S5AZA": "no",
-      "S5AUA": "no",
-      "S688A": "unknown",
-      "S2T4A": "unknown",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "no",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "no",
-      "S6U3A": "yes",
-      "S715A": "unknown",
-      "S2VLA": "unknown",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "no",
-      "S1MAA": "unknown",
-      "S5ACA": "no",
-      "S6C4A": "unknown",
-      "S430A": "yes",
-      "S4AWA": "unknown",
-      "S775A": "unknown",
-      "S493A": "unknown",
-      "S536A": "no",
-      "S2NHA": "unknown",
-      "S3ACA": "no",
-      "S3ADA": "unknown",
-      "S3AGA": "unknown",
-      "S488A": "no",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "yes",
-      "S216A": "unknown",
-      "S302A": "no",
-      "S4NHA": "unknown"
-    },
-    "listingDates": {
-      "createdTime": "2026-06-21T09:56:34.000Z",
-      "modifiedTime": "2026-06-21T09:57:05.000Z",
-      "renewedTime": "2026-06-21T09:56:34.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-06-21T09:56:34.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-06-21T09:56:34.000Z"
       },
       {
         "action": "İlan Eklendi",
@@ -21361,118 +21159,6 @@
     "aiCommentary": null
   },
   {
-    "listingId": "C233",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-xdrive-nav-shadow-laser-hup-m-sport-harman-kaunas/453595357.html",
-    "mobileDeId": "453595357",
-    "exteriorColorName": "Black Metallic",
-    "exteriorPaintLabel": null,
-    "interiorColorName": "Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 36888,
-    "mileageKm": 20900,
-    "firstRegistrationYearAndMonth": [
-      2022,
-      2
-    ],
-    "numberOfPreviousOwners": "?",
-    "warranty": {
-      "exists": "no"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "?",
-    "sellerTypeOrName": "Unknown Dealer",
-    "modelGeneration": "Pre-LCI",
-    "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇱🇹 LT-45722 Kaunas",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "no",
-      "S688A": "yes",
-      "S2T4A": "unknown",
-      "S610A": "yes",
-      "S5DN_360": "no",
-      "KGNL": "no",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "no",
-      "S6U3A": "no",
-      "S715A": "no",
-      "S2VLA": "no",
-      "S494A": "yes",
-      "S248A": "no",
-      "S420A": "no",
-      "S1MAA": "unknown",
-      "S5ACA": "no",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "no",
-      "S775A": "no",
-      "S493A": "yes",
-      "S536A": "no",
-      "S2NHA": "no",
-      "S3ACA": "no",
-      "S3ADA": "yes",
-      "S3AGA": "no",
-      "S488A": "no",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "yes",
-      "S216A": "no",
-      "S302A": "no",
-      "S4NHA": "no"
-    },
-    "listingDates": {
-      "createdTime": "2026-04-19T17:42:28.000Z",
-      "modifiedTime": "2026-05-05T14:35:03.000Z",
-      "renewedTime": "2026-04-19T17:42:28.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-19T17:42:28.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-04-19T17:42:28.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-05-05T14:36:31.771Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "listingLocation": {
-            "old": "🇱🇹 45722 Kaunas",
-            "new": "🇱🇹 LT-45722 Kaunas"
-          }
-        },
-        "auditDate": "2026-08-02T18:10:17.106Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
     "listingId": "C215",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440-i-xdrive-mild-hybrid-navi-acc-dtc-dsc-bremerhaven/454127578.html",
     "mobileDeId": "454127578",
@@ -21691,6 +21377,671 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.129Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C849",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-hk-hifi-dab-led-standhzg-rosenheim/462149568.html",
+    "mobileDeId": "462149568",
+    "exteriorColorName": "saphirschwarz",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 74850,
+    "mileageKm": 6790,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.4",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-83026 Rosenheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "no",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "no",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "yes"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T08:00:01.000Z",
+      "modifiedTime": "2026-08-03T09:50:07.000Z",
+      "renewedTime": "2026-08-03T08:00:01.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T08:00:01.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.167Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C852",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-2jahre-bps-garantie-hamm/462173955.html",
+    "mobileDeId": "462173955",
+    "exteriorColorName": "Saphirschwarz Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 58880,
+    "mileageKm": 42005,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Erwin Schmidt GmbH & Co.KG - BMW & MINI Vertragshändler ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-59071 Hamm",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "yes"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T12:31:01.000Z",
+      "modifiedTime": "2026-08-03T15:20:48.000Z",
+      "renewedTime": "2026-08-03T12:31:01.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T12:31:01.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.169Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C854",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-xdrive-facel-360-led-hud-acc-ahk-wermelskirchen/462182098.html",
+    "mobileDeId": "462182098",
+    "exteriorColorName": "black sapphire",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 83990,
+    "mileageKm": 10,
+    "firstRegistrationYearAndMonth": [
+      null,
+      null
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Autohaus Kaltenbach GmbH  Co.KG BMW und MINI Vertragshändler ★5",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 176,
+    "listingLocation": "🇩🇪 DE-42929 Wermelskirchen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T13:50:53.000Z",
+      "modifiedTime": "2026-08-03T13:50:56.000Z",
+      "renewedTime": "2026-08-03T13:50:53.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T13:50:53.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.170Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C856",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-xdrive-facel-360-led-hud-acc-ahk-wipperf%C3%BCrth-h%C3%A4mmern/462184946.html",
+    "mobileDeId": "462184946",
+    "exteriorColorName": "black sapphire",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 100199.99,
+    "mileageKm": 10,
+    "firstRegistrationYearAndMonth": [
+      null,
+      null
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Autohaus Kaltenbach GmbH  Co. KG BMW Vertragshändler ★4.4",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 176,
+    "listingLocation": "🇩🇪 DE-51688 Wipperfürth/Hämmern",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T14:19:34.000Z",
+      "modifiedTime": "2026-08-03T14:19:37.000Z",
+      "renewedTime": "2026-08-03T14:19:34.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T14:19:34.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.172Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C857",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xd-cabrio-360-laser-h-k-hud-dab-alarm-19-isernhagen/462186690.html",
+    "mobileDeId": "462186690",
+    "exteriorColorName": "Saphirschwarz - 475",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 53999,
+    "mileageKm": 38207,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      6
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "04/2027",
+    "sellerTypeOrName": "Autohaus Isernhagen GmbH & Co. KG ★4.5",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 177,
+    "listingLocation": "🇩🇪 DE-30916 Isernhagen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "yes"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T14:37:36.000Z",
+      "modifiedTime": "2026-08-03T14:37:41.000Z",
+      "renewedTime": "2026-08-03T14:37:36.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T14:37:36.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.172Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C858",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-a-mwst-ausw-vollausst-oldenburg/462189804.html",
+    "mobileDeId": "462189804",
+    "exteriorColorName": "Black",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 56500,
+    "mileageKm": 50000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      8
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "09/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-26127 Oldenburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "yes",
+      "S2NHA": "no",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T15:10:57.000Z",
+      "modifiedTime": "2026-08-03T15:16:27.000Z",
+      "renewedTime": "2026-08-03T15:10:57.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T15:10:57.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.173Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C859",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-upe-101-860-ahk-hud-da-flensburg/462205673.html",
+    "mobileDeId": "462205673",
+    "exteriorColorName": "Tansanitblau II metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Other",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 78409,
+    "mileageKm": 3500,
+    "firstRegistrationYearAndMonth": [
+      2026,
+      6
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Albert Bauer GmbH ★4.1",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 193,
+    "listingLocation": "🇩🇪 DE-24941 Flensburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-03T18:10:50.000Z",
+      "modifiedTime": "2026-08-03T18:10:56.000Z",
+      "renewedTime": "2026-08-03T18:10:50.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T18:10:50.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-03T20:12:02.174Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

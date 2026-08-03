@@ -83,7 +83,8 @@
     "COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
     "DELETED_CARS.json",
     "GRAN_COUPE.json",
-    "CABRIO.json"
+    "CABRIO.json",
+    "LITHUANIA.json"
   ],
   "allFiles": [
     "CABRIO.json",
@@ -99,7 +100,8 @@
     "COUPE_GAS_WITH_SUNROOF_SOLD.json",
     "DELETED_CARS.json",
     "GRAN_COUPE.json",
-    "GRAN_COUPE_KAZALI.json"
+    "GRAN_COUPE_KAZALI.json",
+    "LITHUANIA.json"
   ],
   "soldFiles": {
     "xdrive": "COUPE_GAS_WITH_SUNROOF_SOLD.json",
@@ -120,5 +122,8 @@
     "COUPE_DIESEL_WITH_SUNROOF.json",
     "COUPE_GAS_RWD_WITH_SUNROOF.json",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF.json"
-  ]
+  ],
+  "countryExcludedFiles": {
+    "LT": "LITHUANIA.json"
+  }
 }

@@ -42,12 +42,16 @@ const rwdSoldWithoutSunroofPath = path.join(listingsDir, SOLD_FILES.rwdNoSunroof
 const kazaliPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_KAZALI.json');
 const cakalPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_CAKAL.json');
 const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
+const lithuaniaPath = path.join(listingsDir, 'LITHUANIA.json');
 
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
 // Config veri JSON'dan (Node fs deseni) — ülke bayrakları.
 const COUNTRY_FLAGS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/COUNTRY_FLAGS.json'), 'utf8'));
 // Otomatik "kalkti -> SATILDI" yalnizca bu kaynak dosyalarda calisir (coupe ailesi).
-const AUTO_SOLD_SOURCE_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8')).autoSoldSourceFiles;
+const LISTING_FILES_META = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
+const AUTO_SOLD_SOURCE_FILES = LISTING_FILES_META.autoSoldSourceFiles;
+// Dislanan ulke -> hedef dosya (or. LT -> LITHUANIA.json). UI'a hic girmezler.
+const COUNTRY_EXCLUDED_FILES = LISTING_FILES_META.countryExcludedFiles;
 
 function getNextListingId(existingListings) {
   let maxId = 0;
@@ -265,6 +269,7 @@ async function run() {
   const granCoupe = JSON.parse(fs.readFileSync(granCoupePath, 'utf-8'));
   const granCoupeKazali = fs.existsSync(granCoupeKazaliPath) ? JSON.parse(fs.readFileSync(granCoupeKazaliPath, 'utf-8')) : [];
   const cabrio = fs.existsSync(cabrioPath) ? JSON.parse(fs.readFileSync(cabrioPath, 'utf-8')) : [];
+  const lithuania = fs.existsSync(lithuaniaPath) ? JSON.parse(fs.readFileSync(lithuaniaPath, 'utf-8')) : [];
   const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
   const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
   const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
@@ -285,6 +290,7 @@ async function run() {
     { name: 'GRAN_COUPE_KAZALI', data: granCoupeKazali },
     { name: 'CABRIO', data: cabrio },
     { name: 'COUPE_GAS_WITH_SUNROOF_KAZALI', data: kazali },
+    { name: 'LITHUANIA', data: lithuania },
   ];
   const frozenFiles = [
     { name: 'SOLD', data: sold },
@@ -335,6 +341,14 @@ async function run() {
     const bodyStyle = classifyBodyStyle(textObj, { apifyCategory });
     const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
     const damageReason = detectDamageReason(rawCar);
+
+    // Ülke dışlaması HER ŞEYDEN ÖNCE gelir: dışlanan ülkeden gelen ilan gövde tipine,
+    // hasarına, tahrikine bakılmaksızın kendi dosyasına gider ve UI'a hiç girmez
+    // (src/data/index.js o dosyayı import etmez). Liste config'te: LISTING_FILES.json.
+    const excludedTarget = COUNTRY_EXCLUDED_FILES[rawCar.dealer?.contry];
+    if (excludedTarget) {
+      return { target: excludedTarget.replace(/\.json$/, ''), reason: `${rawCar.dealer.contry} ülkesinden — kapsam dışı` };
+    }
 
     if (bodyStyle === 'CABRIO') return { target: 'CABRIO' };
     if (bodyStyle === 'GRAN_COUPE') {
@@ -489,6 +503,7 @@ async function run() {
   // kaydetmiyordu (idempotent değildi).
   fs.writeFileSync(cakalPath, JSON.stringify(cakal, null, 2));
   fs.writeFileSync(deletedPath, JSON.stringify(deleted, null, 2));
+  fs.writeFileSync(lithuaniaPath, JSON.stringify(lithuania, null, 2));
 }
 
 run().catch(console.error);

@@ -1,0 +1,1272 @@
+[
+  {
+    "listingId": "C366",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-ix-cabrio-hud-harman-laser-kamera-panevezys/457637963.html",
+    "mobileDeId": "457637963",
+    "exteriorColorName": "White",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
+    "basePriceEuro": 13500,
+    "mileageKm": 39000,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      1
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇱🇹 LT-35152 Panevezys",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "yes"
+    },
+    "listingDates": {
+      "createdTime": "2026-06-07T10:12:15.000Z",
+      "modifiedTime": "2026-06-16T14:09:21.000Z",
+      "renewedTime": "2026-06-07T10:12:15.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-07T10:12:15.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-07T10:12:15.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-17T19:57:39.561Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — CABRIO.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.557Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C493",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ix-cabrio-hud-harman-kameras-individual-panevezys/458786286.html",
+    "mobileDeId": "458786286",
+    "exteriorColorName": "Green Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Other",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"Xdrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 14000,
+    "mileageKm": 47000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      5
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇱🇹 LT-35111 Panevezys",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "no",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "no",
+      "S2NHA": "unknown",
+      "S3ACA": "no",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "no",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-06-21T09:56:34.000Z",
+      "modifiedTime": "2026-06-21T09:57:05.000Z",
+      "renewedTime": "2026-06-21T09:56:34.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-21T09:56:34.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-21T09:56:34.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-21T10:49:20.707Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — CABRIO.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.558Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C233",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-xdrive-nav-shadow-laser-hup-m-sport-harman-kaunas/453595357.html",
+    "mobileDeId": "453595357",
+    "exteriorColorName": "Black Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 36888,
+    "mileageKm": 20900,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      2
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇱🇹 LT-45722 Kaunas",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "no",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "yes",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-19T17:42:28.000Z",
+      "modifiedTime": "2026-05-05T14:35:03.000Z",
+      "renewedTime": "2026-04-19T17:42:28.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-19T17:42:28.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-19T17:42:28.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-05T14:36:31.771Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇱🇹 45722 Kaunas",
+            "new": "🇱🇹 LT-45722 Kaunas"
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.106Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — CABRIO.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.558Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C125",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-xdrive-m-sport-hud-hk-laser-vilnius/437804770.html",
+    "mobileDeId": "437804770",
+    "exteriorColorName": "Black Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 44998,
+    "mileageKm": 43250,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "UAB Vin Motors ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇱🇹 LT-14184 Vilnius",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "no",
+      "S2NHA": "unknown",
+      "S3ACA": "no",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2025-10-01T09:44:37.000Z",
+      "modifiedTime": "2026-03-31T16:42:41.000Z",
+      "renewedTime": "2026-03-21T02:08:15.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2025-10-01T09:44:37.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-21T02:08:15.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇱🇹 Vilnius",
+            "new": "🇱🇹 14184 Vilnius"
+          },
+          "service": {
+            "old": {
+              "type": "unknown",
+              "history": []
+            },
+            "new": {
+              "type": "yes",
+              "history": []
+            }
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-01T19:09:58.155Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DN_360": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6U3A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.212Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": true
+            },
+            "new": {
+              "exists": "yes"
+            }
+          },
+          "aiCommentary": {
+            "old": [
+              "🔴 183 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+              "⚠️ İlan 171 gün sonra yenilendi — ilgi düşük olabilir"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T19:24:22.590Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — COUPE_GAS_WITH_SUNROOF_CAKAL.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.568Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C126",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-rwd-sports-package-ventilated-seats-rare-kaunas/450610299.html",
+    "mobileDeId": "450610299",
+    "exteriorColorName": "Grey Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 51899,
+    "mileageKm": 37999,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      1
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "02/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇱🇹 LT-50300 Kaunas",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "yes",
+      "S3AGA": "yes",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-03-17T20:05:27.000Z",
+      "modifiedTime": "2026-03-31T13:41:26.000Z",
+      "renewedTime": "2026-03-17T20:05:27.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-17T20:05:27.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-03-17T20:05:27.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-03-31T12:00:00.000Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "equipmentFeatures.S3ACA": {
+            "old": "unknown",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-03-31T16:49:01.004Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "service": {
+            "old": {
+              "history": []
+            },
+            "new": {
+              "type": "unknown",
+              "history": []
+            }
+          }
+        },
+        "auditDate": "2026-03-31T20:31:04.610Z"
+      },
+      {
+        "action": "Donanım Yeniden Hesaplandı",
+        "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+        "changes": {
+          "equipmentFeatures.S5DNA": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-04-01T20:15:12.866Z"
+      },
+      {
+        "action": "Default Davranış Güncellemesi",
+        "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+        "changes": {
+          "equipmentFeatures.S5AUA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.KGNL": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2VLA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S6C4A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S4AWA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S775A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S536A": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S2NHA": {
+            "old": "no",
+            "new": "unknown"
+          },
+          "equipmentFeatures.S3ACA": {
+            "old": "no",
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-01T20:22:48.214Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "warranty": {
+            "old": {
+              "exists": "unknown"
+            },
+            "new": {
+              "exists": "no"
+            }
+          },
+          "equipmentFeatures.S688A": {
+            "old": "unknown",
+            "new": "yes"
+          },
+          "equipmentFeatures.S494A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S248A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3ADA": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S3AGA": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S488A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S493A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S521A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S524A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S265A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S216A": {
+            "new": "unknown"
+          },
+          "equipmentFeatures.S302A": {
+            "new": "yes"
+          },
+          "equipmentFeatures.S4NHA": {
+            "new": "unknown"
+          }
+        },
+        "auditDate": "2026-04-07T21:17:19.939Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "aiCommentary": {
+            "old": [
+              "🟢 15 gündür satışta — yeni ilan",
+              "🟡 Servis geçmişi bilinmiyor",
+              "🟡 Özel satıcı — bayi güvencesi yok",
+              "Onarılmış kaza hasarı (Repaired accident damage)",
+              "🟠 Toplam €58,848 — bütçe üst sınırına yakın"
+            ],
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.081Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — COUPE_GAS_WITH_SUNROOF_KAZALI.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.569Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C469",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-one-of-few-m440i-rwd-vent-seats-remote-start-kaunas/455349568.html",
+    "mobileDeId": "455349568",
+    "exteriorColorName": "Grey Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 47599,
+    "mileageKm": 39199,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      1
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "03/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇱🇹 LT-50300 Kaunas",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "yes",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "yes",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-09T07:52:40.000Z",
+      "modifiedTime": "2026-06-16T19:43:08.000Z",
+      "renewedTime": "2026-05-09T07:52:40.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-09T07:52:40.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-09T07:52:40.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-17T19:58:27.749Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — COUPE_GAS_WITH_SUNROOF_KAZALI.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.569Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C182",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-blind-spot-line-assist-led-vilnius/406898406.html",
+    "mobileDeId": "406898406",
+    "exteriorColorName": "Black Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 38500,
+    "mileageKm": 42000,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "UAB Vin Motors ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇱🇹 LT-14184 Vilnius",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "no",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "no",
+      "S2NHA": "unknown",
+      "S3ACA": "no",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2024-10-23T16:49:10.000Z",
+      "modifiedTime": "2026-04-21T17:16:23.000Z",
+      "renewedTime": "2026-04-15T01:04:52.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2024-10-23T16:49:10.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-15T01:04:52.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-17T09:39:00.377Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+        "changes": null,
+        "auditDate": "2026-04-28T13:44:13.445Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "listingLocation": {
+            "old": "🇱🇹 14184 Vilnius",
+            "new": "🇱🇹 LT-14184 Vilnius"
+          }
+        },
+        "auditDate": "2026-08-02T18:10:17.055Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — COUPE_GAS_WITH_SUNROOF_SOLD.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.571Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C296",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-xdrive-m-sport-hud-hk-laser-m-diff-m-susp-vilnius/456973387.html",
+    "mobileDeId": "456973387",
+    "exteriorColorName": "Black Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 40998,
+    "mileageKm": 43500,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      3
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "UAB Vin Motors ★4.8",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇱🇹 LT-14184 Vilnius",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "no",
+      "S2NHA": "unknown",
+      "S3ACA": "no",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-05-29T18:19:59.000Z",
+      "modifiedTime": "2026-06-16T15:38:50.000Z",
+      "renewedTime": "2026-05-29T18:19:59.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-29T18:19:59.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-29T18:19:59.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-01T07:02:18.530Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+        "changes": null,
+        "auditDate": "2026-07-12T07:16:17.159Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — COUPE_GAS_WITH_SUNROOF_SOLD.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.571Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C380",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-laser-h-k-hud-360-pa-vilnius/457891236.html",
+    "mobileDeId": "457891236",
+    "exteriorColorName": "Dravitgrau Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Red",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 53000,
+    "mileageKm": 12970,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      3
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "UAB Vin Motors ★4.8",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 166,
+    "listingLocation": "🇱🇹 LT-14184 Vilnius",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "no",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "yes",
+      "S2NHA": "unknown",
+      "S3ACA": "no",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-06-10T08:49:09.000Z",
+      "modifiedTime": "2026-06-16T13:56:15.000Z",
+      "renewedTime": "2026-06-10T08:49:09.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-10T08:49:09.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-06-10T08:49:09.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-06-17T19:57:39.568Z"
+      },
+      {
+        "action": "Ülke Dışlaması",
+        "detail": "LT ülkesinden — GRAN_COUPE.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+        "changes": null,
+        "auditDate": "2026-08-03T20:09:59.575Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  }
+]

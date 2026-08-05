@@ -4820,5 +4820,539 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C863",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sportpaket-pro-tempom-aktiv-eningen-u-a/459690121.html",
+    "mobileDeId": "459690121",
+    "exteriorColorName": "black-sapphire metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 66930,
+    "mileageKm": 14297,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.2",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 191,
+    "listingLocation": "🇩🇪 DE-72800 Eningen u. A.",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "no",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "no",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "no",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-07-02T17:39:16.000Z",
+      "modifiedTime": "2026-08-04T03:34:00.000Z",
+      "renewedTime": "2026-08-04T01:01:34.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-07-02T17:39:16.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-04T01:01:34.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-04T07:02:04.543Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C865",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-driv-assist-prof-led-barsb%C3%BCttel-bei-hamburg/462221818.html",
+    "mobileDeId": "462221818",
+    "exteriorColorName": "M Brooklyn Grau",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Other, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 62908,
+    "mileageKm": 21863,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      8
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "08/2026",
+    "sellerTypeOrName": "BMW AG Niederlassung Hamburg ★4.5",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-22885 Barsbüttel bei Hamburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-04T03:26:22.000Z",
+      "modifiedTime": "2026-08-04T06:10:47.000Z",
+      "renewedTime": "2026-08-04T03:26:22.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-04T03:26:22.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-04T07:02:04.544Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C876",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-coupe-i-xdrive-ahk-20-zoll-memory-sd-laser-acc-siegen/462231976.html",
+    "mobileDeId": "462231976",
+    "exteriorColorName": "DRAVITGRAU",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 51991,
+    "mileageKm": 31701,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      5
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "06/2028",
+    "sellerTypeOrName": "Autohaus Siegerland (şahıs) ★4.1",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-57078 Siegen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Satıcı yetkili BMW bayisi değil — çok markalı şahıs galerisi, özel satıcı riski",
+      "⚠️ Garanti yok sayıldı — BMW Premium Selection mümkün değil, fabrika garantisi 05/2025 bitti"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-04T07:51:02.000Z",
+      "modifiedTime": "2026-08-04T08:36:38.000Z",
+      "renewedTime": "2026-08-04T07:51:02.000Z"
+    },
+    "overrideFeatures": {
+      "modelGeneration": {
+        "value": "LCI",
+        "reason": "Kullanıcı teyidi: LCI (tescil 05/2023 geçiş dönemi, otomatik Pre-LCI varsayılmıştı)"
+      },
+      "sellerTypeOrName": {
+        "value": "Autohaus Siegerland (şahıs) ★4.1",
+        "reason": "Yetkili BMW bayisi DEĞİL — çok markalı şahıs galerisi (Ertugrul Özsevgec). Web sitesi yok, iletişim cep+WhatsApp, mobile.de ilan gerçeklik oranı %76. Özel satıcı riski uygulanır."
+      },
+      "warranty": {
+        "value": {
+          "exists": "no"
+        },
+        "reason": "Fabrika garantisi 05/2025 dolmuş. BMW Premium Selection alınamaz (yetkili bayi değil). İlandaki garanti bayinin kendi/üçüncü taraf ürünü — Hollanda'da geçerliliği teyit edilmedi, yok sayıldı."
+      }
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-04T07:51:02.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-04T10:05:59.806Z"
+      },
+      {
+        "action": "Nesil Teyidi",
+        "detail": "Kullanıcı teyidi: LCI — 05/2023 belirsiz geçiş döneminde otomatik Pre-LCI atanmıştı",
+        "changes": {
+          "modelGeneration": {
+            "old": "Pre-LCI",
+            "new": "LCI"
+          },
+          "modelGenerationCertain": {
+            "old": false,
+            "new": true
+          }
+        },
+        "auditDate": "2026-08-04T18:59:51.857Z"
+      },
+      {
+        "action": "Satıcı Riski İşaretlendi",
+        "detail": "Kullanıcı kararı: bayi (şahıs) olarak işaretlendi, garanti yok sayıldı",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Autohaus Siegerland ★4.1",
+            "new": "Autohaus Siegerland (şahıs) ★4.1"
+          },
+          "warranty": {
+            "old": {
+              "exists": "yes"
+            },
+            "new": {
+              "exists": "no"
+            }
+          }
+        },
+        "auditDate": "2026-08-05T18:22:25.943Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C892",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-barsb%C3%BCttel-bei-hamburg/462311879.html",
+    "mobileDeId": "462311879",
+    "exteriorColorName": "Cape York Grün",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 66908,
+    "mileageKm": 7701,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      8
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "08/2026",
+    "sellerTypeOrName": "BMW AG Niederlassung Hamburg ★4.5",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-22885 Barsbüttel bei Hamburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-05T06:51:47.000Z",
+      "modifiedTime": "2026-08-05T06:51:53.000Z",
+      "renewedTime": "2026-08-05T06:51:47.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-05T06:51:47.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-05T07:02:25.060Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C901",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hud-harman-kardon-kamera-erfurt/38326645424320.html",
+    "mobileDeId": "38326645424320",
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 71997,
+    "mileageKm": 15500,
+    "firstRegistrationYearAndMonth": [
+      2026,
+      1
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "01/2029",
+    "sellerTypeOrName": "Langenhan Erfurt GmbH ★4.4",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 191,
+    "listingLocation": "🇩🇪 DE-99087 Erfurt",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-05T14:23:02.000Z",
+      "modifiedTime": "2026-08-05T14:24:26.000Z",
+      "renewedTime": "2026-08-05T14:23:02.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-05T14:23:02.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-05T16:08:48.224Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

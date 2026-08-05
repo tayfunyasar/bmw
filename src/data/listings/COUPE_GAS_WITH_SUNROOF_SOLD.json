@@ -311,8 +311,8 @@
     },
     "nextInspectionDate": "01/2028",
     "sellerTypeOrName": "BMW München ★4.3",
-    "modelGeneration": "Pre-LCI",
-    "modelGenerationCertain": false,
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
     "co2EmissionsGramPerKm": 175,
     "listingLocation": "🇩🇪 München",
     "curatorPickBadge": null,
@@ -365,6 +365,12 @@
       "S302A": "unknown",
       "S4NHA": "unknown"
     },
+    "overrideFeatures": {
+      "modelGeneration": {
+        "value": "LCI",
+        "reason": "Kullanıcı teyidi (tescil 03/2023, otomatik Pre-LCI varsayılmıştı)"
+      }
+    },
     "auditHistory": [
       {
         "action": "Aktif → Satılan",
@@ -377,6 +383,21 @@
         "detail": "Araç satıldı veya yayından kaldırıldı",
         "changes": null,
         "auditDate": "2026-03-14T12:00:00.000Z"
+      },
+      {
+        "action": "Nesil Teyidi",
+        "detail": "Kullanıcı teyidi — LCI (tescil 03/2023)",
+        "changes": {
+          "modelGeneration": {
+            "old": "Pre-LCI",
+            "new": "LCI"
+          },
+          "modelGenerationCertain": {
+            "old": false,
+            "new": true
+          }
+        },
+        "auditDate": "2026-08-04T19:09:15.676Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",

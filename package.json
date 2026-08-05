@@ -15,6 +15,7 @@
     "move:sell": "node scripts/mark-sold.js",
     "move:cakal": "node scripts/mark-cakal.js",
     "move:kazali": "node scripts/mark-kazali.js",
+    "move:lci": "node scripts/mark-lci.js",
     "move:withoutsunroof": "node scripts/mark-withoutsunroof.js",
     "move:country": "node scripts/move-excluded-countries.js && npm run format:data",
     "refresh": "node scripts/refresh-stale.js",

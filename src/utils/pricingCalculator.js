@@ -237,6 +237,9 @@ const SCORE_LABELS = SCORING.labels;
 const SERVICE_BONUS = SCORING.bonuses.service;
 const WARRANTY_BONUS = SCORING.bonuses.warranty;
 const PRIVATE_PENALTY = SCORING.penalties.private;
+// Satıcı adında bu kelimelerden biri geçiyorsa "özel satıcı" riski sayılır.
+// Liste veri olarak SCORING.json'da — elle "(şahıs)" işaretlenen bayiler de yakalanır.
+const PRIVATE_SELLER_KEYWORDS = SCORING.privateSellerKeywords;
 const AFTERMARKET_PENALTY = SCORING.penalties.aftermarket;
 const OVER_BUDGET_PENALTY = SCORING.penalties.overBudget;
 // Renk skoru (arzu boyutu içinde, hem iç hem dış aynı formül); ağırlık ×25 puana çevirir:
@@ -319,7 +322,7 @@ const assignRecommendations = (evaluated, referencePool = evaluated) => {
     if (car.service?.type === 'yes') extras.push({ label: 'Tam servis', delta: SERVICE_BONUS, formula: 'belgeli servis bonusu' });
     if (car.warranty?.exists === 'yes' || car.warranty?.exists === true) extras.push({ label: 'Garanti', delta: WARRANTY_BONUS, formula: 'aktif garanti bonusu' });
     const seller = car.sellerTypeOrName?.toLowerCase() || '';
-    if (seller.includes('private') || seller.includes('özel') || seller.includes('privat')) extras.push({ label: 'Özel satıcı', delta: -PRIVATE_PENALTY, formula: 'risk cezası' });
+    if (PRIVATE_SELLER_KEYWORDS.some(k => seller.includes(k))) extras.push({ label: 'Özel satıcı', delta: -PRIVATE_PENALTY, formula: 'risk cezası' });
     if (car.listingAdditionalFeatures?.some(f => f.toLowerCase().includes('aftermarket'))) extras.push({ label: 'Aftermarket', delta: -AFTERMARKET_PENALTY, formula: 'risk cezası' });
     const ageDays = listingAgeInDays(car.listingDates?.createdTime);
     const stale = stalenessPenalty(ageDays);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { TabLabel } from '../common/TabLabel';
 import { CarTable } from '../common/CarTable';
 import { useFrozenIds } from '../useFrozenCars';
 import { sortByTotalCost } from '../../utils/pricingCalculator';
@@ -13,7 +14,7 @@ const useFrozenCarList = (allCarsById) => {
 
 export const FrozenTabLabel = ({ allCarsById }) => {
   const frozenCars = useFrozenCarList(allCarsById);
-  return <>📌 Freeze Edilenler — {frozenCars.length} araç</>;
+  return <TabLabel icon="📌" count={frozenCars.length}>Freeze</TabLabel>;
 };
 
 export const FrozenTab = ({ allCarsById }) => {

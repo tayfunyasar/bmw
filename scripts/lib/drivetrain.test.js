@@ -6,8 +6,7 @@ import {
   AWD,
   RWD,
   FEATURE_AWD,
-  FEATURE_RWD
-} from './drivetrain.js';
+  FEATURE_RWD, typeCodeFromVin } from './drivetrain.js';
 
 // --- 1. Metin ezer: xDrive / Allrad ---
 
@@ -154,4 +153,60 @@ test('determineDrivetrainFromRaw ham Apify kaydindan ayni sonucu verir', () => {
 test('determineDrivetrainFromRaw eksik alanlarla patlamaz', () => {
   assert.equal(determineDrivetrainFromRaw({}).type, AWD);
   assert.equal(determineDrivetrainFromRaw().type, AWD);
+});
+
+// --- Kural 0: VIN tip kodu (C692 vakasi) ---
+// C692'nin ilaninda hicbir yerde xDrive/Allrad/Heckantrieb gecmiyordu; sistem
+// Kural 5'e dusup "xDrive varsayildi" diyordu. Bayi sayfasindan gelen VIN
+// (WBA81AP010CN63825) tip kodunu veriyor: 81AP = arka cekis.
+
+test('typeCodeFromVin — VIN 4-7. karakteri', () => {
+  assert.equal(typeCodeFromVin('WBA81AP010CN63825'), '81AP');
+  assert.equal(typeCodeFromVin('wba11ar0x0cxxxxxx'), '11AR');   // kucuk harf de calisir
+});
+
+test('typeCodeFromVin — kisa/bos/gecersiz girdi', () => {
+  assert.equal(typeCodeFromVin('WBA81'), null);
+  assert.equal(typeCodeFromVin(''), null);
+  assert.equal(typeCodeFromVin(null), null);
+  assert.equal(typeCodeFromVin(undefined), null);
+});
+
+test('determineDrivetrain — VIN 81AP arka cekis verir, metin sessiz olsa bile', () => {
+  const r = determineDrivetrain({ title: 'BMW M440i Coupe Navi Leder ACC', vin: 'WBA81AP010CN63825' });
+  assert.equal(r.type, RWD);
+  assert.equal(r.certain, true);
+  assert.match(r.reason, /Kural 0/);
+});
+
+test('determineDrivetrain — VIN metindeki "xDrive" iddiasini EZER', () => {
+  // Fabrika verisi ilan metninden guvenilir; bayi yanlis yazmis olabilir.
+  const r = determineDrivetrain({ title: 'BMW M440i xDrive Coupe', vin: 'WBA81AP010CN63825' });
+  assert.equal(r.type, RWD);
+  assert.match(r.reason, /Kural 0/);
+});
+
+test('determineDrivetrain — VIN checkbox sinyalini de ezer', () => {
+  const r = determineDrivetrain({ features: ['Four-wheel drive'], vin: 'WBA81AP010CN63825' });
+  assert.equal(r.type, RWD);
+});
+
+test('determineDrivetrain — 11AR xDrive verir', () => {
+  const r = determineDrivetrain({ vin: 'WBA11AR010CN00001' });
+  assert.equal(r.type, AWD);
+  assert.equal(r.certain, true);
+});
+
+test('determineDrivetrain — taninmayan tip kodu Kural 0 tetiklemez', () => {
+  // Tabloda olmayan kod → eski kurallar isler, VIN yok sayilir.
+  const r = determineDrivetrain({ title: 'BMW M440i xDrive Coupe', vin: 'WBA99ZZ010CN00001' });
+  assert.equal(r.type, AWD);
+  assert.match(r.reason, /Kural 1/);
+});
+
+test('determineDrivetrain — VIN yoksa davranis degismez (regresyon)', () => {
+  const r = determineDrivetrain({ title: 'BMW M440i Coupe' });
+  assert.equal(r.type, AWD);
+  assert.equal(r.certain, false);
+  assert.match(r.reason, /Kural 5/);
 });

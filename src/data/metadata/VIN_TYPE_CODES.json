@@ -1,0 +1,7 @@
+{
+  "_comment": "BMW VIN'inin 4-7. karakteri fabrika tip kodudur ve tahrik tipini KESIN belirler. Kaynak: BMW resmi G22 fiyat listeleri (bmw.at, Temmuz/Kasim 2023). CO2 degerleri dogrulama icindir - ilandaki WLTP degeri buradakiyle eslesiyorsa tip kodu teyit edilmis olur. Yeni kod eklemek icin yalnizca bu dosyaya satir ekle, kod degistirme.",
+  "codes": {
+    "81AP": { "drivetrain": "RWD", "model": "M440i Coupé (Hinterradantrieb)", "co2": 167 },
+    "11AR": { "drivetrain": "xDrive AWD", "model": "M440i xDrive Coupé", "co2": 170 }
+  }
+}

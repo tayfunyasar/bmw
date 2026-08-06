@@ -1,0 +1,84 @@
+{
+  "_comment": "Mail arsivi ve tekrar kullanilabilir bloklar. contact ve criteriaSuffix TEK KAYNAK — yeni mail yazarken buradan alinir, kopyalanmaz.",
+  "contact": {
+    "name": "Tayfun Yasar",
+    "email": "tayfun@tayfunyasar.com",
+    "mobile": "+31 6 85 82 65 96",
+    "whatsapp": true,
+    "country": "NL"
+  },
+  "criteriaSuffix": "For reference, I am specifically looking for:\n\n- BMW M440i xDrive Coupe (G22, 2-door) — petrol, automatic\n- LCI model (facelift) preferred\n- Must have: electric glass sunroof (Schiebedach), Driving Assistant Professional (ACC with Stop&Go), M Sport Differential\n- Preferred: BMW Laserlicht, Head-Up Display, 360° camera\n- Under 50,000 km\n- Asking price up to €55,000\n- Preferred colours: Dravitgrau, Tansanitblau, Portimao Blau, Cape York Grün\n- Not interested in: white, Brooklyn Grau, San Remo Green exteriors, or red / brown / beige interiors\n- Accident-free, full service history, and BMW Premium Selection\n\nIf this vehicle does not match, I would be glad to hear about any similar cars in your stock. Could you also register me in your system so I am notified when a matching vehicle arrives?",
+  "questionBlocks": {
+    "drivetrain": "Drivetrain: Is this vehicle xDrive (all-wheel drive) or rear-wheel drive? The listing does not state this, and it is my most important criterion — I am only looking for xDrive.",
+    "coc": "CoC / CO2: Could you send me the CoC (Certificate of Conformity)? The WLTP CO2 figure determines the Dutch import tax (BPM) and has a significant impact on my total cost.",
+    "premiumSelection": "BMW Premium Selection: As an authorised BMW dealer, can this car be sold with the BMW Premium Selection warranty (24 months)? Is it included in the price, and does it remain valid in the Netherlands after export?",
+    "warranty": "Warranty: If BMW Premium Selection is not available for this car, which warranty is included instead? Please specify the provider (BMW factory, dealer warranty, or third-party such as CarGarantie / Real Garant), the expiry date, and whether it remains valid in the Netherlands after export.",
+    "accident": "Condition: The listing states \"accident-free\". Can you confirm there has been no paintwork or repairs? If you can share the VIN, I can run a history check myself.",
+    "serviceHistory": "Service history: Is the vehicle fully scheckheftgepflegt, and were all services done at a BMW partner?",
+    "export": "Export:\n- Is export to the Netherlands possible?\n- Do you support export plates (Ausfuhrkennzeichen) registration?",
+    "modifications": "Modifications: Can you confirm the vehicle is completely unmodified and in factory condition (suspension, exhaust, ECU, wheels)?"
+  },
+  "emails": [
+    {
+      "id": "C173-reisacher-2026-04-12",
+      "listingId": "C173",
+      "mobileDeId": "452712519",
+      "dealer": "Autohaus Reisacher GmbH",
+      "to": [],
+      "cc": [],
+      "subject": "M440i xDrive Coupe (452712519) – Quick questions",
+      "body": "Hello,\n\nI am interested in the BMW M440i xDrive Coupe on mobile.de.\n- Vehicle No: 452712519\n- Saphirschwarz Metallic, EZ 12/2021, 32,858 km, €45,990\n\nI would like to import this vehicle to the Netherlands and have a few questions:\n\n1- Warranty: Is there still BMW factory warranty or an extended warranty? Until when?\n\n2- Service history: Is the vehicle fully scheckheftgepflegt (complete service book)? Were all services done at a BMW partner?\n\n3- Condition: The listing states \"accident-free\". Can you confirm there has been no paintwork or repairs? A Carfax or vehicle history report would be appreciated. Or if u can share VIN, i can also query\n\n4- Export:\n- Is export to the Netherlands possible?\n- Do you support export plates (Ausfuhrkennzeichen) registration?\n\nYou can reach me at: tayfun@tayfunyasar.com\n\nThank you!",
+      "status": "sent",
+      "sentDate": "2026-04-12",
+      "response": null,
+      "note": "Yanit bekleniyor"
+    },
+    {
+      "id": "C47-weller-2026-03-14",
+      "listingId": "C47",
+      "mobileDeId": "13100210",
+      "dealer": "WELLER Osnabrück",
+      "to": [],
+      "cc": [],
+      "subject": "M440i Coupe (13100210) – Quick questions",
+      "body": "Hello,\n\nI am interested in the BMW M440i Coupe on mobile.de.\n- Vehicle No: 13100210\n\nTwo quick questions:\n\n1- Is this vehicle RWD or xDrive?\n2- Does it have Adaptives Fahrwerk (Adaptive M Suspension) and Differentialsperre (M Sport Differential)?\n\nI am specifically looking for an M440i xDrive Coupe (G22, 2-door) with the following criteria:\n- Year: 2021 or newer\n- Sunroof (Glasdach)\n- Under 40,000 km\n- Under €52,000\n- Driving Assistant Professional preferred\n- LCI model preferred, but not required\n\nIf this vehicle does not match, I would be happy to hear about any similar vehicles you may have in stock.\n\nCould you also register me in your system so I can be notified when matching vehicles become available?\n\nYou can reach me at: tayfun@tayfunyasar.com\n\nThank you!\n\nBest regards\nTayfun Yasar",
+      "status": "sent",
+      "sentDate": "2026-03-14",
+      "response": null,
+      "note": null
+    },
+    {
+      "id": "C692-ahg-esslingen",
+      "listingId": "C692",
+      "mobileDeId": "461121733",
+      "dealer": "ahg Autohandelsgesellschaft mbH (BMW Vertragshändler, Esslingen)",
+      "to": [
+        "a.hessberg@ahg-mobile.de"
+      ],
+      "cc": [
+        "bmw-esslingen@ahg-mobile.de"
+      ],
+      "subject": "BMW M440i Coupe (CN63825 / 461121733) – Quick questions",
+      "body": "Hello Mr Heßberg,\n\nI am interested in the BMW M440i Coupe on mobile.de.\n- Vehicle No: CN63825 (mobile.de ID 461121733)\n- BMW Individuallackierung blue, EZ 05/2023, 43,193 km, €51,960\n\nI would like to import this vehicle to the Netherlands and have a few questions:\n\n1- Drivetrain: Is this vehicle xDrive (all-wheel drive) or rear-wheel drive? The listing does not state this, and it is my most important criterion — I am only looking for xDrive.\n2- BMW Premium Selection: As an authorised BMW dealer, can this car be sold with the BMW Premium Selection warranty (24 months)? Is it included in the price, and does it remain valid in the Netherlands after export?\n3- Warranty: If BMW Premium Selection is not available for this car, which warranty is included instead? Please specify the provider (BMW factory, dealer warranty, or third-party such as CarGarantie / Real Garant), the expiry date, and whether it remains valid in the Netherlands after export.\n4- CoC / CO2: Could you send me the CoC (Certificate of Conformity)? The WLTP CO2 figure determines the Dutch import tax (BPM) and has a significant impact on my total cost. The listing shows \"0 g/km\" CO2 and \"0.0 l/100km\", which cannot be correct.\n5- Paint colour: The listing only says \"BMW Individuallackierung\". Which Individual colour is it exactly (e.g. Tansanitblau Metallic)?\n6- Interior: The data sheet says \"Full leather, Black\", but in the photos the seats look light grey. Which is correct?\n7- Service history: Is the vehicle fully scheckheftgepflegt, and were all services done at a BMW partner?\n8- Condition: The listing states \"accident-free\". Can you confirm there has been no paintwork or repairs? If you can share the VIN, I can run a history check myself. The car has had 2 previous owners.\n9- Export:\n- Is export to the Netherlands possible?\n- Do you support export plates (Ausfuhrkennzeichen) registration?\n\nFor reference, I am specifically looking for:\n\n- BMW M440i xDrive Coupe (G22, 2-door) — petrol, automatic\n- LCI model (facelift) preferred\n- Must have: electric glass sunroof (Schiebedach), Driving Assistant Professional (ACC with Stop&Go), M Sport Differential\n- Preferred: BMW Laserlicht, Head-Up Display, 360° camera\n- Under 50,000 km\n- Asking price up to €55,000\n- Preferred colours: Dravitgrau, Tansanitblau, Portimao Blau, Cape York Grün\n- Not interested in: white, Brooklyn Grau, San Remo Green exteriors, or red / brown / beige interiors\n- Accident-free, full service history, and BMW Premium Selection\n\nIf this vehicle does not match, I would be glad to hear about any similar cars in your stock. Could you also register me in your system so I am notified when a matching vehicle arrives?\n\nYou can reach me at:\n- Email: tayfun@tayfunyasar.com\n- Mobile / WhatsApp: +31 6 85 82 65 96\n\nThank you!\n\nBest regards\nTayfun Yasar",
+      "status": "draft",
+      "sentDate": null,
+      "response": null,
+      "note": "Bayi yetkili BMW Vertragshändler — BPS mumkun olabilir"
+    },
+    {
+      "id": "C876-siegerland",
+      "listingId": "C876",
+      "mobileDeId": "462231976",
+      "dealer": "Autohaus Siegerland (şahıs galerisi, yetkili BMW bayisi DEĞİL)",
+      "to": [],
+      "cc": [],
+      "whatsapp": "+49 151 50742524",
+      "subject": "M440i xDrive Coupe (462231976) – Quick questions",
+      "body": "Hello,\n\nI am interested in the BMW M440i xDrive Coupe on mobile.de.\n- Vehicle No: 462231976\n- Dravitgrau Individual, EZ 05/2023, 31,701 km, €51,991\n\nI would like to import this vehicle to the Netherlands and have a few questions:\n\n1- CoC / CO2: Could you send me the CoC (Certificate of Conformity)? The WLTP CO2 figure determines the Dutch import tax (BPM) and has a significant impact on my total cost. The listing shows no CO2 value at all.\n2- Condition: The listing states \"accident-free\". Can you confirm there has been no paintwork or repairs? If you can share the VIN, I can run a history check myself.\n3- Warranty: Which warranty is included with this vehicle? Please specify the provider (dealer warranty, or third-party such as CarGarantie / Real Garant), the expiry date, and whether it remains valid in the Netherlands after export.\n4- Sound system: The equipment list mentions \"HiFi-Lautsprechersystem\". Can you confirm this is the standard HiFi system and NOT Harman Kardon?\n5- Headlights: The listing title says \"Laser\", but the detailed equipment list does not mention BMW Laserlicht and the features show LED headlights. Which is correct? A close-up photo of the headlight would help.\n6- Wheels: The title says \"20-Zoll\", but the equipment list states \"8x19 / 8,5x19 (Doppelspeiche 797 M)\". Which is fitted? The CoC will confirm this.\n7- Upholstery: The list mentions both \"Leder Vernasca\" and \"Sensatec-Kombination\". Which is correct?\n8- Modifications: Can you confirm the vehicle is completely unmodified and in factory condition (suspension, exhaust, ECU, wheels)?\n9- Export:\n- Is export to the Netherlands possible?\n- Do you support export plates (Ausfuhrkennzeichen) registration?\n\nFor reference, I am specifically looking for:\n\n- BMW M440i xDrive Coupe (G22, 2-door) — petrol, automatic\n- LCI model (facelift) preferred\n- Must have: electric glass sunroof (Schiebedach), Driving Assistant Professional (ACC with Stop&Go), M Sport Differential\n- Preferred: BMW Laserlicht, Head-Up Display, 360° camera\n- Under 50,000 km\n- Asking price up to €55,000\n- Preferred colours: Dravitgrau, Tansanitblau, Portimao Blau, Cape York Grün\n- Not interested in: white, Brooklyn Grau, San Remo Green exteriors, or red / brown / beige interiors\n- Accident-free, full service history, and BMW Premium Selection\n\nIf this vehicle does not match, I would be glad to hear about any similar cars in your stock. Could you also register me in your system so I am notified when a matching vehicle arrives?\n\nYou can reach me at:\n- Email: tayfun@tayfunyasar.com\n- Mobile / WhatsApp: +31 6 85 82 65 96\n\nThank you!\n\nBest regards\nTayfun Yasar",
+      "status": "draft",
+      "sentDate": null,
+      "response": null,
+      "note": "Garanti yok sayildi; DEKRA/TUV on ekspertiz sart"
+    }
+  ]
+}

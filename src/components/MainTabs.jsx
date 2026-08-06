@@ -4,16 +4,17 @@ import { Tabs } from 'antd';
 import { yearGroups, sortedYears, allByTotalCost, sortByTotalCost } from '../utils/pricingCalculator';
 import { soldGasListings, rwdSoldWithSunroofListings, rwdSoldWithoutSunroofListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
 import { carMatchesFilters } from '../utils/carFilters';
+import { emails } from '../data';
 import { FrozenTab, FrozenTabLabel } from './tabs/FrozenTab';
-import { VehicleTableCard } from './VehicleTableCard';
 import { CarTable } from './common/CarTable';
 import { CarsWithRecentSubTabs } from './CarsWithRecentSubTabs';
+import { TabLabel } from './common/TabLabel';
 import { computeSuggestedIds } from '../utils/recommendations';
 import { YearlyComparisonTab } from './tabs/YearlyComparisonTab';
 import { RulesTab } from './tabs/RulesTab';
 import { BookmarksTab } from './tabs/BookmarksTab';
 import { NotesTab } from './tabs/NotesTab';
-import { DeletedCarsTab } from './tabs/DeletedCarsTab';
+import { EmailsTab } from './tabs/EmailsTab';
 
 const DEAL = (c) => c.metrics.expectedDealScore ?? c.metrics.personalDealScore;
 const SORTERS = {
@@ -79,66 +80,74 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
     return sortByTotalCost(ids.map(id => allCarsById.get(id)).filter(Boolean));
   }, [allCarsById, visibleAll]);
 
+  // --- Sekme ağacı: 4 üst grup, her biri kendi alt sekmeleriyle -------------
+  // URL DAİMA yaprak anahtarını taşır (/suggested, /2023, /sold ...) — eski
+  // derin linkler ve paylaşılan filtreli adresler kırılmaz. Üst grup, yaprağın
+  // hangi gruba ait olduğundan TÜRETİLİR, ayrıca URL'ye yazılmaz.
+  const yearItems = sortedYears
+    .filter(year => yearlyArranged[year].length > 0)
+    .map(year => {
+      const yearlyCars = yearlyArranged[year];
+      const winningCarIndex = yearlyCars.reduce((best, car, i) => car.metrics.baseTotalCost < yearlyCars[best].metrics.baseTotalCost ? i : best, 0);
+      // firstRegistrationYearAndMonth[0] null olabiliyor → "null MODEL YILI" yerine anlamlı etiket.
+      const known = year !== 'null' && year !== 'undefined';
+      return {
+        key: year,
+        sortWeight: known ? Number(year) : -Infinity,   // bilinmeyen en sona
+        carCount: yearlyCars.length,
+        label: <TabLabel icon={known ? undefined : '❓'} count={yearlyCars.length}>{known ? year : 'Bilinmiyor'}</TabLabel>,
+        children: <YearlyComparisonTab year={year} yearlyCars={yearlyCars} winningCarIndex={winningCarIndex} />,
+      };
+    })
+    .sort((a, b) => b.sortWeight - a.sortWeight);
+
+
+  const GROUPS = [
+    {
+      key: 'pool', icon: '🎯', label: 'Alım Havuzu', count: visibleAll.length,
+      items: [
+        { key: 'suggested', label: <TabLabel icon="⭐" count={suggestedCars.length}>Önerilenler</TabLabel>,
+          children: <CarsWithRecentSubTabs cars={suggestedCars} recentPool={visibleAll} baseLabel="Önerilenler" titlePrefix="🎯 Önerilenler" emptyMessage="Önerilen araç yok." /> },
+        { key: 'all-adjusted', label: <TabLabel icon="💰" count={visibleAll.length}>Toplam maliyet</TabLabel>,
+          children: <CarTable cars={visibleAll} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} /> },
+        { key: 'frozen', label: <FrozenTabLabel allCarsById={allCarsById} />, children: <FrozenTab allCarsById={allCarsById} /> },
+      ],
+    },
+    { key: 'years', icon: '📅', label: 'Model yılı', count: yearItems.reduce((s, i) => s + i.carCount, 0),
+      items: yearItems },
+    {
+      key: 'info', icon: '📚', label: 'Bilgi',
+      items: [
+        { key: 'bookmarks', label: <TabLabel icon="🔖">Bookmarklar</TabLabel>, children: <BookmarksTab /> },
+        { key: 'notes', label: <TabLabel icon="📝">Notlar</TabLabel>, children: <NotesTab /> },
+        { key: 'emails', label: <TabLabel icon="📧" count={emails.emails.length}>Mailler</TabLabel>, children: <EmailsTab /> },
+        { key: 'rules', label: <TabLabel icon="📋">Kurallar</TabLabel>, children: <RulesTab /> },
+      ],
+    },
+  ];
+
+  // Yaprak → grup eşlemesi; bilinmeyen adres alım havuzuna düşer.
+  const activeGroup = GROUPS.find(g => g.items.some(i => i.key === currentTab)) || GROUPS[0];
+  const activeLeaf = activeGroup.items.some(i => i.key === currentTab) ? currentTab : activeGroup.items[0].key;
+
   return (
     <Tabs
-      activeKey={currentTab}
-      onChange={handleTabChange}
+      activeKey={activeGroup.key}
+      onChange={key => handleTabChange((GROUPS.find(g => g.key === key) || GROUPS[0]).items[0].key)}
       destroyOnHidden
-      items={[{
-          key: 'frozen',
-          label: <FrozenTabLabel allCarsById={allCarsById} />,
-          children: <FrozenTab allCarsById={allCarsById} />
-        }, {
-          key: 'suggested',
-          label: `🎯 Önerilen Araçlar — ${suggestedCars.length} araç`,
-          children: (
-            <CarsWithRecentSubTabs
-              cars={suggestedCars}
-              recentPool={visibleAll}
-              baseLabel="Önerilenler"
-              titlePrefix="🎯 Önerilenler"
-              emptyMessage="Önerilen araç yok."
-            />
-          )
-        }, {
-          key: 'all-adjusted',
-          label: `💰 TOPLAM MALİYET — ${visibleAll.length} araç`,
-          children: <CarTable cars={visibleAll} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} />
-        }].concat(sortedYears.map(year => {
-          const yearlyCars = yearlyArranged[year];
-          if (yearlyCars.length === 0) return null;
-          const winningCarIndex = yearlyCars.reduce((bestIndex, car, currentIndex) => car.metrics.baseTotalCost < yearlyCars[bestIndex].metrics.baseTotalCost ? currentIndex : bestIndex, 0);
-
-          return {
-            key: year,
-            label: `📅 ${year} MODEL YILI — ${yearlyCars.length} araç`,
-            children: <YearlyComparisonTab year={year} yearlyCars={yearlyCars} winningCarIndex={winningCarIndex} />
-          };
-        }).filter(Boolean)).concat([
-        {
-          key: 'bilgi',
-          label: '📚 Bilgi & Kurallar',
-          children: <Tabs destroyOnHidden items={[
-            { key: 'bookmarks', label: '🔖 Bookmarklar', children: <BookmarksTab /> },
-            { key: 'notes', label: '📝 Notlar', children: <NotesTab /> },
-            { key: 'rules', label: '📋 Kurallar', children: <RulesTab /> },
-          ]} />
-        },
-        {
-          key: 'elenenler',
-          label: '🚫 Elenenler',
-          children: <Tabs destroyOnHidden items={[
-            { key: 'sold', label: `🚫 Satılan (${sorted.sold.length})`, children: <VehicleTableCard carList={sorted.sold} title="🚫 Satılan Araçlar" isRejected rejectedLabel="SATILDI" /> },
-            { key: 'cakal', label: `🐺 Çakal (${sorted.cakal.length})`, children: <VehicleTableCard carList={sorted.cakal} title="🐺 Çakal Kasalar — Modifiyeli / Şüpheli" isRejected rejectedLabel="ÇAKAL" /> },
-            { key: 'kazali', label: `💥 Kazalı (${sorted.kazali.length})`, children: <VehicleTableCard carList={sorted.kazali} title="💥 Kazalı Araçlar — Onarılmış Hasar" isRejected rejectedLabel="KAZALI" /> },
-            { key: 'no-sunroof', label: `🚫 Sunroof Yok (${sorted.noSunroof.length})`, children: <VehicleTableCard carList={sorted.noSunroof} title="🚫 Sunroof Yok" isRejected rejectedLabel="RED" /> },
-            { key: 'rwd-sr', label: `🔙 RWD+SR (${sorted.rwdSunroof.length})`, children: <VehicleTableCard carList={sorted.rwdSunroof} title="🔙 RWD & Sunroof" isRejected rejectedLabel="RED (RWD)" /> },
-            { key: 'rwd-nsr', label: `🔙 RWD (${sorted.rwdNoSunroof.length})`, children: <VehicleTableCard carList={sorted.rwdNoSunroof} title="🔙 RWD & Sunroof Yok" isRejected rejectedLabel="RED (RWD)" /> },
-            { key: 'diesel', label: `⛽ Dizel (${sorted.diesel.length})`, children: <VehicleTableCard carList={sorted.diesel} title="⛽ Dizel Araçlar & Sunroof" /> },
-            { key: 'deleted', label: '🗑️ Silinen', children: <DeletedCarsTab /> },
-          ]} />
-        },
-      ])}
+      items={GROUPS.map(group => ({
+        key: group.key,
+        label: <TabLabel icon={group.icon} count={group.count} tone="accent">{group.label}</TabLabel>,
+        children: (
+          <Tabs
+            activeKey={activeLeaf}
+            onChange={handleTabChange}
+            destroyOnHidden
+            size="small"
+            items={group.items}
+          />
+        ),
+      }))}
     />
   );
 };

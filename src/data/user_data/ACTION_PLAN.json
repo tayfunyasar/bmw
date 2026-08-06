@@ -33,16 +33,7 @@
     {
       "car": "C173 Memmingen",
       "action": "12.04.2026 email gönderildi, yanıt bekleniyor (Autohaus Reisacher GmbH).",
-      "emailSent": {
-        "date": "12.04.2026",
-        "dealer": "Autohaus Reisacher GmbH",
-        "subject": "M440i xDrive Coupe (452712519) – Quick questions",
-        "body": "Hello,\n\nI am interested in the BMW M440i xDrive Coupe on mobile.de.\n- Vehicle No: 452712519\n- Saphirschwarz Metallic, EZ 12/2021, 32,858 km, €45,990\n\nI would like to import this vehicle to the Netherlands and have a few questions:\n\n1- Warranty: Is there still BMW factory warranty or an extended warranty? Until when?\n\n2- Service history: Is the vehicle fully scheckheftgepflegt (complete service book)? Were all services done at a BMW partner?\n\n3- Condition: The listing states \"accident-free\". Can you confirm there has been no paintwork or repairs? A Carfax or vehicle history report would be appreciated. Or if u can share VIN, i can also query\n\n4- Export:\n- Is export to the Netherlands possible?\n- Do you support export plates (Ausfuhrkennzeichen) registration?\n\nYou can reach me at: tayfun@tayfunyasar.com\n\nThank you!"
-      }
+      "emailRef": "C173-reisacher-2026-04-12"
     }
-  ],
-  "email": {
-    "title": "C47 WELLER Osnabrück — Email (14.03.2026)",
-    "body": "Subject: M440i Coupe (13100210) – Quick questions\n\nHello,\n\nI am interested in the BMW M440i Coupe on mobile.de.\n- Vehicle No: 13100210\n\nTwo quick questions:\n\n1- Is this vehicle RWD or xDrive?\n2- Does it have Adaptives Fahrwerk (Adaptive M Suspension) and Differentialsperre (M Sport Differential)?\n\nI am specifically looking for an M440i xDrive Coupe (G22, 2-door) with the following criteria:\n- Year: 2021 or newer\n- Sunroof (Glasdach)\n- Under 40,000 km\n- Under €52,000\n- Driving Assistant Professional preferred\n- LCI model preferred, but not required\n\nIf this vehicle does not match, I would be happy to hear about any similar vehicles you may have in stock.\n\nCould you also register me in your system so I can be notified when matching vehicles become available?\n\nYou can reach me at: tayfun@tayfunyasar.com\n\nThank you!\n\nBest regards\nTayfun Yasar"
-  }
+  ]
 }

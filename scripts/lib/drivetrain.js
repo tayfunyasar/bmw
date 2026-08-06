@@ -7,6 +7,7 @@
 // susuyorsa yapisal checkbox karar verir.
 //
 // Oncelik sirasi:
+//   0. VIN tip kodu (4-7. karakter)                     -> KESIN (fabrika verisi)
 //   1. metin (title+description+url) "xDrive"/"Allrad"  -> xDrive AWD (certain)
 //   2. metin "Heckantrieb"/"Hinterradantrieb", ya da title'da literal "RWD" -> RWD (certain)
 //   3. metin sessiz + checkbox "Four-wheel drive"        -> xDrive AWD (certain)
@@ -20,6 +21,20 @@
 // birbirini disliyor (0 cakisma) -> alan yapisal ve guvenilir. 774 AWD-checkbox'li
 // aracin HICBIRINDE "Heckantrieb" gecmiyor -> metindeki Heckantrieb yaniltici degil,
 // karar verdirici. 107 ilanda metin sessiz ve tek kanit "Rear wheel drive" checkbox'i.
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// VIN tip kodu -> tahrik esleme tablosu; veri olarak JSON'da (tek kaynak).
+const VIN_TYPE_CODES = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '../../src/data/metadata/VIN_TYPE_CODES.json'), 'utf8')
+).codes;
+
+// BMW VIN'inde 4-7. karakter fabrika tip kodudur (or. WBA|81AP|010CN63825 -> 81AP).
+export const typeCodeFromVin = (vin) =>
+  (typeof vin === 'string' && vin.length >= 7) ? vin.slice(3, 7).toUpperCase() : null;
 
 export const AWD = 'xDrive AWD';
 export const RWD = 'RWD';
@@ -35,6 +50,7 @@ export const NO_SIGNAL_NOTE =
 // UI tooltip'inde gosterilen formul — buradaki oncelik sirasinin birebir ozeti.
 export const DRIVETRAIN_FORMULA =
   'Formül (öncelik sırası): ' +
+  '0) VIN tip kodu → kesin · ' +
   '1) metin "xDrive/Allrad" → xDrive · ' +
   '2) metin "Heckantrieb/Hinterradantrieb" ya da başlıkta "RWD" → RWD · ' +
   `3) mobile.de checkbox "${FEATURE_AWD}" → xDrive · ` +
@@ -44,8 +60,20 @@ export const DRIVETRAIN_FORMULA =
 // car: { title?, description?, url?, features?: string[] }
 // Donen deger: { type, certain, reason, note? } — reason karari veren kurali
 // ve yakalanan sinyali soyler; drivetrainReason olarak kaydedilir.
-export function determineDrivetrain({ title = '', description = '', url = '', features = [] } = {}) {
+export function determineDrivetrain({ title = '', description = '', url = '', features = [], vin = '' } = {}) {
   const allText = `${title} ${description} ${url}`;
+
+  // 0. VIN tip kodu — fabrika verisi, ilan metninden de checkbox'tan da guvenilir.
+  //    Ilan hic "xDrive" yazmasa bile tahrik buradan kesin cozulur.
+  const typeCode = typeCodeFromVin(vin);
+  const vinMatch = typeCode ? VIN_TYPE_CODES[typeCode] : null;
+  if (vinMatch) {
+    return {
+      type: vinMatch.drivetrain,
+      certain: true,
+      reason: `Kural 0 — VIN tip kodu "${typeCode}" = ${vinMatch.model} (fabrika verisi, ilan metnini ezer)`,
+    };
+  }
 
   // 1. Metin xDrive/Allrad diyor -> aciklama ezer.
   const awdWord = allText.match(/x[- ]?drive/i) || allText.match(/allrad/i);
@@ -80,11 +108,14 @@ export function determineDrivetrain({ title = '', description = '', url = '', fe
 }
 
 // Ham Apify kaydindan tahrik tipini belirler (parse-car-json / rematch ortak yolu).
-export function determineDrivetrainFromRaw(rawCar = {}) {
+// vin ham Apify kaydinda YOK — bayi sayfasindan gelip listing'e yazilir, o yuzden
+// cagiran taraf (rematch-drivetrain) ayrica gecirir.
+export function determineDrivetrainFromRaw(rawCar = {}, vin = '') {
   return determineDrivetrain({
     title: rawCar.title || '',
     description: rawCar.description || '',
     url: rawCar.url || '',
-    features: rawCar.features || []
+    features: rawCar.features || [],
+    vin
   });
 }

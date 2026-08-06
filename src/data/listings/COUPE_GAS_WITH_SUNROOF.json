@@ -3,6 +3,7 @@
     "listingId": "C40",
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=439042869",
     "mobileDeId": "439042869",
+    "vin": null,
     "exteriorColorName": "BROOKLYN GRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -76,8 +77,8 @@
     },
     "listingDates": {
       "createdTime": "2025-10-16T09:37:41.000Z",
-      "modifiedTime": "2026-07-28T16:21:38.000Z",
-      "renewedTime": "2026-06-15T12:35:32.000Z"
+      "modifiedTime": "2026-08-06T06:32:44.000Z",
+      "renewedTime": "2026-08-06T06:32:43.000Z"
     },
     "auditHistory": [
       {
@@ -356,6 +357,12 @@
           }
         },
         "auditDate": "2026-07-29T13:08:18.647Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-06T06:32:43.000Z"
       }
     ],
     "cardThemeColorHex": "#a3e635",
@@ -365,6 +372,7 @@
     "listingId": "C179",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-inspektion-t%C3%BCv-au-neu-j%C3%BClich/449815889.html",
     "mobileDeId": "449815889",
+    "vin": null,
     "exteriorColorName": "Black Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Red",
@@ -436,7 +444,7 @@
     },
     "listingDates": {
       "createdTime": "2026-03-09T13:42:58.000Z",
-      "modifiedTime": "2026-08-03T11:50:18.000Z",
+      "modifiedTime": "2026-08-04T19:10:48.000Z",
       "renewedTime": "2026-08-03T11:50:08.000Z"
     },
     "auditHistory": [
@@ -603,6 +611,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-shadow-line-waldshut-tiengen/453077509.html",
     "dealerListingUrl": "https://www.gottstein-gruppe.de/de/fahrzeugangebot/#!/vehicles/6678460/BMW_M440i_xDrive_Coupé_M_Shadow_Line_SANREMO_GREEN",
     "mobileDeId": "453077509",
+    "vin": null,
     "exteriorColorName": "SANREMO GREEN",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -685,7 +694,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
-      "modifiedTime": "2026-08-03T07:38:44.000Z",
+      "modifiedTime": "2026-08-06T04:08:36.000Z",
       "renewedTime": "2026-04-14T10:16:04.000Z"
     },
     "overrideFeatures": {
@@ -784,6 +793,7 @@
     "listingId": "C192",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-hybrid-leder-navi-kamera-led-f1-merzig/453284789.html",
     "mobileDeId": "453284789",
+    "vin": null,
     "exteriorColorName": "BROOKLYN GRAU METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -855,7 +865,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-16T11:42:34.000Z",
-      "modifiedTime": "2026-08-02T22:42:39.000Z",
+      "modifiedTime": "2026-08-04T18:52:05.000Z",
       "renewedTime": "2026-04-16T11:42:34.000Z"
     },
     "auditHistory": [
@@ -896,6 +906,7 @@
     "listingId": "C262",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-carplay-hilchenbach/455862473.html",
     "mobileDeId": "455862473",
+    "vin": null,
     "exteriorColorName": "Arctic race blue metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Red",
@@ -967,7 +978,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-15T13:03:07.000Z",
-      "modifiedTime": "2026-07-28T18:18:33.000Z",
+      "modifiedTime": "2026-08-04T18:02:16.000Z",
       "renewedTime": "2026-07-02T08:38:29.000Z"
     },
     "auditHistory": [
@@ -1058,6 +1069,7 @@
     "listingId": "C264",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ixdr-coupe-m-sport-pro-livepro-st-go-gsd-19-hildesheim/455957164.html",
     "mobileDeId": "455957164",
+    "vin": null,
     "exteriorColorName": "Black Sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather",
@@ -1129,7 +1141,7 @@
     },
     "listingDates": {
       "createdTime": "2026-05-16T18:06:12.000Z",
-      "modifiedTime": "2026-08-02T22:11:58.000Z",
+      "modifiedTime": "2026-08-04T18:15:32.000Z",
       "renewedTime": "2026-05-16T18:06:12.000Z"
     },
     "auditHistory": [
@@ -1233,6 +1245,7 @@
     "listingId": "C266",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/456054682.html",
     "mobileDeId": "456054682",
+    "vin": null,
     "exteriorColorName": "Fire Red",
     "exteriorPaintLabel": null,
     "interiorColorName": "Cloth, Black",
@@ -1304,8 +1317,8 @@
     },
     "listingDates": {
       "createdTime": "2026-05-18T09:18:47.000Z",
-      "modifiedTime": "2026-08-03T07:34:08.000Z",
-      "renewedTime": "2026-07-17T01:02:18.000Z"
+      "modifiedTime": "2026-08-06T04:02:22.000Z",
+      "renewedTime": "2026-08-06T01:00:21.000Z"
     },
     "auditHistory": [
       {
@@ -1365,6 +1378,12 @@
           }
         },
         "auditDate": "2026-07-31T17:36:34.432Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-06T01:00:21.000Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1374,6 +1393,7 @@
     "listingId": "C309",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sport-laser-acc-ahk-shd-rfk-windischleuba/457692777.html",
     "mobileDeId": "457692777",
+    "vin": null,
     "exteriorColorName": "Saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -1395,11 +1415,11 @@
       "history": []
     },
     "nextInspectionDate": "New",
-    "sellerTypeOrName": "Autohaus Kühnert GmbH & Co.KG ★4.5",
+    "sellerTypeOrName": "Autohaus Kühnert GmbH & Co.KG ★4.4",
     "modelGeneration": "LCI",
     "modelGenerationCertain": true,
     "co2EmissionsGramPerKm": 170,
-    "listingLocation": "🇩🇪 DE-04603 Windischleuba",
+    "listingLocation": "🇩🇪 DE-04600 Altenburg",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [],
@@ -1445,7 +1465,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-08T05:29:33.000Z",
-      "modifiedTime": "2026-07-28T15:06:13.000Z",
+      "modifiedTime": "2026-08-05T10:46:13.000Z",
       "renewedTime": "2026-06-08T05:29:33.000Z"
     },
     "auditHistory": [
@@ -1477,6 +1497,21 @@
           }
         },
         "auditDate": "2026-07-03T20:16:44.988Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "Autohaus Kühnert GmbH & Co.KG ★4.5",
+            "new": "Autohaus Kühnert GmbH & Co.KG ★4.4"
+          },
+          "listingLocation": {
+            "old": "🇩🇪 DE-04603 Windischleuba",
+            "new": "🇩🇪 DE-04600 Altenburg"
+          }
+        },
+        "auditDate": "2026-08-06T07:04:46.014Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1486,6 +1521,7 @@
     "listingId": "C312",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-navi-laser-hud-gsd-sitze-el-bayreuth/457879720.html",
     "mobileDeId": "457879720",
+    "vin": null,
     "exteriorColorName": "Mineralweiss",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -1557,7 +1593,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-10T06:16:35.000Z",
-      "modifiedTime": "2026-07-31T13:59:12.000Z",
+      "modifiedTime": "2026-08-04T15:20:31.000Z",
       "renewedTime": "2026-06-10T06:16:35.000Z"
     },
     "auditHistory": [
@@ -1652,6 +1688,7 @@
     "listingId": "C505",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-ahk-driv-assist-prof-laser-m%C3%BCnchen/458926857.html",
     "mobileDeId": "458926857",
+    "vin": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -1723,7 +1760,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-23T06:56:09.000Z",
-      "modifiedTime": "2026-07-28T16:47:57.000Z",
+      "modifiedTime": "2026-08-04T16:55:17.000Z",
       "renewedTime": "2026-06-23T06:56:09.000Z"
     },
     "auditHistory": [
@@ -1764,6 +1801,7 @@
     "listingId": "C563",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-livecockpitprof-head-up-hifi-dreieich-sprendlingen/459620676.html",
     "mobileDeId": "459620676",
+    "vin": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -1835,7 +1873,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-02T03:26:46.000Z",
-      "modifiedTime": "2026-07-29T03:21:15.000Z",
+      "modifiedTime": "2026-08-04T14:48:58.000Z",
       "renewedTime": "2026-07-02T03:26:46.000Z"
     },
     "auditHistory": [
@@ -1887,6 +1925,7 @@
     "listingId": "C608",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-19-lm-sd-leder-hk-head-up-ac-altenkirchen/460144483.html",
     "mobileDeId": "460144483",
+    "vin": null,
     "exteriorColorName": "Saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -1958,7 +1997,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-08T11:39:54.000Z",
-      "modifiedTime": "2026-08-01T16:38:47.000Z",
+      "modifiedTime": "2026-08-04T16:05:05.000Z",
       "renewedTime": "2026-07-08T11:39:54.000Z"
     },
     "auditHistory": [
@@ -1988,13 +2027,14 @@
     "listingId": "C618",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-head-up-hk-hifi-dab-wlan-gsd-komfortzg-t%C3%BCbingen/460247669.html",
     "mobileDeId": "460247669",
+    "vin": null,
     "exteriorColorName": "Dravitgrau metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 49890,
+    "basePriceEuro": 49290,
     "mileageKm": 42272,
     "firstRegistrationYearAndMonth": [
       2022,
@@ -2059,7 +2099,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-09T14:08:10.000Z",
-      "modifiedTime": "2026-07-28T15:16:34.000Z",
+      "modifiedTime": "2026-08-04T15:59:50.000Z",
       "renewedTime": "2026-07-09T14:08:10.000Z"
     },
     "auditHistory": [
@@ -2114,6 +2154,17 @@
           }
         },
         "auditDate": "2026-07-29T13:08:18.656Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 49890,
+            "new": 49290
+          }
+        },
+        "auditDate": "2026-08-06T07:04:46.016Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2123,6 +2174,7 @@
     "listingId": "C662",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ia-xdrive-coupe-unfallfrei-deutsch-laser-2hd-nieder-olm-bei-mainz/460824379.html",
     "mobileDeId": "460824379",
+    "vin": null,
     "exteriorColorName": "MINERALWEISS MET.",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -2194,7 +2246,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-16T16:15:58.000Z",
-      "modifiedTime": "2026-08-02T22:37:09.000Z",
+      "modifiedTime": "2026-08-04T15:25:14.000Z",
       "renewedTime": "2026-07-16T16:15:58.000Z"
     },
     "auditHistory": [
@@ -2224,13 +2276,14 @@
     "listingId": "C669",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-shadow-lsr-acc-hud-egsd-360-m-sitze-hagen/460877499.html",
     "mobileDeId": "460877499",
+    "vin": null,
     "exteriorColorName": "BROOKLYN GRAU METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 54814,
+    "basePriceEuro": 54764,
     "mileageKm": 21800,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -2295,7 +2348,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-17T10:53:16.000Z",
-      "modifiedTime": "2026-08-03T18:59:36.000Z",
+      "modifiedTime": "2026-08-05T18:43:05.000Z",
       "renewedTime": "2026-07-17T10:53:16.000Z"
     },
     "auditHistory": [
@@ -2372,133 +2425,27 @@
           }
         },
         "auditDate": "2026-08-03T20:12:28.202Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 54814,
+            "new": 54764
+          }
+        },
+        "auditDate": "2026-08-06T07:04:46.017Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
   },
   {
-    "listingId": "C692",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-navi-leder-acc-glasdach-elektr-sitz-esslingen-am-neckar/461121733.html",
-    "mobileDeId": "461121733",
-    "exteriorColorName": "Blue",
-    "exteriorPaintLabel": "BMW Individuallackierung",
-    "interiorColorName": "Full leather, Black",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": false,
-    "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
-    "basePriceEuro": 53930,
-    "mileageKm": 43193,
-    "firstRegistrationYearAndMonth": [
-      2023,
-      5
-    ],
-    "numberOfPreviousOwners": "2",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "unknown",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.9",
-    "modelGeneration": "LCI",
-    "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
-    "listingLocation": "🇩🇪 DE-73730 Esslingen am Neckar",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "yes",
-      "S5DN_360": "yes",
-      "KGNL": "no",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "no",
-      "S2VLA": "no",
-      "S494A": "yes",
-      "S248A": "no",
-      "S420A": "yes",
-      "S1MAA": "yes",
-      "S5ACA": "yes",
-      "S6C4A": "no",
-      "S430A": "yes",
-      "S4AWA": "no",
-      "S775A": "no",
-      "S493A": "no",
-      "S536A": "yes",
-      "S2NHA": "no",
-      "S3ACA": "no",
-      "S3ADA": "no",
-      "S3AGA": "no",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "no",
-      "S216A": "no",
-      "S302A": "yes",
-      "S4NHA": "no"
-    },
-    "listingDates": {
-      "createdTime": "2026-07-20T17:14:52.000Z",
-      "modifiedTime": "2026-08-03T18:00:28.000Z",
-      "renewedTime": "2026-07-20T17:14:52.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-07-20T17:14:52.000Z"
-      },
-      {
-        "action": "İlan Yenilendi (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-07-20T17:14:52.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-07-23T16:29:16.955Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-        "changes": {
-          "mileageKm": {
-            "old": 12566,
-            "new": 43193
-          },
-          "exteriorColorName": {
-            "old": "BMW Individual Tansanitbl",
-            "new": "BMW Individuallackierung "
-          }
-        },
-        "auditDate": "2026-07-24T21:40:14.486Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": [
-      "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
-    ]
-  },
-  {
     "listingId": "C729",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-head-up-display-teltow/457242451.html",
     "mobileDeId": "457242451",
+    "vin": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -2570,7 +2517,7 @@
     },
     "listingDates": {
       "createdTime": "2026-06-02T10:00:57.000Z",
-      "modifiedTime": "2026-07-29T10:59:01.000Z",
+      "modifiedTime": "2026-08-04T17:37:02.000Z",
       "renewedTime": "2026-07-29T07:53:08.000Z"
     },
     "auditHistory": [
@@ -2611,6 +2558,7 @@
     "listingId": "C753",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-ahk-gsd-sportpaket-hk-hifi-walsrode/432062543.html",
     "mobileDeId": "432062543",
+    "vin": null,
     "exteriorColorName": "TANSANITBLAU II METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
@@ -2682,7 +2630,7 @@
     },
     "listingDates": {
       "createdTime": "2025-07-24T09:19:57.000Z",
-      "modifiedTime": "2026-07-30T08:05:48.000Z",
+      "modifiedTime": "2026-08-04T20:05:12.000Z",
       "renewedTime": "2026-07-30T08:05:48.000Z"
     },
     "auditHistory": [
@@ -2712,6 +2660,7 @@
     "listingId": "C759",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xd-swarowsky-360-dr-ass-pro-hk-m-sport-pro-pocking/452614854.html",
     "mobileDeId": "452614854",
+    "vin": null,
     "exteriorColorName": "DRAVITGRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": null,
@@ -2783,7 +2732,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-09T08:25:57.000Z",
-      "modifiedTime": "2026-07-31T22:31:52.000Z",
+      "modifiedTime": "2026-08-04T18:49:55.000Z",
       "renewedTime": "2026-07-28T01:05:40.000Z"
     },
     "auditHistory": [
@@ -2813,6 +2762,7 @@
     "listingId": "C761",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-glasdach-innovati-siegen/453164111.html",
     "mobileDeId": "453164111",
+    "vin": null,
     "exteriorColorName": "M Portimao Blau metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -2884,7 +2834,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-15T08:26:28.000Z",
-      "modifiedTime": "2026-08-02T22:47:15.000Z",
+      "modifiedTime": "2026-08-04T18:21:23.000Z",
       "renewedTime": "2026-07-21T06:46:05.000Z"
     },
     "auditHistory": [
@@ -2920,6 +2870,7 @@
     "listingId": "C779",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-wiehl/460835546.html",
     "mobileDeId": "460835546",
+    "vin": null,
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -2991,7 +2942,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-16T18:32:14.000Z",
-      "modifiedTime": "2026-08-02T22:46:51.000Z",
+      "modifiedTime": "2026-08-04T14:09:37.000Z",
       "renewedTime": "2026-07-16T18:32:14.000Z"
     },
     "auditHistory": [
@@ -3027,6 +2978,7 @@
     "listingId": "C780",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-arnsberg/460836062.html",
     "mobileDeId": "460836062",
+    "vin": null,
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -3098,7 +3050,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-16T18:39:37.000Z",
-      "modifiedTime": "2026-07-29T14:38:22.000Z",
+      "modifiedTime": "2026-08-04T15:20:51.000Z",
       "renewedTime": "2026-07-16T18:39:37.000Z"
     },
     "auditHistory": [
@@ -3134,6 +3086,7 @@
     "listingId": "C781",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-bergisch-gladbach/460836071.html",
     "mobileDeId": "460836071",
+    "vin": null,
     "exteriorColorName": "schwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -3205,7 +3158,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-16T18:39:48.000Z",
-      "modifiedTime": "2026-07-29T10:02:28.000Z",
+      "modifiedTime": "2026-08-04T15:21:41.000Z",
       "renewedTime": "2026-07-16T18:39:48.000Z"
     },
     "auditHistory": [
@@ -3241,6 +3194,7 @@
     "listingId": "C788",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360-bad-wiessee/460945418.html",
     "mobileDeId": "460945418",
+    "vin": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3312,7 +3266,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-18T08:48:54.000Z",
-      "modifiedTime": "2026-08-03T08:27:54.000Z",
+      "modifiedTime": "2026-08-06T04:20:39.000Z",
       "renewedTime": "2026-07-18T08:48:54.000Z"
     },
     "auditHistory": [
@@ -3342,6 +3296,7 @@
     "listingId": "C789",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360-bad-wiessee/460946803.html",
     "mobileDeId": "460946803",
+    "vin": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3413,7 +3368,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-18T09:06:29.000Z",
-      "modifiedTime": "2026-08-03T07:08:08.000Z",
+      "modifiedTime": "2026-08-04T15:15:20.000Z",
       "renewedTime": "2026-07-18T09:06:29.000Z"
     },
     "auditHistory": [
@@ -3443,6 +3398,7 @@
     "listingId": "C790",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-dravitgrau-metallic-inkl-servicepaket-k%C3%B6nigsmoos/460986835.html",
     "mobileDeId": "460986835",
+    "vin": null,
     "exteriorColorName": "Grey",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather, Black",
@@ -3514,7 +3470,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-18T18:41:45.000Z",
-      "modifiedTime": "2026-07-28T13:41:42.000Z",
+      "modifiedTime": "2026-08-04T14:04:49.000Z",
       "renewedTime": "2026-07-18T18:41:45.000Z"
     },
     "auditHistory": [
@@ -3544,6 +3500,7 @@
     "listingId": "C797",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-glasdach-hud-h-k-berlin-siemensstadt/461168029.html",
     "mobileDeId": "461168029",
+    "vin": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3615,7 +3572,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-21T10:07:10.000Z",
-      "modifiedTime": "2026-08-03T18:34:14.000Z",
+      "modifiedTime": "2026-08-05T23:01:16.000Z",
       "renewedTime": "2026-07-21T10:07:10.000Z"
     },
     "auditHistory": [
@@ -3651,6 +3608,7 @@
     "listingId": "C811",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-wipperf%C3%BCrth-h%C3%A4mmern/461444577.html",
     "mobileDeId": "461444577",
+    "vin": null,
     "exteriorColorName": "tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
@@ -3722,7 +3680,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-24T12:41:56.000Z",
-      "modifiedTime": "2026-08-02T22:44:19.000Z",
+      "modifiedTime": "2026-08-04T14:38:23.000Z",
       "renewedTime": "2026-07-24T12:41:56.000Z"
     },
     "auditHistory": [
@@ -3752,12 +3710,13 @@
     "listingId": "C817",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-xdrive-budapest/461632560.html",
     "mobileDeId": "461632560",
+    "vin": null,
     "exteriorColorName": "BROOKLYN GRAU METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
     "basePriceEuro": 66640,
     "mileageKm": 4050,
     "firstRegistrationYearAndMonth": [
@@ -3823,7 +3782,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-27T09:49:05.000Z",
-      "modifiedTime": "2026-07-30T23:07:16.000Z",
+      "modifiedTime": "2026-08-04T21:29:42.000Z",
       "renewedTime": "2026-07-27T09:49:05.000Z"
     },
     "auditHistory": [
@@ -3844,6 +3803,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.711Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainReason": {
+            "old": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+            "new": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli"
+          }
+        },
+        "auditDate": "2026-08-06T07:05:10.496Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3853,6 +3823,7 @@
     "listingId": "C825",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-ahk-driv-assist-prof-kamera-barsb%C3%BCttel-bei-hamburg/461776512.html",
     "mobileDeId": "461776512",
+    "vin": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3860,7 +3831,7 @@
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "basePriceEuro": 66908,
-    "mileageKm": 8220,
+    "mileageKm": 8224,
     "firstRegistrationYearAndMonth": [
       2025,
       7
@@ -3924,7 +3895,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-29T03:21:30.000Z",
-      "modifiedTime": "2026-08-01T08:41:46.000Z",
+      "modifiedTime": "2026-08-04T13:33:08.000Z",
       "renewedTime": "2026-07-29T03:21:30.000Z"
     },
     "auditHistory": [
@@ -3945,6 +3916,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.714Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "mileageKm": {
+            "old": 8220,
+            "new": 8224
+          }
+        },
+        "auditDate": "2026-08-06T07:05:10.496Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3954,6 +3936,7 @@
     "listingId": "C831",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-driv-assist-prof-led-dreieich-sprendlingen/461863600.html",
     "mobileDeId": "461863600",
+    "vin": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Red",
@@ -4025,7 +4008,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-30T06:35:30.000Z",
-      "modifiedTime": "2026-08-02T08:28:15.000Z",
+      "modifiedTime": "2026-08-04T14:03:48.000Z",
       "renewedTime": "2026-07-30T06:35:30.000Z"
     },
     "auditHistory": [
@@ -4055,6 +4038,7 @@
     "listingId": "C833",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-360-acc-glasdach-led-k%C3%B6nigsbrunn/461894027.html",
     "mobileDeId": "461894027",
+    "vin": null,
     "exteriorColorName": "(0475) Saphirschwarz Metal",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Beige",
@@ -4126,7 +4110,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-30T12:33:13.000Z",
-      "modifiedTime": "2026-07-31T23:01:11.000Z",
+      "modifiedTime": "2026-08-04T13:53:04.000Z",
       "renewedTime": "2026-07-30T12:33:13.000Z"
     },
     "auditHistory": [
@@ -4156,13 +4140,14 @@
     "listingId": "C834",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-inno-s-dach-360-neusitz-rothenburg/461949648.html",
     "mobileDeId": "461949648",
+    "vin": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 65840,
+    "basePriceEuro": 65740,
     "mileageKm": 15600,
     "firstRegistrationYearAndMonth": [
       2025,
@@ -4227,7 +4212,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-31T08:35:34.000Z",
-      "modifiedTime": "2026-07-31T11:57:45.000Z",
+      "modifiedTime": "2026-08-04T13:46:41.000Z",
       "renewedTime": "2026-07-31T08:35:34.000Z"
     },
     "auditHistory": [
@@ -4248,6 +4233,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.719Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 65840,
+            "new": 65740
+          }
+        },
+        "auditDate": "2026-08-06T07:05:10.498Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4257,6 +4253,7 @@
     "listingId": "C838",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-xdrive-budapest/461989108.html",
     "mobileDeId": "461989108",
+    "vin": null,
     "exteriorColorName": "BROOKLYN GRAU METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": null,
@@ -4328,7 +4325,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-31T15:37:24.000Z",
-      "modifiedTime": "2026-07-31T15:37:28.000Z",
+      "modifiedTime": "2026-08-04T13:37:05.000Z",
       "renewedTime": "2026-07-31T15:37:24.000Z"
     },
     "auditHistory": [
@@ -4358,13 +4355,14 @@
     "listingId": "C133",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-da-prof-pa-glasd-wuppertal/452097976.html",
     "mobileDeId": "452097976",
+    "vin": null,
     "exteriorColorName": "Brooklyn Grau ",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 48290,
+    "basePriceEuro": 47480,
     "mileageKm": 59900,
     "firstRegistrationYearAndMonth": [
       2023,
@@ -4431,7 +4429,7 @@
     },
     "listingDates": {
       "createdTime": "2026-04-02T17:43:45.000Z",
-      "modifiedTime": "2026-08-03T08:30:06.000Z",
+      "modifiedTime": "2026-08-05T22:13:40.000Z",
       "renewedTime": "2026-04-02T17:43:45.000Z"
     },
     "overrideFeatures": {
@@ -4626,6 +4624,17 @@
           }
         },
         "auditDate": "2026-08-03T20:12:42.350Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 48290,
+            "new": 47480
+          }
+        },
+        "auditDate": "2026-08-06T07:05:10.489Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4635,13 +4644,14 @@
     "listingId": "C855",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-wermelskirchen/462182100.html",
     "mobileDeId": "462182100",
+    "vin": null,
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 96439.99,
+    "basePriceEuro": 79990,
     "mileageKm": 10,
     "firstRegistrationYearAndMonth": [
       null,
@@ -4690,7 +4700,7 @@
       "S430A": "yes",
       "S4AWA": "no",
       "S775A": "no",
-      "S493A": "yes",
+      "S493A": "no",
       "S536A": "no",
       "S2NHA": "no",
       "S3ACA": "yes",
@@ -4706,7 +4716,7 @@
     },
     "listingDates": {
       "createdTime": "2026-08-03T13:50:54.000Z",
-      "modifiedTime": "2026-08-03T13:51:05.000Z",
+      "modifiedTime": "2026-08-05T12:46:37.000Z",
       "renewedTime": "2026-08-03T13:50:54.000Z"
     },
     "auditHistory": [
@@ -4717,10 +4727,31 @@
         "auditDate": "2026-08-03T13:50:54.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T13:50:54.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-03T20:12:02.171Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 96439.99,
+            "new": 79990
+          },
+          "equipmentFeatures.S493A": {
+            "old": "yes",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-08-06T07:05:10.499Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4730,13 +4761,14 @@
     "listingId": "C860",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-vollausstattung-stockheim/462209899.html",
     "mobileDeId": "462209899",
+    "vin": null,
     "exteriorColorName": "Black Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "basePriceEuro": 69900,
+    "basePriceEuro": 69800,
     "mileageKm": 24003,
     "firstRegistrationYearAndMonth": [
       2024,
@@ -4801,7 +4833,7 @@
     },
     "listingDates": {
       "createdTime": "2026-08-03T19:11:41.000Z",
-      "modifiedTime": "2026-08-03T19:34:21.000Z",
+      "modifiedTime": "2026-08-04T17:22:06.000Z",
       "renewedTime": "2026-08-03T19:11:41.000Z"
     },
     "auditHistory": [
@@ -4812,10 +4844,27 @@
         "auditDate": "2026-08-03T19:11:41.000Z"
       },
       {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-03T19:11:41.000Z"
+      },
+      {
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-03T20:12:02.174Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 69900,
+            "new": 69800
+          }
+        },
+        "auditDate": "2026-08-06T07:05:10.500Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4825,6 +4874,7 @@
     "listingId": "C863",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sportpaket-pro-tempom-aktiv-eningen-u-a/459690121.html",
     "mobileDeId": "459690121",
+    "vin": null,
     "exteriorColorName": "black-sapphire metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -4896,7 +4946,7 @@
     },
     "listingDates": {
       "createdTime": "2026-07-02T17:39:16.000Z",
-      "modifiedTime": "2026-08-04T03:34:00.000Z",
+      "modifiedTime": "2026-08-06T03:33:29.000Z",
       "renewedTime": "2026-08-04T01:01:34.000Z"
     },
     "auditHistory": [
@@ -4926,6 +4976,7 @@
     "listingId": "C865",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-driv-assist-prof-led-barsb%C3%BCttel-bei-hamburg/462221818.html",
     "mobileDeId": "462221818",
+    "vin": null,
     "exteriorColorName": "M Brooklyn Grau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Other, Black",
@@ -4997,12 +5048,18 @@
     },
     "listingDates": {
       "createdTime": "2026-08-04T03:26:22.000Z",
-      "modifiedTime": "2026-08-04T06:10:47.000Z",
+      "modifiedTime": "2026-08-04T13:08:17.000Z",
       "renewedTime": "2026-08-04T03:26:22.000Z"
     },
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-04T03:26:22.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-08-04T03:26:22.000Z"
@@ -5021,6 +5078,7 @@
     "listingId": "C876",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-coupe-i-xdrive-ahk-20-zoll-memory-sd-laser-acc-siegen/462231976.html",
     "mobileDeId": "462231976",
+    "vin": null,
     "exteriorColorName": "DRAVITGRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -5095,7 +5153,7 @@
     },
     "listingDates": {
       "createdTime": "2026-08-04T07:51:02.000Z",
-      "modifiedTime": "2026-08-04T08:36:38.000Z",
+      "modifiedTime": "2026-08-05T06:24:04.000Z",
       "renewedTime": "2026-08-04T07:51:02.000Z"
     },
     "overrideFeatures": {
@@ -5117,6 +5175,12 @@
     "auditHistory": [
       {
         "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-04T07:51:02.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
         "detail": null,
         "changes": null,
         "auditDate": "2026-08-04T07:51:02.000Z"
@@ -5169,6 +5233,7 @@
     "listingId": "C892",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-barsb%C3%BCttel-bei-hamburg/462311879.html",
     "mobileDeId": "462311879",
+    "vin": null,
     "exteriorColorName": "Cape York Grün",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -5264,6 +5329,7 @@
     "listingId": "C901",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hud-harman-kardon-kamera-erfurt/38326645424320.html",
     "mobileDeId": "38326645424320",
+    "vin": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -5350,6 +5416,102 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-05T16:08:48.224Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C904",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-glasdach-harmanka-borken/38415801351392.html",
+    "mobileDeId": "38415801351392",
+    "vin": null,
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "basePriceEuro": 60670,
+    "mileageKm": 14015,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      3
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Jungeblut GmbH & Co. KG , BMW Service - BMW Young Used Cars - MG Vertragshändler ★4.7",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 191,
+    "listingLocation": "🇩🇪 DE-46325 Borken",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-06T02:28:35.000Z",
+      "modifiedTime": "2026-08-06T02:28:42.000Z",
+      "renewedTime": "2026-08-06T02:28:35.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-06T02:28:35.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-06T07:03:53.650Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

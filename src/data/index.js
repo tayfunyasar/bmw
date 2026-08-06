@@ -27,6 +27,7 @@ import dealersData from './metadata/DEALERS.json';
 import bookmarks from './user_data/BOOKMARKS.json';
 
 import actionPlan from './user_data/ACTION_PLAN.json';
+import emails from './user_data/EMAILS.json';
 
 export {
   UI_COLORS,
@@ -55,5 +56,6 @@ export {
   dealersData,
   bookmarks,
 
-  actionPlan
+  actionPlan,
+  emails
 };

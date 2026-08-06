@@ -4,6 +4,7 @@ import { actionPlan } from '../../data';
 
 const { Title, Text, Link } = Typography;
 
+
 export const NotesTab = () => (
   <Space direction="vertical" size="large" style={{ display: 'flex' }}>
     <Card title="⏳ Bekleyen İlanlar">
@@ -37,14 +38,9 @@ export const NotesTab = () => (
           </ul>
         </div>
 
-        <div style={{ borderTop: '1px solid #f0f0f0', paddingTop: 16 }}>
-          <Title level={5} type="danger">📧 {actionPlan.email.title}</Title>
-          <div style={{ padding: 12, backgroundColor: '#f0f5ff', border: '1px solid #adc6ff', borderRadius: 4, whiteSpace: 'pre-line' }}>
-            {actionPlan.email.body}
-          </div>
-        </div>
       </Space>
     </Card>
+
 
   </Space>
 );

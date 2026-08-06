@@ -60,7 +60,7 @@ function freshDrivetrain(listing) {
     return null;
   }
   if (staleFallback) summary.staleFallback++;
-  return determineDrivetrainFromRaw(raw);
+  return determineDrivetrainFromRaw(raw, listing.vin);
 }
 
 // --- 1. gecis: alanlari tazele, tasinacaklari topla ---

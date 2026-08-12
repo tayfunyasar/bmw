@@ -1,0 +1,210 @@
+[
+  {
+    "listingId": "A2",
+    "listingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-navi-leder-acc-glasdach-bluet-167177",
+    "dealerListingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-navi-leder-acc-glasdach-bluet-167177",
+    "mobileDeId": null,
+    "vin": "WBA11AR050CM13571",
+    "possibleTwinOf": null,
+    "exteriorColorName": "TANSANITBLAU II METALLIC",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "M spezifisches Leder Vernasca Schwarz mit Kontraststeppung Blau",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 0 — VIN tip kodu \"11AR\" = M440i xDrive Coupé (fabrika verisi, ilan metnini ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 46460,
+    "mileageKm": 75137,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      11
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "BMW Baden-Baden (ahg)",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇩🇪 76547 Sinzheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "no",
+      "S5DNA": "yes",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "yes",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "no",
+      "S265A": "no",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": null,
+      "modifiedTime": null,
+      "renewedTime": null
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T07:47:01.983Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "AHG taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sunroofReason": {
+            "old": null,
+            "new": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.029Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "A4",
+    "listingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-m-sport-pro-alarmanlage-harma-168920",
+    "dealerListingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-m-sport-pro-alarmanlage-harma-168920",
+    "mobileDeId": null,
+    "vin": "WBA71HB040CV99407",
+    "possibleTwinOf": null,
+    "exteriorColorName": "Brooklyn Grau Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Vollleder, Schwarz",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 62930,
+    "mileageKm": 11895,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      8
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "BMW Gebrauchtwagen Lahr (ahg)",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇩🇪 77933 Lahr",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "no",
+      "S2VFA": "unknown",
+      "S459A": "no",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "no",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "no",
+      "S265A": "no",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": null,
+      "modifiedTime": null,
+      "renewedTime": null
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T07:47:01.989Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "AHG taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sunroofReason": {
+            "old": null,
+            "new": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.031Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  }
+]

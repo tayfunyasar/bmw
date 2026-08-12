@@ -4,6 +4,7 @@ import { Tabs } from 'antd';
 import { yearGroups, sortedYears, allByTotalCost, sortByTotalCost } from '../utils/pricingCalculator';
 import { soldGasListings, rwdSoldWithSunroofListings, rwdSoldWithoutSunroofListings, rwdGasWithSunroofListings, rwdGasWithoutSunroofListings, noSunroofGas, CoupeDieselWithSunroof, cakalListings, kazaliListings } from '../data';
 import { carMatchesFilters } from '../utils/carFilters';
+import { getCarPublishedDate } from '../utils/helpers';
 import { emails } from '../data';
 import { FrozenTab, FrozenTabLabel } from './tabs/FrozenTab';
 import { CarTable } from './common/CarTable';
@@ -21,6 +22,7 @@ const SORTERS = {
   price: (a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost,
   deal:  (a, b) => DEAL(a) - DEAL(b),
   km:    (a, b) => (a.mileageKm || 0) - (b.mileageKm || 0),
+  date:  (a, b) => (getCarPublishedDate(b)?.getTime() || 0) - (getCarPublishedDate(a)?.getTime() || 0),
   score: (a, b) => (b.totalScore || 0) - (a.totalScore || 0),
 };
 

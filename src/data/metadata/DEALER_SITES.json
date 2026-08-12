@@ -1,0 +1,75 @@
+{
+  "_comment": "Bayi sitesi crawler config'i — tek kaynak. Site skill'leri (.claude/skills/bayi-tara-*) ve scripts/lib/dealer-sites.js buradan okur. searchUrls BOOKMARKS.json'daki linklerin kopyasi DEGIL — bookmarkTitlePrefix ile bookmark bulunur, arama URL'si oradan alinir (tek kaynak BOOKMARKS). detailUrlIdPattern: detay URL'sinden site-ici ilan ID'sini cikaran regex (1 capture group); null ise dealerKey URL'nin kendisidir. fetchStrategy: 'chrome-tabs' (SPA/korumali) | 'webfetch' (server-rendered) — pilot karar verir, 'unknown' baslangic degeri.",
+  "sites": [
+    {
+      "site": "WELLER",
+      "idPrefix": "W",
+      "bookmarkTitlePrefix": "WELLER",
+      "defaultCountry": "DE",
+      "detailUrlIdPattern": "-(\\d+)\\/?$",
+      "detailUrlTemplate": null,
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    },
+    {
+      "site": "BMW_NL",
+      "idPrefix": "N",
+      "bookmarkTitlePrefix": "BMW NL Occasions",
+      "defaultCountry": "NL",
+      "detailUrlIdPattern": "\\/details\\/id\\/(\\d+)",
+      "detailUrlTemplate": "https://occasions.bmw.nl/bmw/zoeken/resultaten/details/id/{id}",
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    },
+    {
+      "site": "BMW_DE",
+      "idPrefix": "B",
+      "bookmarkTitlePrefix": "BMW.de Gebrauchtwagen",
+      "defaultCountry": "DE",
+      "detailUrlIdPattern": "\\/details\\/([0-9a-f-]{36})",
+      "detailUrlTemplate": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/{id}",
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    },
+    {
+      "site": "EULER",
+      "idPrefix": "E",
+      "bookmarkTitlePrefix": "Euler Group",
+      "defaultCountry": "DE",
+      "detailUrlIdPattern": "\\/v\\/(BM\\d+)",
+      "detailUrlTemplate": null,
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    },
+    {
+      "site": "UNTERBERGER",
+      "idPrefix": "U",
+      "bookmarkTitlePrefix": "Unterberger",
+      "defaultCountry": "AT",
+      "detailUrlIdPattern": null,
+      "detailUrlTemplate": null,
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    },
+    {
+      "site": "AHG",
+      "idPrefix": "A",
+      "bookmarkTitlePrefix": "ahg Gruppe",
+      "defaultCountry": "DE",
+      "detailUrlIdPattern": "-(\\d+)$",
+      "detailUrlTemplate": null,
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    },
+    {
+      "site": "TIMMERMANNS",
+      "idPrefix": "T",
+      "bookmarkTitlePrefix": "Timmermanns",
+      "defaultCountry": "DE",
+      "detailUrlIdPattern": "[?&]i=([A-Z0-9]+)",
+      "detailUrlTemplate": "https://timmermanns.de/fahrzeugboerse/fahrzeuge?i={id}",
+      "fetchStrategy": "chrome-tabs",
+      "pageCap": 5
+    }
+  ]
+}

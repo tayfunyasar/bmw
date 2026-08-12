@@ -1,0 +1,31 @@
+{
+  "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-773891958/",
+  "title": "BMW M440i xDrive – M440i xDr LASER,LivPro,AHK,Da,Kamera,Tempo,SHZ HUD",
+  "attributes": {
+    "Category": "Cabrio / Roadster"
+  },
+  "description": "Head-up-Display HUD\nLaserlicht\nAdaptives Kurvenlicht\nBMW Live Cockpit Professional\nSoundsystem: HiFi-Lautsprechersystem\nApple CarPlay u. Android Auto kabellos\nKlimaautomatik 3 Zonen\nMemoryfunktion Fahrer-/Beifahrersitz\nLordosenstütze Fahrer elektrisch\nSitzheizung Fahrer/Beifahrer\nKomfortzugang\nWindschott\nKopfraumheizung\nNackenwärmer\nAnhängerkupplung schwenkbar\nM Sportfahrwerk\nDifferentialsperre\nM Sportbremse\nM Leichtmetallräder 18 Zoll: Doppelspeiche 848 M\nSitze Leder Vernasca schwarz\nLenkradheizung\nInstrumententafel in Sensatec\nAerodynamik-Paket M-Technic\nHochglanz Shadow-Line",
+  "features": [],
+  "properties": {
+    "milage": "45.000 km",
+    "firstRegistration": "04/2023",
+    "upholstery": "Vollleder Schwarz",
+    "colour": "Schwarz",
+    "manufacturerColour": "Black Sapphire",
+    "co2Emission": "183 g/km",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 47470
+  },
+  "dealer": {
+    "name": "WELLER Premium GmbH (Osnabrück-Hasepark)",
+    "contry": "DE",
+    "addesses": [
+      "Franz-Lenz-Str. 16",
+      "DE-49084 Osnabrück"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null
+}

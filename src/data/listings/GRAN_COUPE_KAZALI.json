@@ -112,7 +112,8 @@
     "aiCommentary": null,
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 70 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C331",
@@ -214,7 +215,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 50 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C342",
@@ -316,7 +318,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C350",
@@ -418,7 +421,8 @@
     "cardThemeColorHex": "#e2e8f0",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C361",
@@ -520,7 +524,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 59 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C404",
@@ -622,7 +627,8 @@
     "cardThemeColorHex": "#e2e8f0",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C408",
@@ -724,7 +730,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C411",
@@ -826,7 +833,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C422",
@@ -928,7 +936,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 46 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C602",
@@ -1030,7 +1039,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C643",
@@ -1132,7 +1142,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C654",
@@ -1255,7 +1266,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C776",
@@ -1357,7 +1369,8 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C787",
@@ -1456,6 +1469,154 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.694Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "TIMMERMANNS ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://timmermanns.de/fahrzeugboerse/fahrzeuge?i=FBUK260223"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.820Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "TIMMERMANNS ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S521A": {
+                "mobile.de": "yes",
+                "TIMMERMANNS": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "TIMMERMANNS": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "TIMMERMANNS": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:52.336Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null,
+    "dealerListingUrl": "https://timmermanns.de/fahrzeugboerse/fahrzeuge?i=FBUK260223",
+    "equipmentConflicts": {
+      "S521A": {
+        "mobile.de": "yes",
+        "TIMMERMANNS": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "TIMMERMANNS": "no"
+      },
+      "S265A": {
+        "mobile.de": "yes",
+        "TIMMERMANNS": "no"
+      }
+    },
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+  },
+  {
+    "listingId": "C939",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-pano-hud-ahk-360-h-k-gronau/39158962133792.html",
+    "mobileDeId": "39158962133792",
+    "exteriorColorName": "PORTIMAO BLAU",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 44900,
+    "mileageKm": 14197,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Langenhof Automobile GmbH ★4.8",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-48599 Gronau",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ GRAN_COUPE_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S536A": "no",
+      "S322A": "yes",
+      "S2NHA": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S775A": "yes",
+      "S3ACA": "yes",
+      "S488A": "yes",
+      "S493A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S302A": "yes",
+      "S1MAA": "unknown",
+      "S4AWA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S715A": "no",
+      "S216A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-10T07:16:27.000Z",
+      "modifiedTime": "2026-08-10T07:16:33.000Z",
+      "renewedTime": "2026-08-10T07:16:27.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-10T07:16:27.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-10T10:12:46.809Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

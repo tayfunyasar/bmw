@@ -246,7 +246,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C130",
@@ -432,7 +433,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C142",
@@ -562,7 +564,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C56",
@@ -898,7 +901,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C170",
@@ -999,7 +1003,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C209",
@@ -1107,7 +1112,8 @@
     "aiCommentary": null,
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — açıklama bilgilendirici (12 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'"
   },
   {
     "listingId": "C129",
@@ -1290,7 +1296,8 @@
     "aiCommentary": null,
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C212",
@@ -1392,7 +1399,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=unknown — açıklama bilgilendirici değil, checkbox sinyali de yok — güvenlik freni"
   },
   {
     "listingId": "C231",
@@ -1494,7 +1502,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C232",
@@ -1596,7 +1605,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C284",
@@ -1698,7 +1708,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C297",
@@ -1800,7 +1811,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C336",
@@ -1902,7 +1914,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 55 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C345",
@@ -2004,7 +2017,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C472",
@@ -2106,7 +2120,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 59 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C486",
@@ -2208,7 +2223,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 65 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C588",
@@ -2310,7 +2326,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C620",
@@ -2412,7 +2429,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil"
   },
   {
     "listingId": "C334",
@@ -2533,7 +2551,8 @@
       "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
     ],
     "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C686",
@@ -2635,7 +2654,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C706",
@@ -2737,7 +2757,8 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C290",
@@ -2857,7 +2878,8 @@
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C315",
@@ -2974,6 +2996,298 @@
         "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından COUPE_GAS_WITH_SUNROOF_KAZALI.json dosyasına taşındı — Manuel işaretlendi",
         "changes": null,
         "auditDate": "2026-07-08T11:24:53.109Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null,
+    "sunroofReason": "S403A=yes — fabrika opsiyon kodu \"(0403)\" ilan açıklamasında geçiyor"
+  },
+  {
+    "listingId": "C942",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-leder-cam-full-led-navi-lkh-holdorf/39166408110816.html",
+    "mobileDeId": "39166408110816",
+    "exteriorColorName": "Black Metallic",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
+    "basePriceEuro": 42900,
+    "mileageKm": 39354,
+    "firstRegistrationYearAndMonth": [
+      2021,
+      7
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "FF Performance ★4.6",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 162,
+    "listingLocation": "🇩🇪 DE-49451 Holdorf",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Vorschaden bekannt\""
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S536A": "no",
+      "S322A": "yes",
+      "S2NHA": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S5ACA": "yes",
+      "S430A": "yes",
+      "S3ACA": "no",
+      "S488A": "no",
+      "S715A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S302A": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S1MAA": "unknown",
+      "S2VLA": "no",
+      "S6C4A": "no",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S493A": "no",
+      "S216A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-10T08:17:03.000Z",
+      "modifiedTime": "2026-08-10T08:17:03.000Z",
+      "renewedTime": "2026-08-10T08:17:03.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-10T08:17:03.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-10T10:12:46.813Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C960",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-a-m-performance-non-x-drive-nauen/39352962891712.html",
+    "mobileDeId": "39352962891712",
+    "exteriorColorName": "Black Metallic",
+    "interiorColorName": "Full leather",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"X-drive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+    "basePriceEuro": 39900,
+    "mileageKm": 67900,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "08/2028",
+    "sellerTypeOrName": "B&S Cars GmbH ★4.8",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 167,
+    "listingLocation": "🇩🇪 DE-14641 Nauen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Das Fahrzeuge hatten einen Vorschaden ,\""
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S536A": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S5ACA": "yes",
+      "S430A": "yes",
+      "S775A": "yes",
+      "S3ACA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S302A": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S1MAA": "unknown",
+      "S2NHA": "no",
+      "S2VLA": "no",
+      "S6C4A": "no",
+      "S4AWA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S715A": "no",
+      "S493A": "no",
+      "S216A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-11T09:35:14.000Z",
+      "modifiedTime": "2026-08-11T09:39:44.000Z",
+      "renewedTime": "2026-08-11T09:35:14.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-11T09:35:14.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-11T10:17:43.374Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C968",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-m-sport-nieborowice/39377178880192.html",
+    "mobileDeId": "39377178880192",
+    "exteriorColorName": "Black",
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+    "basePriceEuro": 34890,
+    "mileageKm": 43044,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "AUTO-CENTRUM S.C RYSZARD ZAROW, NIKODEM ZAROW ★4.2",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇵🇱 PL-44-144 NIEBOROWICE",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S610A": "no",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S536A": "no",
+      "S322A": "no",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "no",
+      "S6U3A": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "no",
+      "S5ACA": "no",
+      "S430A": "yes",
+      "S3ACA": "yes",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S302A": "no",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S1MAA": "unknown",
+      "S2NHA": "unknown",
+      "S2VLA": "unknown",
+      "S6C4A": "unknown",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S715A": "unknown",
+      "S493A": "unknown",
+      "S216A": "unknown",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-11T12:52:18.000Z",
+      "modifiedTime": "2026-08-11T13:00:13.000Z",
+      "renewedTime": "2026-08-11T12:52:18.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-11T12:52:18.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-11T13:29:01.867Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

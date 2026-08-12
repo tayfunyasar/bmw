@@ -1,4 +1,4 @@
-import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf, dealerListingsByCategory } from '../data';
 import { computeBaseRates, unknownsExpectedValue, unknownsExpectedScore } from './expectedValue.js';
 
 const { TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, BPM_EXEMPT_COUNTRIES, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
@@ -402,7 +402,12 @@ const extractSortedYears = (groupedListings) => {
   return Object.keys(groupedListings).sort((yearA, yearB) => Number(yearB) - Number(yearA));
 };
 
-const activeCars = attachMetrics(CoupeGasWithSunroof);
+// Alim havuzu = mobile.de coupe'lari + bayi sitelerinden gelen ayni kategori.
+// Bayi araclari (W3, AHG1...) ayni skorlama/oneri akisina girer; kaynak listingId
+// onekinden ve sellerTypeOrName'den okunur. Dedup import asamasinda (import-dealer):
+// mobile.de'de zaten var olan arac site dosyasina hic yazilmaz.
+const dealerCoupes = dealerListingsByCategory['COUPE_GAS_WITH_SUNROOF'] || [];
+const activeCars = attachMetrics([...CoupeGasWithSunroof, ...dealerCoupes]);
 const soldCars = attachMetrics(soldGasListings).map(car => Object.assign(car, { isSold: true }));
 
 // Öneri skorları TEK referans dağılıma (aktif pazar) göre hesaplanır → sold araçlar

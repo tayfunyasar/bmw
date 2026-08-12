@@ -17,7 +17,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { matchEquipmentFeatures } from './lib/equipment-match.js';
+import { explainEquipmentFeatures } from './lib/equipment-match.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -59,15 +59,26 @@ function rematchListing(listing) {
   }
   if (staleFallback) summary.staleFallback++;
 
-  const fresh = matchEquipmentFeatures(
+  const freshExplained = explainEquipmentFeatures(
     { description: raw.description || '', features: raw.features || [], props: raw.properties || {} },
     equipmentRules
   );
+  const fresh = Object.fromEntries(Object.entries(freshExplained).map(([c, v]) => [c, v.status]));
 
   const overrides = listing.overrideFeatures || {};
   listing.equipmentFeatures = listing.equipmentFeatures || {};
 
   let changed = false;
+  // S403A karari (sunroof'lu/suz dosya ayrimi) GEREKCESIYLE kayda islenir —
+  // dump'a donmeden final dosyadan okunabilir (drivetrainReason simetrisi).
+  if (!overrides.S403A && freshExplained.S403A) {
+    const reasonStr = `S403A=${freshExplained.S403A.status} — ${freshExplained.S403A.reason}`;
+    if (listing.sunroofReason !== reasonStr) {
+      listing.sunroofReason = reasonStr;
+      summary.transitions['sunroofReason'] = (summary.transitions['sunroofReason'] || 0) + 1;
+      changed = true;
+    }
+  }
   for (const [code, status] of Object.entries(fresh)) {
     if (overrides[code]) { summary.overrideSkips++; continue; } // manuel override korunur
     const old = listing.equipmentFeatures[code];

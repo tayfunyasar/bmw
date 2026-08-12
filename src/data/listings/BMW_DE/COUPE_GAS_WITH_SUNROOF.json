@@ -1,0 +1,106 @@
+[
+  {
+    "listingId": "B2",
+    "listingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/0195b900-1838-7674-beee-e4580784a360",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/0195b900-1838-7674-beee-e4580784a360",
+    "mobileDeId": null,
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Sanremo Green metallic (P0C4E)",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Leder 'Vernasca' Schwarz/Kontraststeppung Blau SW (FMANL)",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"XDRIVE\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 47980,
+    "mileageKm": 75460,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      2
+    ],
+    "numberOfPreviousOwners": 2,
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Autohaus Wormser GmbH Forchheim",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 176,
+    "listingLocation": "🇩🇪 91301 Forchheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "yes",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "yes",
+      "S488A": "no",
+      "S521A": "no",
+      "S524A": "no",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": null,
+      "modifiedTime": null,
+      "renewedTime": null
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T08:01:32.649Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "BMW_DE taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sunroofReason": {
+            "old": null,
+            "new": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.186Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  }
+]

@@ -3,14 +3,9 @@ import { Tabs } from 'antd';
 import { sortByTotalCost } from '../utils/pricingCalculator';
 import { CarTable } from './common/CarTable';
 import { APP } from '../data';
+import { getCarPublishedDate } from '../utils/helpers';
 
 const RECENT_DAYS_OPTIONS = APP.recentDaysOptions;
-
-const getCarPublishedDate = (car) => {
-  const published = car.auditHistory?.find(h => h.action?.includes('İlan Yayınlandı'));
-  const raw = car.listingDates?.createdTime || published?.auditDate;
-  return raw ? new Date(raw) : null;
-};
 
 // memo + üstte (MainTabs'ta) referansı sabitlenen cars/recentPool: freeze toggle gibi
 // ilgisiz bir üst render, burada buildUnion'ı (ve altındaki dev CarTable'ı) tetiklemesin.

@@ -1,0 +1,106 @@
+[
+  {
+    "listingId": "A5",
+    "listingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-harman-kardon-innovation-19-170498",
+    "dealerListingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-harman-kardon-innovation-19-170498",
+    "mobileDeId": null,
+    "vin": "WBA81DA0X0CW60127",
+    "possibleTwinOf": null,
+    "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Vollleder, Schwarz",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — açıklama bilgilendirici (11 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'",
+    "basePriceEuro": 59960,
+    "mileageKm": 25294,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      11
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "BMW Kehl (ahg)",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 162,
+    "listingLocation": "🇩🇪 77694 Kehl",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "no",
+      "S2VFA": "unknown",
+      "S459A": "no",
+      "S5DNA": "no",
+      "S6U3A": "no",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "no",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "no",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "no",
+      "S265A": "no",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": null,
+      "modifiedTime": null,
+      "renewedTime": null
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T07:47:01.990Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "AHG taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sunroofReason": {
+            "old": null,
+            "new": "S403A=no — açıklama bilgilendirici (11 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'"
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.032Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  }
+]

@@ -22,15 +22,12 @@
 // aracin HICBIRINDE "Heckantrieb" gecmiyor -> metindeki Heckantrieb yaniltici degil,
 // karar verdirici. 107 ilanda metin sessiz ve tek kanit "Rear wheel drive" checkbox'i.
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // VIN tip kodu -> tahrik esleme tablosu; veri olarak JSON'da (tek kaynak).
-const VIN_TYPE_CODES = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, '../../src/data/metadata/VIN_TYPE_CODES.json'), 'utf8')
-).codes;
+// DIKKAT: bu modulu UI de import ediyor (CarTable → DRIVETRAIN_FORMULA), o yuzden
+// burada fs/path/url KULLANILAMAZ. Import attribute'u hem Node 22+ hem Vite'ta calisir.
+import VIN_TYPE_CODES_JSON from '../../src/data/metadata/VIN_TYPE_CODES.json' with { type: 'json' };
+
+const VIN_TYPE_CODES = VIN_TYPE_CODES_JSON.codes;
 
 // BMW VIN'inde 4-7. karakter fabrika tip kodudur (or. WBA|81AP|010CN63825 -> 81AP).
 export const typeCodeFromVin = (vin) =>
@@ -82,7 +79,7 @@ export function determineDrivetrain({ title = '', description = '', url = '', fe
   }
 
   // 2. Metin RWD diyor -> aciklama ezer.
-  const rwdWord = allText.match(/heckantrieb/i) || allText.match(/hinterradantrieb/i);
+  const rwdWord = allText.match(/heckantrieb/i) || allText.match(/hinterradantrieb/i) || allText.match(/achterwielaandrijving/i);
   if (rwdWord) {
     return { type: RWD, certain: true, reason: `Kural 2 — ilan metninde "${rwdWord[0]}" geçiyor (açıklama ezer)` };
   }

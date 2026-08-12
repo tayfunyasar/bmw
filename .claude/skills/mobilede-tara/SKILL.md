@@ -1,6 +1,6 @@
 ---
 name: mobilede-tara
-description: BOOKMARKS.json icindeki mobile.de M440i/M440d arama linkini Chrome'da acar, yeni ilanlari sponsorlu/Gran Coupe/Cabrio eleyerek existing/new durumuyla tarar. Ardisik 7 existing gorunce durur (ust sinir 10 sayfa), yeni ID'leri `npm run import:apify` ile ceker; ardindan 2 gunluk esikle stale ilanlari `refresh` skill akisiyla (403 kurtarma + move:sell dahil) yeniler ve session-bound 3h loop'u yeniden kurar. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "/mobilede-tara" yazdiginda — slash olsun olmasin, bu cumlelerden biri gectiginde DOGRUDAN bu skill'i calistir, kullaniciya secenek sunma.
+description: TAM TARAMA dongusu — (1) BOOKMARKS.json'daki mobile.de M440i/M440d aramasini Chrome'da tarar (sponsorlu/GC/Cabrio elenir, ardisik 7 existing'de durur, yeniler `npm run import:apify`), (2) 2 gun esikle stale ilanlari `refresh` akisiyla yeniler (403 kurtarma + move:sell), (3) 7 bayi sitesini `bayi-tara` ortak akisiyla tarar (yeni bulunanlar `npm run import:dealer` ile SITE/ klasorlerine, mobile.de ikizleri otomatik dedup), (4) birlesik rapor + session-bound 3h loop'u yeniden kurar. TRIGGER - kullanici "mobilede tara", "mobile.de tara", "mobile de tara", "yeni ilan tara", "yeni ilanlari tara", "mobilede yeni ilan var mi", "tarama yap", "tam tarama", "/mobilede-tara" yazdiginda — slash olsun olmasin DOGRUDAN calistir, secenek sunma.
 ---
 
 # mobile.de Tara
@@ -50,6 +50,7 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
    - **Durum** sutunu: `new` ise `🆕 new`, `existing` ise `✅ <existingListingId> (<existingIn>)` (orn. `✅ C36 (COUPE_GAS_WITH_SUNROOF)`).
    - Tablonun altinda atlanan kalemleri kisa ozetle: kac sponsorlu, kac GC, kac Cabrio.
    - Ayrica kept icindeki existing/new dagilimini, kac sayfa gezildigini, durdurma nedenini ve adim 7'deki Apify import sonucunu da rapor et (orn. `Sayfa 1-3 gezildi, 12 yeni + 4 existing — 12 yeni ID Apify ile import edildi`).
+   - Rapor BIRLESIKTIR: altina adim 9 (refresh) ozeti ve adim 10 (bayi taramasi) tablosu da eklenir — tek mesajda tum dongu gorunur.
 9. **Stale ilanlari da yenile (refresh, 2 gun esigi).** Tarama + import bittikten sonra bu adim ATLANMAZ — `refresh` skill'inin (`.claude/skills/refresh/SKILL.md`) TAM akisini, gun esigini **2** yaparak calistir:
    1. `npm run refresh -- 2` (Bash). Ciktida `403` / "Detected a session error" / "veri bulunamadi" / "Batch N hata verdi" basarisizlik sinyalidir.
    2. `node scripts/refresh-stale.js --list 2` ile hala stale kalan (= 403 yiyip cekilemeyen) `mobileDeId`'leri bul. Bos ise bu adim biter, dogrudan rapora gec.
@@ -57,7 +58,11 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
    4. Kayip tespit edilen ID'ler icin `npm run move:sell -- <mobileDeId>` calistir.
    - **Onay istisnasi:** `refresh` skill'inin manuel calistirilmasinda birden fazla kayip ilan varsa tasimadan once kullaniciya onay sorulur; **bu otomatik loop icinde onay beklenemez** (kimse izlemiyor olabilir) — bu yuzden burada kayip ilanlar dogrudan `move:sell` ile tasinir, onay istenmez. Tasinan her ilan raporda acikca listelenir ki kullanici sonradan gozden gecirebilsin.
    - Rapora ekle: kac ilan stale bulundu, kac tanesi basariyla yenilendi, kac tanesi 403 yedi, 403 yiyenlerden kaci gecerli/kayip, `move:sell` ile SOLD'a tasinanlarin `listingId (mobileDeId)` listesi.
-10. **Session-bound 3h re-scan loop'u ara.** Rapor sunulduktan sonra bu adim ATLANMAZ: `ScheduleWakeup` ile bu taramayi (adim 1-9, refresh dahil) 3 saat sonra tekrar tetikleyecek bir uyanma kur (dynamic `/loop` modu, ayni skill prompt'unu geri gonder).
+10. **Bayi sitelerini tara.** Bu adim ATLANMAZ — refresh'ten SONRA calisir (mobile.de kayitlari taze olsun ki bayi dedup'u/ikiz tespiti dogru calissin). `.claude/skills/bayi-tara/SKILL.md` icindeki **"Toplu Mod"** akisini uygula: 7 site sirayla (WELLER → TIMMERMANNS → EULER → AHG → BMW_DE → BMW_NL → UNTERBERGER), her site kendi `bayi-tara-<site>` skill'indeki site notlariyla.
+    - **Ucuz-gecis kurali:** her sitede once yalniz ARAMA LISTESI taranir ve `filter-listings.js`'e verilir; `new` YOKSA o site icin detay sayfasi/subagent HIC acilmaz (dealerKey listede cozulur). Yeni ilan yoksa bayi fazi dakikalar degil saniyeler surer — 3h loop'ta her turda kosulabilir.
+    - **Hata izolasyonu:** bir site bot duvari/timeout ile takilirsa o site raporlanip ATLANIR, kalan siteler devam eder. Ayni siteye 2-3 denemeden fazla ugrasma.
+    - **Onay istisnasi (loop icinde):** `possibleTwins` ciktisi icin onay BEKLENMEZ — import yapilir, ikiz suphesi rapora ve karta (`possibleTwinOf`) islenir; kullanici sonradan gozden gecirir.
+11. **Session-bound 3h re-scan loop'u ara.** Rapor sunulduktan sonra bu adim ATLANMAZ: `ScheduleWakeup` ile bu taramayi (adim 1-10, refresh + bayi taramasi dahil) 3 saat sonra tekrar tetikleyecek bir uyanma kur (dynamic `/loop` modu, ayni skill prompt'unu geri gonder).
     - **Sadece 09:00–20:00 (yerel saat) araliginda calistir.** Pencere disindaysa bir sonraki gunun 09:00'ina ertele.
     - `ScheduleWakeup` en fazla 3600s (1s) kabul eder; 3h'lik araligi tutturmak icin saatte bir yeniden kur (check → due degilse kalan sureyle tekrar ScheduleWakeup, due ise taramayi calistir).
     - Bu loop **session'a bagli** — session kapaninca biter, `/schedule` ile cloud cron KURMA (Chrome extension'i sadece kullanicinin acik oturumunda calisir).

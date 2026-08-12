@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { matchEquipmentFeatures, normalizeText, optionCodeOf } from './equipment-match.js';
+import { matchEquipmentFeatures, explainEquipmentFeatures, normalizeText, optionCodeOf } from './equipment-match.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const EQUIPMENT_RULES = JSON.parse(
@@ -296,4 +296,24 @@ test('matchEquipmentFeatures — duz "Geschwindigkeitsregelanlage" DAP tetikleme
   );
   assert.equal(r.S5AUA, 'no');
   assert.equal(r.S5AZA, 'yes'); // ayni aciklamada lazer VAR
+});
+
+// --- explainEquipmentFeatures: karar gerekceleri (sunroofReason kaynagi) ---
+test('explainEquipmentFeatures — her karar yolu gerekce uretir', () => {
+  // checkbox otoritesi (C596 vakasi): 39 kalemlik listede Sunroof isaretsiz -> no + gerekce
+  const rich = Array.from({ length: 39 }, (_, i) => `Feature ${i}`);
+  const r1 = explainEquipmentFeatures({ features: rich }, EQUIPMENT_RULES);
+  assert.equal(r1.S403A.status, 'no');
+  assert.match(r1.S403A.reason, /checkbox otoritesi: 39/);
+  // checkbox isaretli -> yes + gerekce
+  const r2 = explainEquipmentFeatures({ features: [...rich, 'Sunroof'] }, EQUIPMENT_RULES);
+  assert.equal(r2.S403A.status, 'yes');
+  assert.match(r2.S403A.reason, /checkbox/);
+  // sinyalsiz -> unknown guvenlik freni
+  const r3 = explainEquipmentFeatures({ description: 'kisa pazarlama metni' }, EQUIPMENT_RULES);
+  assert.equal(r3.S403A.status, 'unknown');
+  assert.match(r3.S403A.reason, /güvenlik freni/);
+  // matchEquipmentFeatures ayni statuleri dondurmeli (geri uyum)
+  const flat = matchEquipmentFeatures({ features: rich }, EQUIPMENT_RULES);
+  assert.equal(flat.S403A, 'no');
 });

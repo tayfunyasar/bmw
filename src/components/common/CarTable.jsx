@@ -4,6 +4,8 @@ import { ClockCircleOutlined } from '@ant-design/icons';
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
 import { FeatureIcon, StarRating, ColorDisplay, InteriorDisplay } from './Icons';
 import { MobileCarCards } from './MobileCarCards';
+import { diffListings, findTwin } from '../../utils/listingDiff';
+import { TwinDiffTable } from './TwinDiffTable';
 import { FreezeButton } from './FreezeButton';
 import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
 import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
@@ -95,7 +97,7 @@ const CarTableComponent = ({
           );
         }
         if (record.isFeatureIcon) {
-          return <FeatureIcon type={car.equipmentFeatures?.[record.propName]} />;
+          return <FeatureIcon car={car} code={record.propName} />;
         }
         if (record.isTotal) {
           return <Text strong type="warning">€{val?.toLocaleString()}</Text>;
@@ -174,7 +176,23 @@ const CarTableComponent = ({
     Object.assign({ key: 'aiCommentary', prop: '🤖 AI Yorumu' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.aiCommentary)]))),
   ];
 
+  // Ikiz satiri yalnizca en az bir aracin twin baglantisi varsa eklenir.
+  const hasAnyTwin = cars.some(car => findTwin(car));
   const listingInfoSource = [
+    // Ikiz suphesi: bayi kaydi ile mobile.de kaydinin celisen alanlari (tek kaynak: listingDiff).
+    ...(!hasAnyTwin ? [] : [Object.assign({ key: 'twin_row', prop: '⚠️ İkiz Şüphesi' }, Object.fromEntries(cars.map(car => {
+      const twin = findTwin(car);
+      if (!twin) return [car.listingId, '—'];
+      const diffs = diffListings(car, twin);
+      if (diffs.length === 0) return [car.listingId, `${twin.listingId} — fark yok`];
+      return [car.listingId, (
+        <Tooltip key="twin" styles={{ body: { maxWidth: 380 } }} title={<TwinDiffTable car={car} twin={twin} />}>
+          <span style={{ cursor: 'help', color: '#d48806', fontWeight: 600 }}>
+            {twin.listingId} · {diffs.length} çelişki ⓘ
+          </span>
+        </Tooltip>
+      )];
+    })))]),
     Object.assign({ key: 'loc', prop: 'Konum' }, Object.fromEntries(cars.map(car => [car.listingId, car.listingLocation]))),
     Object.assign({ key: 'seller', prop: 'Satıcı' }, Object.fromEntries(cars.map(car => [car.listingId, car.sellerTypeOrName]))),
     Object.assign({ key: 'dealerNotes', prop: '🏢 Bayi Notları' }, Object.fromEntries(cars.map(car => {

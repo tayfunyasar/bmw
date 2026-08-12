@@ -69,11 +69,11 @@ export function normalizeText(text = '') {
   return String(text).toLowerCase().replace(DASH_RE, ' ');
 }
 
-// Tek bir aracin donanim durumlarini hesaplar.
-//   car: { description?: string, features?: string[], props?: object }
-//   equipmentRules: EQUIPMENT_RULES.json dizisi
-//   donus: { [rule.code]: "yes" | "no" | "unknown" }
-export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
+// Tek bir aracin donanim durumlarini KARAR GEREKCELERIYLE hesaplar.
+//   donus: { [rule.code]: { status: "yes"|"no"|"unknown", reason: string } }
+// Gerekce, drivetrainReason ile ayni amaca hizmet eder: karar final kayittan
+// okunabilir olmali, ham dump'a donmek gerekmemeli.
+export function explainEquipmentFeatures(car = {}, equipmentRules = []) {
   const description = car.description || '';
   const features = car.features || [];
   const props = car.props || {};
@@ -91,7 +91,7 @@ export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
     //    pozitif hem negatif description eslesmelerini ezer.
     const optionCode = optionCodeOf(rule.code);
     if (optionCode && containsToken(descNormalized, optionCode)) {
-      equipmentFeatures[rule.code] = 'yes';
+      equipmentFeatures[rule.code] = { status: 'yes', reason: `fabrika opsiyon kodu "(${optionCode})" ilan açıklamasında geçiyor` };
       descInfoHits++;
       continue;
     }
@@ -104,14 +104,14 @@ export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
       matchDescription = rule.description.some(descMatches);
     }
     if (matchDescription) {
-      equipmentFeatures[rule.code] = 'yes';
+      equipmentFeatures[rule.code] = { status: 'yes', reason: 'ilan açıklamasında donanım kalıbı geçiyor' };
       descInfoHits++;
       continue;
     }
 
     // 2. Negatif description (yalnizca pozitif eslesme yokken anlamli).
     if (rule.negativeDescription?.length > 0 && rule.negativeDescription.some(descMatches)) {
-      equipmentFeatures[rule.code] = 'no';
+      equipmentFeatures[rule.code] = { status: 'no', reason: 'ilan açıklamasında dışlayıcı (negatif) kalıp geçiyor' };
       descInfoHits++;
       continue;
     }
@@ -123,7 +123,7 @@ export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
           propValues.some(val => (props[propKey] || '').includes(val)))
       : false;
     if (matchFeatures || matchProps) {
-      equipmentFeatures[rule.code] = 'yes';
+      equipmentFeatures[rule.code] = { status: 'yes', reason: matchFeatures ? 'mobile.de checkbox\'ı işaretli' : 'mobile.de yapısal alanında (props) geçiyor' };
       continue;
     }
 
@@ -132,7 +132,7 @@ export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
     //     checkbox'i kapsamli bir listedir; icinde yoksa buyuk ihtimalle yoktur.
     const checkboxMappable = (rule.features?.length > 0) || (rule.props && Object.keys(rule.props).length > 0);
     if (checkboxMappable && features.length >= RICH_CHECKBOX_MIN) {
-      equipmentFeatures[rule.code] = 'no';
+      equipmentFeatures[rule.code] = { status: 'no', reason: `checkbox otoritesi: ${features.length} kalemlik kapsamlı listede işaretli değil` };
       continue;
     }
 
@@ -145,18 +145,24 @@ export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
   const descriptionInformative = descInfoHits >= MIN_INFORMATIVE_DESC_MATCHES;
   for (const rule of pendingFallback) {
     equipmentFeatures[rule.code] = descriptionInformative
-      ? (rule.defaultStatus ?? 'no')
-      : 'unknown';
+      ? { status: rule.defaultStatus ?? 'no', reason: `açıklama bilgilendirici (${descInfoHits} donanım eşleşti) ama bu donanım geçmiyor → varsayılan '${rule.defaultStatus ?? 'no'}'` }
+      : { status: 'unknown', reason: 'açıklama bilgilendirici değil, checkbox sinyali de yok — güvenlik freni' };
   }
 
   // impliedBy: ust ozellik description'da geciyorsa alt ozellik "yes" olur.
   for (const rule of equipmentRules) {
-    if (rule.impliedBy && equipmentFeatures[rule.code] !== 'yes') {
+    if (rule.impliedBy && equipmentFeatures[rule.code]?.status !== 'yes') {
       if (rule.impliedBy.some(p => descNormalized.includes(normalizeText(p)))) {
-        equipmentFeatures[rule.code] = 'yes';
+        equipmentFeatures[rule.code] = { status: 'yes', reason: 'üst özellik/paket açıklamada geçiyor (impliedBy)' };
       }
     }
   }
 
   return equipmentFeatures;
+}
+
+// Geriye-uyumlu kisa form: yalnizca statuleri dondurur (tum mevcut cagriler bunu kullanir).
+export function matchEquipmentFeatures(car = {}, equipmentRules = []) {
+  const explained = explainEquipmentFeatures(car, equipmentRules);
+  return Object.fromEntries(Object.entries(explained).map(([code, v]) => [code, v.status]));
 }

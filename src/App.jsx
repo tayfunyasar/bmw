@@ -20,6 +20,7 @@ const SORT_OPTS = [
   { value: 'price', label: '⇅ Toplam maliyet (ucuz→pahalı)' },
   { value: 'deal', label: '💎 Fırsat fiyatı (iyi→kötü)' },
   { value: 'km', label: '🛣️ Kilometre (az→çok)' },
+  { value: 'date', label: '📅 İlan tarihi (yeni→eski)' },
   { value: 'score', label: '🏆 Genel skor (yüksek→düşük)' },
 ];
 const BUDGET_OPTS = [

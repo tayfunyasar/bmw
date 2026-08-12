@@ -4,12 +4,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449435649",
     "mobileDeId": "449435649",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara Siyah (Blau stitch)",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 49800,
     "mileageKm": 0,
     "firstRegistrationYearAndMonth": [
@@ -106,12 +108,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=441652266",
     "mobileDeId": "441652266",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 49890,
     "mileageKm": 49577,
     "firstRegistrationYearAndMonth": [
@@ -208,12 +212,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443501166",
     "mobileDeId": "443501166",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black Sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Deri Siyah",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 50879,
     "mileageKm": 31094,
     "firstRegistrationYearAndMonth": [
@@ -312,12 +318,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445684913",
     "mobileDeId": "445684913",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Arctic Race Blue",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara Siyah",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 52785,
     "mileageKm": 36387,
     "firstRegistrationYearAndMonth": [
@@ -417,12 +425,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=447353551",
     "mobileDeId": "447353551",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Tansanitblau II",
     "exteriorPaintLabel": null,
     "interiorColorName": "Deri",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 52990,
     "mileageKm": 24757,
     "firstRegistrationYearAndMonth": [
@@ -522,12 +532,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=447587213",
     "mobileDeId": "447587213",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black Sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Vernasca Siyah",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 49900,
     "mileageKm": 29179,
     "firstRegistrationYearAndMonth": [
@@ -629,12 +641,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-acc-sth-mfl-3d-view-hifi-led-qi-2zk-buchschwabach-bei-n%C3%BCrnberg/442478207.html",
     "mobileDeId": "442478207",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 54490,
     "mileageKm": 25900,
     "firstRegistrationYearAndMonth": [
@@ -845,12 +859,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-visselh%C3%B6vede/451019125.html",
     "mobileDeId": "451019125",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Leder Vernasca Schwarz/Blau",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 49990,
     "mileageKm": 47,
     "firstRegistrationYearAndMonth": [
@@ -935,12 +951,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laserlicht-hud-ahk-acc-kamera-leipzig/443996454.html",
     "mobileDeId": "443996454",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Tansanitblau II metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 68 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52980,
     "mileageKm": 25490,
     "firstRegistrationYearAndMonth": [
@@ -1138,12 +1156,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-garantie-bis-06-2030-werne/449491149.html",
     "mobileDeId": "449491149",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Mineralweiss Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 56090,
     "mileageKm": 26005,
     "firstRegistrationYearAndMonth": [
@@ -1227,12 +1247,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-19-hifi-lc-prof-merino-shz-husum/451444750.html",
     "mobileDeId": "451444750",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "DRAVITGRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 47930,
     "mileageKm": 38370,
     "firstRegistrationYearAndMonth": [
@@ -1312,12 +1334,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-visselh%C3%B6vede/451171930.html",
     "mobileDeId": "451171930",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": null,
     "drivetrainReason": null,
+    "sunroofReason": null,
     "basePriceEuro": 49990,
     "mileageKm": 47400,
     "firstRegistrationYearAndMonth": [
@@ -1400,12 +1424,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-acc-h-k-hud-carbon-standheizung-arnsberg/449536420.html",
     "mobileDeId": "449536420",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "DRAVITGRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56950,
     "mileageKm": 28834,
     "firstRegistrationYearAndMonth": [
@@ -1567,12 +1593,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-head-up-hk-hifi-dab-wlan-shz-wunsiedel/451925138.html",
     "mobileDeId": "451925138",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 50 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47850,
     "mileageKm": 54735,
     "firstRegistrationYearAndMonth": [
@@ -1711,12 +1739,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-headup-laser-hifi-stutensee-blankenloch/448926020.html",
     "mobileDeId": "448926020",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Arctic race blue metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 57 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 45330,
     "mileageKm": 47390,
     "firstRegistrationYearAndMonth": [
@@ -1828,12 +1858,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-coupe-palling/452162043.html",
     "mobileDeId": "452162043",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "GREY",
     "exteriorPaintLabel": null,
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=unknown — açıklama bilgilendirici değil, checkbox sinyali de yok — güvenlik freni",
     "basePriceEuro": 43000,
     "mileageKm": 58500,
     "firstRegistrationYearAndMonth": [
@@ -1941,12 +1973,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-hud-parkass-komfortzg-kaarst/451960776.html",
     "mobileDeId": "451960776",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": null,
     "basePriceEuro": 54430,
     "mileageKm": 28901,
     "firstRegistrationYearAndMonth": [
@@ -2112,12 +2146,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-facelift-acc-hud-sthzg-h-k-oberhausen/430006029.html",
     "mobileDeId": "430006029",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": null,
     "basePriceEuro": 55980,
     "mileageKm": 24850,
     "firstRegistrationYearAndMonth": [
@@ -2436,12 +2472,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440icoupe-xdrive-laser-navi-h-k-kamera-hud-lede-erding/433039355.html",
     "mobileDeId": "433039355",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "SAPHIRSCHWARZ",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": null,
     "basePriceEuro": 50990,
     "mileageKm": 16500,
     "firstRegistrationYearAndMonth": [
@@ -2744,12 +2782,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-hud-parkass-komfortzg-kaarst/452594610.html",
     "mobileDeId": "452594610",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 65 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 54430,
     "mileageKm": 28901,
     "firstRegistrationYearAndMonth": [
@@ -2890,12 +2930,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdr-coupe-m-sport-hud-laser-h-k-led-da-pa-bad-oeynhausen/452672253.html",
     "mobileDeId": "452672253",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 63 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47999,
     "mileageKm": 50000,
     "firstRegistrationYearAndMonth": [
@@ -2992,12 +3034,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-laser-360-headup-gestik-acc-19zoll-r%C3%BCckholz/453028288.html",
     "mobileDeId": "453028288",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "TANSANITBLAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 45800,
     "mileageKm": 54551,
     "firstRegistrationYearAndMonth": [
@@ -3094,12 +3138,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-m-sport-pro-xdrive-coupe-carbon-dach-h-k-m%C3%BClheim-an-der-ruhr/453087036.html",
     "mobileDeId": "453087036",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 63 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 48850,
     "mileageKm": 26462,
     "firstRegistrationYearAndMonth": [
@@ -3196,12 +3242,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-laserlicht-elektr-sitzver-mit-m-dillingen/453097117.html",
     "mobileDeId": "453097117",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Cloth, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 55 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 48900,
     "mileageKm": 56500,
     "firstRegistrationYearAndMonth": [
@@ -3298,12 +3346,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-acc-m-technik-360-19zoll-r%C3%BCckholz/453744667.html",
     "mobileDeId": "453744667",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 45400,
     "mileageKm": 59600,
     "firstRegistrationYearAndMonth": [
@@ -3400,12 +3450,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-mild-hybrid-aut-navi-led-tempo-korntal-m%C3%BCnchingen/453920655.html",
     "mobileDeId": "453920655",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Gray",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 49 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52410,
     "mileageKm": 12589,
     "firstRegistrationYearAndMonth": [
@@ -3502,12 +3554,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-mild-hybrid-xdrive-bielefeld/453381963.html",
     "mobileDeId": "453381963",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "ALPINWEISS III",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 50 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 53980,
     "mileageKm": 26501,
     "firstRegistrationYearAndMonth": [
@@ -3604,12 +3658,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-275kw-perfect-condition-kounice-okres-nymburk/453924092.html",
     "mobileDeId": "453924092",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 49 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 22999,
     "mileageKm": 65000,
     "firstRegistrationYearAndMonth": [
@@ -3706,12 +3762,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-a-sulzbach-rosenberg/454196049.html",
     "mobileDeId": "454196049",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black",
     "exteriorPaintLabel": null,
     "interiorColorName": "Imitation leather, Red",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 51 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 49400,
     "mileageKm": 29987,
     "firstRegistrationYearAndMonth": [
@@ -3808,12 +3866,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-headup-laser-hifi-stutensee-blankenloch/454388094.html",
     "mobileDeId": "454388094",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Arctic race blue metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 57 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 43930,
     "mileageKm": 47390,
     "firstRegistrationYearAndMonth": [
@@ -3910,12 +3970,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coup-michelfeld/454624738.html",
     "mobileDeId": "454624738",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": false,
     "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 41 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 45900,
     "mileageKm": 52547,
     "firstRegistrationYearAndMonth": [
@@ -4014,12 +4076,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sportpaket-pro-standhzg-ahk-dinslaken/452594314.html",
     "mobileDeId": "452594314",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 72 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56890,
     "mileageKm": 27899,
     "firstRegistrationYearAndMonth": [
@@ -4116,12 +4180,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-ac-schnitzer-top-ausstattung-unterm%C3%BCnkheim/454810942.html",
     "mobileDeId": "454810942",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Grey",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 64 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 49900,
     "mileageKm": 66000,
     "firstRegistrationYearAndMonth": [
@@ -4218,12 +4284,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-x-drive-coupe-shadow-line-g22-maasmechelen/451795237.html",
     "mobileDeId": "451795237",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Red",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"X-DRIVE\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 36 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 24500,
     "mileageKm": 52647,
     "firstRegistrationYearAndMonth": [
@@ -4334,12 +4402,14 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=441933571",
     "mobileDeId": "441933571",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "tansanitblau ii",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 53700,
     "mileageKm": 21073,
     "firstRegistrationYearAndMonth": [
@@ -4597,12 +4667,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-carbonpaket-laser-hud-360-hifi-h-k-bietigheim-bissingen/455115089.html",
     "mobileDeId": "455115089",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "M Brooklyn Grau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": false,
     "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 64 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 49875,
     "mileageKm": 43337,
     "firstRegistrationYearAndMonth": [
@@ -4701,12 +4773,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-coupe-m%C3%BCnchen/455472032.html",
     "mobileDeId": "455472032",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Silver Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": false,
     "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 69 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56500,
     "mileageKm": 54161,
     "firstRegistrationYearAndMonth": [
@@ -4805,12 +4879,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-m-sport-pro-laserlicht-3d-view-saarbr%C3%BCcken/455541689.html",
     "mobileDeId": "455541689",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "tansanitblau ii",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52500,
     "mileageKm": 21073,
     "firstRegistrationYearAndMonth": [
@@ -4907,12 +4983,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-ac-schnitzer-coupe-head-up-hk-wlan-komfort-coburg/455575798.html",
     "mobileDeId": "455575798",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "M Portimao Blau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": false,
     "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 68 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 53980,
     "mileageKm": 20450,
     "firstRegistrationYearAndMonth": [
@@ -5011,12 +5089,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sport-facelift-acc-h-k-st-hzg-m%C3%BClheim-an-der-ruhr/456068836.html",
     "mobileDeId": "456068836",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56480,
     "mileageKm": 25347,
     "firstRegistrationYearAndMonth": [
@@ -5113,12 +5193,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdr-coupe-livepro-laser-dapro-memory-360-hildesheim/456198748.html",
     "mobileDeId": "456198748",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Brooklyn Grau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 51950,
     "mileageKm": 31937,
     "firstRegistrationYearAndMonth": [
@@ -5215,12 +5297,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-sportpro-harman-kardon-widscreen-m%C3%BCnchen/456235368.html",
     "mobileDeId": "456235368",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 56 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 48990,
     "mileageKm": 38072,
     "firstRegistrationYearAndMonth": [
@@ -5317,12 +5401,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-modelljahr-2026-wielenbach/450847444.html",
     "mobileDeId": "450847444",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "wählbar",
     "exteriorPaintLabel": null,
     "interiorColorName": null,
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 53 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 55590.01,
     "mileageKm": 0,
     "firstRegistrationYearAndMonth": [
@@ -5419,12 +5505,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-alt%C3%B6tting/456875347.html",
     "mobileDeId": "456875347",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Blue",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 64 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 51900,
     "mileageKm": 40674,
     "firstRegistrationYearAndMonth": [
@@ -5521,12 +5609,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-asperg/456875494.html",
     "mobileDeId": "456875494",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Sanremo Green",
     "exteriorPaintLabel": null,
     "interiorColorName": "Cloth, Other",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 45 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 55289.99,
     "mileageKm": 47100,
     "firstRegistrationYearAndMonth": [
@@ -5623,12 +5713,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-top-privat-chrudim/457035856.html",
     "mobileDeId": "457035856",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "White Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Beige",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 58 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47500,
     "mileageKm": 50994,
     "firstRegistrationYearAndMonth": [
@@ -5725,12 +5817,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-acc-m-technik-360-19zoll-r%C3%BCckholz/457155203.html",
     "mobileDeId": "457155203",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 45200,
     "mileageKm": 59601,
     "firstRegistrationYearAndMonth": [
@@ -5827,12 +5921,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-m-pack-laser-hud-harman-kardon-wielsbeke/457722541.html",
     "mobileDeId": "457722541",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Arctic race blue metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 45900,
     "mileageKm": 64813,
     "firstRegistrationYearAndMonth": [
@@ -5929,12 +6025,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-19-zoll-individual-m-sportpaket-pro-bamberg/458013450.html",
     "mobileDeId": "458013450",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 73 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56840,
     "mileageKm": 24613,
     "firstRegistrationYearAndMonth": [
@@ -6031,12 +6129,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sportpaket-pro-19-zoll-360-kamera-bamberg/458013554.html",
     "mobileDeId": "458013554",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 73 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56700,
     "mileageKm": 27389,
     "firstRegistrationYearAndMonth": [
@@ -6131,14 +6231,17 @@
   {
     "listingId": "C477",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-komfortzg-shz-erlangen/458631555.html",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e95a7-b06d-7b01-8383-ab7171eb67fa",
     "mobileDeId": "458631555",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "M Brooklyn Grau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Cloth, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 48 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52680,
     "mileageKm": 57631,
     "firstRegistrationYearAndMonth": [
@@ -6202,6 +6305,16 @@
       "S302A": "no",
       "S4NHA": "no"
     },
+    "equipmentConflicts": {
+      "S775A": {
+        "mobile.de": "no",
+        "BMW_DE": "yes"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      }
+    },
     "listingDates": {
       "createdTime": "2026-06-19T04:13:56.000Z",
       "modifiedTime": "2026-06-19T14:20:23.000Z",
@@ -6225,6 +6338,37 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-06-19T21:37:29.576Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e95a7-b06d-7b01-8383-ab7171eb67fa"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.818Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S775A": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.716Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -6235,12 +6379,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-hud-parkass-komfortzg-d%C3%BCsseldorf/458642180.html",
     "mobileDeId": "458642180",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 65 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52930,
     "mileageKm": 28901,
     "firstRegistrationYearAndMonth": [
@@ -6337,12 +6483,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-xdrive-aut-navi-head-up-led-acc-cam-korntal-m%C3%BCnchingen/458722587.html",
     "mobileDeId": "458722587",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BROOKLYN GRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 59 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 46640,
     "mileageKm": 49732,
     "firstRegistrationYearAndMonth": [
@@ -6439,12 +6587,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440i-coupe-xdrive-hud-laser-20zoll-msport-garant-blankenfelde-mahlow/458790544.html",
     "mobileDeId": "458790544",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "White Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"Xdrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 55900,
     "mileageKm": 33600,
     "firstRegistrationYearAndMonth": [
@@ -6541,12 +6691,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-shz-klimaaut-el-sitze-ahk-standhz-schrobenhausen/459015411.html",
     "mobileDeId": "459015411",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Tansanitblau c",
     "exteriorPaintLabel": null,
     "interiorColorName": "Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 39 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 49940,
     "mileageKm": 45400,
     "firstRegistrationYearAndMonth": [
@@ -6643,12 +6795,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-weingarten/459258072.html",
     "mobileDeId": "459258072",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Grey Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 72 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 50999,
     "mileageKm": 50000,
     "firstRegistrationYearAndMonth": [
@@ -6745,12 +6899,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-acc-h-k-360-sthz-hud-led-dab-witten/449836929.html",
     "mobileDeId": "449836929",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 58 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 56900,
     "mileageKm": 24670,
     "firstRegistrationYearAndMonth": [
@@ -6847,12 +7003,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-mild-hybrid-xdrive-bielefeld/459774261.html",
     "mobileDeId": "459774261",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "ALPINWEISS III",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 50 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52660,
     "mileageKm": 26501,
     "firstRegistrationYearAndMonth": [
@@ -6949,12 +7107,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-headup-drivingassistprof-parkassist-m%C3%BCnchen/459962533.html",
     "mobileDeId": "459962533",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Other",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 44990,
     "mileageKm": 53068,
     "firstRegistrationYearAndMonth": [
@@ -7051,12 +7211,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-wide-sport-aga-acc-blis-lane-starnberg/460072029.html",
     "mobileDeId": "460072029",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "DRAVITGRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 53 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 51990,
     "mileageKm": 41000,
     "firstRegistrationYearAndMonth": [
@@ -7153,12 +7315,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-1-hand-laser-hifi-19-m-griesheim-darmstadt/460197979.html",
     "mobileDeId": "460197979",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "ARCTIC RACE BLUE",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"XDRIVE\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 65 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 41900,
     "mileageKm": 39000,
     "firstRegistrationYearAndMonth": [
@@ -7255,12 +7419,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-xdrive-aut-navi-head-up-led-acc-cam-n%C3%BCrnberg/460537917.html",
     "mobileDeId": "460537917",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BROOKLYN GRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 44890,
     "mileageKm": 49732,
     "firstRegistrationYearAndMonth": [
@@ -7357,12 +7523,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-ahk-head-up-harman-kardon-moers/460727679.html",
     "mobileDeId": "460727679",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 68 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47850,
     "mileageKm": 57400,
     "firstRegistrationYearAndMonth": [
@@ -7459,12 +7627,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-acc-hud-h-k-360-m-sitze-hagen/460735548.html",
     "mobileDeId": "460735548",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "MINERALWEISS METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDRIVE\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 70 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 52950,
     "mileageKm": 55967,
     "firstRegistrationYearAndMonth": [
@@ -7561,12 +7731,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-a-ozimek/460754997.html",
     "mobileDeId": "460754997",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Blue Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 40 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 41999,
     "mileageKm": 51000,
     "firstRegistrationYearAndMonth": [
@@ -7661,14 +7833,17 @@
   {
     "listingId": "C663",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-shadow-laser-navi-kam-hifi-freiburg/460830216.html",
+    "dealerListingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-shadow-laser-navi-kam-hifi-168772",
     "mobileDeId": "460830216",
-    "vin": null,
+    "vin": "WBA11AR0X0CL01283",
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 36 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47930,
     "mileageKm": 51970,
     "firstRegistrationYearAndMonth": [
@@ -7732,6 +7907,24 @@
       "S302A": "yes",
       "S4NHA": "no"
     },
+    "equipmentConflicts": {
+      "S2VLA": {
+        "mobile.de": "no",
+        "AHG": "yes"
+      },
+      "S459A": {
+        "mobile.de": "yes",
+        "AHG": "no"
+      },
+      "S5DNA": {
+        "mobile.de": "yes",
+        "AHG": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "AHG": "no"
+      }
+    },
     "listingDates": {
       "createdTime": "2026-07-16T17:23:48.000Z",
       "modifiedTime": "2026-07-17T03:23:25.000Z",
@@ -7755,6 +7948,49 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-17T07:02:50.763Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "AHG ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-shadow-laser-navi-kam-hifi-168772"
+          },
+          "vin": {
+            "old": null,
+            "new": "WBA11AR0X0CL01283"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.815Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "AHG ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S2VLA": {
+                "mobile.de": "no",
+                "AHG": "yes"
+              },
+              "S459A": {
+                "mobile.de": "yes",
+                "AHG": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "AHG": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "AHG": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.489Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -7763,14 +7999,17 @@
   {
     "listingId": "C665",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hud-komfortzg-sportbremse-las-erfurt/460857003.html",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92d0-58ea-7b79-92f7-899cef92a02c",
     "mobileDeId": "460857003",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Alpinweiß uni",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Beige",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 62 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47929,
     "mileageKm": 41994,
     "firstRegistrationYearAndMonth": [
@@ -7834,6 +8073,24 @@
       "S302A": "yes",
       "S4NHA": "no"
     },
+    "equipmentConflicts": {
+      "S610A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S5DNA": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S521A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      }
+    },
     "listingDates": {
       "createdTime": "2026-07-17T06:43:21.000Z",
       "modifiedTime": "2026-07-17T06:43:38.000Z",
@@ -7857,6 +8114,45 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-17T07:02:50.764Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92d0-58ea-7b79-92f7-899cef92a02c"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.818Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S610A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.690Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
@@ -7865,14 +8161,17 @@
   {
     "listingId": "C668",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-hud-memory-sitz-h-magdeburg/460870056.html",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9347-3480-7714-8d6e-d7dd95dea6c8",
     "mobileDeId": "460870056",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Brooklyn Grau metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 66 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 50900,
     "mileageKm": 65465,
     "firstRegistrationYearAndMonth": [
@@ -7936,6 +8235,40 @@
       "S302A": "yes",
       "S4NHA": "no"
     },
+    "equipmentConflicts": {
+      "S775A": {
+        "mobile.de": "no",
+        "BMW_DE": "yes"
+      },
+      "S5AUA": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S459A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S5DNA": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S521A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S216A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S302A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      }
+    },
     "listingDates": {
       "createdTime": "2026-07-17T09:34:04.000Z",
       "modifiedTime": "2026-07-17T09:38:33.000Z",
@@ -7959,6 +8292,61 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-17T10:05:57.916Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9347-3480-7714-8d6e-d7dd95dea6c8"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.818Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S775A": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              },
+              "S5AUA": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S459A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S216A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.710Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -7969,12 +8357,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-garantie-bis-2029-hamburg/461036904.html",
     "mobileDeId": "461036904",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Black Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 62 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 54450,
     "mileageKm": 33000,
     "firstRegistrationYearAndMonth": [
@@ -8071,12 +8461,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-acc-m-technik-360-19zoll-r%C3%BCckholz/461121575.html",
     "mobileDeId": "461121575",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 44900,
     "mileageKm": 59600,
     "firstRegistrationYearAndMonth": [
@@ -8173,12 +8565,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-xdrive-aut-navi-head-up-led-acc-cam-neufahrn-b-freising/461431866.html",
     "mobileDeId": "461431866",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BROOKLYN GRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 43990,
     "mileageKm": 49732,
     "firstRegistrationYearAndMonth": [
@@ -8273,14 +8667,17 @@
   {
     "listingId": "C727",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-driv-assist-prof-hannover/461776574.html",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9346-f011-766f-a86e-4fe50b8b900e",
     "mobileDeId": "461776574",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 46 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 51908,
     "mileageKm": 67500,
     "firstRegistrationYearAndMonth": [
@@ -8344,6 +8741,20 @@
       "S302A": "yes",
       "S4NHA": "no"
     },
+    "equipmentConflicts": {
+      "S775A": {
+        "mobile.de": "no",
+        "BMW_DE": "yes"
+      },
+      "S521A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      }
+    },
     "listingDates": {
       "createdTime": "2026-07-29T03:26:56.000Z",
       "modifiedTime": "2026-07-29T06:10:43.000Z",
@@ -8367,6 +8778,41 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-29T07:02:23.510Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9346-f011-766f-a86e-4fe50b8b900e"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.818Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S775A": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.707Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -8377,12 +8823,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xd-coupe-laser-kamera-dab-hifi-komfort-acc-isernhagen/461826193.html",
     "mobileDeId": "461826193",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz metallic-475",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 69 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 48999,
     "mileageKm": 49161,
     "firstRegistrationYearAndMonth": [
@@ -8479,12 +8927,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-xdrive-aut-navi-head-up-led-acc-cam-essen/461882985.html",
     "mobileDeId": "461882985",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BROOKLYN GRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 43990,
     "mileageKm": 49732,
     "firstRegistrationYearAndMonth": [
@@ -8581,12 +9031,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-g22-facelift-coupe-live-cock-h-g%C3%B6ppingen/352093876.html",
     "mobileDeId": "352093876",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Alpinweiß",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 54 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 62999,
     "mileageKm": 0,
     "firstRegistrationYearAndMonth": [
@@ -8683,12 +9135,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrivecoupe-navi-leder-e-sitze-np-88-880-nidda/447048318.html",
     "mobileDeId": "447048318",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Brooklyn Grau metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 57500,
     "mileageKm": 20100,
     "firstRegistrationYearAndMonth": [
@@ -8785,12 +9239,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m4-competition-m-xdrive-coupe-acc-360-hud-hk-bad-wiessee/454565656.html",
     "mobileDeId": "454565656",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 72890,
     "mileageKm": 30500,
     "firstRegistrationYearAndMonth": [
@@ -8887,12 +9343,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-driv-assist-prof-led-n%C3%BCrnberg/461066626.html",
     "mobileDeId": "461066626",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 63 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 69495,
     "mileageKm": 9773,
     "firstRegistrationYearAndMonth": [
@@ -8989,12 +9447,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sportpaket-pro-acc-harman-k-soltau/461423887.html",
     "mobileDeId": "461423887",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 62 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 60990,
     "mileageKm": 12600,
     "firstRegistrationYearAndMonth": [
@@ -9091,12 +9551,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-navi-leder-tempom-aktiv-bluet-kehl/461469644.html",
     "mobileDeId": "461469644",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 34 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 60630,
     "mileageKm": 25294,
     "firstRegistrationYearAndMonth": [
@@ -9193,12 +9655,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-standhzg-walsrode/461487511.html",
     "mobileDeId": "461487511",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 62 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 59930,
     "mileageKm": 24900,
     "firstRegistrationYearAndMonth": [
@@ -9295,12 +9759,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-driv-assist-prof-led-saarbr%C3%BCcken/461628020.html",
     "mobileDeId": "461628020",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "M Brooklyn Grau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 69 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 73970,
     "mileageKm": 16573,
     "firstRegistrationYearAndMonth": [
@@ -9397,12 +9863,14 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m-440-i-xdrive-matrix-hud-neuwagenzustand-1-hand-fulda/462257209.html",
     "mobileDeId": "462257209",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "DRAVITGRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 69 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 59990,
     "mileageKm": 8443,
     "firstRegistrationYearAndMonth": [
@@ -9491,14 +9959,17 @@
   {
     "listingId": "C886",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-sportpaket-bluetooth-navi-pdc-ibbenb%C3%BCren/462290916.html",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9345-ba69-7912-b12d-5fd4c3972922",
     "mobileDeId": "462290916",
     "vin": null,
+    "possibleTwinOf": null,
     "exteriorColorName": "Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Imitation leather, Brown",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 49 kalemlik kapsamlı listede işaretli değil",
     "basePriceEuro": 47890,
     "mileageKm": 56778,
     "firstRegistrationYearAndMonth": [
@@ -9562,6 +10033,28 @@
       "S302A": "yes",
       "S4NHA": "no"
     },
+    "equipmentConflicts": {
+      "S5DNA": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S521A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S216A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      },
+      "S302A": {
+        "mobile.de": "yes",
+        "BMW_DE": "no"
+      }
+    },
     "listingDates": {
       "createdTime": "2026-08-04T18:30:40.000Z",
       "modifiedTime": "2026-08-04T22:15:49.000Z",
@@ -9579,6 +10072,343 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-05T07:02:25.057Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9345-ba69-7912-b12d-5fd4c3972922"
+          }
+        },
+        "auditDate": "2026-08-07T19:40:18.817Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S5DNA": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S216A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.705Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C921",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-daprof-stdhz-laser-hud-rfk-h-k-mem-herford/38523918781504.html",
+    "mobileDeId": "38523918781504",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Brooklyn Grau",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Part leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
+    "basePriceEuro": 47880,
+    "mileageKm": 54500,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      2
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.3",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-32051 Herford",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-06T17:08:27.000Z",
+      "modifiedTime": "2026-08-07T00:27:19.000Z",
+      "renewedTime": "2026-08-06T17:08:27.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-06T17:08:27.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T07:02:30.205Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C959",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrivecoupe-laser-hud-lh-hk-sound-rostock/39349606490464.html",
+    "mobileDeId": "39349606490464",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "saphirschwarz",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 63 kalemlik kapsamlı listede işaretli değil",
+    "basePriceEuro": 48980,
+    "mileageKm": 41181,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      7
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "BMW AH Wigger GmbH ★4.5",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 165,
+    "listingLocation": "🇩🇪 DE-18146 Rostock",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-11T09:07:55.000Z",
+      "modifiedTime": "2026-08-11T09:10:48.000Z",
+      "renewedTime": "2026-08-11T09:07:55.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-11T09:07:55.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-11T10:17:43.373Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C969",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xd-coupe-laser-hud-kamera-dab-hifi-komfort-isernhagen/39403447230272.html",
+    "mobileDeId": "39403447230272",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Saphirschwarz metallic-475",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 69 kalemlik kapsamlı listede işaretli değil",
+    "basePriceEuro": 49999,
+    "mileageKm": 49164,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      8
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Autohaus Isernhagen GmbH & Co. KG ★4.5",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 170,
+    "listingLocation": "🇩🇪 DE-30916 Isernhagen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "no",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-11T16:26:04.000Z",
+      "modifiedTime": "2026-08-11T16:26:22.000Z",
+      "renewedTime": "2026-08-11T16:26:04.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-11T16:26:04.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-11T16:39:44.801Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

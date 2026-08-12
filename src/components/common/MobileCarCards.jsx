@@ -4,6 +4,24 @@ import { equipmentRules, UI_COLORS, getColorHex, getInteriorHex } from '../../da
 import { ColorDisplay, InteriorDisplay, FeatureIcon } from './Icons';
 import { FreezeButton } from './FreezeButton';
 import { formatNotes } from '../../utils/helpers';
+import { diffListings, findTwin } from '../../utils/listingDiff';
+import { TwinDiffTable } from './TwinDiffTable';
+
+// Ikiz celiski tablosu — iki kaydin ORTAK OLMAYAN alanlari yan yana.
+// Hangisi dogru bilinmez; karar kullanicinin (VIN/bayi teyidiyle).
+const TwinConflicts = ({ car }) => {
+  const twin = findTwin(car);
+  if (!twin) return null;
+  const diffs = diffListings(car, twin);
+  return (
+    <div style={{ marginTop: 10, padding: '8px 10px', background: 'rgba(250,173,20,0.08)',
+      border: '1px solid rgba(250,173,20,0.45)', borderRadius: 8, fontSize: 12.5 }}>
+      <Text strong>⚠️ İkiz şüphesi: {twin.listingId}</Text>
+      <Text type="secondary"> — {diffs.length ? `${diffs.length} çelişen alan` : 'tüm karşılaştırılan alanlar aynı'}</Text>
+      {diffs.length > 0 && <div style={{ marginTop: 6 }}><TwinDiffTable car={car} twin={twin} /></div>}
+    </div>
+  );
+};
 
 const { Text, Link } = Typography;
 
@@ -81,10 +99,12 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
             <Flex gap={6} wrap style={{ marginTop: 10 }}>
               {KEY_FEATURES.map(f => (
                 <Space key={f.code} size={3} style={{ fontSize: 12 }}>
-                  <FeatureIcon type={car.equipmentFeatures?.[f.code]} name={f.name} />
+                  <FeatureIcon car={car} code={f.code} />
                 </Space>
               ))}
             </Flex>
+
+            <TwinConflicts car={car} />
 
             {/* Notlar (uzun olanlar hover/dokunuşla açılır) */}
             {[['📝', car.listingDescriptionNotes], ['💭', car.curatorPersonalNotes], ['🤖', car.aiCommentary]]

@@ -26,6 +26,19 @@ import bpmData from './metadata/BPM_DATA.json';
 import dealersData from './metadata/DEALERS.json';
 import bookmarks from './user_data/BOOKMARKS.json';
 
+// Bayi sitesi klasorleri (WELLER/, AHG/, ...) — import.meta.glob ile OTOMATIK toplanir.
+// Yeni site klasoru acildiginda buraya satir eklemek GEREKMEZ (Vite ozelligi; Node
+// script'leri bu dosyayi kullanmaz, onlar fs ile tarar). Kategori adina gore gruplanir.
+const dealerModules = import.meta.glob('./listings/*/*.json', { eager: true });
+export const dealerListingsByCategory = {};
+export const dealerListingsAll = [];
+for (const [path, mod] of Object.entries(dealerModules)) {
+  const category = path.split('/').pop().replace(/\.json$/, '');
+  const cars = mod.default || [];
+  (dealerListingsByCategory[category] = dealerListingsByCategory[category] || []).push(...cars);
+  dealerListingsAll.push(...cars);
+}
+
 import actionPlan from './user_data/ACTION_PLAN.json';
 import emails from './user_data/EMAILS.json';
 

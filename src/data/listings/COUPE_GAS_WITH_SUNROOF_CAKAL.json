@@ -97,7 +97,8 @@
     "aiCommentary": null,
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C43",
@@ -710,7 +711,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — fabrika opsiyon kodu \"(0403)\" ilan açıklamasında geçiyor"
   },
   {
     "listingId": "C54",
@@ -992,7 +994,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C148",
@@ -1093,7 +1096,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   },
   {
     "listingId": "C7",
@@ -1449,7 +1453,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C168",
@@ -1577,7 +1582,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C169",
@@ -1695,7 +1701,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C143",
@@ -1839,7 +1846,8 @@
     "aiCommentary": null,
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C589",
@@ -1945,7 +1953,8 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
   },
   {
     "listingId": "C314",
@@ -2062,6 +2071,7 @@
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": true
+    "modelGenerationCertain": true,
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
   }
 ]

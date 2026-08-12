@@ -2,16 +2,44 @@ import React from 'react';
 import { Typography, Space, Tooltip } from 'antd';
 import { CheckCircleFilled, CloseCircleFilled, QuestionCircleOutlined, StarFilled } from '@ant-design/icons';
 import { isColorFav, isColorNotFav, isInteriorNotFav, UI_COLORS } from '../../data';
+import { equipmentNameOf } from '../../utils/listingDiff';
 
 const { Text } = Typography;
 
-// name (donanım adı) verilirse ikon tooltip'te "Ad — durum" gösterir.
-export const FeatureIcon = ({ type, name }) => {
-  const s = type === "yes" ? { el: <CheckCircleFilled />, t: "success", txt: "Var ✅" }
-    : type === "no" ? { el: <CloseCircleFilled />, t: "danger", txt: "Yok ❌" }
-    : { el: <QuestionCircleOutlined />, t: "warning", txt: "Belirsiz — bayi linkiyle çözülür" };
-  const title = name ? `${name} — ${s.txt}` : s.txt;
-  return <Tooltip title={title}><Text type={s.t}>{s.el}</Text></Tooltip>;
+// Durum sozlugu — hem ikon secimi hem tooltip metni buradan.
+const STATUS = {
+  yes: { el: <CheckCircleFilled />, tone: 'success', txt: '✅ var' },
+  no: { el: <CloseCircleFilled />, tone: 'danger', txt: '❌ yok' },
+  unknown: { el: <QuestionCircleOutlined />, tone: 'warning', txt: '❓ belirsiz — bayi linkiyle çözülür' },
+};
+
+// Karar gerekcesi tasiyan kayit alanlari (kod -> alan adi). Yeni gerekce alani
+// eklenirse (or. dapReason) yalnizca bu tabloya satir eklenir — cagiranlar degismez.
+const REASON_FIELDS = { S403A: 'sunroofReason' };
+
+// Donanim durum ikonu. Sozlesme: aracin KAYDI + donanim KODU verilir; durum, ad,
+// celiski ve karar gerekcesi buradan turetilir. Cagiran taraf kaydin ic yapisini
+// (equipmentConflicts, sunroofReason...) BILMEZ.
+export const FeatureIcon = ({ car, code }) => {
+  const status = STATUS[car?.equipmentFeatures?.[code]] ?? STATUS.unknown;
+  const conflict = car?.equipmentConflicts?.[code] ?? null;
+  const reason = car?.[REASON_FIELDS[code]] ?? null;
+
+  const titleParts = [
+    `${equipmentNameOf(code)} — ${status.txt}`,
+    reason,
+    conflict && `⚠️ KAYNAKLAR ÇELİŞİYOR: ${Object.entries(conflict)
+      .map(([src, st]) => `${src}: ${STATUS[st]?.txt ?? st}`).join(' · ')} — teyit gerekli`,
+  ].filter(Boolean);
+
+  return (
+    <Tooltip title={titleParts.join(' · ')}>
+      <span style={{ position: 'relative', display: 'inline-flex' }}>
+        <Text type={status.tone}>{status.el}</Text>
+        {conflict && <span style={{ position: 'absolute', top: -7, right: -7, fontSize: 10, lineHeight: 1 }}>⚠️</span>}
+      </span>
+    </Tooltip>
+  );
 };
 
 export const StarRating = ({ count }) => (

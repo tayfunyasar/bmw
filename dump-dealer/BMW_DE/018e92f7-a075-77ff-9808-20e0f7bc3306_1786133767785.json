@@ -1,0 +1,35 @@
+{
+  "dealerId": "018e92f7-a075-77ff-9808-20e0f7bc3306",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92f7-a075-77ff-9808-20e0f7bc3306",
+  "title": "BMW M440i xDrive Coupé Aut. M Shadow Line",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "Reifendruck-Kontrolle (S02VB)\nDeaktivierung Beifahrerairbag (S05DA)\nEntfall Touch Funktionalität auf BMW Controller (S06UX)\nRekuperationssystem (S01CE)\nActive Guard Plus (S05AQ)\nM Hochglanz Shadow Line mit erweiterten Umfängen (S07M9)\nM Aerodynamikpaket (S0715)\nM Hochglanz Shadow Line (S0760)\nSanremo Green metallic (P0C4E)\nInnovationspaket (S07R7)\nRadschraubensicherung (S02PA)\nLeder 'Vernasca' Schwarz Dekorsteppung (SW) (FMAH7)\nFernlichtassistent (S05AC)\nInnen- und Außenspiegelpaket (S0430)\nInnenspiegel automatisch abblendend (S0431)\nAmbientes Licht (S04UR)\nBMW Laserlicht (S05AZ)\nSport-Automatic Getriebe Steptronic (S02TB)\nM Sportdifferenzial (S02T4)\nVariable Sportlenkung (S02VL)\nM Sportbremse (S02NH)\nAdaptives M Fahrwerk (S02VF)\nParking Assistant Plus (S05DN)\nBMW Head-Up Display (S0610)\nDriving Assistant Professional (S05AU)\nLehnenbreitenverstellung für Fahrer (S0491)\nSitzverstellung, elektrisch mit Memory für Fahrersitz (S0459)\nSitzheizung für Fahrer und Beifahrer (S0494)\nLordosenstütze für Fahrer (S0487)\nM Lederlenkrad (S0710)\nLenkradheizung (S0248)\nSonnenschutzverglasung (S0420)\nKlimaautomatik (S0534)\nGlasdach, elektrisch mit Schiebe- und Hebefunktion (S0403)\nM Interieurleisten Aluminium Tetragon (S04KK)\nM Dachhimmel anthrazit (S0775)\nAlarmanlage (S0302)\nKomfortzugang (S0322)\nAnhängerkupplung mit schwenkbarem Kugelkopf (S03AC)\nAutomatische Heckklappenbetätigung (S0316)\nAblagenpaket (S0493)\nTelefonie mit Wireless Charging (S06NW)\nKilometertacho (S0548)\nBMW Live Cockpit Professional (S06U3)\nWLAN Hotspot (S06WD)\nDAB-Tuner (S0654)\nHarman Kardon Surround Sound System (S0688)\nConnected Package Professional (S06C4)\nConnectedDrive Services (S06AK)\nTeleservices (S06AE)\nM Heckspoiler (S0754)\nDeutsch/Betriebsanleitung/Serviceheft (S0879)\nSondersteuerung Bluetooth/WiFi-Modul (S08WL)\nEU spezifische Umfänge (S0230)\nBlow by-Heizer (S04NE)\nSteuerung Karosserie (S08EK)\nAbgasnorm EU6 RDE II (S01DF)\nGesetzlicher Notruf (S06AF)\nSteuerung EfficientDynamics (S01CB)\nSprachversion Deutsch (S0851)\nAktiver Fussgängerschutz (S08TF)\nDekodierung Zusatzfunktionen (S08TR)\nDeutschland-Ausführung (S0801)",
+  "features": [],
+  "properties": {
+    "milage": "38926 km",
+    "firstRegistration": "04/2023",
+    "upholstery": "Leder 'Vernasca' Schwarz Dekorsteppung SW (FMAH7)",
+    "colour": "Green",
+    "manufacturerColour": "Sanremo Green metallic (P0C4E)",
+    "co2Emission": "177 g/km",
+    "generalInspection": "04/2026",
+    "numberOfOwners": 2,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 52520
+  },
+  "dealer": {
+    "name": "Gottstein GmbH Automobile + Motorräder",
+    "contry": "DE",
+    "addesses": [
+      "Karl-Ziegler-Straße 4",
+      "79761 Waldshut-Tiengen"
+    ]
+  },
+  "vin": "WBA11AR040CL79154",
+  "mobileDeUrl": null,
+  "notes": "Angebotsnummer BUG265000284. Unfallvorschaden: Nein. BPS ausweisbar degil. Ausstattung bolumu sayfada LOADING kaldi; 63 kalemlik liste Vuex store'dan alindi. MwSt. ausweisbar. Kennzeichen LÖ-XI 4444A."
+}

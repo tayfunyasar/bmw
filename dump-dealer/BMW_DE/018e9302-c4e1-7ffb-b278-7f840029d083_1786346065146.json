@@ -1,0 +1,37 @@
+{
+  "dealerId": "018e9302-c4e1-7ffb-b278-7f840029d083",
+  "title": "BMW M440I XDRIVE COUPÉ",
+  "category": "Coupé",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "isDamaged": "Unfallvorschaden: Ja (bmw.de Fahrzeugdaten)",
+  "description": "Außenfarbe: Saphirschwarz metallic (P0475)\nPolster: Leder 'Vernasca' Schwarz Dekorsteppung SW (FMAH7)\nBMW Live Cockpit Professional (S06U3)\nAdaptives M Fahrwerk (S02VF)\nKlimaautomatik (S0534)\nAblagenpaket (S0493)\nM Aerodynamikpaket (S0715)\nLehnenbreitenverstellung für Fahrer (S0491)\nReifendruck-Kontrolle (S02VB)\nAblage für Wireless Charging (S06NX)\nGesetzlicher Notruf (S06AF)\nActive Guard Plus (S05AQ)\nM Heckspoiler (S0754)\nLM - Räder (SSON0)\nDriving Assistant Professional (S05AU)\nM Sportdifferenzial (S02T4)\nAmbientes Licht (S04UR)\nM Dachhimmel anthrazit (S0775)\nLordosenstütze für Fahrer und Beifahrer (S0488)\nDAB-Tuner (S0654)\nConnected Package Professional (S06C4)\nBMW Laserlicht (S05AZ)\nM Sportbremse (S02NH)\n2 Jahre BMW Premium Selection Garantieinkl. lt. Garantiebedingungen (SSON1)\nFernlichtassistent (S05AC)\nAnhängerkupplung mit schwenkbarem Kugelkopf (S03AC)\nM Hochglanz Shadow Line (S0760)\nSitzheizung für Fahrer und Beifahrer (S0494)\nHiFi-Lautsprechersystem (S0676)\nConnectedDrive Services (S06AK)\nDeaktivierung Beifahrerairbag (S05DA)\nVariable Sportlenkung (S02VL)\nParking Assistant (S05DM)\nGlasdach, elektrisch mit Schiebe- und Hebefunktion (S0403)\nSonnenschutzverglasung (S0420)\nSitzverstellung, elektrisch mit Memory für Fahrersitz (S0459)\nTeleservices (S06AE)\nInnen- und Außenspiegelpaket (S0430)\nKomfortzugang (S0322)\nInnenspiegel automatisch abblendend (S0431)\nM Lederlenkrad (S0710)",
+  "features": [],
+  "properties": {
+    "milage": "59.507 km",
+    "firstRegistration": "09/2023",
+    "upholstery": "Leder 'Vernasca' Schwarz Dekorsteppung SW (FMAH7)",
+    "colour": "Saphirschwarz metallic",
+    "manufacturerColour": "Saphirschwarz metallic (P0475)",
+    "co2Emission": "178 g/km",
+    "generalInspection": null,
+    "numberOfOwners": 2,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 51107
+  },
+  "dealer": {
+    "name": "BMW AG Niederlassung München Filiale Fröttmaning",
+    "contry": "DE",
+    "addesses": [
+      "Werner-Heisenberg-Allee 10",
+      "80939 München"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9302-c4e1-7ffb-b278-7f840029d083",
+  "notes": "bmw.de. KAZALI: Unfallvorschaden JA. BPS garantili (SSON1). MwSt. ausweisbar YOK. 2 Vorbesitzer. Glasdach + AHK. Angebotsnr MX376676."
+}

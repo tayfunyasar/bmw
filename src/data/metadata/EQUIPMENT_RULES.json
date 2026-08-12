@@ -18,7 +18,9 @@
       "Glasdach",
       "Dachfenster",
       "Schiebedach",
-      "Glass Roof"
+      "Glass Roof",
+      "schuif-/kanteldak",
+      "Schuifdak"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -54,7 +56,9 @@
       "Driving Assistant Plus",
       "Fahrassistenz-System",
       "Fahrassistenz",
-      "DAPRO"
+      "DAPRO",
+      "Aktive Geschwindigkeitsregelung mit Stop & Go",
+      "Aktive Geschwindigkeitsregelung mit Stop&Go"
     ],
     "props": {},
     "defaultStatus": "no"

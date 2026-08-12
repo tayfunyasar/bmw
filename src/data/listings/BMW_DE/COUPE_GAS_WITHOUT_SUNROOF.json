@@ -1,0 +1,210 @@
+[
+  {
+    "listingId": "B5",
+    "listingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e934a-2f1f-7281-9d0f-2f1ebc3c3fba",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e934a-2f1f-7281-9d0f-2f1ebc3c3fba",
+    "mobileDeId": null,
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Sanremo Green metallic (P0C4E)",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Leder 'Vernasca' Cognac Dekorsteppung SW (FMAPQ)",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — açıklama bilgilendirici (22 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'",
+    "basePriceEuro": 49990,
+    "mileageKm": 47100,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      6
+    ],
+    "numberOfPreviousOwners": 1,
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Autohaus Rhein Ludwigsburg Zw. Nl. der Autohaus Heermann u. Rhein GmbH",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 184,
+    "listingLocation": "🇩🇪 71679 Asperg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "no",
+      "S524A": "no",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": null,
+      "modifiedTime": null,
+      "renewedTime": null
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T08:01:32.650Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "BMW_DE taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sunroofReason": {
+            "old": null,
+            "new": "S403A=no — açıklama bilgilendirici (22 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'"
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.181Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "B12",
+    "listingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9312-78de-7c2e-93d6-f072f3a59b2a",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9312-78de-7c2e-93d6-f072f3a59b2a",
+    "mobileDeId": null,
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "BMW Individual Dravitgrau metallic (P0C36)",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Sensatec perforiert | Cognac (FKHKC)",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"XDRIVE\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — açıklama bilgilendirici (22 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'",
+    "basePriceEuro": 51490,
+    "mileageKm": 28902,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      3
+    ],
+    "numberOfPreviousOwners": 1,
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "?",
+    "sellerTypeOrName": "Autohaus Timmermanns GmbH",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇩🇪 40549 Düsseldorf",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "no",
+      "S524A": "no",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": null,
+      "modifiedTime": null,
+      "renewedTime": null
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-07T08:01:32.653Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "BMW_DE taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sunroofReason": {
+            "old": null,
+            "new": "S403A=no — açıklama bilgilendirici (22 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'"
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.173Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  }
+]

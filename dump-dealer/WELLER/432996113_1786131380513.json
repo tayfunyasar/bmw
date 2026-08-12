@@ -1,0 +1,31 @@
+{
+  "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-432996113/",
+  "title": "BMW M440 COUPÉ M SPORT PRO — M440ixDr Coupe,M SPORT PRO,LivePro,St&Go,GSD,19\"",
+  "attributes": {
+    "Category": "Sports Car/Coupe"
+  },
+  "description": "Head-up-Display HUD\nBMW ParkAssistent mit PDC vorne u. hinten: Parkassistent-Paket\nRückfahrkamera\nAktive Geschwindigkeitsregelung mit Stop & Go\nFahrerassistenzpaket: Driving Assistant\nVerkehrszeichenerkennung\nBMW Live Cockpit Professional\nSoundsystem: HiFi-Lautsprechersystem\nLED-Scheinwerfer\nAmbientebeleuchtung\nKlimaautomatik 3 Zonen\nGlasschiebe-Hebedach elekt.\nFahrer-/Beifahrersitz elektrisch\nMemoryfunktion Fahrersitz\nSitzheizung Fahrer/Beifahrer\nSportsitze\nServotronic: Variable Sportlenkung\nSitze Teilleder schw./Kon. bl.\nM Sportfahrwerk\nDifferentialsperre\nM Sportbremse\nM Leichtmetallräder 19 Zoll: Doppelspeiche 791 M\nM Sportabgasanlage\nM Sportpaket: M Sport Pro\nOptikpaket: M Hochglanz Shadow Line\nQuerverkehrswarnung",
+  "features": [],
+  "properties": {
+    "milage": "31.922 km",
+    "firstRegistration": "10/2023",
+    "upholstery": "Teilleder, Andere",
+    "colour": "Schwarz",
+    "manufacturerColour": "Black Sapphire",
+    "co2Emission": "175 g/km",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 49450
+  },
+  "dealer": {
+    "name": "WELLER Hildesheim",
+    "contry": "DE",
+    "addesses": [
+      "Junkersstraße 2",
+      "DE-31137 Hildesheim"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null
+}

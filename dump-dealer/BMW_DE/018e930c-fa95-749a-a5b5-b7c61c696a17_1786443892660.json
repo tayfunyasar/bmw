@@ -1,0 +1,36 @@
+{
+  "dealerId": "018e930c-fa95-749a-a5b5-b7c61c696a17",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e930c-fa95-749a-a5b5-b7c61c696a17",
+  "title": "BMW M440i xDrive Coupé",
+  "isDamaged": "Unfallvorschaden: Ja",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "Außenfarbe: M Brooklyn Grau metallic (P0C4P)\nRäder: 19\" M LMR Doppelspeiche 791 M / MB, NLE (S01PP)\nPolster: Leder 'Vernasca' Schwarz/Kontraststeppung Blau SW (FMANL)\nInterieurleisten: M Interieurleisten 'Carbon Fibre' (S04MC)\nGetriebe: Automatik\nGesamtfahrzeugantrieb: 275 kW (374 PS) xDrive Allrad\nGarantietyp: EUROPlus Garantie (12 Monate)",
+  "features": [],
+  "properties": {
+    "milage": "43046",
+    "firstRegistration": "06/2024",
+    "upholstery": "Leder 'Vernasca' Schwarz/Kontraststeppung Blau SW (FMANL)",
+    "colour": "M Brooklyn Grau metallic",
+    "manufacturerColour": "M Brooklyn Grau metallic (P0C4P)",
+    "co2Emission": "176 g/km",
+    "generalInspection": null,
+    "numberOfOwners": "1",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 52999
+  },
+  "dealer": {
+    "name": "Autohaus Euler GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Hanauer Landstaße 425",
+      "60314 Frankfurt am Main"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "notes": "Unfallvorschaden: Ja -> KAZALI. Ausstattung bolumu sayfada TAMAMEN BOS (veri yok != donanim yok) - sunroof/DAP vb. dogrulanamadi. Angebotsnummer 073227. MwSt. ausweisbar. Bayi Autohaus Euler GmbH Frankfurt (euler-group.de sitesindeki EULER kayitlariyla ayni grup olabilir - API listesinde bu arac YOK)."
+}

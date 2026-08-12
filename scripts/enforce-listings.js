@@ -11,10 +11,18 @@ const ROOT_KEYS_ORDER = LISTING_FILES.rootKeysOrder;
 const EQUIP_KEYS_ORDER = LISTING_FILES.equipKeysOrder;
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const files = LISTING_FILES.enforceFiles;
+// enforceFiles (kok dosyalar, config) + bayi sitesi alt klasorlerinin OTOMATIK kesfi:
+// src/data/listings/<SITE>/*.json her zaman dogrulanir — site basina config gerekmez.
+const dealerFiles = fs.readdirSync(listingsDir, { withFileTypes: true })
+  .filter(e => e.isDirectory())
+  .flatMap(e => fs.readdirSync(path.join(listingsDir, e.name))
+    .filter(f => f.endsWith('.json'))
+    .map(f => path.join(e.name, f)));
+const files = [...LISTING_FILES.enforceFiles, ...dealerFiles];
 
 const isFix = process.argv.includes('--fix');
 let hasError = false;
+let hasUnfixableError = false;
 
 function formatListing(listing, index, filename) {
   const newListing = {};
@@ -55,6 +63,11 @@ function formatListing(listing, index, filename) {
           renewedTime: listing.listingDates.renewedTime || null
         };
       }
+    } else if (key === 'equipmentConflicts') {
+      // Bayi-kaynak zit celiskileri: yoksa alan hic yazilmaz (dealerListingUrl gibi).
+      if (listing.equipmentConflicts && Object.keys(listing.equipmentConflicts).length) {
+        newListing[key] = listing.equipmentConflicts;
+      }
     } else if (key === 'overrideFeatures') {
       if (listing.overrideFeatures) {
         newListing[key] = listing.overrideFeatures;
@@ -89,6 +102,9 @@ function formatListing(listing, index, filename) {
 }
 
 const seenIds = new Map();
+// listingId benzersizligi TUM dosyalar genelinde (C-serisi + site onekli seriler).
+// --fix bile SILMEZ — cakisma tahsis hatasidir, elle cozulmeli.
+const seenListingIds = new Map();
 
 for (const file of files) {
   const filePath = path.join(listingsDir, file);
@@ -106,7 +122,18 @@ for (const file of files) {
     const item = data[i];
     const formattedItem = formatListing(item, i, file);
     const id = formattedItem.mobileDeId;
-    
+
+    const lid = formattedItem.listingId;
+    if (lid) {
+      if (seenListingIds.has(lid)) {
+        console.error(`Error: Duplicate listingId ${lid} found in ${file} (previously in ${seenListingIds.get(lid)}). NOT auto-fixed — resolve manually.`);
+        hasError = true;
+        hasUnfixableError = true;
+      } else {
+        seenListingIds.set(lid, file);
+      }
+    }
+
     if (id) {
       if (seenIds.has(id)) {
         console.error(`Error: Duplicate mobileDeId ${id} found in ${file} (previously in ${seenIds.get(id)}).`);
@@ -137,6 +164,10 @@ for (const file of files) {
   }
 }
 
+if (hasUnfixableError) {
+  console.error('\nDuplicate listingId found — bu --fix ile duzelmez, elle cozulmeli!');
+  process.exit(1);
+}
 if (hasError && !isFix) {
   console.error('\nListings formatting error or duplicates found! Please run "npm run format:data" to fix.');
   process.exit(1);

@@ -1,0 +1,37 @@
+{
+  "dealerId": "018e92ff-b022-7ef6-9e92-56a4b578f4a4",
+  "title": "BMW M440i xDrive",
+  "category": "Coupé",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "isDamaged": "Unfallvorschaden: Ja (bmw.de Fahrzeugdaten)",
+  "description": "Außenfarbe: Saphirschwarz metallic (P0475)\nRäder: Winterräder statt Sommerräder (nur für Autovermieter) (S0931)\nPolster: Leder 'Vernasca' Schwarz Dekorsteppung SW (FMAH7)\nInterieurleisten: BMW Individual Interieurleisten Pianolack schwarz (S04ML)\nAusstattung:\nBMW Live Cockpit Professional (S06U3)\nDriving Assistant Professional (S05AU)\nFernlichtassistent (S05AC)\nParking Assistant (S05DM)\nAdaptives M Fahrwerk (S02VF)\nM Sportdifferenzial (S02T4)\nKlimaautomatik (S0534)\nAblagenpaket (S0493)\nAmbientes Licht (S04UR)\nAnhängerkupplung mit schwenkbarem Kugelkopf (S03AC)\nGlasdach, elektrisch mit Schiebe- und Hebefunktion (S0403)\nKomfortzugang (S0322)\nM Lederlenkrad (S0710)\nM Aerodynamikpaket (S0715)\nM Dachhimmel anthrazit (S0775)\nM Hochglanz Shadow Line (S0760)\nSonnenschutzverglasung (S0420)\nLehnenbreitenverstellung für Fahrer (S0491)\nLordosenstütze für Fahrer und Beifahrer (S0488)\nSitzheizung für Fahrer und Beifahrer (S0494)\nSitzverstellung, elektrisch mit Memory für Fahrersitz (S0459)\nNotlaufeigenschaften (S0258)\nRadschraubensicherung (S02PA)\nReifendruck-Kontrolle (S02VB)\nAblage für Wireless Charging (S06NX)\nDAB-Tuner (S0654)\nHiFi-Lautsprechersystem (S0676)\nGesetzlicher Notruf (S06AF)\nConnected Package Professional (S06C4)\nConnectedDrive Services (S06AK)\nTeleservices (S06AE)\nActive Guard Plus (S05AQ)\nBMW Laserlicht (S05AZ)\nDeaktivierung Beifahrerairbag (S05DA)\nInnen- und Außenspiegelpaket (S0430)\nInnenspiegel automatisch abblendend (S0431)\nM Heckspoiler (S0754)\nM Sportbremse (S02NH)\nVariable Sportlenkung (S02VL)\nSteuerung K (S08WT)\nDeutsch/Betriebsanleitung/Serviceheft (S0879)\nÖlwartungsintervall 30000 km / 24 Monate (S08KA)\nEU spezifische Umfänge (S0230)\nSteuerung G (S08WQ)\nBlow by-Heizer (S04NE)\nSteuerung Karosserie (S08EK)\nKaeltemittel (S08R9)\nInterne Steuerung (S06VB)\nSprachversion Deutsch (S0851)\nDeutschland-Ausführung (S0801)\nKilometertacho (S0548)",
+  "features": [],
+  "properties": {
+    "milage": "55.067 km",
+    "firstRegistration": "09/2023",
+    "upholstery": "Leder 'Vernasca' Schwarz Dekorsteppung SW (FMAH7)",
+    "colour": "Saphirschwarz metallic",
+    "manufacturerColour": "Saphirschwarz metallic (P0475)",
+    "co2Emission": "178 g/km",
+    "generalInspection": null,
+    "numberOfOwners": 1,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 51455
+  },
+  "dealer": {
+    "name": "Autohaus Kühnert GmbH & Co. KG",
+    "contry": "DE",
+    "addesses": [
+      "Zeitzer Str. 135",
+      "04600 Altenburg"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92ff-b022-7ef6-9e92-56a4b578f4a4",
+  "notes": "bmw.de. KAZALI: Unfallvorschaden JA. BPS (24 ay). MwSt. NICHT ausweisbar (Differenzbesteuerung §25a). \"Winterräder statt Sommerräder (nur für Autovermieter)\" — eski kiralik arac isareti. Glasdach var."
+}

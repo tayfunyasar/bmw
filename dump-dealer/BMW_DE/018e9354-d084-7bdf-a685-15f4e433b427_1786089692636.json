@@ -1,0 +1,36 @@
+{
+  "dealerId": "018e9354-d084-7bdf-a685-15f4e433b427",
+  "title": "BMW M440i xDrive Coupé (ab 2020)",
+  "category": "Coupé",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "Exterieur\nAußenfarbe: Saphirschwarz metallic (P0475)\nInterieur\nPolster: Alcantara-/Sensatec-Kombination Schwarz/Kontraststeppung Blau SW (FKGNL)",
+  "features": [],
+  "properties": {
+    "milage": "31.922 km",
+    "firstRegistration": "10/2023",
+    "upholstery": "Alcantara-/Sensatec-Kombination Schwarz/Kontraststeppung Blau SW (FKGNL)",
+    "colour": "Black",
+    "manufacturerColour": "Saphirschwarz metallic (P0475)",
+    "co2Emission": "175 g/km",
+    "generalInspection": null,
+    "numberOfOwners": 1,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 49450
+  },
+  "dealer": {
+    "name": "WELLER Premium GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Junkersstr. 2",
+      "31137 Hildesheim"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9354-d084-7bdf-a685-15f4e433b427",
+  "notes": "bmw.de. Angebotsnr 0011548/25-0. MwSt. ausweisbar. DIKKAT: Ausstattung bolumu sayfada HIC yok — donanim verisi eksik (aracta yok anlamina gelmez). IKIZ: WELLER 432996113 (W1) ile ayni arac gorunuyor (10/2023 + 31.922 km + €49.450). Arac Braunschweig lokasyonunda."
+}

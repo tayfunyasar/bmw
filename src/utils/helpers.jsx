@@ -64,3 +64,12 @@ export const formatAdditionalFeatures = (features) => {
     );
   });
 };
+
+// Ilanin yayin tarihi: listingDates.createdTime, yoksa audit'teki "İlan Yayınlandı"
+// kaydi (kaynak-bagimsiz: "(mobile.de)" da "(WELLER)" da yakalanir). Bulunamazsa null.
+// Tek kaynak — CarsWithRecentSubTabs (Son X gun) ve MainTabs (tarih siralamasi) kullanir.
+export const getCarPublishedDate = (car) => {
+  const published = car.auditHistory?.find(h => h.action?.includes('İlan Yayınlandı'));
+  const raw = car.listingDates?.createdTime || published?.auditDate;
+  return raw ? new Date(raw) : null;
+};

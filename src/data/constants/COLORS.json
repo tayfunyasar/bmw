@@ -2,10 +2,12 @@
   "exterior": {
     " M Brooklyn Grau": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "(0475) Saphirschwarz Metal": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "?": {},
     "A300 ": {},
@@ -30,11 +32,19 @@
     "AVENTURINROT III": {
       "hex": "#6d1f2a"
     },
+    "Alpinweiss": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
     "Alpinweiss ": {
       "hex": "#f0f0f0",
       "preference": "disliked"
     },
     "Alpinweiss 3": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "Alpinweiss Uni": {
       "hex": "#f0f0f0",
       "preference": "disliked"
     },
@@ -75,13 +85,16 @@
       "hex": "#050508"
     },
     "BLACK SAPPHIRE": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "BLACK SAPPHIRE METALLIC": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "BLACK SAPPHIRE METALLIC (475)": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "BLUE": {
       "hex": "#2563eb",
@@ -89,18 +102,41 @@
     },
     "BMW Ind. Dravitgrau": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "BMW Individual Dravitgrau": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "BMW Individual Dravitgrau ": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
+    },
+    "BMW Individual Dravitgrau (C36)": {
+      "hex": "#7a7d7f",
+      "preference": "favorite",
+      "code": "C36"
     },
     "BMW Individual Dravitgrau metal": {
       "hex": "#7a7d7f",
+      "preference": "favorite",
+      "code": "C36"
+    },
+    "BMW Individual Dravitgrau metall": {
+      "hex": "#7a7d7f",
+      "preference": "favorite",
+      "code": "C36"
+    },
+    "BMW Individual Dravitgrau metallic (P0C36)": {
+      "hex": "#7a7d7f",
+      "preference": "favorite",
+      "code": "C36"
+    },
+    "BMW Individual Frozen Portimao": {
+      "hex": "#1e5fa8",
       "preference": "favorite"
     },
     "BMW Individual Frozen Portimao B": {
@@ -110,11 +146,19 @@
     "BMW Individual Frozen Pure Grey": {
       "hex": "#8a8d8f"
     },
+    "BMW Individual Tansanit (blauw metallic)": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
     "BMW Individual Tansanitbl": {
       "hex": "#1a3a5c",
       "preference": "favorite"
     },
     "BMW Individual Tansanitblau": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "BMW Individual Tansanitblau ": {
       "hex": "#1a3a5c",
       "preference": "favorite"
     },
@@ -133,11 +177,13 @@
     "BMW Individuallackierung ": {},
     "BROOKLYN GRAU": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "BROOKLYN GRAU METALLIC": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "Beyaz": {
       "hex": "#f0f0f0",
@@ -150,16 +196,20 @@
       "hex": "#050508"
     },
     "Black Sapphire": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Black Sapphire ": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Black Sapphire Metallic (475)": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Black-Sapphire Metallic": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Blue": {
       "hex": "#2563eb",
@@ -175,27 +225,48 @@
     },
     "Brooklyn Grau": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "Brooklyn Grau ": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "Brooklyn Grau (C4P)": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
+    },
+    "Brooklyn Grau (grijs metallic)": {
+      "hex": "#6b7b8a",
+      "preference": "disliked",
+      "code": "C4P"
+    },
+    "Brooklyn Grau Metallic": {
+      "hex": "#6b7b8a",
+      "preference": "disliked",
+      "code": "C4P"
     },
     "Brooklyn Grau Metallic (C4P)": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "Brooklyn Grau metallic": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "Brooklyn grau": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
+    },
+    "Brooklyngrau": {
+      "hex": "#6b7b8a",
+      "preference": "disliked",
+      "code": "C4P"
     },
     "CAPE YORK GRUEN METALLIC": {
       "hex": "#799195",
@@ -207,41 +278,56 @@
       "code": "C5Y",
       "preference": "favorite"
     },
+    "DEEP SEA GREEN (Individuallack": {
+      "hex": "#2d5a3d"
+    },
+    "DRAGON FIRE ROT METALLIC": {
+      "hex": "#c8102e"
+    },
     "DRAVITGRAU": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "DRAVITGRAU ": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "DRAVITGRAU METALLIC": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "DRAVITGRAU METALLIC (C36)": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "Dravit-Grau Metallic": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "Dravitgrau": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "Dravitgrau Metallic": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "Dravitgrau Metallic (C36)": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "Dravitgrau metallic": {
       "hex": "#7a7d7f",
-      "preference": "favorite"
+      "preference": "favorite",
+      "code": "C36"
     },
     "FROZEN PURE GREY II METALLIC": {
       "hex": "#8a8d8f"
@@ -250,6 +336,9 @@
       "hex": "#7a7d7f"
     },
     "Fire Red": {
+      "hex": "#c8102e"
+    },
+    "Fire Red Metallic": {
       "hex": "#c8102e"
     },
     "Frozen Portimao Blau": {
@@ -283,22 +372,35 @@
     "Grey Metallic": {
       "hex": "#7a7d7f"
     },
+    "Individual Tansanitblau metallic": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
     "Lackierung: Metallic": {},
     "M Brooklyn Grau": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
+    },
+    "M Brooklyn Grau ": {
+      "hex": "#6b7b8a",
+      "preference": "disliked",
+      "code": "C4P"
     },
     "M Brooklyn Grau - C4P": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "M Brooklyn Grau Metallic": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "M Brooklyn Grau metallic": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
     },
     "M Portimao Blau": {
       "hex": "#1e5fa8",
@@ -309,6 +411,10 @@
       "preference": "favorite"
     },
     "MINERALWEISS": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
+    },
+    "MINERALWEISS ": {
       "hex": "#f0f0f0",
       "preference": "disliked"
     },
@@ -379,22 +485,27 @@
     },
     "SAN REMO GREEN": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "SAN REMO GREEN METALLIC": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "SANREMO GREEN": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "SANREMO GREEN METALLIC": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "SAPHIRSCHWARZ": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "SCHWARZ": {
       "hex": "#050508"
@@ -405,55 +516,84 @@
     },
     "San Remo Green": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Sanremo Green": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Sanremo Green Metallic": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Sanremo Green metallic": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
+    },
+    "Sanremo Green metallic (P0C4E)": {
+      "hex": "#2d5a3d",
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Sanremo Grun metallic (C4E)": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Sanremo Grün": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Sanremo green metallic": {
       "hex": "#2d5a3d",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4E"
+    },
+    "Sanremo grun metallic": {
+      "hex": "#2d5a3d",
+      "preference": "disliked",
+      "code": "C4E"
     },
     "Saphirschwarz": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Saphirschwarz ": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Saphirschwarz  - 475": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Saphirschwarz - 475": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Saphirschwarz Metallic": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Saphirschwarz metallic": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
+    },
+    "Saphirschwarz metallic (475)": {
+      "hex": "#050508",
+      "code": "475"
     },
     "Saphirschwarz metallic-475": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Sapphire Schwarz": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "Silver Metallic": {
       "hex": "#c0c0c0"
@@ -493,7 +633,15 @@
       "hex": "#1a3a5c",
       "preference": "favorite"
     },
+    "Tansanitblau II Metallic": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
     "Tansanitblau II metallic": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
+    },
+    "Tansanitblau Metallic": {
       "hex": "#1a3a5c",
       "preference": "favorite"
     },
@@ -509,37 +657,72 @@
       "hex": "#1a4a8a"
     },
     "black sapphire": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "black sapphire metallic": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "black-sapphire ": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "black-sapphire metallic": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
+    },
+    "brooklyn grau ": {
+      "hex": "#6b7b8a",
+      "preference": "disliked",
+      "code": "C4P"
     },
     "brooklyn grey": {
       "hex": "#6b7b8a",
-      "preference": "disliked"
+      "preference": "disliked",
+      "code": "C4P"
+    },
+    "dravitgrau": {
+      "hex": "#7a7d7f",
+      "preference": "favorite",
+      "code": "C36"
+    },
+    "firered METALLIC": {
+      "hex": "#c8102e"
     },
     "grün": {
       "hex": "#2d5a3d"
+    },
+    "mineral weiss metallic": {
+      "hex": "#f0f0f0",
+      "preference": "disliked"
     },
     "mineralweiss": {
       "hex": "#f0f0f0",
       "preference": "disliked"
     },
-    "san remo green": {
-      "hex": "#2d5a3d",
+    "mineralweiss metallic": {
+      "hex": "#f0f0f0",
       "preference": "disliked"
     },
+    "san remo green": {
+      "hex": "#2d5a3d",
+      "preference": "disliked",
+      "code": "C4E"
+    },
     "saphirschwarz": {
-      "hex": "#050508"
+      "hex": "#050508",
+      "code": "475"
     },
     "schwarz": {
       "hex": "#050508"
+    },
+    "schwarz metallic": {
+      "hex": "#050508"
+    },
+    "tansanitblau": {
+      "hex": "#1a3a5c",
+      "preference": "favorite"
     },
     "tansanitblau ii": {
       "hex": "#1a3a5c",

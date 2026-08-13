@@ -3348,7 +3348,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-sportpaket-navi-leder-digital-frankfurt/39482249765056.html",
     "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e930c-fa95-749a-a5b5-b7c61c696a17",
     "mobileDeId": "39482249765056",
-    "vin": null,
+    "vin": "WBA11AR080CN67238",
     "possibleTwinOf": null,
     "dealerReportedDamage": {
       "source": "BMW_DE",
@@ -3467,6 +3467,936 @@
         "detail": "BMW_DE ilanında beyan edildi: \"Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\"\"",
         "changes": null,
         "auditDate": "2026-08-13T10:50:23.638Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "EULER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrls": {
+            "old": null,
+            "new": [
+              "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BMG54642201/"
+            ]
+          },
+          "vin": {
+            "old": null,
+            "new": "WBA11AR080CN67238"
+          },
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S2VLA": {
+                "mobile.de": "no",
+                "EULER": "yes"
+              },
+              "S4AWA": {
+                "mobile.de": "no",
+                "EULER": "yes"
+              },
+              "S775A": {
+                "mobile.de": "no",
+                "EULER": "yes"
+              },
+              "S5DN_360": {
+                "mobile.de": "yes",
+                "EULER": "no"
+              },
+              "KGNL": {
+                "mobile.de": "yes",
+                "EULER": "no"
+              },
+              "S459A": {
+                "mobile.de": "yes",
+                "EULER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "EULER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "EULER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "EULER": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-13T19:55:03.423Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null,
+    "dealerListingUrls": [
+      "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BMG54642201/"
+    ],
+    "equipmentConflicts": {
+      "S2VLA": {
+        "mobile.de": "no",
+        "EULER": "yes"
+      },
+      "S4AWA": {
+        "mobile.de": "no",
+        "EULER": "yes"
+      },
+      "S775A": {
+        "mobile.de": "no",
+        "EULER": "yes"
+      },
+      "S5DN_360": {
+        "mobile.de": "yes",
+        "EULER": "no"
+      },
+      "KGNL": {
+        "mobile.de": "yes",
+        "EULER": "no"
+      },
+      "S459A": {
+        "mobile.de": "yes",
+        "EULER": "no"
+      },
+      "S5DNA": {
+        "mobile.de": "yes",
+        "EULER": "no"
+      },
+      "S521A": {
+        "mobile.de": "yes",
+        "EULER": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "EULER": "no"
+      }
+    }
+  },
+  {
+    "listingId": "C186",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-shadow-line-waldshut-tiengen/453077509.html",
+    "dealerListingUrl": "https://www.gottstein-gruppe.de/de/fahrzeugangebot/#!/vehicles/6678460/BMW_M440i_xDrive_Coupé_M_Shadow_Line_SANREMO_GREEN",
+    "dealerListingUrls": [
+      "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92f7-a075-77ff-9808-20e0f7bc3306"
+    ],
+    "mobileDeId": "453077509",
+    "vin": "WBA11AR040CL79154",
+    "possibleTwinOf": null,
+    "dealerReportedDamage": {
+      "source": "BMW_DE",
+      "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+    },
+    "exteriorColorName": "SANREMO GREEN",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 0 — VIN tip kodu \"11AR\" = M440i xDrive Coupé (fabrika verisi, ilan metnini ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 52520,
+    "mileageKm": 38926,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      4
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "unknown",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Gottstein GmbH Automobile & Motorräder ★4.7",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": false,
+    "co2EmissionsGramPerKm": 177,
+    "listingLocation": "🇩🇪 DE-79761 Waldshut-Tiengen",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [
+      "✅ Kaza YOK (satıcı teyidi)",
+      "⚠️ Garanti yarın (18.04.2026) bitiyor — uzatma seçenekleri: 1 yıl veya 2 yıl (€600)",
+      "❌ Driving Assistant Professional YOK",
+      "✅ CO₂ = 177 g/km (teyit edildi)",
+      "✅ Dış renk: Sanremo Green (açık yeşil) teyit",
+      "💰 Fiyat pazarlıksız (araç neredeyse sıfır, 38.926 km)",
+      "🔧 TÜV: gerekirse yeni yapılacak",
+      "🔧 Fren servisi: Ağustos 2024",
+      "🔧 Servis: erken yapılamaz — ~5.000 km veya ~10 hafta önceden",
+      "📞 Jannick · +49 7751 83 92 37 · Gottstein GmbH"
+    ],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\""
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "yes",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-14T10:16:04.000Z",
+      "modifiedTime": "2026-08-11T15:49:27.000Z",
+      "renewedTime": "2026-04-14T10:16:04.000Z"
+    },
+    "overrideFeatures": {
+      "co2EmissionsGramPerKm": {
+        "value": 177,
+        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17)"
+      },
+      "S5AUA": {
+        "value": "no",
+        "reason": "Satıcı teyidi (Jannick, telefon görüşmesi 2026-04-17): Driving Assistant Professional yok"
+      }
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-14T10:16:04.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-14T10:16:04.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-04-17T09:39:00.399Z"
+      },
+      {
+        "action": "Satıcı Görüşmesi (Telefon)",
+        "detail": "Jannick ile görüşme — CO₂ 177, DA Prof yok, garanti yarın bitiyor, kaza yok",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 177
+          },
+          "equipmentFeatures.S5AUA": {
+            "old": "yes",
+            "new": "no"
+          }
+        },
+        "auditDate": "2026-04-17T14:14:02.877Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 54390,
+            "new": 53990
+          }
+        },
+        "auditDate": "2026-05-21T20:52:30.826Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 53990,
+            "new": 53680
+          }
+        },
+        "auditDate": "2026-06-17T20:12:56.033Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 53680,
+            "new": 53180
+          }
+        },
+        "auditDate": "2026-07-03T20:16:44.981Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 53180,
+            "new": 52520
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.706Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S216A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.696Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "vin": {
+            "old": null,
+            "new": "WBA11AR040CL79154"
+          }
+        },
+        "auditDate": "2026-08-07T20:15:43.249Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "drivetrainReason": {
+            "old": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+            "new": "Kural 0 — VIN tip kodu \"11AR\" = M440i xDrive Coupé (fabrika verisi, ilan metnini ezer)"
+          }
+        },
+        "auditDate": "2026-08-08T10:12:38.023Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrls": {
+            "old": null,
+            "new": [
+              "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92f7-a075-77ff-9808-20e0f7bc3306"
+            ]
+          },
+          "dealerReportedDamage": {
+            "old": null,
+            "new": {
+              "source": "BMW_DE",
+              "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+            }
+          },
+          "equipmentConflicts": {
+            "old": {
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S216A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            },
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-13T10:57:02.490Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
+        "detail": "BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\"",
+        "changes": null,
+        "auditDate": "2026-08-13T19:51:35.776Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C264",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ixdr-coupe-m-sport-pro-livepro-st-go-gsd-19-hildesheim/455957164.html",
+    "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-432996113/",
+    "dealerListingUrls": [
+      "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9354-d084-7bdf-a685-15f4e433b427"
+    ],
+    "mobileDeId": "455957164",
+    "vin": null,
+    "possibleTwinOf": null,
+    "dealerReportedDamage": {
+      "source": "BMW_DE",
+      "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+    },
+    "exteriorColorName": "Black Sapphire",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Part leather",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 49450,
+    "mileageKm": 31922,
+    "firstRegistrationYearAndMonth": [
+      2023,
+      10
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "WELLER Premium GmbH ★4.7",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 175,
+    "listingLocation": "🇩🇪 DE-31137 Hildesheim",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\""
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "no",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "no",
+      "KGNL": "no",
+      "S322A": "no",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "no",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "no",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "yes",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "equipmentConflicts": {
+      "S459A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S5DNA": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S420A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S6C4A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S430A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S493A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S521A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S524A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S265A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      },
+      "S302A": {
+        "mobile.de": "yes",
+        "WELLER": "no"
+      }
+    },
+    "listingDates": {
+      "createdTime": "2026-05-16T18:06:12.000Z",
+      "modifiedTime": "2026-08-11T17:50:16.000Z",
+      "renewedTime": "2026-05-16T18:06:12.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-16T18:06:12.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-05-16T18:06:12.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-05-17T16:36:46.617Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 52450,
+            "new": 51850
+          },
+          "sellerTypeOrName": {
+            "old": "WELLER Premium GmbH ★4.5",
+            "new": "WELLER Premium GmbH ★4.6"
+          }
+        },
+        "auditDate": "2026-05-21T20:52:53.092Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 51850,
+            "new": 51250
+          }
+        },
+        "auditDate": "2026-06-11T19:39:48.769Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 51250,
+            "new": 50950
+          }
+        },
+        "auditDate": "2026-06-19T21:48:33.786Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "sellerTypeOrName": {
+            "old": "WELLER Premium GmbH ★4.6",
+            "new": "WELLER Premium GmbH ★4.7"
+          },
+          "equipmentFeatures.S420A": {
+            "old": "no",
+            "new": "yes"
+          }
+        },
+        "auditDate": "2026-07-11T22:39:27.764Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 50950,
+            "new": 49950
+          }
+        },
+        "auditDate": "2026-07-24T19:38:13.709Z"
+      },
+      {
+        "action": "İlan Güncellemesi (Otomatik)",
+        "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+        "changes": {
+          "basePriceEuro": {
+            "old": 49950,
+            "new": 49450
+          }
+        },
+        "auditDate": "2026-07-31T17:36:34.431Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "WELLER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-432996113/"
+          }
+        },
+        "auditDate": "2026-08-07T19:36:20.527Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": null,
+            "new": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:51.713Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "WELLER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              }
+            },
+            "new": {
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:00:52.674Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": {
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            },
+            "new": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-07T20:15:43.251Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "WELLER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "equipmentConflicts": {
+            "old": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              }
+            },
+            "new": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              },
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-10T07:14:25.951Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrls": {
+            "old": null,
+            "new": [
+              "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9354-d084-7bdf-a685-15f4e433b427"
+            ]
+          },
+          "dealerReportedDamage": {
+            "old": null,
+            "new": {
+              "source": "BMW_DE",
+              "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+            }
+          },
+          "equipmentConflicts": {
+            "old": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              },
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            },
+            "new": {
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-13T10:57:02.493Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
+        "detail": "BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\"",
+        "changes": null,
+        "auditDate": "2026-08-13T19:51:35.779Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

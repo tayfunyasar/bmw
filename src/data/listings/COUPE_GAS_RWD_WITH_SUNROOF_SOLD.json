@@ -949,7 +949,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-a-coupe-gsd-ahk-standhzg-lcprof-dab-memmingen/456216212.html",
     "mobileDeId": "456216212",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C263",
     "exteriorColorName": "Saphirschwarz metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Other, Black",
@@ -979,7 +979,9 @@
     "listingLocation": "🇩🇪 DE-87700 Memmingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C263 — tescil 2021/12 + ~46169km + ~€47990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Reisacher GmbH ★4.1\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -1066,6 +1068,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.152Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C263 — tescil 2021/12 + ~46169km + ~€47990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Reisacher GmbH ★4.1\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C263"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.168Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

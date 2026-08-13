@@ -591,7 +591,7 @@
     "nextInspectionDate": "?",
     "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.5",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 173,
     "listingLocation": "🇩🇪 DE-88131 Lindau",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
@@ -889,6 +889,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.082Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 173
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.183Z"
       }
     ],
     "cardThemeColorHex": "#fb7185",
@@ -1535,7 +1546,8 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true",
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C212 — tescil 2021/4 + ~50015km + ~€45799 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Unknown Dealer\")"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -1600,13 +1612,25 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-05-05T14:36:31.771Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C212 — tescil 2021/4 + ~50015km + ~€45799 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Unknown Dealer\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C212"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.173Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "modelGenerationCertain": true,
-    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
+    "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+    "possibleTwinOf": "C212"
   },
   {
     "listingId": "C284",
@@ -2256,7 +2280,8 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Bei diesem Fahrzeug handelt es sich um einen Reimport mit einem instandgesetzten Vorschaden\""
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Bei diesem Fahrzeug handelt es sich um einen Reimport mit einem instandgesetzten Vorschaden\"",
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C129 — tescil 2023/9 + ~6852km + ~€55990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Ai-Quakenbrücker-Automobile GmbH ★4.6\" vs \"Ai-Quakenbrücker-Automobile GmbH ★4.5\")"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -2321,13 +2346,25 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-07T20:36:07.455Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C129 — tescil 2023/9 + ~6852km + ~€55990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Ai-Quakenbrücker-Automobile GmbH ★4.6\" vs \"Ai-Quakenbrücker-Automobile GmbH ★4.5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C129"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.173Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null,
     "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
     "modelGenerationCertain": true,
-    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "possibleTwinOf": "C129"
   },
   {
     "listingId": "C620",
@@ -3035,7 +3072,8 @@
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
     "listingDescriptionNotes": [
-      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Vorschaden bekannt\""
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Vorschaden bekannt\"",
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C297 — tescil 2021/7 + ~39354km + ~€42900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"FF Performance ★4.6\" vs \"FF Performance ★4.3\")"
     ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
@@ -3094,10 +3132,22 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-10T10:12:46.813Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C297 — tescil 2021/7 + ~39354km + ~€42900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"FF Performance ★4.6\" vs \"FF Performance ★4.3\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C297"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.173Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
+    "aiCommentary": null,
+    "possibleTwinOf": "C297"
   },
   {
     "listingId": "C960",
@@ -3288,6 +3338,135 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-11T13:29:01.867Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C972",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-sportpaket-navi-leder-digital-frankfurt/39482249765056.html",
+    "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e930c-fa95-749a-a5b5-b7c61c696a17",
+    "mobileDeId": "39482249765056",
+    "vin": null,
+    "possibleTwinOf": null,
+    "dealerReportedDamage": {
+      "source": "BMW_DE",
+      "reason": "Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\""
+    },
+    "exteriorColorName": "Brooklyn Grau metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Blue",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 52999,
+    "mileageKm": 43046,
+    "firstRegistrationYearAndMonth": [
+      2024,
+      6
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "New",
+    "sellerTypeOrName": "Euler Group Frankfurt Gebrauchtwagen-Zentrum Hanauer Landstr. ★4.2",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 186,
+    "listingLocation": "🇩🇪 DE-60314 Frankfurt",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — BMW_DE ilanında beyan edildi: \"Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\"\""
+    ],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "no",
+      "S5DN_360": "yes",
+      "KGNL": "yes",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "yes",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-12T03:07:22.000Z",
+      "modifiedTime": "2026-08-12T05:21:15.000Z",
+      "renewedTime": "2026-08-12T03:07:22.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-12T03:07:22.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-12T07:02:13.141Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrl": {
+            "old": null,
+            "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e930c-fa95-749a-a5b5-b7c61c696a17"
+          },
+          "dealerReportedDamage": {
+            "old": null,
+            "new": {
+              "source": "BMW_DE",
+              "reason": "Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\""
+            }
+          }
+        },
+        "auditDate": "2026-08-13T10:48:51.408Z"
+      },
+      {
+        "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
+        "detail": "BMW_DE ilanında beyan edildi: \"Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\"\"",
+        "changes": null,
+        "auditDate": "2026-08-13T10:50:23.638Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

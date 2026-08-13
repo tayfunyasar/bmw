@@ -3,9 +3,11 @@
     "listingId",
     "listingUrl",
     "dealerListingUrl",
+    "dealerListingUrls",
     "mobileDeId",
     "vin",
     "possibleTwinOf",
+    "dealerReportedDamage",
     "exteriorColorName",
     "exteriorPaintLabel",
     "interiorColorName",
@@ -88,10 +90,12 @@
     "DELETED_CARS.json",
     "GRAN_COUPE.json",
     "CABRIO.json",
-    "LITHUANIA.json"
+    "LITHUANIA.json",
+    "CABRIO_KAZALI.json"
   ],
   "allFiles": [
     "CABRIO.json",
+    "CABRIO_KAZALI.json",
     "COUPE_DIESEL_WITH_SUNROOF.json",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD.json",

@@ -10,21 +10,51 @@
 //   - overrideFeatures'taki kodlara ASLA dokunulmaz
 // Kok kaydin fiyat/km/renk gibi alanlari degistirilmez — mobile.de kanonik kalir.
 
-export function mergeTwinIntoRoot(rootCar, { dealerListingUrl, vin, freshEquipment, source }) {
+import { isEmptyFieldValue } from './parse-listing.js';
+
+const overridesOf = (car) => car.overrideFeatures || {};
+
+export function mergeTwinIntoRoot(rootCar, { dealerListingUrl, vin, freshEquipment, source, fields, damageReason }) {
   const changes = {};
   // KESIN-vs-KESIN zit donanim celiskileri (yes↔no): veri DEGISTIRILMEZ ama
   // sessizce de yutulmaz — audit'e ve karta not olarak islenir. (Eksik-veri
   // farklari — unknown/bos taraf — celiski sayilmaz; bayi listeleri eksik olabilir.)
   const conflicts = [];
-  if (!rootCar.dealerListingUrl && dealerListingUrl) {
-    rootCar.dealerListingUrl = dealerListingUrl;
-    changes.dealerListingUrl = { old: null, new: dealerListingUrl };
+  if (dealerListingUrl) {
+    if (!rootCar.dealerListingUrl) {
+      rootCar.dealerListingUrl = dealerListingUrl;
+      changes.dealerListingUrl = { old: null, new: dealerListingUrl };
+    } else if (rootCar.dealerListingUrl !== dealerListingUrl) {
+      // IKINCI bayi: birincil URL EZILMEZ, ek liste birikir. Boylece ayni arac
+      // her iki sitenin taramasinda da "existing" olarak taninir (C264 vakasi).
+      const urls = rootCar.dealerListingUrls || [];
+      if (!urls.includes(dealerListingUrl)) {
+        rootCar.dealerListingUrls = [...urls, dealerListingUrl];
+        changes.dealerListingUrls = { old: urls.length ? urls : null, new: rootCar.dealerListingUrls };
+      }
+    }
   }
   if (!rootCar.vin && vin) {
     rootCar.vin = vin;
     changes.vin = { old: null, new: vin };
   }
-  const overrides = rootCar.overrideFeatures || {};
+  // GENEL KURAL: bayide bilgi VAR, mobile.de'de YOK ise bayi kazanir. Dolu bir
+  // mobile.de degeri ASLA ezilmez (celiski varsa asagida equipmentConflicts'e duser).
+  for (const [key, value] of Object.entries(fields || {})) {
+    if (overridesOf(rootCar)[key]) continue;            // manuel karar dokunulmaz
+    if (isEmptyFieldValue(value)) continue;             // bayi de bilmiyorsa gec
+    if (!isEmptyFieldValue(rootCar[key])) continue;     // mobile.de biliyorsa dokunma
+    changes[key] = { old: rootCar[key] ?? null, new: value };
+    rootCar[key] = value;
+  }
+  // Hasar beyani da ayni kurala tabidir: bayi kendi sayfasinda "Unfallvorschaden: Ja"
+  // diyor ve mobile.de ilaninda hasar beyani YOKSA, bayi beyani gecerlidir.
+  // Yonlendirme karari route-listing.js'de — burada yalnizca sinyal yazilir.
+  if (damageReason && !rootCar.dealerReportedDamage) {
+    rootCar.dealerReportedDamage = { source, reason: damageReason };
+    changes.dealerReportedDamage = { old: null, new: rootCar.dealerReportedDamage };
+  }
+  const overrides = overridesOf(rootCar);
   // KAYNAK-BAZLI birikim: bir kayda birden fazla bayi baglanabilir (C264: WELLER +
   // BMW_DE). Her sync yalniz KENDI kaynaginin girdilerini gunceller/siler — baska
   // kaynagin tespit ettigi celiskiyi ASLA ezmez ("son yazan kazanir" yasak).

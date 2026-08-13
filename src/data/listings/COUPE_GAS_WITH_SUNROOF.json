@@ -614,9 +614,16 @@
     "listingId": "C186",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-shadow-line-waldshut-tiengen/453077509.html",
     "dealerListingUrl": "https://www.gottstein-gruppe.de/de/fahrzeugangebot/#!/vehicles/6678460/BMW_M440i_xDrive_Coupé_M_Shadow_Line_SANREMO_GREEN",
+    "dealerListingUrls": [
+      "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92f7-a075-77ff-9808-20e0f7bc3306"
+    ],
     "mobileDeId": "453077509",
     "vin": "WBA11AR040CL79154",
     "possibleTwinOf": null,
+    "dealerReportedDamage": {
+      "source": "BMW_DE",
+      "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+    },
     "exteriorColorName": "SANREMO GREEN",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -697,20 +704,6 @@
       "S216A": "yes",
       "S302A": "yes",
       "S4NHA": "no"
-    },
-    "equipmentConflicts": {
-      "S521A": {
-        "mobile.de": "yes",
-        "BMW_DE": "no"
-      },
-      "S524A": {
-        "mobile.de": "yes",
-        "BMW_DE": "no"
-      },
-      "S216A": {
-        "mobile.de": "yes",
-        "BMW_DE": "no"
-      }
     },
     "listingDates": {
       "createdTime": "2026-04-14T10:16:04.000Z",
@@ -850,6 +843,43 @@
           }
         },
         "auditDate": "2026-08-08T10:12:38.023Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrls": {
+            "old": null,
+            "new": [
+              "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92f7-a075-77ff-9808-20e0f7bc3306"
+            ]
+          },
+          "dealerReportedDamage": {
+            "old": null,
+            "new": {
+              "source": "BMW_DE",
+              "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+            }
+          },
+          "equipmentConflicts": {
+            "old": {
+              "S521A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              },
+              "S216A": {
+                "mobile.de": "yes",
+                "BMW_DE": "no"
+              }
+            },
+            "new": null
+          }
+        },
+        "auditDate": "2026-08-13T10:57:02.490Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1139,9 +1169,16 @@
     "listingId": "C264",
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ixdr-coupe-m-sport-pro-livepro-st-go-gsd-19-hildesheim/455957164.html",
     "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-432996113/",
+    "dealerListingUrls": [
+      "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9354-d084-7bdf-a685-15f4e433b427"
+    ],
     "mobileDeId": "455957164",
     "vin": null,
     "possibleTwinOf": null,
+    "dealerReportedDamage": {
+      "source": "BMW_DE",
+      "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+    },
     "exteriorColorName": "Black Sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather",
@@ -1213,10 +1250,6 @@
       "S4NHA": "no"
     },
     "equipmentConflicts": {
-      "KGNL": {
-        "mobile.de": "no",
-        "BMW_DE": "yes"
-      },
       "S459A": {
         "mobile.de": "yes",
         "WELLER": "no"
@@ -1557,6 +1590,116 @@
           }
         },
         "auditDate": "2026-08-10T07:14:25.951Z"
+      },
+      {
+        "action": "Bayi Kaydıyla Birleştirildi",
+        "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+        "changes": {
+          "dealerListingUrls": {
+            "old": null,
+            "new": [
+              "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9354-d084-7bdf-a685-15f4e433b427"
+            ]
+          },
+          "dealerReportedDamage": {
+            "old": null,
+            "new": {
+              "source": "BMW_DE",
+              "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+            }
+          },
+          "equipmentConflicts": {
+            "old": {
+              "KGNL": {
+                "mobile.de": "no",
+                "BMW_DE": "yes"
+              },
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            },
+            "new": {
+              "S459A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S5DNA": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S420A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S6C4A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S430A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S493A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S521A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S524A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S265A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              },
+              "S302A": {
+                "mobile.de": "yes",
+                "WELLER": "no"
+              }
+            }
+          }
+        },
+        "auditDate": "2026-08-13T10:57:02.493Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1567,7 +1710,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/456054682.html",
     "mobileDeId": "456054682",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C235",
     "exteriorColorName": "Fire Red",
     "exteriorPaintLabel": null,
     "interiorColorName": "Cloth, Black",
@@ -1597,7 +1740,9 @@
     "listingLocation": "🇩🇪 DE-53474 Bad Neuenahr",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C235 — tescil 2024/7 + ~51584km + ~€55900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Baum Automobile GmbH & Co. KG ★4.4\" vs \"Baum Automobile GmbH & Co. KG ★4.5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -1707,6 +1852,17 @@
         "detail": null,
         "changes": null,
         "auditDate": "2026-08-06T01:00:21.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C235 — tescil 2024/7 + ~51584km + ~€55900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Baum Automobile GmbH & Co. KG ★4.4\" vs \"Baum Automobile GmbH & Co. KG ★4.5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C235"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2366,7 +2522,7 @@
     "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9316-a53f-77bc-a2cc-7d7af8c55715",
     "mobileDeId": "460144483",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C295",
     "exteriorColorName": "Saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -2396,7 +2552,9 @@
     "listingLocation": "🇩🇪 DE-57610 Altenkirchen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C295 — tescil 2023/5 + ~43500km + ~€49900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Hakvoort GmbH ★5\" vs \"Stefan Lö\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -2533,6 +2691,17 @@
           }
         },
         "auditDate": "2026-08-07T20:00:51.703Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C295 — tescil 2023/5 + ~43500km + ~€49900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Hakvoort GmbH ★5\" vs \"Stefan Lö\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C295"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2692,7 +2861,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ia-xdrive-coupe-unfallfrei-deutsch-laser-2hd-nieder-olm-bei-mainz/460824379.html",
     "mobileDeId": "460824379",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C295",
     "exteriorColorName": "MINERALWEISS MET.",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -2722,7 +2891,9 @@
     "listingLocation": "🇩🇪 DE-55268 Nieder Olm (bei Mainz)",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C295 — tescil 2023/5 + ~43500km + ~€49900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"EXKLUSIV Automobile by D&D GmbH ★4.8\" vs \"Stefan Lö\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -2786,6 +2957,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-17T07:02:50.760Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C295 — tescil 2023/5 + ~43500km + ~€49900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"EXKLUSIV Automobile by D&D GmbH ★4.8\" vs \"Stefan Lö\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C295"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3428,7 +3610,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-wiehl/460835546.html",
     "mobileDeId": "460835546",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3458,7 +3640,9 @@
     "listingLocation": "🇩🇪 DE-51674 Wiehl",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co KG BMW und MINI Vertragshändler ★4.6\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -3528,6 +3712,17 @@
         "detail": "Elle teyit — önceki: Pre-LCI (certain=false)",
         "changes": null,
         "auditDate": "2026-08-01T20:56:43.252Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co KG BMW und MINI Vertragshändler ★4.6\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3538,7 +3733,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-arnsberg/460836062.html",
     "mobileDeId": "460836062",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -3568,7 +3763,9 @@
     "listingLocation": "🇩🇪 DE-59823 Arnsberg",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.6\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -3638,6 +3835,17 @@
         "detail": "Elle teyit — önceki: Pre-LCI (certain=false)",
         "changes": null,
         "auditDate": "2026-08-01T20:56:43.258Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.6\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3648,7 +3856,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-bergisch-gladbach/460836071.html",
     "mobileDeId": "460836071",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "schwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -3678,7 +3886,9 @@
     "listingLocation": "🇩🇪 DE-51469 Bergisch Gladbach",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.4\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -3748,6 +3958,17 @@
         "detail": "Elle teyit — önceki: Pre-LCI (certain=false)",
         "changes": null,
         "auditDate": "2026-08-01T20:56:43.258Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.4\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3900,7 +4121,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360-bad-wiessee/460946803.html",
     "mobileDeId": "460946803",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C788",
     "exteriorColorName": "saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3930,7 +4151,9 @@
     "listingLocation": "🇩🇪 DE-83707 Bad Wiessee",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C788 — tescil 2025/6 + ~11385km + ~€65890 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Unterberger GmbH ★4.8\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -3994,6 +4217,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.694Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C788 — tescil 2025/6 + ~11385km + ~€65890 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Unterberger GmbH ★4.8\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C788"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4218,7 +4452,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-facel-360-led-hud-acc-ahk-navi-wipperf%C3%BCrth-h%C3%A4mmern/461444577.html",
     "mobileDeId": "461444577",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Brown",
@@ -4248,7 +4482,9 @@
     "listingLocation": "🇩🇪 DE-51688 Wipperfürth/Hämmern",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co. KG BMW Vertragshändler ★4.4\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -4312,6 +4548,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.707Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co. KG BMW Vertragshändler ★4.4\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4578,7 +4825,7 @@
     "sellerTypeOrName": "BMW AG Niederlassung Dreieich ★4.5",
     "modelGeneration": "LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 165,
     "listingLocation": "🇩🇪 DE-63303 Dreieich-Sprendlingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -4657,6 +4904,17 @@
           }
         },
         "auditDate": "2026-08-08T10:12:51.154Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 165
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.180Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5016,7 +5274,7 @@
     "sellerTypeOrName": "Procar Automobile Wuppertal GmbH & Co. KG ★4.5",
     "modelGeneration": "Pre-LCI",
     "modelGenerationCertain": false,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 177,
     "listingLocation": "🇩🇪 DE-42117 Wuppertal",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -5282,6 +5540,17 @@
           }
         },
         "auditDate": "2026-08-10T10:13:48.949Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 177
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.180Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -5292,7 +5561,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-wermelskirchen/462182100.html",
     "mobileDeId": "462182100",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -5322,7 +5591,9 @@
     "listingLocation": "🇩🇪 DE-42929 Wermelskirchen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co.KG BMW und MINI Vertragshändler ★5\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -5401,6 +5672,17 @@
           }
         },
         "auditDate": "2026-08-06T07:05:10.499Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co.KG BMW und MINI Vertragshändler ★5\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -6260,7 +6542,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-werdohl/38667719922400.html",
     "mobileDeId": "38667719922400",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "black sapphire",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -6290,7 +6572,9 @@
     "listingLocation": "🇩🇪 DE-58791 Werdohl",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kaltenbach Automobile GmbH BMW Vertragshändler ★4.3\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -6369,6 +6653,17 @@
           }
         },
         "auditDate": "2026-08-11T16:40:10.658Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kaltenbach Automobile GmbH BMW Vertragshändler ★4.3\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -6587,7 +6882,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-olpe/39163743926400.html",
     "mobileDeId": "39163743926400",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C753",
     "exteriorColorName": "dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -6617,7 +6912,9 @@
     "listingLocation": "🇩🇪 DE-57462 Olpe",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kaltenbach Automobile GmbH  Co. KG BMW und MINI Vertragshändler ★4.7\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -6675,6 +6972,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-10T10:12:46.812Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kaltenbach Automobile GmbH  Co. KG BMW und MINI Vertragshändler ★4.7\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C753"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.171Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -6773,104 +7081,6 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-11T13:29:01.862Z"
-      }
-    ],
-    "cardThemeColorHex": "#94a3b8",
-    "aiCommentary": null
-  },
-  {
-    "listingId": "C972",
-    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-sportpaket-navi-leder-digital-frankfurt/39482249765056.html",
-    "mobileDeId": "39482249765056",
-    "vin": null,
-    "possibleTwinOf": null,
-    "exteriorColorName": "Brooklyn Grau metallic",
-    "exteriorPaintLabel": null,
-    "interiorColorName": "Full leather, Blue",
-    "drivetrainType": "xDrive AWD",
-    "drivetrainCertain": true,
-    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-    "basePriceEuro": 52999,
-    "mileageKm": 43046,
-    "firstRegistrationYearAndMonth": [
-      2024,
-      6
-    ],
-    "numberOfPreviousOwners": "1",
-    "warranty": {
-      "exists": "yes"
-    },
-    "service": {
-      "type": "yes",
-      "history": []
-    },
-    "nextInspectionDate": "New",
-    "sellerTypeOrName": "Euler Group Frankfurt Gebrauchtwagen-Zentrum Hanauer Landstr. ★4.2",
-    "modelGeneration": "LCI",
-    "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 186,
-    "listingLocation": "🇩🇪 DE-60314 Frankfurt",
-    "curatorPickBadge": null,
-    "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
-    "listingAdditionalFeatures": [],
-    "equipmentFeatures": {
-      "S403A": "yes",
-      "S5AZA": "yes",
-      "S5AUA": "yes",
-      "S688A": "yes",
-      "S2T4A": "yes",
-      "S610A": "no",
-      "S5DN_360": "yes",
-      "KGNL": "yes",
-      "S322A": "yes",
-      "S2VFA": "no",
-      "S459A": "yes",
-      "S5DNA": "yes",
-      "S6U3A": "yes",
-      "S715A": "yes",
-      "S2VLA": "no",
-      "S494A": "yes",
-      "S248A": "yes",
-      "S420A": "yes",
-      "S1MAA": "yes",
-      "S5ACA": "yes",
-      "S6C4A": "yes",
-      "S430A": "yes",
-      "S4AWA": "no",
-      "S775A": "no",
-      "S493A": "yes",
-      "S536A": "no",
-      "S2NHA": "yes",
-      "S3ACA": "no",
-      "S3ADA": "no",
-      "S3AGA": "no",
-      "S488A": "yes",
-      "S521A": "yes",
-      "S524A": "yes",
-      "S265A": "yes",
-      "S216A": "no",
-      "S302A": "yes",
-      "S4NHA": "no"
-    },
-    "listingDates": {
-      "createdTime": "2026-08-12T03:07:22.000Z",
-      "modifiedTime": "2026-08-12T05:21:15.000Z",
-      "renewedTime": "2026-08-12T03:07:22.000Z"
-    },
-    "auditHistory": [
-      {
-        "action": "İlan Yayınlandı (mobile.de)",
-        "detail": null,
-        "changes": null,
-        "auditDate": "2026-08-12T03:07:22.000Z"
-      },
-      {
-        "action": "İlan Eklendi",
-        "detail": "Sistem tarafından kayıt altına alındı",
-        "changes": null,
-        "auditDate": "2026-08-12T07:02:13.141Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

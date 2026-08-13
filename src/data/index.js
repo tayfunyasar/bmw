@@ -20,6 +20,7 @@ import deletedCars from './listings/DELETED_CARS.json';
 import granCoupe from './listings/GRAN_COUPE.json';
 import granCoupeKazaliListings from './listings/GRAN_COUPE_KAZALI.json';
 import cabrioListings from './listings/CABRIO.json';
+import cabrioKazaliListings from './listings/CABRIO_KAZALI.json';
 import cakalListings from './listings/COUPE_GAS_WITH_SUNROOF_CAKAL.json';
 import kazaliListings from './listings/COUPE_GAS_WITH_SUNROOF_KAZALI.json';
 import bpmData from './metadata/BPM_DATA.json';
@@ -63,6 +64,7 @@ export {
   granCoupe,
   granCoupeKazaliListings,
   cabrioListings,
+  cabrioKazaliListings,
   cakalListings,
   kazaliListings,
   bpmData,

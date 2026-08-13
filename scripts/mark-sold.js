@@ -1,4 +1,4 @@
-import { moveListing, DEFAULT_SOURCE_FILES, soldArchiveFor } from './lib/move-listing.js';
+import { moveListing, DEFAULT_SOURCE_FILES, dealerSourceFiles, dealerSoldArchiveFor } from './lib/move-listing.js';
 import { pushSoldAudit } from './lib/sold.js';
 
 const id = process.argv[2];
@@ -9,8 +9,14 @@ if (!id) {
 
 const result = moveListing({
   id,
-  sourceFiles: [...DEFAULT_SOURCE_FILES, 'CABRIO.json'],
-  pickArchive: (sourceFile, car) => soldArchiveFor(car),
+  // Kok gövde dosyalari + kazalilar + TUM bayi alt klasorleri.
+  sourceFiles: [
+    ...DEFAULT_SOURCE_FILES,
+    'CABRIO.json', 'CABRIO_KAZALI.json',
+    'COUPE_GAS_WITH_SUNROOF_KAZALI.json', 'GRAN_COUPE_KAZALI.json',
+    ...dealerSourceFiles()
+  ],
+  pickArchive: (sourceFile, car) => dealerSoldArchiveFor(sourceFile, car),
   mutateCar: (car, { sourceFile }) => pushSoldAudit(car, sourceFile)
 });
 

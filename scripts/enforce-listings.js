@@ -8,6 +8,8 @@ const __dirname = path.dirname(__filename);
 // Şema (anahtar sırası) + dosya listesi veri olarak LISTING_FILES.json'da (config-driven).
 const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
 const ROOT_KEYS_ORDER = LISTING_FILES.rootKeysOrder;
+// Yalnizca DOLU oldugunda yazilan alanlar (yoksa anahtar hic olusmaz).
+const OPTIONAL_KEYS = new Set(['dealerListingUrl', 'dealerListingUrls', 'dealerReportedDamage', 'equipmentConflicts']);
 const EQUIP_KEYS_ORDER = LISTING_FILES.equipKeysOrder;
 
 const listingsDir = path.resolve(__dirname, '../src/data/listings');
@@ -51,10 +53,13 @@ function formatListing(listing, index, filename) {
         newEquip[eqKey] = oldEquip[eqKey] !== undefined ? oldEquip[eqKey] : 'unknown';
       }
       newListing[key] = newEquip;
-    } else if (key === 'dealerListingUrl') {
-      if (listing.dealerListingUrl) {
-        newListing[key] = listing.dealerListingUrl;
-      }
+    } else if (OPTIONAL_KEYS.has(key)) {
+      // Bos/yok ise alan HIC yazilmaz — kayitlar null gurultusuyle sismesin.
+      const v = listing[key];
+      const empty = v === null || v === undefined || v === ''
+        || (Array.isArray(v) && v.length === 0)
+        || (typeof v === 'object' && !Array.isArray(v) && Object.keys(v).length === 0);
+      if (!empty) newListing[key] = v;
     } else if (key === 'listingDates') {
       if (listing.listingDates) {
         newListing[key] = {
@@ -62,11 +67,6 @@ function formatListing(listing, index, filename) {
           modifiedTime: listing.listingDates.modifiedTime || null,
           renewedTime: listing.listingDates.renewedTime || null
         };
-      }
-    } else if (key === 'equipmentConflicts') {
-      // Bayi-kaynak zit celiskileri: yoksa alan hic yazilmaz (dealerListingUrl gibi).
-      if (listing.equipmentConflicts && Object.keys(listing.equipmentConflicts).length) {
-        newListing[key] = listing.equipmentConflicts;
       }
     } else if (key === 'overrideFeatures') {
       if (listing.overrideFeatures) {

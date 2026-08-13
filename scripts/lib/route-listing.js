@@ -38,7 +38,13 @@ export function determineTargetFile(car, rawCar) {
   const apifyCategory = rawCarApifyCategory(rawCar);
   const bodyStyle = classifyBodyStyle(textObj, { apifyCategory });
   const isDiesel = (rawCar.properties?.fuelType || "").toLowerCase().includes("diesel") || /m440d/i.test(rawCar.title || "");
-  const damageReason = detectDamageReason(rawCar);
+  // Hasar sinyali iki kaynaktan gelebilir: (1) ilanin kendi metni, (2) AYNI aracin
+  // bayi sayfasindaki beyani. Bayide bilgi varken mobile.de'de yoksa bayi kazanir —
+  // merge-twin.js bunu car.dealerReportedDamage'a yazar.
+  const damageReason = detectDamageReason(rawCar)
+    || (car.dealerReportedDamage
+        ? `${car.dealerReportedDamage.source} ilanında beyan edildi: "${car.dealerReportedDamage.reason}"`
+        : null);
 
   // Ulke dislamasi HER SEYDEN ONCE — govde/hasar/tahrike bakilmaz.
   const excludedTarget = COUNTRY_EXCLUDED_FILES[rawCar.dealer?.contry];
@@ -46,7 +52,11 @@ export function determineTargetFile(car, rawCar) {
     return { target: excludedTarget.replace(/\.json$/, ''), reason: `${rawCar.dealer.contry} ülkesinden — kapsam dışı` };
   }
 
-  if (bodyStyle === 'CABRIO') return { target: 'CABRIO' };
+  if (bodyStyle === 'CABRIO') {
+    return damageReason
+      ? { target: 'CABRIO_KAZALI', reason: damageReason }
+      : { target: 'CABRIO' };
+  }
   if (bodyStyle === 'GRAN_COUPE') {
     return damageReason
       ? { target: 'GRAN_COUPE_KAZALI', reason: damageReason }

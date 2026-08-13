@@ -200,7 +200,7 @@
     "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=448868696",
     "mobileDeId": "448868696",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C5",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -232,7 +232,9 @@
     "curatorPersonalNotes": [
       "€48,990 | 🚫 cam tavan yok"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -285,6 +287,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C5"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#f43f5e",
@@ -966,7 +979,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449395483",
     "mobileDeId": "449395483",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C5",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -998,7 +1011,9 @@
     "curatorPersonalNotes": [
       "€48,950 (📉 €51,510'dan düştü!) | 🔙 RWD DOĞRULANDI (Heckantrieb + 2,190kg). Near-full spec + Sunroof ama arka çekişli. WELLER ★4.7. Brooklyn Grau+Vernasca Siyah. DA+ Pro, Laser, HUD, HK, 360°, M Diff, M Brake, Adaptive M, VSS, Seat Ventilation, ACC Stop&Go. Tablodaki en iyi donanımlı araçtı — çok yazık!"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "unknown",
@@ -1051,6 +1066,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C5"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#fb7185",
@@ -1346,7 +1372,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449623112",
     "mobileDeId": "449623112",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C5",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -1378,7 +1404,9 @@
     "curatorPersonalNotes": [
       "€48,990 | 🔙 RWD + 🚫 Carbon Dach (sunroof yok). Laser, HUD, H/K, Innovationsp., NP €83K"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -1431,6 +1459,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C5"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1441,7 +1480,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449574184",
     "mobileDeId": "449574184",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C9",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -1473,7 +1512,9 @@
     "curatorPersonalNotes": [
       "€45,990 | 🔧 fotoğraflarda kaza izi (ilanda belirtilmemiş). xDrive, Sunroof var, 360°, M Sportsitze"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C9 — tescil / + ~0km + ~€45950 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -1526,6 +1567,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C9 — tescil / + ~0km + ~€45950 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C9"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1821,7 +1873,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443634060",
     "mobileDeId": "443634060",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C42",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -1853,7 +1905,9 @@
     "curatorPersonalNotes": [
       "€49,900 | 🔙 RWD + 🚫 cam tavan yok. 2 kapı Coupé (G22), San Remo Green, Laser, H/K. 🇨🇿 Çek bayi ★1.0, mobile.de metadata hatalı (G26/4kapı yazmış ama araç 2 kapı)"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -1912,6 +1966,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C42"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -1922,7 +1987,7 @@
     "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=448758810",
     "mobileDeId": "448758810",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C42",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -1954,7 +2019,9 @@
     "curatorPersonalNotes": [
       "€49,999 | 🚫 cam tavan yok (kullanıcı doğruladı). 3J.Garantie, 1.Hand, VOLL, HUD"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -2007,6 +2074,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C42"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2207,7 +2285,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=447956215",
     "mobileDeId": "447956215",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "id=445261940",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -2239,7 +2317,9 @@
     "curatorPersonalNotes": [
       "€52,590 | 🚫 cam tavan yok + 💰 LCI BPM ~€11K → toplam ~€63,590 (limit aşımı). G22 xDrive, Dravitgrau+Alcantara Siyah, Laser, HK, M Diff, Adaptive M, VSS, Sport Exhaust, M Sport Pro, 48V. Kaltenbach ★4.4"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: id=445261940 — tescil / + ~0km + ~€52480 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -2292,6 +2372,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: id=445261940 — tescil / + ~0km + ~€52480 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "id=445261940"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -2397,7 +2488,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445433481",
     "mobileDeId": "445433481",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "id=445261940",
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -2429,7 +2520,9 @@
     "curatorPersonalNotes": [
       "€52,700 | 🔙 RWD (başlıkta \"Heckantrieb\") + 🚫 cam tavan yok + 💰 LCI limit aşımı. Aftermarket CS böbrek+splitter. Özel satıcı. Mavi+Gri deri"
     ],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: id=445261940 — tescil / + ~0km + ~€52480 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -2482,6 +2575,17 @@
         "detail": "Araç kriterlere uygun bulunmadı",
         "changes": null,
         "auditDate": "2026-03-01T12:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: id=445261940 — tescil / + ~0km + ~€52480 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "id=445261940"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.177Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

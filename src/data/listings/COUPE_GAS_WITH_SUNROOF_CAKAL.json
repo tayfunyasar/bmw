@@ -134,7 +134,8 @@
       "🔥 S33T Motorsport Engineering Package (nadir!)",
       "BMW PS garanti 02/2026–02/2028 + Service inkl. 2028/90K",
       "1.sahip BMW AG (9K km'den itibaren)",
-      "Sadece el yıkama + yıllık profesyonel bakım"
+      "Sadece el yıkama + yıllık profesyonel bakım",
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"?\")"
     ],
     "listingAdditionalFeatures": [
       "H&R sportfedern+spurverbreiterung (seri parçalar mevcut, eingetragen)"
@@ -455,6 +456,17 @@
           }
         },
         "auditDate": "2026-08-02T19:24:22.609Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C42"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.172Z"
       }
     ],
     "cardThemeColorHex": "#c084fc",
@@ -473,7 +485,8 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false
+    "modelGenerationCertain": false,
+    "possibleTwinOf": "C42"
   },
   {
     "listingId": "C23",
@@ -499,7 +512,7 @@
     "nextInspectionDate": "?",
     "sellerTypeOrName": "MEYER-HAFNER GmbH ★4.6",
     "modelGeneration": "Pre-LCI",
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 183,
     "listingLocation": "🇦🇹 AT-9020 Klagenfurt",
     "curatorPickBadge": "👑",
     "curatorPersonalNotes": [],
@@ -699,6 +712,17 @@
           }
         },
         "auditDate": "2026-08-02T19:24:22.607Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 183
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.182Z"
       }
     ],
     "cardThemeColorHex": "#f472b6",

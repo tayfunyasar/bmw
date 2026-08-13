@@ -10,6 +10,16 @@ import path from 'path';
 import { walkListingFiles, listingsDir } from './listing-id.js';
 import { loadDealerSites, dealerKeyFor } from './dealer-sites.js';
 
+// Bir kaydin TUM bayi ilan URL'leri. `dealerListingUrl` birincil (geriye donuk
+// uyumluluk + UI'daki tek link), `dealerListingUrls` ek sitelerin URL'leri.
+// Tek kaynak: index, merge-twin ve enforce bunu kullanir.
+export function dealerUrlsOf(car) {
+  const out = [];
+  if (car?.dealerListingUrl) out.push(car.dealerListingUrl);
+  for (const u of car?.dealerListingUrls || []) if (u && !out.includes(u)) out.push(u);
+  return out;
+}
+
 export function buildExistingIndex(dir = listingsDir) {
   const byMobileDeId = new Map();
   const byVin = new Map();
@@ -25,11 +35,14 @@ export function buildExistingIndex(dir = listingsDir) {
       const hit = { file: rel, listingId: car.listingId || null };
       if (car?.mobileDeId) byMobileDeId.set(String(car.mobileDeId), hit);
       if (car?.vin) byVin.set(String(car.vin).toUpperCase(), hit);
-      if (car?.dealerListingUrl) {
+      // Bir arac BIRDEN COK bayide listelenebilir (C264: WELLER + BMW_DE). Tek
+      // dealerListingUrl indekslemek yetmiyordu: ikinci sitenin URL'si hicbir zaman
+      // anahtara donusmedigi icin ayni arac her taramada "new" gorunuyordu.
+      for (const url of dealerUrlsOf(car)) {
         // Hangi siteye ait oldugunu URL'den bilemeyiz; her site config'iyle anahtar uret.
         // dealerKeyFor pattern eslesmezse URL-fallback dondurur — o da tekildir.
         for (const site of sites) {
-          const key = dealerKeyFor(site, car.dealerListingUrl);
+          const key = dealerKeyFor(site, url);
           if (key && !byDealerKey.has(key)) byDealerKey.set(key, hit);
         }
       }

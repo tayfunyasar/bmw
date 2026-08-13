@@ -1,0 +1,34 @@
+{
+  "dealerId": "018e9354-d084-7bdf-a685-15f4e433b427",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9354-d084-7bdf-a685-15f4e433b427",
+  "title": "BMW M440i xDrive Coupé (ab 2020)",
+  "isDamaged": false,
+  "attributes": {
+    "Category": "Coupé",
+    "Vehicle condition": "Accident-free"
+  },
+  "description": "Angebotsnummer 0011548. Unfallvorschaden: Nein.",
+  "features": [],
+  "properties": {
+    "milage": "31922",
+    "firstRegistration": "10/2023",
+    "co2Emission": "175 g/km",
+    "generalInspection": null,
+    "numberOfOwners": "1",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 49450
+  },
+  "dealer": {
+    "name": "WELLER Premium GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Junkersstr. 2",
+      "31137 Hildesheim"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "notes": "BMW.de ilanı — mobile.de kaydı C264 ile aynı araç; C264 zaten WELLER sitesine bağlı, bu ikinci bayi URL'si."
+}

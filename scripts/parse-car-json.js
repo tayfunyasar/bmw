@@ -6,6 +6,7 @@ import { parseRawToListing, applyUpdatesAndGetChanges } from './lib/parse-listin
 import { determineTargetFile } from './lib/route-listing.js';
 import { SOLD_FILES, soldArchiveFor, isManuallyMarkedKazali } from './lib/move-listing.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
+import { buildRootFingerprints, findTwin as findTwinFp, twinHint } from './lib/twin-fingerprint.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,6 +18,7 @@ const dieselWithSunroofPath = path.join(listingsDir, 'COUPE_DIESEL_WITH_SUNROOF.
 const granCoupePath = path.join(listingsDir, 'GRAN_COUPE.json');
 const granCoupeKazaliPath = path.join(listingsDir, 'GRAN_COUPE_KAZALI.json');
 const cabrioPath = path.join(listingsDir, 'CABRIO.json');
+const cabrioKazaliPath = path.join(listingsDir, 'CABRIO_KAZALI.json');
 const rwdGasWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITH_SUNROOF.json');
 const rwdGasWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json');
 const soldPath = path.join(listingsDir, SOLD_FILES.xdrive);
@@ -90,6 +92,7 @@ async function run() {
   const granCoupe = JSON.parse(fs.readFileSync(granCoupePath, 'utf-8'));
   const granCoupeKazali = fs.existsSync(granCoupeKazaliPath) ? JSON.parse(fs.readFileSync(granCoupeKazaliPath, 'utf-8')) : [];
   const cabrio = fs.existsSync(cabrioPath) ? JSON.parse(fs.readFileSync(cabrioPath, 'utf-8')) : [];
+  const cabrioKazali = fs.existsSync(cabrioKazaliPath) ? JSON.parse(fs.readFileSync(cabrioKazaliPath, 'utf-8')) : [];
   const lithuania = fs.existsSync(lithuaniaPath) ? JSON.parse(fs.readFileSync(lithuaniaPath, 'utf-8')) : [];
   const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
   const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
@@ -110,6 +113,7 @@ async function run() {
     { name: 'GRAN_COUPE', data: granCoupe },
     { name: 'GRAN_COUPE_KAZALI', data: granCoupeKazali },
     { name: 'CABRIO', data: cabrio },
+    { name: 'CABRIO_KAZALI', data: cabrioKazali },
     { name: 'COUPE_GAS_WITH_SUNROOF_KAZALI', data: kazali },
     { name: 'LITHUANIA', data: lithuania },
   ];
@@ -129,6 +133,8 @@ async function run() {
   };
 
   let currentAllListings = [...activeFiles, ...frozenFiles].flatMap(f => f.data);
+  // Re-list ikiz tespiti icin kok kayitlarin parmak izleri (import-dealer ile ORTAK modul).
+  const rootFingerprints = buildRootFingerprints(listingsDir);
 
   function findCarAndSource(mobileDeId) {
     for (const file of [...activeFiles, ...frozenFiles]) {
@@ -223,6 +229,17 @@ async function run() {
         const parsedCar = parseRawToListing(car, { listingId: nextId, mobileDeId });
         currentAllListings.push(parsedCar);
 
+        // RE-LIST IKIZI: ayni fiziksel arac satilmayip yeni mobileDeId ile tekrar
+        // listelenmis olabilir (bayi ilani yeniler). Uc anahtar (mobileDeId/vin/
+        // dealerKey) bunu YAKALAYAMAZ. Kayit yine acilir — hangi ilanin canli
+        // oldugu bilinemez — ama possibleTwinOf ile eskisine baglanir.
+        const twin = findTwinFp(rootFingerprints, parsedCar, { excludeMobileDeId: mobileDeId });
+        if (twin) {
+            parsedCar.possibleTwinOf = twin.listingId;
+            parsedCar.listingDescriptionNotes = parsedCar.listingDescriptionNotes || [];
+            parsedCar.listingDescriptionNotes.push(`⚠️ Muhtemel yeniden-listeleme ikizi: ${twin.listingId} — ${twinHint(twin, { seller: parsedCar.sellerTypeOrName })}`);
+        }
+
         const { target: targetName, reason } = determineTargetFile(parsedCar, car);
         const targetFile = activeFiles.find(f => f.name === targetName);
         if (reason) {
@@ -230,7 +247,14 @@ async function run() {
             parsedCar.listingDescriptionNotes.push(`⚠️ ${targetName} olarak işaretlendi — ${reason}`);
         }
         targetFile.data.push(parsedCar);
-        console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)${reason ? ` — ${reason}` : ''}`);
+        // Yeni kayit da sonraki ilanlarin ikiz havuzuna girsin (ayni run icinde 3'lu re-list).
+        rootFingerprints.push({
+            listingId: nextId, mobileDeId: String(mobileDeId),
+            reg: (parsedCar.firstRegistrationYearAndMonth || []).join('/'),
+            km: parsedCar.mileageKm || 0, price: parsedCar.basePriceEuro,
+            seller: parsedCar.sellerTypeOrName || '', file: null, rel: targetName
+        });
+        console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)${reason ? ` — ${reason}` : ''}${twin ? ` — ⚠️ muhtemel ikiz: ${twin.listingId}` : ''}`);
     }
   }
 
@@ -270,6 +294,7 @@ async function run() {
   fs.writeFileSync(granCoupePath, JSON.stringify(granCoupe, null, 2));
   fs.writeFileSync(granCoupeKazaliPath, JSON.stringify(granCoupeKazali, null, 2));
   fs.writeFileSync(cabrioPath, JSON.stringify(cabrio, null, 2));
+  fs.writeFileSync(cabrioKazaliPath, JSON.stringify(cabrioKazali, null, 2));
   fs.writeFileSync(kazaliPath, JSON.stringify(kazali, null, 2));
   fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2));
   fs.writeFileSync(rwdSoldWithSunroofPath, JSON.stringify(rwdSoldWithSunroof, null, 2));

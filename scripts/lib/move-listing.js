@@ -30,6 +30,32 @@ export function soldArchiveFor(car) {
 
 export const DEFAULT_SOURCE_FILES = LISTING_FILES.defaultSourceFiles;
 
+// Bayi kayitlari alt klasorde (BMW_NL/COUPE_GAS_WITH_SUNROOF.json). Kok dosya
+// listesi bunlari gormedigi icin delist olan bayi ilani (N5/N6) SOLD'a
+// tasinamiyordu. Kaynak listesi artik alt klasorleri de kapsar.
+export function dealerSourceFiles(dir = listingsDir) {
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    for (const sub of fs.readdirSync(path.join(dir, entry.name))) {
+      if (sub.endsWith('.json') && !sub.includes('_SOLD')) out.push(`${entry.name}${path.sep}${sub}`);
+    }
+  }
+  return out;
+}
+
+// Bayi kaydinin SOLD hedefi KENDI klasorunde kalir — kok SOLD arsivi mobile.de'ye
+// ozeldir (pricingCalculator karsilastirma havuzu oradan beslenir).
+export function dealerSoldArchiveFor(sourceFile, car) {
+  const dirName = path.dirname(sourceFile);
+  if (dirName === '.') return soldArchiveFor(car);
+  const base = soldArchiveFor(car).name;                 // ayni tahrik/sunroof kurali
+  const name = path.join(dirName, base);
+  const full = path.join(listingsDir, name);
+  if (!fs.existsSync(full)) fs.writeFileSync(full, '[]\n', 'utf-8');
+  return { path: full, name };
+}
+
 // mark-kazali.js'in yazdigi audit action'i — INSAN karari isareti.
 // KAZALI dosyalari activeFiles'ta oldugu icin parse-car-json.js onlari otomatik
 // tasiyabiliyor; Apify metninde hasar kelimesi gecmiyorsa ilan temiz havuza geri

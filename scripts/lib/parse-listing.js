@@ -150,6 +150,15 @@ export function parseRawToListing(raw, { listingId, mobileDeId = null, source = 
   };
 }
 
+// "Veri yok" demenin tum bicimleri: eksik alan, bos metin, "?" ve sayisal 0.
+// (Fiyat/km 0 olamaz; co2 0 olamaz — bu alanlarda 0 = "cekilemedi" demektir.)
+export function isEmptyFieldValue(v) {
+  if (v === null || v === undefined) return true;
+  if (typeof v === 'string') return v.trim() === '' || v.trim() === '?';
+  if (typeof v === 'number') return v === 0;
+  return false;
+}
+
 // Mevcut kayda diff'li guncelleme; overrideFeatures'taki alanlara ASLA dokunmaz.
 export function applyUpdatesAndGetChanges(existingCar, newCar) {
   const changes = {};
@@ -167,6 +176,10 @@ export function applyUpdatesAndGetChanges(existingCar, newCar) {
       // Tahrik override'liysa turetilmis yan alanlari da dondur (celiski olmasin)
       if ((key === 'drivetrainCertain' || key === 'drivetrainReason') && overrides.drivetrainType) return;
       if (key === 'sunroofReason' && overrides.S403A) return; // manuel sunroof karari gerekcesiyle korunur
+      // VERI SILINMEZ: ilan sayfasi bir alani bu sefer bos dondurduyse (Apify her
+      // taramada CO2/HU/sahip sayisini vermez) DOLU olan eski deger korunur.
+      // C831 vakasi: co2 165 -> 0 ezilmisti; benzinli M440i icin 0 imkansiz.
+      if (isEmptyFieldValue(newCar[key]) && !isEmptyFieldValue(existingCar[key])) return;
       if (newCar[key] !== undefined && existingCar[key] !== newCar[key] && JSON.stringify(existingCar[key]) !== JSON.stringify(newCar[key])) {
           changes[key] = { old: existingCar[key], new: newCar[key] };
           existingCar[key] = newCar[key];

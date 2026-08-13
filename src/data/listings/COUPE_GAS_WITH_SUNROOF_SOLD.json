@@ -982,7 +982,7 @@
     "sellerTypeOrName": "Filialbetrieb Rhein Schweinfurt Zweigniederlassung der Heermann und Rhein GmbH ★4.3",
     "modelGeneration": "Pre-LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 173,
     "listingLocation": "🇩🇪 DE-97424 Schweinfurt",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -1224,6 +1224,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.088Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 173
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.184Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",
@@ -1980,7 +1991,7 @@
     "sellerTypeOrName": "BBA Automobile ★4.5",
     "modelGeneration": "Pre-LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 173,
     "listingLocation": "🇩🇪 DE-66663 Merzig",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -2256,6 +2267,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.063Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 173
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.184Z"
       }
     ],
     "cardThemeColorHex": "#9ca3af",
@@ -2292,7 +2314,7 @@
     "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.4",
     "modelGeneration": "Pre-LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 170,
     "listingLocation": "🇩🇪 DE-73730 Esslingen am Neckar",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
@@ -2591,6 +2613,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.086Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 170
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.184Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -3096,7 +3129,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-a-xdrive-coupe-gsd-daprof-rfk-hud-acc-keyl-memmingen/452712519.html",
     "mobileDeId": "452712519",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C53",
     "exteriorColorName": "Saphirschwarz metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -3126,7 +3159,9 @@
     "listingLocation": "🇩🇪 DE-87700 Memmingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C53 — tescil 2021/12 + ~32700.000000000004km + ~€45990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Reisacher GmbH ★4.1\" vs \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -3196,6 +3231,17 @@
         "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
         "changes": null,
         "auditDate": "2026-04-13T18:30:23.457Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C53 — tescil 2021/12 + ~32700.000000000004km + ~€45990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Reisacher GmbH ★4.1\" vs \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C53"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.175Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -4202,7 +4248,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 183,
     "listingLocation": "🇩🇪 DE-74564 Crailsheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -4509,6 +4555,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.069Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 183
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.184Z"
       }
     ],
     "cardThemeColorHex": "#818cf8",
@@ -7487,7 +7544,7 @@
     "sellerTypeOrName": "Unknown Dealer",
     "modelGeneration": "Pre-LCI",
     "modelGenerationCertain": false,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 183,
     "listingLocation": "🇩🇪 DE-91732 Merkendorf",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
@@ -7873,6 +7930,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.077Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 183
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.184Z"
       }
     ],
     "cardThemeColorHex": "#a78bfa",
@@ -9522,7 +9590,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-acc-kamera-virtual-hud-lane-side-braunschweig/456827640.html",
     "mobileDeId": "456827640",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C193",
     "exteriorColorName": "Black Sapphire ",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -9552,7 +9620,9 @@
     "listingLocation": "🇩🇪 DE-38110 Braunschweig",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C193 — tescil 2023/3 + ~56000km + ~€43990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Wenden GmbH ★4.5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -9633,6 +9703,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.167Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C193 — tescil 2023/3 + ~56000km + ~€43990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Wenden GmbH ★4.5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C193"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.175Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -9885,7 +9966,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-glasdach-kamera-memory-hagen/457324314.html",
     "mobileDeId": "457324314",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C304",
     "exteriorColorName": "BLACK SAPPHIRE",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -9915,7 +9996,9 @@
     "listingLocation": "🇩🇪 DE-58119 Hagen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C304 — tescil 2022/5 + ~69950km + ~€47990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Procar Automobile Wuppertal GmbH & Co. KG ★4.6\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -9996,6 +10079,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.184Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C304 — tescil 2022/5 + ~69950km + ~€47990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Procar Automobile Wuppertal GmbH & Co. KG ★4.6\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C304"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.175Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -11910,7 +12004,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-xdrive-hud-laser-led-sportabgasanlage-navi-waldbr%C3%B6l/460755836.html",
     "mobileDeId": "460755836",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C623",
     "exteriorColorName": "grün",
     "exteriorPaintLabel": null,
     "interiorColorName": "Imitation leather, Beige",
@@ -11940,7 +12034,9 @@
     "listingLocation": "🇩🇪 DE-51545 Waldbröl",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C623 — tescil 2022/12 + ~52509km + ~€47890 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.8\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -12021,6 +12117,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.303Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C623 — tescil 2022/12 + ~52509km + ~€47890 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Kaltenbach GmbH BMW und MINI Vertragshändler ★4.8\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C623"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.175Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -12152,7 +12259,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-grolsheim/461084745.html",
     "mobileDeId": "461084745",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C338",
     "exteriorColorName": "Grey Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -12182,7 +12289,9 @@
     "listingLocation": "🇩🇪 DE-55459 Grolsheim",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C338 — tescil 2023/5 + ~32059km + ~€52890 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"Procar Automobile Münsterland GmbH ★5\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -12252,6 +12361,17 @@
         "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
         "changes": null,
         "auditDate": "2026-07-31T18:18:31.299Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C338 — tescil 2023/5 + ~32059km + ~€52890 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"Procar Automobile Münsterland GmbH ★5\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C338"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.175Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -12482,7 +12602,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-remscheid/38638173358880.html",
     "mobileDeId": "38638173358880",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C923",
     "exteriorColorName": "tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -12512,7 +12632,9 @@
     "listingLocation": "🇩🇪 DE-42897 Remscheid",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C923 — tescil 2026/8 + ~14999km + ~€73790 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co. KG BMW und MINI Vertragshändler ★4.6\" vs \"Kaltenbach Automobile GmbH  Co. KG BMW und MINI Vertragshändler ★4.4\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -12582,6 +12704,17 @@
         "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
         "changes": null,
         "auditDate": "2026-08-09T13:21:53.291Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C923 — tescil 2026/8 + ~14999km + ~€73790 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co. KG BMW und MINI Vertragshändler ★4.6\" vs \"Kaltenbach Automobile GmbH  Co. KG BMW und MINI Vertragshändler ★4.4\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C923"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.175Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

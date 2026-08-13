@@ -4,7 +4,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-leder-hud-acc-kamera-ha-ka-lenkradh-michelfeld/453007109.html",
     "mobileDeId": "453007109",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C107",
     "exteriorColorName": "Sanremo Grün",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -34,7 +34,9 @@
     "listingLocation": "🇩🇪 DE-74545 Michelfeld",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C107 — tescil 2021/10 + ~40006km + ~€45900 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"AH Walter Mulfinger GmbH ★4.6\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -133,6 +135,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.098Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C107 — tescil 2021/10 + ~40006km + ~€45900 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"AH Walter Mulfinger GmbH ★4.6\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C107"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.167Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -276,7 +289,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-leder-hud-acc-kamera-ha-ka-lenkradh-michelfeld/454239228.html",
     "mobileDeId": "454239228",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C107",
     "exteriorColorName": "Sanremo Grün",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -306,7 +319,9 @@
     "listingLocation": "🇩🇪 DE-74545 Michelfeld",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C107 — tescil 2021/10 + ~40006km + ~€45900 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"AH Walter Mulfinger GmbH ★4.6\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -399,6 +414,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.115Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C107 — tescil 2021/10 + ~40006km + ~€45900 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"AH Walter Mulfinger GmbH ★4.6\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C107"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.168Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

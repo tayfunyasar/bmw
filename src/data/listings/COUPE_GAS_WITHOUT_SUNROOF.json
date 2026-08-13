@@ -2172,7 +2172,7 @@
     "sellerTypeOrName": "Autohaus Muhra GmbH ★4.7",
     "modelGeneration": "LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 175,
     "listingLocation": "🇩🇪 DE-46149 Oberhausen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [
@@ -2462,6 +2462,17 @@
           }
         },
         "auditDate": "2026-08-02T18:10:17.057Z"
+      },
+      {
+        "action": "Veri Onarimi: CO₂ geri yüklendi",
+        "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+        "changes": {
+          "co2EmissionsGramPerKm": {
+            "old": 0,
+            "new": 175
+          }
+        },
+        "auditDate": "2026-08-13T10:48:07.171Z"
       }
     ],
     "cardThemeColorHex": "#e879f9",
@@ -2782,7 +2793,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-hud-parkass-komfortzg-kaarst/452594610.html",
     "mobileDeId": "452594610",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C150",
     "exteriorColorName": "BMW Individual Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Brown",
@@ -2812,7 +2823,9 @@
     "listingLocation": "🇩🇪 DE-41564 Kaarst",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C150 — tescil 2023/3 + ~28901km + ~€54430 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.9\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -2920,6 +2933,17 @@
           "S4NHA": "unknown→no"
         },
         "auditDate": "2026-04-10T23:00:00.000Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C150 — tescil 2023/3 + ~28901km + ~€54430 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.9\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C150"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.169Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -8461,7 +8485,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-acc-m-technik-360-19zoll-r%C3%BCckholz/461121575.html",
     "mobileDeId": "461121575",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C301",
     "exteriorColorName": "BLACK SAPPHIRE METALLIC",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -8491,7 +8515,9 @@
     "listingLocation": "🇩🇪 DE-87494 Rückholz",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C301 — tescil 2021/2 + ~59601km + ~€45200 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Schmidt ★4\" vs \"Autohaus Schmidt ★4.2\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -8555,6 +8581,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-23T16:29:16.954Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C301 — tescil 2021/2 + ~59601km + ~€45200 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Schmidt ★4\" vs \"Autohaus Schmidt ★4.2\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C301"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.169Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -8927,7 +8964,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4er-m440i-xdrive-aut-navi-head-up-led-acc-cam-essen/461882985.html",
     "mobileDeId": "461882985",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C709",
     "exteriorColorName": "BROOKLYN GRAU",
     "exteriorPaintLabel": null,
     "interiorColorName": "Alcantara, Black",
@@ -8957,7 +8994,9 @@
     "listingLocation": "🇩🇪 DE-45141 Essen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C709 — tescil 2022/4 + ~49732km + ~€43990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohero Gmbh - Abholfiliale Essen ★4.7\" vs \"Autohero GmbH - Abholstation München ★4.4\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -9021,6 +9060,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T18:17:29.827Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C709 — tescil 2022/4 + ~49732km + ~€43990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohero Gmbh - Abholfiliale Essen ★4.7\" vs \"Autohero GmbH - Abholstation München ★4.4\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C709"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.169Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",
@@ -9031,7 +9081,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-g22-facelift-coupe-live-cock-h-g%C3%B6ppingen/352093876.html",
     "mobileDeId": "352093876",
     "vin": null,
-    "possibleTwinOf": null,
+    "possibleTwinOf": "C4",
     "exteriorColorName": "Alpinweiß",
     "exteriorPaintLabel": null,
     "interiorColorName": "Part leather, Black",
@@ -9061,7 +9111,9 @@
     "listingLocation": "🇩🇪 DE-73037 Göppingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [],
+    "listingDescriptionNotes": [
+      "⚠️ Muhtemel yeniden-listeleme ikizi: C4 — tescil / + ~0km + ~€62900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"ahg Autohandelsgesellschaft mbH GP ★4.4\" vs \"?\")"
+    ],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -9125,6 +9177,17 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-07-31T20:38:01.671Z"
+      },
+      {
+        "action": "İkiz İşaretlendi (Geriye Dönük)",
+        "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C4 — tescil / + ~0km + ~€62900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"ahg Autohandelsgesellschaft mbH GP ★4.4\" vs \"?\")",
+        "changes": {
+          "possibleTwinOf": {
+            "old": null,
+            "new": "C4"
+          }
+        },
+        "auditDate": "2026-08-13T10:50:52.169Z"
       }
     ],
     "cardThemeColorHex": "#e2e8f0",

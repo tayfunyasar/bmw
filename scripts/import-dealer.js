@@ -25,14 +25,22 @@ import { siteConfig, dealerKeyFor, sellerMatches } from './lib/dealer-sites.js';
 import { createIdAllocator, listingsDir } from './lib/listing-id.js';
 import { buildExistingIndex, lookupListing } from './lib/existing-index.js';
 import { parseRawToListing, applyUpdatesAndGetChanges } from './lib/parse-listing.js';
-import { determineTargetFile } from './lib/route-listing.js';
+import { determineTargetFile, detectDamageReason } from './lib/route-listing.js';
 import { writeRunLog } from './lib/run-log.js';
 import { mergeTwinIntoRoot } from './lib/merge-twin.js';
-import { walkListingFiles } from './lib/listing-id.js';
+import { buildRootFingerprints, findTwin as findTwinFp, twinHint } from './lib/twin-fingerprint.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dumpDealerRoot = path.resolve(__dirname, '../dump-dealer');
 const isDryRun = process.argv.includes('--dry-run');
+
+// Bayi sayfasinin mobile.de'deki BOSLUKLARI doldurabilecegi alanlar. Fiyat/km/renk
+// gibi kanonik alanlar burada YOK — mobile.de dolu oldugu surece kanonik kalir,
+// bos oldugunda zaten bu listedeki alanlar gibi davranmaz (satis karari fiyata bagli).
+// AHG/BMW.de CO2 ve HU verir, mobile.de cogu ilanda vermez — tipik kazanim budur.
+const DEALER_FILLABLE = ['co2EmissionsGramPerKm', 'numberOfPreviousOwners', 'nextInspectionDate', 'interiorColorName', 'exteriorPaintLabel'];
+const dealerFillableFields = (parsed) =>
+  Object.fromEntries(DEALER_FILLABLE.map(k => [k, parsed[k]]));
 
 const mobileDeIdFrom = (url) => {
   const m = String(url || '').match(/id=(\d+)/) || String(url || '').match(/\/(\d+)\.html/);
@@ -62,22 +70,9 @@ process.stdin.on('end', () => {
   // Fuzzy ikiz tespiti icin kok kayitlarin (tescil, km, fiyat) parmak izleri.
   // VIN'siz mobile.de kaydi dealer crawl'inda 3 anahtarla YAKALANAMAZ; ayni fiziksel
   // arac cift kayit olmasin diye es-deger kombinasyon uyari uretir (import engellenmez).
-  const rootFingerprints = [];
-  for (const file of walkListingFiles(listingsDir)) {
-    const rel = path.relative(listingsDir, file);
-    if (rel.includes(path.sep)) continue; // sadece kok dosyalar (mobile.de)
-    let data; try { data = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
-    if (!Array.isArray(data)) continue;
-    for (const car of data) {
-      if (car.firstRegistrationYearAndMonth && car.basePriceEuro) {
-        rootFingerprints.push({ listingId: car.listingId, reg: car.firstRegistrationYearAndMonth.join('/'), km: car.mileageKm || 0, price: car.basePriceEuro, seller: car.sellerTypeOrName || '', file });
-      }
-    }
-  }
-  const findTwin = (parsed) => rootFingerprints.find(f =>
-    f.reg === (parsed.firstRegistrationYearAndMonth || []).join('/') &&
-    Math.abs(f.km - (parsed.mileageKm || 0)) <= 1000 &&
-    Math.abs(f.price - (parsed.basePriceEuro || 0)) <= 500);
+  // Esik/eslestirme mantigi lib/twin-fingerprint.js'de — parse-car-json ile ORTAK.
+  const rootFingerprints = buildRootFingerprints(listingsDir);
+  const findTwin = (parsed) => findTwinFp(rootFingerprints, parsed);
   // Site dosyalari bellekte toplanir, sonda tek seferde yazilir.
   const siteDir = path.join(listingsDir, siteName);
   const fileCache = new Map(); // "COUPE_GAS_WITH_SUNROOF" -> array
@@ -120,9 +115,15 @@ process.stdin.on('end', () => {
         const rootData = JSON.parse(fs.readFileSync(rootFile, 'utf8'));
         const rootCar = rootData.find(c => c.listingId === hit.listingId);
         if (rootCar) {
-          const freshEq = parseRawToListing(rec, { listingId: hit.listingId, mobileDeId, source: siteName }).equipmentFeatures;
-          const syncChanges = mergeTwinIntoRoot(rootCar, { dealerListingUrl: rec.dealerListingUrl, vin, freshEquipment: freshEq, source: siteName });
-          if (Object.keys(syncChanges).length) fs.writeFileSync(rootFile, JSON.stringify(rootData, null, 2) + '\n');
+          const freshParsed = parseRawToListing(rec, { listingId: hit.listingId, mobileDeId, source: siteName });
+          const syncChanges = mergeTwinIntoRoot(rootCar, {
+            dealerListingUrl: rec.dealerListingUrl, vin,
+            freshEquipment: freshParsed.equipmentFeatures, source: siteName,
+            fields: dealerFillableFields(freshParsed),
+            damageReason: detectDamageReason(rec)
+          });
+          // --dry-run diske YAZMAZ (eskiden bu iki merge yolu bayrağı yok sayıyordu).
+          if (!isDryRun && Object.keys(syncChanges).length) fs.writeFileSync(rootFile, JSON.stringify(rootData, null, 2) + '\n');
         }
       }
       report.existing.push({ listingId: hit.listingId, file: hit.file, matchedBy: mobileDeId ? 'mobileDeId' : vin && hit === lookupListing(index, { vin }) ? 'vin' : 'dealerKey', record: label });
@@ -173,16 +174,22 @@ process.stdin.on('end', () => {
       const rootData = JSON.parse(fs.readFileSync(rootFile, 'utf8'));
       const rootCar = rootData.find(c => c.listingId === twin.listingId);
       if (rootCar) {
-        const freshEq = parseRawToListing(rec, { listingId: twin.listingId, mobileDeId, source: siteName }).equipmentFeatures;
-        const mergeChanges = mergeTwinIntoRoot(rootCar, { dealerListingUrl: rec.dealerListingUrl, vin, freshEquipment: freshEq, source: siteName });
-        fs.writeFileSync(rootFile, JSON.stringify(rootData, null, 2) + '\n');
+        const freshParsed = parseRawToListing(rec, { listingId: twin.listingId, mobileDeId, source: siteName });
+        const mergeChanges = mergeTwinIntoRoot(rootCar, {
+          dealerListingUrl: rec.dealerListingUrl, vin,
+          freshEquipment: freshParsed.equipmentFeatures, source: siteName,
+          // Bayide bilgi var + mobile.de'de yok => bayi ezer (bkz. merge-twin.js).
+          fields: dealerFillableFields(freshParsed),
+          damageReason: detectDamageReason(rec)
+        });
+        if (!isDryRun) fs.writeFileSync(rootFile, JSON.stringify(rootData, null, 2) + '\n');
         report.merged = report.merged || [];
         report.merged.push({ listingId: twin.listingId, site: siteName, key: dealerKey, resolved: Object.keys(mergeChanges).filter(k => k.startsWith('equipmentFeatures.')).length });
         continue;   // site dosyasina yeni kayit YOK
       }
     }
     if (twin) {
-      report.possibleTwins.push({ listingId, twinOf: twin.listingId, hint: `tescil ${twin.reg} + ~${twin.km}km + ~€${twin.price} eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: "${rec.dealer?.name}" vs "${twin.seller}")` });
+      report.possibleTwins.push({ listingId, twinOf: twin.listingId, hint: twinHint(twin, { seller: rec.dealer?.name }) });
       parsed.possibleTwinOf = twin.listingId;   // yapısal bağ — UI çelişki tablosu bundan beslenir
       parsed.listingDescriptionNotes.push(`⚠️ Muhtemel mobile.de ikizi: ${twin.listingId} (tescil+km+fiyat eşleşmesi, satıcı farklı) — teyit gerekli`);
     }

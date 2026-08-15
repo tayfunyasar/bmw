@@ -12,6 +12,7 @@ Site: **UNTERBERGER** (config: DEALER_SITES.json → idPrefix U, pattern YOK —
 - Bookmark URL'si hashbang (`/fahrzeugverkauf/#!/vehicles?...`) → site NORMAL query URL'sine redirect eder (`/fahrzeugboerse/?...&models=M440i+xDrive&page=&itemsPerPage=9`). Redirect sonrasi URL ile calis.
 - Detay linkleri: `/fahrzeugboerse/<slug>` — numerik id YOK, slug benzersiz (or. `bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360`). dealerKey = URL fallback (otomatik). Ayni arac slug degistirirse yeni kayit acilabilir — possibleTwins raporuna dikkat.
 - Liste server-rendered (8.5K text, 10 M440 gecisi). Kart verisi: linkin atalarinda € + km container'i.
+- **RENDER GECIKMESI — her sayfa icin navigate sonrasi 20-25s bekle.** Kartlar gec basiliyor; erken okursan sayfa "**0 Fahrzeuge**" der ve ilan HIC bulunmaz (2026-08'de 10s ve 15s beklemede birden fazla kez yasandi). "0 Fahrzeuge" gorursen bunu "ilan yok" sanma — bekleyip TEKRAR oku. Sonuc sayisi (`N Fahrzeuge`) ile bulunan kart sayisi tutmuyorsa yine bekle-tekrar dene.
 - Sayfalama: `page=` parametresi + `itemsPerPage=9`. pageCap: 5.
 - **AVUSTURYA (AT) araclari:** route/skorlama normal isler ama fiyatlar AT-KDV'li ve NoVA iadesi/ihracat kurallari DE'den farklidir — rapor notuna "AT araci" ibaresi dus.
 - Slug'da "gran-coupe" gecenler GC'dir ama yine attributes.Category'yi detaydan al ("5-tuerer" slug'u da GC isaretidir).

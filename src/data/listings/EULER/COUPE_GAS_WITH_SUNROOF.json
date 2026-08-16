@@ -1,23 +1,23 @@
 [
   {
-    "listingId": "E1",
-    "listingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM26814581/",
-    "dealerListingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM26814581/",
+    "listingId": "E3",
+    "listingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM97446107/",
+    "dealerListingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM97446107/",
     "mobileDeId": null,
-    "vin": "WBA81DA090CW85407",
+    "vin": "WBA81DA090CX53771",
     "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz metallic",
     "exteriorPaintLabel": null,
-    "interiorColorName": "Leder Vernasca: Schwarz/ Dekorsteppung/ Interieurfarbe Schwarz",
+    "interiorColorName": "Leder Vernasca: Mokka/ Dekorsteppung/ Interieurfarbe Schwarz",
     "drivetrainType": "xDrive AWD",
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
     "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-    "basePriceEuro": 73617,
-    "mileageKm": 23665,
+    "basePriceEuro": 72588,
+    "mileageKm": 26572,
     "firstRegistrationYearAndMonth": [
-      2025,
-      12
+      2026,
+      3
     ],
     "numberOfPreviousOwners": "?",
     "warranty": {
@@ -31,7 +31,7 @@
     "sellerTypeOrName": "Euler Group",
     "modelGeneration": "LCI",
     "modelGenerationCertain": true,
-    "co2EmissionsGramPerKm": 0,
+    "co2EmissionsGramPerKm": 164,
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
@@ -64,7 +64,7 @@
       "S775A": "yes",
       "S493A": "yes",
       "S536A": "no",
-      "S2NHA": "yes",
+      "S2NHA": "no",
       "S3ACA": "no",
       "S3ADA": "no",
       "S3AGA": "no",
@@ -86,18 +86,7 @@
         "action": "İlan Eklendi",
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
-        "auditDate": "2026-08-07T07:36:16.232Z"
-      },
-      {
-        "action": "İlan Güncellemesi (Otomatik)",
-        "detail": "EULER taraması sonucu veriler eşitlendi",
-        "changes": {
-          "sunroofReason": {
-            "old": null,
-            "new": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
-          }
-        },
-        "auditDate": "2026-08-10T07:14:25.493Z"
+        "auditDate": "2026-08-14T07:03:54.514Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

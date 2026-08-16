@@ -15,6 +15,7 @@ import fs from 'fs';
 import path from 'path';
 import { listingsDir, walkListingFiles } from './lib/listing-id.js';
 import { sellerMatches } from './lib/dealer-sites.js';
+import { hasReliableFingerprint } from './lib/twin-fingerprint.js';
 import { mergeTwinIntoRoot } from './lib/merge-twin.js';
 
 const isDry = process.argv.includes('--dry');
@@ -28,7 +29,36 @@ for (const file of walkListingFiles()) {
   for (const car of data) rootIndex.set(car.listingId, { car, file, data });
 }
 
-const summary = { merged: [], keptDifferentSeller: [], orphanTwin: [] };
+const summary = { merged: [], keptDifferentSeller: [], orphanTwin: [], invalidCleared: [] };
+
+// --- Gecersiz bag supurme: sifir/tescilsiz araclarda imza ayirt edici degildir ---
+// (C941/C753 vakasi). Bag ancak IKI taraf da guvenilir imzaliysa anlamli; degilse
+// possibleTwinOf + ikiz notu temizlenir. Kural duzeltildigi icin yenisi uretilmez.
+const allCars = new Map();
+for (const file of walkListingFiles()) {
+  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (Array.isArray(data)) for (const car of data) allCars.set(car.listingId, car);
+}
+for (const file of walkListingFiles()) {
+  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (!Array.isArray(data)) continue;
+  let changed = false;
+  for (const car of data) {
+    if (!car.possibleTwinOf) continue;
+    const target = allCars.get(car.possibleTwinOf);
+    const valid = hasReliableFingerprint(car) && target && hasReliableFingerprint(target);
+    if (valid) continue;
+    summary.invalidCleared.push({ id: car.listingId, was: car.possibleTwinOf });
+    if (!isDry) {
+      delete car.possibleTwinOf;
+      if (Array.isArray(car.listingDescriptionNotes)) {
+        car.listingDescriptionNotes = car.listingDescriptionNotes.filter(n => !/ikiz/i.test(n));
+      }
+      changed = true;
+    }
+  }
+  if (changed) fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
+}
 const dirtyRootFiles = new Set();
 
 for (const file of walkListingFiles()) {
@@ -75,6 +105,7 @@ if (!isDry) {
   }
 }
 
+if (summary.invalidCleared.length) console.log(`${isDry ? '(dry) ' : ''}Geçersiz bağ temizlendi (güvenilmez imza): ${summary.invalidCleared.length} — ${summary.invalidCleared.slice(0, 8).map(x => x.id + '↛' + x.was).join(' ')}${summary.invalidCleared.length > 8 ? ' …' : ''}`);
 console.log(`${isDry ? '(dry) ' : ''}Birleştirilen: ${summary.merged.length}`);
 summary.merged.forEach(m => console.log(`  🔗 ${m.id} → ${m.into} (${m.changes} alan)`));
 if (summary.keptDifferentSeller.length) {

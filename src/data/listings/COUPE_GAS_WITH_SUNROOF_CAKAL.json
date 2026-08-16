@@ -134,8 +134,7 @@
       "🔥 S33T Motorsport Engineering Package (nadir!)",
       "BMW PS garanti 02/2026–02/2028 + Service inkl. 2028/90K",
       "1.sahip BMW AG (9K km'den itibaren)",
-      "Sadece el yıkama + yıllık profesyonel bakım",
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"?\")"
+      "Sadece el yıkama + yıllık profesyonel bakım"
     ],
     "listingAdditionalFeatures": [
       "H&R sportfedern+spurverbreiterung (seri parçalar mevcut, eingetragen)"
@@ -485,8 +484,7 @@
     },
     "drivetrainCertain": true,
     "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-    "modelGenerationCertain": false,
-    "possibleTwinOf": "C42"
+    "modelGenerationCertain": false
   },
   {
     "listingId": "C23",

@@ -153,7 +153,13 @@ const calculateBpm = (co2, registrationYear, registrationMonth) => {
   }
   const bpmBruto = lowestBruto;
 
-  if (!registrationYear || registrationMonth == null) return { bpmBruto, bpmCalculated: null, depreciationPercent: null, tariefYear };
+  // Tescilsiz arac = SIFIR arac: BPM belirsiz degil, tam tersine kesindir —
+  // afschrijving (yas amortismani) %0, brut BPM'in TAMAMI odenir. Eskiden null
+  // donuluyordu; sifir araclar UI'da "?" gosterip toplam maliyette BPM'siz
+  // (suni ucuz) yarisiyordu (C761/C753 sinifi, 10 arac).
+  if (!registrationYear || registrationMonth == null) {
+    return { bpmBruto, bpmCalculated: Math.round(bpmBruto), depreciationPercent: 0, tariefYear };
+  }
 
   const today = new Date(EVALUATION_DATE.year, EVALUATION_DATE.month, EVALUATION_DATE.day);
   const regDate = new Date(registrationYear, registrationMonth - 1);

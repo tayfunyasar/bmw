@@ -6,7 +6,7 @@ import { parseRawToListing, applyUpdatesAndGetChanges } from './lib/parse-listin
 import { determineTargetFile } from './lib/route-listing.js';
 import { SOLD_FILES, soldArchiveFor, isManuallyMarkedKazali } from './lib/move-listing.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
-import { buildRootFingerprints, findTwin as findTwinFp, twinHint } from './lib/twin-fingerprint.js';
+import { buildRootFingerprints, fingerprintOf, findTwin as findTwinFp, twinHint } from './lib/twin-fingerprint.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -247,13 +247,10 @@ async function run() {
             parsedCar.listingDescriptionNotes.push(`⚠️ ${targetName} olarak işaretlendi — ${reason}`);
         }
         targetFile.data.push(parsedCar);
-        // Yeni kayit da sonraki ilanlarin ikiz havuzuna girsin (ayni run icinde 3'lu re-list).
-        rootFingerprints.push({
-            listingId: nextId, mobileDeId: String(mobileDeId),
-            reg: (parsedCar.firstRegistrationYearAndMonth || []).join('/'),
-            km: parsedCar.mileageKm || 0, price: parsedCar.basePriceEuro,
-            seller: parsedCar.sellerTypeOrName || '', file: null, rel: targetName
-        });
+        // Yeni kayit da sonraki ilanlarin ikiz havuzuna girsin (ayni run icinde 3'lu
+        // re-list). Kural tek kaynakta: guvenilmez imzali (sifir) arac havuza GIRMEZ.
+        const fp = fingerprintOf(parsedCar, { rel: targetName });
+        if (fp) rootFingerprints.push(fp);
         console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)${reason ? ` — ${reason}` : ''}${twin ? ` — ⚠️ muhtemel ikiz: ${twin.listingId}` : ''}`);
     }
   }

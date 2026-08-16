@@ -15,6 +15,33 @@ export const PRICE_TOLERANCE = 500;
 
 const regOf = (car) => (car.firstRegistrationYearAndMonth || []).join('/');
 
+// Imza yalnizca KAYITLI (kullanilmis) araclarda guvenilirdir. Sifir/tescilsiz
+// araclarda uc bilesen de ayirt edici degildir: tescil yok ([null,null] -> "/"),
+// km hepsi ~10, fiyat ayni trim'de birebir liste fiyati. C941/C753 vakasi:
+// iki FARKLI renk/saticidaki sifir arac salt bu yuzden ikiz sanilmisti.
+export const MIN_FINGERPRINT_KM = 1000;   // KM_TOLERANCE ile tutarli: altinda km sinyal tasimaz
+export const hasReliableFingerprint = (car) => {
+  const [y, m] = car.firstRegistrationYearAndMonth || [];
+  return y != null && m != null && (car.mileageKm || 0) >= MIN_FINGERPRINT_KM && !!car.basePriceEuro;
+};
+
+// Tek bir kaydin parmak izi — guvenilir imza yoksa null (sifir/tescilsiz arac).
+// buildRootFingerprints ve run-ici elle ekleme (parse-car-json) AYNI kurali kullanir.
+export function fingerprintOf(car, extra = {}) {
+  if (!hasReliableFingerprint(car)) return null;
+  return {
+    listingId: car.listingId,
+    mobileDeId: car.mobileDeId ? String(car.mobileDeId) : null,
+    reg: regOf(car),
+    km: car.mileageKm || 0,
+    price: car.basePriceEuro,
+    seller: car.sellerTypeOrName || '',
+    file: null,
+    rel: null,
+    ...extra,
+  };
+}
+
 // Kok dosyalar = mobile.de kanonik kayitlari (alt klasorler bayi kayitlaridir).
 export function buildRootFingerprints(dir = listingsDir) {
   const out = [];
@@ -25,17 +52,8 @@ export function buildRootFingerprints(dir = listingsDir) {
     try { data = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
     if (!Array.isArray(data)) continue;
     for (const car of data) {
-      if (!car.firstRegistrationYearAndMonth || !car.basePriceEuro) continue;
-      out.push({
-        listingId: car.listingId,
-        mobileDeId: car.mobileDeId ? String(car.mobileDeId) : null,
-        reg: regOf(car),
-        km: car.mileageKm || 0,
-        price: car.basePriceEuro,
-        seller: car.sellerTypeOrName || '',
-        file,                                  // mutlak yol — cagiran dosyayi acabilir
-        rel: rel.replace(/\.json$/, '')        // rapor/log icin kisa ad
-      });
+      const fp = fingerprintOf(car, { file, rel: rel.replace(/\.json$/, '') });
+      if (fp) out.push(fp);
     }
   }
   return out;
@@ -44,8 +62,8 @@ export function buildRootFingerprints(dir = listingsDir) {
 // parsed: listing semasindaki kayit (firstRegistrationYearAndMonth/mileageKm/basePriceEuro).
 // excludeMobileDeId: kaydin KENDISI parmak izi havuzundaysa kendini ikiz sanmasin.
 export function findTwin(fingerprints, parsed, { excludeMobileDeId = null, excludeListingId = null } = {}) {
+  if (!hasReliableFingerprint(parsed)) return null;
   const reg = regOf(parsed);
-  if (!reg || !parsed.basePriceEuro) return null;
   return fingerprints.find(f =>
     f.reg === reg &&
     Math.abs(f.km - (parsed.mileageKm || 0)) <= KM_TOLERANCE &&

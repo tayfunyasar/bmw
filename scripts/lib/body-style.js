@@ -13,6 +13,11 @@ const GRAN_COUPE_RE = /(gran[d]?|gan)\s*coup/i;
 // arasindaki opsiyonel nokta (G.C.) da kapsanir. Diger kelimelerin ortasindaki
 // rastgele GC'yi tetiklememesi icin sadece bu iki on-eki kabul ediyoruz.
 const GC_ABBR_RE = /(?:\b|x?Dr(?:ive)?)G\.?C\b/;
+// Kapi sayisi: 4 Serisi Coupé 2 kapili, Gran Coupé 5 kapilidir. Bayi
+// basliklarinda/slug'larinda "5-Türer" / "5-tuerer" GC'nin net isaretidir
+// (Unterberger boyle listeler). Sadece baslik/altbaslikta aranir — ilan
+// aciklamasindaki serbest metin yanlis pozitif uretmesin.
+const GC_DOORS_RE = /\b5[\s-]*t(?:ü|ue|u)rer\b/i;
 const CABRIO_RE = /\b(ca[rb]+rio(let)?|convertible|cab\.)/i;
 // BMW 4 Serisi chassis kodlari: G22 = Coupé, G23 = Cabrio, G26 = Gran Coupé.
 // Apify "Model range" alaninda veya bazen baslikta net olarak gorunur.
@@ -24,6 +29,8 @@ export function isGranCoupe({ title = '', subTitle = '', description = '', categ
   return GRAN_COUPE_RE.test(allText)
     || GC_ABBR_RE.test(title)
     || GC_ABBR_RE.test(subTitle)
+    || GC_DOORS_RE.test(title)
+    || GC_DOORS_RE.test(subTitle)
     || GC_CHASSIS_RE.test(allText);
 }
 

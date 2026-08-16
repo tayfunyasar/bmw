@@ -183,3 +183,16 @@ test('mergeTwinIntoRoot — iki kaynagin celiskileri BIRIKIR, biri digerini ezme
   mergeTwinIntoRoot(root, { freshEquipment: { S403A: 'yes' }, source: 'WELLER' });
   assert.deepEqual(root.equipmentConflicts, { KGNL: { 'mobile.de': 'no', BMW_DE: 'yes' } });
 });
+
+// --- twin-fingerprint: sifir/tescilsiz araclar imza uretmez (C941/C753 vakasi) ---
+test('findTwin — sifir araclar (tescilsiz, ~10km) ikiz eslesmesine GIRMEZ', async () => {
+  const { findTwin, hasReliableFingerprint } = await import('./twin-fingerprint.js');
+  const sifir = { firstRegistrationYearAndMonth: [null, null], mileageKm: 10, basePriceEuro: 79990 };
+  assert.equal(hasReliableFingerprint(sifir), false, 'imza guvenilir sayilmamali');
+  // havuzda birebir ayni degerlerle baska bir sifir arac olsa bile eslesme YOK
+  const havuz = [{ listingId: 'C753', reg: '/', km: 10, price: 79990, seller: 'X', mobileDeId: '1' }];
+  assert.equal(findTwin(havuz, sifir), null);
+  // kayitli arac hala eslesir (regresyon)
+  const kayitli = { firstRegistrationYearAndMonth: [2023, 10], mileageKm: 31922, basePriceEuro: 49450 };
+  assert.equal(hasReliableFingerprint(kayitli), true);
+});

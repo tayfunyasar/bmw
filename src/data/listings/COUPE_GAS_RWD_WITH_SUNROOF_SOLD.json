@@ -1490,5 +1490,109 @@
     ],
     "cardThemeColorHex": "#94a3b8",
     "aiCommentary": null
+  },
+  {
+    "listingId": "C979",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-unfallfrei-de-360-laser-8fach-headup-offenburg/39604535950336.html",
+    "mobileDeId": "39604535950336",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Green Metallic",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 5049,
+    "mileageKm": 53000,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      9
+    ],
+    "numberOfPreviousOwners": "?",
+    "warranty": {
+      "exists": "no"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "04/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-77652 Offenburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "no",
+      "S2VLA": "no",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "no",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "no",
+      "S536A": "yes",
+      "S2NHA": "no",
+      "S3ACA": "no",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-12T19:42:32.000Z",
+      "modifiedTime": "2026-08-12T21:44:49.000Z",
+      "renewedTime": "2026-08-12T19:42:32.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-12T19:42:32.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-13T19:51:15.476Z"
+      },
+      {
+        "action": "İlan Satıldı",
+        "detail": "COUPE_GAS_RWD_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+        "changes": null,
+        "auditDate": "2026-08-15T14:07:46.219Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
   }
 ]

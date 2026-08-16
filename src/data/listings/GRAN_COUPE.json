@@ -102,7 +102,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445380857",
     "mobileDeId": "445380857",
     "vin": null,
-    "possibleTwinOf": "C5",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -132,9 +132,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -311,7 +309,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=448203072",
     "mobileDeId": "448203072",
     "vin": null,
-    "possibleTwinOf": "C42",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -341,9 +339,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "unknown",
@@ -424,7 +420,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=448741243",
     "mobileDeId": "448741243",
     "vin": null,
-    "possibleTwinOf": "C42",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -454,9 +450,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C42 — tescil / + ~0km + ~€49800 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -731,7 +725,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445587983",
     "mobileDeId": "445587983",
     "vin": null,
-    "possibleTwinOf": "C918",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -761,9 +755,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C918 — tescil / + ~0km + ~€52222 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "unknown",
@@ -842,7 +834,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449326098",
     "mobileDeId": "449326098",
     "vin": null,
-    "possibleTwinOf": "id=448327413",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -872,9 +864,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: id=448327413 — tescil / + ~0km + ~€52880 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -953,7 +943,7 @@
     "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445831174",
     "mobileDeId": "445831174",
     "vin": null,
-    "possibleTwinOf": "C1",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -983,9 +973,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C1 — tescil / + ~0km + ~€53500 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "unknown",
@@ -1575,7 +1563,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xd-gc-laser-dapr-gsd-mem-hud-sthz-360-h-wernigerode/450702387.html",
     "mobileDeId": null,
     "vin": null,
-    "possibleTwinOf": "C2",
+    "possibleTwinOf": null,
     "exteriorColorName": "?",
     "exteriorPaintLabel": null,
     "interiorColorName": "?",
@@ -1605,9 +1593,7 @@
     "listingLocation": "🇩🇪 Unknown",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C2 — tescil / + ~0km + ~€54999 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -26825,7 +26811,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-sportpaket-hk-hifi-dab-speyer/461158821.html",
     "mobileDeId": "461158821",
     "vin": null,
-    "possibleTwinOf": "C794",
+    "possibleTwinOf": null,
     "exteriorColorName": "Tansanitblau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -26855,9 +26841,7 @@
     "listingLocation": "🇩🇪 DE-67346 Speyer",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C794 — tescil / + ~0km + ~€78500 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus A. Cuntz KG ★4.7\" vs \"BMW Autohaus Zeisler GmbH ★4.8\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "no",
@@ -29727,7 +29711,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-pro-19-lm-ahk-gs-waiblingen/445556990.html",
     "mobileDeId": "445556990",
     "vin": null,
-    "possibleTwinOf": "C794",
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -29757,9 +29741,7 @@
     "listingLocation": "🇩🇪 DE-71332 Waiblingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C794 — tescil / + ~0km + ~€78500 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"BMW Autohaus Zeisler GmbH ★4.8\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -29844,7 +29826,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sportpaket-waldshut-tiengen/462232825.html",
     "mobileDeId": "462232825",
     "vin": null,
-    "possibleTwinOf": "C753",
+    "possibleTwinOf": null,
     "exteriorColorName": "BLACK SAPPHIRE",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -29874,9 +29856,7 @@
     "listingLocation": "🇩🇪 DE-79761 Waldshut-Tiengen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Gottstein GmbH Automobile & Motorräder ★4.7\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -31059,7 +31039,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-280-kw-5-t%C3%BCrig-ettlingen/38449422755264.html",
     "mobileDeId": "38449422755264",
     "vin": null,
-    "possibleTwinOf": "C753",
+    "possibleTwinOf": null,
     "exteriorColorName": "Tansanitblau Metallic",
     "exteriorPaintLabel": null,
     "interiorColorName": "Cloth, Other",
@@ -31089,9 +31069,7 @@
     "listingLocation": "🇩🇪 DE-76275 Ettlingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Emil Frey Ungeheuer Automobile ★4.6\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -33410,7 +33388,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-pro-innov-comf-l%C3%BCneburg/460350303.html",
     "mobileDeId": "460350303",
     "vin": null,
-    "possibleTwinOf": "C868",
+    "possibleTwinOf": null,
     "exteriorColorName": "Dravitgrau",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -33440,9 +33418,7 @@
     "listingLocation": "🇩🇪 DE-21339 Lüneburg",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C868 — tescil / + ~0km + ~€82900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.5\" vs \"BMW Autohaus Zeisler GmbH ★4.8\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -33631,7 +33607,7 @@
     "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-pro-19-lm-ahk-gs-waiblingen/39511346647648.html",
     "mobileDeId": "39511346647648",
     "vin": null,
-    "possibleTwinOf": "C794",
+    "possibleTwinOf": null,
     "exteriorColorName": "Saphirschwarz",
     "exteriorPaintLabel": null,
     "interiorColorName": "Full leather, Black",
@@ -33661,9 +33637,7 @@
     "listingLocation": "🇩🇪 DE-71332 Waiblingen",
     "curatorPickBadge": null,
     "curatorPersonalNotes": [],
-    "listingDescriptionNotes": [
-      "⚠️ Muhtemel yeniden-listeleme ikizi: C794 — tescil / + ~0km + ~€78500 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"BMW Autohaus Zeisler GmbH ★4.8\")"
-    ],
+    "listingDescriptionNotes": [],
     "listingAdditionalFeatures": [],
     "equipmentFeatures": {
       "S403A": "yes",
@@ -34516,6 +34490,410 @@
         "detail": "Sistem tarafından kayıt altına alındı",
         "changes": null,
         "auditDate": "2026-08-13T19:51:15.484Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C995",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sportpaket-pro-glasdac-prien-am-chiemsee/453834631.html",
+    "mobileDeId": "453834631",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "BMW Individual Dravitgrau",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Brown",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 66950,
+    "mileageKm": 3950,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      8
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "08/2028",
+    "sellerTypeOrName": "AUTOHAUS UNTERBERGER GmbH (BMW Vertragshändler) ★4.4",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-83209 Prien am Chiemsee",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "no",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-22T08:55:45.000Z",
+      "modifiedTime": "2026-08-14T14:26:22.000Z",
+      "renewedTime": "2026-08-14T14:25:51.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-22T08:55:45.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-14T14:25:51.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-14T16:32:15.625Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C996",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sportpaket-pro-adaptiv-prien-am-chiemsee/453836067.html",
+    "mobileDeId": "453836067",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Saphirschwarz",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=no — checkbox otoritesi: 72 kalemlik kapsamlı listede işaretli değil",
+    "basePriceEuro": 66950,
+    "mileageKm": 12550,
+    "firstRegistrationYearAndMonth": [
+      2025,
+      8
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "08/2026",
+    "sellerTypeOrName": "AUTOHAUS UNTERBERGER GmbH (BMW Vertragshändler) ★4.4",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-83209 Prien am Chiemsee",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "no",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "yes",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "yes",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-04-22T09:09:50.000Z",
+      "modifiedTime": "2026-08-14T14:26:21.000Z",
+      "renewedTime": "2026-08-14T14:25:45.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-04-22T09:09:50.000Z"
+      },
+      {
+        "action": "İlan Yenilendi (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-14T14:25:45.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-14T16:32:15.626Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C999",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-vollausstattung-siershahn/39945616581600.html",
+    "mobileDeId": "39945616581600",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "Black",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Red",
+    "drivetrainType": "RWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 46800,
+    "mileageKm": 48700,
+    "firstRegistrationYearAndMonth": [
+      2022,
+      7
+    ],
+    "numberOfPreviousOwners": "2",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "07/2028",
+    "sellerTypeOrName": "Unknown Dealer",
+    "modelGeneration": "Pre-LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 0,
+    "listingLocation": "🇩🇪 DE-56427 Siershahn",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "yes",
+      "S5AUA": "yes",
+      "S688A": "unknown",
+      "S2T4A": "unknown",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "unknown",
+      "S2VLA": "unknown",
+      "S494A": "yes",
+      "S248A": "yes",
+      "S420A": "no",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "unknown",
+      "S430A": "yes",
+      "S4AWA": "unknown",
+      "S775A": "unknown",
+      "S493A": "unknown",
+      "S536A": "yes",
+      "S2NHA": "unknown",
+      "S3ACA": "no",
+      "S3ADA": "unknown",
+      "S3AGA": "unknown",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "unknown",
+      "S302A": "yes",
+      "S4NHA": "unknown"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-14T17:58:16.000Z",
+      "modifiedTime": "2026-08-14T18:14:22.000Z",
+      "renewedTime": "2026-08-14T17:58:16.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-14T17:58:16.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-14T18:44:14.383Z"
+      }
+    ],
+    "cardThemeColorHex": "#94a3b8",
+    "aiCommentary": null
+  },
+  {
+    "listingId": "C1003",
+    "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-ahk-harman-k-barsb%C3%BCttel-bei-hamburg/40067565282240.html",
+    "mobileDeId": "40067565282240",
+    "vin": null,
+    "possibleTwinOf": null,
+    "exteriorColorName": "BMW Individual Dravitgrau",
+    "exteriorPaintLabel": null,
+    "interiorColorName": "Full leather, Black",
+    "drivetrainType": "xDrive AWD",
+    "drivetrainCertain": true,
+    "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+    "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+    "basePriceEuro": 69908,
+    "mileageKm": 25304,
+    "firstRegistrationYearAndMonth": [
+      2026,
+      1
+    ],
+    "numberOfPreviousOwners": "1",
+    "warranty": {
+      "exists": "yes"
+    },
+    "service": {
+      "type": "yes",
+      "history": []
+    },
+    "nextInspectionDate": "01/2027",
+    "sellerTypeOrName": "BMW AG Niederlassung Hamburg ★4.5",
+    "modelGeneration": "LCI",
+    "modelGenerationCertain": true,
+    "co2EmissionsGramPerKm": 171,
+    "listingLocation": "🇩🇪 DE-22885 Barsbüttel bei Hamburg",
+    "curatorPickBadge": null,
+    "curatorPersonalNotes": [],
+    "listingDescriptionNotes": [],
+    "listingAdditionalFeatures": [],
+    "equipmentFeatures": {
+      "S403A": "yes",
+      "S5AZA": "no",
+      "S5AUA": "yes",
+      "S688A": "yes",
+      "S2T4A": "yes",
+      "S610A": "yes",
+      "S5DN_360": "yes",
+      "KGNL": "no",
+      "S322A": "yes",
+      "S2VFA": "no",
+      "S459A": "yes",
+      "S5DNA": "yes",
+      "S6U3A": "yes",
+      "S715A": "yes",
+      "S2VLA": "yes",
+      "S494A": "yes",
+      "S248A": "no",
+      "S420A": "yes",
+      "S1MAA": "unknown",
+      "S5ACA": "yes",
+      "S6C4A": "yes",
+      "S430A": "yes",
+      "S4AWA": "no",
+      "S775A": "no",
+      "S493A": "yes",
+      "S536A": "no",
+      "S2NHA": "yes",
+      "S3ACA": "yes",
+      "S3ADA": "no",
+      "S3AGA": "no",
+      "S488A": "yes",
+      "S521A": "yes",
+      "S524A": "yes",
+      "S265A": "yes",
+      "S216A": "no",
+      "S302A": "yes",
+      "S4NHA": "no"
+    },
+    "listingDates": {
+      "createdTime": "2026-08-15T10:30:41.000Z",
+      "modifiedTime": "2026-08-15T10:30:48.000Z",
+      "renewedTime": "2026-08-15T10:30:41.000Z"
+    },
+    "auditHistory": [
+      {
+        "action": "İlan Yayınlandı (mobile.de)",
+        "detail": null,
+        "changes": null,
+        "auditDate": "2026-08-15T10:30:41.000Z"
+      },
+      {
+        "action": "İlan Eklendi",
+        "detail": "Sistem tarafından kayıt altına alındı",
+        "changes": null,
+        "auditDate": "2026-08-15T12:13:10.007Z"
       }
     ],
     "cardThemeColorHex": "#94a3b8",

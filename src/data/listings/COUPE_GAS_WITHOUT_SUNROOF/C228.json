@@ -1,0 +1,118 @@
+{
+  "listingId": "C228",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-x-drive-coupe-shadow-line-g22-maasmechelen/451795237.html",
+  "mobileDeId": "451795237",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Black Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Red",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"X-DRIVE\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 36 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 24500,
+  "mileageKm": 52647,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    9
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "DGA CARS BV ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 157,
+  "listingLocation": "🇧🇪 BE-3630 Maasmechelen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ KAZALI olarak işaretlendi — Fotograflarda hasar tespit edildi"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "no",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "yes",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-30T15:25:26.000Z",
+    "modifiedTime": "2026-04-28T09:39:26.000Z",
+    "renewedTime": "2026-03-30T15:25:26.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-30T15:25:26.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-30T15:25:26.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:36:31.768Z"
+    },
+    {
+      "action": "Kazalı İşaretlendi",
+      "detail": "COUPE_GAS_WITHOUT_SUNROOF.json dosyasından KAZALI olarak taşındı — Fotograflarda hasar tespit edildi",
+      "changes": null,
+      "auditDate": "2026-05-05T14:39:56.994Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF_KAZALI → COUPE_GAS_WITHOUT_SUNROOF",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:44:38.463Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

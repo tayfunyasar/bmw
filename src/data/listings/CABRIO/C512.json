@@ -1,0 +1,104 @@
+{
+  "listingId": "C512",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-cabrio-xdrive-leder-led-gladbeck/451997493.html",
+  "mobileDeId": "451997493",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "PORTIMAO BLAU",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 69 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 48990,
+  "mileageKm": 45680,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    3
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "MK Automobile ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-45968 Gladbeck",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-01T17:11:54.000Z",
+    "modifiedTime": "2026-06-30T15:11:05.000Z",
+    "renewedTime": "2026-06-25T19:28:53.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-01T17:11:54.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-25T19:28:53.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-03T17:41:52.853Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

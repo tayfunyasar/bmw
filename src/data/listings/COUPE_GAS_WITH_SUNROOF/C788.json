@@ -1,0 +1,153 @@
+{
+  "listingId": "C788",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360-bad-wiessee/460945418.html",
+  "dealerListingUrl": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360",
+  "mobileDeId": "460945418",
+  "vin": "WBA71HB040CV08586",
+  "possibleTwinOf": null,
+  "exteriorColorName": "saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 63890,
+  "mileageKm": 11385,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    6
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.8",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-83707 Bad Wiessee",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S524A": {
+      "mobile.de": "yes",
+      "UNTERBERGER": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-07-18T08:48:54.000Z",
+    "modifiedTime": "2026-08-18T06:55:36.000Z",
+    "renewedTime": "2026-07-18T08:48:54.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-18T08:48:54.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-18T08:48:54.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-31T20:38:01.694Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "UNTERBERGER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-coupe-pro-ahk-m-sitze-gsd-acc-360"
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA71HB040CV08586"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.821Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "UNTERBERGER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S524A": {
+              "mobile.de": "yes",
+              "UNTERBERGER": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:52.507Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 65890,
+          "new": 63890
+        }
+      },
+      "auditDate": "2026-08-18T12:49:27.192Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

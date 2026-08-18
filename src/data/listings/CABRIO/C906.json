@@ -1,0 +1,98 @@
+{
+  "listingId": "C906",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-m-sport-ahk-harman-k-laser-stuttgart/38423558130784.html",
+  "mobileDeId": "38423558130784",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Sanremo Green",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 56 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 51790,
+  "mileageKm": 55008,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "07/2027",
+  "sellerTypeOrName": "BMW AG, Niederlassung Stuttgart, Zentrum Gebrauchte Automobile ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-70569 Stuttgart",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-06T03:31:43.000Z",
+    "modifiedTime": "2026-08-06T06:16:15.000Z",
+    "renewedTime": "2026-08-06T03:31:43.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-06T03:31:43.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-06T07:03:53.653Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

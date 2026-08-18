@@ -1,0 +1,104 @@
+{
+  "listingId": "C748",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-harman-k-laser-d%C3%BCsseldorf/461974635.html",
+  "mobileDeId": "461974635",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Individual Frozen Pure Grey",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Cloth, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 53990,
+  "mileageKm": 51117,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "05/2026",
+  "sellerTypeOrName": "BMW AG Niederlassung Düsseldorf ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-40237 Düsseldorf",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-31T13:01:27.000Z",
+    "modifiedTime": "2026-07-31T13:01:42.000Z",
+    "renewedTime": "2026-07-31T13:01:27.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-31T13:01:27.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-31T13:01:27.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-31T18:17:29.834Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

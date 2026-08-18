@@ -1,0 +1,90 @@
+{
+  "listingId": "C113",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laserlicht-adaptives-m-fahrwerk-head-prien-am-chiemsee/451757936.html",
+  "mobileDeId": "451757936",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Arctic Race Blue",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 49950,
+  "mileageKm": 29550,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "07/2025",
+  "sellerTypeOrName": "AUTOHAUS UNTERBERGER GmbH (BMW Vertragshändler) ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 83209 Prien am Chiemsee",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "🔴 TÜV/HU süresi dolmuş (07/2025)",
+    "🟡 Servis geçmişi bilinmiyor"
+  ]
+}

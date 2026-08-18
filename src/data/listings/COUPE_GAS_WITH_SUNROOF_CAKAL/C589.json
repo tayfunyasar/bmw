@@ -1,0 +1,107 @@
+{
+  "listingId": "C589",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-head-up-gro%C3%9Fniedesheim/459920486.html",
+  "mobileDeId": "459920486",
+  "exteriorColorName": "Grey",
+  "interiorColorName": "Part leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 44700,
+  "mileageKm": 69000,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    5
+  ],
+  "numberOfPreviousOwners": "3",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "09/2027",
+  "sellerTypeOrName": "David Zuber",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-67259 Großniedesheim",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-05T19:26:22.000Z",
+    "modifiedTime": "2026-07-07T13:24:51.000Z",
+    "renewedTime": "2026-07-05T19:26:22.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-05T19:26:22.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-05T19:26:22.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-07T20:36:07.456Z"
+    },
+    {
+      "action": "Çakal Kasa İşaretlendi",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından CAKAL olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-07-08T11:26:16.281Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+}

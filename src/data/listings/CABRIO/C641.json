@@ -1,0 +1,104 @@
+{
+  "listingId": "C641",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-parking-assist-harmankardo-merseburg/460624747.html",
+  "mobileDeId": "460624747",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 59 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 49950,
+  "mileageKm": 10700,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    5
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Weigl GmbH, BMW und Citroën Vertragspartner ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-06217 Merseburg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-14T12:18:20.000Z",
+    "modifiedTime": "2026-07-14T13:00:53.000Z",
+    "renewedTime": "2026-07-14T12:18:20.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-14T12:18:20.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-14T12:18:20.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-14T13:06:28.072Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

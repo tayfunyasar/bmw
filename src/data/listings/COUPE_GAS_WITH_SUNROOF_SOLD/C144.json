@@ -1,0 +1,202 @@
+{
+  "listingId": "C144",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-leder-sport-auspuff-m-schiebedach-isernhagen-ot-altwarmb%C3%BCchen-bei-hannover-a2-a7/449913824.html",
+  "mobileDeId": "449913824",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "SAPHIRSCHWARZ",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 46499,
+  "mileageKm": 64335,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    4
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Automobile A7 ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-30916 Isernhagen OT Altwarmbüchen bei Hannover A2/A7",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-10T12:42:34.000Z",
+    "modifiedTime": "2026-04-14T15:07:31.000Z",
+    "renewedTime": "2026-04-07T10:10:40.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-10T12:42:34.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-23T15:27:58.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-04T10:59:37.372Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-07T10:10:40.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.822Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S1MAA": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:51:17.488Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T21:08:00.717Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 46999,
+          "new": 46499
+        }
+      },
+      "auditDate": "2026-04-10T20:15:38.527Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Automobile A7 ★4.7",
+          "new": "Automobile A7 ★4.8"
+        }
+      },
+      "auditDate": "2026-04-17T09:56:17.404Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-04-23T21:04:17.942349Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 30916 Isernhagen OT Altwarmbüchen bei Hannover A2/A7",
+          "new": "🇩🇪 DE-30916 Isernhagen OT Altwarmbüchen bei Hannover A2/A7"
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.080Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

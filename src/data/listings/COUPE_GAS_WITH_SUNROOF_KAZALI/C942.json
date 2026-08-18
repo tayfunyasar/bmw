@@ -1,0 +1,110 @@
+{
+  "listingId": "C942",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-leder-cam-full-led-navi-lkh-holdorf/39166408110816.html",
+  "mobileDeId": "39166408110816",
+  "exteriorColorName": "Black Metallic",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 42900,
+  "mileageKm": 39354,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    7
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "FF Performance ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 162,
+  "listingLocation": "🇩🇪 DE-49451 Holdorf",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Vorschaden bekannt\"",
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C297 — tescil 2021/7 + ~39354km + ~€42900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"FF Performance ★4.6\" vs \"FF Performance ★4.3\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S536A": "no",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S430A": "yes",
+    "S3ACA": "no",
+    "S488A": "no",
+    "S715A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S302A": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S1MAA": "unknown",
+    "S2VLA": "no",
+    "S6C4A": "no",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S493A": "no",
+    "S216A": "no",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-10T08:17:03.000Z",
+    "modifiedTime": "2026-08-10T08:17:03.000Z",
+    "renewedTime": "2026-08-10T08:17:03.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-10T08:17:03.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-10T10:12:46.813Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C297 — tescil 2021/7 + ~39354km + ~€42900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"FF Performance ★4.6\" vs \"FF Performance ★4.3\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C297"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.173Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "possibleTwinOf": "C297"
+}

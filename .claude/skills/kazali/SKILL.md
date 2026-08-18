@@ -5,7 +5,7 @@ description: Mark one or more listings as crashed/accident-damaged (kazalı) by 
 
 # Kazali (Mark as Crashed)
 
-When the user provides one or more IDs alongside the word "kazali" (or "kazalı"), run `npm run move:kazali -- <id> [neden]` for each ID to move the listing to the KAZALI archive (`COUPE_GAS_WITH_SUNROOF_KAZALI.json` for coupes, `GRAN_COUPE_KAZALI.json` for Gran Coupé). The script accepts both `mobileDeId` (numeric) and local `listingId` (e.g. `C133`). This applies whether invoked as a slash command (`/kazali <id>`) or in natural language (`<id> kazali`, `kazali <id> <id>`, etc.).
+When the user provides one or more IDs alongside the word "kazali" (or "kazalı"), run `npm run move:kazali -- <id> [neden]` for each ID to move the listing to the KAZALI archive (`COUPE_GAS_WITH_SUNROOF_KAZALI/` for coupes, `GRAN_COUPE_KAZALI/` for Gran Coupé). The script accepts both `mobileDeId` (numeric) and local `listingId` (e.g. `C133`). This applies whether invoked as a slash command (`/kazali <id>`) or in natural language (`<id> kazali`, `kazali <id> <id>`, etc.).
 
 ## Usage
 

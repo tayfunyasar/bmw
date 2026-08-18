@@ -1,0 +1,173 @@
+{
+  "listingId": "C150",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laser-hud-parkass-komfortzg-kaarst/451960776.html",
+  "mobileDeId": "451960776",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Individual Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Brown",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": null,
+  "basePriceEuro": 54430,
+  "mileageKm": 28901,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    3
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "02/2026",
+  "sellerTypeOrName": "Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.9",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-41564 Kaarst",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-01T11:30:10.000Z",
+    "modifiedTime": "2026-04-01T11:30:13.000Z",
+    "renewedTime": "2026-04-01T11:30:10.000Z"
+  },
+  "overrideFeatures": {
+    "S403A": {
+      "value": "no",
+      "reason": "Dump verisinde sunroof bilgisi yok, kullanıcı teyidi"
+    }
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-01T11:30:10.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-01T11:30:10.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-07T07:08:33.657Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S494A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ADA": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3AGA": {
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-07T07:12:39.556Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S488A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S524A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S265A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S302A": {
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:29:12.994Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:32:16.858Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

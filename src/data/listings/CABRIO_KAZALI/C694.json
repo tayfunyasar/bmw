@@ -1,0 +1,112 @@
+{
+  "listingId": "C694",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-head-up-laser-dr-as-prof-h-k-schrobenhausen/461155242.html",
+  "mobileDeId": "461155242",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Sanremo Green",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 53700,
+  "mileageKm": 19600,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "07/2026",
+  "sellerTypeOrName": "Autohaus Pielmeier GmbH & Co. Vertriebs KG ★4.1",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-86529 Schrobenhausen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ CABRIO_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "no",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-21T07:56:59.000Z",
+    "modifiedTime": "2026-07-23T10:26:30.000Z",
+    "renewedTime": "2026-07-21T07:56:59.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-21T07:56:59.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-21T07:56:59.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-23T16:29:16.957Z"
+    },
+    {
+      "action": "Dosya Taşıma: CABRIO → CABRIO_KAZALI",
+      "detail": "Apify isDamaged alanı true",
+      "changes": null,
+      "auditDate": "2026-08-13T10:50:23.371Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

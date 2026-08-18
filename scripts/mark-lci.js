@@ -17,7 +17,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { listingsDir } from './lib/move-listing.js';
+import { findCar, writeCar } from './lib/listings-store.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const LISTING_FILES = JSON.parse(
@@ -37,22 +37,14 @@ const generation = VALID_GENERATIONS.includes(generationArg) ? generationArg : '
 const reasonWords = VALID_GENERATIONS.includes(generationArg) ? reasonParts : [generationArg, ...reasonParts];
 const reason = reasonWords.filter(Boolean).join(' ').trim() || 'Kullanıcı teyidi';
 
-let hit = null;
-for (const file of LISTING_FILES.allFiles) {
-  const filePath = path.join(listingsDir, file);
-  if (!fs.existsSync(filePath)) continue;
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  if (!Array.isArray(data)) continue;
-  const car = data.find(c => c.listingId === id || String(c.mobileDeId) === String(id));
-  if (car) { hit = { car, data, filePath, file }; break; }
-}
+const hit = findCar(id, LISTING_FILES.allCategories);
 
 if (!hit) {
-  console.error(`Hata: "${id}" hiçbir ilan dosyasında bulunamadı.`);
+  console.error(`Hata: "${id}" hiçbir ilan kategorisinde bulunamadı.`);
   process.exit(1);
 }
 
-const { car, data, filePath, file } = hit;
+const { car, category } = hit;
 const before = { generation: car.modelGeneration, certain: car.modelGenerationCertain };
 
 if (before.generation === generation && before.certain === true) {
@@ -84,5 +76,5 @@ car.auditHistory.push({
 });
 car.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
 
-fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
-console.log(`🔥 ${car.listingId} (${car.mobileDeId}) → ${generation} teyitli — ${file.replace(/\.json$/, '')} (tescil ${regLabel}, önce: ${before.generation}/certain:${before.certain})`);
+writeCar(category, car);
+console.log(`🔥 ${car.listingId} (${car.mobileDeId}) → ${generation} teyitli — ${category} (tescil ${regLabel}, önce: ${before.generation}/certain:${before.certain})`);

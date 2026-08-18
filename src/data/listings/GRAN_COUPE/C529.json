@@ -1,0 +1,117 @@
+{
+  "listingId": "C529",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-mild-hybrid-eu6d-xdrive-laserli-kempen/459201703.html",
+  "mobileDeId": "459201703",
+  "vin": null,
+  "possibleTwinOf": "C508",
+  "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49440,
+  "mileageKm": 40890,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "05/2026",
+  "sellerTypeOrName": "Auto Becker Hans Klausmann GmbH & Co. KG  BMW Vertragshändler ★4.9",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 194,
+  "listingLocation": "🇩🇪 DE-47906 Kempen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C508 — tescil 2023/5 + ~40890km + ~€49440 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Auto Becker Hans Klausmann GmbH & Co. KG  BMW Vertragshändler ★4.9\" vs \"Auto Becker Hans Klausmann GmbH & Co. KG ★4.7\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-26T12:11:05.000Z",
+    "modifiedTime": "2026-07-02T18:17:56.000Z",
+    "renewedTime": "2026-06-26T12:11:05.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-26T12:11:05.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-26T12:11:05.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-03T17:41:52.863Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C508 — tescil 2023/5 + ~40890km + ~€49440 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Auto Becker Hans Klausmann GmbH & Co. KG  BMW Vertragshändler ★4.9\" vs \"Auto Becker Hans Klausmann GmbH & Co. KG ★4.7\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C508"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.180Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

@@ -1,0 +1,205 @@
+{
+  "listingId": "C116",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-laserlicht-hud-ahk-acc-kamera-leipzig/443996454.html",
+  "mobileDeId": "443996454",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Tansanitblau II metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 68 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 52980,
+  "mileageKm": 25490,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    12
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.9",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 165,
+  "listingLocation": "🇩🇪 DE-04328 Leipzig",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2025-12-17T08:40:44.000Z",
+    "modifiedTime": "2026-04-23T07:22:11.000Z",
+    "renewedTime": "2026-04-21T01:00:24.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-21T01:00:24.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.8",
+          "new": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.9"
+        },
+        "warranty": {
+          "old": {
+            "exists": true
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "drivetrainCertain": {
+          "new": true
+        },
+        "equipmentFeatures.S403A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S688A": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-23T20:31:59.366Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟠 Toplam €58,363 — bütçe üst sınırına yakın"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.067Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

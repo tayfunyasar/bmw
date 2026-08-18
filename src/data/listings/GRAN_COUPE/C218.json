@@ -1,0 +1,110 @@
+{
+  "listingId": "C218",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-drivass-parkass-headup-aktivegeschw-m%C3%BCnchen/454314721.html",
+  "mobileDeId": "454314721",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "ALPINWEISS III",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 64 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 47990,
+  "mileageKm": 38434,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    3
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "BMW Automag GmbH Filiale Trudering - BMW und Mini Vertragshändler ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-81827 München",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-27T14:00:56.000Z",
+    "modifiedTime": "2026-04-28T13:13:46.000Z",
+    "renewedTime": "2026-04-27T14:00:56.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-27T14:00:56.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-27T14:00:56.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-28T13:37:32.937Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → GRAN_COUPE",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:44:38.487Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

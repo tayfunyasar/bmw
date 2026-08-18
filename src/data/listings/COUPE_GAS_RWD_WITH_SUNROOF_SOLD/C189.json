@@ -1,0 +1,144 @@
+{
+  "listingId": "C189",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-4-coupe-m440-i-akrapovic-auspuff-berlin/453096467.html",
+  "mobileDeId": "453096467",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 48800,
+  "mileageKm": 43000,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "07/2027",
+  "sellerTypeOrName": "Cheap Cars Berlin , Radutskiy ★4.9",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-13581 Berlin",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-14T13:13:44.000Z",
+    "modifiedTime": "2026-05-05T14:51:10.000Z",
+    "renewedTime": "2026-04-14T13:13:44.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-14T13:13:44.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-14T13:13:44.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-17T09:39:00.399Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "drivetrainType": {
+          "old": "RWD",
+          "new": "xDrive AWD"
+        }
+      },
+      "auditDate": "2026-04-17T09:56:17.413Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_RWD_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-04-17T09:56:17.413Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-05-08T20:08:43.945Z"
+    },
+    {
+      "action": "Tahrik Tipi Düzeltildi",
+      "detail": "RWD tespit edildi — COUPE_GAS_WITH_SUNROOF_SOLD.json → COUPE_GAS_RWD_WITH_SUNROOF_SOLD.json",
+      "changes": null,
+      "auditDate": "2026-08-02T18:00:02.443Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 13581 Berlin",
+          "new": "🇩🇪 DE-13581 Berlin"
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.101Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

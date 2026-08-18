@@ -1,0 +1,104 @@
+{
+  "listingId": "C381",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-laser-hud-acc-bel%C3%BCft-nackenw-komf-strausberg/454607409.html",
+  "mobileDeId": "454607409",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "DRAVITGRAU",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 47920,
+  "mileageKm": 42000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    2
+  ],
+  "numberOfPreviousOwners": "3",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "06/2027",
+  "sellerTypeOrName": "BMW AH Skjellet GmbH ★4.7",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-15344 Strausberg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-30T13:56:35.000Z",
+    "modifiedTime": "2026-06-16T15:27:55.000Z",
+    "renewedTime": "2026-06-03T11:27:22.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-30T13:56:35.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-03T11:27:22.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:57:51.692Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

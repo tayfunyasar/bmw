@@ -31,39 +31,44 @@ test('dealer-sites — dealerKeyFor pattern yakalarsa ID, yakalamazsa URL fallba
 
 // --- listing-id ---
 
+// Per-car yerlesim: { '<KATEGORI>': [car, ...] } → <KATEGORI>/<listingId>.json
+// (bayi kategorisi 'WELLER/B' gibi site oneki tasir; site adlari DEALER_SITES.json'dan).
 const makeListingsDir = (layout) => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'listings-test-'));
-  for (const [rel, cars] of Object.entries(layout)) {
-    const full = path.join(dir, rel);
-    fs.mkdirSync(path.dirname(full), { recursive: true });
-    fs.writeFileSync(full, JSON.stringify(cars));
+  for (const [relDir, cars] of Object.entries(layout)) {
+    for (const car of cars) {
+      const full = path.join(dir, relDir, `${car.listingId}.json`);
+      fs.mkdirSync(path.dirname(full), { recursive: true });
+      fs.writeFileSync(full, JSON.stringify(car));
+    }
   }
   return dir;
 };
 
-test('listing-id — alt klasorler DAHIL max bulunur (C-serisi bug regresyonu)', () => {
+test('listing-id — site klasorleri DAHIL max bulunur (C-serisi bug regresyonu)', () => {
   const dir = makeListingsDir({
-    'A.json': [{ listingId: 'C5' }, { listingId: 'C12' }],
-    'WELLER/B.json': [{ listingId: 'W3' }, { listingId: 'C99' }],
+    'A': [{ listingId: 'C5' }, { listingId: 'C12' }],
+    'WELLER/B': [{ listingId: 'W3' }, { listingId: 'C99' }],
   });
-  assert.equal(maxListingIdNumber('C', dir), 99, 'alt klasordeki C99 gorulmeli');
+  assert.equal(maxListingIdNumber('C', dir), 99, 'site klasorundeki C99 gorulmeli');
   assert.equal(maxListingIdNumber('W', dir), 3);
   assert.equal(maxListingIdNumber('AHG', dir), 0);
 });
 
 test('listing-id — allocator sirali uretir, prefix cakismaz', () => {
-  const dir = makeListingsDir({ 'WELLER/X.json': [{ listingId: 'W7' }] });
+  const dir = makeListingsDir({ 'WELLER/X': [{ listingId: 'W7' }] });
   const a = createIdAllocator('W', dir);
   assert.equal(a.next(), 'W8');
   assert.equal(a.next(), 'W9');
-  // "W" araması "WELLERX" gibi uzun onekleri yakalamamali (regex ^W(\d+)$)
-  const dir2 = makeListingsDir({ 'X.json': [{ listingId: 'WELLER123' }] });
+  // "W" araması "WELLER123" gibi uzun onekleri yakalamamali (regex ^W(\d+)$)
+  const dir2 = makeListingsDir({ 'X': [{ listingId: 'WELLER123' }] });
   assert.equal(maxListingIdNumber('W', dir2), 0);
 });
 
-test('listing-id — walkListingFiles bozuk JSON dosyasini sessiz atlar', () => {
-  const dir = makeListingsDir({ 'A.json': [{ listingId: 'C1' }] });
-  fs.writeFileSync(path.join(dir, 'BROKEN.json'), '{ bozuk');
+test('listing-id — listingId dosya adindan okunur, ID desenine uymayan dosya sayilmaz', () => {
+  const dir = makeListingsDir({ 'A': [{ listingId: 'C1' }] });
+  // Bozuk icerik bile olsa dosya adi ID desenine uymuyorsa tahsisi etkilemez.
+  fs.writeFileSync(path.join(dir, 'A', 'BROKEN.json'), '{ bozuk');
   assert.equal(maxListingIdNumber('C', dir), 1);
 });
 
@@ -71,8 +76,8 @@ test('listing-id — walkListingFiles bozuk JSON dosyasini sessiz atlar', () => 
 
 test('existing-index — mobileDeId / vin / dealerKey ile bulur, oncelik sirali', () => {
   const dir = makeListingsDir({
-    'ROOT.json': [{ listingId: 'C1', mobileDeId: '111', vin: 'WBA81AP010CN63825' }],
-    'AHG/COUPE_GAS_WITH_SUNROOF.json': [{ listingId: 'A1', mobileDeId: null, dealerListingUrl: 'https://www.ahg-mobile.de/x-555' }],
+    'ROOT': [{ listingId: 'C1', mobileDeId: '111', vin: 'WBA81AP010CN63825' }],
+    'AHG/COUPE_GAS_WITH_SUNROOF': [{ listingId: 'A1', mobileDeId: null, dealerListingUrl: 'https://www.ahg-mobile.de/x-555' }],
   });
   const idx = buildExistingIndex(dir);
   assert.equal(lookupListing(idx, { mobileDeId: '111' }).listingId, 'C1');

@@ -1,0 +1,121 @@
+{
+  "listingId": "C184",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-performance-carbon-gar-gersthofen/453037150.html",
+  "mobileDeId": "453037150",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BLACK",
+  "exteriorPaintLabel": null,
+  "interiorColorName": null,
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49900,
+  "mileageKm": 42000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "01/2028",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-86368 Gersthofen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-13T19:00:28.000Z",
+    "modifiedTime": "2026-05-26T15:22:36.000Z",
+    "renewedTime": "2026-04-13T19:00:28.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-13T19:00:28.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-13T19:00:28.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-17T09:39:00.398Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-05-29T20:21:22.333Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 86368 Gersthofen",
+          "new": "🇩🇪 DE-86368 Gersthofen"
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.099Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

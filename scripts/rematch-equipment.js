@@ -19,18 +19,18 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { explainEquipmentFeatures } from './lib/equipment-match.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
+import { readCategory, writeCar } from './lib/listings-store.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const listingsDir = path.resolve(__dirname, '../src/data/listings');
 const equipmentRulesPath = path.resolve(__dirname, '../src/data/metadata/EQUIPMENT_RULES.json');
 const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
 
-// Kanonik TAM dosya listesi (arsiv/cakal/kazali dahil) — tek kaynak LISTING_FILES.json.
+// Kanonik TAM kategori listesi (arsiv/cakal/kazali dahil) — tek kaynak LISTING_FILES.json.
 // Burada hardcode liste TUTULMAZ: eskiden 9 dosya sayiliyordu ve CAKAL/KAZALI/
 // GRAN_COUPE_KAZALI hic yeniden turetilmiyordu.
-const files = LISTING_FILES.allFiles;
+const categories = LISTING_FILES.allCategories;
 
 const isDry = process.argv.includes('--dry');
 const equipmentRules = JSON.parse(fs.readFileSync(equipmentRulesPath, 'utf8'));
@@ -93,23 +93,21 @@ function rematchListing(listing) {
   return changed;
 }
 
-for (const file of files) {
-  const filePath = path.join(listingsDir, file);
-  if (!fs.existsSync(filePath)) continue;
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-  let fileChanged = false;
-  for (const listing of data) {
-    if (rematchListing(listing)) fileChanged = true;
+for (const category of categories) {
+  let categoryChanged = false;
+  for (const listing of readCategory(category)) {
+    if (rematchListing(listing)) {
+      categoryChanged = true;
+      if (!isDry) writeCar(category, listing);   // yalniz degisen aracin dosyasi yazilir
+    }
   }
 
-  if (fileChanged && !isDry) {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
-    console.log(`✍️  ${file} guncellendi`);
-  } else if (fileChanged) {
-    console.log(`(dry) ${file} degisecekti`);
+  if (categoryChanged && !isDry) {
+    console.log(`✍️  ${category} guncellendi`);
+  } else if (categoryChanged) {
+    console.log(`(dry) ${category} degisecekti`);
   } else {
-    console.log(`•  ${file} degismedi`);
+    console.log(`•  ${category} degismedi`);
   }
 }
 

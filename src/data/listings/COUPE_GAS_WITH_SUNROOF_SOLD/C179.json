@@ -1,0 +1,246 @@
+{
+  "listingId": "C179",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-inspektion-t%C3%BCv-au-neu-j%C3%BClich/449815889.html",
+  "mobileDeId": "449815889",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Black Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Red",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+  "basePriceEuro": 39990,
+  "mileageKm": 25000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Jülicher Autozentrum Makki GmbH ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-52428 Jülich",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "no",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "no",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-09T13:42:58.000Z",
+    "modifiedTime": "2026-08-04T19:10:48.000Z",
+    "renewedTime": "2026-08-03T11:50:08.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-09T13:42:58.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-13T12:43:59.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-13T18:33:05.700Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-27T15:59:20.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 44790,
+          "new": 44490
+        },
+        "drivetrainCertain": {
+          "new": true
+        }
+      },
+      "auditDate": "2026-04-28T13:44:13.451Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Jülicher Autozentrum Makki GmbH ★4.3",
+          "new": "Jülicher Autozentrum Makki GmbH ★4.4"
+        },
+        "drivetrainCertain": {
+          "new": true
+        }
+      },
+      "auditDate": "2026-05-02T12:12:55.191Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-11T13:38:24.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 44490,
+          "new": 43990
+        }
+      },
+      "auditDate": "2026-05-13T19:48:02.501Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-26T13:39:01.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 43990,
+          "new": 43490
+        }
+      },
+      "auditDate": "2026-05-26T17:27:34.150Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-09T12:40:01.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 43490,
+          "new": 42990
+        }
+      },
+      "auditDate": "2026-06-11T19:39:48.765Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-23T12:00:40.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 42990,
+          "new": 42490
+        }
+      },
+      "auditDate": "2026-07-03T20:16:44.980Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-07T12:54:16.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 42490,
+          "new": 41990
+        }
+      },
+      "auditDate": "2026-07-11T22:39:27.761Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-03T11:50:08.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 41990,
+          "new": 39990
+        }
+      },
+      "auditDate": "2026-08-03T20:12:28.192Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-08-13T19:51:35.786Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

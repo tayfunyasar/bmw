@@ -1,0 +1,143 @@
+{
+  "listingId": "C185",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-technikp-acc-laser-shad-reichenbach/453052174.html",
+  "mobileDeId": "453052174",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — fabrika opsiyon kodu \"(0403)\" ilan açıklamasında geçiyor",
+  "basePriceEuro": 49455,
+  "mileageKm": 42631,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    2
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "02/2027",
+  "sellerTypeOrName": "Autohaus Kühnert GmbH & Co. KG ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 170,
+  "listingLocation": "🇩🇪 DE-08468 Reichenbach",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-14T04:52:38.000Z",
+    "modifiedTime": "2026-05-29T00:34:00.000Z",
+    "renewedTime": "2026-04-14T04:52:38.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-14T04:52:38.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-14T04:52:38.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-17T09:39:00.398Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 49855,
+          "new": 49455
+        }
+      },
+      "auditDate": "2026-05-08T20:08:43.944Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Autohaus Kühnert GmbH & Co. KG ★4.7",
+          "new": "Autohaus Kühnert GmbH & Co. KG ★4.8"
+        }
+      },
+      "auditDate": "2026-05-26T17:27:34.153Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-06-11T19:39:48.766Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 08468 Reichenbach",
+          "new": "🇩🇪 DE-08468 Reichenbach"
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.099Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

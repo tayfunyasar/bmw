@@ -1,0 +1,104 @@
+{
+  "listingId": "C546",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-autom-cabrio-laser-headup-wartung-t%C3%BCv-neu-seevetal/459434434.html",
+  "mobileDeId": "459434434",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Blue Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Beige",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 70 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 53255,
+  "mileageKm": 37655,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "07/2028",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-21217 Seevetal",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "no",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "yes",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-29T22:39:11.000Z",
+    "modifiedTime": "2026-06-30T16:34:49.000Z",
+    "renewedTime": "2026-06-29T22:39:11.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-29T22:39:11.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-29T22:39:11.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-03T17:41:52.872Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

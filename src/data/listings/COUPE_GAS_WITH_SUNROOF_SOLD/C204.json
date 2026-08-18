@@ -1,0 +1,144 @@
+{
+  "listingId": "C204",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-leder-sport-auspuff-m-schiebedach-isernhagen-ot-altwarmb%C3%BCchen-bei-hannover-a2-a7/453768971.html",
+  "mobileDeId": "453768971",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "SAPHIRSCHWARZ",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 45999,
+  "mileageKm": 64335,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    4
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Automobile A7 ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-30916 Isernhagen OT Altwarmbüchen bei Hannover A2/A7",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-21T14:16:19.000Z",
+    "modifiedTime": "2026-05-26T15:15:21.000Z",
+    "renewedTime": "2026-05-11T09:58:59.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-21T14:16:19.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-21T14:16:19.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-23T20:31:59.366Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-04T11:48:08.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-11T09:58:59.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 46499,
+          "new": 45999
+        }
+      },
+      "auditDate": "2026-05-13T19:48:02.510Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-05-29T20:21:22.336Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 30916 Isernhagen OT Altwarmbüchen bei Hannover A2/A7",
+          "new": "🇩🇪 DE-30916 Isernhagen OT Altwarmbüchen bei Hannover A2/A7"
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.107Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

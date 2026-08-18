@@ -9,7 +9,7 @@ Kullanici bir listing ID ve bayi websitesi linki verdiginde:
 
 ## Adimlar
 
-1. **Ilani bul** — Verilen listing ID'yi (ornegin C174) `src/data/listings/` JSON dosyalarinda grep ile bul.
+1. **Ilani bul** — Verilen listing ID'yi (ornegin C174) `src/data/listings/` altinda bul — her arac kendi dosyasinda, dogrudan `**/C174.json` dosyasidir.
 2. **`dealerListingUrl` ekle** — Ilana `dealerListingUrl` alanini ekle (listingUrl'den sonra, mobileDeId'den once).
 3. **Bayi sayfasini tara** — WebFetch ile linkteki tum arac ozelliklerini/donanimlarini cek (Almanca orijinal metin).
 4. **Equipment kodlarini esle** — `src/data/metadata/EQUIPMENT_RULES.json` dosyasindaki kod-ozellik eslesmesini kullanarak, bayi sitesindeki ozellikleri equipment kodlarina maple.

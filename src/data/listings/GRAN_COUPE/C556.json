@@ -1,0 +1,104 @@
+{
+  "listingId": "C556",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-m-sport-driv-assist-prof-laser-kassel/459524330.html",
+  "mobileDeId": "459524330",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Sanremo Green",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Cloth, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 55 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 56390,
+  "mileageKm": 21031,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "07/2027",
+  "sellerTypeOrName": "BMW AG Niederlassung Kassel ★4.5",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-34125 Kassel",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-01T03:26:28.000Z",
+    "modifiedTime": "2026-07-01T06:05:39.000Z",
+    "renewedTime": "2026-07-01T03:26:28.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-01T03:26:28.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-01T03:26:28.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-03T17:41:52.878Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

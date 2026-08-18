@@ -1,0 +1,91 @@
+{
+  "listingId": "C117",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-garantie-bis-06-2030-werne/449491149.html",
+  "mobileDeId": "449491149",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Mineralweiss Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Brown",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 56090,
+  "mileageKm": 26005,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    6
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "02/2028",
+  "sellerTypeOrName": "Erwin Schmidt GmbH & Co. KG Vertragshändler der BMW Group ★4.2",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 174,
+  "listingLocation": "🇩🇪 59368 Werne",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "unknown",
+    "S536A": "yes",
+    "S2NHA": "no",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "🟠 Aylık ~2,601 km — yüksek kullanım",
+    "🟡 Servis geçmişi bilinmiyor",
+    "🔴 Toplam €71,721 — bütçe aşımı"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "listingId": "C1007",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449395483",
+  "mobileDeId": "449395483",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "?",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "?",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 48950,
+  "mileageKm": null,
+  "firstRegistrationYearAndMonth": [
+    null,
+    null
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "?",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Unknown",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [
+    "€48,950 (📉 €51,510'dan düştü!) | 🔙 RWD DOĞRULANDI (Heckantrieb + 2,190kg). Near-full spec + Sunroof ama arka çekişli. WELLER ★4.7. Brooklyn Grau+Vernasca Siyah. DA+ Pro, Laser, HUD, HK, 360°, M Diff, M Brake, Adaptive M, VSS, Seat Ventilation, ACC Stop&Go. Tablodaki en iyi donanımlı araçtı — çok yazık!"
+  ],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "unknown",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "unknown",
+    "S322A": "unknown",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C5 — tescil / + ~0km + ~€48990 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"?\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C5"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.177Z"
+    },
+    {
+      "action": "listingId Düzeltildi",
+      "detail": "Eski kimlik \"C16/C47\" (C16+C47 ikiz birleşimi) dosya adı olamayacağı için C1007 olarak yeniden numaralandı (per-car dosya migrasyonu öncesi temizlik)",
+      "changes": {
+        "listingId": {
+          "old": "C16/C47",
+          "new": "C1007"
+        }
+      },
+      "auditDate": "2026-08-16T12:33:13.968Z"
+    }
+  ],
+  "cardThemeColorHex": "#fb7185",
+  "aiCommentary": null
+}

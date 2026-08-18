@@ -1,0 +1,97 @@
+{
+  "listingId": "C968",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-m-sport-nieborowice/39377178880192.html",
+  "mobileDeId": "39377178880192",
+  "exteriorColorName": "Black",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+  "basePriceEuro": 34890,
+  "mileageKm": 43044,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    4
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "AUTO-CENTRUM S.C RYSZARD ZAROW, NIKODEM ZAROW ★4.2",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 170,
+  "listingLocation": "🇵🇱 PL-44-144 NIEBOROWICE",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S536A": "no",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S5ACA": "no",
+    "S430A": "yes",
+    "S3ACA": "yes",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S302A": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S1MAA": "unknown",
+    "S2NHA": "unknown",
+    "S2VLA": "unknown",
+    "S6C4A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S715A": "unknown",
+    "S493A": "unknown",
+    "S216A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-11T12:52:18.000Z",
+    "modifiedTime": "2026-08-11T13:00:13.000Z",
+    "renewedTime": "2026-08-11T12:52:18.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-11T12:52:18.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-11T13:29:01.867Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

@@ -1,11 +1,11 @@
-// Dislanan ulkelerden gelen ilanlari kendi dosyasina tasir (or. LT → LITHUANIA.json).
+// Dislanan ulkelerden gelen ilanlari kendi kategorisine tasir (or. LT → LITHUANIA/).
 //
-// Config tek kaynak: src/data/metadata/LISTING_FILES.json → countryExcludedFiles.
+// Config tek kaynak: src/data/metadata/LISTING_FILES.json → countryExcludedCategories.
 // Yeni bir ulke dislamak icin YALNIZCA o JSON'a satir eklenir; burada kod degismez.
 //
-// Neden ayri script: parse-car-json.js yeni/guncellenen ilanlari dogru dosyaya
+// Neden ayri script: parse-car-json.js yeni/guncellenen ilanlari dogru kategoriye
 // yonlendirir ama SOLD / CAKAL / DELETED "frozen" oldugu icin oradakileri tasimaz.
-// Bu script TUM dosyalari tarar — mevcut veriyi config ile hizalar, tekrar
+// Bu script TUM kategorileri tarar — mevcut veriyi config ile hizalar, tekrar
 // calistirilabilir (idempotent: tasinacak bir sey yoksa hicbir dosyaya dokunmaz).
 //
 // Kullanim:
@@ -17,60 +17,39 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { countryCodeFromLocation } from './lib/country.js';
-import { listingsDir, pushAudit } from './lib/move-listing.js';
+import { pushAudit } from './lib/move-listing.js';
+import { readCategory, moveCar } from './lib/listings-store.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const LISTING_FILES = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8')
 );
-const EXCLUDED = LISTING_FILES.countryExcludedFiles || {};
+const EXCLUDED = LISTING_FILES.countryExcludedCategories || {};
 const isDry = process.argv.includes('--dry');
 
 const targets = new Set(Object.values(EXCLUDED));
-const readListings = (file) => {
-  const filePath = path.join(listingsDir, file);
-  return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : [];
-};
-
-// Hedef dosyalari bir kez oku; kaynaklardan cikanlar buraya eklenir.
-const targetData = Object.fromEntries([...targets].map(file => [file, readListings(file)]));
-const dirty = new Set();
 const moved = [];
 
-for (const file of LISTING_FILES.allFiles) {
-  if (targets.has(file)) continue;                 // hedef dosyanin kendisi taranmaz
-  const data = readListings(file);
-  if (!Array.isArray(data) || data.length === 0) continue;
-
-  const keep = [];
-  for (const car of data) {
+for (const category of LISTING_FILES.allCategories) {
+  if (targets.has(category)) continue;             // hedef kategorinin kendisi taranmaz
+  for (const car of readCategory(category)) {
     const code = countryCodeFromLocation(car.listingLocation);
-    const targetFile = code ? EXCLUDED[code] : null;
-    if (!targetFile) { keep.push(car); continue; }
+    const target = code ? EXCLUDED[code] : null;
+    if (!target) continue;
 
-    pushAudit(car, 'Ülke Dışlaması', `${code} ülkesinden — ${file} → ${targetFile} (kapsam dışı, arayüzde gösterilmez)`);
-    targetData[targetFile].push(car);
-    moved.push({ listingId: car.listingId, mobileDeId: car.mobileDeId, code, from: file, to: targetFile });
-    dirty.add(file);
-    dirty.add(targetFile);
-  }
-  if (dirty.has(file) && !isDry) {
-    fs.writeFileSync(path.join(listingsDir, file), JSON.stringify(keep, null, 2) + '\n', 'utf8');
+    moved.push({ listingId: car.listingId, mobileDeId: car.mobileDeId, code, from: category, to: target });
+    if (!isDry) {
+      pushAudit(car, 'Ülke Dışlaması', `${code} ülkesinden — ${category} → ${target} (kapsam dışı, arayüzde gösterilmez)`);
+      moveCar(category, target, car);
+    }
   }
 }
 
-if (!isDry) {
-  for (const file of dirty) {
-    if (!targets.has(file)) continue;
-    fs.writeFileSync(path.join(listingsDir, file), JSON.stringify(targetData[file], null, 2) + '\n', 'utf8');
-  }
-}
-
-console.log(`=== Ülke dışlaması: ${Object.entries(EXCLUDED).map(([c, f]) => `${c} → ${f}`).join(', ')} ===`);
+console.log(`=== Ülke dışlaması: ${Object.entries(EXCLUDED).map(([c, t]) => `${c} → ${t}`).join(', ')} ===`);
 if (moved.length === 0) {
   console.log('Taşınacak ilan yok — mevcut veri config ile zaten hizalı.');
 } else {
-  moved.forEach(m => console.log(`  ${isDry ? '(dry) ' : '🌍 '}${m.listingId} (${m.mobileDeId}) [${m.code}]  ${m.from.replace(/\.json$/, '')} → ${m.to.replace(/\.json$/, '')}`));
+  moved.forEach(m => console.log(`  ${isDry ? '(dry) ' : '🌍 '}${m.listingId} (${m.mobileDeId}) [${m.code}]  ${m.from} → ${m.to}`));
   console.log(`\nToplam ${moved.length} ilan taşındı.`);
 }
 if (isDry) console.log('\n(--dry: hiçbir dosya yazılmadı)');

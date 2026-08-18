@@ -1,0 +1,110 @@
+{
+  "listingId": "C493",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440ix-cabrio-hud-harman-kameras-individual-panevezys/458786286.html",
+  "mobileDeId": "458786286",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Green Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"Xdrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 53 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 14000,
+  "mileageKm": 47000,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    5
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇱🇹 LT-35111 Panevezys",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "no",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "no",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-21T09:56:34.000Z",
+    "modifiedTime": "2026-06-21T09:57:05.000Z",
+    "renewedTime": "2026-06-21T09:56:34.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-21T09:56:34.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-21T09:56:34.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-21T10:49:20.707Z"
+    },
+    {
+      "action": "Ülke Dışlaması",
+      "detail": "LT ülkesinden — CABRIO.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+      "changes": null,
+      "auditDate": "2026-08-03T20:09:59.558Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

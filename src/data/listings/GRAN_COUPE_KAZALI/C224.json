@@ -1,0 +1,116 @@
+{
+  "listingId": "C224",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-31ktm-harman-headup-memory-kamera-acc-berlin/438488570.html",
+  "mobileDeId": "438488570",
+  "exteriorColorName": "DRAVITGRAU",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "basePriceEuro": 31990,
+  "mileageKm": 31126,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "02/2026",
+  "sellerTypeOrName": "gamma futura GmbH ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-12109 Berlin",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true",
+    "⚠️ GRAN_COUPE_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2025-10-09T15:04:33.000Z",
+    "modifiedTime": "2026-05-02T22:25:24.000Z",
+    "renewedTime": "2026-04-24T15:04:48.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2025-10-09T15:04:33.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-24T15:04:48.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:36:31.764Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF_KAZALI → GRAN_COUPE",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:44:38.442Z"
+    },
+    {
+      "action": "Dosya Taşıma: GRAN_COUPE → GRAN_COUPE_KAZALI",
+      "detail": "Apify isDamaged alanı true",
+      "changes": null,
+      "auditDate": "2026-05-05T14:54:36.236Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
+  "modelGenerationCertain": false,
+  "sunroofReason": "S403A=no — checkbox otoritesi: 70 kalemlik kapsamlı listede işaretli değil"
+}

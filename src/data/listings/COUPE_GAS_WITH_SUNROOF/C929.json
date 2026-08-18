@@ -1,0 +1,141 @@
+{
+  "listingId": "C929",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-werdohl/38667719922400.html",
+  "mobileDeId": "38667719922400",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "black sapphire",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 79990,
+  "mileageKm": 10,
+  "firstRegistrationYearAndMonth": [
+    null,
+    null
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "Kaltenbach Automobile GmbH BMW Vertragshändler ★4.2",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 DE-58791 Werdohl",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-07T12:38:43.000Z",
+    "modifiedTime": "2026-08-17T14:53:36.000Z",
+    "renewedTime": "2026-08-07T12:38:43.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-07T12:38:43.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-07T12:38:43.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-07T14:37:40.888Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 96439.99,
+          "new": 79990
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-08-11T16:40:10.658Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C753 — tescil / + ~10km + ~€79990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kaltenbach Automobile GmbH BMW Vertragshändler ★4.3\" vs \"Autohaus Gerd Hoyer GmbH / BMW Vertragshändler ★5\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C753"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.171Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Kaltenbach Automobile GmbH BMW Vertragshändler ★4.3",
+          "new": "Kaltenbach Automobile GmbH BMW Vertragshändler ★4.2"
+        }
+      },
+      "auditDate": "2026-08-13T19:51:53.082Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

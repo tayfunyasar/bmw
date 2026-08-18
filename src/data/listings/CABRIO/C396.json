@@ -1,0 +1,104 @@
+{
+  "listingId": "C396",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-sport-pro-mengkofen/457409992.html",
+  "mobileDeId": "457409992",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "ALPINWEISS III",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 49999,
+  "mileageKm": 30000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    2
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Kfz-Meisterbetrieb Schwimmbeck ★5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-84152 Mengkofen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-04T09:25:58.000Z",
+    "modifiedTime": "2026-06-16T14:21:34.000Z",
+    "renewedTime": "2026-06-04T09:25:58.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-04T09:25:58.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-04T09:25:58.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:57:51.703Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

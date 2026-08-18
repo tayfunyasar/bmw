@@ -1,0 +1,112 @@
+{
+  "listingId": "C873",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-9tkm-r%C3%BCckfahrkamera-dab-waiblingen/450523022.html",
+  "mobileDeId": "450523022",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Individual Tansanitblau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 54 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 62880,
+  "mileageKm": 9350,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    4
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "BMW Autohaus Zeisler GmbH ★4.8",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-71332 Waiblingen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ CABRIO_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-17T05:26:56.000Z",
+    "modifiedTime": "2026-08-04T08:37:51.000Z",
+    "renewedTime": "2026-08-04T08:37:50.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-17T05:26:56.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-04T08:37:50.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-04T10:05:59.805Z"
+    },
+    {
+      "action": "Dosya Taşıma: CABRIO → CABRIO_KAZALI",
+      "detail": "Apify isDamaged alanı true",
+      "changes": null,
+      "auditDate": "2026-08-13T10:50:23.396Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

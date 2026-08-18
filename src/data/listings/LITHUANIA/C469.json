@@ -1,0 +1,112 @@
+{
+  "listingId": "C469",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-one-of-few-m440i-rwd-vent-seats-remote-start-kaunas/455349568.html",
+  "mobileDeId": "455349568",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Grey Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 2 — ilan başlığında \"RWD\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+  "basePriceEuro": 47599,
+  "mileageKm": 39199,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    1
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "03/2028",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇱🇹 LT-50300 Kaunas",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "yes",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "yes",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-05-09T07:52:40.000Z",
+    "modifiedTime": "2026-06-16T19:43:08.000Z",
+    "renewedTime": "2026-05-09T07:52:40.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-09T07:52:40.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-09T07:52:40.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:58:27.749Z"
+    },
+    {
+      "action": "Ülke Dışlaması",
+      "detail": "LT ülkesinden — COUPE_GAS_WITH_SUNROOF_KAZALI.json → LITHUANIA.json (kapsam dışı, arayüzde gösterilmez)",
+      "changes": null,
+      "auditDate": "2026-08-03T20:09:59.569Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

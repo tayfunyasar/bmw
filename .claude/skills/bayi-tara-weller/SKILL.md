@@ -19,6 +19,12 @@ Site: **WELLER** (config: `src/data/metadata/DEALER_SITES.json` → idPrefix W, 
   - HU / Vorbesitzer genelde yok.
   - `Differenzbesteuerung (§25a)` ibaresi varsa notes'a yaz (KDV ayristirilamaz — ihracat pazarligi etkilenir).
 - Cookie banner'i icerigi bloklamiyor (pilot gozlemi).
+- **API KISA YOLU (dogrulandi 2026-08-18, detay sayfasi/subagent GEREKSIZ):** site Next.js + Carfinder; detay verisi `https://api.cfdnext.com/vehicle/<id>` ile curl'den gelir (`Origin: https://wellergruppe.de` + `Referer` header'i ver; `/vehicles/...` DEGIL, tekil `/vehicle/`). Donen JSON alanlari:
+  - **`categories.category` govdeyi KESIN verir** (`coupe` / `cabrio` / ...) — "new" cikan her WELLER ID'si icin detay acmadan ONCE bunu cek; slug govde soylemedigi icin Cabrio/GC'ler ancak burada yakalanir (696431305 vakasi: slug govdesiz, SPA detay sayfasi render olmuyor, API "cabrio" dedi).
+  - **`meta.vin` VAR (altin)** — eski "VIN yazmaz" notu detay SAYFASI icindi; API'de VIN var, MUTLAKA al.
+  - Digerleri: `purchaseOptions.price.value` + `vatReportable` (false = §25a marj, notes'a), `condition` (registrationDate/mileage/preOwner), `appearance` (renk/doseme), `environmental.wltp.co2emissions`, `features` (Ingilizce key listesi), `locations[0]` (sube adi/adres), `data` (kW/kapi/vites).
+  - Donanim listesi `features`'ta Ingilizce key olarak gelir; description icin yine de detay sayfasi gerekebilir — ama govde/VIN/fiyat/durum eleme ve dedup icin API yeterli.
+- **SPA detay fallback tuzagi:** bazi ilanlarin `/fahrzeuge/bmw/<slug>-<id>/` sayfasi render OLMAZ (generic arama listesine duser, "3.478 Fahrzeuge"). Bunu "ilan kayip" sanma — once API'yi dene; API 200 donuyorsa ilan yayinda demektir.
 
 ## Akis
 

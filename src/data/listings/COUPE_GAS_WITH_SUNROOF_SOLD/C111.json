@@ -1,0 +1,346 @@
+{
+  "listingId": "C111",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-innovationsp-sport-aut-rft-esslingen-am-neckar/451474145.html",
+  "mobileDeId": "451474145",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 52830,
+  "mileageKm": 26613,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    4
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 170,
+  "listingLocation": "🇩🇪 DE-73730 Esslingen am Neckar",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [
+    "📧 08.04.2026 email gönderildi: CO₂/CoC, Standheizung/VSS/Live Cockpit Pro, garanti, servis, kaza, net fiyat soruldu"
+  ],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [
+    "Adaptif M Süspansiyon",
+    "M Teknik Paket"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "no",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-26T18:30:14.000Z",
+    "modifiedTime": "2026-04-07T14:05:10.000Z",
+    "renewedTime": "2026-03-26T18:30:14.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-26T18:30:14.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-26T18:30:14.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 Esslingen",
+          "new": "🇩🇪 73730 Esslingen am Neckar"
+        },
+        "interiorColorName": {
+          "old": "Alcantara Siyah",
+          "new": "Alcantara, Black"
+        },
+        "service": {
+          "old": {
+            "type": "yes",
+            "history": []
+          },
+          "new": {
+            "type": "unknown",
+            "history": []
+          }
+        },
+        "nextInspectionDate": {
+          "old": "Yeni",
+          "new": "New"
+        },
+        "co2EmissionsGramPerKm": {
+          "old": 170,
+          "new": 0
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S6U3A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S1MAA": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S6C4A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-04-01T19:09:58.155Z"
+    },
+    {
+      "action": "Donanım Yeniden Hesaplandı",
+      "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-01T20:15:12.864Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S6U3A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S6C4A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.211Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": true
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.825Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:32:16.857Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S1MAA": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:39:29.192Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-04-10T19:58:54.246Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟢 6 gündür satışta — yeni ilan",
+            "🟡 Servis geçmişi bilinmiyor",
+            "Near-full spec!",
+            "🟠 Toplam €60,003 — bütçe üst sınırına yakın"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.086Z"
+    },
+    {
+      "action": "Veri Onarimi: CO₂ geri yüklendi",
+      "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 170
+        }
+      },
+      "auditDate": "2026-08-13T10:48:07.184Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

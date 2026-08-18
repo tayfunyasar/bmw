@@ -19,6 +19,6 @@ The user will provide one or more IDs. Examples:
 
 For each provided ID:
 1. Run `npm run move:sell -- <id>` using the Bash tool.
-2. Report the result to the user (script prints `✅ <listingId> (<mobileDeId>) satıldı — <source> → COUPE_GAS_WITH_SUNROOF_SOLD.json`).
+2. Report the result to the user (script prints `✅ <listingId> (<mobileDeId>) satıldı — <source> → COUPE_GAS_WITH_SUNROOF_SOLD`).
 
 If no IDs are provided, ask the user for the ID(s).

@@ -1,17 +1,7 @@
-import path from 'path';
-import { moveListing, listingsDir, DEFAULT_SOURCE_FILES, pushAudit, KAZALI_AUDIT_ACTION } from './lib/move-listing.js';
+import { moveListing, DEFAULT_SOURCE_CATEGORIES, pushAudit, KAZALI_AUDIT_ACTION } from './lib/move-listing.js';
 
-const coupeKazaliArchive = {
-  path: path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_KAZALI.json'),
-  name: 'COUPE_GAS_WITH_SUNROOF_KAZALI.json'
-};
-const granCoupeKazaliArchive = {
-  path: path.join(listingsDir, 'GRAN_COUPE_KAZALI.json'),
-  name: 'GRAN_COUPE_KAZALI.json'
-};
-
-function pickKazaliArchive(sourceFile) {
-  return sourceFile === 'GRAN_COUPE.json' ? granCoupeKazaliArchive : coupeKazaliArchive;
+function pickKazaliArchive(sourceCategory) {
+  return sourceCategory === 'GRAN_COUPE' ? 'GRAN_COUPE_KAZALI' : 'COUPE_GAS_WITH_SUNROOF_KAZALI';
 }
 
 const [id, ...reasonParts] = process.argv.slice(2);
@@ -23,10 +13,10 @@ const reason = reasonParts.join(' ').trim() || 'Manuel işaretlendi';
 
 const result = moveListing({
   id,
-  sourceFiles: [...DEFAULT_SOURCE_FILES, 'CABRIO.json'],
+  sourceCategories: [...DEFAULT_SOURCE_CATEGORIES, 'CABRIO'],
   pickArchive: pickKazaliArchive,
-  mutateCar: (car, { sourceFile, archive }) => {
-    pushAudit(car, KAZALI_AUDIT_ACTION, `${sourceFile} dosyasından ${archive.name} dosyasına taşındı — ${reason}`);
+  mutateCar: (car, { sourceCategory, archive }) => {
+    pushAudit(car, KAZALI_AUDIT_ACTION, `${sourceCategory} dosyasından ${archive} dosyasına taşındı — ${reason}`);
     car.listingDescriptionNotes = car.listingDescriptionNotes || [];
     const note = `⚠️ KAZALI olarak işaretlendi — ${reason}`;
     if (!car.listingDescriptionNotes.includes(note)) {
@@ -40,4 +30,4 @@ if (!result.found) {
   process.exit(1);
 }
 
-console.log(`💥 ${result.car.listingId} (${result.car.mobileDeId}) kazalı olarak taşındı — ${result.sourceFile} → ${result.archive.name} (${reason})`);
+console.log(`💥 ${result.car.listingId} (${result.car.mobileDeId}) kazalı olarak taşındı — ${result.sourceCategory} → ${result.archive} (${reason})`);

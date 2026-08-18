@@ -1,0 +1,167 @@
+{
+  "listingId": "C147",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-440-m440i-xdrive-coupe-b%C3%BChlertal/451532906.html",
+  "mobileDeId": "451532906",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Blue Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — fabrika opsiyon kodu \"(0403)\" ilan açıklamasında geçiyor",
+  "basePriceEuro": 45900,
+  "mileageKm": 68375,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    11
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "12/2027",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-77830 Bühlertal",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-27T13:21:00.000Z",
+    "modifiedTime": "2026-04-21T14:23:02.000Z",
+    "renewedTime": "2026-03-27T13:21:00.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-27T13:21:00.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-27T13:21:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-04T10:59:37.372Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S3AGA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.825Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:32:16.857Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-04-28T13:44:13.457Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 77830 Bühlertal",
+          "new": "🇩🇪 DE-77830 Bühlertal"
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.087Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

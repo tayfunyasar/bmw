@@ -1,0 +1,184 @@
+{
+  "id": 40472286273152,
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-kehl/40472286273152.html",
+  "shortTitle": "BMW M440",
+  "subTitle": "i xDrive Cabrio ",
+  "title": "BMW M440i xDrive Cabrio ",
+  "properties": {
+    "milage": "16,430 km",
+    "gearbox": "Automatic",
+    "fuelType": null,
+    "power": "275 kW (374 hp)",
+    "firstRegistration": "07/2025",
+    "seats": null,
+    "doors": "2/3",
+    "generalInspection": "New",
+    "lastService": null,
+    "lastServiceMilage": null,
+    "productionDate": null,
+    "engineSize": "3,000 ccm",
+    "cylinders": null,
+    "emptyWeight": null,
+    "emissionClass": null,
+    "emissionSticker": "4 (Green)",
+    "co2Emission": "0 g/km",
+    "co2Class": null,
+    "fuelConsumption": null,
+    "costPer1500km": null,
+    "colour": "White",
+    "manufacturerColour": "alpinweiss 3",
+    "upholstery": "Black",
+    "countryVersion": null,
+    "vehicleNumber": "CV38881",
+    "numberOfOwners": "1",
+    "climatisation": null,
+    "parkingSensors": null,
+    "airbags": null,
+    "tankCapacity": null,
+    "range": null,
+    "powerConsumption": null,
+    "energyConsumption": "-- kWh/100km",
+    "otherEnergySources": "Electricity",
+    "driveType": "Electric motor"
+  },
+  "descriptionHtml": "<b></b><br><b>(Änderungen, Irrtümer und Zwischenverkauf vorbehalten!)</b><br>",
+  "description": "\n(Änderungen, Irrtümer und Zwischenverkauf vorbehalten!)\n",
+  "isNew": true,
+  "isDamaged": false,
+  "isReadyToDrive": true,
+  "isConditionNew": false,
+  "segment": "Car",
+  "category": "Cabrio",
+  "sellerId": 2688177,
+  "manufacturer": "BMW",
+  "model": "M440",
+  "price": {
+    "priceType": "FIXED",
+    "amount": 65930,
+    "currency": "EUR",
+    "formatted": "€65,930",
+    "vat": 19
+  },
+  "netPrice": {
+    "amount": 55403.36,
+    "currency": "EUR",
+    "formatted": "€55,403"
+  },
+  "createdTime": "2026-08-17T17:24:18.000Z",
+  "modifiedTime": "2026-08-17T17:24:36.000Z",
+  "renewedTime": "2026-08-17T17:24:18.000Z",
+  "attributes": {
+    "Vehicle condition": "Used vehicle, Accident-free",
+    "Category": "Convertible/Roadster",
+    "Vehicle Number": "CV38881",
+    "Availability": "Now",
+    "Mileage": "16,430 km",
+    "Cubic Capacity": "3,000 ccm",
+    "Power": "275 kW (374 hp)",
+    "Drive type": "Electric motor",
+    "Other energy source": "Electricity",
+    "Door Count": "2/3",
+    "Transmission": "Automatic",
+    "Emissions Sticker": "4 (Green)",
+    "First Registration": "07/2025",
+    "Number of Vehicle Owners": "1",
+    "HU": "New",
+    "Colour (Manufacturer)": "alpinweiss 3",
+    "Colour": "White",
+    "Interior Design": "Black",
+    "Energy consumption (comb.)": "-- kWh/100km",
+    "CO₂ emissions (comb.)": "0 g/km"
+  },
+  "batteryInformation": {
+    "warrentyInfo": "Not specified"
+  },
+  "features": [
+    "Warranty"
+  ],
+  "images": [],
+  "version": 4,
+  "priceRating": {
+    "rating": "High price",
+    "priceRanges": [
+      {
+        "label": "Very good price",
+        "min": 39300,
+        "max": 51100
+      },
+      {
+        "label": "Good price",
+        "min": 51100,
+        "max": 55000
+      },
+      {
+        "label": "Fair price",
+        "min": 55000,
+        "max": 61100
+      },
+      {
+        "label": "Increased price",
+        "min": 61100,
+        "max": 65600
+      },
+      {
+        "label": "High price",
+        "min": 65600,
+        "max": 72900
+      }
+    ]
+  },
+  "dealer": {
+    "id": 2688177,
+    "contry": "DE",
+    "name": "ahg Autohandelsgesellschaft mbH",
+    "phones": [
+      "+49 (0)7851 933242"
+    ],
+    "messengers": [],
+    "languages": [
+      "Deutsch",
+      "English",
+      "Italiano",
+      "Français",
+      "Español"
+    ],
+    "activeSince": "2009-06-30T00:00:00.000+00:00",
+    "homePageUrl": "https://home.mobile.de/home/redirect.html?customerId=2688177",
+    "logoUrl": "https://img.classistatic.de/api/v1/mo-prod/images/ca/cac65817-3434-44c3-918e-2898d324cabb?rule=mo-1600.jpg",
+    "reviewPageUrl": "https://www.mobile.de/bewertungen/AHGKEHLAUTOHANDELSGESELLSCHAFTMBH?lang=en",
+    "sellerType": "Dealer",
+    "addesses": [
+      "Königsbergerstraße 10",
+      "DE-77694 Kehl"
+    ],
+    "location": {
+      "latitude": 48.5771296,
+      "longitude": 7.820165799999999
+    },
+    "rating": {
+      "advice": 5,
+      "total": 5,
+      "responseTime": 5,
+      "friendliness": 5,
+      "adRealityRate": 100,
+      "ratingCount": 3,
+      "recommendationRate": 100
+    },
+    "openingHours": [
+      {
+        "day": "Mon - Fri",
+        "time": "08:00 h - 18:00 h"
+      },
+      {
+        "day": "Sat",
+        "time": "09:00 h - 12:00 h"
+      }
+    ],
+    "person": {}
+  },
+  "footnotes": [
+    "The information is provided in accordance with the Passenger Car Energy Consumption Labelling Regulation. The values stated were determined in accordance with the prescribed WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) measurement method. The fuel consumption and CO₂ emissions of a car depend not only on the efficient utilisation of fuel by the car, but also on driving style and other non-technical factors. CO₂ is the main greenhouse gas responsible for global warming. A guide to the fuel consumption and CO₂ emissions of all new car models offered in Germany can be viewed free of charge at any point of sale in Germany where new cars are displayed or offered for sale. The guide is also available here: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+    "The terms and conditions of the service provider apply."
+  ],
+  "vat": "19.00% VAT"
+}

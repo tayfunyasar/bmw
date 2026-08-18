@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"const fs=require('fs');const d=JSON.parse(fs.readFileSync('logs/last-scan.json','utf8'));const m=Math.max(0,Math.round((Date.now()-new Date(d.finishedAt).getTime())/60000));const s=m>=180?'UYARI: 3 saatten eski - mobilede-tara loop kopmus olabilir, kullaniciya /mobilede-tara calistirmayi hatirlat':'loop guncel';console.log(JSON.stringify({hookSpecificOutput:{hookEventName:'SessionStart',additionalContext:'mobilede-tara son tam tarama: '+d.finishedAt+' ('+m+' dk once) - '+s}}))\" 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}

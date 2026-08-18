@@ -1,0 +1,122 @@
+{
+  "listingId": "C334",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laserlicht-adaptives-m-fahrwerk-head-prien-am-chiemsee/458491677.html",
+  "mobileDeId": "458491677",
+  "exteriorColorName": "Arctic Race Blue",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": false,
+  "basePriceEuro": 47950,
+  "mileageKm": 29550,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "07/2025",
+  "sellerTypeOrName": "AUTOHAUS UNTERBERGER GmbH (BMW Vertragshändler) ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-83209 Prien am Chiemsee",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-17T12:14:08.000Z",
+    "modifiedTime": "2026-07-07T15:07:09.000Z",
+    "renewedTime": "2026-06-17T12:14:08.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-17T12:14:08.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-17T12:14:08.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:56:53.219Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 48950,
+          "new": 47950
+        }
+      },
+      "auditDate": "2026-07-11T22:39:27.767Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
+      "detail": "Apify isDamaged alanı true",
+      "changes": null,
+      "auditDate": "2026-07-11T22:39:27.767Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+  ],
+  "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+}

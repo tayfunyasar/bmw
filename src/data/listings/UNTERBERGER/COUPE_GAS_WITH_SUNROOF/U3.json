@@ -1,0 +1,104 @@
+{
+  "listingId": "U3",
+  "listingUrl": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-oesterreich-paket-innovations-paket",
+  "dealerListingUrl": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-oesterreich-paket-innovations-paket",
+  "mobileDeId": null,
+  "vin": "WBA11AR030CJ44504",
+  "possibleTwinOf": null,
+  "exteriorColorName": "schwarz metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Leder Vernasca Schwarz Dekor",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 0 — VIN tip kodu \"11AR\" = M440i xDrive Coupé (fabrika verisi, ilan metnini ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 53990,
+  "mileageKm": 78878,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    1
+  ],
+  "numberOfPreviousOwners": 1,
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "neu",
+  "sellerTypeOrName": "Unterberger Automobile GmbH & Co KG (Kaprun)",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇦🇹 5710 Kaprun",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": null,
+    "modifiedTime": null,
+    "renewedTime": null
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-07T08:04:40.980Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "UNTERBERGER taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sunroofReason": {
+          "old": null,
+          "new": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+        }
+      },
+      "auditDate": "2026-08-10T07:14:25.805Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

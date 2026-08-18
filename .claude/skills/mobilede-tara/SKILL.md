@@ -24,7 +24,7 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
    ```
    Donusta `{ kept, skipped }` alacaksin.
    - `skipped[i].reason`: `Sponsorlu` / `GranCoupe` / `Cabrio`.
-   - `kept[i].status`: `existing` (mobileDeId `src/data/listings/*.json` icinde zaten var) veya `new`.
+   - `kept[i].status`: `existing` (mobileDeId `src/data/listings/**` icinde zaten var) veya `new`.
    - `kept[i].existingIn`: existing ise hangi dosyada bulundu (orn. `COUPE_GAS_WITH_SUNROOF`, `SOLD`, `KAZALI`, vb.).
    - `kept[i].existingListingId`: existing ise lokal listingId (orn. `C36`).
 
@@ -54,7 +54,7 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
 9. **Stale ilanlari da yenile (refresh, 2 gun esigi).** Tarama + import bittikten sonra bu adim ATLANMAZ — `refresh` skill'inin (`.claude/skills/refresh/SKILL.md`) TAM akisini, gun esigini **2** yaparak calistir:
    1. `npm run refresh -- 2` (Bash). Ciktida `403` / "Detected a session error" / "veri bulunamadi" / "Batch N hata verdi" basarisizlik sinyalidir.
    2. `node scripts/refresh-stale.js --list 2` ile hala stale kalan (= 403 yiyip cekilemeyen) `mobileDeId`'leri bul. Bos ise bu adim biter, dogrudan rapora gec.
-   3. Her basarisiz ID icin `src/data/listings/COUPE_GAS_WITH_SUNROOF.json` icinden `listingUrl`'i bul, Chrome'da `navigate` + `get_page_text` ile ac: sayfa "Bu arac mevcut degil" / bos donuyorsa **kayip/satilmis**, ilan icerigi (fiyat, km) doluysa **gecerli** (dokunma).
+   3. Her basarisiz ID icin `src/data/listings/COUPE_GAS_WITH_SUNROOF/` klasorundeki arac dosyasindan (`grep -rl <id>`) `listingUrl`'i bul, Chrome'da `navigate` + `get_page_text` ile ac: sayfa "Bu arac mevcut degil" / bos donuyorsa **kayip/satilmis**, ilan icerigi (fiyat, km) doluysa **gecerli** (dokunma).
    4. Kayip tespit edilen ID'ler icin `npm run move:sell -- <mobileDeId>` calistir.
    - **Onay istisnasi:** `refresh` skill'inin manuel calistirilmasinda birden fazla kayip ilan varsa tasimadan once kullaniciya onay sorulur; **bu otomatik loop icinde onay beklenemez** (kimse izlemiyor olabilir) — bu yuzden burada kayip ilanlar dogrudan `move:sell` ile tasinir, onay istenmez. Tasinan her ilan raporda acikca listelenir ki kullanici sonradan gozden gecirebilsin.
    - Rapora ekle: kac ilan stale bulundu, kac tanesi basariyla yenilendi, kac tanesi 403 yedi, 403 yiyenlerden kaci gecerli/kayip, `move:sell` ile SOLD'a tasinanlarin `listingId (mobileDeId)` listesi.
@@ -62,10 +62,15 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
     - **Ucuz-gecis kurali:** her sitede once yalniz ARAMA LISTESI taranir ve `filter-listings.js`'e verilir; `new` YOKSA o site icin detay sayfasi/subagent HIC acilmaz (dealerKey listede cozulur). Yeni ilan yoksa bayi fazi dakikalar degil saniyeler surer — 3h loop'ta her turda kosulabilir.
     - **Hata izolasyonu:** bir site bot duvari/timeout ile takilirsa o site raporlanip ATLANIR, kalan siteler devam eder. Ayni siteye 2-3 denemeden fazla ugrasma.
     - **Onay istisnasi (loop icinde):** `possibleTwins` ciktisi icin onay BEKLENMEZ — import yapilir, ikiz suphesi rapora ve karta (`possibleTwinOf`) islenir; kullanici sonradan gozden gecirir.
-11. **Session-bound 3h re-scan loop'u ara.** Rapor sunulduktan sonra bu adim ATLANMAZ: `ScheduleWakeup` ile bu taramayi (adim 1-10, refresh + bayi taramasi dahil) 3 saat sonra tekrar tetikleyecek bir uyanma kur (dynamic `/loop` modu, ayni skill prompt'unu geri gonder).
-    - **Sadece 09:00–20:00 (yerel saat) araliginda calistir.** Pencere disindaysa bir sonraki gunun 09:00'ina ertele.
-    - `ScheduleWakeup` en fazla 3600s (1s) kabul eder; 3h'lik araligi tutturmak icin saatte bir yeniden kur (check → due degilse kalan sureyle tekrar ScheduleWakeup, due ise taramayi calistir).
-    - Bu loop **session'a bagli** — session kapaninca biter, `/schedule` ile cloud cron KURMA (Chrome extension'i sadece kullanicinin acik oturumunda calisir).
+11. **State dosyasi + session-bound 3h re-scan loop.** Rapor sunulduktan sonra bu adim ATLANMAZ; iki parcasi var:
+    1. **State dosyasini yaz:** `logs/last-scan.json` dosyasina tek satir JSON yaz (Write tool):
+       `{"finishedAt":"<ISO yerel zaman>","newImported":N,"refreshed":N,"movedToSold":[],"dealerNew":N,"notes":"<varsa onemli not>"}`
+       Bu dosya "en son ne zaman tarandi?" sorusunun tek kaynagi — session kopsa bile kalir; SessionStart hook'u da bunu okur.
+    2. **Loop'u kur:** `ScheduleWakeup` ile bu taramayi (adim 1-10 dahil) 3 saat sonra tekrar tetikleyecek uyanma kur (dynamic `/loop` modu). Wakeup prompt'una MUTLAKA sunlari yaz: hedef zaman (simdi+3h), pencere kurali, ve "hedef GECMISSE hemen calistir" talimati.
+    - **Sadece 09:00–20:00 (yerel saat) araliginda calistir.** Pencere disindaysa hedefi bir sonraki gunun 09:00'ina koy.
+    - `ScheduleWakeup` en fazla 3600s kabul eder; 3h'lik araligi tutturmak icin saatte bir yeniden kur (uyaninca `date` + `logs/last-scan.json` kontrol → hedef gecmemis ise kalan sureyle tekrar kur + `noop:true`; hedef gecmis/gelmis ise taramayi calistir).
+    - **Gecikme telafisi:** uyanma hedeften SONRA gelirse (uyku/kapali session zinciri geciktirmis olabilir) — pencere aciksa beklemeden HEMEN tara; `last-scan.json` yasi 3 saatten buyukse de ayni sekilde hemen tara.
+    - Bu loop **session'a bagli** — session kapaninca biter, `/schedule` ile cloud cron KURMA (Chrome extension'i sadece kullanicinin acik oturumunda calisir). Kopmayi gorunur kilan sey SessionStart hook'udur: yeni/yeniden acilan session'da hook `last-scan.json` yasini basar; yas 3h+ ise kullaniciya "loop kopmus, /mobilede-tara calistir" diye hatirlat (otomatik baslatma — kullanici gorunurde yoksa — YAPMA; hatirlatma yeterli).
 
 ## Notlar
 

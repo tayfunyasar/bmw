@@ -1,0 +1,98 @@
+{
+  "listingId": "C32",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=437446685",
+  "mobileDeId": "437446685",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "?",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "?",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 54890,
+  "mileageKm": 9000,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    9
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "?",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Unknown",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "unknown",
+    "S5DN_360": "yes",
+    "KGNL": "unknown",
+    "S322A": "unknown",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#f97316",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🟡 Özel satıcı — bayi güvencesi yok",
+    "€54,890 | LCI 09/2024, 9K km, 1 sahip, Black Sapphire+Vernasca Siyah. DA+ Pro, 360°, GSD, VSS, M Diff, Innovation, Comfort Access, ACC Stop&Go, Park Asst+, Wireless Chrg. HiFi (HK değil), Laser yok. WELLER ★4.7. 💰 LCI BPM ~€11K → toplam ~€66K. Kazasız, Tam Servis, HU Yeni",
+    "🔴 Toplam €67,736 — bütçe aşımı"
+  ]
+}

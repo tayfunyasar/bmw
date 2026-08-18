@@ -1,0 +1,103 @@
+{
+  "listingId": "C342",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-head-up-hk-hifi-dab-gsd-wunsiedel/444070406.html",
+  "mobileDeId": "444070406",
+  "exteriorColorName": "saphirschwarz",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 52500,
+  "mileageKm": 49267,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    2
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "02/2026",
+  "sellerTypeOrName": "Autohaus J. B. Lell GmbH ★4.5",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-95632 Wunsiedel",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ GRAN_COUPE_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S1MAA": "unknown",
+    "S536A": "yes",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S3ACA": "yes",
+    "S488A": "yes",
+    "S715A": "yes",
+    "S493A": "yes",
+    "S521A": "no",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2025-12-18T05:15:57.000Z",
+    "modifiedTime": "2026-06-17T14:22:49.000Z",
+    "renewedTime": "2026-06-11T14:49:36.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2025-12-18T05:15:57.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-11T14:49:36.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:57:29.550Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": false,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+}

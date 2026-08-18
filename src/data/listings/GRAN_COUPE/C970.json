@@ -1,0 +1,115 @@
+{
+  "listingId": "C970",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-pro-innov-comf-l%C3%BCneburg/460350303.html",
+  "mobileDeId": "460350303",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 82990.01,
+  "mileageKm": 0,
+  "firstRegistrationYearAndMonth": [
+    null,
+    null
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 169,
+  "listingLocation": "🇩🇪 DE-21339 Lüneburg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-10T17:19:32.000Z",
+    "modifiedTime": "2026-08-12T01:03:11.000Z",
+    "renewedTime": "2026-08-12T01:03:10.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-10T17:19:32.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-12T01:03:10.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-12T07:02:13.138Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C868 — tescil / + ~0km + ~€82900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.5\" vs \"BMW Autohaus Zeisler GmbH ★4.8\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C868"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.180Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

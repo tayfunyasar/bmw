@@ -23,7 +23,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
-import { moveListing, pushAudit, listingsDir, soldArchiveFor, ALL_SOLD_FILES } from './lib/move-listing.js';
+import { moveListing, pushAudit, soldArchiveFor, ALL_SOLD_CATEGORIES } from './lib/move-listing.js';
+import { readCategory, writeCar } from './lib/listings-store.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -31,15 +32,15 @@ const __dirname = path.dirname(__filename);
 
 const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
 
-// Alanlari tazelenecek TUM dosyalar (arsivler dahil) — tek kaynak LISTING_FILES.json.
-const ALL_FILES = LISTING_FILES.allFiles;
+// Alanlari tazelenecek TUM kategoriler (arsivler dahil) — tek kaynak LISTING_FILES.json.
+const ALL_CATEGORIES = LISTING_FILES.allCategories;
 
-// Tahrik degisirse ilanin gitmesi gereken dosya (yalnizca bu 4'u arasinda tasima).
+// Tahrik degisirse ilanin gitmesi gereken kategori (yalnizca bu 4'u arasinda tasima).
 const ROUTE = {
-  'COUPE_GAS_WITH_SUNROOF.json':        { [RWD]: 'COUPE_GAS_RWD_WITH_SUNROOF.json' },
-  'COUPE_GAS_WITHOUT_SUNROOF.json':     { [RWD]: 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json' },
-  'COUPE_GAS_RWD_WITH_SUNROOF.json':    { 'xDrive AWD': 'COUPE_GAS_WITH_SUNROOF.json' },
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF.json': { 'xDrive AWD': 'COUPE_GAS_WITHOUT_SUNROOF.json' },
+  'COUPE_GAS_WITH_SUNROOF':        { [RWD]: 'COUPE_GAS_RWD_WITH_SUNROOF' },
+  'COUPE_GAS_WITHOUT_SUNROOF':     { [RWD]: 'COUPE_GAS_RWD_WITHOUT_SUNROOF' },
+  'COUPE_GAS_RWD_WITH_SUNROOF':    { 'xDrive AWD': 'COUPE_GAS_WITH_SUNROOF' },
+  'COUPE_GAS_RWD_WITHOUT_SUNROOF': { 'xDrive AWD': 'COUPE_GAS_WITHOUT_SUNROOF' },
 };
 
 const isDry = process.argv.includes('--dry') || process.argv.includes('--dry-run');
@@ -64,13 +65,9 @@ function freshDrivetrain(listing) {
 }
 
 // --- 1. gecis: alanlari tazele, tasinacaklari topla ---
-for (const file of ALL_FILES) {
-  const filePath = path.join(listingsDir, file);
-  if (!fs.existsSync(filePath)) continue;
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-  let fileChanged = false;
-  for (const listing of data) {
+for (const category of ALL_CATEGORIES) {
+  let categoryChanged = false;
+  for (const listing of readCategory(category)) {
     summary.total++;
 
     const override = listing.overrideFeatures?.drivetrainType;
@@ -85,7 +82,7 @@ for (const file of ALL_FILES) {
 
     if (oldType !== fresh.type || oldCertain !== fresh.certain || oldReason !== fresh.reason) {
       summary.fieldChanges++;
-      fileChanged = true;
+      categoryChanged = true;
       listing.drivetrainType = fresh.type;
       listing.drivetrainCertain = fresh.certain;
       listing.drivetrainReason = fresh.reason;
@@ -98,26 +95,26 @@ for (const file of ALL_FILES) {
       const others = existing.filter(n => !isDrivetrainNote(n));
       const notes = fresh.certain ? others : [...others, fresh.note];
       listing.aiCommentary = notes.length ? notes : null;
+      if (!isDry) writeCar(category, listing);   // yalniz degisen aracin dosyasi yazilir
     }
 
-    let target = ROUTE[file]?.[fresh.type];
+    let target = ROUTE[category]?.[fresh.type];
     // SOLD arşivleri arası tutarlılık: satılmış araç da tahrik+sunroof'a göre doğru
-    // SOLD dosyasında olmalı (soldArchiveFor tek kaynak). listing.drivetrainType bu
+    // SOLD kategorisinde olmalı (soldArchiveFor tek kaynak). listing.drivetrainType bu
     // noktada fresh.type'a eşit (yukarıda güncellendi ya da zaten eşitti).
-    if (!target && ALL_SOLD_FILES.includes(file)) {
-      const correctSold = soldArchiveFor(listing).name;
-      if (correctSold !== file) target = correctSold;
+    if (!target && ALL_SOLD_CATEGORIES.includes(category)) {
+      const correctSold = soldArchiveFor(listing);
+      if (correctSold !== category) target = correctSold;
     }
     if (target) {
-      summary.moves.push({ id: listing.mobileDeId, listingId: listing.listingId, from: file, to: target, type: fresh.type });
+      summary.moves.push({ id: listing.mobileDeId, listingId: listing.listingId, from: category, to: target, type: fresh.type });
     }
   }
 
-  if (fileChanged && !isDry) {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
-    console.log(`✍️  ${file} alanlari guncellendi`);
-  } else if (fileChanged) {
-    console.log(`(dry) ${file} alanlari degisecekti`);
+  if (categoryChanged && !isDry) {
+    console.log(`✍️  ${category} alanlari guncellendi`);
+  } else if (categoryChanged) {
+    console.log(`(dry) ${category} alanlari degisecekti`);
   }
 }
 
@@ -129,8 +126,8 @@ for (const mv of summary.moves) {
   }
   const result = moveListing({
     id: mv.id,
-    sourceFiles: [mv.from],
-    pickArchive: () => ({ path: path.join(listingsDir, mv.to), name: mv.to }),
+    sourceCategories: [mv.from],
+    pickArchive: () => mv.to,
     mutateCar: (car) => pushAudit(car, 'Tahrik Tipi Düzeltildi', `${mv.type} tespit edildi — ${mv.from} → ${mv.to}`)
   });
   if (!result.found) { console.warn(`⚠️  ${mv.listingId} (${mv.id}) tasinamadi — kaynakta bulunamadi`); continue; }

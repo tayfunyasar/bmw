@@ -1,0 +1,117 @@
+{
+  "listingId": "C374",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-a-m-sport-pro-a-h-k-hud-rfk-bayreuth/457801158.html",
+  "mobileDeId": "457801158",
+  "vin": null,
+  "possibleTwinOf": "C373",
+  "exteriorColorName": "DRAVITGRAU ",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 72 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 49680,
+  "mileageKm": 63990,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    4
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Isert GmbH & Co. KG - offizieller  Ferrari Servicepartner ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-95445 Bayreuth",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C373 — tescil 2023/4 + ~63990km + ~€49680 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Isert GmbH & Co. KG - offizieller  Ferrari Servicepartner ★4.6\" vs \"Autohaus Isert GmbH & Co. KG ★4.4\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-09T09:20:33.000Z",
+    "modifiedTime": "2026-06-16T14:41:00.000Z",
+    "renewedTime": "2026-06-09T09:20:33.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-09T09:20:33.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-09T09:20:33.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:57:39.565Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C373 — tescil 2023/4 + ~63990km + ~€49680 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Isert GmbH & Co. KG - offizieller  Ferrari Servicepartner ★4.6\" vs \"Autohaus Isert GmbH & Co. KG ★4.4\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C373"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.180Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

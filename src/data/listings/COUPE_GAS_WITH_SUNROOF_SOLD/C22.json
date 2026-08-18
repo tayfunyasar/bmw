@@ -1,0 +1,354 @@
+{
+  "listingId": "C22",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=446033462",
+  "mobileDeId": "446033462",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Blue Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+  "basePriceEuro": 49900,
+  "mileageKm": 26402,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    1
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "02/2027",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 183,
+  "listingLocation": "🇩🇪 DE-74564 Crailsheim",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [
+    "Kış/Yaz lastikleri dahil"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "yes",
+    "S2NHA": "unknown",
+    "S3ACA": "no",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "yes",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-01-18T17:38:10.000Z",
+    "modifiedTime": "2026-04-21T15:22:18.000Z",
+    "renewedTime": "2026-04-12T16:25:35.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-01-18T17:38:10.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-01-18T17:38:10.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "action": "Silinen → Aktif",
+      "detail": "sunroof ilk taramada gözden kaçmıştı, tekrar taramada bulundu",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "Tekrar tarama — Kazasızlık doğrulandı. Alcantara unknown → no. Mirror Tilt → yes",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 51900,
+          "new": 50900
+        },
+        "sellerTypeOrName": {
+          "old": "Özel Satıcı (Crailsheim)",
+          "new": "Unknown Dealer"
+        },
+        "listingLocation": {
+          "old": "🇩🇪 Crailsheim",
+          "new": "🇩🇪 74564 Crailsheim"
+        },
+        "exteriorColorName": {
+          "old": "Mavi Metalik",
+          "new": "Blue Metallic"
+        },
+        "interiorColorName": {
+          "old": "Deri Siyah",
+          "new": "Full leather, Black"
+        },
+        "co2EmissionsGramPerKm": {
+          "old": 183,
+          "new": 0
+        },
+        "equipmentFeatures.WARRANTY": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S6U3A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S420A": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S6C4A": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S2NHA": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-04-01T19:09:21.192Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S420A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S6C4A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2NHA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.210Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": "unknown"
+          },
+          "new": {
+            "exists": "no"
+          }
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.819Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-12T16:25:35.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 50900,
+          "new": 49900
+        }
+      },
+      "auditDate": "2026-04-17T09:56:17.401Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-04-28T13:44:13.449Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 74564 Crailsheim",
+          "new": "🇩🇪 DE-74564 Crailsheim"
+        },
+        "aiCommentary": {
+          "old": [
+            "🟡 73 gündür satışta",
+            "🟡 Özel satıcı — bayi güvencesi yok",
+            "DA+ bileşenleri: Kör nokta + Şerit değiştirme + Acil fren + Mesafe uyarı",
+            "⚠️ Euro4 hatalı kayıt (muhtemelen Euro6)",
+            "✅ Kazasız doğrulandı"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.069Z"
+    },
+    {
+      "action": "Veri Onarimi: CO₂ geri yüklendi",
+      "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 183
+        }
+      },
+      "auditDate": "2026-08-13T10:48:07.184Z"
+    }
+  ],
+  "cardThemeColorHex": "#818cf8",
+  "aiCommentary": null
+}

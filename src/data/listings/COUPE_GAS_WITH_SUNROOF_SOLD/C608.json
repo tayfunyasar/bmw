@@ -1,0 +1,197 @@
+{
+  "listingId": "C608",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-19-lm-sd-leder-hk-head-up-ac-altenkirchen/460144483.html",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9316-a53f-77bc-a2cc-7d7af8c55715",
+  "mobileDeId": "460144483",
+  "vin": null,
+  "possibleTwinOf": "C295",
+  "exteriorColorName": "Saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49980,
+  "mileageKm": 43755,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Hakvoort GmbH ★5",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-57610 Altenkirchen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C295 — tescil 2023/5 + ~43500km + ~€49900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Hakvoort GmbH ★5\" vs \"Stefan Lö\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "no",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S6C4A": {
+      "mobile.de": "no",
+      "BMW_DE": "yes"
+    },
+    "S775A": {
+      "mobile.de": "no",
+      "BMW_DE": "yes"
+    },
+    "S5DNA": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S521A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S216A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-07-08T11:39:54.000Z",
+    "modifiedTime": "2026-08-04T16:05:05.000Z",
+    "renewedTime": "2026-07-08T11:39:54.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-08T11:39:54.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-08T11:39:54.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-08T17:07:18.952Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9316-a53f-77bc-a2cc-7d7af8c55715"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.818Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S6C4A": {
+              "mobile.de": "no",
+              "BMW_DE": "yes"
+            },
+            "S775A": {
+              "mobile.de": "no",
+              "BMW_DE": "yes"
+            },
+            "S5DNA": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S521A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S216A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:51.703Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C295 — tescil 2023/5 + ~43500km + ~€49900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Hakvoort GmbH ★5\" vs \"Stefan Lö\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C295"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.171Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-08-13T19:51:35.786Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

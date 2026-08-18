@@ -1,0 +1,101 @@
+{
+  "listingId": "C26",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449974148",
+  "mobileDeId": "449974148",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Tansanit Blue II",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Deri Siyah",
+  "drivetrainType": null,
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 49898,
+  "mileageKm": 46301,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    11
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": null,
+  "sellerTypeOrName": "Autohaus Karl+Co ★4.3",
+  "modelGeneration": null,
+  "modelGenerationCertain": null,
+  "co2EmissionsGramPerKm": null,
+  "listingLocation": "🇩🇪 Mainz",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "unknown",
+    "S2VFA": "yes",
+    "S459A": "unknown",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "yes",
+    "S5ACA": "unknown",
+    "S6C4A": "yes",
+    "S430A": "unknown",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "Yeniden ilan (id:449271448→449974148). Tüm donanım doğrulandı. Sahip 1→2, tescil 11→12/2022. HU Yeni",
+      "detail": "",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "SATILDI⭐ Tansanit Blue II, €49,898, 46.3K km. Laser+HK+DA++M Diff+Adaptive M+Sport Exhaust ama HUD/360° yoktu",
+      "detail": "",
+      "changes": null,
+      "auditDate": "2026-03-18T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Araç satıldı veya yayından kaldırıldı",
+      "changes": null,
+      "auditDate": "2026-03-18T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": null,
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor"
+  ]
+}

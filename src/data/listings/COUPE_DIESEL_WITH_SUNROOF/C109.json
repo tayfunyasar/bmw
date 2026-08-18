@@ -1,0 +1,92 @@
+{
+  "listingId": "C109",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440d-xdrive-h-k-ahk-sitzbel%C3%BCftung-laser-pressath/411996296.html",
+  "mobileDeId": "411996296",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Leder Vernasca Schwarz",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 55800,
+  "mileageKm": 35000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    12
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "Yeni",
+  "sellerTypeOrName": "Autohaus Graser GmbH ★5.0",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 150,
+  "listingLocation": "🇩🇪 Pressath",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [
+    "Sitzbelüftung (Koltuk Soğutma)"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "M440d (Diesel) — Çok dolu paket",
+    "🟠 Toplam €60,316 — bütçe üst sınırına yakın"
+  ]
+}

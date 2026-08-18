@@ -1,0 +1,161 @@
+{
+  "listingId": "C863",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sportpaket-pro-tempom-aktiv-eningen-u-a/459690121.html",
+  "dealerListingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-m-sportpaket-pro-tempom-aktiv-167126",
+  "mobileDeId": "459690121",
+  "vin": "WBA71HB010CV49578",
+  "possibleTwinOf": null,
+  "exteriorColorName": "black-sapphire metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 66460,
+  "mileageKm": 14297,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.2",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 191,
+  "listingLocation": "🇩🇪 DE-72800 Eningen u. A.",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "no",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "no",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S459A": {
+      "mobile.de": "yes",
+      "AHG": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "AHG": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-07-02T17:39:16.000Z",
+    "modifiedTime": "2026-08-18T03:31:36.000Z",
+    "renewedTime": "2026-08-04T01:01:34.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-02T17:39:16.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-04T01:01:34.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-04T07:02:04.543Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "AHG ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-m-sportpaket-pro-tempom-aktiv-167126"
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA71HB010CV49578"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.817Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "AHG ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S459A": {
+              "mobile.de": "yes",
+              "AHG": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "AHG": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:51.485Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 66930,
+          "new": 66460
+        }
+      },
+      "auditDate": "2026-08-08T10:12:51.148Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

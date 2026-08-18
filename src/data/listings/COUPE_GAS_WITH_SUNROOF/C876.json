@@ -1,0 +1,157 @@
+{
+  "listingId": "C876",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-coupe-i-xdrive-ahk-20-zoll-memory-sd-laser-acc-siegen/462231976.html",
+  "mobileDeId": "462231976",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "DRAVITGRAU",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 51991,
+  "mileageKm": 31701,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "06/2028",
+  "sellerTypeOrName": "Autohaus Siegerland (şahıs) ★4.1",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-57078 Siegen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Satıcı yetkili BMW bayisi değil — çok markalı şahıs galerisi, özel satıcı riski",
+    "⚠️ Garanti yok sayıldı — BMW Premium Selection mümkün değil, fabrika garantisi 05/2025 bitti"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-04T07:51:02.000Z",
+    "modifiedTime": "2026-08-12T09:48:03.000Z",
+    "renewedTime": "2026-08-04T07:51:02.000Z"
+  },
+  "overrideFeatures": {
+    "modelGeneration": {
+      "value": "LCI",
+      "reason": "Kullanıcı teyidi: LCI (tescil 05/2023 geçiş dönemi, otomatik Pre-LCI varsayılmıştı)"
+    },
+    "sellerTypeOrName": {
+      "value": "Autohaus Siegerland (şahıs) ★4.1",
+      "reason": "Yetkili BMW bayisi DEĞİL — çok markalı şahıs galerisi (Ertugrul Özsevgec). Web sitesi yok, iletişim cep+WhatsApp, mobile.de ilan gerçeklik oranı %76. Özel satıcı riski uygulanır."
+    },
+    "warranty": {
+      "value": {
+        "exists": "no"
+      },
+      "reason": "Fabrika garantisi 05/2025 dolmuş. BMW Premium Selection alınamaz (yetkili bayi değil). İlandaki garanti bayinin kendi/üçüncü taraf ürünü — Hollanda'da geçerliliği teyit edilmedi, yok sayıldı."
+    }
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-04T07:51:02.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-04T07:51:02.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-04T10:05:59.806Z"
+    },
+    {
+      "action": "Nesil Teyidi",
+      "detail": "Kullanıcı teyidi: LCI — 05/2023 belirsiz geçiş döneminde otomatik Pre-LCI atanmıştı",
+      "changes": {
+        "modelGeneration": {
+          "old": "Pre-LCI",
+          "new": "LCI"
+        },
+        "modelGenerationCertain": {
+          "old": false,
+          "new": true
+        }
+      },
+      "auditDate": "2026-08-04T18:59:51.857Z"
+    },
+    {
+      "action": "Satıcı Riski İşaretlendi",
+      "detail": "Kullanıcı kararı: bayi (şahıs) olarak işaretlendi, garanti yok sayıldı",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Autohaus Siegerland ★4.1",
+          "new": "Autohaus Siegerland (şahıs) ★4.1"
+        },
+        "warranty": {
+          "old": {
+            "exists": "yes"
+          },
+          "new": {
+            "exists": "no"
+          }
+        }
+      },
+      "auditDate": "2026-08-05T18:22:25.943Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

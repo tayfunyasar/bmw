@@ -1,0 +1,100 @@
+{
+  "listingId": "C991",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-head-up-hk-hifi-dab-wlan-tempomat-waiblingen/39845722560480.html",
+  "mobileDeId": "39845722560480",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": false,
+  "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49940,
+  "mileageKm": 21000,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    10
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "10/2027",
+  "sellerTypeOrName": "BMW Autohaus Zeisler GmbH ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-71332 Waiblingen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-14T04:25:19.000Z",
+    "modifiedTime": "2026-08-14T06:01:52.000Z",
+    "renewedTime": "2026-08-14T04:25:19.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-14T04:25:19.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-14T07:02:10.303Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+  ]
+}

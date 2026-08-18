@@ -1,0 +1,166 @@
+{
+  "listingId": "C663",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-shadow-laser-navi-kam-hifi-freiburg/460830216.html",
+  "dealerListingUrl": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-shadow-laser-navi-kam-hifi-168772",
+  "mobileDeId": "460830216",
+  "vin": "WBA11AR0X0CL01283",
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 36 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 47930,
+  "mileageKm": 51970,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★4.7",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 177,
+  "listingLocation": "🇩🇪 DE-79108 Freiburg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "no",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S2VLA": {
+      "mobile.de": "no",
+      "AHG": "yes"
+    },
+    "S459A": {
+      "mobile.de": "yes",
+      "AHG": "no"
+    },
+    "S5DNA": {
+      "mobile.de": "yes",
+      "AHG": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "AHG": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-07-16T17:23:48.000Z",
+    "modifiedTime": "2026-07-17T03:23:25.000Z",
+    "renewedTime": "2026-07-16T17:23:48.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-16T17:23:48.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-16T17:23:48.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-17T07:02:50.763Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "AHG ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.ahg-mobile.de/de/fahrzeugsuche/bmw-m440i-xdrive-coupe-shadow-laser-navi-kam-hifi-168772"
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA11AR0X0CL01283"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.815Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "AHG ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S2VLA": {
+              "mobile.de": "no",
+              "AHG": "yes"
+            },
+            "S459A": {
+              "mobile.de": "yes",
+              "AHG": "no"
+            },
+            "S5DNA": {
+              "mobile.de": "yes",
+              "AHG": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "AHG": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:51.489Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

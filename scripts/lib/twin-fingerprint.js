@@ -6,9 +6,7 @@
 // yalnizca bayi sitelerinde vardir. Geriye kalan tek stabil imza tescil + km + fiyat.
 // Esikler: km ±1000 (ilan bekleyen arac yol yapar), fiyat ±500 (kucuk indirim).
 
-import fs from 'fs';
-import path from 'path';
-import { walkListingFiles, listingsDir } from './listing-id.js';
+import { listingsDir, rootCategories, readCategory, carPath } from './listings-store.js';
 
 export const KM_TOLERANCE = 1000;
 export const PRICE_TOLERANCE = 500;
@@ -42,17 +40,13 @@ export function fingerprintOf(car, extra = {}) {
   };
 }
 
-// Kok dosyalar = mobile.de kanonik kayitlari (alt klasorler bayi kayitlaridir).
+// Kok kategoriler = mobile.de kanonik kayitlari (site klasorleri bayi kayitlaridir).
+// fp.file = aracin kendi dosyasi (abs), fp.rel = kategori adi.
 export function buildRootFingerprints(dir = listingsDir) {
   const out = [];
-  for (const file of walkListingFiles(dir)) {
-    const rel = path.relative(dir, file);
-    if (rel.includes(path.sep)) continue;
-    let data;
-    try { data = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
-    if (!Array.isArray(data)) continue;
-    for (const car of data) {
-      const fp = fingerprintOf(car, { file, rel: rel.replace(/\.json$/, '') });
+  for (const category of rootCategories(dir)) {
+    for (const car of readCategory(category, dir)) {
+      const fp = fingerprintOf(car, { file: carPath(category, car.listingId, dir), rel: category });
       if (fp) out.push(fp);
     }
   }

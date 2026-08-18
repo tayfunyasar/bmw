@@ -1,0 +1,162 @@
+{
+  "listingId": "C665",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hud-komfortzg-sportbremse-las-erfurt/460857003.html",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92d0-58ea-7b79-92f7-899cef92a02c",
+  "mobileDeId": "460857003",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Alpinweiß uni",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Beige",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 62 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 47929,
+  "mileageKm": 41994,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    3
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Langenhan Erfurt GmbH ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-99087 Erfurt",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S610A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S5DNA": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S521A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-07-17T06:43:21.000Z",
+    "modifiedTime": "2026-07-17T06:43:38.000Z",
+    "renewedTime": "2026-07-17T06:43:21.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-17T06:43:21.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-17T06:43:21.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-17T07:02:50.764Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92d0-58ea-7b79-92f7-899cef92a02c"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.818Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S610A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S5DNA": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S521A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:51.690Z"
+    }
+  ],
+  "cardThemeColorHex": "#e2e8f0",
+  "aiCommentary": null
+}

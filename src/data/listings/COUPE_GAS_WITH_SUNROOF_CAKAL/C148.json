@@ -1,0 +1,102 @@
+{
+  "listingId": "C148",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-tartu/449230503.html",
+  "mobileDeId": "449230503",
+  "exteriorColorName": "SAPHIRSCHWARZ",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "basePriceEuro": 46900,
+  "mileageKm": 51249,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    3
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "03/2027",
+  "sellerTypeOrName": "Aasta Auto AS ★3.3",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇪🇺 EE-50113 Tartu",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "no",
+    "S265A": "yes",
+    "S302A": "yes",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S493A": "unknown",
+    "S216A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-03T09:51:48.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-03T09:51:48.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-04T10:59:37.373Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "listingDates": {
+    "createdTime": "2026-03-03T09:51:48.000Z",
+    "modifiedTime": "2026-03-31T15:12:34.000Z",
+    "renewedTime": "2026-03-03T09:51:48.000Z",
+    "lastCrawlTime": null
+  },
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": false,
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
+}

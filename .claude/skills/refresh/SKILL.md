@@ -13,7 +13,7 @@ Kullanıcı `/refresh` dediğinde stale ilanları Apify ile yeniden tarar. Apify
 
 2. **Başarısız ilanları bul.** Refresh bittikten sonra `node scripts/refresh-stale.js --list` çalıştır (gün eşiği verildiyse `--list 5` gibi ekle). Bu komut Apify'ı **tekrar çağırmaz**, sadece hâlâ stale kalan `mobileDeId` listesini döker — refresh başarılı olan ilanlar taze dump aldığı için listede çıkmaz, sadece 403 yiyip veri çekilemeyenler kalır. Çıktı boşsa: tüm ilanlar başarıyla tarandı → doğrudan Adım 6'ya geç.
 
-3. **Her başarısız ilan için listingUrl'i bul.** `src/data/listings/COUPE_GAS_WITH_SUNROOF.json` içinden o `mobileDeId`'nin kaydını bul, `listingUrl` alanını al.
+3. **Her başarısız ilan için listingUrl'i bul.** `src/data/listings/COUPE_GAS_WITH_SUNROOF/` klasöründe o `mobileDeId`'yi grep ile bul (her araç kendi `<listingId>.json` dosyasında), `listingUrl` alanını al.
 
 4. **Chrome'da aç ve kontrol et.** Önce `mcp__claude-in-chrome__tabs_context_mcp` ile sekme bağlamını al (gerekirse `createIfEmpty: true`). Eklenti bağlı değilse kullanıcıya bağlamasını söyle ve bekle. Her başarısız ID için:
    - `listingUrl`'i `navigate` ile aç, `get_page_text` ile sayfa metnini oku.

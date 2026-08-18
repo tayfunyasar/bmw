@@ -1,0 +1,111 @@
+{
+  "listingId": "C912",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-m-sport-pro-surroundview-h-k-recklinghausen/38458157698272.html",
+  "mobileDeId": "38458157698272",
+  "vin": null,
+  "possibleTwinOf": "C830",
+  "exteriorColorName": "DRAVITGRAU",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 65 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 68990,
+  "mileageKm": 9369,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "07/2028",
+  "sellerTypeOrName": "Vogelsang Automobile  GmbH & Co.KG ★4.5",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 197,
+  "listingLocation": "🇩🇪 DE-45659 Recklinghausen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C830 — tescil 2025/7 + ~8812km + ~€68930 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Vogelsang Automobile  GmbH & Co.KG ★4.5\" vs \"ahg Autohandelsgesellschaft mbH ★4\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-06T08:13:17.000Z",
+    "modifiedTime": "2026-08-06T08:21:31.000Z",
+    "renewedTime": "2026-08-06T08:13:17.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-06T08:13:17.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-06T10:10:13.861Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C830 — tescil 2025/7 + ~8812km + ~€68930 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Vogelsang Automobile  GmbH & Co.KG ★4.5\" vs \"ahg Autohandelsgesellschaft mbH ★4\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C830"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.163Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

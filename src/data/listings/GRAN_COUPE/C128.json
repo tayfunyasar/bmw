@@ -1,0 +1,230 @@
+{
+  "listingId": "C128",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xd-gc-laser-dapr-gsd-mem-hud-sthz-360-h-wernigerode/450702387.html",
+  "mobileDeId": "450702387",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Black Sapphire",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Brown",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 54850,
+  "mileageKm": 26662,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "WELLER Premium GmbH ★4",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 183,
+  "listingLocation": "🇩🇪 DE-38855 Wernigerode",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-18T19:00:59.000Z",
+    "modifiedTime": "2026-03-31T14:24:22.000Z",
+    "renewedTime": "2026-03-18T19:00:59.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-18T19:00:59.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-18T19:00:59.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T20:31:04.609Z"
+    },
+    {
+      "action": "Donanım Yeniden Hesaplandı",
+      "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+      "changes": {
+        "equipmentFeatures.S2VFA": {
+          "old": "no",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-01T20:15:12.867Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.215Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": true
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S524A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.823Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S688A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:51:17.490Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:59:03.058Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟢 14 gündür satışta — yeni ilan",
+            "🟡 Servis geçmişi bilinmiyor",
+            "🔴 Toplam €64,794 — bütçe aşımı"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.082Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

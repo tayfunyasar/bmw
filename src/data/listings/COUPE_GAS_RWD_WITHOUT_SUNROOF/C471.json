@@ -1,0 +1,110 @@
+{
+  "listingId": "C471",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-harman-k-livecockpitprof-head-up-dortmund/458558929.html",
+  "mobileDeId": "458558929",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "M Brooklyn Grau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Cloth, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 57 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 46490,
+  "mileageKm": 63203,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "05/2027",
+  "sellerTypeOrName": "BMW AG Niederlassung Dortmund ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-44263 Dortmund",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-06-18T08:31:19.000Z",
+    "modifiedTime": "2026-06-19T08:17:24.000Z",
+    "renewedTime": "2026-06-18T08:31:19.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-18T08:31:19.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-18T08:31:19.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-19T21:37:29.574Z"
+    },
+    {
+      "action": "Tahrik Tipi Düzeltildi",
+      "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+      "changes": null,
+      "auditDate": "2026-07-13T18:19:57.156Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

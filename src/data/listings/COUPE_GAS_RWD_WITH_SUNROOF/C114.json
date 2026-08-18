@@ -1,0 +1,91 @@
+{
+  "listingId": "C114",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-fast-vollaust-noch-3-jahre-garantie-essen/451532354.html",
+  "mobileDeId": "451532354",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Blue Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 52500,
+  "mileageKm": 20890,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "03/2027",
+  "sellerTypeOrName": "Klaus Perz",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Unknown",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🟡 Özel satıcı — bayi güvencesi yok",
+    "🔴 Toplam €64,000 — bütçe aşımı"
+  ]
+}

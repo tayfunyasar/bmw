@@ -1,0 +1,106 @@
+{
+  "listingId": "C899",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-navi-leder-bluetooth-pdc-mp3-schn-d%C3%BCsseldorf/462347160.html",
+  "mobileDeId": "462347160",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Individual Tansanitblau II",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 55490,
+  "mileageKm": 28524,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    4
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "03/2026",
+  "sellerTypeOrName": "Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 DE-40549 Düsseldorf",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ CABRIO_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-05T13:15:24.000Z",
+    "modifiedTime": "2026-08-05T13:20:28.000Z",
+    "renewedTime": "2026-08-05T13:15:24.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-05T13:15:24.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-05T16:08:48.219Z"
+    },
+    {
+      "action": "Dosya Taşıma: CABRIO → CABRIO_KAZALI",
+      "detail": "Apify isDamaged alanı true",
+      "changes": null,
+      "auditDate": "2026-08-13T10:50:23.399Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

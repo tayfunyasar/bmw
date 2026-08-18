@@ -1,0 +1,185 @@
+{
+  "listingId": "C152",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-inov-u-park-plus-lm-19-m-technik-bmw-se-karlsdorf-neuthard/452231805.html",
+  "mobileDeId": "452231805",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Sanremo Green",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Other, Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 46900,
+  "mileageKm": 53000,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    3
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "F1 Automobile ★5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-76689 Karlsdorf-Neuthard",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-04T12:40:17.000Z",
+    "modifiedTime": "2026-04-04T23:27:23.000Z",
+    "renewedTime": "2026-04-04T12:40:17.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-04T12:40:17.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-04T12:40:17.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-07T07:08:33.666Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S494A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ADA": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3AGA": {
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T07:12:39.558Z"
+    },
+    {
+      "action": "SATILDI⭐ Sanremo Green, €46,900, 53K km.",
+      "detail": "",
+      "changes": null,
+      "auditDate": "2026-04-07T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:23:07.113Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S2VFA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S524A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:29:12.995Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

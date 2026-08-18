@@ -1,0 +1,90 @@
+{
+  "listingId": "C106",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-4-coupe-m440-d-xdrive-schiebedach-t%C3%BCv-bis-07-27-mittenwalde/447208423.html",
+  "mobileDeId": "447208423",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Portimao Blau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara / Sensatec Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 42999,
+  "mileageKm": 48000,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "3",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "07/2027",
+  "sellerTypeOrName": "HS Autohandel ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": null,
+  "co2EmissionsGramPerKm": 149,
+  "listingLocation": "🇩🇪 Mittenwalde",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#22d3ee",
+  "aiCommentary": [
+    "🟠 3 sahipli — sık el değiştirme",
+    "M440d (Diesel) — Çok düşük CO2 (149g/km)"
+  ]
+}

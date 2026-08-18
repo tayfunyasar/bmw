@@ -1,0 +1,110 @@
+{
+  "listingId": "C55",
+  "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=450753122",
+  "mobileDeId": "450753122",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Beyaz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara-Leder",
+  "drivetrainType": "xDrive AWD (?)",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 47500,
+  "mileageKm": 45000,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    4
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "12/2027",
+  "sellerTypeOrName": "Özel Satıcı",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 173,
+  "listingLocation": "🇩🇪 Ludwigshafen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "2. sahip — Jahreswagen 2022'de BMW'den (Münih) 8K km'de alınmış",
+    "Tel: 0176 61230116"
+  ],
+  "listingAdditionalFeatures": [
+    "Allwetterreifen (yeni) + yaz lastikleri mevcut"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "unknown",
+    "S5AUA": "unknown",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "unknown",
+    "S5DN_360": "unknown",
+    "KGNL": "yes",
+    "S322A": "unknown",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "YENİ €47,500, 45K km, 05/2021. 🔥 BPM €4,112 → toplam €51,612! Alcantara+Schiebedach. Donanım çoğu bilinmiyor — satıcıdan detay gerekli. Özel satıcı",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-20T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-20T12:00:00.000Z"
+    },
+    {
+      "action": "Aktif → Satılan",
+      "detail": "31.03.2026",
+      "changes": null,
+      "auditDate": "2026-04-01T07:41:30.060Z"
+    }
+  ],
+  "cardThemeColorHex": "#86efac",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🟡 Özel satıcı — bayi güvencesi yok",
+    "⚠️ Donanım bilgisi çok az — satıcıdan detay almak gerekli",
+    "⚠️ xDrive/renk/donanım belirsiz",
+    "HU 12/2027 ✅ (çok yeni!)"
+  ]
+}

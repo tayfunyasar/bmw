@@ -1,0 +1,104 @@
+{
+  "listingId": "C41",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449435649",
+  "mobileDeId": "449435649",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara Siyah (Blau stitch)",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 49800,
+  "mileageKm": 0,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    1
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "★4.7",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Trier",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "1 sahip, kazasız, tam servis"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "unknown",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "yes",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "Bekleyen → Sunroof Yok (Red)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#60a5fa",
+  "aiCommentary": [
+    "Sunroof YOK → RED",
+    "Near-full spec — sunroof olsaydı TOP aday olurdu!"
+  ]
+}

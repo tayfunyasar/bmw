@@ -1,0 +1,109 @@
+{
+  "listingId": "C918",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gc-laser-dapr-gsd-hud-360-mem-19-hildesheim/451384013.html",
+  "mobileDeId": null,
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "?",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "?",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 52222,
+  "mileageKm": null,
+  "firstRegistrationYearAndMonth": [
+    null,
+    null
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "?",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": null,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Unknown",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "unknown",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "unknown",
+    "S322A": "unknown",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "ID Düzeltildi",
+      "detail": "C106 çakışıyordu (COUPE_DIESEL_WITH_SUNROOF C106 = 447208423 gerçek kayıt); bu kayda C918 verildi",
+      "changes": {
+        "listingId": {
+          "old": "C106",
+          "new": "C918"
+        }
+      },
+      "auditDate": "2026-08-06T21:02:00.098Z"
+    }
+  ],
+  "cardThemeColorHex": "#e2e8f0",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🟡 Özel satıcı — bayi güvencesi yok",
+    "€52.222 | 🚪 Gran Coupé (G26) | Laser | GSD | HUD | 360° | WELLER Premium GmbH ★4.5",
+    "🔴 Toplam €66,025 — bütçe aşımı"
+  ]
+}

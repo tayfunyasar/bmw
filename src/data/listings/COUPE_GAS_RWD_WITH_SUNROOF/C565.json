@@ -1,0 +1,131 @@
+{
+  "listingId": "C565",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-sport-glasd-h-k-ahk-da-prof-360-castrop-rauxel/459668447.html",
+  "mobileDeId": "459668447",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Portimao blau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 56660,
+  "mileageKm": 27290,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    1
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Procar Automobile Wuppertal GmbH & Co. KG ★3.9",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-44579 Castrop-Rauxel",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-02T13:51:46.000Z",
+    "modifiedTime": "2026-07-10T19:07:02.000Z",
+    "renewedTime": "2026-07-02T13:51:46.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-02T13:51:46.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-02T13:51:46.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-03T17:41:52.882Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "drivetrainCertain": {
+          "old": true,
+          "new": false
+        },
+        "aiCommentary": {
+          "old": null,
+          "new": [
+            "⚠️ İlanda RWD sinyali (Heckantrieb / Hinterradantrieb / Apify 'Rear wheel drive' etiketi) var ama title'da 'RWD' geçmiyor. Şüpheli xDrive olarak işaretlendi — satıcıdan teyit alınmalı."
+          ]
+        },
+        "equipmentFeatures.S216A": {
+          "old": "yes",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-07-11T22:39:27.769Z"
+    },
+    {
+      "action": "Tahrik Tipi Düzeltildi",
+      "detail": "RWD tespit edildi — COUPE_GAS_WITH_SUNROOF.json → COUPE_GAS_RWD_WITH_SUNROOF.json",
+      "changes": null,
+      "auditDate": "2026-07-13T18:19:57.131Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

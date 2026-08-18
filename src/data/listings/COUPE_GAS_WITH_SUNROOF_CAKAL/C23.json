@@ -1,0 +1,250 @@
+{
+  "listingId": "C23",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=449256616",
+  "mobileDeId": "449256616",
+  "exteriorColorName": "Saphirschwarz",
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "basePriceEuro": 53990,
+  "mileageKm": 24927,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "MEYER-HAFNER GmbH ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 183,
+  "listingLocation": "🇦🇹 AT-9020 Klagenfurt",
+  "curatorPickBadge": "👑",
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "SA kodları doğrulanmış (en güvenilir veri)"
+  ],
+  "listingAdditionalFeatures": [
+    "19\" BMW Individual jantlar (793 I)"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S2VLA": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3AGA": "no",
+    "S3ADA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S488A": "yes",
+    "S715A": "yes",
+    "S493A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S302A": "yes",
+    "S216A": "no",
+    "S4NHA": "no"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-03T13:44:10.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-03T13:44:10.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "MEYER-HAFNER ★4.6",
+          "new": "MEYER-HAFNER GmbH ★4.6"
+        },
+        "listingLocation": {
+          "old": "🇦🇹 Klagenfurt",
+          "new": "🇦🇹 9020 Klagenfurt"
+        },
+        "interiorColorName": {
+          "old": "Merino Tartufo",
+          "new": "Full leather, Other"
+        },
+        "numberOfPreviousOwners": {
+          "old": "1",
+          "new": "?"
+        },
+        "co2EmissionsGramPerKm": {
+          "old": 183,
+          "new": 0
+        },
+        "equipmentFeatures.WARRANTY": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-04-01T19:09:21.192Z"
+    },
+    {
+      "action": "Donanım Yeniden Hesaplandı",
+      "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-01T20:15:12.863Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.S5AZA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.210Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": "unknown"
+          },
+          "new": {
+            "exists": "no"
+          }
+        },
+        "aiCommentary": {
+          "old": [
+            "🟢 29 gündür satışta — yeni ilan",
+            "CO₂ 0 g/km kayıtlı (Avusturya hatalı kayıt), gerçek ~183 g/km",
+            "🇦🇹 Avusturya ithalatı",
+            "🟠 Toplam €60,939 — bütçe üst sınırına yakın"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T19:24:22.607Z"
+    },
+    {
+      "action": "Veri Onarimi: CO₂ geri yüklendi",
+      "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 183
+        }
+      },
+      "auditDate": "2026-08-13T10:48:07.182Z"
+    }
+  ],
+  "cardThemeColorHex": "#f472b6",
+  "aiCommentary": null,
+  "listingDates": {
+    "createdTime": "2026-03-03T13:44:10.000Z",
+    "modifiedTime": "2026-03-31T14:53:57.000Z",
+    "renewedTime": "2026-03-03T13:44:10.000Z",
+    "lastCrawlTime": null
+  },
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — fabrika opsiyon kodu \"(0403)\" ilan açıklamasında geçiyor"
+}

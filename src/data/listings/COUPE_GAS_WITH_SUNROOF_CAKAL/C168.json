@@ -1,0 +1,129 @@
+{
+  "listingId": "C168",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-mit-500ps-tausch-merzig/452441469.html",
+  "mobileDeId": "452441469",
+  "exteriorColorName": "GREY",
+  "interiorColorName": null,
+  "drivetrainType": "RWD",
+  "basePriceEuro": 45000,
+  "mileageKm": 60000,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    11
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "08/2027",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-66663 Merzig",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "no",
+    "S2VFA": "unknown",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "no",
+    "S430A": "no",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "no",
+    "S524A": "no",
+    "S265A": "no",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "no"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-07T12:41:57.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-07T12:41:57.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-07T20:15:27.226Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S403A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:37:32.463Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → COUPE_GAS_WITH_SUNROOF",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-04-07T20:37:32.463Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_CAKAL",
+      "detail": "Kullanıcı kararı: çakal kasaya taşındı",
+      "changes": null,
+      "auditDate": "2026-04-08T20:43:41.966Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "listingDates": {
+    "createdTime": "2026-04-07T12:41:57.000Z",
+    "modifiedTime": "2026-04-07T13:11:37.000Z",
+    "renewedTime": "2026-04-07T12:41:57.000Z",
+    "lastCrawlTime": null
+  },
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+}

@@ -1,0 +1,108 @@
+{
+  "listingId": "C18",
+  "listingUrl": "https://www.mobile.de/tr/ara%C3%A7lar/detaylar.html?id=448809290",
+  "mobileDeId": "448809290",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "San Remo Green",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 54950,
+  "mileageKm": 29581,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    10
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "Yeni",
+  "sellerTypeOrName": "Riller & Schnauck ★4.7",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 183,
+  "listingLocation": "🇩🇪 Berlin",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "Bayi Türkçe konuşuyor!",
+    "Araç no: 2491107"
+  ],
+  "listingAdditionalFeatures": [
+    "Carbon Interior"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "unknown",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "unknown",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "action": "Tekrar tarama — M Diff, M Brake, M Aero, VSS, Sport Exhaust, Sensatec Dash, Black Headliner, Storage Pkg, Mirror Tilt unknown → YES. Warranty → yes. Pre-Heater → no. Carbon Interior. Voranlage notu. Bayi Türkçe konuşuyor",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Araç satıldı veya yayından kaldırıldı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#4ade80",
+  "aiCommentary": [
+    "Ağırlık 1,905 kg → xDrive onaylı (RWD 1,815 kg olurdu)",
+    "⚠️ Voranlage — standort/donanım bayiden teyit edilmeli",
+    "🔴 Toplam €63,748 — bütçe aşımı"
+  ]
+}

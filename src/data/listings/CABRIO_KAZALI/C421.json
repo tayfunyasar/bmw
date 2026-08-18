@@ -1,0 +1,114 @@
+{
+  "listingId": "C421",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-acc-hud-h-k-airscarf-360-apple-r20-rennerod/424662188.html",
+  "mobileDeId": "424662188",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Dravitgrau Metallic (C36)",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Beige",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": false,
+  "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 68 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 51500,
+  "mileageKm": 32210,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Kiefer Vermittlungs-GmbH ★4.7",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-56477 Rennerod",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ CABRIO_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Unsere Fahrzeuge hatten einen Vorschaden!\""
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2025-05-08T12:53:54.000Z",
+    "modifiedTime": "2026-06-16T17:23:27.000Z",
+    "renewedTime": "2026-05-23T08:52:44.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2025-05-08T12:53:54.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-23T08:52:44.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-17T19:58:09.624Z"
+    },
+    {
+      "action": "Dosya Taşıma: CABRIO → CABRIO_KAZALI",
+      "detail": "İlan açıklamasında tespit edildi: \"Unsere Fahrzeuge hatten einen Vorschaden!\"",
+      "changes": null,
+      "auditDate": "2026-08-13T10:50:23.334Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "listingId": "C588",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-x-drive-head-up-led-quakenbr%C3%BCck/459899291.html",
+  "mobileDeId": "459899291",
+  "exteriorColorName": "Black Metallic",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 55990,
+  "mileageKm": 6852,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    9
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Ai-Quakenbrücker-Automobile GmbH ★4.6",
+  "modelGeneration": "LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-49610 Quakenbrück",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Bei diesem Fahrzeug handelt es sich um einen Reimport mit einem instandgesetzten Vorschaden\"",
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C129 — tescil 2023/9 + ~6852km + ~€55990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Ai-Quakenbrücker-Automobile GmbH ★4.6\" vs \"Ai-Quakenbrücker-Automobile GmbH ★4.5\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S1MAA": "unknown",
+    "S536A": "no",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "no",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S3ACA": "no",
+    "S488A": "yes",
+    "S715A": "yes",
+    "S493A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-05T14:44:17.000Z",
+    "modifiedTime": "2026-07-07T13:14:17.000Z",
+    "renewedTime": "2026-07-05T14:44:17.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-05T14:44:17.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-05T14:44:17.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-07T20:36:07.455Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C129 — tescil 2023/9 + ~6852km + ~€55990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Ai-Quakenbrücker-Automobile GmbH ★4.6\" vs \"Ai-Quakenbrücker-Automobile GmbH ★4.5\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C129"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.173Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "possibleTwinOf": "C129"
+}

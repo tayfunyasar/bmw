@@ -1,0 +1,143 @@
+{
+  "listingId": "C178",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-laser-hud-h-k-bmw-wart-garantie-berlin/452931918.html",
+  "mobileDeId": "452931918",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Black Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": null,
+  "basePriceEuro": 54999,
+  "mileageKm": 22327,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    5
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "11/2026",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-12099 Berlin",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "no",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "yes",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-12T17:14:02.000Z",
+    "modifiedTime": "2026-04-12T17:22:29.000Z",
+    "renewedTime": "2026-04-12T17:14:02.000Z"
+  },
+  "overrideFeatures": {
+    "S403A": {
+      "value": "yes",
+      "reason": "Sunroof olduğu teyit edildi — WITHOUT_SUNROOF'tan taşındı"
+    }
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-12T17:14:02.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-12T17:14:02.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-12T19:23:14.190Z"
+    },
+    {
+      "action": "Kategori Değişikliği",
+      "detail": "Cabrio olduğu için COUPE_GAS_WITHOUT_SUNROOF → CABRIO'ya taşındı (yanlışlıkla önce COUPE_GAS_WITH_SUNROOF'a taşınmıştı, düzeltildi)",
+      "changes": {
+        "equipmentFeatures.S403A": {
+          "from": "unknown",
+          "to": "yes"
+        }
+      },
+      "auditDate": "2026-04-12T19:46:45.606Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 12099 Berlin",
+          "new": "🇩🇪 12099 Berlin"
+        }
+      },
+      "auditDate": "2026-04-12T19:48:26.581Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "listingLocation": {
+          "old": "🇩🇪 12099 Berlin",
+          "new": "🇩🇪 DE-12099 Berlin"
+        }
+      },
+      "auditDate": "2026-08-02T18:09:46.656Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

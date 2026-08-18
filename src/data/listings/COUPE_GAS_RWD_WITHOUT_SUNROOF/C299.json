@@ -1,0 +1,110 @@
+{
+  "listingId": "C299",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-coupe-8-fach-virtualcockpit-lhz-shz-vze-neunkirchen-br/457052707.html",
+  "mobileDeId": "457052707",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "SAPHIRSCHWARZ",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Red",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 66 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 44990,
+  "mileageKm": 31479,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Kök GmbH ★4.5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 149,
+  "listingLocation": "🇩🇪 DE-91077 Neunkirchen Br.",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-05-30T21:46:17.000Z",
+    "modifiedTime": "2026-05-30T21:50:04.000Z",
+    "renewedTime": "2026-05-30T21:46:17.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-30T21:46:17.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-30T21:46:17.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-01T07:02:18.532Z"
+    },
+    {
+      "action": "Tahrik Tipi Düzeltildi",
+      "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+      "changes": null,
+      "auditDate": "2026-07-13T18:19:57.151Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

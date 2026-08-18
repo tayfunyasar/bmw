@@ -1,0 +1,103 @@
+{
+  "listingId": "C297",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-leder-cam-full-led-navi-lkh-holdorf/457013753.html",
+  "mobileDeId": "457013753",
+  "exteriorColorName": "Black Metallic",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 42900,
+  "mileageKm": 39354,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    7
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "FF Performance ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 162,
+  "listingLocation": "🇩🇪 DE-49451 Holdorf",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Vorschaden bekannt\""
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S1MAA": "unknown",
+    "S536A": "no",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S3ACA": "no",
+    "S488A": "no",
+    "S715A": "yes",
+    "S493A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-05-30T10:53:09.000Z",
+    "modifiedTime": "2026-06-01T00:12:54.000Z",
+    "renewedTime": "2026-05-30T10:53:09.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-30T10:53:09.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-30T10:53:09.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-01T07:02:18.531Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil"
+}

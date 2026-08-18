@@ -1,0 +1,123 @@
+{
+  "listingId": "C925",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xdrive-facel-360-led-hud-acc-ahk-remscheid/38638173358880.html",
+  "mobileDeId": "38638173358880",
+  "vin": null,
+  "possibleTwinOf": "C923",
+  "exteriorColorName": "tansanitblau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 73790,
+  "mileageKm": 14999,
+  "firstRegistrationYearAndMonth": [
+    2026,
+    8
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Kaltenbach GmbH  Co. KG BMW und MINI Vertragshändler ★4.6",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 DE-42897 Remscheid",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C923 — tescil 2026/8 + ~14999km + ~€73790 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co. KG BMW und MINI Vertragshändler ★4.6\" vs \"Kaltenbach Automobile GmbH  Co. KG BMW und MINI Vertragshändler ★4.4\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-07T08:38:16.000Z",
+    "modifiedTime": "2026-08-07T08:48:01.000Z",
+    "renewedTime": "2026-08-07T08:38:16.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-07T08:38:16.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-07T08:38:16.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-07T11:10:47.047Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-08-09T13:21:53.291Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C923 — tescil 2026/8 + ~14999km + ~€73790 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Kaltenbach GmbH  Co. KG BMW und MINI Vertragshändler ★4.6\" vs \"Kaltenbach Automobile GmbH  Co. KG BMW und MINI Vertragshändler ★4.4\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C923"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.175Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

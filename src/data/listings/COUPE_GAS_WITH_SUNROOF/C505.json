@@ -1,0 +1,184 @@
+{
+  "listingId": "C505",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-ahk-driv-assist-prof-laser-m%C3%BCnchen/458926857.html",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9302-c4e1-7ffb-b278-7f840029d083",
+  "mobileDeId": "458926857",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 50108,
+  "mileageKm": 59507,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    9
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "06/2028",
+  "sellerTypeOrName": "BMW München – Filiale Fröttmaning ★4.4",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-80939 München",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S775A": {
+      "mobile.de": "no",
+      "BMW_DE": "yes"
+    },
+    "S5DNA": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S521A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-06-23T06:56:09.000Z",
+    "modifiedTime": "2026-08-12T07:35:01.000Z",
+    "renewedTime": "2026-06-23T06:56:09.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-23T06:56:09.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-23T06:56:09.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-23T08:06:05.474Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 51980,
+          "new": 51107
+        }
+      },
+      "auditDate": "2026-07-24T19:38:13.712Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9302-c4e1-7ffb-b278-7f840029d083"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.819Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S775A": {
+              "mobile.de": "no",
+              "BMW_DE": "yes"
+            },
+            "S5DNA": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S521A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:51.700Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 51107,
+          "new": 50108
+        }
+      },
+      "auditDate": "2026-08-13T19:51:35.782Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

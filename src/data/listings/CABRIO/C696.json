@@ -1,0 +1,117 @@
+{
+  "listingId": "C696",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-cabrio-laser-hud-kamera-dab-h-k-komfort-isernhagen/461193117.html",
+  "mobileDeId": "461193117",
+  "vin": null,
+  "possibleTwinOf": "C634",
+  "exteriorColorName": "Saphirschwarz  - 475",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 48999,
+  "mileageKm": 38500,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    10
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "02/2028",
+  "sellerTypeOrName": "Autohaus Isernhagen GmbH & Co. KG ★4.5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 DE-30916 Isernhagen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C634 — tescil 2022/10 + ~38500km + ~€48999 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Isernhagen GmbH & Co. KG ★4.5\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-21T14:28:31.000Z",
+    "modifiedTime": "2026-07-22T00:37:52.000Z",
+    "renewedTime": "2026-07-21T14:28:31.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-21T14:28:31.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-21T14:28:31.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-23T16:29:16.959Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C634 — tescil 2022/10 + ~38500km + ~€48999 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Isernhagen GmbH & Co. KG ★4.5\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C634"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.163Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

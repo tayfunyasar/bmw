@@ -1,0 +1,106 @@
+{
+  "listingId": "C49",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443501166",
+  "mobileDeId": "443501166",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Black Sapphire",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Deri Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 50879,
+  "mileageKm": 31094,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    10
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "Autohaus Stadel Heilbronn",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Heilbronn",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "Araç no: 208973"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "no",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "no",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "no",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "Yeni araç — 🚫 Sunroof Yok tablosuna eklendi. €50,879, Laser+HUD+HK+360° ama sunroof yok",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#fbbf24",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🟡 Özel satıcı — bayi güvencesi yok",
+    "🚫 Sunroof YOK — ekipmanda Glasdach/Schiebe-Hebedach yok",
+    "🟠 Toplam €58,498 — bütçe üst sınırına yakın"
+  ]
+}

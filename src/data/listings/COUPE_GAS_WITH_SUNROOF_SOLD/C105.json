@@ -1,0 +1,328 @@
+{
+  "listingId": "C105",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-msport-acc-glasdach-dab-kamera-harma-leipzig/451811120.html",
+  "mobileDeId": "451811120",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "DRAVITGRAU METALLIC",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 47680,
+  "mileageKm": 43244,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    12
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 177,
+  "listingLocation": "🇩🇪 DE-04328 Leipzig",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [
+    "📧 09.04.2026 bayi yanıtı: CoC eki gönderildi, 1 sahip, tam BMW servis, kazasız ama arka tampon boyalı, fabrika garantisi yok, AB export'ta used car warranty verecekler"
+  ],
+  "listingDescriptionNotes": [
+    "Arka tampon boyalı (bayi teyidi)",
+    "BMW tam servis geçmişi (bayi teyidi)",
+    "BMW fabrika garantisi dolmuş — AB kaydında used car warranty verilecek"
+  ],
+  "listingAdditionalFeatures": [
+    "Adaptive M susp mevcut"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-30T17:50:34.000Z",
+    "modifiedTime": "2026-04-07T13:54:02.000Z",
+    "renewedTime": "2026-03-30T17:50:34.000Z"
+  },
+  "overrideFeatures": {
+    "warranty": {
+      "value": "no",
+      "reason": "BMW fabrika garantisi dolmuş (3 yıl). AB kaydında kullanılmış araç garantisi verilecek."
+    },
+    "co2EmissionsGramPerKm": {
+      "value": 177,
+      "reason": "Bayi CoC belgesi ile teyit (09.04.2026)"
+    }
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-30T17:50:34.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-30T17:50:34.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Autohaus Müller Leipzig ★4.8",
+          "new": "Autohaus Müller Leipzig GmbH Vertragshändler der BMW AG ★4.8"
+        },
+        "listingLocation": {
+          "old": "🇩🇪 Leipzig",
+          "new": "🇩🇪 04328 Leipzig"
+        },
+        "exteriorColorName": {
+          "old": "Dravitgrau Metallic",
+          "new": "DRAVITGRAU METALLIC"
+        },
+        "interiorColorName": {
+          "old": "Alcantara, Siyah",
+          "new": "Alcantara, Black"
+        },
+        "nextInspectionDate": {
+          "old": "Yeni",
+          "new": "New"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S688A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S5ACA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-04-01T19:09:21.188Z"
+    },
+    {
+      "action": "Donanım Yeniden Hesaplandı",
+      "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+      "changes": {
+        "equipmentFeatures.S688A": {
+          "old": "no",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-01T20:15:12.863Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.S5AZA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S610A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5ACA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.211Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": true
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.825Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T21:08:00.724Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-04-10T19:58:54.406Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟢 2 gündür satışta — yeni ilan"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.089Z"
+    }
+  ],
+  "cardThemeColorHex": "#fb923c",
+  "aiCommentary": null
+}

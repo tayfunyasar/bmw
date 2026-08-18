@@ -1,0 +1,265 @@
+{
+  "listingId": "C29",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=441933571",
+  "mobileDeId": "441933571",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "tansanitblau ii",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 61 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 53700,
+  "mileageKm": 21073,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    3
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Hedin Automotive Saarland GmbH ★4.3",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 186,
+  "listingLocation": "🇩🇪 DE-66117 Saarbrücken",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "21K km, 1 sahip"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2025-11-20T13:40:48.000Z",
+    "modifiedTime": "2026-04-19T01:03:05.000Z",
+    "renewedTime": "2026-04-19T01:03:04.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "Silinen → Sunroof Yok tablosuna taşındı. LCI 04/2024, ⭐ Tansanit-Blau II, 21K km. Sunroof yok + limit aşımı",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-19T01:03:04.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 54900,
+          "new": 53700
+        },
+        "sellerTypeOrName": {
+          "old": "Hedin ★4.3",
+          "new": "Hedin Automotive Saarland GmbH ★4.3"
+        },
+        "listingLocation": {
+          "old": "🇩🇪 Saarbrücken",
+          "new": "🇩🇪 66117 Saarbrücken"
+        },
+        "exteriorColorName": {
+          "old": "Ind. Tansanit-Blau II",
+          "new": "tansanitblau ii"
+        },
+        "interiorColorName": {
+          "old": "?",
+          "new": "Full leather, Other"
+        },
+        "warranty": {
+          "old": {
+            "exists": "unknown"
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "service": {
+          "old": {
+            "type": "unknown",
+            "history": []
+          },
+          "new": {
+            "type": "yes",
+            "history": []
+          }
+        },
+        "nextInspectionDate": {
+          "old": "?",
+          "new": "New"
+        },
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 186
+        },
+        "drivetrainCertain": {
+          "new": true
+        },
+        "equipmentFeatures.S403A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S459A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S420A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S5ACA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S6C4A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-19T12:15:43.536Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → CABRIO",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:44:38.445Z"
+    },
+    {
+      "action": "Dosya Taşıma: CABRIO → COUPE_GAS_WITHOUT_SUNROOF",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:48:29.323Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟡 Servis geçmişi bilinmiyor",
+            "💰 LCI 04/2024 BPM ~€11K → toplam ~€66K (limit aşımı!)",
+            "⭐ Ind. Tansanit-Blau II (favori renk!)",
+            "🚫 Sunroof YOK",
+            "🔴 Toplam €66,737 — bütçe aşımı"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.063Z"
+    }
+  ],
+  "cardThemeColorHex": "#60a5fa",
+  "aiCommentary": null
+}

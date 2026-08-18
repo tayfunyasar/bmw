@@ -1,0 +1,98 @@
+{
+  "listingId": "C1017",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-kehl/40472286273152.html",
+  "mobileDeId": "40472286273152",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "alpinweiss 3",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=unknown — açıklama bilgilendirici değil, checkbox sinyali de yok — güvenlik freni",
+  "basePriceEuro": 65930,
+  "mileageKm": 16430,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH ★5",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-77694 Kehl",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "unknown",
+    "S5AZA": "unknown",
+    "S5AUA": "unknown",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "unknown",
+    "S5DN_360": "unknown",
+    "KGNL": "unknown",
+    "S322A": "unknown",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-17T17:24:18.000Z",
+    "modifiedTime": "2026-08-17T17:24:36.000Z",
+    "renewedTime": "2026-08-17T17:24:18.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-17T17:24:18.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-17T19:43:42.295Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

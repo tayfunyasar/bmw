@@ -4,46 +4,23 @@ import { fileURLToPath } from 'url';
 import { pushSoldAudit } from './lib/sold.js';
 import { parseRawToListing, applyUpdatesAndGetChanges } from './lib/parse-listing.js';
 import { determineTargetFile } from './lib/route-listing.js';
-import { SOLD_FILES, soldArchiveFor, isManuallyMarkedKazali } from './lib/move-listing.js';
+import { SOLD_CATEGORIES, soldArchiveFor, isManuallyMarkedKazali } from './lib/move-listing.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
 import { buildRootFingerprints, fingerprintOf, findTwin as findTwinFp, twinHint } from './lib/twin-fingerprint.js';
+import { listingsDir, readCategory, writeCategory } from './lib/listings-store.js';
+import { createIdAllocator } from './lib/listing-id.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const CoupeWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF.json');
-const CoupeWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_WITHOUT_SUNROOF.json');
-const dieselWithSunroofPath = path.join(listingsDir, 'COUPE_DIESEL_WITH_SUNROOF.json');
-const granCoupePath = path.join(listingsDir, 'GRAN_COUPE.json');
-const granCoupeKazaliPath = path.join(listingsDir, 'GRAN_COUPE_KAZALI.json');
-const cabrioPath = path.join(listingsDir, 'CABRIO.json');
-const cabrioKazaliPath = path.join(listingsDir, 'CABRIO_KAZALI.json');
-const rwdGasWithSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITH_SUNROOF.json');
-const rwdGasWithoutSunroofPath = path.join(listingsDir, 'COUPE_GAS_RWD_WITHOUT_SUNROOF.json');
-const soldPath = path.join(listingsDir, SOLD_FILES.xdrive);
-const rwdSoldWithSunroofPath = path.join(listingsDir, SOLD_FILES.rwdSunroof);
-const rwdSoldWithoutSunroofPath = path.join(listingsDir, SOLD_FILES.rwdNoSunroof);
-const kazaliPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_KAZALI.json');
-const cakalPath = path.join(listingsDir, 'COUPE_GAS_WITH_SUNROOF_CAKAL.json');
-const deletedPath = path.join(listingsDir, 'DELETED_CARS.json');
-const lithuaniaPath = path.join(listingsDir, 'LITHUANIA.json');
-
-// Otomatik "kalkti -> SATILDI" yalnizca bu kaynak dosyalarda calisir (coupe ailesi).
+// Kategori listeleri config'ten (tek kaynak LISTING_FILES.json):
+//   aktif  = allCategories − frozenCategories (tasinabilir)
+//   frozen = SOLD arsivleri + CAKAL + DELETED (icinden tasinmaz)
+// Otomatik "kalkti -> SATILDI" yalnizca autoSoldSourceCategories'te calisir (coupe ailesi).
 const LISTING_FILES_META = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
-const AUTO_SOLD_SOURCE_FILES = LISTING_FILES_META.autoSoldSourceFiles;
-
-function getNextListingId(existingListings) {
-  let maxId = 0;
-  existingListings.forEach(l => {
-    const idMatch = l.listingId?.match(/C(\d+)/);
-    if (idMatch) {
-      const id = parseInt(idMatch[1]);
-      if (id > maxId) maxId = id;
-    }
-  });
-  return `C${maxId + 1}`;
-}
+const AUTO_SOLD_SOURCE_CATEGORIES = LISTING_FILES_META.autoSoldSourceCategories;
+const FROZEN_CATEGORIES = LISTING_FILES_META.frozenCategories;
+const ACTIVE_CATEGORIES = LISTING_FILES_META.allCategories.filter(c => !FROZEN_CATEGORIES.includes(c));
 
 // parseCar/applyUpdates mantigi scripts/lib/parse-listing.js icinde — tek kaynak.
 
@@ -86,53 +63,22 @@ async function run() {
       process.exit(1);
   }
 
-  const CoupeWithSunroof = JSON.parse(fs.readFileSync(CoupeWithSunroofPath, 'utf-8'));
-  const CoupeWithoutSunroof = JSON.parse(fs.readFileSync(CoupeWithoutSunroofPath, 'utf-8'));
-  const dieselWithSunroof = JSON.parse(fs.readFileSync(dieselWithSunroofPath, 'utf-8'));
-  const granCoupe = JSON.parse(fs.readFileSync(granCoupePath, 'utf-8'));
-  const granCoupeKazali = fs.existsSync(granCoupeKazaliPath) ? JSON.parse(fs.readFileSync(granCoupeKazaliPath, 'utf-8')) : [];
-  const cabrio = fs.existsSync(cabrioPath) ? JSON.parse(fs.readFileSync(cabrioPath, 'utf-8')) : [];
-  const cabrioKazali = fs.existsSync(cabrioKazaliPath) ? JSON.parse(fs.readFileSync(cabrioKazaliPath, 'utf-8')) : [];
-  const lithuania = fs.existsSync(lithuaniaPath) ? JSON.parse(fs.readFileSync(lithuaniaPath, 'utf-8')) : [];
-  const rwdGasWithSunroof = fs.existsSync(rwdGasWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithSunroofPath, 'utf-8')) : [];
-  const rwdGasWithoutSunroof = fs.existsSync(rwdGasWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdGasWithoutSunroofPath, 'utf-8')) : [];
-  const sold = JSON.parse(fs.readFileSync(soldPath, 'utf-8'));
-  const rwdSoldWithSunroof = fs.existsSync(rwdSoldWithSunroofPath) ? JSON.parse(fs.readFileSync(rwdSoldWithSunroofPath, 'utf-8')) : [];
-  const rwdSoldWithoutSunroof = fs.existsSync(rwdSoldWithoutSunroofPath) ? JSON.parse(fs.readFileSync(rwdSoldWithoutSunroofPath, 'utf-8')) : [];
-  const kazali = JSON.parse(fs.readFileSync(kazaliPath, 'utf-8'));
-  const cakal = JSON.parse(fs.readFileSync(cakalPath, 'utf-8'));
-  const deleted = JSON.parse(fs.readFileSync(deletedPath, 'utf-8'));
+  // Taşınabilir (aktif) kategoriler — sold/cakal/deleted taşınmaz (frozen).
+  // Bos kategori = olmayan dizin; readCategory [] doner, writeCategory olusturur.
+  const activeFiles = ACTIVE_CATEGORIES.map(name => ({ name, data: readCategory(name) }));
+  const frozenFiles = FROZEN_CATEGORIES.map(name => ({ name, data: readCategory(name) }));
+  const byName = new Map([...activeFiles, ...frozenFiles].map(f => [f.name, f.data]));
 
-  // Taşınabilir (aktif) dosyalar — sold/cakal/deleted taşınmaz
-  const activeFiles = [
-    { name: 'COUPE_GAS_WITH_SUNROOF', data: CoupeWithSunroof },
-    { name: 'COUPE_GAS_WITHOUT_SUNROOF', data: CoupeWithoutSunroof },
-    { name: 'COUPE_DIESEL_WITH_SUNROOF', data: dieselWithSunroof },
-    { name: 'COUPE_GAS_RWD_WITH_SUNROOF', data: rwdGasWithSunroof },
-    { name: 'COUPE_GAS_RWD_WITHOUT_SUNROOF', data: rwdGasWithoutSunroof },
-    { name: 'GRAN_COUPE', data: granCoupe },
-    { name: 'GRAN_COUPE_KAZALI', data: granCoupeKazali },
-    { name: 'CABRIO', data: cabrio },
-    { name: 'CABRIO_KAZALI', data: cabrioKazali },
-    { name: 'COUPE_GAS_WITH_SUNROOF_KAZALI', data: kazali },
-    { name: 'LITHUANIA', data: lithuania },
-  ];
-  const frozenFiles = [
-    { name: 'SOLD', data: sold },
-    { name: 'RWD_SOLD_WITH_SUNROOF', data: rwdSoldWithSunroof },
-    { name: 'RWD_SOLD_WITHOUT_SUNROOF', data: rwdSoldWithoutSunroof },
-    { name: 'CAKAL', data: cakal },
-    { name: 'DELETED', data: deleted },
-  ];
-
-  // Kalkmış (satılmış) ilan hangi SOLD dosyasına gider — merkezi soldArchiveFor ile.
-  const soldArraysByFileName = {
-    [SOLD_FILES.xdrive]: sold,
-    [SOLD_FILES.rwdSunroof]: rwdSoldWithSunroof,
-    [SOLD_FILES.rwdNoSunroof]: rwdSoldWithoutSunroof,
+  // Kalkmış (satılmış) ilan hangi SOLD kategorisine gider — merkezi soldArchiveFor ile.
+  const soldArraysByCategory = {
+    [SOLD_CATEGORIES.xdrive]: byName.get(SOLD_CATEGORIES.xdrive),
+    [SOLD_CATEGORIES.rwdSunroof]: byName.get(SOLD_CATEGORIES.rwdSunroof),
+    [SOLD_CATEGORIES.rwdNoSunroof]: byName.get(SOLD_CATEGORIES.rwdNoSunroof),
   };
 
-  let currentAllListings = [...activeFiles, ...frozenFiles].flatMap(f => f.data);
+  // C-serisi tahsis: tum agacin dosya adlarindan max bulunur (site onekleri
+  // ^C(\d+)$ ile eslesmez, cakisma yapisal olarak imkansiz).
+  const allocator = createIdAllocator('C');
   // Re-list ikiz tespiti icin kok kayitlarin parmak izleri (import-dealer ile ORTAK modul).
   const rootFingerprints = buildRootFingerprints(listingsDir);
 
@@ -225,9 +171,8 @@ async function run() {
             }
         }
     } else {
-        const nextId = getNextListingId(currentAllListings);
+        const nextId = allocator.next();
         const parsedCar = parseRawToListing(car, { listingId: nextId, mobileDeId });
-        currentAllListings.push(parsedCar);
 
         // RE-LIST IKIZI: ayni fiziksel arac satilmayip yeni mobileDeId ile tekrar
         // listelenmis olabilir (bayi ilani yeniler). Uc anahtar (mobileDeId/vin/
@@ -251,7 +196,7 @@ async function run() {
         // re-list). Kural tek kaynakta: guvenilmez imzali (sifir) arac havuza GIRMEZ.
         const fp = fingerprintOf(parsedCar, { rel: targetName });
         if (fp) rootFingerprints.push(fp);
-        console.log(`✅ Yeni eklendi: ${nextId} (${targetName}.json)${reason ? ` — ${reason}` : ''}${twin ? ` — ⚠️ muhtemel ikiz: ${twin.listingId}` : ''}`);
+        console.log(`✅ Yeni eklendi: ${nextId} (${targetName})${reason ? ` — ${reason}` : ''}${twin ? ` — ⚠️ muhtemel ikiz: ${twin.listingId}` : ''}`);
     }
   }
 
@@ -268,7 +213,7 @@ async function run() {
     // havuzuna sızar (pricingCalculator: soldGasListings → allByTotalCost). Bu gövdeler
     // zaten alım hunisinin dışında; otomatik satış yalnızca coupe ailesinde çalışır.
     // Elle `npm run move:sell` hâlâ mümkün (insan kararı sınırlanmaz).
-    if (!AUTO_SOLD_SOURCE_FILES.includes(`${source.name}.json`)) continue;
+    if (!AUTO_SOLD_SOURCE_CATEGORIES.includes(source.name)) continue;
     // Elle KAZALI işaretli ilan burada da sabit kalır — insan kararı korunur,
     // gerekiyorsa `npm run move:sell` ile elle taşınır.
     if (source.name.includes('KAZALI') && isManuallyMarkedKazali(existingCar)) {
@@ -277,32 +222,18 @@ async function run() {
     }
     source.data.splice(source.data.indexOf(existingCar), 1);
     const soldArchive = soldArchiveFor(existingCar);
-    pushSoldAudit(existingCar, `${source.name}.json`, "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)");
-    soldArraysByFileName[soldArchive.name].push(existingCar);
-    console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → ${soldArchive.name}`);
+    pushSoldAudit(existingCar, source.name, "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)");
+    soldArraysByCategory[soldArchive].push(existingCar);
+    console.log(`🏷️  ${existingCar.listingId} (${deadId}) SATILDI (mobile.de'den kalktı) — ${source.name} → ${soldArchive}`);
   }
 
-  // Tüm değişiklikleri diske yaz
-  fs.writeFileSync(CoupeWithSunroofPath, JSON.stringify(CoupeWithSunroof, null, 2));
-  fs.writeFileSync(CoupeWithoutSunroofPath, JSON.stringify(CoupeWithoutSunroof, null, 2));
-  fs.writeFileSync(dieselWithSunroofPath, JSON.stringify(dieselWithSunroof, null, 2));
-  fs.writeFileSync(rwdGasWithSunroofPath, JSON.stringify(rwdGasWithSunroof, null, 2));
-  fs.writeFileSync(rwdGasWithoutSunroofPath, JSON.stringify(rwdGasWithoutSunroof, null, 2));
-  fs.writeFileSync(granCoupePath, JSON.stringify(granCoupe, null, 2));
-  fs.writeFileSync(granCoupeKazaliPath, JSON.stringify(granCoupeKazali, null, 2));
-  fs.writeFileSync(cabrioPath, JSON.stringify(cabrio, null, 2));
-  fs.writeFileSync(cabrioKazaliPath, JSON.stringify(cabrioKazali, null, 2));
-  fs.writeFileSync(kazaliPath, JSON.stringify(kazali, null, 2));
-  fs.writeFileSync(soldPath, JSON.stringify(sold, null, 2));
-  fs.writeFileSync(rwdSoldWithSunroofPath, JSON.stringify(rwdSoldWithSunroof, null, 2));
-  fs.writeFileSync(rwdSoldWithoutSunroofPath, JSON.stringify(rwdSoldWithoutSunroof, null, 2));
-  // CAKAL ve DELETED de yazılır: ikisi de yukarıda okunup applyUpdatesAndGetChanges ile
-  // GÜNCELLENİYOR (audit kaydı dahil) ama eskiden diske yazılmıyordu — değişiklikler her
-  // çalıştırmada yeniden hesaplanıp atılıyor, script "güncellendi" deyip hiçbir şey
-  // kaydetmiyordu (idempotent değildi).
-  fs.writeFileSync(cakalPath, JSON.stringify(cakal, null, 2));
-  fs.writeFileSync(deletedPath, JSON.stringify(deleted, null, 2));
-  fs.writeFileSync(lithuaniaPath, JSON.stringify(lithuania, null, 2));
+  // Tüm değişiklikleri diske yaz. writeCategory kategori değiştiren aracın eski
+  // dosyasını da siler (splice = dosya silme), değişmeyen dosyaya dokunmaz.
+  // CAKAL ve DELETED de dahil: ikisi de yukarıda applyUpdatesAndGetChanges ile
+  // güncelleniyor (audit kaydı dahil) — frozen yalnızca "taşınmaz" demektir.
+  for (const f of [...activeFiles, ...frozenFiles]) {
+    writeCategory(f.name, f.data);
+  }
 }
 
 run().catch(console.error);

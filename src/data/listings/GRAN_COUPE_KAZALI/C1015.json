@@ -1,0 +1,99 @@
+{
+  "listingId": "C1015",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-head-up-hifi-dab-rfk-komfortzg-filderstadt/40442901831072.html",
+  "mobileDeId": "40442901831072",
+  "exteriorColorName": "BLACK SAPPHIRE",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 60 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 45490,
+  "mileageKm": 62590,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    3
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Briem GmbH & Co. KG ★4.9",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-70794 Filderstadt",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C614 — tescil 2022/3 + ~62090km + ~€44990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Briem GmbH & Co. KG ★4.9\" vs \"BMW AG Niederlassung Dreieich ★4.6\")",
+    "⚠️ GRAN_COUPE_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S536A": "no",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S3ACA": "no",
+    "S488A": "yes",
+    "S715A": "yes",
+    "S493A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S1MAA": "unknown",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-17T13:25:11.000Z",
+    "modifiedTime": "2026-08-17T15:48:42.000Z",
+    "renewedTime": "2026-08-17T13:25:11.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-17T13:25:11.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-17T19:43:42.294Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "possibleTwinOf": "C614"
+}

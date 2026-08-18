@@ -1,0 +1,97 @@
+{
+  "listingId": "C960",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-a-m-performance-non-x-drive-nauen/39352962891712.html",
+  "mobileDeId": "39352962891712",
+  "exteriorColorName": "Black Metallic",
+  "interiorColorName": "Full leather",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"X-drive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+  "basePriceEuro": 39900,
+  "mileageKm": 67900,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "08/2028",
+  "sellerTypeOrName": "B&S Cars GmbH ★4.8",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 167,
+  "listingLocation": "🇩🇪 DE-14641 Nauen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Das Fahrzeuge hatten einen Vorschaden ,\""
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S536A": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S430A": "yes",
+    "S775A": "yes",
+    "S3ACA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S302A": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S1MAA": "unknown",
+    "S2NHA": "no",
+    "S2VLA": "no",
+    "S6C4A": "no",
+    "S4AWA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S715A": "no",
+    "S493A": "no",
+    "S216A": "no",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-11T09:35:14.000Z",
+    "modifiedTime": "2026-08-11T09:39:44.000Z",
+    "renewedTime": "2026-08-11T09:35:14.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-11T09:35:14.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-11T10:17:43.374Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

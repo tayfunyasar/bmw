@@ -1,0 +1,174 @@
+{
+  "listingId": "C266",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/456054682.html",
+  "mobileDeId": "456054682",
+  "vin": null,
+  "possibleTwinOf": "C235",
+  "exteriorColorName": "Fire Red",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Cloth, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 54900,
+  "mileageKm": 52350,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    7
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "04/2028",
+  "sellerTypeOrName": "Baum Automobile GmbH & Co. KG ★4.4",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-53474 Bad Neuenahr",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C235 — tescil 2024/7 + ~51584km + ~€55900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Baum Automobile GmbH & Co. KG ★4.4\" vs \"Baum Automobile GmbH & Co. KG ★4.5\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-05-18T09:18:47.000Z",
+    "modifiedTime": "2026-08-14T04:09:28.000Z",
+    "renewedTime": "2026-08-06T01:00:21.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-18T09:18:47.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-18T09:18:47.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-05-18T17:23:41.584Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-07T01:00:55.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "mileageKm": {
+          "old": 51584,
+          "new": 52350
+        }
+      },
+      "auditDate": "2026-06-17T20:12:56.044Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-27T01:00:16.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-17T01:02:18.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Baum Automobile GmbH & Co. KG ★4.5",
+          "new": "Baum Automobile GmbH & Co. KG ★4.4"
+        }
+      },
+      "auditDate": "2026-07-31T17:36:34.432Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-06T01:00:21.000Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C235 — tescil 2024/7 + ~51584km + ~€55900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Baum Automobile GmbH & Co. KG ★4.4\" vs \"Baum Automobile GmbH & Co. KG ★4.5\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C235"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.171Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 55900,
+          "new": 54900
+        }
+      },
+      "auditDate": "2026-08-16T07:03:35.737Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

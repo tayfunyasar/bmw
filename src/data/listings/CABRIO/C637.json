@@ -1,0 +1,117 @@
+{
+  "listingId": "C637",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-cabrio-grafenau/460588742.html",
+  "mobileDeId": "460588742",
+  "vin": null,
+  "possibleTwinOf": "C337",
+  "exteriorColorName": "Mineralweiß",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49900,
+  "mileageKm": 68641,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "05/2026",
+  "sellerTypeOrName": "Autohaus Richard Hable GmbH ★5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-94481 Grafenau",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C337 — tescil 2023/5 + ~69018km + ~€49760 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Richard Hable GmbH ★5\" vs \"BMW Autohaus Müller ★4.7\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-14T04:32:31.000Z",
+    "modifiedTime": "2026-07-14T04:32:34.000Z",
+    "renewedTime": "2026-07-14T04:32:31.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-14T04:32:31.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-14T04:32:31.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-14T07:02:24.293Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C337 — tescil 2023/5 + ~69018km + ~€49760 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Richard Hable GmbH ★5\" vs \"BMW Autohaus Müller ★4.7\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C337"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.162Z"
+    }
+  ],
+  "cardThemeColorHex": "#e2e8f0",
+  "aiCommentary": null
+}

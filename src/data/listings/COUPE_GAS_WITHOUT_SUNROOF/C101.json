@@ -1,0 +1,218 @@
+{
+  "listingId": "C101",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-acc-sth-mfl-3d-view-hifi-led-qi-2zk-buchschwabach-bei-n%C3%BCrnberg/442478207.html",
+  "mobileDeId": "442478207",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "MINERALWEISS",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Brown",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 54490,
+  "mileageKm": 25900,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Straußberger ★4.9",
+  "modelGeneration": "LCI II",
+  "modelGenerationCertain": null,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-90574 Buchschwabach bei Nürnberg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "M440i 2025 LCI II Model",
+    "Çok düşük km"
+  ],
+  "listingAdditionalFeatures": [
+    "Innovations-Paket",
+    "Comfort-Paket",
+    "Auxiliary heating (Webasto)",
+    "Heated steering wheel"
+  ],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "yes",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2025-11-27T12:42:34.000Z",
+    "modifiedTime": "2026-04-11T07:03:01.000Z",
+    "renewedTime": "2026-04-11T07:03:01.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-22T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-11T07:03:01.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 55789,
+          "new": 54490
+        },
+        "listingLocation": {
+          "old": "🇩🇪 Buchschwabach",
+          "new": "🇩🇪 90574 Buchschwabach bei Nürnberg"
+        },
+        "exteriorColorName": {
+          "old": "Mineral White Metallic",
+          "new": "MINERALWEISS"
+        },
+        "interiorColorName": {
+          "old": "Deri Kahve (Vernasca)",
+          "new": "Full leather, Brown"
+        },
+        "warranty": {
+          "old": {
+            "exists": true
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "nextInspectionDate": {
+          "old": "Yeni",
+          "new": "New"
+        },
+        "equipmentFeatures.S403A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S688A": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S2NHA": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VFA": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S420A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-12T10:10:36.089Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🔴 Toplam €72,291 — bütçe aşımı"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.065Z"
+    }
+  ],
+  "cardThemeColorHex": "#e2e8f0",
+  "aiCommentary": null
+}

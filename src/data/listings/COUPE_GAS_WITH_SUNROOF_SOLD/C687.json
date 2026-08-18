@@ -1,0 +1,123 @@
+{
+  "listingId": "C687",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-grolsheim/461084745.html",
+  "mobileDeId": "461084745",
+  "vin": null,
+  "possibleTwinOf": "C338",
+  "exteriorColorName": "Grey Metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 52990,
+  "mileageKm": 32000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    5
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "06/2028",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-55459 Grolsheim",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C338 — tescil 2023/5 + ~32059km + ~€52890 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"Procar Automobile Münsterland GmbH ★5\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "yes",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "yes",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-20T10:43:12.000Z",
+    "modifiedTime": "2026-07-21T13:21:11.000Z",
+    "renewedTime": "2026-07-20T10:43:12.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-20T10:43:12.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-20T10:43:12.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-23T16:29:16.950Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-07-31T18:18:31.299Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C338 — tescil 2023/5 + ~32059km + ~€52890 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Unknown Dealer\" vs \"Procar Automobile Münsterland GmbH ★5\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C338"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.175Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

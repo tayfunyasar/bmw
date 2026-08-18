@@ -1,0 +1,154 @@
+{
+  "listingId": "C721",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-gran-coupe-m-sport-pro-19-kaarst/461644302.html",
+  "dealerListingUrl": "https://timmermanns.de/fahrzeugboerse/fahrzeuge?i=FBUK260240",
+  "mobileDeId": "461644302",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Individual Frozen Pure Grey",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49930,
+  "mileageKm": 58803,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    6
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Timmermanns GmbH - Vertragshändler der BMW AG für BMW, BMWI, BMWM und  MINI ★4.9",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 183,
+  "listingLocation": "🇩🇪 DE-41564 Kaarst",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S521A": {
+      "mobile.de": "yes",
+      "TIMMERMANNS": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "TIMMERMANNS": "no"
+    },
+    "S265A": {
+      "mobile.de": "yes",
+      "TIMMERMANNS": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-07-27T12:10:22.000Z",
+    "modifiedTime": "2026-07-27T12:10:28.000Z",
+    "renewedTime": "2026-07-27T12:10:22.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-27T12:10:22.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-27T12:10:22.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-27T13:10:34.817Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "TIMMERMANNS ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://timmermanns.de/fahrzeugboerse/fahrzeuge?i=FBUK260240"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.820Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "TIMMERMANNS ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S521A": {
+              "mobile.de": "yes",
+              "TIMMERMANNS": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "TIMMERMANNS": "no"
+            },
+            "S265A": {
+              "mobile.de": "yes",
+              "TIMMERMANNS": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:52.340Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

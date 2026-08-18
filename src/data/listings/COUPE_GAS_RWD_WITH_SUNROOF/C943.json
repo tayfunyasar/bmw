@@ -1,0 +1,111 @@
+{
+  "listingId": "C943",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-coupe-373ps-aut-bad-nauheim/39168464636672.html",
+  "mobileDeId": "39168464636672",
+  "vin": null,
+  "possibleTwinOf": "C278",
+  "exteriorColorName": "brooklyn grey",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Other, Other",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 45970,
+  "mileageKm": 53158,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "08/2028",
+  "sellerTypeOrName": "Kögler GmbH ★4.7",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-61231 Bad Nauheim",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C278 — tescil 2022/7 + ~53486km + ~€45960 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kögler GmbH ★4.7\" vs \"ahg Autohandelsgesellschaft mbH ★4.2\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-10T08:33:47.000Z",
+    "modifiedTime": "2026-08-10T08:34:10.000Z",
+    "renewedTime": "2026-08-10T08:33:47.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-10T08:33:47.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-10T10:12:46.814Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C278 — tescil 2022/7 + ~53486km + ~€45960 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Kögler GmbH ★4.7\" vs \"ahg Autohandelsgesellschaft mbH ★4.2\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C278"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.168Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

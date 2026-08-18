@@ -1,0 +1,228 @@
+{
+  "listingId": "C972",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-sportpaket-navi-leder-digital-frankfurt/39482249765056.html",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e930c-fa95-749a-a5b5-b7c61c696a17",
+  "mobileDeId": "39482249765056",
+  "vin": "WBA11AR080CN67238",
+  "possibleTwinOf": null,
+  "dealerReportedDamage": {
+    "source": "BMW_DE",
+    "reason": "Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\""
+  },
+  "exteriorColorName": "Brooklyn Grau metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Blue",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 52999,
+  "mileageKm": 43046,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    6
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Euler Group Frankfurt Gebrauchtwagen-Zentrum Hanauer Landstr. ★4.2",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 186,
+  "listingLocation": "🇩🇪 DE-60314 Frankfurt",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — BMW_DE ilanında beyan edildi: \"Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\"\""
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-12T03:07:22.000Z",
+    "modifiedTime": "2026-08-12T05:21:15.000Z",
+    "renewedTime": "2026-08-12T03:07:22.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-12T03:07:22.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-12T07:02:13.141Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e930c-fa95-749a-a5b5-b7c61c696a17"
+        },
+        "dealerReportedDamage": {
+          "old": null,
+          "new": {
+            "source": "BMW_DE",
+            "reason": "Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\""
+          }
+        }
+      },
+      "auditDate": "2026-08-13T10:48:51.408Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_WITH_SUNROOF_KAZALI",
+      "detail": "BMW_DE ilanında beyan edildi: \"Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\"\"",
+      "changes": null,
+      "auditDate": "2026-08-13T10:50:23.638Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "EULER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrls": {
+          "old": null,
+          "new": [
+            "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BMG54642201/"
+          ]
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA11AR080CN67238"
+        },
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S2VLA": {
+              "mobile.de": "no",
+              "EULER": "yes"
+            },
+            "S4AWA": {
+              "mobile.de": "no",
+              "EULER": "yes"
+            },
+            "S775A": {
+              "mobile.de": "no",
+              "EULER": "yes"
+            },
+            "S5DN_360": {
+              "mobile.de": "yes",
+              "EULER": "no"
+            },
+            "KGNL": {
+              "mobile.de": "yes",
+              "EULER": "no"
+            },
+            "S459A": {
+              "mobile.de": "yes",
+              "EULER": "no"
+            },
+            "S5DNA": {
+              "mobile.de": "yes",
+              "EULER": "no"
+            },
+            "S521A": {
+              "mobile.de": "yes",
+              "EULER": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "EULER": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-13T19:55:03.423Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "dealerListingUrls": [
+    "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BMG54642201/"
+  ],
+  "equipmentConflicts": {
+    "S2VLA": {
+      "mobile.de": "no",
+      "EULER": "yes"
+    },
+    "S4AWA": {
+      "mobile.de": "no",
+      "EULER": "yes"
+    },
+    "S775A": {
+      "mobile.de": "no",
+      "EULER": "yes"
+    },
+    "S5DN_360": {
+      "mobile.de": "yes",
+      "EULER": "no"
+    },
+    "KGNL": {
+      "mobile.de": "yes",
+      "EULER": "no"
+    },
+    "S459A": {
+      "mobile.de": "yes",
+      "EULER": "no"
+    },
+    "S5DNA": {
+      "mobile.de": "yes",
+      "EULER": "no"
+    },
+    "S521A": {
+      "mobile.de": "yes",
+      "EULER": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "EULER": "no"
+    }
+  }
+}

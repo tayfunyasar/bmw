@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // possibleTwinOf tasiyan bayi kayitlarini tarar; ikizinin SATICISI da eslesiyorsa
-// (sellerMatches) kaydi mobile.de kaydiyla BIRLESTIRIR ve site dosyasindan siler.
+// (sellerMatches) kaydi mobile.de kaydiyla BIRLESTIRIR ve site klasorunden siler.
 // Satici eslesmeyenler dokunulmadan kalir (celiski tablosu gostermeye devam eder).
 //
 // Ne zaman gerekir: merge kurali eklenmeden once import edilmis kayitlar, ya da
@@ -11,22 +11,25 @@
 //   node scripts/merge-dealer-twins.js --dry   → sadece raporla
 //   node scripts/merge-dealer-twins.js         → uygula (sonra: npm run format:data)
 
-import fs from 'fs';
 import path from 'path';
-import { listingsDir, walkListingFiles } from './lib/listing-id.js';
+import { rootCategories, dealerCategories, readCategory, writeCar, removeCar } from './lib/listings-store.js';
 import { sellerMatches } from './lib/dealer-sites.js';
 import { hasReliableFingerprint } from './lib/twin-fingerprint.js';
 import { mergeTwinIntoRoot } from './lib/merge-twin.js';
 
 const isDry = process.argv.includes('--dry');
 
-// Kok (mobile.de) kayitlarin dizini: listingId -> { car, file }
+// Tum agac bellekte: kategori -> arac listesi (kok + bayi).
+const tree = new Map();
+for (const category of [...rootCategories(), ...dealerCategories()]) {
+  tree.set(category, readCategory(category));
+}
+
+// Kok (mobile.de) kayitlarin dizini: listingId -> { car, category }
 const rootIndex = new Map();
-for (const file of walkListingFiles()) {
-  if (path.relative(listingsDir, file).includes(path.sep)) continue; // yalniz kok dosyalar
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  if (!Array.isArray(data)) continue;
-  for (const car of data) rootIndex.set(car.listingId, { car, file, data });
+for (const [category, cars] of tree) {
+  if (category.includes(path.sep)) continue; // yalniz kok kategoriler
+  for (const car of cars) rootIndex.set(car.listingId, { car, category });
 }
 
 const summary = { merged: [], keptDifferentSeller: [], orphanTwin: [], invalidCleared: [] };
@@ -35,15 +38,10 @@ const summary = { merged: [], keptDifferentSeller: [], orphanTwin: [], invalidCl
 // (C941/C753 vakasi). Bag ancak IKI taraf da guvenilir imzaliysa anlamli; degilse
 // possibleTwinOf + ikiz notu temizlenir. Kural duzeltildigi icin yenisi uretilmez.
 const allCars = new Map();
-for (const file of walkListingFiles()) {
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  if (Array.isArray(data)) for (const car of data) allCars.set(car.listingId, car);
-}
-for (const file of walkListingFiles()) {
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  if (!Array.isArray(data)) continue;
-  let changed = false;
-  for (const car of data) {
+for (const cars of tree.values()) for (const car of cars) allCars.set(car.listingId, car);
+
+for (const [category, cars] of tree) {
+  for (const car of cars) {
     if (!car.possibleTwinOf) continue;
     const target = allCars.get(car.possibleTwinOf);
     const valid = hasReliableFingerprint(car) && target && hasReliableFingerprint(target);
@@ -54,30 +52,23 @@ for (const file of walkListingFiles()) {
       if (Array.isArray(car.listingDescriptionNotes)) {
         car.listingDescriptionNotes = car.listingDescriptionNotes.filter(n => !/ikiz/i.test(n));
       }
-      changed = true;
+      writeCar(category, car);
     }
   }
-  if (changed) fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
 }
-const dirtyRootFiles = new Set();
 
-for (const file of walkListingFiles()) {
-  const rel = path.relative(listingsDir, file);
-  if (!rel.includes(path.sep)) continue; // yalniz site klasorleri
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  if (!Array.isArray(data)) continue;
+const dirtyRoots = new Set();
 
-  const kept = [];
-  let changed = false;
-  for (const car of data) {
-    if (!car.possibleTwinOf) { kept.push(car); continue; }
+for (const [category, cars] of tree) {
+  if (!category.includes(path.sep)) continue; // yalniz site kategorileri
+  for (const car of cars) {
+    if (!car.possibleTwinOf) continue;
     const root = rootIndex.get(car.possibleTwinOf);
-    if (!root) { summary.orphanTwin.push({ id: car.listingId, twin: car.possibleTwinOf }); kept.push(car); continue; }
+    if (!root) { summary.orphanTwin.push({ id: car.listingId, twin: car.possibleTwinOf }); continue; }
 
     // Bayi kaydinin ham satici adi sellerTypeOrName'de ("WELLER Hildesheim" gibi).
     if (!sellerMatches(car.sellerTypeOrName, root.car.sellerTypeOrName)) {
       summary.keptDifferentSeller.push({ id: car.listingId, twin: car.possibleTwinOf, sellers: `"${car.sellerTypeOrName}" vs "${root.car.sellerTypeOrName}"` });
-      kept.push(car);
       continue;
     }
 
@@ -85,24 +76,17 @@ for (const file of walkListingFiles()) {
       dealerListingUrl: car.dealerListingUrl,
       vin: car.vin,
       freshEquipment: car.equipmentFeatures,   // site kaydi zaten parseRaw ciktisi
-      source: rel.split(path.sep)[0],
+      source: category.split(path.sep)[0],
     });
-    dirtyRootFiles.add(root.file);
+    dirtyRoots.add(root);
     summary.merged.push({ id: car.listingId, into: car.possibleTwinOf, changes: Object.keys(changes).length });
-    changed = true; // kayit silindi
-  }
-
-  if (changed && !isDry) {
-    if (kept.length === 0) fs.rmSync(file);
-    else fs.writeFileSync(file, JSON.stringify(kept, null, 2) + '\n');
+    // Birlesen bayi kaydinin dosyasi silinir; bosalan kategori klasoru rmdir'lenir.
+    if (!isDry) removeCar(category, car.listingId);
   }
 }
 
 if (!isDry) {
-  for (const file of dirtyRootFiles) {
-    const { data } = [...rootIndex.values()].find(r => r.file === file);
-    fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
-  }
+  for (const root of dirtyRoots) writeCar(root.category, root.car);
 }
 
 if (summary.invalidCleared.length) console.log(`${isDry ? '(dry) ' : ''}Geçersiz bağ temizlendi (güvenilmez imza): ${summary.invalidCleared.length} — ${summary.invalidCleared.slice(0, 8).map(x => x.id + '↛' + x.was).join(' ')}${summary.invalidCleared.length > 8 ? ' …' : ''}`);

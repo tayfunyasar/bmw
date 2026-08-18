@@ -1,0 +1,291 @@
+{
+  "listingId": "C112",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-laser-standheizung-glasdach-schweinfurt/451783042.html",
+  "mobileDeId": "451783042",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "mineralweiss",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": false,
+  "drivetrainReason": "Kural 5 — hiçbir sinyal yok (ne metin, ne checkbox); xDrive varsayıldı",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 50890,
+  "mileageKm": 37953,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    9
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "Filialbetrieb Rhein Schweinfurt Zweigniederlassung der Heermann und Rhein GmbH ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 173,
+  "listingLocation": "🇩🇪 DE-97424 Schweinfurt",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [
+    "Individual Instrumententaf. (lederbezogen)",
+    "Innovationspaket (S07R7)"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-03-30T13:35:33.000Z",
+    "modifiedTime": "2026-03-31T15:03:16.000Z",
+    "renewedTime": "2026-03-30T13:35:33.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-30T13:35:33.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-30T13:35:33.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Filialbetrieb Rhein Schweinfurt ★4.3",
+          "new": "Filialbetrieb Rhein Schweinfurt Zweigniederlassung der Heermann und Rhein GmbH ★4.3"
+        },
+        "listingLocation": {
+          "old": "🇩🇪 Schweinfurt",
+          "new": "🇩🇪 97424 Schweinfurt"
+        },
+        "exteriorColorName": {
+          "old": "Mineralweiss",
+          "new": "mineralweiss"
+        },
+        "interiorColorName": {
+          "old": "Leder Schwarz (Ind. Instrumententafel)",
+          "new": "Full leather, Other"
+        },
+        "co2EmissionsGramPerKm": {
+          "old": 173,
+          "new": 0
+        },
+        "equipmentFeatures.S688A": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S1MAA": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S2NHA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-04-01T19:09:58.155Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2VLA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2NHA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.211Z"
+    },
+    {
+      "action": "SATILDI",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-02T17:52:30.399Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": true
+          },
+          "new": {
+            "exists": "yes"
+          }
+        },
+        "drivetrainCertain": {
+          "new": false
+        },
+        "equipmentFeatures.S688A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-05-05T14:44:38.462Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟢 2 gündür satışta — yeni ilan",
+            "🟠 Toplam €58,435 — bütçe üst sınırına yakın",
+            "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+          ],
+          "new": [
+            "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+          ]
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.088Z"
+    },
+    {
+      "action": "Veri Onarimi: CO₂ geri yüklendi",
+      "detail": "Boş kaynak değeri dolu değeri ezmişti (parse-listing.js isEmptyFieldValue korumasi eklendi)",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 173
+        }
+      },
+      "auditDate": "2026-08-13T10:48:07.184Z"
+    }
+  ],
+  "cardThemeColorHex": "#e2e8f0",
+  "aiCommentary": [
+    "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+  ]
+}

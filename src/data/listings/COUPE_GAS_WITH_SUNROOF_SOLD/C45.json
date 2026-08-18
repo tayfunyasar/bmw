@@ -1,0 +1,127 @@
+{
+  "listingId": "C45",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443616047",
+  "mobileDeId": "443616047",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Ind. Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Vernasca Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 51702,
+  "mileageKm": 38517,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    3
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "01/2028",
+  "sellerTypeOrName": "BMW München ★4.3",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 München",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [
+    "Renk biraz sorun, beğenmedik"
+  ],
+  "listingDescriptionNotes": [
+    "2yr BMW PS garanti",
+    "Kazasız"
+  ],
+  "listingAdditionalFeatures": [
+    "Individual Dravitgrau (nadir renk!)"
+  ],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "overrideFeatures": {
+    "modelGeneration": {
+      "value": "LCI",
+      "reason": "Kullanıcı teyidi (tescil 03/2023, otomatik Pre-LCI varsayılmıştı)"
+    }
+  },
+  "auditHistory": [
+    {
+      "action": "Aktif → Satılan",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Araç satıldı veya yayından kaldırıldı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "Nesil Teyidi",
+      "detail": "Kullanıcı teyidi — LCI (tescil 03/2023)",
+      "changes": {
+        "modelGeneration": {
+          "old": "Pre-LCI",
+          "new": "LCI"
+        },
+        "modelGenerationCertain": {
+          "old": false,
+          "new": true
+        }
+      },
+      "auditDate": "2026-08-04T19:09:15.676Z"
+    }
+  ],
+  "cardThemeColorHex": "#a78bfa",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🔄 LCI (fotoğraflardan doğrulandı)",
+    "SA kodları BMW.de URL'den doğrulandı",
+    "Vergi dilimi düşük",
+    "🟠 Toplam €59,656 — bütçe üst sınırına yakın"
+  ]
+}

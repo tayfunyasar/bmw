@@ -1,0 +1,109 @@
+{
+  "listingId": "C51",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=447587213",
+  "mobileDeId": "447587213",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Black Sapphire",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Vernasca Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 49900,
+  "mileageKm": 29179,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    11
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "Yeni",
+  "sellerTypeOrName": "EXKLUSIV Automobile ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Nieder-Olm",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "Kazasız, 1 sahip, BMW AG özel leasing dönüşü",
+    "12 ay garanti dahil, NL müşterilerine garanti mümkün (ek ücretle)",
+    "MwSt 19% ausweisbar, NETTOEXPORT möglich",
+    "Kleine Delle Motorhaube + Felge VL Kratzer (satış öncesi onarılacak)"
+  ],
+  "listingAdditionalFeatures": [
+    "Carbon Fibre Interior, Sensatec Dash"
+  ],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "no",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "Yeni araç → Sunroof Yok tablosuna eklendi. 🔥 2021 model BPM €4,112! €49,900, toplam €54,012. Near-full mechanical spec",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#fbbf24",
+  "aiCommentary": [
+    "🔥 2021 model — BPM sadece €4,112! (toplam €54,012)",
+    "🚫 Sunroof YOK"
+  ]
+}

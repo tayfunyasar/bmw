@@ -1,0 +1,117 @@
+{
+  "listingId": "C708",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-mild-hybrid-xdrive-aut-laser-neufahrn-b-freising/461430494.html",
+  "mobileDeId": "461430494",
+  "vin": null,
+  "possibleTwinOf": "C707",
+  "exteriorColorName": "PORTIMAO BLAU",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 45230,
+  "mileageKm": 64191,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    6
+  ],
+  "numberOfPreviousOwners": "4",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "06/2028",
+  "sellerTypeOrName": "Autohero GmbH - Abholstation München ★4.4",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-85375 Neufahrn b. Freising",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C707 — tescil 2023/6 + ~64191km + ~€45230 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohero GmbH - Abholstation München ★4.4\" vs \"Autohero GmbH - Abholstation Nürnberg ★4.6\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-24T10:42:01.000Z",
+    "modifiedTime": "2026-07-24T10:55:16.000Z",
+    "renewedTime": "2026-07-24T10:42:01.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-24T10:42:01.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-24T10:42:01.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-24T19:31:58.434Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C707 — tescil 2023/6 + ~64191km + ~€45230 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohero GmbH - Abholstation München ★4.4\" vs \"Autohero GmbH - Abholstation Nürnberg ★4.6\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C707"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.180Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

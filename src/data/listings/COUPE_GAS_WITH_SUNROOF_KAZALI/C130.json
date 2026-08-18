@@ -1,0 +1,187 @@
+{
+  "listingId": "C130",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sport-pro-glasd-hk-360-daprof-witten/434200891.html",
+  "mobileDeId": "434200891",
+  "exteriorColorName": "BMW Individual Tansanitblau",
+  "interiorColorName": "Full leather, Other",
+  "drivetrainType": "xDrive AWD",
+  "basePriceEuro": 55900,
+  "mileageKm": 15474,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    6
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Auto-Zentrum Bernhard Ernst GmbH & Co. KG ★4.5",
+  "modelGeneration": "LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-58455 Witten",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S493A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2025-08-19T12:42:53.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-13T17:43:06.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-01T22:09:43.740Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S5DNA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S494A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ADA": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3AGA": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S488A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S524A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S265A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S302A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S4NHA": {
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-07T21:17:19.933Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-22T01:00:26.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 56900,
+          "new": 55900
+        }
+      },
+      "auditDate": "2026-04-23T20:31:59.365Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🔴 225 gündür satışta — 6 ayı aştı, ciddi satılamazlık riski",
+            "⚠️ İlan 206 gün sonra yenilendi — ilgi düşük olabilir",
+            "🟡 Servis geçmişi bilinmiyor",
+            "Onarılmış kaza hasarı (Repaired accident damage)",
+            "🔴 Toplam €69,241 — bütçe aşımı"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.061Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "listingDates": {
+    "createdTime": "2025-08-19T12:42:53.000Z",
+    "modifiedTime": "2026-04-23T10:49:38.000Z",
+    "renewedTime": "2026-04-22T01:00:26.000Z",
+    "lastCrawlTime": null
+  },
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+}

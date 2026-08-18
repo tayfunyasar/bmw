@@ -1,0 +1,209 @@
+{
+  "listingId": "C151",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-sportpaket-kaufbeuren/452311604.html",
+  "mobileDeId": "452311604",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BLACK",
+  "exteriorPaintLabel": null,
+  "interiorColorName": null,
+  "drivetrainType": "RWD",
+  "drivetrainCertain": false,
+  "drivetrainReason": null,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 49900,
+  "mileageKm": 61100,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    7
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "05/2027",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-87600 Kaufbeuren",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-05T17:10:03.000Z",
+    "modifiedTime": "2026-04-05T17:10:04.000Z",
+    "renewedTime": "2026-04-05T17:10:03.000Z"
+  },
+  "overrideFeatures": {
+    "drivetrainType": {
+      "value": "RWD",
+      "reason": "Kullanıcı teyidi: araç RWD"
+    }
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-05T17:10:03.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-05T17:10:03.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-07T07:08:33.666Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S494A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S248A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ADA": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3AGA": {
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-07T07:12:39.558Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S521A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S524A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S265A": {
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "new": "unknown"
+        },
+        "equipmentFeatures.S302A": {
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:29:12.995Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S459A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T20:32:16.858Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF → COUPE_GAS_RWD_WITH_SUNROOF",
+      "detail": "Kullanıcı teyidi: araç RWD. drivetrainType güncellendi.",
+      "changes": {
+        "drivetrainType": {
+          "old": "xDrive AWD",
+          "new": "RWD"
+        }
+      },
+      "auditDate": "2026-04-07T20:43:47.532Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "⚠️ Tahrik tipi (xDrive/RWD) ilan metninden kesin tespit edilemedi. xDrive olarak varsayıldı — satıcıdan teyit alınmalı."
+          ],
+          "new": [
+            "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+          ]
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.092Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "⚠️ İlanda tahrik tipine dair hiçbir sinyal yok (ne metin, ne checkbox). xDrive varsayıldı — satıcıdan teyit alınmalı."
+  ]
+}

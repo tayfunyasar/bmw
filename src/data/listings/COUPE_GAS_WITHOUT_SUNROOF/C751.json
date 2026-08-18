@@ -1,0 +1,115 @@
+{
+  "listingId": "C751",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-g22-facelift-coupe-live-cock-h-g%C3%B6ppingen/352093876.html",
+  "mobileDeId": "352093876",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Alpinweiß",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Part leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 54 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 62999,
+  "mileageKm": 0,
+  "firstRegistrationYearAndMonth": [
+    null,
+    null
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH GP ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 DE-73037 Göppingen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2022-09-11T21:07:13.000Z",
+    "modifiedTime": "2026-07-30T22:16:38.000Z",
+    "renewedTime": "2026-07-24T01:04:04.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2022-09-11T21:07:13.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-24T01:04:04.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-31T20:38:01.671Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C4 — tescil / + ~0km + ~€62900 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"ahg Autohandelsgesellschaft mbH GP ★4.4\" vs \"?\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C4"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.169Z"
+    }
+  ],
+  "cardThemeColorHex": "#e2e8f0",
+  "aiCommentary": null
+}

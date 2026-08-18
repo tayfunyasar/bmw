@@ -1,0 +1,180 @@
+{
+  "listingId": "C309",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-m-sport-laser-acc-ahk-shd-rfk-windischleuba/457692777.html",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92ff-b022-7ef6-9e92-56a4b578f4a4",
+  "mobileDeId": "457692777",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — fabrika opsiyon kodu \"(0403)\" ilan açıklamasında geçiyor",
+  "basePriceEuro": 51455,
+  "mileageKm": 54994,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    9
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Kühnert GmbH & Co.KG ★4.4",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 170,
+  "listingLocation": "🇩🇪 DE-04600 Altenburg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S5DNA": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S521A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-06-08T05:29:33.000Z",
+    "modifiedTime": "2026-08-11T15:26:37.000Z",
+    "renewedTime": "2026-06-08T05:29:33.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-08T05:29:33.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-06-08T05:29:33.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-06-08T07:31:40.859Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 51885,
+          "new": 51455
+        }
+      },
+      "auditDate": "2026-07-03T20:16:44.988Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Autohaus Kühnert GmbH & Co.KG ★4.5",
+          "new": "Autohaus Kühnert GmbH & Co.KG ★4.4"
+        },
+        "listingLocation": {
+          "old": "🇩🇪 DE-04603 Windischleuba",
+          "new": "🇩🇪 DE-04600 Altenburg"
+        }
+      },
+      "auditDate": "2026-08-06T07:04:46.014Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92ff-b022-7ef6-9e92-56a4b578f4a4"
+        }
+      },
+      "auditDate": "2026-08-07T19:40:18.819Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S5DNA": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S521A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-07T20:00:51.698Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

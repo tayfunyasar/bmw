@@ -1,0 +1,144 @@
+{
+  "listingId": "C247",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-m-sport-coupe-laser-ahk-hud-memory-michelfeld/455123831.html",
+  "mobileDeId": "455123831",
+  "vin": null,
+  "possibleTwinOf": "C222",
+  "exteriorColorName": "Tansanitblau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara",
+  "drivetrainType": "RWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 2 — ilan metninde \"Heckantrieb\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 66 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 45900,
+  "mileageKm": 52547,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    12
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "AH Walter Mulfinger GmbH ★4.6",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 159,
+  "listingLocation": "🇩🇪 DE-74545 Michelfeld",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C222 — tescil 2021/12 + ~52547km + ~€45900 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"AH Walter Mulfinger GmbH ★4.6\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-05-06T17:02:20.000Z",
+    "modifiedTime": "2026-05-06T17:02:28.000Z",
+    "renewedTime": "2026-05-06T17:02:20.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-06T17:02:20.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-05-06T17:02:20.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-05-07T15:51:33.286Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "drivetrainType": {
+          "old": "RWD",
+          "new": "xDrive AWD"
+        },
+        "drivetrainCertain": {
+          "old": true,
+          "new": false
+        }
+      },
+      "auditDate": "2026-05-07T16:03:18.092Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_RWD_WITHOUT_SUNROOF → COUPE_GAS_WITHOUT_SUNROOF",
+      "detail": "Yeniden değerlendirme sonucu doğru dosyaya taşındı",
+      "changes": null,
+      "auditDate": "2026-05-07T16:03:18.094Z"
+    },
+    {
+      "action": "Tahrik Tipi Düzeltildi",
+      "detail": "RWD tespit edildi — COUPE_GAS_WITHOUT_SUNROOF.json → COUPE_GAS_RWD_WITHOUT_SUNROOF.json",
+      "changes": null,
+      "auditDate": "2026-07-13T18:19:57.144Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C222 — tescil 2021/12 + ~52547km + ~€45900 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"AH Walter Mulfinger GmbH ★4.6\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C222"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.167Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

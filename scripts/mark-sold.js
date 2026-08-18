@@ -1,4 +1,4 @@
-import { moveListing, DEFAULT_SOURCE_FILES, dealerSourceFiles, dealerSoldArchiveFor } from './lib/move-listing.js';
+import { moveListing, DEFAULT_SOURCE_CATEGORIES, dealerSourceCategories, dealerSoldArchiveFor } from './lib/move-listing.js';
 import { pushSoldAudit } from './lib/sold.js';
 
 const id = process.argv[2];
@@ -9,15 +9,15 @@ if (!id) {
 
 const result = moveListing({
   id,
-  // Kok gövde dosyalari + kazalilar + TUM bayi alt klasorleri.
-  sourceFiles: [
-    ...DEFAULT_SOURCE_FILES,
-    'CABRIO.json', 'CABRIO_KAZALI.json',
-    'COUPE_GAS_WITH_SUNROOF_KAZALI.json', 'GRAN_COUPE_KAZALI.json',
-    ...dealerSourceFiles()
+  // Kok gövde kategorileri + kazalilar + TUM bayi site kategorileri.
+  sourceCategories: [
+    ...DEFAULT_SOURCE_CATEGORIES,
+    'CABRIO', 'CABRIO_KAZALI',
+    'COUPE_GAS_WITH_SUNROOF_KAZALI', 'GRAN_COUPE_KAZALI',
+    ...dealerSourceCategories()
   ],
-  pickArchive: (sourceFile, car) => dealerSoldArchiveFor(sourceFile, car),
-  mutateCar: (car, { sourceFile }) => pushSoldAudit(car, sourceFile)
+  pickArchive: (sourceCategory, car) => dealerSoldArchiveFor(sourceCategory, car),
+  mutateCar: (car, { sourceCategory }) => pushSoldAudit(car, sourceCategory)
 });
 
 if (!result.found) {
@@ -25,4 +25,4 @@ if (!result.found) {
   process.exit(1);
 }
 
-console.log(`✅ ${result.car.listingId} (${result.car.mobileDeId}) satıldı — ${result.sourceFile} → ${result.archive.name}`);
+console.log(`✅ ${result.car.listingId} (${result.car.mobileDeId}) satıldı — ${result.sourceCategory} → ${result.archive}`);

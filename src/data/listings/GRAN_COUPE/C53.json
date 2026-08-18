@@ -1,0 +1,109 @@
+{
+  "listingId": "C53",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=450573938",
+  "mobileDeId": "450573938",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "?",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "?",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 45990,
+  "mileageKm": 32700.000000000004,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    12
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "?",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Unknown",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "unknown",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "unknown",
+    "S322A": "unknown",
+    "S2VFA": "unknown",
+    "S459A": "unknown",
+    "S5DNA": "unknown",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "unknown",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-01T12:00:00.000Z"
+    },
+    {
+      "action": "YENİ €45,990, 32.7K km, 12/2021. 🔥 BPM €4,112 → toplam €50,102! Laser+DA++HUD+M Diff+360°+Park Asst++M Brake+VSS. HK/Adaptive M yok. Reisacher ★4.1",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-18T12:00:00.000Z"
+    },
+    {
+      "action": "Aktif → GC tablosuna taşındı. 🚪 Gran Coupé (G26)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-18T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "🟡 Özel satıcı — bayi güvencesi yok",
+    "€45,990 | 🚪 Gran Coupé. 12/2021, 32.7K km, 1 sahip. Saphirschwarz+Deri Siyah. Laser+DA++HUD+M Diff+M Brake+VSS+360°+Park Asst+. HK/Adaptive M yok. BPM €4,112. Reisacher ★4.1"
+  ]
+}

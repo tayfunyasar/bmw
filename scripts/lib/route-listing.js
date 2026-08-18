@@ -10,8 +10,8 @@ import { determineDrivetrainFromRaw, RWD } from './drivetrain.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../src/data/metadata/LISTING_FILES.json'), 'utf8'));
-// Dislanan ulke -> hedef dosya (or. LT -> LITHUANIA.json). UI'a hic girmezler.
-const COUNTRY_EXCLUDED_FILES = LISTING_FILES.countryExcludedFiles;
+// Dislanan ulke -> hedef kategori (or. LT -> LITHUANIA). UI'a hic girmezler.
+const COUNTRY_EXCLUDED_CATEGORIES = LISTING_FILES.countryExcludedCategories;
 
 export function detectDamageReason(rawCar) {
   if (rawCar.isDamaged === true) return 'Apify isDamaged alanı true';
@@ -47,9 +47,9 @@ export function determineTargetFile(car, rawCar) {
         : null);
 
   // Ulke dislamasi HER SEYDEN ONCE — govde/hasar/tahrike bakilmaz.
-  const excludedTarget = COUNTRY_EXCLUDED_FILES[rawCar.dealer?.contry];
+  const excludedTarget = COUNTRY_EXCLUDED_CATEGORIES[rawCar.dealer?.contry];
   if (excludedTarget) {
-    return { target: excludedTarget.replace(/\.json$/, ''), reason: `${rawCar.dealer.contry} ülkesinden — kapsam dışı` };
+    return { target: excludedTarget, reason: `${rawCar.dealer.contry} ülkesinden — kapsam dışı` };
   }
 
   if (bodyStyle === 'CABRIO') {

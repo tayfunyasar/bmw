@@ -6,8 +6,7 @@
 // Tek kaynak: filter-listings.js ve import-dealer.js bu modulu kullanir.
 
 import fs from 'fs';
-import path from 'path';
-import { walkListingFiles, listingsDir } from './listing-id.js';
+import { walkCarFiles, listingsDir } from './listings-store.js';
 import { loadDealerSites, dealerKeyFor } from './dealer-sites.js';
 
 // Bir kaydin TUM bayi ilan URL'leri. `dealerListingUrl` birincil (geriye donuk
@@ -26,25 +25,24 @@ export function buildExistingIndex(dir = listingsDir) {
   const byDealerKey = new Map();
   const sites = loadDealerSites();
 
-  for (const file of walkListingFiles(dir)) {
-    let data;
-    try { data = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
-    if (!Array.isArray(data)) continue;
-    const rel = path.relative(dir, file).replace(/\.json$/, '');
-    for (const car of data) {
-      const hit = { file: rel, listingId: car.listingId || null };
-      if (car?.mobileDeId) byMobileDeId.set(String(car.mobileDeId), hit);
-      if (car?.vin) byVin.set(String(car.vin).toUpperCase(), hit);
-      // Bir arac BIRDEN COK bayide listelenebilir (C264: WELLER + BMW_DE). Tek
-      // dealerListingUrl indekslemek yetmiyordu: ikinci sitenin URL'si hicbir zaman
-      // anahtara donusmedigi icin ayni arac her taramada "new" gorunuyordu.
-      for (const url of dealerUrlsOf(car)) {
-        // Hangi siteye ait oldugunu URL'den bilemeyiz; her site config'iyle anahtar uret.
-        // dealerKeyFor pattern eslesmezse URL-fallback dondurur — o da tekildir.
-        for (const site of sites) {
-          const key = dealerKeyFor(site, url);
-          if (key && !byDealerKey.has(key)) byDealerKey.set(key, hit);
-        }
+  for (const { category, file } of walkCarFiles(dir)) {
+    let car;
+    try { car = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
+    if (!car || typeof car !== 'object' || Array.isArray(car)) continue;
+    // hit.file = kategori ('CABRIO' / 'WELLER/CABRIO') — merged-dosya donemindeki
+    // rel degerleriyle birebir ayni; startsWith(SITE) ayrimi degismeden calisir.
+    const hit = { file: category, listingId: car.listingId || null };
+    if (car?.mobileDeId) byMobileDeId.set(String(car.mobileDeId), hit);
+    if (car?.vin) byVin.set(String(car.vin).toUpperCase(), hit);
+    // Bir arac BIRDEN COK bayide listelenebilir (C264: WELLER + BMW_DE). Tek
+    // dealerListingUrl indekslemek yetmiyordu: ikinci sitenin URL'si hicbir zaman
+    // anahtara donusmedigi icin ayni arac her taramada "new" gorunuyordu.
+    for (const url of dealerUrlsOf(car)) {
+      // Hangi siteye ait oldugunu URL'den bilemeyiz; her site config'iyle anahtar uret.
+      // dealerKeyFor pattern eslesmezse URL-fallback dondurur — o da tekildir.
+      for (const site of sites) {
+        const key = dealerKeyFor(site, url);
+        if (key && !byDealerKey.has(key)) byDealerKey.set(key, hit);
       }
     }
   }

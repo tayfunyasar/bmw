@@ -1,0 +1,104 @@
+{
+  "listingId": "E2",
+  "listingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM29097103/",
+  "dealerListingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM29097103/",
+  "mobileDeId": null,
+  "vin": "WBA71FN090CX16401",
+  "possibleTwinOf": null,
+  "exteriorColorName": "Saphirschwarz metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Leder Vernasca: Schwarz/ Kontraststeppung Blau/ Interieurfarbe Schwarz",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — açıklama bilgilendirici (24 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'",
+  "basePriceEuro": 69379,
+  "mileageKm": 17154,
+  "firstRegistrationYearAndMonth": [
+    2026,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "Euler Group",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 Unknown",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "no",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "yes",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": null,
+    "modifiedTime": null,
+    "renewedTime": null
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-07T07:36:16.235Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "EULER taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sunroofReason": {
+          "old": null,
+          "new": "S403A=no — açıklama bilgilendirici (24 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'"
+        }
+      },
+      "auditDate": "2026-08-10T07:14:25.494Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

@@ -1,80 +1,50 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+// Kullanici teyidiyle "sunroof yok" isareti: S403A=no + override + dogru kategoriye tasima.
+// Tasima mantigi ortak moveListing'te (lib/move-listing.js) — burada kopya tutulmaz.
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { moveListing, pushAudit } from './lib/move-listing.js';
 
-const listingsDir = path.resolve(__dirname, '../src/data/listings');
-const TARGET_FILE = 'COUPE_GAS_WITHOUT_SUNROOF.json';
-const targetPath = path.join(listingsDir, TARGET_FILE);
+const TARGET_CATEGORY = 'COUPE_GAS_WITHOUT_SUNROOF';
 
-const SOURCE_FILES = [
-  'COUPE_GAS_WITH_SUNROOF.json',
-  'COUPE_DIESEL_WITH_SUNROOF.json',
-  'COUPE_GAS_RWD_WITH_SUNROOF.json',
-  'GRAN_COUPE.json',
-  'CABRIO.json',
+// Sunroof'lu (veya sunroof varsayimli) aktif kategoriler.
+const SOURCE_CATEGORIES = [
+  'COUPE_GAS_WITH_SUNROOF',
+  'COUPE_DIESEL_WITH_SUNROOF',
+  'COUPE_GAS_RWD_WITH_SUNROOF',
+  'GRAN_COUPE',
+  'CABRIO',
 ];
 
-const arg = process.argv[2];
-if (!arg) {
+const id = process.argv[2];
+if (!id) {
   console.error('Kullanım: npm run move:withoutsunroof -- <mobileDeId | listingId>');
   process.exit(1);
 }
 
-const matches = (car) => car.mobileDeId === arg || car.listingId === arg;
-
-let foundCar = null;
-let sourceFile = null;
-
-for (const file of SOURCE_FILES) {
-  const filePath = path.join(listingsDir, file);
-  if (!fs.existsSync(filePath)) continue;
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  const index = data.findIndex(matches);
-
-  if (index !== -1) {
-    foundCar = data[index];
-    sourceFile = file;
-    data.splice(index, 1);
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
-    break;
+const result = moveListing({
+  id,
+  sourceCategories: SOURCE_CATEGORIES,
+  pickArchive: () => TARGET_CATEGORY,
+  mutateCar: (car, { sourceCategory }) => {
+    const previousS403A = car.equipmentFeatures?.S403A ?? 'unknown';
+    car.equipmentFeatures = car.equipmentFeatures || {};
+    car.equipmentFeatures.S403A = 'no';
+    car.overrideFeatures = car.overrideFeatures || {};
+    car.overrideFeatures.S403A = {
+      value: 'no',
+      reason: 'Kullanıcı teyidi: sunroof yok'
+    };
+    pushAudit(
+      car,
+      `Dosya Taşıma: ${sourceCategory} → ${TARGET_CATEGORY}`,
+      'Kullanıcı teyidi sonucu sunroof olmadığı tespit edildi',
+      { 'equipmentFeatures.S403A': { from: previousS403A, to: 'no' } }
+    );
   }
-}
+});
 
-if (!foundCar) {
-  console.error(`Hata: "${arg}" sunroof'lu aktif listelerden hiçbirinde bulunamadı.`);
+if (!result.found) {
+  console.error(`Hata: "${id}" sunroof'lu aktif listelerden hiçbirinde bulunamadı.`);
   process.exit(1);
 }
 
-const previousS403A = foundCar.equipmentFeatures?.S403A ?? 'unknown';
-foundCar.equipmentFeatures = foundCar.equipmentFeatures || {};
-foundCar.equipmentFeatures.S403A = 'no';
-foundCar.overrideFeatures = foundCar.overrideFeatures || {};
-foundCar.overrideFeatures.S403A = {
-  value: 'no',
-  reason: 'Kullanıcı teyidi: sunroof yok'
-};
-
-const sourceName = sourceFile.replace('.json', '');
-const targetName = TARGET_FILE.replace('.json', '');
-foundCar.auditHistory = foundCar.auditHistory || [];
-foundCar.auditHistory.push({
-  action: `Dosya Taşıma: ${sourceName} → ${targetName}`,
-  detail: 'Kullanıcı teyidi sonucu sunroof olmadığı tespit edildi',
-  changes: {
-    'equipmentFeatures.S403A': {
-      from: previousS403A,
-      to: 'no'
-    }
-  },
-  auditDate: new Date().toISOString()
-});
-foundCar.auditHistory.sort((a, b) => new Date(a.auditDate) - new Date(b.auditDate));
-
-const target = JSON.parse(fs.readFileSync(targetPath, 'utf-8'));
-target.push(foundCar);
-fs.writeFileSync(targetPath, JSON.stringify(target, null, 2) + '\n', 'utf-8');
-
-console.log(`🔀 ${foundCar.listingId} (${foundCar.mobileDeId}) sunroof'suz olarak işaretlendi — ${sourceFile} → ${TARGET_FILE}`);
+console.log(`🔀 ${result.car.listingId} (${result.car.mobileDeId}) sunroof'suz olarak işaretlendi — ${result.sourceCategory} → ${TARGET_CATEGORY}`);

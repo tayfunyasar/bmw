@@ -1,0 +1,103 @@
+{
+  "listingId": "C686",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-m-performance-led-kamera-carplay-wenden/461082004.html",
+  "mobileDeId": "461082004",
+  "exteriorColorName": "White",
+  "interiorColorName": "Full leather, Red",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "basePriceEuro": 46900,
+  "mileageKm": 47206,
+  "firstRegistrationYearAndMonth": [
+    2024,
+    2
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "Fahrzeugcenter57 OHG ★4.4",
+  "modelGeneration": "LCI",
+  "co2EmissionsGramPerKm": 162,
+  "listingLocation": "🇩🇪 DE-57482 Wenden",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — İlan açıklamasında tespit edildi: \"Vorschäden: Dieses Fahrzeug hatte einen Vorschaden\""
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S536A": "no",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S3ACA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S302A": "yes",
+    "S688A": "unknown",
+    "S2T4A": "yes",
+    "S1MAA": "unknown",
+    "S2VLA": "no",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S715A": "no",
+    "S493A": "no",
+    "S216A": "no",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-20T10:13:36.000Z",
+    "modifiedTime": "2026-07-21T13:19:55.000Z",
+    "renewedTime": "2026-07-20T10:13:36.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-20T10:13:36.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-20T10:13:36.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-23T16:29:16.949Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli"
+}

@@ -1,0 +1,104 @@
+{
+  "listingId": "C27",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=443997122",
+  "mobileDeId": "443997122",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 47680,
+  "mileageKm": 43244,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    11
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "unknown"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "Yeni",
+  "sellerTypeOrName": "Autohaus Müller ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 184,
+  "listingLocation": "🇩🇪 Leipzig",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "Araç no: 1018235"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "unknown",
+    "S5AUA": "unknown",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "unknown",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "unknown",
+    "S715A": "unknown",
+    "S2VLA": "unknown",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "unknown",
+    "S1MAA": "unknown",
+    "S5ACA": "unknown",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S493A": "unknown",
+    "S536A": "unknown",
+    "S2NHA": "unknown",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "action": "Tekrar tarama — Renk Dravitgrau, İç Alcantara Siyah doğrulandı. xDrive doğrulandı. HU → Yeni. CO₂ → 184. Alcantara/Elec Seats/Mirror → yes. 360° yes → NO (sadece geri kamera). Park Asst+ yes → NO (sadece Park Asst). Araç no: 1018235",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Araç satıldı veya yayından kaldırıldı",
+      "changes": null,
+      "auditDate": "2026-03-31T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#fb923c",
+  "aiCommentary": [
+    "🟡 Servis geçmişi bilinmiyor",
+    "xDrive doğrulandı (Dört tekerlekli sürüş ekipmanda)"
+  ]
+}

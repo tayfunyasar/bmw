@@ -1,0 +1,123 @@
+{
+  "listingId": "C173",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-a-xdrive-coupe-gsd-daprof-rfk-hud-acc-keyl-memmingen/452712519.html",
+  "mobileDeId": "452712519",
+  "vin": null,
+  "possibleTwinOf": "C53",
+  "exteriorColorName": "Saphirschwarz metallic",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 45990,
+  "mileageKm": 32858,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    12
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "10/2026",
+  "sellerTypeOrName": "Autohaus Reisacher GmbH ★4.1",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 176,
+  "listingLocation": "🇩🇪 DE-87700 Memmingen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C53 — tescil 2021/12 + ~32700.000000000004km + ~€45990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Reisacher GmbH ★4.1\" vs \"?\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-10T08:07:55.000Z",
+    "modifiedTime": "2026-04-10T15:05:07.000Z",
+    "renewedTime": "2026-04-10T08:07:55.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-10T08:07:55.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-10T08:07:55.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-10T20:00:30.730Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-04-13T18:30:23.457Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C53 — tescil 2021/12 + ~32700.000000000004km + ~€45990 eşleşiyor — aynı fiziksel araç olabilir (satıcı FARKLI: \"Autohaus Reisacher GmbH ★4.1\" vs \"?\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C53"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.175Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

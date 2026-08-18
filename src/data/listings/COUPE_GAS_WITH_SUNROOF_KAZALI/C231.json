@@ -1,0 +1,103 @@
+{
+  "listingId": "C231",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-xdrive-coupe-leder-laser-navi-mwst-grabensee-%C3%B6sterreich/453402370.html",
+  "mobileDeId": "453402370",
+  "exteriorColorName": "BLACK SAPPHIRE METALLIC",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 28999,
+  "mileageKm": 62000,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    4
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "MNS- Automobile GmbH ★4.4",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 155,
+  "listingLocation": "🇦🇹 AT-3041 Grabensee Österreich",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S1MAA": "yes",
+    "S536A": "yes",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S3ACA": "yes",
+    "S488A": "yes",
+    "S715A": "yes",
+    "S493A": "yes",
+    "S521A": "yes",
+    "S524A": "no",
+    "S265A": "no",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-17T14:26:07.000Z",
+    "modifiedTime": "2026-04-28T14:15:58.000Z",
+    "renewedTime": "2026-04-26T11:52:20.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-17T14:26:07.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-26T11:52:20.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:36:31.770Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor"
+}

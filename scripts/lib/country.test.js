@@ -40,43 +40,45 @@ test('countryCodeFromLocation — src/data/countries.js ile ayni ters tabloyu ur
   }
 });
 
-// --- countryExcludedFiles config butunlugu ---
+// --- countryExcludedCategories config butunlugu ---
 
-test('countryExcludedFiles — LT dislanmis ve LITHUANIA.json hedefi', () => {
-  assert.equal(LISTING_FILES.countryExcludedFiles.LT, 'LITHUANIA.json');
+test('countryExcludedCategories — LT dislanmis ve LITHUANIA hedefi', () => {
+  assert.equal(LISTING_FILES.countryExcludedCategories.LT, 'LITHUANIA');
 });
 
-test('countryExcludedFiles — her hedef dosya allFiles + enforceFiles icinde olmali', () => {
-  // allFiles disinda kalirsa rematch script'leri o dosyayi hic islemez;
-  // enforceFiles disinda kalirsa format/sema dogrulamasi atlanir.
-  for (const target of Object.values(LISTING_FILES.countryExcludedFiles)) {
-    assert.ok(LISTING_FILES.allFiles.includes(target), `${target} allFiles icinde`);
-    assert.ok(LISTING_FILES.enforceFiles.includes(target), `${target} enforceFiles icinde`);
+test('countryExcludedCategories — her hedef kategori allCategories + enforceCategories icinde olmali', () => {
+  // allCategories disinda kalirsa rematch script'leri o kategoriyi hic islemez;
+  // enforceCategories disinda kalirsa format/sema dogrulamasi atlanir.
+  for (const target of Object.values(LISTING_FILES.countryExcludedCategories)) {
+    assert.ok(LISTING_FILES.allCategories.includes(target), `${target} allCategories icinde`);
+    assert.ok(LISTING_FILES.enforceCategories.includes(target), `${target} enforceCategories icinde`);
   }
 });
 
-test('countryExcludedFiles — hedef dosya otomatik SATILDI kaynagi OLMAMALI', () => {
+test('countryExcludedCategories — hedef kategori otomatik SATILDI kaynagi OLMAMALI', () => {
   // Aksi halde kalkan bir LT ilani SOLD arsivine tasinir ve arayuzde gorunur.
-  for (const target of Object.values(LISTING_FILES.countryExcludedFiles)) {
-    assert.ok(!LISTING_FILES.autoSoldSourceFiles.includes(target), `${target} autoSold disinda`);
+  for (const target of Object.values(LISTING_FILES.countryExcludedCategories)) {
+    assert.ok(!LISTING_FILES.autoSoldSourceCategories.includes(target), `${target} autoSold disinda`);
   }
 });
 
-test('countryExcludedFiles — hedef dosya elle move:* kaynagi da OLMAMALI', () => {
-  // defaultSourceFiles mark-sold/mark-kazali/mark-cakal'in taradigi liste; dislanan
-  // ulke dosyasi orada olmamali ki ilan yanlislikla gorunur dosyalara geri donmesin.
-  for (const target of Object.values(LISTING_FILES.countryExcludedFiles)) {
-    assert.ok(!LISTING_FILES.defaultSourceFiles.includes(target), `${target} defaultSourceFiles disinda`);
+test('countryExcludedCategories — hedef kategori elle move:* kaynagi da OLMAMALI', () => {
+  // defaultSourceCategories mark-sold/mark-kazali/mark-cakal'in taradigi liste; dislanan
+  // ulke kategorisi orada olmamali ki ilan yanlislikla gorunur kategorilere geri donmesin.
+  for (const target of Object.values(LISTING_FILES.countryExcludedCategories)) {
+    assert.ok(!LISTING_FILES.defaultSourceCategories.includes(target), `${target} defaultSourceCategories disinda`);
   }
 });
 
 // --- UI sizintisi ---
 
-test('dislanan ulke dosyasi src/data/index.js tarafindan IMPORT EDILMEMELI', () => {
-  // Tek gercek koruma bu: UI havuzlari yalnizca index.js'in import ettigi dosyalardan
-  // beslenir. Dosya oraya eklenirse LT araclari arayuzde gorunur.
+test('dislanan ulke kategorisi src/data/index.js glob filtresinden gecmemeli', () => {
+  // index.js tum kategorileri glob ile toplar; koruma countryExcludedCategories
+  // filtresidir. Filtre mekanizmasi mevcut olmali ve dislanan kategori adi
+  // koda literal yazilmamali (config tek kaynak kalsin).
   const indexSource = fs.readFileSync(path.resolve(__dirname, '../../src/data/index.js'), 'utf8');
-  for (const target of Object.values(LISTING_FILES.countryExcludedFiles)) {
-    assert.ok(!indexSource.includes(target), `${target} index.js'te import EDILMEMELI`);
+  assert.ok(indexSource.includes('countryExcludedCategories'), 'index.js dislama filtresini config\'ten okumali');
+  for (const target of Object.values(LISTING_FILES.countryExcludedCategories)) {
+    assert.ok(!indexSource.includes(target), `${target} index.js'e literal yazilmamali`);
   }
 });

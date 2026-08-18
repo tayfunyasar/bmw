@@ -3,9 +3,9 @@ import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { writeRunLog } from './lib/run-log.js';
+import { readCategory } from './lib/listings-store.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const listingsDir = path.resolve(__dirname, '../src/data/listings');
 const dumpDir = path.resolve(__dirname, '../dump');
 
 const argv = process.argv.slice(2);
@@ -15,15 +15,11 @@ const LIST_ONLY = argv.includes('--list');
 const STALE_DAYS = parseInt(argv.find(a => /^\d+$/.test(a))) || 3;
 const staleCutoff = Date.now() - (STALE_DAYS * 24 * 60 * 60 * 1000);
 
-const activeFiles = [
-  'COUPE_GAS_WITH_SUNROOF.json',
+const activeCategories = [
+  'COUPE_GAS_WITH_SUNROOF',
 ];
 
-const allIds = activeFiles.flatMap(f => {
-  const filePath = path.join(listingsDir, f);
-  if (!fs.existsSync(filePath)) return [];
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8')).map(c => c.mobileDeId).filter(Boolean);
-});
+const allIds = activeCategories.flatMap(c => readCategory(c).map(car => car.mobileDeId).filter(Boolean));
 
 // Her mobileDeId için son crawl (dump) timestamp'ini derle.
 const buildDumpMap = () => {

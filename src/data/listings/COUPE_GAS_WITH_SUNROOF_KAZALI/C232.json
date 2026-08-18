@@ -1,0 +1,116 @@
+{
+  "listingId": "C232",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-a-kempten/453587916.html",
+  "mobileDeId": "453587916",
+  "exteriorColorName": "White Metallic",
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 45799,
+  "mileageKm": 50045,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    4
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "04/2026",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-87439 Kempten",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true",
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C212 — tescil 2021/4 + ~50015km + ~€45799 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Unknown Dealer\")"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S1MAA": "unknown",
+    "S536A": "no",
+    "S322A": "no",
+    "S2NHA": "unknown",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "no",
+    "S2VLA": "unknown",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "no",
+    "S5ACA": "no",
+    "S6C4A": "unknown",
+    "S430A": "yes",
+    "S4AWA": "unknown",
+    "S775A": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S3ACA": "no",
+    "S488A": "no",
+    "S715A": "unknown",
+    "S493A": "unknown",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "unknown",
+    "S302A": "no",
+    "S4NHA": "unknown"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-19T16:18:26.000Z",
+    "modifiedTime": "2026-05-05T14:35:53.000Z",
+    "renewedTime": "2026-04-19T16:18:26.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-19T16:18:26.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-19T16:18:26.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-05-05T14:36:31.771Z"
+    },
+    {
+      "action": "İkiz İşaretlendi (Geriye Dönük)",
+      "detail": "⚠️ Muhtemel yeniden-listeleme ikizi: C212 — tescil 2021/4 + ~50015km + ~€45799 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Unknown Dealer\")",
+      "changes": {
+        "possibleTwinOf": {
+          "old": null,
+          "new": "C212"
+        }
+      },
+      "auditDate": "2026-08-13T10:50:52.173Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=yes — mobile.de checkbox'ı işaretli",
+  "possibleTwinOf": "C212"
+}

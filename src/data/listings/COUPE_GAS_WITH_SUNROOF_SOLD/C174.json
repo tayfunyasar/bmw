@@ -1,0 +1,167 @@
+{
+  "listingId": "C174",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-hildesheim/452776369.html",
+  "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-62979719/",
+  "mobileDeId": "452776369",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Sanremo Green",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"Allrad\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 47450,
+  "mileageKm": 46159,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    4
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "WELLER Premium GmbH ★4.5",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-31137 Hildesheim",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [
+    "⚠️ Yüksek KM"
+  ],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "no",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-04-10T18:04:20.000Z",
+    "modifiedTime": "2026-04-10T18:04:22.000Z",
+    "renewedTime": "2026-04-10T18:04:20.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-10T18:04:20.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-04-10T18:04:20.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-04-10T20:00:30.731Z"
+    },
+    {
+      "action": "Bayi Sitesinden Donanım Güncellendi",
+      "detail": "wellergruppe.de bayi sitesinden donanım bilgileri çekildi. S5DN_360→no (sadece Rückfahrkamera), KGNL→no (Leder Vernasca), S5DNA→no (basic ParkAssistent), S420A→yes, S4AWA→yes (Sensatec), S536A→no, S3ACA→no, S4NHA→no olarak güncellendi.",
+      "changes": {
+        "S5DN_360": "unknown→no",
+        "KGNL": "unknown→no",
+        "S5DNA": "unknown→no",
+        "S420A": "unknown→yes",
+        "S4AWA": "unknown→yes",
+        "S536A": "unknown→no",
+        "S3ACA": "unknown→no",
+        "S4NHA": "unknown→no"
+      },
+      "auditDate": "2026-04-10T23:30:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "equipmentFeatures.S5DN_360": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S420A": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4NHA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-12T10:10:36.099Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-04-13T18:27:59.872Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

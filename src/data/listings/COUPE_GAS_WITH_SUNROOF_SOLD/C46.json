@@ -1,0 +1,343 @@
+{
+  "listingId": "C46",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=447413743",
+  "mobileDeId": "447413743",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "BLACK",
+  "exteriorPaintLabel": null,
+  "interiorColorName": null,
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 52900,
+  "mileageKm": 42000,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    1
+  ],
+  "numberOfPreviousOwners": "?",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "01/2028",
+  "sellerTypeOrName": "Unknown Dealer",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-86368 Gersthofen",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [
+    "Jantlar güzel"
+  ],
+  "listingDescriptionNotes": [
+    "🔥 M Perf. Software Kit (fabrika)",
+    "🔥 Carbon Außen Paket (fabrika)"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-02-04T15:02:17.000Z",
+    "modifiedTime": "2026-03-31T15:52:49.000Z",
+    "renewedTime": "2026-02-04T15:02:17.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-02-04T15:02:17.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-02-04T15:02:17.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
+      "action": "Tekrar tarama — Warranty yes → NO (BMW Garanti 09.03.2026 BİTTİ!). SA kodları tam doğrulandı. Mirror Tilt → yes",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-15T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Özel Satıcı (Gersthofen)",
+          "new": "Unknown Dealer"
+        },
+        "listingLocation": {
+          "old": "🇩🇪 Gersthofen",
+          "new": "🇩🇪 86368 Gersthofen"
+        },
+        "exteriorColorName": {
+          "old": "Black Sapphire",
+          "new": "BLACK"
+        },
+        "interiorColorName": {
+          "old": "Vernasca Siyah (gri dikiş)",
+          "new": null
+        },
+        "numberOfPreviousOwners": {
+          "old": "1",
+          "new": "?"
+        },
+        "equipmentFeatures.S403A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S5AUA": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S688A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "yes",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S610A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S459A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S1MAA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "unknown",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-04-01T19:09:21.192Z"
+    },
+    {
+      "action": "Donanım Yeniden Hesaplandı",
+      "detail": "Description-first öncelik kuralıyla tüm özellikler yeniden değerlendirildi",
+      "changes": {
+        "equipmentFeatures.S5AUA": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S688A": {
+          "old": "unknown",
+          "new": "no"
+        },
+        "equipmentFeatures.S610A": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S775A": {
+          "old": "no",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-01T20:15:12.863Z"
+    },
+    {
+      "action": "Default Davranış Güncellemesi",
+      "detail": "Bilgi yokluğu artık \"unknown\" olarak işaretleniyor (\"no\" yerine)",
+      "changes": {
+        "equipmentFeatures.S403A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DN_360": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.KGNL": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S459A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S5DNA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S4AWA": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S536A": {
+          "old": "no",
+          "new": "unknown"
+        },
+        "equipmentFeatures.S3ACA": {
+          "old": "no",
+          "new": "unknown"
+        }
+      },
+      "auditDate": "2026-04-01T20:22:48.210Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "warranty": {
+          "old": {
+            "exists": "unknown"
+          },
+          "new": {
+            "exists": "no"
+          }
+        },
+        "equipmentFeatures.S494A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S715A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S493A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S302A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-04-07T13:30:51.820Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-04-07T13:54:58.201Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "drivetrainCertain": {
+          "new": true
+        },
+        "equipmentFeatures.S403A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S2T4A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S459A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S430A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S488A": {
+          "old": "unknown",
+          "new": "yes"
+        },
+        "equipmentFeatures.S265A": {
+          "old": "unknown",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-05-05T14:44:38.450Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "aiCommentary": {
+          "old": [
+            "🟡 56 gündür satışta",
+            "🟡 Özel satıcı — bayi güvencesi yok",
+            "⚠️ BMW Garanti 09.03.2026 — BİTTİ!",
+            "🟠 Toplam €61,114 — bütçe üst sınırına yakın"
+          ],
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-02T18:10:17.073Z"
+    }
+  ],
+  "cardThemeColorHex": "#f472b6",
+  "aiCommentary": null
+}

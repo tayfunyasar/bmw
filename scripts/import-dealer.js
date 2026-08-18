@@ -23,6 +23,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { siteConfig, dealerKeyFor, sellerMatches } from './lib/dealer-sites.js';
 import { createIdAllocator, listingsDir } from './lib/listing-id.js';
+import { readCategory, readCar, writeCar, writeCategory } from './lib/listings-store.js';
 import { buildExistingIndex, lookupListing } from './lib/existing-index.js';
 import { parseRawToListing, applyUpdatesAndGetChanges } from './lib/parse-listing.js';
 import { determineTargetFile, detectDamageReason } from './lib/route-listing.js';
@@ -73,13 +74,11 @@ process.stdin.on('end', () => {
   // Esik/eslestirme mantigi lib/twin-fingerprint.js'de — parse-car-json ile ORTAK.
   const rootFingerprints = buildRootFingerprints(listingsDir);
   const findTwin = (parsed) => findTwinFp(rootFingerprints, parsed);
-  // Site dosyalari bellekte toplanir, sonda tek seferde yazilir.
-  const siteDir = path.join(listingsDir, siteName);
+  // Site kategorileri bellekte toplanir, sonda tek seferde yazilir.
   const fileCache = new Map(); // "COUPE_GAS_WITH_SUNROOF" -> array
   const loadSiteFile = (target) => {
     if (!fileCache.has(target)) {
-      const p = path.join(siteDir, `${target}.json`);
-      fileCache.set(target, fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : []);
+      fileCache.set(target, readCategory(siteName + path.sep + target));
     }
     return fileCache.get(target);
   };
@@ -107,24 +106,20 @@ process.stdin.on('end', () => {
     }
 
     if (hit && !hit.file.startsWith(siteName + path.sep)) {
-      // Kok dosyada (veya baska kaynakta) zaten var — mobile.de kaydi kanonik.
+      // Kok kategoride (veya baska kaynakta) zaten var — mobile.de kaydi kanonik.
       // Her taramada bayi verisi kokle SENKRONIZE edilir: unknown'lar cozulur,
       // zit celiskiler equipmentConflicts'e islenir (cozulen celiski kalkar).
-      const rootFile = path.join(listingsDir, hit.file + '.json');
-      if (fs.existsSync(rootFile)) {
-        const rootData = JSON.parse(fs.readFileSync(rootFile, 'utf8'));
-        const rootCar = rootData.find(c => c.listingId === hit.listingId);
-        if (rootCar) {
-          const freshParsed = parseRawToListing(rec, { listingId: hit.listingId, mobileDeId, source: siteName });
-          const syncChanges = mergeTwinIntoRoot(rootCar, {
-            dealerListingUrl: rec.dealerListingUrl, vin,
-            freshEquipment: freshParsed.equipmentFeatures, source: siteName,
-            fields: dealerFillableFields(freshParsed),
-            damageReason: detectDamageReason(rec)
-          });
-          // --dry-run diske YAZMAZ (eskiden bu iki merge yolu bayrağı yok sayıyordu).
-          if (!isDryRun && Object.keys(syncChanges).length) fs.writeFileSync(rootFile, JSON.stringify(rootData, null, 2) + '\n');
-        }
+      const rootCar = readCar(hit.file, hit.listingId);
+      if (rootCar) {
+        const freshParsed = parseRawToListing(rec, { listingId: hit.listingId, mobileDeId, source: siteName });
+        const syncChanges = mergeTwinIntoRoot(rootCar, {
+          dealerListingUrl: rec.dealerListingUrl, vin,
+          freshEquipment: freshParsed.equipmentFeatures, source: siteName,
+          fields: dealerFillableFields(freshParsed),
+          damageReason: detectDamageReason(rec)
+        });
+        // --dry-run diske YAZMAZ (eskiden bu iki merge yolu bayrağı yok sayıyordu).
+        if (!isDryRun && Object.keys(syncChanges).length) writeCar(hit.file, rootCar);
       }
       report.existing.push({ listingId: hit.listingId, file: hit.file, matchedBy: mobileDeId ? 'mobileDeId' : vin && hit === lookupListing(index, { vin }) ? 'vin' : 'dealerKey', record: label });
       continue;
@@ -170,9 +165,8 @@ process.stdin.on('end', () => {
     // Veri EZILMEZ — bayi listesi eksik olabilir (WELLER collapsed bolumleri);
     // yalnizca dealerListingUrl + (yoksa) vin yazilir ve equipment UNKNOWN'lari cozulur.
     if (twin && sellerMatches(rec.dealer?.name, twin.seller)) {
-      const rootFile = twin.file;   // walkListingFiles mutlak yol dondurur
-      const rootData = JSON.parse(fs.readFileSync(rootFile, 'utf8'));
-      const rootCar = rootData.find(c => c.listingId === twin.listingId);
+      // twin.rel = kok kategori adi (buildRootFingerprints doldurur).
+      const rootCar = readCar(twin.rel, twin.listingId);
       if (rootCar) {
         const freshParsed = parseRawToListing(rec, { listingId: twin.listingId, mobileDeId, source: siteName });
         const mergeChanges = mergeTwinIntoRoot(rootCar, {
@@ -182,7 +176,7 @@ process.stdin.on('end', () => {
           fields: dealerFillableFields(freshParsed),
           damageReason: detectDamageReason(rec)
         });
-        if (!isDryRun) fs.writeFileSync(rootFile, JSON.stringify(rootData, null, 2) + '\n');
+        if (!isDryRun) writeCar(twin.rel, rootCar);
         report.merged = report.merged || [];
         report.merged.push({ listingId: twin.listingId, site: siteName, key: dealerKey, resolved: Object.keys(mergeChanges).filter(k => k.startsWith('equipmentFeatures.')).length });
         continue;   // site dosyasina yeni kayit YOK
@@ -198,9 +192,8 @@ process.stdin.on('end', () => {
   }
 
   if (!isDryRun) {
-    fs.mkdirSync(siteDir, { recursive: true });
     for (const [target, arr] of fileCache) {
-      fs.writeFileSync(path.join(siteDir, `${target}.json`), JSON.stringify(arr, null, 2) + '\n');
+      writeCategory(siteName + path.sep + target, arr);
     }
     writeRunLog('import-dealer', { site: siteName, dryRun: false,
       added: report.added.length, updated: report.updated.length,

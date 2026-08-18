@@ -1,0 +1,107 @@
+{
+  "listingId": "C50",
+  "listingUrl": "https://www.mobile.de/tr/araçlar/detaylar.html?id=445684913",
+  "mobileDeId": "445684913",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "Arctic Race Blue",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara Siyah",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": null,
+  "drivetrainReason": null,
+  "sunroofReason": null,
+  "basePriceEuro": 52785,
+  "mileageKm": 36387,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    1
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": true
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "02/2027",
+  "sellerTypeOrName": "Autohaus Kühnert ★4.3",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": false,
+  "co2EmissionsGramPerKm": 170,
+  "listingLocation": "🇩🇪 Windischleuba",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "Kazasız, 24 ay garanti, Tam servis"
+  ],
+  "listingAdditionalFeatures": [
+    "Alcantara Siyah iç, 797M Bicolor jantlar, Aluminium Tetragon interior"
+  ],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "unknown",
+    "S2VLA": "yes",
+    "S494A": "unknown",
+    "S248A": "unknown",
+    "S420A": "yes",
+    "S1MAA": "no",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "unknown",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "unknown",
+    "S3ADA": "unknown",
+    "S3AGA": "unknown",
+    "S488A": "unknown",
+    "S521A": "unknown",
+    "S524A": "unknown",
+    "S265A": "unknown",
+    "S216A": "unknown",
+    "S302A": "unknown",
+    "S4NHA": "unknown"
+  },
+  "auditHistory": [
+    {
+      "action": "Silinen → Sunroof Yok tablosuna taşındı. HK doğrulandı (önceden no idi → yes). Detaylı donanım güncellendi",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "action": "İlan Reddedildi",
+      "detail": "Araç kriterlere uygun bulunmadı",
+      "changes": null,
+      "auditDate": "2026-03-14T12:00:00.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#38bdf8",
+  "aiCommentary": [
+    "👎 Arctic Race Blue (favori değil)",
+    "🚫 Sunroof YOK (SA'da 0403 yok, ekipmanda Glasdach yok)",
+    "🟠 Toplam €59,479 — bütçe üst sınırına yakın"
+  ]
+}

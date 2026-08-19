@@ -26,7 +26,7 @@ const SORTERS = {
   score: (a, b) => (b.totalScore || 0) - (a.totalScore || 0),
 };
 
-export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 0, kmMax = 0, lciOnly = false, twoStarSure = false }) => {
+export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 0, kmMax = 0, lciOnly = false, twoStarSure = false, showKazali = true }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentTab = location.pathname.replace('/', '') || 'all-adjusted';
@@ -35,9 +35,9 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
   // tek noktadan. useCallback: kimliği yalnızca gerçek girdileri değişince yenilenir — freeze
   // toggle gibi ilgisiz bir render bunu etkilemez, visibleAll/yearlyArranged yeniden hesaplanmaz.
   const arrange = useCallback((list) => {
-    const r = sortByTotalCost(list).filter(c => carMatchesFilters(c, { showDisliked, kmMax, budgetMax, lciOnly, twoStarSure }));
+    const r = sortByTotalCost(list).filter(c => carMatchesFilters(c, { showDisliked, kmMax, budgetMax, lciOnly, twoStarSure, showKazali }));
     return sortKey === 'price' ? r : [...r].sort(SORTERS[sortKey] || SORTERS.price);
-  }, [showDisliked, budgetMax, kmMax, lciOnly, twoStarSure, sortKey]);
+  }, [showDisliked, budgetMax, kmMax, lciOnly, twoStarSure, showKazali, sortKey]);
   const visibleAll = useMemo(() => arrange(allByTotalCost), [arrange]);
   const yearlyArranged = useMemo(() => {
     const map = {};

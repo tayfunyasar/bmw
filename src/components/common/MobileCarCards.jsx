@@ -46,7 +46,10 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
         const reg = (ry != null && rm != null) ? `${String(rm).padStart(2, '0')}/${ry}` : '?';
         return (
           <Card key={car.listingId} size="small" styles={{ body: { padding: 14 } }}
-            style={{ borderColor: car.curatorPickBadge && !isRejected && !car.isSold ? UI_COLORS.statusFresh : undefined }}>
+            style={{
+              borderColor: car.isKazali ? UI_COLORS.statusWarning : (car.curatorPickBadge && !isRejected && !car.isSold ? UI_COLORS.statusFresh : undefined),
+              backgroundColor: car.isKazali ? UI_COLORS.kazaliBg : undefined,   // kazalı → sarı-amber zemin (SATILDI kırmızısından net ayrışır)
+            }}>
             {/* Başlık: id + rozet + favori */}
             <Flex justify="space-between" align="flex-start" gap={8}>
               <Flex vertical gap={2}>
@@ -59,6 +62,7 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
                 <Space size={4} wrap>
                   {isRejected && <Tag color="error" style={{ margin: 0 }}>{rejectedLabel}</Tag>}
                   {car.isSold && !isRejected && <Tag color="error" style={{ margin: 0 }}>SATILDI</Tag>}
+                  {car.isKazali && !isRejected && <Tag color="warning" style={{ margin: 0 }}>💥 KAZALI</Tag>}
                   {car.curatorPickBadge && !isRejected && !car.isSold && <Text>{car.curatorPickBadge}</Text>}
                   {car.modelGenerationCertain === false
                     ? <Tooltip title="LCI/Pre-LCI belirsiz — 01–05/2023 geçiş döneminde iki nesil birlikte tescil edildi. Foto ile teyit gerek."><Tag style={{ margin: 0 }}>⚠️ LCI?</Tag></Tooltip>

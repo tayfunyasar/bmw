@@ -54,6 +54,7 @@ const AppContent = () => {
   const lciOnly = params.get('gen') === 'lci';
   const twoStarSure = params.get('star') === '2';
   const showDisliked = params.get('disliked') === '1';
+  const showKazali = params.get('kazali') !== '0';   // varsayılan açık; büyük hasarlılar filtrede daima gizli
 
   // Varsayılan değerde parametre URL'den silinir (temiz link); aksi halde yazılır.
   const setParam = (key, value, isDefault) => setParams(prev => {
@@ -64,7 +65,7 @@ const AppContent = () => {
 
   // Öneri paneli ve tablolar AYNI filtreli havuzu kullanır (tek kaynak) → tutarlı: bir araç öneride
   // görünüyorsa tabloda da bulunur; filtre-dışıysa ikisinde de yok. (C39 tutarsızlığının çözümü.)
-  const filters = { showDisliked, kmMax, budgetMax, lciOnly, twoStarSure };
+  const filters = { showDisliked, kmMax, budgetMax, lciOnly, twoStarSure, showKazali };
   const recPool = allByTotalCost.filter(c => carMatchesFilters(c, filters));
 
   return (
@@ -86,12 +87,21 @@ const AppContent = () => {
               <Select variant="filled" value={lciOnly ? 'lci' : 'all'} onChange={v => setParam('gen', v, v === 'all')} options={GENERATION_OPTS} style={{ flex: '1 1 160px' }} />
               <Select variant="filled" value={twoStarSure ? '2' : 'all'} onChange={v => setParam('star', v, v === 'all')} options={STAR_OPTS} style={{ flex: '1 1 180px' }} />
             </Flex>
-            <Flex align="center" gap={10} style={{ paddingTop: 2 }}>
-              <Switch checked={showDisliked} onChange={v => setParam('disliked', '1', !v)} />
-              <Text style={{ fontSize: 14, whiteSpace: 'nowrap' }}>👎 Sevilmeyen renkleri göster</Text>
-              <Tooltip title={<span>Dış: {dislikedExt}<br />İç: {dislikedInt}</span>}>
-                <InfoCircleOutlined style={{ color: '#94a3b8', fontSize: 14, cursor: 'help' }} />
-              </Tooltip>
+            <Flex align="center" gap={10} wrap="wrap" style={{ paddingTop: 2 }}>
+              <Flex align="center" gap={10}>
+                <Switch checked={showDisliked} onChange={v => setParam('disliked', '1', !v)} />
+                <Text style={{ fontSize: 14, whiteSpace: 'nowrap' }}>👎 Sevilmeyen renkleri göster</Text>
+                <Tooltip title={<span>Dış: {dislikedExt}<br />İç: {dislikedInt}</span>}>
+                  <InfoCircleOutlined style={{ color: '#94a3b8', fontSize: 14, cursor: 'help' }} />
+                </Tooltip>
+              </Flex>
+              <Flex align="center" gap={10}>
+                <Switch checked={showKazali} onChange={v => setParam('kazali', '0', v)} />
+                <Text style={{ fontSize: 14, whiteSpace: 'nowrap' }}>💥 Kazalıları göster</Text>
+                <Tooltip title="Yalnızca LCI (veya LCI'sı belirsiz) ufak hasarlı araçlar havuzda turuncu zeminle görünür. BÜYÜK hasarlılar ve kesin Pre-LCI kazalılar bu anahtar açıkken bile daima gizlidir.">
+                  <InfoCircleOutlined style={{ color: '#94a3b8', fontSize: 14, cursor: 'help' }} />
+                </Tooltip>
+              </Flex>
             </Flex>
           </Flex>
 
@@ -103,7 +113,7 @@ const AppContent = () => {
             <Select variant="filled" value={sortKey} onChange={v => setParam('sort', v, v === 'price')} options={SORT_OPTS} style={{ minWidth: 240 }} />
           </Flex>
 
-          <MainTabs showDisliked={showDisliked} sortKey={sortKey} budgetMax={budgetMax} kmMax={kmMax} lciOnly={lciOnly} twoStarSure={twoStarSure} />
+          <MainTabs showDisliked={showDisliked} sortKey={sortKey} budgetMax={budgetMax} kmMax={kmMax} lciOnly={lciOnly} twoStarSure={twoStarSure} showKazali={showKazali} />
         </Flex>
       </Content>
     </Layout>

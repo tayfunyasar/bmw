@@ -8,6 +8,7 @@
     "vin",
     "possibleTwinOf",
     "dealerReportedDamage",
+    "kazaliSeverity",
     "exteriorColorName",
     "exteriorPaintLabel",
     "interiorColorName",
@@ -96,6 +97,7 @@
   "allCategories": [
     "CABRIO",
     "CABRIO_KAZALI",
+    "CABRIO_KAZALI_SOLD",
     "COUPE_DIESEL_WITH_SUNROOF",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD",
@@ -105,16 +107,21 @@
     "COUPE_GAS_WITH_SUNROOF",
     "COUPE_GAS_WITH_SUNROOF_CAKAL",
     "COUPE_GAS_WITH_SUNROOF_KAZALI",
+    "COUPE_GAS_WITH_SUNROOF_KAZALI_SOLD",
     "COUPE_GAS_WITH_SUNROOF_SOLD",
     "DELETED_CARS",
     "GRAN_COUPE",
     "GRAN_COUPE_KAZALI",
+    "GRAN_COUPE_KAZALI_SOLD",
     "LITHUANIA"
   ],
   "frozenCategories": [
     "COUPE_GAS_WITH_SUNROOF_SOLD",
     "COUPE_GAS_RWD_WITH_SUNROOF_SOLD",
     "COUPE_GAS_RWD_WITHOUT_SUNROOF_SOLD",
+    "COUPE_GAS_WITH_SUNROOF_KAZALI_SOLD",
+    "GRAN_COUPE_KAZALI_SOLD",
+    "CABRIO_KAZALI_SOLD",
     "COUPE_GAS_WITH_SUNROOF_CAKAL",
     "DELETED_CARS"
   ],
@@ -140,5 +147,47 @@
   ],
   "countryExcludedCategories": {
     "LT": "LITHUANIA"
-  }
+  },
+  "optionalRootKeys": [
+    "dealerListingUrl",
+    "dealerListingUrls",
+    "dealerReportedDamage",
+    "kazaliSeverity",
+    "equipmentConflicts"
+  ],
+  "arrayRootKeys": [
+    "curatorPersonalNotes",
+    "listingDescriptionNotes",
+    "listingAdditionalFeatures",
+    "auditHistory"
+  ],
+  "kazaliArchives": {
+    "GRAN_COUPE": "GRAN_COUPE_KAZALI",
+    "default": "COUPE_GAS_WITH_SUNROOF_KAZALI"
+  },
+  "soldExtraSourceCategories": [
+    "CABRIO",
+    "CABRIO_KAZALI",
+    "COUPE_GAS_WITH_SUNROOF_KAZALI",
+    "GRAN_COUPE_KAZALI"
+  ],
+  "withoutSunroof": {
+    "sourceCategories": [
+      "COUPE_GAS_WITH_SUNROOF",
+      "COUPE_DIESEL_WITH_SUNROOF",
+      "COUPE_GAS_RWD_WITH_SUNROOF",
+      "GRAN_COUPE",
+      "CABRIO"
+    ],
+    "targetCategory": "COUPE_GAS_WITHOUT_SUNROOF"
+  },
+  "drivetrainRoutes": {
+    "COUPE_GAS_WITH_SUNROOF": { "RWD": "COUPE_GAS_RWD_WITH_SUNROOF" },
+    "COUPE_GAS_WITHOUT_SUNROOF": { "RWD": "COUPE_GAS_RWD_WITHOUT_SUNROOF" },
+    "COUPE_GAS_RWD_WITH_SUNROOF": { "xDrive AWD": "COUPE_GAS_WITH_SUNROOF" },
+    "COUPE_GAS_RWD_WITHOUT_SUNROOF": { "xDrive AWD": "COUPE_GAS_WITHOUT_SUNROOF" }
+  },
+  "refreshCategories": [
+    "COUPE_GAS_WITH_SUNROOF"
+  ]
 }

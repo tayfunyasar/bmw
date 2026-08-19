@@ -61,6 +61,7 @@ const CarTableComponent = ({
           <Link strong href={car.listingUrl} target="_blank" delete={isRejected || car.isSold} underline={!isRejected && !car.isSold}>{car.listingId}</Link>
           {isRejected && <Text type="danger">{rejectedLabel}</Text>}
           {car.isSold && !isRejected && <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text>}
+          {car.isKazali && !isRejected && <Text type="warning" strong style={{ fontSize: '11px' }}>💥 KAZALI</Text>}
           {car.curatorPickBadge && !isRejected && !car.isSold && <Text>{car.curatorPickBadge}</Text>}
           <FreezeButton listingId={car.listingId} showLabel />
           {car.auditHistory && car.auditHistory.length > 0 && (
@@ -77,8 +78,9 @@ const CarTableComponent = ({
       onCell: (record) => {
         const style = {};
         if (record.isSection) Object.assign(style, { backgroundColor: UI_COLORS.sectionBg, borderBottom: `2px solid ${UI_COLORS.sectionBorder}` });
-        else if (car.isSold) Object.assign(style, { backgroundColor: 'rgba(255, 77, 79, 0.06)' });
-        else if (car.curatorPickBadge) Object.assign(style, { backgroundColor: 'rgba(82, 196, 26, 0.06)' });
+        else if (car.isKazali) Object.assign(style, { backgroundColor: UI_COLORS.kazaliBg });   // kazalı → sarı-amber zemin (SATILDI kırmızısından net ayrışır)
+        else if (car.isSold) Object.assign(style, { backgroundColor: UI_COLORS.soldBg });
+        else if (car.curatorPickBadge) Object.assign(style, { backgroundColor: UI_COLORS.buyableBg });
         return { style };
       },
       render: (val, record) => {

@@ -8,9 +8,15 @@ const STAR2_CODES = equipmentRules.filter(r => r.score === 2).map(r => r.code);
 // lciOnly:      kesin LCI + "LCI olma ihtimali olan" (belirsiz) araçlar; kesin Pre-LCI elenir.
 // twoStarSure:  tüm 2-yıldızlı donanımlar KESİN var (yes) ya da belirsiz (?/unknown) olan araçlar;
 //               herhangi biri KESİN yok (no) ise elenir. (LCI ile aynı mantık: yes+? dahil, no hariç.)
-export const carMatchesFilters = (car, { showDisliked = false, kmMax = 0, budgetMax = 0, lciOnly = false, twoStarSure = false } = {}) =>
+// showKazali:   kazalı araçların (isKazali) görünürlüğü. Açıkken bile: kazaliSeverity==='major'
+//               (büyük hasar, kazali:severity ile işaretlenir) DAİMA gizli; alan yoksa ufak sayılır.
+//               Ayrıca kazalı araç yalnızca LCI (veya LCI'sı belirsiz) ise gösterilir —
+//               kesin Pre-LCI kazalı hiç gösterilmez (lciOnly ile aynı nesil mantığı).
+const isLciOrUncertain = (car) => car.modelGeneration === 'LCI' || car.modelGenerationCertain === false;
+export const carMatchesFilters = (car, { showDisliked = false, kmMax = 0, budgetMax = 0, lciOnly = false, twoStarSure = false, showKazali = true } = {}) =>
+  (!car.isKazali || (showKazali && car.kazaliSeverity !== 'major' && isLciOrUncertain(car))) &&
   (showDisliked || !hasDislikedColor(car)) &&
   (!kmMax || car.mileageKm < kmMax) &&
   (!budgetMax || car.metrics.baseTotalCost <= budgetMax) &&
-  (!lciOnly || car.modelGeneration === 'LCI' || car.modelGenerationCertain === false) &&
+  (!lciOnly || isLciOrUncertain(car)) &&
   (!twoStarSure || STAR2_CODES.every(code => car.equipmentFeatures?.[code] !== 'no'));

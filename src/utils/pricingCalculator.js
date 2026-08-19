@@ -1,4 +1,4 @@
-import { CoupeGasWithSunroof, soldGasListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf, dealerListingsByCategory } from '../data';
+import { CoupeGasWithSunroof, soldGasListings, kazaliListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf, dealerListingsByCategory } from '../data';
 import { computeBaseRates, unknownsExpectedValue, unknownsExpectedScore } from './expectedValue.js';
 
 const { TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, BPM_EXEMPT_COUNTRIES, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
@@ -352,9 +352,9 @@ const assignRecommendations = (evaluated, referencePool = evaluated) => {
     ];
   });
 
-  // Tek-kazanan rozetler yalnızca ALINABILIR araçlar arasından (satılmış araç rozet almaz).
+  // Tek-kazanan rozetler yalnızca ALINABILIR araçlar arasından (satılmış/kazalı araç rozet almaz).
   // Her rozet, kendi kategorisinin skoruyla seçilir (kategoriler farklı sıralıyor → farklı kazanan).
-  const buyable = evaluated.filter(c => !c.isSold);
+  const buyable = evaluated.filter(c => !c.isSold && !c.isKazali);
   const bestSpec = [...buyable].sort((a,b) => b.metrics.expectedFeaturesValue - a.metrics.expectedFeaturesValue)[0]; // 👑 donanım (€)
   const topPick = [...buyable].sort((a,b) => b.totalScore - a.totalScore)[0];        // 🏆 genel
   const budgetPick = [...buyable].sort((a,b) => b.valueScore - a.valueScore)[0];     // 💰 değer (oran)
@@ -416,13 +416,19 @@ const dealerCoupes = dealerListingsByCategory['COUPE_GAS_WITH_SUNROOF'] || [];
 const activeCars = attachMetrics([...CoupeGasWithSunroof, ...dealerCoupes]);
 const soldCars = attachMetrics(soldGasListings).map(car => Object.assign(car, { isSold: true }));
 
-// Öneri skorları TEK referans dağılıma (aktif pazar) göre hesaplanır → sold araçlar
+// KAZALI havuzu da ana gorunume katilir (dosyalari KAZALI kategorisinde KALIR) —
+// isKazali ile etiketlenir; gorunurluk kurali carFilters'ta (major gizli, minor gorunur).
+// Referans dagilim ve rozetler aktif pazardan — kazali arac fiyat istatistigini bozmaz.
+const dealerKazaliCoupes = dealerListingsByCategory['COUPE_GAS_WITH_SUNROOF_KAZALI'] || [];
+const kazaliCars = attachMetrics([...kazaliListings, ...dealerKazaliCoupes]).map(car => Object.assign(car, { isKazali: true }));
+
+// Öneri skorları TEK referans dağılıma (aktif pazar) göre hesaplanır → sold/kazalı araçlar
 // aktiflerle kıyaslanabilir. Rozetler yalnız alınabilir araçlarda (fonksiyon içinde).
-assignRecommendations([...activeCars, ...soldCars], activeCars);
+assignRecommendations([...activeCars, ...soldCars, ...kazaliCars], activeCars);
 
 export const evaluatedListings = activeCars;
 const evaluatedSold = soldCars;
-export const yearGroups = groupListingsByYear(evaluatedListings);
+export const yearGroups = groupListingsByYear([...evaluatedListings, ...kazaliCars]);
 export const sortedYears = extractSortedYears(yearGroups);
 
-export const allByTotalCost = [...evaluatedListings, ...evaluatedSold].sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);
+export const allByTotalCost = [...evaluatedListings, ...evaluatedSold, ...kazaliCars].sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);

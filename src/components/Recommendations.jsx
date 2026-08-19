@@ -45,6 +45,7 @@ const ScoreBreakdown = ({ breakdown, total }) => (
 
 const RankedPick = ({ car, rank, category }) => {
   const sold = !!car.isSold;
+  const kazali = !!car.isKazali;
   const score = category.scoreOf(car);
   const maxScore = category.maxScoreOf?.(car);
   const showBreakdown = category.scoreLabel !== 'Donanım skoru';
@@ -62,9 +63,10 @@ const RankedPick = ({ car, rank, category }) => {
       // Yatay scroll satırında kartlar sıkışmasın: sabit genişlik + shrink kapalı.
       style={{
         flex: '0 0 auto', width: 190, borderRadius: 12,
-        // Satılmamış = alınabilir → yeşil · satılmış → kırmızı (çerçeve + zemin)
-        borderColor: sold ? UI_COLORS.statusStale : UI_COLORS.statusFresh,
-        backgroundColor: sold ? 'rgba(255, 77, 79, 0.06)' : 'rgba(82, 196, 26, 0.06)',
+        // Satılmamış = alınabilir → yeşil · satılmış → kırmızı · kazalı → sarı-amber.
+        // Renk kodlari THEME.json'da (UI_COLORS) — bilesende hex/rgba yazilmaz.
+        borderColor: kazali ? UI_COLORS.statusWarning : sold ? UI_COLORS.statusStale : UI_COLORS.statusFresh,
+        backgroundColor: kazali ? UI_COLORS.kazaliBg : sold ? UI_COLORS.soldBg : UI_COLORS.buyableBg,
       }}
     >
       {/* Üst satır: sıra rozeti (+ SATILDI etiketi) + favori pin */}
@@ -72,6 +74,7 @@ const RankedPick = ({ car, rank, category }) => {
         <Space size={6}>
           <Text strong style={{ fontSize: 15 }}>{badge ? `${badge}` : `#${rank}`}</Text>
           {sold && <Tag color="error" style={{ margin: 0, fontSize: 10, lineHeight: '16px', padding: '0 5px' }}>SATILDI</Tag>}
+          {kazali && <Tag color="warning" style={{ margin: 0, fontSize: 10, lineHeight: '16px', padding: '0 5px' }}>💥 KAZALI</Tag>}
         </Space>
         <FreezeButton listingId={car.listingId} />
       </Flex>

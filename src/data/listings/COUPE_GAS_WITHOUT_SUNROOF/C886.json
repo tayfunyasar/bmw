@@ -30,7 +30,7 @@
   "sellerTypeOrName": "WELLER Premium Deutschland GmbH ★4.4",
   "modelGeneration": "LCI",
   "modelGenerationCertain": true,
-  "co2EmissionsGramPerKm": 0,
+  "co2EmissionsGramPerKm": 175,
   "listingLocation": "🇩🇪 DE-49479 Ibbenbüren",
   "curatorPickBadge": null,
   "curatorPersonalNotes": [],
@@ -110,6 +110,12 @@
       "auditDate": "2026-08-04T18:30:40.000Z"
     },
     {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-04T18:30:40.000Z"
+    },
+    {
       "action": "İlan Eklendi",
       "detail": "Sistem tarafından kayıt altına alındı",
       "changes": null,
@@ -157,6 +163,17 @@
         }
       },
       "auditDate": "2026-08-07T20:00:51.705Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 175
+        }
+      },
+      "auditDate": "2026-08-19T06:01:09.847Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

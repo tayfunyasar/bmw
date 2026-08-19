@@ -8,10 +8,6 @@
   "mobileDeId": "453077509",
   "vin": "WBA11AR040CL79154",
   "possibleTwinOf": null,
-  "dealerReportedDamage": {
-    "source": "BMW_DE",
-    "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
-  },
   "exteriorColorName": "SANREMO GREEN",
   "exteriorPaintLabel": null,
   "interiorColorName": "Full leather, Black",
@@ -52,9 +48,7 @@
     "🔧 Servis: erken yapılamaz — ~5.000 km veya ~10 hafta önceden",
     "📞 Jannick · +49 7751 83 92 37 · Gottstein GmbH"
   ],
-  "listingDescriptionNotes": [
-    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\""
-  ],
+  "listingDescriptionNotes": [],
   "listingAdditionalFeatures": [],
   "equipmentFeatures": {
     "S403A": "yes",
@@ -282,6 +276,20 @@
       "detail": "COUPE_GAS_WITH_SUNROOF_KAZALI.json dosyasından SOLD olarak taşındı",
       "changes": null,
       "auditDate": "2026-08-15T14:07:46.473Z"
+    },
+    {
+      "action": "Hasar Beyanı Düzeltildi",
+      "detail": "Yanlış pozitif: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\" olumsuzlanmış bir ifade (hasar YOK beyanı) — dealerReportedDamage kaldırıldı (sınıflandırıcı hatası düzeltmesi)",
+      "changes": {
+        "dealerReportedDamage": {
+          "old": {
+            "source": "BMW_DE",
+            "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+          },
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-19T06:02:26.609Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

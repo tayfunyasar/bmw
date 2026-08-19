@@ -1,0 +1,37 @@
+{
+  "dealerId": "BMG54642201",
+  "dealerListingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BMG54642201/",
+  "title": "BMW M440i xDrive Coupé",
+  "attributes": {
+    "Category": "Sportwagen/Coupé"
+  },
+  "description": "Lackierung:\n- M Brooklyn Grau metallic (C4P)\n\nRäder:\n- 19 Zoll M Leichtmetallräder Doppelspeiche 791 M Jetblack (1PP)\n\nPolster:\n- Leder Vernasca: Schwarz/ Kontraststeppung Blau/ Interieurfarbe Schwarz (MANL)\n\nInterieurleisten:\n- Interieurleisten Carbon Fibre (4MC)\n\nAusstattungspaket:\n- M Sportpaket Pro (33B)\n\nKomfort/Nutzen:\n- Ablagenpaket (493)\n- Ambientes Licht (4UR)\n- Blow by-Heizer (4NE)\n- Glasdach elektrisch (403)\n- Komfortzugang (322)\n- Lenkradheizung (248)\n\nSicherheit:\n- Active Guard Plus (5AQ)\n- Aktiver Fußgängerschutz (8TF)\n- Alarmanlage (302)\n- Beifahrerairbag-Deaktivierung (5DA)\n- BMW Laserlicht (5AZ)\n- Driving Assistant Professional (5AU)\n- Fernlichtassistent (5AC)\n- Gesetzlicher Notruf (6AF)\n- Innen- und Aussenspiegel automatisch abblendend (430)\n- Innenspiegel - automatisch abblendend (431)\n- Parking Assistant (5DM)\n- Reifendruck-Kontrolle (2VB)\n- Warndreieck (428)\n\nOptik innen/außen:\n- BMW Individual Dachhimmel anthrazit (775)\n- BMW Individual Hochglanz Shadow Line (760)\n- BMW Individual Hochglanz Shadow Line mit erweiterten Umfängen (7M9)\n- BMW Individual Leuchten Shadow Line (3MF)\n- Galvanikapplikation für Bedienelemente (4U0)\n- Instrumententafel in Sensatec (4AW)\n- M Aerodynamikpaket (715)\n- M Heckspoiler (754)\n- M Lederlenkrad (710)\n- M Sicherheitsgurte (4GQ)\n- Sonnenschutzverglasung (420)\n\nPolsterung/ Sitze:\n- Lordosenstütze für Fahrer und Beifahrer (488)\n- M Sportsitze für Fahrer und Beifahrer (711)\n- Sitzheizung für Fahrer und Beifahrer (494)\n- Sitzverstellung - elektrisch mit Memory (459)\n\nMultimedia:\n- Ablage für Wireless Charging (6NX)\n- BMW Live Cockpit Professional * (6U3)\n- DAB Tuner (654)\n- Harman Kardon Surround Sound System (688)\n\nServices & Apps:\n- Connected Package Professional (6C4)\n- ConnectedDrive Services * (6AK)\n- Teleservices (6AE)\n\nFahrwerk:\n- M Sportfahrwerk (704)\n\nSportlichkeit:\n- M Sportbremse rot hochglänzend (3M2)\n- M Sportdifferenzial (2T4)\n- Steptronic Sport Getriebe (2TB)\n- Variable Sportlenkung (2VL)\n\nKlima/ Heizung:\n- Klimaautomatik (534)\n\nWeiteres:\n- Rekuperationssystem (1CE)\n\nRechtliche Hinweise:\n- * Laufzeitgebundener Dienst, evtl. fallen zusätzliche Kosten an. Dies ist ein unverbindliches Angebot.\nAngebote solange der Vorrat reicht. Preisänderungen, Irrtum und Zwischenverkauf vorbehalten. Wir übernehmen\nkeine Gewähr für die Richtigkeit der Angaben im Inserat. Lieferzeiten können abweichen.\n<br />\n<br />\n** Gültig ab Erstzulassung",
+  "features": [],
+  "properties": {
+    "milage": "43046 km",
+    "firstRegistration": "06/2024",
+    "upholstery": "Leder Vernasca: Schwarz/ Kontraststeppung Blau/ Interieurfarbe Schwarz",
+    "colour": {
+      "key": "grey",
+      "name": "Grau"
+    },
+    "manufacturerColour": "M Brooklyn Grau metallic",
+    "co2Emission": "176 g/km",
+    "generalInspection": null,
+    "numberOfOwners": "1",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 52999
+  },
+  "dealer": {
+    "name": "Euler Group Frankfurt",
+    "contry": "DE",
+    "addesses": [
+      "60314 Frankfurt"
+    ]
+  },
+  "vin": "WBA11AR080CN67238",
+  "mobileDeUrl": null,
+  "notes": "EULER API kaydi (detay sayfasi acilmadi). Kapi:2, tahrik:Allrad, MwSt. ausweisbar"
+}

@@ -8,10 +8,6 @@
   "mobileDeId": "455957164",
   "vin": null,
   "possibleTwinOf": null,
-  "dealerReportedDamage": {
-    "source": "BMW_DE",
-    "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
-  },
   "exteriorColorName": "Black Sapphire",
   "exteriorPaintLabel": null,
   "interiorColorName": "Part leather",
@@ -41,9 +37,7 @@
   "listingLocation": "🇩🇪 DE-31137 Hildesheim",
   "curatorPickBadge": null,
   "curatorPersonalNotes": [],
-  "listingDescriptionNotes": [
-    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\""
-  ],
+  "listingDescriptionNotes": [],
   "listingAdditionalFeatures": [],
   "equipmentFeatures": {
     "S403A": "yes",
@@ -541,6 +535,26 @@
       "detail": "BMW_DE ilanında beyan edildi: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\"",
       "changes": null,
       "auditDate": "2026-08-13T19:51:35.779Z"
+    },
+    {
+      "action": "Hasar Beyanı Düzeltildi",
+      "detail": "Yanlış pozitif: \"İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\"\" olumsuzlanmış bir ifade (hasar YOK beyanı) — dealerReportedDamage kaldırıldı (sınıflandırıcı hatası düzeltmesi)",
+      "changes": {
+        "dealerReportedDamage": {
+          "old": {
+            "source": "BMW_DE",
+            "reason": "İlan açıklamasında tespit edildi: \"Unfallvorschaden: Nein\""
+          },
+          "new": null
+        }
+      },
+      "auditDate": "2026-08-19T06:02:26.600Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITH_SUNROOF_KAZALI → COUPE_GAS_WITH_SUNROOF",
+      "detail": "Yanlış pozitif KAZALI etiketi geri alındı — olumsuzlanmış hasar metni (\"...: Nein\" vb.) hasar kanıtı değildir (sınıflandırıcı düzeltmesi sonrası yeniden değerlendirme)",
+      "changes": null,
+      "auditDate": "2026-08-19T06:02:26.658Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

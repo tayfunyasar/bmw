@@ -1,0 +1,36 @@
+{
+  "dealerId": "018e9316-a53f-77bc-a2cc-7d7af8c55715",
+  "title": "BMW M440i xDrive Coupé",
+  "category": "Coupé",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "Exterieur\nAußenfarbe: Saphirschwarz metallic (P0475)\nInterieur\nPolster: Leder 'Vernasca' Schwarz/Kontraststeppung Blau SW (FMANL)\nInterieurleisten: M Interieurleisten 'Carbon Fibre' (S04MC)\nAusstattung\nFahrerassistenz\nBMW Live Cockpit Professional (S06U3)\nDriving Assistant Professional (S05AU)\nFernlichtassistent (S05AC)\nParking Assistant (S05DM)\nFahrwerk\nAdaptives M Fahrwerk (S02VF)\nM Sportdifferenzial (S02T4)\nKlima, Heizung\nKlimaautomatik (S0534)\nLenkradheizung (S0248)\nKomfort/Nutzen\nAblagenpaket (S0493)\nAmbientes Licht (S04UR)\nAutomatische Heckklappenbetätigung (S0316)\nGlasdach, elektrisch mit Schiebe- und Hebefunktion (S0403)\nM Lederlenkrad (S0710)\nOptik innen/außen\nGalvanikapplikation für Bedienelemente (S04U0)\nInstrumententafel in Sensatec (S04AW)\nM Aerodynamikpaket (S0715)\nM Dachhimmel anthrazit (S0775)\nM Hochglanz Shadow Line (S0760)\nSonnenschutzverglasung (S0420)\nPolsterungen, Sitze\nLordosenstütze für Fahrer und Beifahrer (S0488)\nM Sportsitze für Fahrer und Beifahrer (S0711)\nSitzheizung für Fahrer und Beifahrer (S0494)\nSitzverstellung, elektrisch mit Memory für Fahrersitz (S0459)\nRäder, Reifen\nNotlaufeigenschaften (S0258)\nRadschraubensicherung (S02PA)\nReifendruck-Kontrolle (S02VB)\nRadio, Audio, Kommunikation, Info\nAblage für Wireless Charging (S06NX)\nDAB-Tuner (S0654)\nHarman Kardon Surround Sound System (S0688)\nServices&Apps\nConnected Package Professional (S06C4)\nSicherheit\nActive Guard Plus (S05AQ)\nAlarmanlage (S0302)\nBMW Laserlicht (S05AZ)\nDeaktivierung Beifahrerairbag (S05DA)\nInnen- und Außenspiegelpaket (S0430)\nInnenspiegel automatisch abblendend (S0431)\nSportlichkeit\nM Heckspoiler (S0754)\nM Sportbremse (S02NH)\nVariable Sportlenkung (S02VL)",
+  "features": [],
+  "properties": {
+    "milage": "43.755 km",
+    "firstRegistration": "05/2023",
+    "upholstery": "Leder 'Vernasca' Schwarz/Kontraststeppung Blau SW (FMANL)",
+    "colour": "Black",
+    "manufacturerColour": "Saphirschwarz metallic (P0475)",
+    "co2Emission": "176 g/km",
+    "generalInspection": null,
+    "numberOfOwners": 2,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 49980
+  },
+  "dealer": {
+    "name": "Hakvoort GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Lise-Meitner-Str. 9",
+      "57610 Altenkirchen"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9316-a53f-77bc-a2cc-7d7af8c55715",
+  "notes": "bmw.de. Angebotsnr 171471. MwSt. ausweisbar. EUROPlus 12 ay. 2 Vorbesitzer. Adaptives M Fahrwerk + M Sportsitze + Glasdach + HK."
+}

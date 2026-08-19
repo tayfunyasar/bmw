@@ -1,0 +1,36 @@
+{
+  "dealerId": "018e9312-78de-7c2e-93d6-f072f3a59b2a",
+  "title": "BMW M440I XDRIVE",
+  "category": "Coupé",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "Außenfarbe: BMW Individual Dravitgrau metallic (P0C36)\nPolster: Sensatec perforiert | Cognac (FKHKC)\nInterieurleisten: M Interieurleisten Aluminium Tetragon (S04KK)\nAktive Geschwindigkeitsregelung mit Stop&Go-Funktion (S05DF)\nAdaptives M Fahrwerk (S02VF)\nKlimaautomatik (S0534)\nAblagenpaket (S0493)\nM Aerodynamikpaket (S0715)\nSitzheizung für Fahrer und Beifahrer (S0494)\nNotlaufeigenschaften (S0258)\nDAB-Tuner (S0654)\nGesetzlicher Notruf (S06AF)\nService Inclusive - 3 Jahre/40.000 km (S07US)\nActive Guard Plus (S05AQ)\nM Heckspoiler (S0754)\nDeutsch/Betriebsanleitung/Serviceheft (S0879)\nBMW Live Cockpit Professional (S06U3)\nM Sportdifferenzial (S02T4)\nAmbientes Licht (S04UR)\nM Dachhimmel anthrazit (S0775)\nSitzverstellung, elektrisch mit Memory für Fahrersitz (S0459)\nRadschraubensicherung (S02PA)\nHarman Kardon Surround Sound System (S0688)\nConnected Package Professional (S06C4)\nAlarmanlage (S0302)\nM Sportbremse (S02NH)\nSondersteuerung Bluetooth/WiFi-Modul (S08WL)\nDriving Assistant (S05AS)\nKomfortzugang (S0322)\nM Hochglanz Shadow Line (S0760)\nReifendruck-Kontrolle (S02VB)\nWLAN Hotspot (S06WD)\nConnectedDrive Services (S06AK)\nBMW Laserlicht (S05AZ)\nVariable Sportlenkung (S02VL)\nÖlwartungsintervall 30000 km / 24 Monate (S08KA)\nFernlichtassistent (S05AC)\nM Lederlenkrad (S0710)\nModellschriftzug Entfall (S0320)\nTeleservices (S06AE)\nDeaktivierung Beifahrerairbag (S05DA)\nEU spezifische Umfänge (S0230)\nParking Assistant Plus (S05DN)\nSonnenschutzverglasung (S0420)\nInnen- und Außenspiegelpaket (S0430)\nBlow by-Heizer (S04NE)\nInnenspiegel automatisch abblendend (S0431)\nSteuerung Karosserie (S08EK)\nKaeltemittel (S08R9)\nSprachversion Deutsch (S0851)\nDeutschland-Ausführung (S0801)\nKilometertacho (S0548)",
+  "features": [],
+  "properties": {
+    "milage": "28.902 km",
+    "firstRegistration": "03/2023",
+    "upholstery": "Sensatec perforiert | Cognac (FKHKC)",
+    "colour": "BMW Individual Dravitgrau metallic",
+    "manufacturerColour": "BMW Individual Dravitgrau metallic (P0C36)",
+    "co2Emission": "175 g/km",
+    "generalInspection": null,
+    "numberOfOwners": 1,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 51490
+  },
+  "dealer": {
+    "name": "Autohaus Timmermanns GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Heerdter Landstr. 110",
+      "40549 Düsseldorf"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9312-78de-7c2e-93d6-f072f3a59b2a",
+  "notes": "bmw.de. IKIZ KESIN: Angebotsnr FBUD2610518 = TIMMERMANNS T1 dealerId — ayni fiziksel arac. MwSt. satiri yok. Service Inclusive 3J/40k. Sunroof yok."
+}

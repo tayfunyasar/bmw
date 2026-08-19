@@ -1,0 +1,34 @@
+{
+  "dealerId": "018e92f7-a075-77ff-9808-20e0f7bc3306",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e92f7-a075-77ff-9808-20e0f7bc3306",
+  "title": "BMW M440i xDrive Coupé Aut. M Shadow Line",
+  "isDamaged": false,
+  "attributes": {
+    "Category": "Coupé",
+    "Vehicle condition": "Accident-free"
+  },
+  "description": "Angebotsnummer BUG265000284. Unfallvorschaden: Nein.",
+  "features": [],
+  "properties": {
+    "milage": "38926",
+    "firstRegistration": "04/2023",
+    "co2Emission": "177 g/km",
+    "generalInspection": null,
+    "numberOfOwners": "2",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 52520
+  },
+  "dealer": {
+    "name": "Gottstein GmbH Automobile + Motorräder",
+    "contry": "DE",
+    "addesses": [
+      "Karl-Ziegler-Straße 4",
+      "79761 Waldshut-Tiengen"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "notes": "BMW.de ilanı — mobile.de kaydı C186 ile aynı araç (tescil+km+fiyat+satıcı birebir)."
+}

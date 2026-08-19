@@ -30,7 +30,7 @@
   "sellerTypeOrName": "Autohaus Wormser GmbH - BMW Vertragshändler ★4.6",
   "modelGeneration": "LCI",
   "modelGenerationCertain": true,
-  "co2EmissionsGramPerKm": 0,
+  "co2EmissionsGramPerKm": 175,
   "listingLocation": "🇩🇪 DE-91058 Erlangen",
   "curatorPickBadge": null,
   "curatorPersonalNotes": [],
@@ -139,6 +139,17 @@
         }
       },
       "auditDate": "2026-08-07T20:00:51.716Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 175
+        }
+      },
+      "auditDate": "2026-08-19T06:01:09.850Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

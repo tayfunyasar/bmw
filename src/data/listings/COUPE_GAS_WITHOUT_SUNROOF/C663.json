@@ -10,7 +10,7 @@
   "interiorColorName": "Alcantara, Black",
   "drivetrainType": "xDrive AWD",
   "drivetrainCertain": true,
-  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "drivetrainReason": "Kural 0 — VIN tip kodu \"11AR\" = M440i xDrive Coupé (fabrika verisi, ilan metnini ezer)",
   "sunroofReason": "S403A=no — checkbox otoritesi: 36 kalemlik kapsamlı listede işaretli değil",
   "basePriceEuro": 47930,
   "mileageKm": 51970,
@@ -159,6 +159,17 @@
         }
       },
       "auditDate": "2026-08-07T20:00:51.489Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "drivetrainReason": {
+          "old": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+          "new": "Kural 0 — VIN tip kodu \"11AR\" = M440i xDrive Coupé (fabrika verisi, ilan metnini ezer)"
+        }
+      },
+      "auditDate": "2026-08-19T06:01:03.346Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

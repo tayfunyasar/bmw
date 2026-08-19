@@ -30,7 +30,7 @@
   "sellerTypeOrName": "Hakvoort GmbH ★5",
   "modelGeneration": "LCI",
   "modelGenerationCertain": true,
-  "co2EmissionsGramPerKm": 0,
+  "co2EmissionsGramPerKm": 176,
   "listingLocation": "🇩🇪 DE-57610 Altenkirchen",
   "curatorPickBadge": null,
   "curatorPersonalNotes": [],
@@ -190,6 +190,17 @@
       "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
       "changes": null,
       "auditDate": "2026-08-13T19:51:35.786Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 176
+        }
+      },
+      "auditDate": "2026-08-19T06:01:09.846Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

@@ -1,0 +1,36 @@
+{
+  "dealerId": "BM26814581",
+  "title": "BMW M440i xDrive Coupé",
+  "attributes": {
+    "Category": "Sportwagen/Coupé"
+  },
+  "description": "Saphirschwarz metallic\n19 Zoll M Leichtmetallräder Doppelspeiche 995 M Bicolor mit Mischbereifung\nLeder Vernasca: Schwarz/ Dekorsteppung/ Interieurfarbe Schwarz\nInterieurleisten Carbon Fibre\nComfort Paket EU\nInnovationspaket II\nM Sportpaket Pro\nAblagenpaket\nAmbientes Licht\nAutomatische Heckklappenbetätigung\nGlasdach elektrisch\nKomfortzugang\nLehnenbreitenverstellung für Fahrer\nLenkradheizung\nActive Guard Plus\nAdaptiver LED-Scheinwerfer\nAktive Geschwindigkeitsregelung mit Stop&Go-Funktion\nAktiver Fußgängerschutz\nAlarmanlage\nAutomatische Verriegelung beim Anfahren\nBeifahrerairbag-Deaktivierung\nDriving Assistant\nFernlichtassistent\nGesetzlicher Notruf\nInnen- und Aussenspiegel automatisch abblendend\nInnenspiegel - automatisch abblendend\nParking Assistant Plus\nReifendruck-Kontrolle\nWarndreieck\nBMW Individual Dachhimmel anthrazit\nBMW Individual Hochglanz Shadow Line\nBMW Individual Leuchten Shadow Line\nM Aerodynamikpaket\nM Heckspoiler\nM Sicherheitsgurte\nSonnenschutzverglasung\nLordosenstütze für Fahrer und Beifahrer\nSitzheizung für Fahrer und Beifahrer\nSitzverstellung - elektrisch mit Memory\nAblage für Wireless Charging\nBMW Live Cockpit Professional *\nDAB Tuner\nHarman Kardon Surround Sound System\nPersonal eSIM\nConnected Package Professional\nConnectedDrive Services *\nTeleservices\nM Sportfahrwerk\nM Sportbremse rot hochglänzend\nM Sportdifferenzial\nSteptronic Sport Getriebe\nVariable Sportlenkung\nKlimaautomatik\nReifenpannenset\nRekuperationssystem\nÖlwartungsintervall 24 Monate/30.000 km\n* Laufzeitgebundener Dienst, evtl. fallen zusätzliche Kosten an. Dies ist ein unverbindliches Angebot.\nAngebote solange der Vorrat reicht. Preisänderungen, Irrtum und Zwischenverkauf vorbehalten. Wir übernehmen\nkeine Gewähr für die Richtigkeit der Angaben im Inserat. Lieferzeiten können abweichen.\n<br />\n<br />\n** Gültig ab Erstzulassung\nCodes: S05DA,S0754,S01DF,S08R9,S0552,S08EK,S08KA,S0775,S0430,S08TF,S0688,S08R3,S03MF,S02PA,S06U3,S033B,S08S3,S0403,S0431,S0248,S05DN,S01CE,S05AC,S06NX,S0491,S0715,S04MC,S05AQ,S06VB,S02VB,S0493,S0534,S06AK,S06AF,S0494,S05AS,S01HL,S07LG,S0459,S02VC,S0851,S0420,S01CB,S0428,S0879,S02TB,S08WM,S0230,S02VL,S06PA,S0302,S0316,S0548,S06C4,S05DF,S0654,S02T4,S03M2,S04UR,S0488,S06AE,S0322,S0760,S0704,S07A2,S04GQ,S08WD",
+  "features": [],
+  "properties": {
+    "milage": "23665 km",
+    "firstRegistration": "12/2025",
+    "upholstery": "Leder Vernasca: Schwarz/ Dekorsteppung/ Interieurfarbe Schwarz",
+    "colour": {
+      "key": "black",
+      "name": "Schwarz"
+    },
+    "manufacturerColour": "Saphirschwarz metallic",
+    "co2Emission": null,
+    "generalInspection": null,
+    "numberOfOwners": null,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 73617
+  },
+  "dealer": {
+    "name": "Euler Group",
+    "contry": "DE",
+    "addesses": []
+  },
+  "vin": "WBA81DA090CW85407",
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://www.euler-group.de/bmw/fahrzeugsuche-gebrauchtwagen/v/BM26814581/",
+  "notes": "API-sourced (signal.locarl.de); condition=[object Object]; accident_free=null; availability=Verfügbar; netPrice=61863 EUR (gross 73617)",
+  "category": "Sportwagen/Coupé"
+}

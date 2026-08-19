@@ -30,7 +30,7 @@
   "sellerTypeOrName": "BMW AG Niederlassung Hannover ★4.4",
   "modelGeneration": "LCI",
   "modelGenerationCertain": true,
-  "co2EmissionsGramPerKm": 0,
+  "co2EmissionsGramPerKm": 184,
   "listingLocation": "🇩🇪 DE-30539 Hannover",
   "curatorPickBadge": null,
   "curatorPersonalNotes": [],
@@ -147,6 +147,17 @@
         }
       },
       "auditDate": "2026-08-07T20:00:51.707Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 184
+        }
+      },
+      "auditDate": "2026-08-19T06:01:09.848Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

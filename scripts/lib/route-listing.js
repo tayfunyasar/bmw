@@ -13,15 +13,22 @@ const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../
 // Dislanan ulke -> hedef kategori (or. LT -> LITHUANIA). UI'a hic girmezler.
 const COUNTRY_EXCLUDED_CATEGORIES = LISTING_FILES.countryExcludedCategories;
 
+// "Unfallvorschaden: Nein", "kein Vorschaden", "unfallfrei", "Accident-free" gibi
+// OLUMSUZLANMIS ifadeler hasar kaniti DEGILDIR — tam tersi, hasarsizlik beyanidir.
+// C264 vakasi: "Unfallvorschaden: Nein" metni salt "Vorschaden" gectigi icin
+// kazali sayilmisti. Olumsuzlama iceren metin parcasi hasar sinyali uretmez.
+const isNegatedDamageText = (text) =>
+  /\b(nein|kein(e|en|em|er)?|ohne|unfallfrei|no)\b|accident[\s-]*free/i.test(String(text));
+
 export function detectDamageReason(rawCar) {
   if (rawCar.isDamaged === true) return 'Apify isDamaged alanı true';
-  if (typeof rawCar.isDamaged === 'string' && rawCar.isDamaged.includes('Unfallvorschaden')) return `Apify isDamaged metninde tespit edildi: "${rawCar.isDamaged}"`;
+  if (typeof rawCar.isDamaged === 'string' && rawCar.isDamaged.includes('Unfallvorschaden') && !isNegatedDamageText(rawCar.isDamaged)) return `Apify isDamaged metninde tespit edildi: "${rawCar.isDamaged}"`;
   if (!!rawCar.isDamaged && typeof rawCar.isDamaged !== 'string') return 'Apify isDamaged alanı truthy';
   const vehicleCondition = rawCar.attributes?.['Vehicle condition'] || '';
-  if (vehicleCondition.includes('accident')) return `Apify 'Vehicle condition' alanı: "${vehicleCondition}"`;
+  if (/accident/i.test(vehicleCondition) && !isNegatedDamageText(vehicleCondition)) return `Apify 'Vehicle condition' alanı: "${vehicleCondition}"`;
   const description = rawCar.description || '';
   const vorschadenMatch = description.match(/[^.\n]*Vorschaden[^.\n]*/i);
-  if (vorschadenMatch) return `İlan açıklamasında tespit edildi: "${vorschadenMatch[0].trim()}"`;
+  if (vorschadenMatch && !isNegatedDamageText(vorschadenMatch[0])) return `İlan açıklamasında tespit edildi: "${vorschadenMatch[0].trim()}"`;
   return null;
 }
 

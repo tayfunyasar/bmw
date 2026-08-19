@@ -7,7 +7,7 @@ import { loadDealerSites, siteConfig, dealerKeyFor, sellerMatches } from './deal
 import { maxListingIdNumber, createIdAllocator } from './listing-id.js';
 import { buildExistingIndex, lookupListing } from './existing-index.js';
 import { parseRawToListing } from './parse-listing.js';
-import { determineTargetFile } from './route-listing.js';
+import { determineTargetFile, detectDamageReason } from './route-listing.js';
 
 // --- dealer-sites ---
 
@@ -125,6 +125,24 @@ test('route-listing — bayi coupe sunroof dogru dosyaya gider', () => {
   const car = parseRawToListing(dealerRaw, { listingId: 'W1', source: 'WELLER' });
   const { target } = determineTargetFile(car, dealerRaw);
   assert.equal(target, 'COUPE_GAS_WITH_SUNROOF');
+});
+
+// --- detectDamageReason: olumsuzlanmis hasar metni (C264 vakasi) ---
+// "Unfallvorschaden: Nein" = hasarsizlik BEYANIDIR; salt "Vorschaden" kelimesi
+// gectigi icin arac KAZALI'ya dusmemeli. Pozitif beyanlar ("Ja") dusmeli.
+
+test('detectDamageReason — olumsuzlanmis ifadeler hasar sayilmaz', () => {
+  assert.equal(detectDamageReason({ description: 'Unfallvorschaden: Nein' }), null);
+  assert.equal(detectDamageReason({ description: 'Kein Vorschaden vorhanden' }), null);
+  assert.equal(detectDamageReason({ isDamaged: 'Unfallvorschaden: Nein' }), null);
+  assert.equal(detectDamageReason({ attributes: { 'Vehicle condition': 'Used vehicle, Accident-free' } }), null);
+});
+
+test('detectDamageReason — pozitif beyanlar hasar sayilir', () => {
+  assert.match(detectDamageReason({ description: 'Unfallvorschaden: Ja' }) || '', /Ja/);
+  assert.match(detectDamageReason({ isDamaged: 'Unfallvorschaden: Ja' }) || '', /Ja/);
+  assert.equal(detectDamageReason({ isDamaged: true }), 'Apify isDamaged alanı true');
+  assert.match(detectDamageReason({ attributes: { 'Vehicle condition': 'Accident vehicle' } }) || '', /Accident/);
 });
 
 test('route-listing — LT bayi araci ulke-dislamaya takilir', () => {

@@ -8,8 +8,10 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const configPath = path.resolve(__dirname, '../../src/data/metadata/DEALER_SITES.json');
 
+const config = () => JSON.parse(fs.readFileSync(configPath, 'utf8'));
+
 export function loadDealerSites() {
-  return JSON.parse(fs.readFileSync(configPath, 'utf8')).sites;
+  return config().sites;
 }
 
 export function siteConfig(name) {
@@ -33,7 +35,8 @@ export function dealerKeyFor(site, url) {
 // Iki satici adi ayni bayiye mi isaret ediyor? Jenerik sirket kelimeleri atilir,
 // anlamli kelime kesisimi aranir. "WELLER Premium GmbH" ~ "WELLER Hildesheim" -> true.
 // Fuzzy-ikiz + satici eslesmesi = ayni fiziksel arac (tek kayda birlestirilir).
-const GENERIC_SELLER_WORDS = new Set(['gmbh', 'ag', 'kg', 'co', 'auto', 'autohaus', 'automobile', 'automotive', 'premium', 'group', 'gruppe', 'mbh', 'und', 'the', 'bmw', 'mini', 'motors', 'motor']);
+// Kelime listesi config'te (DEALER_SITES.json → genericSellerWords).
+const GENERIC_SELLER_WORDS = new Set(config().genericSellerWords);
 export function sellerMatches(a, b) {
   const words = (x) => new Set(String(x || '').toLowerCase().replace(/[^a-zäöüß ]/g, ' ').split(/\s+/)
     .filter(w => w.length >= 3 && !GENERIC_SELLER_WORDS.has(w)));

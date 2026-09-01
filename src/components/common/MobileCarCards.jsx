@@ -3,7 +3,7 @@ import { Card, Flex, Typography, Space, Tag, Tooltip } from 'antd';
 import { equipmentRules, UI_COLORS, getColorHex, getInteriorHex } from '../../data';
 import { ColorDisplay, InteriorDisplay, FeatureIcon } from './Icons';
 import { FreezeButton } from './FreezeButton';
-import { formatNotes } from '../../utils/helpers';
+import { formatNotes, dealerUrlsOf, hostnameOf } from '../../utils/helpers';
 import { diffListings, findTwin } from '../../utils/listingDiff';
 import { TwinDiffTable } from './TwinDiffTable';
 
@@ -59,6 +59,10 @@ export const MobileCarCards = ({ cars, isRejected = false, rejectedLabel = 'RED'
                   </Link>
                   {car.listingLocation && <Text type="secondary" style={{ fontSize: 12 }}>{car.listingLocation}</Text>}
                 </Space>
+                {/* Merge edilen aracin bayi linkleri ALT ALTA — her iki ilan da ziyaret edilebilir. */}
+                {dealerUrlsOf(car).filter(u => u !== car.listingUrl).map(u => (
+                  <Link key={u} href={u} target="_blank" style={{ fontSize: 11 }}>🔗 {hostnameOf(u)}</Link>
+                ))}
                 <Space size={4} wrap>
                   {isRejected && <Tag color="error" style={{ margin: 0 }}>{rejectedLabel}</Tag>}
                   {car.isSold && !isRejected && <Tag color="error" style={{ margin: 0 }}>SATILDI</Tag>}

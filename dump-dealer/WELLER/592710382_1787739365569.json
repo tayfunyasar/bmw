@@ -1,0 +1,54 @@
+{
+  "dealerId": "592710382",
+  "title": "BMW M440i Coupé xDrive M Sport Pro",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "Getriebe:\n- Automatikgetriebe Steptronic\n- 8 Gänge\n\nAusstattungspakete:\n- Open-Air Paket: Connected Professional (laufzeitgebundener Dienst)\n- M Sportpaket: M Sport Pro\n- Optikpaket: BMW Individual Hochglanz Shadow Line\n- M Hochglanz Shadow Line\n- Ablagepaket\n- Spiegelpaket\n\nAssistenzsysteme:\n- Fernlichtassistent\n- BMW ParkAssistent mit PDC vorne u. hinten\n- Rückfahrkamera\n- Surround View\n- Aktive Geschwindigkeitsregelung mit Stop & Go\n- Spurwechselassistent\n- Spurhalteassistent\n- Bremsassistent\n- Fahrerassistenzpaket: Driving Assistant Professional\n- Heckaufprall-Vermeidung\n- Parkassistent-Paket Plus\n- Rückfahr-Assistent\n- Active Guard Auffahrwarnung\n- Aufmerksamkeitsassistent\n- Verkehrszeichenerkennung\n\nLicht und Sicht:\n- Laserlicht\n- Regensensor\n- Automatisch abblendender Innenspiegel\n- Wärmeschutzverglasung\n- Dynamische Leuchtweitenregulierung\n- Ambientebeleuchtung\n- Lichtsensor\n\nAudio & Kommunikation:\n- BMW Live Cockpit Professional\n- Radio\n- Multi-Funktions-Display\n- Digitaler Radioempfang DAB\n- Harman/Kardon Soundsystem: HiFi-Lautsprechersystem\n- USB Anschluss\n- BMW ConnectedDrive: ConnectedDrive Services (laufzeitgebundener Dienst)\n- Connected Package Professional (laufzeitgebundener Dienst)\n- Handyvorbereitung Bluetooth\n- Kabelloses Laden für Handys\n\nKomfort:\n- BMW Live Cockpit Professional: Professional\n- Klimaautomatik\n- 3 Zonen\n- Fahrer-/Beifahrersitz elektrisch\n- Memoryfunktion Fahrersitz\n- Lordosenstütze Fahrer/Beifahrer elektrisch\n- Sitzheizung Fahrer/Beifahrer\n- Sportsitze\n- Armauflage  vorn und hinten\n- Servotronic: Variable Sportlenkung\n- Variable Sportlenkung\n- Lenksäule verstellbar\n- Komfortzugang\n- Auto Start Stop Funktion\n- Fensterheber elektrisch\n- Kopfraumheizung\n- Sitzklimatisierung vorn\n- Windschott\n- Fahrprofilauswahl\n- Getränkehalter vorn u. hinten\n\nInterieur:\n- Sitze Leder Vernasca schwarz\n- Multifunktions-Sport-/Lederlenkrad: M Lederlenkrad\n- Lenkradheizung\n- Bordcomputer\n- Durchladesystem\n- Dekoreinlagen Aluminium: Rhombicle mit Akzentleiste\n- schwarz hochglänzend mit Akzentleiste\n- Mesheffect\n\nExterieur:\n- Adaptives Fahrwerk\n- M Sportfahrwerk\n- Touchscreen Bedienung\n- Differentialsperre\n- M Sportbremse\n- M Leichtmetallräder 19 Zoll: Doppelspeiche 791 M\n- Außenspiegel elekt. und beheizt\n- Bremsenergierückgewinnung\n- Notrufsystem: Intelligenter Notruf inkl. TeleServices (laufzeitgebundener Dienst)\n- Fahrzeugpersonalisierung: Personal Profile\n\nSicherheit:\n- ISOFIX Kindersitzbefestigung\n- Fußgängerschutzsystem\n- Fahrer- /Beifahrerairbag\n- Kopfairbag vorn\n- Seitenairbag vorn und hinten\n- Knieairbag Fahrer\n- Dynamische Traktions Control DTC\n- Dynamische Stabilitäts Control DSC\n- Reifendruckkontrolle\n- Diebstahlwarnanlage\n- Wegfahrsperre\n- Antiblockiersystem ABS\n- Proaktives Insassenschutzsystem: Active Guard Plus\n- Querverkehrswarnung\n\nWeitere Ausstattung:\n- M Sicherheitsgurte\n- Nackenwärmer\n- Galvanikapplikation für Bedienelemente\n- Driving Assistent Professional\n- M Aerodynamik Paket\n- Aerodynamik-Paket M-Technic\n- Remote Services\n- Concierge Services (laufzeitgebundener Dienst)\n- Real Time Traffic Information (RTTI) (laufzeitgebundener Dienst)\n- Remote 3D View (laufzeitgebundener Dienst)\n- Einstiegsleisten mit Schriftzug M-Technic\n- Parkbremse elektrisch\n- Falschfahrwarnung\n- Ausweich-Assistent\n- Ampel-Erkennung\n- INSTRUMENTENTAFEL LEDERBEZOGEN\n- Scheinwerfer BMW Individual Shadow-Line\n- M Leuchten Shadow Line\n- TeleServices (laufzeitgebundener Dienst)\n\nSonstige Maße und Gewichte:\n- Nutzlast: 500 kg\n- zulässiges Gesamtgewicht: 2.390 kg",
+  "features": [
+    "automaticEngineStartStopControl",
+    "bluetooth",
+    "dabRadio",
+    "digitalInstrumentPanel",
+    "electricSeatAdjustment",
+    "fourWheel",
+    "keylessEntry",
+    "laneAssistSystem",
+    "laneChangeAssistSystem",
+    "navigation",
+    "parkingSensors",
+    "rainSensor",
+    "seatHeating",
+    "smartphoneInductionCharging",
+    "sportsPackage",
+    "sportsSeating",
+    "trafficSignRecognition",
+    "cruiseControl"
+  ],
+  "properties": {
+    "milage": "15329",
+    "firstRegistration": "06/2023",
+    "upholstery": "fullLeather",
+    "colour": "Dravitgrau (Grau)",
+    "manufacturerColour": "Dravitgrau (Grau)",
+    "co2Emission": "171 g / km",
+    "generalInspection": null,
+    "numberOfOwners": "1",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 50890
+  },
+  "dealer": {
+    "name": "WELLER Premium GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Ober-Eschbacher-Str. 153",
+      "61352 Bad Homburg"
+    ]
+  },
+  "vin": "WBA61AT090CN76352",
+  "mobileDeUrl": null,
+  "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-592710382/",
+  "notes": "WELLER API (api.cfdnext.com/vehicle/592710382). Detay sayfasi basligi: \"BMW M440i Coupé xDrive M Sport Pro\" -> govde Coupé kesin. Fahrzeugnummer 80244920. vatReportable=false (§25a marj araci). Donanim listesinde Windschott/Kopfraumheizung gorunuyor ancak baslik+API kategorisi (sportsCar, 2/3 kapi) Coupé diyor - feed gurultusu."
+}

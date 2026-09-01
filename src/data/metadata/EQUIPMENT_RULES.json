@@ -14,7 +14,6 @@
       "Schiebe-Hebedach",
       "Hebedach elektrisch",
       "Schiebe-/Hebedach",
-      "Open-Air Paket",
       "Glasdach",
       "Dachfenster",
       "Schiebedach",
@@ -48,17 +47,11 @@
     "price": 2500,
     "score": 2,
     "tag": "ACC + lane keep",
-    "features": [
-      "Adaptive Cruise Control"
-    ],
+    "features": [],
     "description": [
       "DRIVING ASSISTANT PROFESSIONAL",
       "Driving Assistant Plus",
-      "Fahrassistenz-System",
-      "Fahrassistenz",
-      "DAPRO",
-      "Aktive Geschwindigkeitsregelung mit Stop & Go",
-      "Aktive Geschwindigkeitsregelung mit Stop&Go"
+      "DAPRO"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -148,7 +141,8 @@
     "tag": "Interior upgrade",
     "features": [],
     "description": [
-      "Alcantara"
+      "Alcantara",
+      "Teilleder schw./Kon. bl."
     ],
     "props": {
       "upholstery": [
@@ -249,7 +243,9 @@
     "description": [
       "Sitzverstellung elektrisch",
       "Sitzverstellung, elektrisch",
-      "Memorysitz"
+      "Memorysitz",
+      "Fahrer-/Beifahrersitz elektrisch",
+      "Memoryfunktion Fahrersitz"
     ],
     "props": {},
     "defaultStatus": "no"
@@ -537,7 +533,8 @@
     ],
     "description": [
       "Lichtautomatik",
-      "Fahrlichtautomatik"
+      "Fahrlichtautomatik",
+      "Lichtsensor"
     ],
     "props": {},
     "defaultStatus": "no"

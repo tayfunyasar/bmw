@@ -33,6 +33,9 @@ for (const [p, mod] of Object.entries(rootModules)) {
 }
 Object.values(rootByCategory).forEach(arr => arr.sort(byListingId));
 const cat = (name) => rootByCategory[name] || [];
+// Kategori adı → kök araç listesi (dışlanan ülkeler zaten filtreli) — kategori
+// seçmeli havuz (pricingCalculator) buradan beslenir.
+export const rootListingsByCategory = rootByCategory;
 
 const CoupeGasWithSunroof = cat('COUPE_GAS_WITH_SUNROOF');
 const CoupeDieselWithSunroof = cat('COUPE_DIESEL_WITH_SUNROOF');

@@ -20,6 +20,12 @@ import { loadDealerSites } from './dealer-sites.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const listingsDir = path.resolve(__dirname, '../../src/data/listings');
 
+// Kategori listeleri + sema + yonlendirme tablolari — TEK kaynak, TEK parse.
+// Script'ler JSON'u kendisi okumaz, buradan import eder.
+export const LISTING_FILES = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '../../src/data/metadata/LISTING_FILES.json'), 'utf8')
+);
+
 export function dealerSiteNames() {
   return loadDealerSites().map(s => s.site);
 }

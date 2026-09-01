@@ -191,6 +191,13 @@ test('determineDrivetrain — VIN checkbox sinyalini de ezer', () => {
   assert.equal(r.type, RWD);
 });
 
+test('determineDrivetrain — 61AT Cabrio tip kodu xDrive verir', () => {
+  const r = determineDrivetrain({ title: 'BMW M440i Coupe', vin: 'WBA61AT090CN76352' });
+  assert.equal(r.type, AWD);
+  assert.equal(r.certain, true);
+  assert.match(r.reason, /61AT.*Cabrio/);
+});
+
 test('determineDrivetrain — 11AR xDrive verir', () => {
   const r = determineDrivetrain({ vin: 'WBA11AR010CN00001' });
   assert.equal(r.type, AWD);

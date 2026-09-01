@@ -36,12 +36,19 @@ export function dealerSourceCategories(dir = listingsDir) {
   return dealerCategories(dir).filter(c => !c.includes('_SOLD'));
 }
 
-// Bayi kaydinin SOLD hedefi KENDI site klasorunde kalir — kok SOLD arsivi mobile.de'ye
-// ozeldir (pricingCalculator karsilastirma havuzu oradan beslenir).
+// Satis arsivi secimi:
+//   - Yalnizca TEMIZ COUPE kaynaklari tahrik/sunroof kuralina (soldArchiveFor) gider —
+//     pricingCalculator'in satilmis fiyat karsilastirma havuzu bunlardan beslenir.
+//   - Diger her kaynak (KAZALI'lar, CABRIO, GRAN_COUPE...) KENDI arsivine gider
+//     (X → X_SOLD): kazali fiyati da farkli govde tipi de temiz havuzu kirletmez.
+//   - Bayi kaydinin SOLD hedefi KENDI site klasorunde kalir — kok SOLD arsivi
+//     mobile.de'ye ozeldir.
 export function dealerSoldArchiveFor(sourceCategory, car) {
   const site = path.dirname(sourceCategory);
-  const base = soldArchiveFor(car);                     // ayni tahrik/sunroof kurali
-  return site === '.' ? base : path.join(site, base);
+  const base = path.basename(sourceCategory);
+  const cleanCoupe = base.startsWith('COUPE_') && !base.includes('KAZALI');
+  const archive = cleanCoupe ? soldArchiveFor(car) : `${base}_SOLD`;
+  return site === '.' ? archive : path.join(site, archive);
 }
 
 // mark-kazali.js'in yazdigi audit action'i — INSAN karari isareti.
@@ -52,6 +59,12 @@ export function dealerSoldArchiveFor(sourceCategory, car) {
 export const KAZALI_AUDIT_ACTION = 'Kazalı İşaretlendi';
 export const isManuallyMarkedKazali = (car) =>
   (car?.auditHistory || []).some(entry => entry.action === KAZALI_AUDIT_ACTION);
+
+// Kaynak kategoriye gore KAZALI arsivi — tablo config'te (kazaliArchives).
+// TEK KAYNAK: hem mark-kazali.js (manuel) hem import-dealer.js (bayi beyani) bunu kullanir.
+export function kazaliArchiveFor(sourceCategory) {
+  return LISTING_FILES.kazaliArchives[sourceCategory] || LISTING_FILES.kazaliArchives.default;
+}
 
 export function pushAudit(car, action, detail, changes = null) {
   car.auditHistory = car.auditHistory || [];

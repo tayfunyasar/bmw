@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { listingsDir, dealerCategories, carPath } from './lib/listings-store.js';
+import { LISTING_ID_PATTERN, isValidListingId } from './lib/listing-id.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,8 +10,10 @@ const __dirname = path.dirname(__filename);
 // Şema (anahtar sırası) + kategori listesi veri olarak LISTING_FILES.json'da (config-driven).
 const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/metadata/LISTING_FILES.json'), 'utf8'));
 const ROOT_KEYS_ORDER = LISTING_FILES.rootKeysOrder;
-// Yalnizca DOLU oldugunda yazilan alanlar (yoksa anahtar hic olusmaz).
-const OPTIONAL_KEYS = new Set(['dealerListingUrl', 'dealerListingUrls', 'dealerReportedDamage', 'equipmentConflicts']);
+// Yalnizca DOLU oldugunda yazilan alanlar (yoksa anahtar hic olusmaz) — config'ten.
+const OPTIONAL_KEYS = new Set(LISTING_FILES.optionalRootKeys);
+// Eksikse [] ile doldurulan dizi alanlari — config'ten.
+const ARRAY_KEYS = new Set(LISTING_FILES.arrayRootKeys);
 const EQUIP_KEYS_ORDER = LISTING_FILES.equipKeysOrder;
 
 // enforceCategories (kok kategoriler, config) + bayi sitesi kategorilerinin OTOMATIK kesfi:
@@ -83,12 +86,7 @@ function formatListing(listing, fileLabel) {
       if (listing[key] !== undefined) {
         newListing[key] = listing[key];
       } else {
-        const arrayFields = ['curatorPersonalNotes', 'listingDescriptionNotes', 'listingAdditionalFeatures', 'auditHistory'];
-        if (arrayFields.includes(key)) {
-          newListing[key] = [];
-        } else {
-          newListing[key] = null;
-        }
+        newListing[key] = ARRAY_KEYS.has(key) ? [] : null;
       }
     }
   }
@@ -135,6 +133,15 @@ for (const category of categories) {
 
     if (!lid) {
       console.error(`Error: ${fileLabel} — listingId eksik. NOT auto-fixed — elle cozulmeli.`);
+      hasError = true;
+      hasUnfixableError = true;
+      continue;
+    }
+
+    // ID yeniden adlandirmak dosya tasima + referans kaymasi demek; --fix bunu
+    // sessizce YAPMAZ (duplicate listingId ile ayni gerekce) — elle cozulur.
+    if (!isValidListingId(lid)) {
+      console.error(`Error: ${fileLabel} — gecersiz listingId "${lid}" (beklenen desen: ${LISTING_ID_PATTERN}). NOT auto-fixed — elle cozulmeli.`);
       hasError = true;
       hasUnfixableError = true;
       continue;

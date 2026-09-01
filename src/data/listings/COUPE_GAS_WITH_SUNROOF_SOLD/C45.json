@@ -89,6 +89,12 @@
   },
   "auditHistory": [
     {
+      "action": "İlan Yayınlandı (Kullanıcı Teyidi)",
+      "detail": "Kullanıcı teyidi: ilan 10 günde satıldı. Yayın tarihi, satış tarihinden (14.03.2026) 10 gün geriye sayılarak girildi — mobile.de listingDates verisi bu kayıtta yok.",
+      "changes": null,
+      "auditDate": "2026-03-04T12:00:00.000Z"
+    },
+    {
       "action": "Aktif → Satılan",
       "detail": null,
       "changes": null,

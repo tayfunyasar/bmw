@@ -38,7 +38,7 @@
   "equipmentFeatures": {
     "S403A": "yes",
     "S5AZA": "no",
-    "S5AUA": "no",
+    "S5AUA": "unknown",
     "S688A": "unknown",
     "S2T4A": "unknown",
     "S610A": "yes",
@@ -76,8 +76,8 @@
   },
   "listingDates": {
     "createdTime": "2026-04-15T08:26:28.000Z",
-    "modifiedTime": "2026-08-15T06:35:55.000Z",
-    "renewedTime": "2026-07-21T06:46:05.000Z"
+    "modifiedTime": "2026-08-26T13:05:05.000Z",
+    "renewedTime": "2026-08-25T14:42:54.000Z"
   },
   "auditHistory": [
     {
@@ -103,6 +103,12 @@
       "detail": "Elle teyit — önceki: Pre-LCI (certain=false)",
       "changes": null,
       "auditDate": "2026-08-01T20:58:39.701Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-25T14:42:54.000Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

@@ -1,8 +1,4 @@
-import { moveListing, DEFAULT_SOURCE_CATEGORIES, pushAudit, KAZALI_AUDIT_ACTION } from './lib/move-listing.js';
-
-function pickKazaliArchive(sourceCategory) {
-  return sourceCategory === 'GRAN_COUPE' ? 'GRAN_COUPE_KAZALI' : 'COUPE_GAS_WITH_SUNROOF_KAZALI';
-}
+import { moveListing, DEFAULT_SOURCE_CATEGORIES, pushAudit, KAZALI_AUDIT_ACTION, kazaliArchiveFor } from './lib/move-listing.js';
 
 const [id, ...reasonParts] = process.argv.slice(2);
 if (!id) {
@@ -14,7 +10,7 @@ const reason = reasonParts.join(' ').trim() || 'Manuel işaretlendi';
 const result = moveListing({
   id,
   sourceCategories: [...DEFAULT_SOURCE_CATEGORIES, 'CABRIO'],
-  pickArchive: pickKazaliArchive,
+  pickArchive: kazaliArchiveFor,
   mutateCar: (car, { sourceCategory, archive }) => {
     pushAudit(car, KAZALI_AUDIT_ACTION, `${sourceCategory} dosyasından ${archive} dosyasına taşındı — ${reason}`);
     car.listingDescriptionNotes = car.listingDescriptionNotes || [];

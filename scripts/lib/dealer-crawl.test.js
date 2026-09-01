@@ -6,7 +6,7 @@ import path from 'node:path';
 import { loadDealerSites, siteConfig, dealerKeyFor, sellerMatches } from './dealer-sites.js';
 import { maxListingIdNumber, createIdAllocator } from './listing-id.js';
 import { buildExistingIndex, lookupListing } from './existing-index.js';
-import { parseRawToListing } from './parse-listing.js';
+import { parseRawToListing, applyUpdatesAndGetChanges } from './parse-listing.js';
 import { determineTargetFile, detectDamageReason } from './route-listing.js';
 
 // --- dealer-sites ---
@@ -114,6 +114,15 @@ test('parse-listing — bayi kaydi: vin/dealerListingUrl korunur, source audit e
   assert.match(car.drivetrainReason, /Kural 0/);
 });
 
+test('parse-listing — yayin tarihi vermeyen yeni bayi ilani createdTime=now alir', () => {
+  const before = Date.now();
+  const car = parseRawToListing(dealerRaw, { listingId: 'W99', source: 'WELLER' });
+  const createdMs = new Date(car.listingDates.createdTime).getTime();
+
+  assert.ok(createdMs >= before && createdMs <= Date.now());
+  assert.equal(car.auditHistory.find(h => h.action === 'İlan Yayınlandı (WELLER)')?.auditDate, car.listingDates.createdTime);
+});
+
 test('parse-listing — opts.vin fallback (mevcut listing VIN tasir, raw tasimaz)', () => {
   const { vin: _drop, ...rawNoVin } = dealerRaw;
   const car = parseRawToListing(rawNoVin, { listingId: 'C692', vin: 'WBA81AP010CN63825' });
@@ -136,6 +145,10 @@ test('detectDamageReason — olumsuzlanmis ifadeler hasar sayilmaz', () => {
   assert.equal(detectDamageReason({ description: 'Kein Vorschaden vorhanden' }), null);
   assert.equal(detectDamageReason({ isDamaged: 'Unfallvorschaden: Nein' }), null);
   assert.equal(detectDamageReason({ attributes: { 'Vehicle condition': 'Used vehicle, Accident-free' } }), null);
+  // NL (BMW_NL) olumsuzlamalari
+  assert.equal(detectDamageReason({ isDamaged: 'Schadevrij' }), null);
+  assert.equal(detectDamageReason({ description: 'Auto is schadevrij geleverd' }), null);
+  assert.equal(detectDamageReason({ description: 'Geen schadeverleden bekend' }), null);
 });
 
 test('detectDamageReason — pozitif beyanlar hasar sayilir', () => {
@@ -143,6 +156,34 @@ test('detectDamageReason — pozitif beyanlar hasar sayilir', () => {
   assert.match(detectDamageReason({ isDamaged: 'Unfallvorschaden: Ja' }) || '', /Ja/);
   assert.equal(detectDamageReason({ isDamaged: true }), 'Apify isDamaged alanı true');
   assert.match(detectDamageReason({ attributes: { 'Vehicle condition': 'Accident vehicle' } }) || '', /Accident/);
+  // NL pozitifleri: skill isDamaged'a metin yazar (dil bagimsiz sozlesme) + aciklama kaliplari
+  assert.match(detectDamageReason({ isDamaged: 'Schadeverleden: ja' }) || '', /Schadeverleden/);
+  assert.match(detectDamageReason({ description: 'Auto heeft schadeverleden, gerepareerd' }) || '', /schadeverleden/);
+  assert.match(detectDamageReason({ description: 'Betrokken bij ongeval in 2024' }) || '', /ongeval/);
+});
+
+// --- applyUpdates: km sicrama bekcisi (C566 vakasi: 12.454 → 75.137) ---
+
+test('applyUpdates — km >%50 degisirse kalici uyari notu duser, veri yine guncellenir', () => {
+  const car = { mileageKm: 12454, listingDescriptionNotes: [], equipmentFeatures: {} };
+  applyUpdatesAndGetChanges(car, { mileageKm: 75137 });
+  assert.equal(car.mileageKm, 75137, 'veri kaynaktaki degere guncellenir');
+  assert.ok(car.listingDescriptionNotes.some(n => n.startsWith('⚠️ KM sıçraması')), 'uyari notu dusmeli');
+  // ikinci guncelleme ayni notu COGALTMAZ
+  applyUpdatesAndGetChanges(car, { mileageKm: 160000 });
+  assert.equal(car.listingDescriptionNotes.filter(n => n.startsWith('⚠️ KM sıçraması')).length, 1);
+});
+
+test('applyUpdates — normal km artisi (<%50) uyari uretmez', () => {
+  const car = { mileageKm: 30000, listingDescriptionNotes: [], equipmentFeatures: {} };
+  applyUpdatesAndGetChanges(car, { mileageKm: 33000 });
+  assert.equal(car.mileageKm, 33000);
+  assert.equal(car.listingDescriptionNotes.length, 0);
+});
+
+test('detectDamageReason — donanim adlari yanlis pozitif uretmez', () => {
+  // "Unfalldatenschreiber" bir donanim kalemidir (AHG listeleri), hasar beyani degil.
+  assert.equal(detectDamageReason({ description: 'OTA updates Unfalldatenschreiber Notruf Launch Control' }), null);
 });
 
 test('route-listing — LT bayi araci ulke-dislamaya takilir', () => {
@@ -218,4 +259,37 @@ test('findTwin — sifir araclar (tescilsiz, ~10km) ikiz eslesmesine GIRMEZ', as
   // kayitli arac hala eslesir (regresyon)
   const kayitli = { firstRegistrationYearAndMonth: [2023, 10], mileageKm: 31922, basePriceEuro: 49450 };
   assert.equal(hasReliableFingerprint(kayitli), true);
+});
+
+// --- parse-listing: sayisal milage (bayi scraper'i int dondurebilir) ---
+// C1080 vakasi (2026-08-24): BMW_DE subagent'i properties.milage'i INT dondurdu ve
+// import "(props.milage || '0').replace is not a function" ile CoKTU. Bayi kayitlari
+// bizim disimizda uretilir — parse katmani hem "43.541 km" hem 43541 kabul etmeli.
+test('parse-listing — properties.milage sayi olarak gelse de mileageKm dogru parse edilir', () => {
+  const strCar = parseRawToListing({ ...dealerRaw, properties: { ...dealerRaw.properties, milage: '43.541 km' } }, { listingId: 'W1', source: 'BMW_DE' });
+  const numCar = parseRawToListing({ ...dealerRaw, properties: { ...dealerRaw.properties, milage: 43541 } }, { listingId: 'W1', source: 'BMW_DE' });
+  assert.equal(strCar.mileageKm, 43541);
+  assert.equal(numCar.mileageKm, 43541, 'sayisal milage patlamamali');
+  const missing = parseRawToListing({ ...dealerRaw, properties: { ...dealerRaw.properties, milage: null } }, { listingId: 'W1', source: 'BMW_DE' });
+  assert.equal(missing.mileageKm, 0);
+});
+
+// --- merge sonrasi hasar beyani => KAZALI yonlendirmesi (C1080 vakasi) ---
+// mergeTwinIntoRoot kok kayda dealerReportedDamage YAZAR ama determineTargetFile
+// yalniz YENI kayitlar icin calisir; dosya temiz havuzda KALIYORDU. route-listing
+// sinyali okuyor — kanit: ayni kayit yeniden yonlendirilince KAZALI'ya gider.
+test('route-listing — merge ile yazilan dealerReportedDamage KAZALI hedefi uretir', () => {
+  const car = parseRawToListing(dealerRaw, { listingId: 'C1080', source: 'BMW_DE' });
+  assert.equal(determineTargetFile(car, dealerRaw).target, 'COUPE_GAS_WITH_SUNROOF', 'once temiz havuz');
+  car.dealerReportedDamage = { source: 'BMW_DE', reason: 'Apify isDamaged metninde tespit edildi: "Unfallvorschaden: Ja"' };
+  const routed = determineTargetFile(car, dealerRaw);
+  assert.equal(routed.target, 'COUPE_GAS_WITH_SUNROOF_KAZALI');
+  assert.match(routed.reason, /BMW_DE ilanında beyan edildi/);
+});
+
+test('move-listing — kazaliArchiveFor tablosu GRAN_COUPE ayrimini korur', async () => {
+  const { kazaliArchiveFor } = await import('./move-listing.js');
+  assert.equal(kazaliArchiveFor('GRAN_COUPE'), 'GRAN_COUPE_KAZALI');
+  assert.equal(kazaliArchiveFor('COUPE_GAS_WITHOUT_SUNROOF'), 'COUPE_GAS_WITH_SUNROOF_KAZALI');
+  assert.equal(kazaliArchiveFor('CABRIO'), 'COUPE_GAS_WITH_SUNROOF_KAZALI', 'tabloda yoksa default');
 });

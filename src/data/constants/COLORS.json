@@ -803,6 +803,31 @@
       "hex": "#604020",
       "preference": "disliked"
     },
+    "Full leather, Cognac": {
+      "hex": "#a97142",
+      "preference": "disliked"
+    },
+    "Leder Vernasca Schwarz Accent Rot (MAL3)": {
+      "hex": "#2a1015"
+    },
+    "Leder Vernasca: Mokka/ Dekorsteppung/ Interieurfarbe Schwarz": {
+      "hex": "#5d4a41",
+      "preference": "disliked"
+    },
+    "Leder Vernasca Mokka stiksel Schwarz (MAMU)": {
+      "hex": "#5d4a41",
+      "preference": "disliked"
+    },
+    "Leder Vernasca: Schwarz/ Dekorsteppung/ Interieurfarbe Schwarz": {
+      "hex": "#1a1a1a"
+    },
+    "Leder 'Vernasca' Schwarz Dekorsteppung (SW)": {
+      "hex": "#1a1a1a"
+    },
+    "Full leather, Oyster": {
+      "hex": "#e6e0d4",
+      "preference": "disliked"
+    },
     "Full leather, Grey": {
       "hex": "#808080"
     },

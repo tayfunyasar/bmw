@@ -1,5 +1,7 @@
-import { CoupeGasWithSunroof, soldGasListings, kazaliListings, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf, dealerListingsByCategory } from '../data';
+import { CoupeGasWithSunroof, equipmentRules, PRICING_CONSTANTS, SCORING, BPM_RATES, colorMeta, interiorMeta, countryCodeOf, dealerListingsByCategory, rootListingsByCategory } from '../data';
+import LISTING_FILES from '../data/metadata/LISTING_FILES.json';
 import { computeBaseRates, unknownsExpectedValue, unknownsExpectedScore } from './expectedValue.js';
+import { listingCreatedAt, listingSoldAt, listingAgeInDays, carListingAgeDays } from './listingAge.js';
 
 const { TIME_CONSTANTS, DEPRECIATION_RATES, BPM_DEFAULT_CO2, BPM_EXEMPT_COUNTRIES, FEATURE_STATUS, OWNER_ADJUSTMENT_EUR } = PRICING_CONSTANTS;
 // Değerlendirme tarihi = BUGÜN (dinamik, türetilmiş). Sabit tarih araç yaşını/BPM'i
@@ -235,7 +237,8 @@ export function calculateCarMetrics(car) {
 }
 
 // --- totalScore: kullanıcı kriterlerine göre 0-100 kompozit ---
-// Çekirdek 4 boyut (ağırlık toplam 100) + ek bonus/ceza → sonuç 0-100'e clamp.
+// Çekirdek 4 boyut + ek bonus/ceza → sonuç 0-100'e clamp. Fiyat bilincli
+// olarak 35'e yukseltildigi icin cekirdek agirliklarin toplami 110'dur.
 // Ağırlıklar/sabitler modelin tek ayar noktası.
 // Tüm skorlama sabitleri veri olarak SCORING.json'da (tek ayar noktası); burada türetilir.
 const SCORE_WEIGHTS = SCORING.weights;          // {price,equipment,kmAge,desirability}
@@ -247,7 +250,6 @@ const PRIVATE_PENALTY = SCORING.penalties.private;
 // Liste veri olarak SCORING.json'da — elle "(şahıs)" işaretlenen bayiler de yakalanır.
 const PRIVATE_SELLER_KEYWORDS = SCORING.privateSellerKeywords;
 const AFTERMARKET_PENALTY = SCORING.penalties.aftermarket;
-const OVER_BUDGET_PENALTY = SCORING.penalties.overBudget;
 // Renk skoru (arzu boyutu içinde, hem iç hem dış aynı formül); ağırlık ×25 puana çevirir:
 //   favori  → +0.3  (+7.5 puan, iyi renk artı)
 //   nötr    → +0.15 (+3.75 puan, bilinmeyen/kayıtsız)
@@ -263,17 +265,13 @@ const colorScore = (pref) => pref === 'favorite' ? COLOR_FAV : pref === 'dislike
 // Yani yeni ilana BONUS yok (nötr); eskiye kademeli CEZA. Her 5 günde bir basamak.
 // SADECE createdTime'a (kesin veri) dayanır → 'ilan ne zaman kayboldu' belirsizliğinden
 // etkilenmez; en fazla, satılmış ama henüz SOLD'a taşınmamış bir ilan geçici ceza alır.
+export { listingCreatedAt, listingSoldAt, listingAgeInDays, carListingAgeDays };
+
 const STALENESS_STEP_DAYS = SCORING.staleness.stepDays;
 const STALENESS_STEP_PENALTY = SCORING.staleness.stepPenalty;
 const STALENESS_CAP = SCORING.staleness.cap;
-const TODAY_MS = Date.now();       // modül yüklenirken sabitlenir (oturum boyu tutarlı)
 
-export const listingAgeInDays = (createdTime) => {
-  if (!createdTime) return null;
-  const t = new Date(createdTime).getTime();
-  if (Number.isNaN(t)) return null;
-  return Math.max(0, Math.floor((TODAY_MS - t) / 86400000));
-};
+// İlan yaşı helper'ları ayrı, bağımlılıksız modülde (test edilebilir olsun diye).
 // Kademeli ceza: floor(gün / 5) × STEP, CAP ile sınırlı. 0-5 gün → 0 (yeni, cezasız).
 const stalenessPenalty = (ageDays) => {
   if (ageDays == null) return 0;
@@ -281,13 +279,16 @@ const stalenessPenalty = (ageDays) => {
   return Math.min(STALENESS_CAP, steps * STALENESS_STEP_PENALTY);
 };
 
-// Exact fiyat skoru: ucuz = yüksek, DOĞRUSAL ve sürekli (band değil → her fiyat farklı puan).
-// ≤FLOOR tam puan, FLOOR→MAX doğrusal azalır, >MAX = 0 (ağır ceza, bütçe dışı).
+// Exact fiyat skoru: ucuz = pozitif, €66K = notr, butce ustu = NEGATIF.
+// €42K ve alti +1 (= tam fiyat agirligi), €66K 0, €90K ve ustu -1
+// (= tam fiyat agirligi kadar eksi puan).
+// Boylece €66.001 ile €100K ayni 0 puani almaz; butce asimi arttikca ceza da
+// dogrusal artar. Ayrica ayri bir butce cezasi YOK — ayni maliyet iki kez sayilmaz.
 const PRICE_FLOOR = SCORING.priceFloor;
 // Bütçe tavanı — tek kaynak SCORING.json; priceScore, bütçe-aşımı cezası ve
 // recommendations.js filtreleri (💎/🔍/📉) hep bunu kullanır.
 export const BUDGET_MAX = SCORING.budgetMax;
-const priceScore = (cost) => Math.max(0, Math.min(1, (BUDGET_MAX - cost) / (BUDGET_MAX - PRICE_FLOOR)));
+const priceScore = (cost) => Math.max(-1, Math.min(1, (BUDGET_MAX - cost) / (BUDGET_MAX - PRICE_FLOOR)));
 
 // Bir metrigin dataset icindeki yuzdelik sirasi (0-1). invert=true → dusuk deger yuksek skor.
 const percentileScorer = (values, invert = false) => {
@@ -330,10 +331,9 @@ const assignRecommendations = (evaluated, referencePool = evaluated) => {
     const seller = car.sellerTypeOrName?.toLowerCase() || '';
     if (PRIVATE_SELLER_KEYWORDS.some(k => seller.includes(k))) extras.push({ label: 'Özel satıcı', delta: -PRIVATE_PENALTY, formula: 'risk cezası' });
     if (car.listingAdditionalFeatures?.some(f => f.toLowerCase().includes('aftermarket'))) extras.push({ label: 'Aftermarket', delta: -AFTERMARKET_PENALTY, formula: 'risk cezası' });
-    const ageDays = listingAgeInDays(car.listingDates?.createdTime);
+    const ageDays = carListingAgeDays(car);
     const stale = stalenessPenalty(ageDays);
-    if (stale > 0) extras.push({ label: 'Yayında bekleme', delta: -stale, formula: `${ageDays} gündür yayında → her ${STALENESS_STEP_DAYS} günde −${STALENESS_STEP_PENALTY}` });
-    if (m.baseTotalCost > BUDGET_MAX) extras.push({ label: 'Bütçe aşımı', delta: -OVER_BUDGET_PENALTY, formula: `${eur(m.baseTotalCost)} > €66K` });
+    if (stale > 0) extras.push({ label: 'Yayında bekleme', delta: -stale, formula: `${ageDays} ${car.isSold ? 'günde satıldı' : 'gündür yayında'} → her ${STALENESS_STEP_DAYS} günde −${STALENESS_STEP_PENALTY}` });
     const adj = extras.reduce((s, x) => s + x.delta, 0);
     const clamp100 = (v) => Math.max(0, Math.min(100, round1(v)));
 
@@ -344,7 +344,10 @@ const assignRecommendations = (evaluated, referencePool = evaluated) => {
 
     car.curatorPickBadge = '';
     car.scoreBreakdown = [
-      { label: SCORE_LABELS.price, delta: round1(priceN * W.price), formula: `${eur(m.baseTotalCost)} → (66K−fiyat)/24K = ${priceN.toFixed(2)} × ${W.price}` },
+      { label: SCORE_LABELS.price,
+        // Butceyi birkac euro bile gecse tek ondalik yuvarlama "-0"/"0" gostermesin.
+        delta: m.baseTotalCost > BUDGET_MAX ? Math.min(-0.1, round1(priceN * W.price)) : round1(priceN * W.price),
+        formula: `${eur(m.baseTotalCost)} → (66K−toplam maliyet)/24K = ${priceN.toFixed(2)} × ${W.price}` },
       { label: SCORE_LABELS.equipment, delta: round1(equipN * W.equipment), formula: `${eur(m.expectedFeaturesValue)} / ${eur(MAX_FEATURES_VALUE)} → ${equipN.toFixed(2)} × ${W.equipment}` },
       { label: SCORE_LABELS.kmAge, delta: round1(kmAgeN * W.kmAge), formula: `yıpranma ${eur(m.totalDepreciation)} → yüzdelik ${kmAgePct.toFixed(2)}² = ${kmAgeN.toFixed(2)} × ${W.kmAge}` },
       { label: SCORE_LABELS.desirability, delta: round1(desirN * W.desirability), formula: `LCI ${lci} + dış ${extC} + iç ${intC} → ${desirN.toFixed(2)} × ${W.desirability}` },
@@ -352,9 +355,10 @@ const assignRecommendations = (evaluated, referencePool = evaluated) => {
     ];
   });
 
-  // Tek-kazanan rozetler yalnızca ALINABILIR araçlar arasından (satılmış/kazalı araç rozet almaz).
+  // Tek-kazanan rozetler yalnızca ALINABILIR araçlar arasından (satılmış/kazalı araç rozet almaz;
+  // GC/Cabrio gibi huni-dışı kategoriler de rozet yarışına girmez — temiz coupe-sunroof havuzu).
   // Her rozet, kendi kategorisinin skoruyla seçilir (kategoriler farklı sıralıyor → farklı kazanan).
-  const buyable = evaluated.filter(c => !c.isSold && !c.isKazali);
+  const buyable = evaluated.filter(c => !c.isSold && !c.isKazali && (!c.sourceCategory || c.sourceCategory === 'COUPE_GAS_WITH_SUNROOF'));
   const bestSpec = [...buyable].sort((a,b) => b.metrics.expectedFeaturesValue - a.metrics.expectedFeaturesValue)[0]; // 👑 donanım (€)
   const topPick = [...buyable].sort((a,b) => b.totalScore - a.totalScore)[0];        // 🏆 genel
   const budgetPick = [...buyable].sort((a,b) => b.valueScore - a.valueScore)[0];     // 💰 değer (oran)
@@ -408,27 +412,35 @@ const extractSortedYears = (groupedListings) => {
   return Object.keys(groupedListings).sort((yearA, yearB) => Number(yearB) - Number(yearA));
 };
 
-// Alim havuzu = mobile.de coupe'lari + bayi sitelerinden gelen ayni kategori.
-// Bayi araclari (W3, AHG1...) ayni skorlama/oneri akisina girer; kaynak listingId
-// onekinden ve sellerTypeOrName'den okunur. Dedup import asamasinda (import-dealer):
-// mobile.de'de zaten var olan arac site dosyasina hic yazilmaz.
-const dealerCoupes = dealerListingsByCategory['COUPE_GAS_WITH_SUNROOF'] || [];
-const activeCars = attachMetrics([...CoupeGasWithSunroof, ...dealerCoupes]);
-const soldCars = attachMetrics(soldGasListings).map(car => Object.assign(car, { isSold: true }));
+// Alim havuzu KATEGORI SECMELI: ulke-dislamalari haric TUM kategoriler — SOLD
+// arsivleri DAHIL — (kok + ayni adli bayi klasorleri) havuza girer; hangilerinin
+// UI'da gorunecegi filtre cubugundaki checkbox'lardan secilir (carFilters.categories).
+// Her araca sourceCategory islenir; KAZALI kategorileri isKazali (major gizli / LCI
+// kurali carFilters'ta), _SOLD kategorileri isSold alir. Dosyalar yerinde — salt okuma.
+export const selectableCategories = LISTING_FILES.allCategories.filter(c =>
+  !Object.values(LISTING_FILES.countryExcludedCategories).includes(c));
+// Varsayilan secim = temiz coupe havuzu + kazalilari; diger kategoriler checkbox'tan acilir.
+export const DEFAULT_SELECTED_CATEGORIES = ['COUPE_GAS_WITH_SUNROOF', 'COUPE_GAS_WITH_SUNROOF_KAZALI'];
 
-// KAZALI havuzu da ana gorunume katilir (dosyalari KAZALI kategorisinde KALIR) —
-// isKazali ile etiketlenir; gorunurluk kurali carFilters'ta (major gizli, minor gorunur).
-// Referans dagilim ve rozetler aktif pazardan — kazali arac fiyat istatistigini bozmaz.
-const dealerKazaliCoupes = dealerListingsByCategory['COUPE_GAS_WITH_SUNROOF_KAZALI'] || [];
-const kazaliCars = attachMetrics([...kazaliListings, ...dealerKazaliCoupes]).map(car => Object.assign(car, { isKazali: true }));
+const poolCars = attachMetrics(selectableCategories.flatMap(category => {
+  const cars = [...(rootListingsByCategory[category] || []), ...(dealerListingsByCategory[category] || [])];
+  const flags = {
+    ...(category.includes('KAZALI') ? { isKazali: true } : {}),
+    ...(category.endsWith('_SOLD') ? { isSold: true } : {}),
+  };
+  return cars.map(car => Object.assign({}, car, { sourceCategory: category }, flags));
+}));
+
+// Referans dagilim + rozet adaylari = temiz coupe-sunroof aktifleri (bayi dahil) —
+// GC/Cabrio/kazali/satilmis havuza girse de fiyat istatistigini ve rozetleri etkilemez.
+const activeCars = poolCars.filter(c => c.sourceCategory === 'COUPE_GAS_WITH_SUNROOF');
 
 // Öneri skorları TEK referans dağılıma (aktif pazar) göre hesaplanır → sold/kazalı araçlar
 // aktiflerle kıyaslanabilir. Rozetler yalnız alınabilir araçlarda (fonksiyon içinde).
-assignRecommendations([...activeCars, ...soldCars, ...kazaliCars], activeCars);
+assignRecommendations(poolCars, activeCars);
 
 export const evaluatedListings = activeCars;
-const evaluatedSold = soldCars;
-export const yearGroups = groupListingsByYear([...evaluatedListings, ...kazaliCars]);
+export const yearGroups = groupListingsByYear(poolCars);
 export const sortedYears = extractSortedYears(yearGroups);
 
-export const allByTotalCost = [...evaluatedListings, ...evaluatedSold, ...kazaliCars].sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);
+export const allByTotalCost = [...poolCars].sort((a, b) => a.metrics.baseTotalCost - b.metrics.baseTotalCost);

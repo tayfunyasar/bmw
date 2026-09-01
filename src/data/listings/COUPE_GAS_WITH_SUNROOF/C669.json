@@ -11,7 +11,7 @@
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
   "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "basePriceEuro": 54304,
+  "basePriceEuro": 52557,
   "mileageKm": 21800,
   "firstRegistrationYearAndMonth": [
     2023,
@@ -38,7 +38,7 @@
   "equipmentFeatures": {
     "S403A": "yes",
     "S5AZA": "yes",
-    "S5AUA": "yes",
+    "S5AUA": "no",
     "S688A": "yes",
     "S2T4A": "yes",
     "S610A": "yes",
@@ -76,7 +76,7 @@
   },
   "listingDates": {
     "createdTime": "2026-07-17T10:53:16.000Z",
-    "modifiedTime": "2026-08-17T19:02:56.000Z",
+    "modifiedTime": "2026-08-31T09:57:38.000Z",
     "renewedTime": "2026-07-17T10:53:16.000Z"
   },
   "auditHistory": [
@@ -208,6 +208,61 @@
         }
       },
       "auditDate": "2026-08-18T12:49:27.192Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 54304,
+          "new": 52950
+        }
+      },
+      "auditDate": "2026-08-20T13:51:00.862Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 52950,
+          "new": 52817
+        }
+      },
+      "auditDate": "2026-08-24T18:17:59.973Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 52817,
+          "new": 52737
+        }
+      },
+      "auditDate": "2026-08-27T07:04:15.523Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 52737,
+          "new": 52647
+        }
+      },
+      "auditDate": "2026-08-29T08:03:29.833Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 52647,
+          "new": 52557
+        }
+      },
+      "auditDate": "2026-08-31T10:09:42.812Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

@@ -1,0 +1,188 @@
+{
+  "listingId": "C1080",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-acc-rfk-hud-hifi-memory-bad-wiessee/41647908483584.html",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9336-ab5d-7a40-8ac7-32eada89bbf8",
+  "mobileDeId": "41647908483584",
+  "vin": null,
+  "possibleTwinOf": null,
+  "dealerReportedDamage": {
+    "source": "BMW_DE",
+    "reason": "Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\""
+  },
+  "exteriorColorName": "BMW Individual Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 48 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 48890,
+  "mileageKm": 43541,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    8
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 175,
+  "listingLocation": "🇩🇪 DE-83707 Bad Wiessee",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ KAZALI olarak işaretlendi — BMW.de ilanında beyan edildi: Unfallvorschaden: Ja (Angebotsnummer 175651)"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S775A": {
+      "mobile.de": "no",
+      "BMW_DE": "yes"
+    },
+    "S610A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S5DNA": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S521A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    },
+    "S265A": {
+      "mobile.de": "yes",
+      "BMW_DE": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-08-24T08:51:33.000Z",
+    "modifiedTime": "2026-08-24T08:52:06.000Z",
+    "renewedTime": "2026-08-24T08:51:33.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-24T08:51:33.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-24T18:17:34.982Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "BMW_DE ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9336-ab5d-7a40-8ac7-32eada89bbf8"
+        },
+        "co2EmissionsGramPerKm": {
+          "old": 0,
+          "new": 175
+        },
+        "dealerReportedDamage": {
+          "old": null,
+          "new": {
+            "source": "BMW_DE",
+            "reason": "Apify isDamaged metninde tespit edildi: \"Unfallvorschaden: Ja\""
+          }
+        },
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S775A": {
+              "mobile.de": "no",
+              "BMW_DE": "yes"
+            },
+            "S610A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S5DNA": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S521A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            },
+            "S265A": {
+              "mobile.de": "yes",
+              "BMW_DE": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-24T18:28:53.868Z"
+    },
+    {
+      "action": "Kazalı İşaretlendi",
+      "detail": "COUPE_GAS_WITHOUT_SUNROOF dosyasından COUPE_GAS_WITH_SUNROOF_KAZALI dosyasına taşındı — BMW.de ilanında beyan edildi: Unfallvorschaden: Ja (Angebotsnummer 175651)",
+      "changes": null,
+      "auditDate": "2026-08-24T18:29:48.405Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

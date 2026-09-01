@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, Flex, Typography, Tooltip, Tag, Space } from 'antd';
 import { CATEGORIES, TIERS, rankPicks } from '../utils/recommendations';
-import { listingAgeInDays } from '../utils/pricingCalculator';
+import { carListingAgeDays } from '../utils/pricingCalculator';
 import { UI_COLORS, getColorHex } from '../data';
 import { ColorDisplay } from './common/Icons';
 import { FreezeButton } from './common/FreezeButton';
+import { dealerUrlsOf, hostnameOf } from '../utils/helpers';
 
 const { Text, Link } = Typography;
 
@@ -79,20 +80,34 @@ const RankedPick = ({ car, rank, category }) => {
         <FreezeButton listingId={car.listingId} />
       </Flex>
 
-      {/* Kimlik */}
+      {/* Kimlik — merge edilen aracin bayi linkleri ALT ALTA (her iki ilan ziyaret edilebilir) */}
       <Link href={car.listingUrl} target="_blank" rel="noopener noreferrer" strong
         type={sold ? 'danger' : undefined} delete={sold} underline={!sold} style={{ fontSize: 15 }}>
         {car.listingId} {car.locationCity}
       </Link>
+      {dealerUrlsOf(car).filter(u => u !== car.listingUrl).map(u => (
+        <Link key={u} href={u} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, display: 'block' }}>
+          🔗 {hostnameOf(u)}
+        </Link>
+      ))}
 
       {/* Fiyat büyük + km · yaş */}
       <Flex vertical style={{ marginTop: 4 }}>
+        {/* TOPLAM maliyet gosterilir (ilan fiyati + BPM) — tablodaki "Toplam maliyet" ile ayni
+            sayi; kullanici karari toplam uzerinden verir, ilan fiyati yaniltir (NL araclarda
+            BPM zaten odenmis, DE araclarinda degil). Kaynak: metrics.baseTotalCost. */}
         <Text strong type={sold ? 'danger' : undefined} style={{ fontSize: 19, lineHeight: 1.1 }}>
-          €{car.basePriceEuro.toLocaleString()}
+          {/* Eski/eksik kayitlarda fiyat-km null olabilir (Old_7) — render coksun diye patlamaz. */}
+          {car.metrics?.baseTotalCost != null ? `€${Math.round(car.metrics.baseTotalCost).toLocaleString()}` : 'Fiyat —'}
         </Text>
+        {car.metrics?.bpmCalculation?.bpmCalculated > 0 && (
+          <Text type="secondary" style={{ fontSize: 11, lineHeight: 1.2 }}>
+            ilan €{Math.round(car.basePriceEuro).toLocaleString()} + BPM €{Math.round(car.metrics.bpmCalculation.bpmCalculated).toLocaleString()}
+          </Text>
+        )}
         <Space size={8} style={{ marginTop: 1 }}>
-          <Text type="secondary" style={{ fontSize: 12, whiteSpace: 'nowrap' }}>{car.mileageKm.toLocaleString()} km</Text>
-          {!sold && ageBadge(listingAgeInDays(car.listingDates?.createdTime))}
+          <Text type="secondary" style={{ fontSize: 12, whiteSpace: 'nowrap' }}>{car.mileageKm != null ? `${car.mileageKm.toLocaleString()} km` : '— km'}</Text>
+          {!sold && ageBadge(carListingAgeDays(car))}
         </Space>
       </Flex>
 
@@ -129,18 +144,28 @@ const RankedPick = ({ car, rank, category }) => {
   );
 };
 
+// Kategori basina cizilen kart ust siniri: tum kategoriler seciliyken havuz 400+
+// araca cikiyor; sinirsiz kart (kategori basina 400+) tarayiciyi kilitliyordu.
+// Siralama tam havuz uzerinden yapilir, yalnizca GORUNTULEME kirpilir.
+
 const CategoryRow = ({ category, evaluatedListings }) => {
   const picks = rankPicks(evaluatedListings, category);
   if (picks.length === 0) return null;
+  const shown = picks;   // limit YOK — tek kirpma filtre cubugu
   return (
     <Flex vertical gap="small">
       <Text strong>{category.icon} {category.label}</Text>
       {category.hint && <Text type="secondary" style={{ fontSize: '12px', marginTop: -6 }}>{category.hint}</Text>}
       {/* Tek satır: kartlar sarmalanmaz, kutunun İÇİNDE yatay kaydırılır (sayfa taşmaz). */}
       <Flex gap="middle" wrap="nowrap" style={{ overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'thin' }}>
-        {picks.map((car, index) => (
+        {shown.map((car, index) => (
           <RankedPick key={car.listingId} car={car} rank={index + 1} category={category} />
         ))}
+        {picks.length > shown.length && (
+          <Text type="secondary" style={{ alignSelf: 'center', whiteSpace: 'nowrap', paddingRight: 8 }}>
+            +{picks.length - shown.length} araç daha (tabloda görünür)
+          </Text>
+        )}
       </Flex>
     </Flex>
   );

@@ -1,0 +1,109 @@
+{
+  "listingId": "C620",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-coupe-xdrive-laser-hud-360-k-totw-h-k-mry-ennepetal/460254789.html",
+  "mobileDeId": "460254789",
+  "exteriorColorName": "BROOKLYN GRAU METALLIC",
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "basePriceEuro": 45900,
+  "mileageKm": 18977,
+  "firstRegistrationYearAndMonth": [
+    2025,
+    8
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "08/2028",
+  "sellerTypeOrName": "Hochfelsen Automobile GmbH ★4.1",
+  "modelGeneration": "LCI",
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-58256 Ennepetal",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ COUPE_GAS_WITH_SUNROOF_KAZALI olarak işaretlendi — Apify isDamaged alanı true"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S1MAA": "unknown",
+    "S536A": "yes",
+    "S322A": "yes",
+    "S2NHA": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S3ACA": "no",
+    "S488A": "yes",
+    "S715A": "no",
+    "S493A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-09T15:19:14.000Z",
+    "modifiedTime": "2026-07-10T00:16:55.000Z",
+    "renewedTime": "2026-07-09T15:19:14.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-09T15:19:14.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-09T15:19:14.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-10T07:03:51.499Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF_KAZALI dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-08-19T09:33:39.022Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "modelGenerationCertain": true,
+  "sunroofReason": "S403A=no — checkbox otoritesi: 75 kalemlik kapsamlı listede işaretli değil"
+}

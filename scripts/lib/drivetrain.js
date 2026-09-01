@@ -25,13 +25,14 @@
 // VIN tip kodu -> tahrik esleme tablosu; veri olarak JSON'da (tek kaynak).
 // DIKKAT: bu modulu UI de import ediyor (CarTable → DRIVETRAIN_FORMULA), o yuzden
 // burada fs/path/url KULLANILAMAZ. Import attribute'u hem Node 22+ hem Vite'ta calisir.
-import VIN_TYPE_CODES_JSON from '../../src/data/metadata/VIN_TYPE_CODES.json' with { type: 'json' };
+import { typeCodeFromVin, vehicleIdentityFromVin } from './vehicle-identity.js';
+// Dil kaliplari KODDA DEGIL: TEXT_SIGNALS.json → drivetrain.awdWords/rwdWords/rwdTitleTokens.
+import { TEXT_SIGNALS, matchAnyWord } from './text-signals.js';
 
-const VIN_TYPE_CODES = VIN_TYPE_CODES_JSON.codes;
+const { awdWords, rwdWords, rwdTitleTokens } = TEXT_SIGNALS.drivetrain;
 
-// BMW VIN'inde 4-7. karakter fabrika tip kodudur (or. WBA|81AP|010CN63825 -> 81AP).
-export const typeCodeFromVin = (vin) =>
-  (typeof vin === 'string' && vin.length >= 7) ? vin.slice(3, 7).toUpperCase() : null;
+// Geriye uyumluluk: mevcut cagiranlar yardimciyi drivetrain modulunden de alabilir.
+export { typeCodeFromVin } from './vehicle-identity.js';
 
 export const AWD = 'xDrive AWD';
 export const RWD = 'RWD';
@@ -48,8 +49,8 @@ export const NO_SIGNAL_NOTE =
 export const DRIVETRAIN_FORMULA =
   'Formül (öncelik sırası): ' +
   '0) VIN tip kodu → kesin · ' +
-  '1) metin "xDrive/Allrad" → xDrive · ' +
-  '2) metin "Heckantrieb/Hinterradantrieb" ya da başlıkta "RWD" → RWD · ' +
+  `1) metin "${awdWords.join('/')}" → xDrive · ` +
+  `2) metin "${rwdWords.join('/')}" ya da başlıkta "${rwdTitleTokens.join('/')}" → RWD · ` +
   `3) mobile.de checkbox "${FEATURE_AWD}" → xDrive · ` +
   `4) mobile.de checkbox "${FEATURE_RWD}" → RWD · ` +
   '5) sinyal yok → xDrive varsayılır (belirsiz)';
@@ -63,7 +64,7 @@ export function determineDrivetrain({ title = '', description = '', url = '', fe
   // 0. VIN tip kodu — fabrika verisi, ilan metninden de checkbox'tan da guvenilir.
   //    Ilan hic "xDrive" yazmasa bile tahrik buradan kesin cozulur.
   const typeCode = typeCodeFromVin(vin);
-  const vinMatch = typeCode ? VIN_TYPE_CODES[typeCode] : null;
+  const vinMatch = vehicleIdentityFromVin(vin);
   if (vinMatch) {
     return {
       type: vinMatch.drivetrain,
@@ -73,18 +74,19 @@ export function determineDrivetrain({ title = '', description = '', url = '', fe
   }
 
   // 1. Metin xDrive/Allrad diyor -> aciklama ezer.
-  const awdWord = allText.match(/x[- ]?drive/i) || allText.match(/allrad/i);
+  const awdWord = matchAnyWord(allText, awdWords);
   if (awdWord) {
-    return { type: AWD, certain: true, reason: `Kural 1 — ilan metninde "${awdWord[0]}" geçiyor (açıklama ezer)` };
+    return { type: AWD, certain: true, reason: `Kural 1 — ilan metninde "${awdWord}" geçiyor (açıklama ezer)` };
   }
 
   // 2. Metin RWD diyor -> aciklama ezer.
-  const rwdWord = allText.match(/heckantrieb/i) || allText.match(/hinterradantrieb/i) || allText.match(/achterwielaandrijving/i);
+  const rwdWord = matchAnyWord(allText, rwdWords);
   if (rwdWord) {
-    return { type: RWD, certain: true, reason: `Kural 2 — ilan metninde "${rwdWord[0]}" geçiyor (açıklama ezer)` };
+    return { type: RWD, certain: true, reason: `Kural 2 — ilan metninde "${rwdWord}" geçiyor (açıklama ezer)` };
   }
-  if (/\bRWD\b/.test(title)) {
-    return { type: RWD, certain: true, reason: 'Kural 2 — ilan başlığında "RWD" geçiyor (açıklama ezer)' };
+  const rwdTitleToken = rwdTitleTokens.find(token => new RegExp(`\\b${token}\\b`).test(title));
+  if (rwdTitleToken) {
+    return { type: RWD, certain: true, reason: `Kural 2 — ilan başlığında "${rwdTitleToken}" geçiyor (açıklama ezer)` };
   }
 
   // 3-4. Metin sessiz -> yapisal checkbox karar verir.

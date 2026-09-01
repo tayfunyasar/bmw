@@ -3,7 +3,7 @@ import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { writeRunLog } from './lib/run-log.js';
-import { readCategory } from './lib/listings-store.js';
+import { readCategory, LISTING_FILES } from './lib/listings-store.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dumpDir = path.resolve(__dirname, '../dump');
@@ -15,11 +15,8 @@ const LIST_ONLY = argv.includes('--list');
 const STALE_DAYS = parseInt(argv.find(a => /^\d+$/.test(a))) || 3;
 const staleCutoff = Date.now() - (STALE_DAYS * 24 * 60 * 60 * 1000);
 
-const activeCategories = [
-  'COUPE_GAS_WITH_SUNROOF',
-];
-
-const allIds = activeCategories.flatMap(c => readCategory(c).map(car => car.mobileDeId).filter(Boolean));
+// Tazelenecek kategoriler — config'te (refreshCategories).
+const allIds = LISTING_FILES.refreshCategories.flatMap(c => readCategory(c).map(car => car.mobileDeId).filter(Boolean));
 
 // Her mobileDeId için son crawl (dump) timestamp'ini derle.
 const buildDumpMap = () => {

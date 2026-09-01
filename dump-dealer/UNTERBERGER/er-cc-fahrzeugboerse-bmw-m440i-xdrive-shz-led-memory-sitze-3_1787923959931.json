@@ -1,0 +1,37 @@
+{
+  "dealerId": "bmw-m440i-xdrive-shz-led-memory-sitze-3",
+  "title": "BMW M440i xDrive SHZ LED Memory-Sitze",
+  "category": "Sport Coupé",
+  "attributes": {
+    "Category": "Sport Coupé",
+    "Model range": "4-er Gran Coupe"
+  },
+  "description": "SPORT\nM Sportpaket\nSportfahrwerk\nSportpaket\nINDIVIDUALUMFÄNGE\nIndividual\nM Hochglanz Shadow Line\nM Hochglanz Shadow Line mit erweiterten Umfängen\nM Leuchten Shadow Line\nFAHRERASSISTENZ\nGeschwindigkeitsregelung mit Bremsfunktion\nGesetzlicher Notruf\nParking Assistant\nMULTIMEDIA\nBMW Live Cockpit Plus (laufzeitgebundener Dienst)\nDAB Tuner\nHiFi Lautsprechersystem\nWidescreen Display\nEXTERIEUR\nAnhängerkupplung\nAnhängerkupplung mit schwenkbarem Kugelkopf\nM Heckspoiler\nKOMFORT UND INNENAUSSTATTUNG\nAmbientes Licht\nInnen- und Außenspiegelpaket\nInstrumententafel in Sensatec\nKlimaautomatik\nM Lederlenkrad\nM Sicherheitsgurte\nSitzheizung für Fahrer und Beifahrer\nSitzverstellung elektrisch mit Memory für Fahrersitz\nSonnenschutzverglasung\nKOMFORT/INNENAUSSTATTUNG\nAmbiente Licht\nBordcomputer\nDAB-Radio\nEinparkhilfe\nEinparkhilfe (Kamera)\nEinparkhilfe (selbstlenkendes System)\nEinparkhilfe (Sensoren hinten)\nEinparkhilfe (Sensoren vorn)\nElektr. Seitenspiegel\nElektr. Sitze mit Memory-Fkt.\nElektr. Sitzeinstellung\nFensterheber\nIsofix\nKlimaanlage\nLederlenkrad\nLive Cockpit Plus\nMemory-Sitze\nNavigationssystem\nSchaltwippen\nServolenkung\nSitzheizung\nSoundsystem\nTempomat\nTuner oder Radio\nVolldigitales Kombiinstrument\nZentralverriegelung\nANTRIEB UND FAHRWERK\nAllradsystem\nM Sportbremse, rot hochglänzend\nM Sportdifferenzial\nM Sportfahrwerk\nSport-Automatic Getriebe\nSteptronic\nSteptronic Getriebe\nVariable Sportlenkung\nSICHERHEIT/UMWELT\nAirbag\nAllrad\nBeifahrer-Airbag\nESP\nLichtsensor\nNotrufsystem\nReifendruckkontrollsystem\nSeitenairbag\nTraktionskontrolle\nWegfahrsperre\nActive Guard Plus\nBlow by-Heizer\nEntfall Zusatz-Schriftzug außen\nM Interieurleisten Aluminium Rhombicle Anthrazit\nModellschriftzug - Entfall\nMWSt ausweisbar\nProbefahrt\nUnfallfrei\nVorbereitung Fahrerassistenz I\nUMWELT UND SICHERHEIT\nABS\nAktiver Fussgängerschutz\nBeifahrerairbag-Deaktivierung\nInnenspiegel automatisch abblendend\nReifendruck-Kontrolle\nRekuperationssystem\nEDITIONEN UND PAKETE\nAblagenpaket\nM Aerodynamikpaket\nM Sportpaket Pro\nAUSSENAUSSTATTUNG\nAbgedunkelte Scheiben/Privacy-Glas\nAnhängerkupplung fix\nAnhängerkupplung schwenkbar",
+  "features": [],
+  "properties": {
+    "milage": "55.225 km",
+    "firstRegistration": "10/2023",
+    "upholstery": "Sensatec perforiert | Schwarz (SW)",
+    "colour": "grau metallic",
+    "manufacturerColour": "grau metallic",
+    "co2Emission": null,
+    "generalInspection": "10/2026",
+    "numberOfOwners": "1",
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 48990
+  },
+  "dealer": {
+    "name": "Autohaus Unterberger GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Leisederstraße 1",
+      "84453 Mühldorf am Inn"
+    ]
+  },
+  "vin": "WBA11AW0X0FR98053",
+  "mobileDeUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=42334791890048",
+  "dealerListingUrl": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-shz-led-memory-sitze-3/",
+  "notes": "Unterberger'in ALMANYA subesi (Mühldorf am Inn, 84453, +49) — AT araci DEGIL. Angebotsnr 26200822. Steckbrief: ANZAHL TÜREN 5, ANZAHL SITZPLÄTZE 5 + mobile.de Model range '4-er Gran Coupe' => Gran Coupé (G26). VIN tip kodu 11AW (VIN_TYPE_CODES.json'da yok). HU 10/2026, 1 Vorbesitzer, MWSt ausweisbar."
+}

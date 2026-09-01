@@ -2,17 +2,11 @@
 // Tasima mantigi ortak moveListing'te (lib/move-listing.js) — burada kopya tutulmaz.
 
 import { moveListing, pushAudit } from './lib/move-listing.js';
+import { LISTING_FILES } from './lib/listings-store.js';
 
-const TARGET_CATEGORY = 'COUPE_GAS_WITHOUT_SUNROOF';
-
-// Sunroof'lu (veya sunroof varsayimli) aktif kategoriler.
-const SOURCE_CATEGORIES = [
-  'COUPE_GAS_WITH_SUNROOF',
-  'COUPE_DIESEL_WITH_SUNROOF',
-  'COUPE_GAS_RWD_WITH_SUNROOF',
-  'GRAN_COUPE',
-  'CABRIO',
-];
+// Kaynak (sunroof'lu/varsayimli) kategoriler + hedef — config'te (withoutSunroof).
+const TARGET_CATEGORY = LISTING_FILES.withoutSunroof.targetCategory;
+const SOURCE_CATEGORIES = LISTING_FILES.withoutSunroof.sourceCategories;
 
 const id = process.argv[2];
 if (!id) {

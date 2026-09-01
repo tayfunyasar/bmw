@@ -35,7 +35,7 @@
   "equipmentFeatures": {
     "S403A": "yes",
     "S5AZA": "yes",
-    "S5AUA": "yes",
+    "S5AUA": "no",
     "S688A": "unknown",
     "S2T4A": "yes",
     "S610A": "yes",
@@ -105,6 +105,17 @@
         }
       },
       "auditDate": "2026-08-13T10:50:52.173Z"
+    },
+    {
+      "action": "Hasar Boyutu İşaretlendi",
+      "detail": "BÜYÜK kazalı — UI havuzundan gizlenir — ithal araç + kazalı — iki olumsuzluk, havuzdan çıkarıldı",
+      "changes": {
+        "kazaliSeverity": {
+          "old": null,
+          "new": "major"
+        }
+      },
+      "auditDate": "2026-08-19T06:21:41.247Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",
@@ -112,5 +123,6 @@
   "drivetrainReason": "Kural 1 — ilan metninde \"X-Drive\" geçiyor (açıklama ezer)",
   "modelGenerationCertain": true,
   "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "possibleTwinOf": "C129"
+  "possibleTwinOf": "C129",
+  "kazaliSeverity": "major"
 }

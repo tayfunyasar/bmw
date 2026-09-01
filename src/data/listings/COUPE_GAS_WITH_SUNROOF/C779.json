@@ -26,7 +26,7 @@
     "history": []
   },
   "nextInspectionDate": "?",
-  "sellerTypeOrName": "Autohaus Kaltenbach GmbH  Co KG BMW und MINI Vertragshändler ★4.6",
+  "sellerTypeOrName": "Autohaus Kaltenbach GmbH  Co KG BMW und MINI Vertragshändler ★4.5",
   "modelGeneration": "LCI",
   "modelGenerationCertain": true,
   "co2EmissionsGramPerKm": 175,
@@ -76,7 +76,7 @@
   },
   "listingDates": {
     "createdTime": "2026-07-16T18:32:14.000Z",
-    "modifiedTime": "2026-08-17T14:55:30.000Z",
+    "modifiedTime": "2026-08-26T00:50:59.000Z",
     "renewedTime": "2026-07-16T18:32:14.000Z"
   },
   "auditHistory": [
@@ -114,6 +114,17 @@
         }
       },
       "auditDate": "2026-08-13T10:50:52.171Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "Autohaus Kaltenbach GmbH  Co KG BMW und MINI Vertragshändler ★4.6",
+          "new": "Autohaus Kaltenbach GmbH  Co KG BMW und MINI Vertragshändler ★4.5"
+        }
+      },
+      "auditDate": "2026-08-27T07:04:15.520Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

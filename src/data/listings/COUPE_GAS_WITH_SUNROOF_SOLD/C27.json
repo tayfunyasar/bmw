@@ -76,6 +76,11 @@
     "S302A": "unknown",
     "S4NHA": "unknown"
   },
+  "listingDates": {
+    "createdTime": "2026-03-07T12:00:00.000Z",
+    "modifiedTime": null,
+    "renewedTime": null
+  },
   "auditHistory": [
     {
       "action": "İlan Eklendi",

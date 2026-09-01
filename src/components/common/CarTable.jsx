@@ -7,12 +7,11 @@ import { MobileCarCards } from './MobileCarCards';
 import { diffListings, findTwin } from '../../utils/listingDiff';
 import { TwinDiffTable } from './TwinDiffTable';
 import { FreezeButton } from './FreezeButton';
-import { formatNotes, formatAdditionalFeatures, findDealerForListing } from '../../utils/helpers';
+import { formatNotes, formatAdditionalFeatures, findDealerForListing, dealerUrlsOf, hostnameOf } from '../../utils/helpers';
+import { listingCreatedAt, listingSoldAt, carListingAgeDays } from '../../utils/pricingCalculator';
 import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
 
 const { Text, Link } = Typography;
-const TODAY = new Date();
-const TODAY_MS = TODAY.getTime();
 
 // extraHeaderActions her render'da yeni referans alır (inline JSX, örn. yıl sekmesindeki
 // "Tüm İlanları Aç" butonu) — bilerek karşılaştırma dışı: aksi halde memo hiç iş yapmaz.
@@ -23,6 +22,10 @@ const carTablePropsAreEqual = (prev, next) =>
   prev.isRejected === next.isRejected &&
   prev.rejectedLabel === next.rejectedLabel &&
   prev.yearLabel === next.yearLabel;
+
+// Karsilastirma tablosu arac basina SUTUN olusturur; tum kategoriler seciliyken
+// havuz 400+ araca cikar ve sinirsiz sutun tarayiciyi kilitler (site acilmiyor).
+// Gorunur arac kumesini YALNIZCA filtre cubugu belirler; tabloda kirpma yoktur.
 
 const CarTableComponent = ({
   cars,
@@ -59,6 +62,10 @@ const CarTableComponent = ({
       title: (
         <Flex vertical align="center">
           <Link strong href={car.listingUrl} target="_blank" delete={isRejected || car.isSold} underline={!isRejected && !car.isSold}>{car.listingId}</Link>
+          {/* Merge edilen aracin bayi linkleri ALT ALTA — her iki ilan da ziyaret edilebilir. */}
+          {dealerUrlsOf(car).filter(u => u !== car.listingUrl).map(u => (
+            <Link key={u} href={u} target="_blank" style={{ fontSize: 10 }}>🔗 {hostnameOf(u)}</Link>
+          ))}
           {isRejected && <Text type="danger">{rejectedLabel}</Text>}
           {car.isSold && !isRejected && <Text type="danger" style={{ fontSize: '11px' }}>SATILDI</Text>}
           {car.isKazali && !isRejected && <Text type="warning" strong style={{ fontSize: '11px' }}>💥 KAZALI</Text>}
@@ -211,18 +218,20 @@ const CarTableComponent = ({
       const dates = car.listingDates || {};
       const history = car.auditHistory || [];
       const published = history.find(h => h.action?.includes('İlan Yayınlandı'));
-      const sold = history.find(h => h.action?.startsWith('SATILDI') || h.action?.includes('İlan Satıldı'));
+      const sold = listingSoldAt(car);
       const fmt = (d) => d ? new Date(d).toLocaleDateString('tr-TR') : null;
       const daysColor = (d) => d < 7 ? UI_COLORS.statusFresh : d < 14 ? UI_COLORS.statusWarning : UI_COLORS.statusStale;
       const parts = [];
-      const createdDate = dates.createdTime || published?.auditDate;
+      // Re-list'e dayanikli ilk yayin tarihi (tek kaynak pricingCalculator) — bayi ilani
+      // kapatip yeni ID ile acinca createdTime sifirlanir, audit'teki ilk yayin kaydi kalir.
+      const createdDate = listingCreatedAt(car) || published?.auditDate;
       if (createdDate) parts.push(`Yayın: ${fmt(createdDate)}`);
       if (dates.modifiedTime) parts.push(`Güncelleme: ${fmt(dates.modifiedTime)}`);
       if (dates.renewedTime && dates.renewedTime !== dates.createdTime) parts.push(`Yenileme: ${fmt(dates.renewedTime)}`);
-      if (sold) parts.push(`Satıldı: ${fmt(sold.auditDate)}`);
+      if (sold) parts.push(`Satıldı: ${fmt(sold)}`);
       if (createdDate) {
-        const endMs = sold ? new Date(sold.auditDate).getTime() : TODAY_MS;
-        const days = Math.floor((endMs - new Date(createdDate).getTime()) / 86400000);
+        // Gün hesabı TEK kaynakta (pricingCalculator) — skor tooltip'i ile tablo asla ayrışmasın.
+        const days = carListingAgeDays(car);
         const label = sold ? `${days} günde satıldı` : `${days} gündür yayında`;
         return [car.listingId, <span key={car.listingId}>{parts.join(' · ')} · <span style={{ color: daysColor(days), fontWeight: 600 }}>📌 {label}</span></span>];
       }
@@ -355,7 +364,11 @@ const CarTableComponent = ({
       <Card title={renderTitle()} styles={{ body: isMobile ? { padding: 10 } : undefined }}>
         {isMobile
           ? <MobileCarCards cars={cars} isRejected={isRejected} rejectedLabel={rejectedLabel} />
-          : <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small" scroll={{ x: 'max-content' }} rowHoverable={false} />}
+          : <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small"
+              // virtual: tum kategoriler seciliyken 400+ arac = 400+ SUTUN olusur;
+              // virtualizasyon olmadan tarayici kilitleniyor (site acilmiyor).
+              // DIKKAT: yatay sanallastirma icin scroll.x SAYI olmali ('max-content' degil).
+              virtual scroll={{ x: 140 + cars.length * 120, y: 900 }} rowHoverable={false} />}
       </Card>
 
       <Modal

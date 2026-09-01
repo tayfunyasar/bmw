@@ -1,0 +1,481 @@
+{
+  "baseUrl": "https://www.mobile.de/tr/ara%C3%A7lar/arama.html?isSearchRequest=true&s=Car&vc=Car&sb=doc&od=down&ms=3500%3B120&ms=3500%3B335&fr=2021&pw=272&ml=%3A70000&ref=srpHead",
+  "pagesVisited": 2,
+  "reason": "kept listesinde ardışık 7 existing",
+  "kept": [
+    {
+      "id": "41177849785504",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 03/2025 • 30.000 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR62.850¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "41177127683232",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 08/2023 • 27.300 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR54.908¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "41168787052992",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 11/2024 • 14.500 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR65.999¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "462231976",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 05/2023 • 31.701 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR51.991",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "COUPE_GAS_WITH_SUNROOF",
+      "existingListingId": "C876"
+    },
+    {
+      "id": "38690020370368",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 03/2022 • 28.727 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR52.400",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C930"
+    },
+    {
+      "id": "41139651502720",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Yeni araba • 288 kW (392 BG) • Benzinli7,3 l/100km (tarak.) • 166 g CO₂/km (tarak.) • CO₂ sınıfı F (tarak.)",
+      "price": "EUR86.490¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "459045275",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 02/2024 • 21.870 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR55.990",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C736"
+    },
+    {
+      "id": "459045226",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 02/2024 • 21.870 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR55.990",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C735"
+    },
+    {
+      "id": "41137525238208",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 08/2022 • 47.100 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR44.880¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "41131696760160",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 08/2023 • 13.005 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR57.770¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "39016872993312",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 03/2024 • 53.081 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR51.499¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C937"
+    },
+    {
+      "id": "461688315",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 02/2022 • 59.200 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR47.900",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C723"
+    },
+    {
+      "id": "41128639859072",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 08/2023 • 23.005 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR54.880¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "41120529433952",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 03/2026 • 7.768 km • 288 kW (392 BG) • Benzinli7,7 l/100km (tarak.) • 176 g CO₂/km (tarak.) • CO₂ sınıfı G (tarak.)",
+      "price": "EUR72.311¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "40564063739296",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 05/2023 • 38.455 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR51.499¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1019"
+    },
+    {
+      "id": "41118347463040",
+      "sponsored": false,
+      "title": "BMW 440",
+      "subTitle": "Hasarlı • Kaza hasarlı araç • İlk tescil 02/2024 • 26.540 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR28.900",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "41118223509312",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Hasarlı • Kaza hasarlı araç • İlk tescil 02/2024 • 26.540 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR28.900",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "453712894",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 03/2023 • 32.679 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR48.366¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "438488570",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Hasarlı • Kaza hasarlı araç • Yola elverişli değil • İlk tescil 01/2023 • 31.126 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR31.990",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE_KAZALI",
+      "existingListingId": "C224"
+    },
+    {
+      "id": "41077238712832",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 08/2023 • 26.027 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR56.908¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "453934296",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 03/2025 • 13.563 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR61.480¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C841"
+    },
+    {
+      "id": "461198502",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Yeni araba • 288 kW (392 BG) • Benzinli7,3 l/100km (tarak.) • 166 g CO₂/km (tarak.) • CO₂ sınıfı F (tarak.)",
+      "price": "EUR82.190¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C799"
+    },
+    {
+      "id": "447238036",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 03/2025 • 12.576 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR60.500¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "39403447230272",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 08/2023 • 49.164 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR49.999¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "COUPE_GAS_WITHOUT_SUNROOF",
+      "existingListingId": "C969"
+    },
+    {
+      "id": "41005839788544",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 02/2023 • 32.879 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR50.948¹",
+      "bodyStyle": "COUPE",
+      "status": "new",
+      "existingIn": null,
+      "existingListingId": null
+    },
+    {
+      "id": "41002798394720",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 08/2022 • 60.672 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR46.930¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C1058"
+    },
+    {
+      "id": "41001887457696",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 08/2023 • 40.800 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR52.750",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1057"
+    },
+    {
+      "id": "41001116907648",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Çalışan Arabası • İlk tescil 03/2026 • 3.342 km • 280 kW (381 BG) • Benzinli7,3 l/100km (tarak.) • 166 g CO₂/km (tarak.) • CO₂ sınıfı F (tarak.)",
+      "price": "EUR65.950¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C1056"
+    },
+    {
+      "id": "39365139500704",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 01/2023 • 25.000 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR39.490",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C964"
+    },
+    {
+      "id": "462186690",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 06/2022 • 38.207 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR52.999¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C857"
+    },
+    {
+      "id": "40957794042208",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • Çalışan Arabası • İlk tescil 07/2025 • 362 km • 275 kW (374 BG) • Benzinli8,2 l/100km (tarak.) • 184 g CO₂/km (tarak.) • CO₂ sınıfı G (tarak.)",
+      "price": "EUR69.900¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C1055"
+    },
+    {
+      "id": "40950179295264",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • Tanıtım Aracı • İlk tescil 08/2026 • 1.001 km • 288 kW (392 BG) • Benzinli7,3 l/100km (tarak.) • 167 g CO₂/km (tarak.) • CO₂ sınıfı F (tarak.)",
+      "price": "EUR84.690¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C1054"
+    },
+    {
+      "id": "40947606022656",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 12/2021 • 64.850 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR42.500",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1053"
+    },
+    {
+      "id": "40943183228384",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • Çalışan Arabası • İlk tescil 01/2026 • 24.950 km • 288 kW (392 BG) • Benzinli7,6 l/100km (tarak.) • 170 g CO₂/km (tarak.) • CO₂ sınıfı F (tarak.)",
+      "price": "EUR65.595¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1052"
+    },
+    {
+      "id": "40386034724448",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 05/2023 • 20.868 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR56.499¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1011"
+    },
+    {
+      "id": "40924334067584",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 02/2023 • 37.883 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR45.860¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1032"
+    },
+    {
+      "id": "40920713988608",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 08/2022 • 41.971 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR45.790¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "GRAN_COUPE",
+      "existingListingId": "C1031"
+    },
+    {
+      "id": "453869913",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Yeni araba • 288 kW (392 BG) • Benzinli7,8 l/100km (tarak.) • 179 g CO₂/km (tarak.) • CO₂ sınıfı G (tarak.)",
+      "price": "EUR84.990¹",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C762"
+    },
+    {
+      "id": "40825168806656",
+      "sponsored": false,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 03/2022 • 26.500 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR48.860",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C1030"
+    },
+    {
+      "id": "40814264611232",
+      "sponsored": false,
+      "title": "BMW 440",
+      "subTitle": "Kazasızlık • İlk tescil 04/2023 • 45.000 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR49.999",
+      "bodyStyle": "COUPE",
+      "status": "existing",
+      "existingIn": "CABRIO",
+      "existingListingId": "C1029"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "461960305",
+      "sponsored": true,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 09/2024 • 23.259 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR59.990",
+      "reason": "Sponsorlu"
+    },
+    {
+      "id": "459596883",
+      "sponsored": true,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 05/2023 • 62.000 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR47.590¹",
+      "reason": "Sponsorlu"
+    },
+    {
+      "id": "446427469",
+      "sponsored": true,
+      "title": "BMW M440",
+      "subTitle": "İlk tescil 08/2022 • 50.944 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR42.880¹",
+      "reason": "Sponsorlu"
+    },
+    {
+      "id": "40051664747488",
+      "sponsored": true,
+      "title": "BMW M440",
+      "subTitle": "Kazasızlık • İlk tescil 10/2024 • 35.000 km • 275 kW (374 BG) • Benzinli",
+      "price": "EUR59.900",
+      "reason": "Sponsorlu"
+    }
+  ]
+}

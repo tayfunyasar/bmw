@@ -1,0 +1,36 @@
+{
+  "dealerId": "018e9336-ab5d-7a40-8ac7-32eada89bbf8",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9336-ab5d-7a40-8ac7-32eada89bbf8",
+  "title": "BMW M440i xDrive",
+  "attributes": {
+    "Category": "Coupé"
+  },
+  "description": "BMW Individual Dravitgrau metallic (P0C36)\n19\" M LMR Doppelspeiche 791 M / MB, NLE (S01PP)\nAußenspiegelkappen schwarz (S03BE)\nAlcantara-/Sensatec-Kombination Schwarz/Kontraststeppung Blau SW (FKGNL)\nM Interieurleisten 'Carbon Fibre' (S04MC)\nBMW Live Cockpit Professional (S06U3)\nDriving Assistant Professional (S05AU)\nParking Assistant (S05DM)\nM Sportdifferenzial (S02T4)\nM Sportfahrwerk (S0704)\nKlimaautomatik (S0534)\nAblagenpaket (S0493)\nAmbientes Licht (S04UR)\nAutomatische Heckklappenbetätigung (S0316)\nM Lederlenkrad (S0710)\nEntfall Zusatz-Schriftzug außen (S03DZ)\nM Aerodynamikpaket (S0715)\nM Dachhimmel anthrazit (S0775)\nM Hochglanz Shadow Line (S0760)\nM Hochglanz Shadow Line mit erweiterten Umfängen (S07M9)\nM Leuchten Shadow Line (S03MF)\nM Sicherheitsgurte (S04GQ)\nSonnenschutzverglasung (S0420)\nLehnenbreitenverstellung für Fahrer (S0491)\nSitzheizung für Fahrer und Beifahrer (S0494)\nSitzverstellung, elektrisch mit Memory für Fahrersitz (S0459)\nNotlaufeigenschaften (S0258)\nRadschraubensicherung (S02PA)\nDAB-Tuner (S0654)\nHiFi-Lautsprechersystem (S0676)\nTelefonie mit Wireless Charging (S06NW)\nWLAN Hotspot (S06WD)\nGesetzlicher Notruf (S06AF)\nConnected Package Professional (S06C4)\nConnectedDrive Services (S06AK)\nActive Guard Plus (S05AQ)\nAlarmanlage (S0302)\nDeaktivierung Beifahrerairbag (S05DA)\nInnen- und Außenspiegelpaket (S0430)\nInnenspiegel automatisch abblendend (S0431)\nWarndreieck und Verbandkasten (S0428)\nM Heckspoiler (S0754)\nM Sportbremse, rot hochglänzend (S03M2)\nVariable Sportlenkung (S02VL)\nSondersteuerung Bluetooth/WiFi-Modul (S08WL)",
+  "features": [],
+  "isDamaged": "Unfallvorschaden: Ja",
+  "properties": {
+    "milage": 43541,
+    "firstRegistration": "08/2022",
+    "upholstery": "Alcantara-/Sensatec-Kombination Schwarz/Kontraststeppung Blau SW (FKGNL)",
+    "colour": "BMW Individual Dravitgrau metallic",
+    "manufacturerColour": "BMW Individual Dravitgrau metallic (P0C36)",
+    "co2Emission": "175 g/km",
+    "generalInspection": null,
+    "numberOfOwners": 1,
+    "fuelType": "Petrol"
+  },
+  "price": {
+    "amount": 48890
+  },
+  "dealer": {
+    "name": "Autohaus Unterberger GmbH",
+    "contry": "DE",
+    "addesses": [
+      "Münchner Straße 47-49",
+      "83707 Bad Wiessee"
+    ]
+  },
+  "vin": null,
+  "mobileDeUrl": null,
+  "notes": "BPS (BMW Premium Selection, 24 ay garanti). Angebotsnummer: 175651. Unfallvorschaden: Ja. Vertragspartner = Fahrzeugstandort: Autohaus Unterberger GmbH, Bad Wiessee (Alman şubesi). 275 kW (374 PS), xDrive, 8 vites, WLTP 7,7 l/100km, CO2 Klasse F. JSON-LD: bodyType COUPE, EZ 2022-08-09, 1 Vorbesitzer, 2 kapı. VIN sayfada yok. MwSt. ausweisbar."
+}

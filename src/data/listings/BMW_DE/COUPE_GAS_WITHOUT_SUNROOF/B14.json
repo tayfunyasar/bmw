@@ -1,0 +1,99 @@
+{
+  "listingId": "B14",
+  "listingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9323-794b-741b-9759-2b765af4e34e",
+  "dealerListingUrl": "https://www.bmw.de/de-de/sl/gebrauchtwagen/details/018e9323-794b-741b-9759-2b765af4e34e",
+  "mobileDeId": null,
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "M Brooklyn Grau metallic (P0C4P)",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Leder Vernasca Schwarz/Kontraststeppung Blau SW (FMANL)",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — açıklama bilgilendirici (23 donanım eşleşti) ama bu donanım geçmiyor → varsayılan 'no'",
+  "basePriceEuro": 52990,
+  "mileageKm": 61701,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    8
+  ],
+  "numberOfPreviousOwners": 1,
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "?",
+  "sellerTypeOrName": "BMW AG Niederlassung Duesseldorf",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 177,
+  "listingLocation": "🇩🇪 40237 Düsseldorf",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "no",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "no",
+    "S524A": "no",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-08-25T13:10:26.896Z",
+    "modifiedTime": null,
+    "renewedTime": null
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (BMW_DE)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-25T13:10:26.896Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-25T13:10:26.896Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

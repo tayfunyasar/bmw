@@ -27,8 +27,10 @@ import { readCategory, readCar, writeCar, writeCategory } from './lib/listings-s
 import { buildExistingIndex, lookupListing } from './lib/existing-index.js';
 import { parseRawToListing, applyUpdatesAndGetChanges } from './lib/parse-listing.js';
 import { determineTargetFile, detectDamageReason } from './lib/route-listing.js';
+import { detectMarginVat, MARGIN_VAT_NOTE } from './lib/text-signals.js';
 import { writeRunLog } from './lib/run-log.js';
 import { mergeTwinIntoRoot } from './lib/merge-twin.js';
+import { rerouteAfterMerge as rerouteAfterMergeRecord } from './lib/reroute-listing.js';
 import { buildRootFingerprints, findTwin as findTwinFp, twinHint } from './lib/twin-fingerprint.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -67,7 +69,14 @@ process.stdin.on('end', () => {
   const allocator = createIdAllocator(site.idPrefix);
   const ts = Date.now();
 
-  const report = { site: siteName, added: [], updated: [], existing: [], invalid: [], possibleTwins: [] };
+  const report = { site: siteName, added: [], updated: [], existing: [], invalid: [], possibleTwins: [], rerouted: [] };
+  // Merge ile VIN/hasar/donanim gibi yeni bir karar sinyali gelebilir. Yalnizca
+  // hasari degil tum hedef kategoriyi yeniden hesapla; C1101 gibi sonradan 61AT
+  // VIN'i bulunan arac ayni import icinde Coupe'den Cabrio'ya tasinir.
+  const rerouteAfterMerge = (sourceCategory, rootCar, rec) => {
+    const moved = rerouteAfterMergeRecord({ sourceCategory, car: rootCar, rawCar: rec, dryRun: isDryRun });
+    if (moved) report.rerouted.push(moved);
+  };
   // Fuzzy ikiz tespiti icin kok kayitlarin (tescil, km, fiyat) parmak izleri.
   // VIN'siz mobile.de kaydi dealer crawl'inda 3 anahtarla YAKALANAMAZ; ayni fiziksel
   // arac cift kayit olmasin diye es-deger kombinasyon uyari uretir (import engellenmez).
@@ -120,6 +129,7 @@ process.stdin.on('end', () => {
         });
         // --dry-run diske YAZMAZ (eskiden bu iki merge yolu bayrağı yok sayıyordu).
         if (!isDryRun && Object.keys(syncChanges).length) writeCar(hit.file, rootCar);
+        rerouteAfterMerge(hit.file, rootCar, rec);
       }
       report.existing.push({ listingId: hit.listingId, file: hit.file, matchedBy: mobileDeId ? 'mobileDeId' : vin && hit === lookupListing(index, { vin }) ? 'vin' : 'dealerKey', record: label });
       continue;
@@ -155,9 +165,15 @@ process.stdin.on('end', () => {
     const listingId = allocator.next();
     const parsed = parseRawToListing(rec, { listingId, mobileDeId, source: siteName });
     const { target, reason } = determineTargetFile(parsed, rec);
+    parsed.listingDescriptionNotes = parsed.listingDescriptionNotes || [];
     if (reason) {
-      parsed.listingDescriptionNotes = parsed.listingDescriptionNotes || [];
       parsed.listingDescriptionNotes.push(`⚠️ ${target} olarak işaretlendi — ${reason}`);
+    }
+    // Marj araci (KDV indirilemez) notunu KOD dusurur — subagent'in elle not yazmasina
+    // birakilmaz (kalip TEXT_SIGNALS.json → vat.marginWords). NL "BTW verrekenbaar: Nee".
+    const marginHit = detectMarginVat(`${rec.description || ''} ${JSON.stringify(rec.properties || {})}`);
+    if (marginHit && !parsed.listingDescriptionNotes.includes(MARGIN_VAT_NOTE)) {
+      parsed.listingDescriptionNotes.push(MARGIN_VAT_NOTE);
     }
     const twin = findTwin(parsed);
     // Twin + AYNI SATICI = ayni fiziksel arac: yeni kayit ACILMAZ, mobile.de kaydi
@@ -177,6 +193,7 @@ process.stdin.on('end', () => {
           damageReason: detectDamageReason(rec)
         });
         if (!isDryRun) writeCar(twin.rel, rootCar);
+        rerouteAfterMerge(twin.rel, rootCar, rec);
         report.merged = report.merged || [];
         report.merged.push({ listingId: twin.listingId, site: siteName, key: dealerKey, resolved: Object.keys(mergeChanges).filter(k => k.startsWith('equipmentFeatures.')).length });
         continue;   // site dosyasina yeni kayit YOK

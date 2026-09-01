@@ -1,4 +1,5 @@
 import { moveListing, DEFAULT_SOURCE_CATEGORIES, dealerSourceCategories, dealerSoldArchiveFor } from './lib/move-listing.js';
+import { LISTING_FILES } from './lib/listings-store.js';
 import { pushSoldAudit } from './lib/sold.js';
 
 const id = process.argv[2];
@@ -9,11 +10,11 @@ if (!id) {
 
 const result = moveListing({
   id,
-  // Kok gövde kategorileri + kazalilar + TUM bayi site kategorileri.
+  // Kok gövde kategorileri + ekstralar (cabrio/kazali, config: soldExtraSourceCategories)
+  // + TUM bayi site kategorileri.
   sourceCategories: [
     ...DEFAULT_SOURCE_CATEGORIES,
-    'CABRIO', 'CABRIO_KAZALI',
-    'COUPE_GAS_WITH_SUNROOF_KAZALI', 'GRAN_COUPE_KAZALI',
+    ...LISTING_FILES.soldExtraSourceCategories,
     ...dealerSourceCategories()
   ],
   pickArchive: (sourceCategory, car) => dealerSoldArchiveFor(sourceCategory, car),

@@ -74,6 +74,11 @@
     "S302A": "unknown",
     "S4NHA": "unknown"
   },
+  "listingDates": {
+    "createdTime": "2026-03-14T12:00:00.000Z",
+    "modifiedTime": null,
+    "renewedTime": null
+  },
   "auditHistory": [
     {
       "action": "Yeniden ilan (id:449271448→449974148). Tüm donanım doğrulandı. Sahip 1→2, tescil 11→12/2022. HU Yeni",

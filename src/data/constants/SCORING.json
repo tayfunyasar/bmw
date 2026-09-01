@@ -1,6 +1,6 @@
 {
   "weights": {
-    "price": 25,
+    "price": 35,
     "equipment": 25,
     "kmAge": 25,
     "desirability": 25
@@ -17,8 +17,7 @@
   },
   "penalties": {
     "private": 2,
-    "aftermarket": 7,
-    "overBudget": 25
+    "aftermarket": 7
   },
   "privateSellerKeywords": [
     "private",

@@ -22,7 +22,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { determineDrivetrainFromRaw, RWD } from './lib/drivetrain.js';
+import { determineDrivetrainFromRaw } from './lib/drivetrain.js';
 import { moveListing, pushAudit, soldArchiveFor, ALL_SOLD_CATEGORIES } from './lib/move-listing.js';
 import { readCategory, writeCar } from './lib/listings-store.js';
 import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
@@ -35,13 +35,9 @@ const LISTING_FILES = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src
 // Alanlari tazelenecek TUM kategoriler (arsivler dahil) — tek kaynak LISTING_FILES.json.
 const ALL_CATEGORIES = LISTING_FILES.allCategories;
 
-// Tahrik degisirse ilanin gitmesi gereken kategori (yalnizca bu 4'u arasinda tasima).
-const ROUTE = {
-  'COUPE_GAS_WITH_SUNROOF':        { [RWD]: 'COUPE_GAS_RWD_WITH_SUNROOF' },
-  'COUPE_GAS_WITHOUT_SUNROOF':     { [RWD]: 'COUPE_GAS_RWD_WITHOUT_SUNROOF' },
-  'COUPE_GAS_RWD_WITH_SUNROOF':    { 'xDrive AWD': 'COUPE_GAS_WITH_SUNROOF' },
-  'COUPE_GAS_RWD_WITHOUT_SUNROOF': { 'xDrive AWD': 'COUPE_GAS_WITHOUT_SUNROOF' },
-};
+// Tahrik degisirse ilanin gitmesi gereken kategori — tablo config'te (drivetrainRoutes;
+// anahtarlar tahrik tipi degerleridir: 'RWD' / 'xDrive AWD').
+const ROUTE = LISTING_FILES.drivetrainRoutes;
 
 const isDry = process.argv.includes('--dry') || process.argv.includes('--dry-run');
 

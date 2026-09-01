@@ -13,15 +13,18 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
 2. **Chrome'da yeni sekmede ac.** `mcp__claude-in-chrome__tabs_create_mcp` ile URL'yi yeni sekmede ac. Sayfa yuklenmesini bekle.
 3. **Sayfa 1'i tara.** `mcp__claude-in-chrome__javascript_tool` ile sayfadaki ilan kartlarini topla. Kartlar `data-testid` degeri `/^(top|base|tic)-result-listing-\d+$/` ile eslesen container'lardir (`top-` = ust/one cikan, `base-` = normal, `tic-` = ek slot). Her container icin:
    - `id`: container icindeki `a[href*="id="]` (veya `[data-testid$="-link"]`) href'inden `/[?&]id=(\d+)/`. Bulunamazsa kart atlanir. **Not:** Chrome arac ciktisi ham href/URL string'lerini "[BLOCKED: Cookie/query string data]" diye gizler; bu yuzden numeric id'yi JS *icinde* cikar ve geri sadece onu dondur, URL'yi disarida `https://suchen.mobile.de/fahrzeuge/details.html?id=<id>` olarak kur.
+   - **Ciktiyi TEK PARCA dondurme.** javascript_tool donusu ~1000 karakterde `[TRUNCATED]` ile kesilir; 24 kartlik JSON array'in yarisi sessizce kaybolur. Toplama JS'i `window.__items`'a yazsin, donus SADECE sayi olsun; sonra boru-ayracli satirlari 8'erli parcalar halinde oku. Tam recete: `.claude/skills/bayi-tara/chrome-liste-cikarma.md` (ortak dosya — buraya kopyalanmaz).
    - `title`: `[data-testid="listing-title-card-view"]` (fallback `[data-testid$="-title"]`) metni.
    - `subTitle`: `[data-testid="listing-details-attributes"]` metni (km / ilk tescil / kW / yakit / "Kazasızlık"/"Onarılmış kaza hasarı" gibi). **Filtreye mutlaka gonder** — body-style ve durum sinyali burada.
    - `price`: `[data-testid="main-price-label"]` (fallback `[data-testid="price-label"]`) metni.
    - `sponsored`: container icinde `[data-testid="sponsored-badge"]` varsa `true`.
    - Sayfa icinde tekrarli ID'leri ele. **Sayfalar arasi da dedupe et:** ayni ilan hem sponsorlu slot (1. sayfa ustu) hem de dogal siralama konumunda (sonraki sayfa) gorunebilir; ID birden cok sayfada cikarsa **sponsorsuz (gercek) gorunumu tercih et** (`sponsored = tum gorunumler sponsorluysa true`).
-4. **Filtreyi calistir.** Topladigin diziyi JSON olarak `node scripts/filter-listings.js` komutuna stdin uzerinden ver:
+4. **Filtreyi calistir.** Topladigin satirlari scratchpad'e yaz, node ile `{items:[...]}` JSON'ina cevir ve DOSYADAN ver (uzun icerikte `echo '...'` tirnak kacisi sorunu cikarir):
    ```bash
-   echo '{"items":[...]}' | node scripts/filter-listings.js
+   node tojson.js "$SP/p1.txt" > "$SP/in.json"
+   node scripts/filter-listings.js < "$SP/in.json" > "$SP/out.json"
    ```
+   Sayfalar arasi dedupe'u (ayni ID sponsorlu + sponsorsuz gorunum) bu donusturucude yap: `sponsored = tum gorunumler sponsorluysa true`.
    Donusta `{ kept, skipped }` alacaksin.
    - `skipped[i].reason`: `Sponsorlu` / `GranCoupe` / `Cabrio`.
    - `kept[i].status`: `existing` (mobileDeId `src/data/listings/**` icinde zaten var) veya `new`.
@@ -48,13 +51,14 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
    | # | ID | Durum | Baslik | Fiyat | Link |
 
    - **Durum** sutunu: `new` ise `🆕 new`, `existing` ise `✅ <existingListingId> (<existingIn>)` (orn. `✅ C36 (COUPE_GAS_WITH_SUNROOF)`).
+   - **`existingListingId` her zaman `<BUYUK HARF onek><sayi>` olmali** (C36, W2). `id=445587983` gibi bir sey gorursen bu rapor kusuru DEGIL, agactaki BOZUK KAYITTIR — `npm run lint:data` artik bunu hata veriyor (`scripts/lib/listing-id.js` → `isValidListingId`). Kayda dogru C-serisi ID ver, dosyayi `<listingId>.json` olarak yeniden adlandir, `npm run format:data` calistir. (2026-08-20'de 18 legacy kayit bu sekilde onarildi: C1033-C1050.)
    - Tablonun altinda atlanan kalemleri kisa ozetle: kac sponsorlu, kac GC, kac Cabrio.
    - Ayrica kept icindeki existing/new dagilimini, kac sayfa gezildigini, durdurma nedenini ve adim 7'deki Apify import sonucunu da rapor et (orn. `Sayfa 1-3 gezildi, 12 yeni + 4 existing — 12 yeni ID Apify ile import edildi`).
    - Rapor BIRLESIKTIR: altina adim 9 (refresh) ozeti ve adim 10 (bayi taramasi) tablosu da eklenir — tek mesajda tum dongu gorunur.
 9. **Stale ilanlari da yenile (refresh, 2 gun esigi).** Tarama + import bittikten sonra bu adim ATLANMAZ — `refresh` skill'inin (`.claude/skills/refresh/SKILL.md`) TAM akisini, gun esigini **2** yaparak calistir:
    1. `npm run refresh -- 2` (Bash). Ciktida `403` / "Detected a session error" / "veri bulunamadi" / "Batch N hata verdi" basarisizlik sinyalidir.
    2. `node scripts/refresh-stale.js --list 2` ile hala stale kalan (= 403 yiyip cekilemeyen) `mobileDeId`'leri bul. Bos ise bu adim biter, dogrudan rapora gec.
-   3. Her basarisiz ID icin `src/data/listings/COUPE_GAS_WITH_SUNROOF/` klasorundeki arac dosyasindan (`grep -rl <id>`) `listingUrl`'i bul, Chrome'da `navigate` + `get_page_text` ile ac: sayfa "Bu arac mevcut degil" / bos donuyorsa **kayip/satilmis**, ilan icerigi (fiyat, km) doluysa **gecerli** (dokunma).
+   3. Her basarisiz ID icin `src/data/listings/COUPE_GAS_WITH_SUNROOF/` klasorundeki arac dosyasindan (`grep -rl <id>`) `listingUrl`'i bul, Chrome'da `navigate` + `get_page_text` ile ac: ilan icerigi (fiyat, km) doluysa **gecerli** (dokunma). Sayfa "Bu arac mevcut degil" / bos donuyorsa **HEMEN kayip sayma — CIFT DOGRULAMA ZORUNLU** (C566 vakasi: gec yuklenen sayfa yuzunden canli ilan yanlislikla SOLD'a tasindi): 3-5 sn bekle, sayfayi YENIDEN ac ve tekrar oku; yalnizca ikinci okuma da bos donerse **kayip/satilmis** say.
    4. Kayip tespit edilen ID'ler icin `npm run move:sell -- <mobileDeId>` calistir.
    - **Onay istisnasi:** `refresh` skill'inin manuel calistirilmasinda birden fazla kayip ilan varsa tasimadan once kullaniciya onay sorulur; **bu otomatik loop icinde onay beklenemez** (kimse izlemiyor olabilir) — bu yuzden burada kayip ilanlar dogrudan `move:sell` ile tasinir, onay istenmez. Tasinan her ilan raporda acikca listelenir ki kullanici sonradan gozden gecirebilsin.
    - Rapora ekle: kac ilan stale bulundu, kac tanesi basariyla yenilendi, kac tanesi 403 yedi, 403 yiyenlerden kaci gecerli/kayip, `move:sell` ile SOLD'a tasinanlarin `listingId (mobileDeId)` listesi.
@@ -79,3 +83,27 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
 - mobile.de bazen cookie / GDPR banner gosterebilir. Banner ilan kartlarini engelliyorsa konsol uzerinden kapat veya `console.log` ile durumu raporla; tekrar tekrar tiklayarak rabbit-hole'a girme — 2-3 denemeden sonra kullaniciya sor.
 - Eger filter-listings.js cagrisi kart sayisindan farkli bir toplam donerse, kart toplama JS'inde sponsored bayragini dogru cektigini dogrula.
 - **Gövde tipi tarama aninda belirlenemez.** mobile.de arama kartlari hepsine sadece "BMW M440" yazar (sasi kodu / "Gran Coupe" / "Cabrio" govde ipucu yok). Bu yuzden `filter-listings.js` cogu Gran Coupé/Cabrio'yu tarama aninda ELEYEMEZ — COUPE sayip `kept`'e koyar; sadece basligin acikca GC/Cabrio dedigi nadir durumlarda eler. Gercek govde tipi ancak import'ta `parse-car-json` Apify `Category` alanini gorunce belirlenir ve dogru dosyaya (GRAN_COUPE / CABRIO / *_KAZALI / ...) filelanir. Yani "new" cikan ilanlarin onemli kismi aslinda GC/Cabrio olabilir; bunlar import edilince ayri GC/Cabrio dosyalarina gider, hedef Coupé dosyalarina karismaz. Buyuk taramalarda raporda bu dağilimı (kac Coupé / kac GC / kac Cabrio import edildi) belirt.
+- **Apify `Category` tek basina govde kaniti DEGIL — `Model range`'e de bak.** C1126 vakasi (2026-08-28): ilan `Category: "Sports Car/Coupe"` derken `Model range: "4-er Gran Coupe"` diyordu; kaba kategori kazandigi icin bir Gran Coupé aylarca COUPE havuzunda durdu ve ancak bayi (UNTERBERGER) sayfasindaki `ANZAHL TÜREN 5 / ANZAHL SITZPLÄTZE 5` satiri sayesinde yakalandi. `body-style.js` artik **Kural 1b** ile model serisindeki acik "Gran Coupe"/"Cabrio" adini `Category`'nin ONUNE koyuyor. Bir aracin gövde tipinden supheleniyorsan sirasiyla: VIN tip kodu (`VIN_TYPE_CODES.json`) → baslik → **Model range** → Category. Kapi/koltuk sayisi 5 ise G22 Coupé olamaz.
+- **Kalkan ilan ancak 2 gunluk refresh turunda gorunur — "kacirdik" demeden once dump yasina bak (C40 vakasi, 2026-09-01).**
+  Tarama adimlari 1-8 SADECE `new` arar; "bildigim aktif ilan bugunku listede YOK" sinyali hic kullanilmiyor.
+  Ilanin kalktigini yalniz adim 9 (refresh) yakalar ve esik 2 gun: son dolu dump'i 31.08 12:09 olan C40
+  icin sira 02.09 12:09'da geliyordu, o yuzden 01.09 taramasi "stale yok" derken DOGRU calisiyordu.
+  Kullanici "bu neden kacti?" derse once `ls -t dump/<mobileDeId>_*.json | head -1` ile son dump'in
+  YASINA bak; 2 gunden gencse gecikme tasarim geregidir, bug degil. Elle teyit icin:
+  `node scripts/apify-fetch-car.js <id>` → dump 3 anahtarli `"Listing does not exists anymore"` ise
+  `node scripts/parse-car-json.js <id>` otomatik SOLD'a tasir (403'te ise hic dump yazilmaz, karismaz).
+  Not: `refresh-stale.js` ozetinde dead dump da "yenilendi" sayilir — rapor yazarken bunu ayirt et.
+- **Re-list uyanikligi: ayni arac kapatilip yeni ID ile aciliyor (C729/C1145 vakasi, 2026-09-01).**
+  Bayi fiyati indirdigi gun eski ilani kapatip ayni araci yeni mobileDeId ile yeniden yayinlar; boylece
+  ilan yasi SIFIRLANIR ve arac "yeni ilan" gorunur (C729: 91 gun, €48.880→€46.450; ayni gun acilan
+  C1145: 0 gun, ayni slug/km/tescil/renk/satici). `parse-car-json` bunu `possibleTwinOf` ile isaretler
+  ama BIRLESTIRMEZ. Dogru islem: **kok kayit KORUNUR** — eski kaydin `mobileDeId` + `listingUrl` +
+  `listingDates` alanlari yeni ilanla guncellenir, audit'e `Yeniden İlan (Re-list)` kaydi (eski→yeni ID,
+  fiyat gecmisi, Chrome ile "eski ilan olu" teyidi) yazilir, yeni kayit dosyasi SILINIR.
+  Yas korumasi kodda: `src/utils/listingAge.js` → `listingCreatedAt` = min(createdTime, ilk
+  "İlan Yayınlandı/İlan Eklendi" audit'i) — createdTime sifirlansa bile gercek yas kalir
+  (regresyon testi `src/utils/listingAge.test.js`).
+- **Skor ve tablo ayni gun sayisini gostermeli (C45 vakasi, 2026-09-01).** Satilan ilanda yas sayaci
+  SATIS tarihinde durur (`carListingAgeDays`); iki ayri formul yazilirsa tablo "10 gunde satildi",
+  skor tooltip'i "181 gundur yayinda −20" der. Yas/gun hesabi TEK kaynak: `src/utils/listingAge.js`.
+- **Bilinmeyen VIN tip kodu gorursen tabloya ekle.** `VIN_TYPE_CODES.json` yalnizca karsilasilan kodlari icerir; eksik kod sessizce "Kural 0 yok" demektir. C1126'nin VIN'i `WBA11AW0X0FR98053` idi ve `11AW` tabloda yoktu → `11AW = M440i xDrive Gran Coupé (G26)` olarak eklendi (kanit: 5 kapi/5 koltuk + Model range).

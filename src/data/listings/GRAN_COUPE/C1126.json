@@ -1,0 +1,143 @@
+{
+  "listingId": "C1126",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-shz-led-memory-sitze-m%C3%BChldorf-am-inn/42334791890048.html",
+  "dealerListingUrl": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-shz-led-memory-sitze-3/",
+  "mobileDeId": "42334791890048",
+  "vin": "WBA11AW0X0FR98053",
+  "possibleTwinOf": null,
+  "exteriorColorName": "BMW Individual Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Imitation leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 32 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 48990,
+  "mileageKm": 55225,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    10
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "10/2026",
+  "sellerTypeOrName": "Autohaus Unterberger GmbH ★2.9",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-84453 Mühldorf am Inn",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "no",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "no",
+    "KGNL": "no",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "yes",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "no",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "no",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S5DNA": {
+      "mobile.de": "yes",
+      "UNTERBERGER": "no"
+    },
+    "S6U3A": {
+      "mobile.de": "yes",
+      "UNTERBERGER": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-08-28T06:01:25.000Z",
+    "modifiedTime": "2026-08-28T06:01:36.000Z",
+    "renewedTime": "2026-08-28T06:01:25.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-28T06:01:25.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-28T07:03:00.525Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "UNTERBERGER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-shz-led-memory-sitze-3/"
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA11AW0X0FR98053"
+        },
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S5DNA": {
+              "mobile.de": "yes",
+              "UNTERBERGER": "no"
+            },
+            "S6U3A": {
+              "mobile.de": "yes",
+              "UNTERBERGER": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-28T13:32:39.974Z"
+    },
+    {
+      "action": "Dosya Taşıma: COUPE_GAS_WITHOUT_SUNROOF → GRAN_COUPE",
+      "detail": "Kural 1b — model serisi \"4-er Gran Coupe\"",
+      "changes": null,
+      "auditDate": "2026-08-28T13:32:39.975Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

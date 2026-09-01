@@ -17,10 +17,10 @@ export const isColorNotFav = (name) => colorMeta(name)?.preference === 'disliked
 export const isInteriorFav = (name) => interiorMeta(name)?.preference === 'favorite';
 export const isInteriorNotFav = (name) => interiorMeta(name)?.preference === 'disliked';
 
-// Bir aracın dış VEYA iç rengi sevilmeyen mi (beyaz dış / kırmızı-kahve koltuk).
-export const hasDislikedColor = (car) =>
-  colorMeta(car.exteriorColorName)?.preference === 'disliked' ||
-  interiorMeta(car.interiorColorName)?.preference === 'disliked';
+// Dış ve iç renk beğenisi AYRI predicate — filtre çubuğunda iki bağımsız anahtar
+// (dış: beyaz vb., iç: kırmızı/kahve koltuk) bunları kullanır.
+export const hasDislikedExterior = (car) => isColorNotFav(car.exteriorColorName);
+export const hasDislikedInterior = (car) => isInteriorNotFav(car.interiorColorName);
 
 // Legend/liste için: bir kind+preference'ın temsili renk adları (hex-benzersiz).
 // Tek kaynak COLORS.json → gösterim ile veri asla drift etmez.

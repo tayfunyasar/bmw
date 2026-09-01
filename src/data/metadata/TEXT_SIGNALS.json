@@ -1,0 +1,18 @@
+{
+  "_comment": "Ilan METNINDEN sinyal cikaran TUM kelime tablolari — tek kaynak. Kodda gomulu regex/dizi YOK; yeni bir dil/yazim varyanti cikinca SADECE bu dosya guncellenir (skill dosyasina kalip YAZILMAZ). Eslesme kurali: kelime icindeki BOSLUK, metinde opsiyonel bosluk/tire demektir (\"x drive\" -> xDrive / x-drive / x drive). Buyuk-kucuk harf onemsiz.",
+  "drivetrain": {
+    "awdWords": ["x drive", "allrad", "vierwielaandrijving"],
+    "rwdWords": ["heckantrieb", "hinterradantrieb", "achterwielaandrijving"],
+    "rwdTitleTokens": ["RWD"]
+  },
+  "damage": {
+    "words": ["vorschaden", "schadeverleden", "schadehistorie", "ongeval", "schadeauto"],
+    "negationWords": ["nein", "kein", "keine", "keinen", "keinem", "keiner", "ohne", "unfallfrei", "no", "geen", "zonder", "schadevrij", "accident-free", "accident free"],
+    "majorSellers": ["crash cars"]
+  },
+  "vat": {
+    "_comment": "Marj araci (KDV indirilemez): NL \"BTW verrekenbaar: Nee\" / \"Margeauto\", DE \"differenzbesteuert\" / \"§25a\". Bulunursa kayda standart not dusulur.",
+    "marginWords": ["btw verrekenbaar: nee", "btw verrekenbaar nee", "margeauto", "marge auto", "differenzbesteuert", "differenzbesteuerung", "§ 25a", "25a ustg"],
+    "marginNote": "💶 Marj aracı (KDV indirilemez) — ilan metnindeki KDV beyanından türetildi"
+  }
+}

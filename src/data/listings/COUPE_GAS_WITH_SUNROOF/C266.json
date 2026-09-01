@@ -78,8 +78,8 @@
   },
   "listingDates": {
     "createdTime": "2026-05-18T09:18:47.000Z",
-    "modifiedTime": "2026-08-14T04:09:28.000Z",
-    "renewedTime": "2026-08-06T01:00:21.000Z"
+    "modifiedTime": "2026-08-26T01:41:54.000Z",
+    "renewedTime": "2026-08-26T01:00:10.000Z"
   },
   "auditHistory": [
     {
@@ -167,6 +167,12 @@
         }
       },
       "auditDate": "2026-08-16T07:03:35.737Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-26T01:00:10.000Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

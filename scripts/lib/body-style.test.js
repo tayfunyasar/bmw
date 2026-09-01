@@ -4,6 +4,8 @@ import {
   isCabrio,
   isGranCoupe,
   classifyBodyStyle,
+  determineBodyStyle,
+  bodyStyleFromHeading,
   rawCarToTextObj,
   rawCarApifyCategory,
 } from './body-style.js';
@@ -88,16 +90,14 @@ test('classifyBodyStyle — Cabrio wins over GC if both signals present', () => 
   assert.equal(classifyBodyStyle({ title: 'BMW M440i Gran Coupé Cabrio' }), 'CABRIO');
 });
 
-test('classifyBodyStyle — Apify Category overrides text signals', () => {
-  // Convertible category beats a misleading "Coupe" in text.
+test('classifyBodyStyle — acik guncel baslik Apify Category alanini ezer', () => {
   assert.equal(
     classifyBodyStyle({ title: 'BMW M440i Coupe' }, { apifyCategory: 'Convertible' }),
-    'CABRIO'
+    'COUPE'
   );
-  // Saloon/Limousine = Gran Coupé, even with "Coupe" text.
   assert.equal(
-    classifyBodyStyle({ title: 'BMW M440i Coupe' }, { apifyCategory: 'Saloon' }),
-    'GRAN_COUPE'
+    classifyBodyStyle({ title: 'BMW M440i Cabrio' }, { apifyCategory: 'Sports Car/Coupe' }),
+    'CABRIO'
   );
 });
 
@@ -143,6 +143,38 @@ test('classifyBodyStyle — chassis-only signals when no Apify category', () => 
   assert.equal(classifyBodyStyle({ modelRange: 'G22' }), 'COUPE');
 });
 
+test('classifyBodyStyle — VIN fabrika kimligi tum celiskili ilan alanlarini ezer (C1101)', () => {
+  const input = { title: 'BMW M440i Coupe xD M Sport Pro', modelRange: 'G22' };
+  const opts = { apifyCategory: 'Sports Car/Coupe', vin: 'WBA61AT090CN76352' };
+  assert.equal(classifyBodyStyle(input, opts), 'CABRIO');
+  const result = determineBodyStyle(input, opts);
+  assert.equal(result.certain, true);
+  assert.match(result.reason, /61AT.*G23/);
+});
+
+test('classifyBodyStyle — Coupe VIN yanlis Cabrio basligini ezer', () => {
+  assert.equal(
+    classifyBodyStyle(
+      { title: 'BMW M440i Cabrio', modelRange: 'G23' },
+      { apifyCategory: 'Convertible', vin: 'WBA11AR010TEST1234' }
+    ),
+    'COUPE'
+  );
+});
+
+test('bodyStyleFromHeading — Gran Coupe normal Coupe sayilmaz', () => {
+  assert.equal(bodyStyleFromHeading('BMW M440i Gran Coupé'), 'GRAN_COUPE');
+  assert.equal(bodyStyleFromHeading('BMW M440i Coupé'), 'COUPE');
+  assert.equal(bodyStyleFromHeading('BMW M440i Cabrio'), 'CABRIO');
+});
+
+test('classifyBodyStyle — aciklama tek basina govde tasimaz', () => {
+  assert.equal(
+    classifyBodyStyle({ description: 'Open-Air Paket, Windschott, Nackenwärmer' }),
+    'COUPE'
+  );
+});
+
 test('rawCarToTextObj — pulls Model range from attributes', () => {
   const raw = {
     title: 'T',
@@ -176,4 +208,42 @@ test('rawCarApifyCategory — extracts Category attribute', () => {
     'Sports Car/Coupe'
   );
   assert.equal(rawCarApifyCategory({}), '');
+});
+
+// C1126 vakasi (2026-08-28): mobile.de "Model range" = "4-er Gran Coupe" iken
+// "Category" = "Sports Car/Coupe" idi; kaba kategori kazandigi icin Gran Coupé
+// COUPE havuzuna dusmustu. Model serisi adi kategoriden daha spesifiktir.
+test('determineBodyStyle — Model range "Gran Coupe", Category "Sports Car/Coupe" ise GRAN_COUPE', () => {
+  const r = determineBodyStyle(
+    { title: 'BMW M440i xDrive SHZ LED Memory-Sitze', modelRange: '4-er Gran Coupe' },
+    { apifyCategory: 'Sports Car/Coupe' }
+  );
+  assert.equal(r.type, 'GRAN_COUPE');
+  assert.equal(r.certain, true);
+});
+
+test('determineBodyStyle — Model range Cabrio, Category "Sports Car/Coupe" ise CABRIO', () => {
+  assert.equal(
+    determineBodyStyle({ title: 'BMW M440i xDrive', modelRange: '4-er Cabrio' }, { apifyCategory: 'Sports Car/Coupe' }).type,
+    'CABRIO'
+  );
+});
+
+test('determineBodyStyle — Model range duz "4-er Coupe" ise COUPE kalir', () => {
+  assert.equal(
+    determineBodyStyle({ title: 'BMW M440i xDrive', modelRange: '4-er Coupe' }, { apifyCategory: 'Sports Car/Coupe' }).type,
+    'COUPE'
+  );
+});
+
+// VIN tip kodu 11AW = M440i xDrive Gran Coupé (G26) — C1126 vakasinda eklendi.
+// Kanit: Unterberger Steckbrief "ANZAHL TÜREN 5 / SITZPLÄTZE 5" + mobile.de
+// "Model range: 4-er Gran Coupe" (VIN WBA11AW0X0FR98053).
+test('determineBodyStyle — 11AW VIN tip kodu Coupe iddiasini ezer (GRAN_COUPE)', () => {
+  const r = determineBodyStyle(
+    { title: 'BMW M440i xDrive Coupé', modelRange: '4-er Coupe' },
+    { apifyCategory: 'Sports Car/Coupe', vin: 'WBA11AW0X0FR98053' }
+  );
+  assert.equal(r.type, 'GRAN_COUPE');
+  assert.equal(r.certain, true);
 });

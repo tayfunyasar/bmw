@@ -1,0 +1,156 @@
+{
+  "listingId": "C566",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-navi-leder-tempom-aktiv-glasd-sinzheim-bei-baden-baden/459690063.html",
+  "mobileDeId": "459690063",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "TANSANITBLAU II METALLIC",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
+  "basePriceEuro": 44960,
+  "mileageKm": 75137,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    11
+  ],
+  "numberOfPreviousOwners": "2",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "ahg Autohandelsgesellschaft mbH Baden-Baden ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-76547 Sinzheim bei Baden-Baden",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "yes",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "yes",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "no",
+    "S715A": "no",
+    "S2VLA": "no",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "yes",
+    "S5ACA": "yes",
+    "S6C4A": "no",
+    "S430A": "yes",
+    "S4AWA": "yes",
+    "S775A": "no",
+    "S493A": "no",
+    "S536A": "no",
+    "S2NHA": "no",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "yes",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "no",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-07-02T17:38:33.000Z",
+    "modifiedTime": "2026-08-31T03:42:44.000Z",
+    "renewedTime": "2026-08-04T01:01:33.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-02T17:38:33.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-07-02T17:38:33.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-07-03T17:41:52.883Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "COUPE_GAS_WITH_SUNROOF.json dosyasından SOLD olarak taşındı",
+      "changes": null,
+      "auditDate": "2026-07-08T11:48:30.596Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-04T01:01:33.000Z"
+    },
+    {
+      "action": "Satıldı İşareti Geri Alındı",
+      "detail": "Yanlış pozitif: mobile.de ilanı (459690063) Chrome ile doğrulandı — CANLI, güncel fiyat €44.960 (kayıtta €47.830). COUPE_GAS_WITH_SUNROOF_SOLD → COUPE_GAS_WITH_SUNROOF geri taşındı; muhtemel neden 08.07 refresh/403 akışında sayfanın boş sanılması.",
+      "changes": null,
+      "auditDate": "2026-08-19T20:15:36.845Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 47830,
+          "new": 44960
+        },
+        "mileageKm": {
+          "old": 12454,
+          "new": 75137
+        },
+        "exteriorColorName": {
+          "old": "BMW Individual Tansanitbl",
+          "new": "TANSANITBLAU II METALLIC"
+        },
+        "interiorColorName": {
+          "old": "Full leather, Other",
+          "new": "Full leather, Black"
+        }
+      },
+      "auditDate": "2026-08-19T20:15:46.727Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "sellerTypeOrName": {
+          "old": "ahg Autohandelsgesellschaft mbH ★4.8",
+          "new": "ahg Autohandelsgesellschaft mbH Baden-Baden ★4.8"
+        }
+      },
+      "auditDate": "2026-08-21T21:42:11.253Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

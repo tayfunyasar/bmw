@@ -14,7 +14,7 @@ Config tek kaynak: `src/data/metadata/DEALER_SITES.json` (idPrefix, detailUrlIdP
 1. **Arama URL'sini bul.** BOOKMARKS.json'da `title` alani site config'indeki `bookmarkTitlePrefix` ile baslayan kaydi oku.
 
 2. **Arama listesini tara (ana oturum).** `mcp__claude-in-chrome__navigate` ile ac (mevcut sekme kullanilabilir), `mcp__claude-in-chrome__javascript_tool` ile kartlari topla. Site skill'indeki selector ipuclarini kullan. Her kart icin en az: `id` (site-ici, detailUrlIdPattern capture'i), `path` (detay URL yolu), `subTitle` (govde/durum sinyali icin), `price`, `reg`.
-   - **Redaction notu:** Chrome cikti katmani ham URL/query string'leri "[BLOCKED]" diye gizleyebilir — ID'yi ve path'i JS ICINDE cikar, sadece onlari dondur.
+   - **Tarayici cikti mekanigi ORTAK dosyada:** `chrome-liste-cikarma.md` (bu skill dizininde) — kirpma (~1000 kr), redaksiyon, parcali okuma, kart container'i ata tirmanisi + uzunluk freni. Site skill'ine kopyalanmaz, oradan okunur.
    - Sayfalama: site skill'indeki mekanizmayla (buton/param) `pageCap`'e kadar; sayfada yeni kart cikmayinca dur.
 
 3. **Existing/new ayrimi.** Toplanan kartlari stdin ile filtreye ver — id alanini SADECE mobile.de numerik id'siyse doldur; site-ici ID'ler `url` uzerinden dealerKey'e gider:
@@ -22,6 +22,7 @@ Config tek kaynak: `src/data/metadata/DEALER_SITES.json` (idPrefix, detailUrlIdP
    echo '{"site":"<SITE>","items":[{"url":"<tam detay URL>","title":"...","subTitle":"...","price":"..."}]}' | node scripts/filter-listings.js
    ```
    `kept[].status === 'new'` olanlarin detayi acilir. `skipped` (GranCoupe/Cabrio) v1'de detaya ACILMAZ — rapor tablosunda sayilir. (Havuzun hedefi coupe; GC/Cabrio bayi kayitlari istenirse sonra acilir.)
+   - **Kapsam kurali (API kisa yollarinda kritik):** `filter-listings.js` govde/dedup eler, SAYISAL kapsami (km / yil / fiyat tavani) ELEMEZ — o kapsam BOOKMARK'ta tanimlidir. Sitenin kendi filtresini atlayan bir kisa yol kullandiysan (EULER/WELLER API'leri gibi) bookmark limitlerini **yerel olarak yeniden uygula**, yoksa kapsam disi arac "yeni" gorunur ve gereksiz import edilir. Yasanmis vaka: EULER API'sinde `km_max` token'i gecersiz oldugu icin 89.535 km'lik arac (bookmark ≤50K) "new" dondu — import EDILMEDI, raporda kapsam disi olarak not dusuldu. Kapsam disi biraktigin her kaydi raporda ACIKCA yaz (sessizce atma).
 
 4. **Detay sayfalarini SUBAGENT'larla paralel oku.** `new` URL'leri 3-5'erli gruplara bol; her grup icin TEK MESAJDA birden fazla `general-purpose` subagent baslat. Subagent prompt sablonu (pilotta dogrulandi):
 
@@ -60,6 +61,30 @@ Sira: **WELLER → TIMMERMANNS → EULER → AHG → BMW_DE → BMW_NL → UNTER
 - **Eleme + existing/new + normalize + route + ID uretimi = paylasilan modullerde.** Skill'e mantik yazma; CLI'lari cagir (mobilede-tara ile ayni ilke).
 - Cookie/GDPR banner: en gizlilik-dostu secenek; kabul GEREKIYORSA kullaniciya sor. 2-3 denemede gecilemiyorsa rapor et, rabbit-hole'a girme.
 - Bot duvari (Cloudflare/CAPTCHA) cikarsa o siteyi raporla ve ATLA — asma girisiminde bulunma.
-- Bayi Almancasi mobile.de'den farkli kaliplar kullanir (or. "Aktive Geschwindigkeitsregelung mit Stop & Go" = DAP cekirdegi). Eslesmeyen onemli donanim gorursen EQUIPMENT_RULES.json'a kalip ekle (S5AUA ornegindeki gibi) ve import'u tekrar calistir — guncelleme idempotenttir.
-- Bayi sayfalarinda collapsed "..." bolumleri olabilir — subagent notlarinda gecerse rapora tasi; donanim eksik kalmis olabilir.
+- **KURAL: dil kalibi/esik/liste SKILL'E YAZILMAZ, config'e yazilir.** Bir siteye ozgu yazim varyanti
+  bulursan onu skill notu yapma — tek kaynak JSON'a ekle: donanim `EQUIPMENT_RULES.json`,
+  tahrik/hasar/marj-KDV `TEXT_SIGNALS.json` (`drivetrain.awdWords|rwdWords`, `damage.words|negationWords|majorSellers`,
+  `vat.marginWords`), gövde `VIN_TYPE_CODES.json` + `body-style.js`. Karari KOD verir
+  (`drivetrain.js`, `route-listing.js`, `equipment-match.js`, `import-dealer.js`); subagent yalnizca
+  HAM METNI dogru alana tasir. Kalip eklerken regresyon testi zorunlu
+  (`text-signals.test.js` / `equipment-rules.test.js`). Skill'de kalip listesi gormek = drift borcu (2026-09-01
+  BMW_NL refactoru: Flemenkce kaliplar skill'den `TEXT_SIGNALS.json`'a tasindi).
+- Bayi Almancasi mobile.de'den farkli kaliplar kullanir. Eslesmeyen onemli donanim gorursen EQUIPMENT_RULES.json'a kalip ekle ve import'u tekrar calistir — guncelleme idempotenttir. **DIKKAT — paket parcasi ≠ paket:** bir PAKETIN alt ozelligini paketin kaniti sayan kalip YAZMA. Ornek vaka (2026-08-20 duzeltildi): "Aktive Geschwindigkeitsregelung mit Stop & Go" (= sadece ACC) S5AUA/DAP kaniti sayilmisti; 250 aracta sahte "Driving Assistant Professional: var" uretti. Kalip yalnizca donanimin ACIK ADINI eslestirmeli.
+- **Collapsed "..." bolumleri: donanim listesini almadan once GENISLET (tikla).** Genisletilemiyorsa liste EKSIKTIR: notes'a "donanim listesi eksik (collapsed)" yaz ve raporda belirt. Eksik listeden turetilen "yok" degerleri roota SAHTE equipmentConflicts yazdirir — C264 vakasi (2026-08-20): eksik WELLER listesi 10 sahte celiski uretti, canli sayfa tam listeyle hepsini curuttu. Bir kayitta cok sayida "mobile.de=yes / SITE=no" celiskisi gorursen once taramanin listeyi tam alip almadigindan suphelen.
 - VIN cogu sitede yazmaz; varsa MUTLAKA al (tahrik Kural 0 + dedup icin altin degerinde).
+- **Bayi hasar beyani kok kaydi KAZALI'ya tasir — merge tek basina YETMEZ.** `mergeTwinIntoRoot`
+  bayinin "Unfallvorschaden: Ja" beyanini kok kayda `dealerReportedDamage` olarak yazar, ama
+  `determineTargetFile` yalniz YENI kayitlar icin calistigi icin dosya temiz havuzda KALIYORDU.
+  2026-08-24 vakasi (C1080): BMW.de ilani Unfallvorschaden: Ja dedi, sinyal yazildi, dosya yine
+  COUPE_GAS_WITHOUT_SUNROOF'ta kaldi. Duzeltme: `import-dealer.js` merge sonrasi
+  `rerouteKazaliAfterMerge` (scripts/lib/move-listing.js) cagiriyor ve raporda `rerouted[]`
+  aliyorsun. Import ciktisinda `rerouted` GORURSEN raporda ACIKCA yaz.
+- **Subagent `properties.milage`'i sayi dondurebilir.** Bayi kayitlari bizim disimizda uretilir;
+  `parse-listing.js` artik hem `"43.541 km"` hem `43541` kabul eder (`String(...)` ile). Ayni
+  vakada import `replace is not a function` ile cokmustu — yeni bir alan sayi/string ikilemi
+  yasatirsa duzeltme parse katmaninda yapilir, subagent prompt'unda DEGIL.
+- **Ayni fiziksel arac 3 ilanda birden cikabilir** (mobile.de x2 + bayi sitesi). Ayirt edici anahtar
+  **Angebotsnummer**: BMW.de ile bayinin kendi sitesi ayni teklif numarasini tasir, biri VIN'i
+  digeri hasar beyanini verir. `findTwin` ilk eslesen kaydi doner (kategori alfabetik sirasi) —
+  yani ikizlerden HANGISINE merge oldugu keyfidir. Merge raporundaki `listingId`'yi gozle dogrula;
+  ikiz cift kaldiysa ikisini de dogru kategoriye tasi ve raporda cift olarak listele.

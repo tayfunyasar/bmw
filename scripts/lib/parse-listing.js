@@ -40,6 +40,11 @@ export function resolveExteriorColor(props) {
 // boylece guncellemelerde de calisir (C692 regresyonu: VIN'li kaydi dump'taki
 // sinyalsiz veri xDrive varsayimina geri cevirmemeli).
 export function parseRawToListing(raw, { listingId, mobileDeId = null, source = 'mobile.de', vin = null } = {}) {
+  const importedAt = new Date().toISOString();
+  // mobile.de gercek yayin tarihini saglar. Bayi kaynaklari bu alani cogu zaman
+  // vermedigi icin ilk sisteme giris ani yayin tarihi alt siniri olarak kaydedilir;
+  // boylece bayi ilanlarinda createdTime hicbir zaman null kalmaz.
+  const createdTime = raw.createdTime || (source !== 'mobile.de' ? importedAt : null);
   const features = raw.features || [];
   const description = raw.description || "";
   const props = raw.properties || {};
@@ -99,7 +104,7 @@ export function parseRawToListing(raw, { listingId, mobileDeId = null, source = 
     drivetrainReason: drivetrain.reason,
     sunroofReason,
     basePriceEuro: raw.price?.amount,
-    mileageKm: parseInt((props.milage || "0").replace(/[^0-9]/g, "")),
+    mileageKm: parseInt(String(props.milage ?? "0").replace(/[^0-9]/g, "")),
     firstRegistrationYearAndMonth: firstRegistrationYearAndMonth,
     numberOfPreviousOwners: props.numberOfOwners || "?",
     warranty: {
@@ -121,22 +126,22 @@ export function parseRawToListing(raw, { listingId, mobileDeId = null, source = 
     listingAdditionalFeatures: [],
     equipmentFeatures: equipmentFeatures,
     listingDates: {
-      createdTime: raw.createdTime || null,
+      createdTime,
       modifiedTime: raw.modifiedTime || null,
       renewedTime: raw.renewedTime || null
     },
     auditHistory: [
-      ...(raw.createdTime ? [{
+      ...(createdTime ? [{
         action: `İlan Yayınlandı (${source})`,
         detail: null,
         changes: null,
-        auditDate: raw.createdTime
+        auditDate: createdTime
       }] : []),
       {
         action: "İlan Eklendi",
         detail: "Sistem tarafından kayıt altına alındı",
         changes: null,
-        auditDate: new Date().toISOString()
+        auditDate: importedAt
       },
       ...(raw.renewedTime && raw.renewedTime !== raw.createdTime ? [{
         action: `İlan Yenilendi (${source})`,
@@ -186,6 +191,20 @@ export function applyUpdatesAndGetChanges(existingCar, newCar) {
           hasChanges = true;
       }
   });
+
+  // KM SICRAMA BEKCISI: tek guncellemede km >%50 degistiyse buyuk olasilikla ya
+  // bastaki veri hataliydi ya da ayni ilan ID'sinde arac degisti (C566 vakasi:
+  // 12.454 → 75.137 km — bayi ilani duzeltti, arac "firsat" degilmis). Veri yine
+  // guncellenir (kaynak neyse o) ama karta KALICI uyari dusulur — insan teyidi ister.
+  const kmCh = changes.mileageKm;
+  if (kmCh && kmCh.old > 0 && kmCh.new > 0 && Math.abs(kmCh.new - kmCh.old) / kmCh.old > 0.5) {
+      existingCar.listingDescriptionNotes = existingCar.listingDescriptionNotes || [];
+      if (!existingCar.listingDescriptionNotes.some(n => String(n).startsWith('⚠️ KM sıçraması'))) {
+          existingCar.listingDescriptionNotes.push(
+              `⚠️ KM sıçraması: ${kmCh.old.toLocaleString('de-DE')} → ${kmCh.new.toLocaleString('de-DE')} km tek güncellemede — veri düzeltmesi ya da aynı ilanda araç değişimi olabilir, teyit et`
+          );
+      }
+  }
 
   // equipmentFeatures — overrideFeatures'da tanimli olanlar ASLA otomatik guncellenmez
   if (newCar.equipmentFeatures && existingCar.equipmentFeatures) {

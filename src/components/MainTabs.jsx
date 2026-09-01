@@ -12,6 +12,7 @@ import { CarsWithRecentSubTabs } from './CarsWithRecentSubTabs';
 import { TabLabel } from './common/TabLabel';
 import { computeSuggestedIds } from '../utils/recommendations';
 import { YearlyComparisonTab } from './tabs/YearlyComparisonTab';
+import { OwnershipAnalysisTab } from './tabs/OwnershipAnalysisTab';
 import { RulesTab } from './tabs/RulesTab';
 import { BookmarksTab } from './tabs/BookmarksTab';
 import { NotesTab } from './tabs/NotesTab';
@@ -26,7 +27,7 @@ const SORTERS = {
   score: (a, b) => (b.totalScore || 0) - (a.totalScore || 0),
 };
 
-export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 0, kmMax = 0, lciOnly = false, twoStarSure = false, showKazali = true }) => {
+export const MainTabs = ({ showDislikedExt = false, showDislikedInt = false, sortKey = 'price', budgetMax = 0, kmMax = 0, lciOnly = false, twoStarSure = false, selectedCategories = [], kazaliSeverity = 'minor' }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentTab = location.pathname.replace('/', '') || 'all-adjusted';
@@ -34,10 +35,14 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
   // Filtreler (carFilters — TEK kaynak: renk/km/bütçe/lci) + seçilen sıralama; tüm ana havuzlara
   // tek noktadan. useCallback: kimliği yalnızca gerçek girdileri değişince yenilenir — freeze
   // toggle gibi ilgisiz bir render bunu etkilemez, visibleAll/yearlyArranged yeniden hesaplanmaz.
+  // Kategori dizisi bağımlılıkta string'e indirgenir — her render'da yeni array referansı
+  // useCallback'i boşuna kırmasın.
+  const categoriesKey = selectedCategories.join(',');
   const arrange = useCallback((list) => {
-    const r = sortByTotalCost(list).filter(c => carMatchesFilters(c, { showDisliked, kmMax, budgetMax, lciOnly, twoStarSure, showKazali }));
+    const categories = new Set(categoriesKey.split(',').filter(Boolean));
+    const r = sortByTotalCost(list).filter(c => carMatchesFilters(c, { showDislikedExt, showDislikedInt, kmMax, budgetMax, lciOnly, twoStarSure, categories, kazaliSeverity }));
     return sortKey === 'price' ? r : [...r].sort(SORTERS[sortKey] || SORTERS.price);
-  }, [showDisliked, budgetMax, kmMax, lciOnly, twoStarSure, showKazali, sortKey]);
+  }, [showDislikedExt, showDislikedInt, budgetMax, kmMax, lciOnly, twoStarSure, categoriesKey, kazaliSeverity, sortKey]);
   const visibleAll = useMemo(() => arrange(allByTotalCost), [arrange]);
   const yearlyArranged = useMemo(() => {
     const map = {};
@@ -112,6 +117,8 @@ export const MainTabs = ({ showDisliked = false, sortKey = 'price', budgetMax = 
           children: <CarsWithRecentSubTabs cars={suggestedCars} recentPool={visibleAll} baseLabel="Önerilenler" titlePrefix="🎯 Önerilenler" emptyMessage="Önerilen araç yok." /> },
         { key: 'all-adjusted', label: <TabLabel icon="💰" count={visibleAll.length}>Toplam maliyet</TabLabel>,
           children: <CarTable cars={visibleAll} title="💰 Tüm Sunroof'lu Araçlar — Toplam Maliyet (Artan)" winningCarIndex={0} /> },
+        { key: 'ownership', label: <TabLabel icon="📉">15 Ay Sahiplik</TabLabel>,
+          children: <OwnershipAnalysisTab candidates={visibleAll} referencePool={allByTotalCost} /> },
         { key: 'frozen', label: <FrozenTabLabel allCarsById={allCarsById} />, children: <FrozenTab allCarsById={allCarsById} /> },
       ],
     },

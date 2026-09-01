@@ -6,12 +6,12 @@
   "possibleTwinOf": null,
   "exteriorColorName": "BLACK SAPPHIRE METALLIC",
   "exteriorPaintLabel": null,
-  "interiorColorName": "Full leather, Black",
+  "interiorColorName": "Full leather, Cognac",
   "drivetrainType": "xDrive AWD",
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
   "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "basePriceEuro": 65240,
+  "basePriceEuro": 64590,
   "mileageKm": 15600,
   "firstRegistrationYearAndMonth": [
     2025,
@@ -38,7 +38,7 @@
   "equipmentFeatures": {
     "S403A": "yes",
     "S5AZA": "no",
-    "S5AUA": "yes",
+    "S5AUA": "no",
     "S688A": "yes",
     "S2T4A": "unknown",
     "S610A": "yes",
@@ -76,8 +76,14 @@
   },
   "listingDates": {
     "createdTime": "2026-07-31T08:35:34.000Z",
-    "modifiedTime": "2026-08-17T09:15:36.000Z",
+    "modifiedTime": "2026-08-28T11:14:00.000Z",
     "renewedTime": "2026-07-31T08:35:34.000Z"
+  },
+  "overrideFeatures": {
+    "interiorColorName": {
+      "value": "Full leather, Cognac",
+      "reason": "Kullanıcı teyidi: koltuklar açık kahverengi (ilan verisi Black diyordu)"
+    }
   },
   "auditHistory": [
     {
@@ -130,6 +136,39 @@
         }
       },
       "auditDate": "2026-08-18T12:49:36.565Z"
+    },
+    {
+      "action": "Manuel Override",
+      "detail": "İç renk kullanıcı teyidiyle düzeltildi: koltuklar açık kahverengi (cognac)",
+      "changes": {
+        "interiorColorName": {
+          "old": "Full leather, Black",
+          "new": "Full leather, Cognac"
+        }
+      },
+      "auditDate": "2026-08-19T21:53:05.754Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 65240,
+          "new": 64740
+        }
+      },
+      "auditDate": "2026-08-24T18:18:20.300Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 64740,
+          "new": 64590
+        }
+      },
+      "auditDate": "2026-08-29T08:03:41.584Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

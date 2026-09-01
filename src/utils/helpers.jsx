@@ -73,3 +73,20 @@ export const getCarPublishedDate = (car) => {
   const raw = car.listingDates?.createdTime || published?.auditDate;
   return raw ? new Date(raw) : null;
 };
+
+// Kayittaki TUM bayi linkleri (birincil dealerListingUrl + ek dealerListingUrls).
+// Merge edilen araclarda (mobile.de kanonik + bayi ikizi) UI ana linkin ALTINDA
+// bunlari da gosterir — her iki ilan da ziyaret edilebilir. Tek kaynak:
+// scripts/lib/existing-index.js'teki dealerUrlsOf ile ayni kural (o Node-only, bu UI).
+export const dealerUrlsOf = (car) => {
+  const out = [];
+  if (car?.dealerListingUrl) out.push(car.dealerListingUrl);
+  for (const u of car?.dealerListingUrls || []) if (u && !out.includes(u)) out.push(u);
+  return out;
+};
+
+// Link etiketi: ham alan adi (or. occasions.bmw.nl, wellergruppe.de) — eslestirme
+// tablosu gerekmez, hangi siteye gittigin acikca gorunur.
+export const hostnameOf = (url) => {
+  try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return String(url); }
+};

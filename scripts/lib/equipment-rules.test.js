@@ -195,6 +195,28 @@ test('matchEquipmentFeatures — full "Driving Assistant Professional" phrase st
   assert.equal(r.S5AUA, 'yes');
 });
 
+// --- WELLER kisaltmasi → KGNL (gercek EQUIPMENT_RULES.json) ---
+// C264 (455957164) gercek vakasi: WELLER'in DMS'i koltugu "Sitze Teilleder schw./Kon. bl."
+// diye kisaltiyor; "Alcantara" kelimesi gecmedigi icin KGNL yanlislikla "no" oluyordu.
+// BMW.de resmi kaydi ayni araci "Alcantara-/Sensatec-Kombination Schwarz/
+// Kontraststeppung Blau SW (FKGNL)" diye yaziyor + fotograflarda Alcantara panelleri var.
+
+test('matchEquipmentFeatures — WELLER kisaltmasi "Teilleder schw./Kon. bl." → KGNL yes (C264 vakasi)', () => {
+  const r = matchEquipmentFeatures(
+    { description: 'Interieur\n * Sitze Teilleder schw./Kon. bl.\n * M Lederlenkrad' },
+    EQUIPMENT_RULES
+  );
+  assert.equal(r.KGNL, 'yes');
+});
+
+test('matchEquipmentFeatures — acik "Alcantara-/Sensatec-Kombination" da KGNL yes kalir', () => {
+  const r = matchEquipmentFeatures(
+    { description: 'Sitze Teilleder Alcantara-/Sensatec-Kombination Schwarz/Kontraststeppung Blau' },
+    EQUIPMENT_RULES
+  );
+  assert.equal(r.KGNL, 'yes');
+});
+
 // --- Fabrika opsiyon kodu eslesmesi (oncelik 0) ---
 // C310 (457717928) gercek vakasi: bayi "Laserscheinwerfer (05AZ)" yazmis, kural kalibi
 // "Laserlicht" idi → eslesmedi, checkbox otoritesi devreye girip yanlislikla "no" dedi.
@@ -263,6 +285,17 @@ test('matchEquipmentFeatures — opsiyon kodu satir sonunda/basinda da eslesir',
   assert.equal(matchEquipmentFeatures({ description: 'Schiebedach 0403\nWeiteres' }, rules).S403A, 'yes');
 });
 
+test('C1101 — Open-Air Paket tek basina S403A sunroof kaniti degildir', () => {
+  const description = [
+    'Open-Air Paket',
+    'Laserlicht 05AZ',
+    'Head-Up Display 0610',
+    'Harman-Kardon 0688',
+    'Sportdifferential 02T4',
+  ].join('\n');
+  assert.equal(matchEquipmentFeatures({ description }, EQUIPMENT_RULES).S403A, 'no');
+});
+
 // --- C310 vakasinda eklenen serbest-metin varyantlari ---
 
 test('matchEquipmentFeatures — "Adaptives Stoßdämpfungssystem" → S2VFA yes', () => {
@@ -316,4 +349,22 @@ test('explainEquipmentFeatures — her karar yolu gerekce uretir', () => {
   // matchEquipmentFeatures ayni statuleri dondurmeli (geri uyum)
   const flat = matchEquipmentFeatures({ features: rich }, EQUIPMENT_RULES);
   assert.equal(flat.S403A, 'no');
+});
+
+// --- WELLER API yazim varyantlari (C1101 vakasi, 2026-08-26) ---
+// WELLER'in Almanca donanim adlari mobile.de'den FARKLI yazilir; kalip eksikse
+// merge sahte "mobile.de=yes / WELLER=no" celiskisi uretir.
+
+test('EQUIPMENT_RULES — S459A WELLER yazimlarini yakalar (elektrikli koltuk + memory)', () => {
+  const desc = 'Fahrer-/Beifahrersitz elektrisch\nMemoryfunktion Fahrersitz';
+  assert.equal(matchEquipmentFeatures({ description: desc }, EQUIPMENT_RULES).S459A, 'yes');
+});
+
+test('EQUIPMENT_RULES — S524A "Lichtsensor" yazimini yakalar', () => {
+  assert.equal(matchEquipmentFeatures({ description: 'Lichtsensor' }, EQUIPMENT_RULES).S524A, 'yes');
+});
+
+test('EQUIPMENT_RULES — Warmeschutzverglasung S420A (Sonnenschutzverglasung) SAYILMAZ', () => {
+  // Isi yalitim cami farkli bir donanim; yanlis kalip eklenmedigini korur.
+  assert.notEqual(matchEquipmentFeatures({ description: 'Wärmeschutzverglasung' }, EQUIPMENT_RULES).S420A, 'yes');
 });

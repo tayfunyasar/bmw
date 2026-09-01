@@ -1,0 +1,146 @@
+{
+  "listingId": "C1086",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-pro-acc-rfk-hud-hifi-memory-bad-wiessee/41684195770176.html",
+  "dealerListingUrl": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-coupe-pro-acc-rfk-hud-hifi-memory",
+  "mobileDeId": "41684195770176",
+  "vin": "WBA11AR0X0CL32212",
+  "possibleTwinOf": "C1080",
+  "exteriorColorName": "BMW Individual Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 48 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 48890,
+  "mileageKm": 43550,
+  "firstRegistrationYearAndMonth": [
+    2022,
+    8
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "Autohaus Unterberger GmbH ★4.8",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 0,
+  "listingLocation": "🇩🇪 DE-83707 Bad Wiessee",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "⚠️ Muhtemel yeniden-listeleme ikizi: C1080 — tescil 2022/8 + ~43541km + ~€48890 eşleşiyor — aynı fiziksel araç olabilir (satıcı: \"Autohaus Unterberger GmbH ★4.8\")",
+    "⚠️ KAZALI olarak işaretlendi — BMW.de + Unterberger ayni teklif (Angebotsnummer 175651, VIN WBA11AR0X0CL32212) - BMW.de ilaninda Unfallvorschaden: Ja beyani; C1080 ile ayni fiziksel arac"
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "no",
+    "S5AUA": "yes",
+    "S688A": "no",
+    "S2T4A": "yes",
+    "S610A": "yes",
+    "S5DN_360": "no",
+    "KGNL": "yes",
+    "S322A": "no",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "no",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "no",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "no",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "equipmentConflicts": {
+    "S5DNA": {
+      "mobile.de": "yes",
+      "UNTERBERGER": "no"
+    },
+    "S524A": {
+      "mobile.de": "yes",
+      "UNTERBERGER": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-08-24T13:46:51.000Z",
+    "modifiedTime": "2026-08-24T13:46:52.000Z",
+    "renewedTime": "2026-08-24T13:46:51.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-24T13:46:51.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-24T18:17:34.985Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "UNTERBERGER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://at.unterberger.cc/fahrzeugboerse/bmw-m440i-xdrive-coupe-pro-acc-rfk-hud-hifi-memory"
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA11AR0X0CL32212"
+        },
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S5DNA": {
+              "mobile.de": "yes",
+              "UNTERBERGER": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "UNTERBERGER": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-24T18:33:12.951Z"
+    },
+    {
+      "action": "Kazalı İşaretlendi",
+      "detail": "COUPE_GAS_WITHOUT_SUNROOF dosyasından COUPE_GAS_WITH_SUNROOF_KAZALI dosyasına taşındı — BMW.de + Unterberger ayni teklif (Angebotsnummer 175651, VIN WBA11AR0X0CL32212) - BMW.de ilaninda Unfallvorschaden: Ja beyani; C1080 ile ayni fiziksel arac",
+      "changes": null,
+      "auditDate": "2026-08-24T18:33:20.511Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

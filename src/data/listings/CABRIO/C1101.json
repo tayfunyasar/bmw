@@ -1,0 +1,199 @@
+{
+  "listingId": "C1101",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-coupe-xd-m-sport-pro-pdc-laser-liveprof-bad-homburg/41885931759584.html",
+  "dealerListingUrl": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-592710382/",
+  "mobileDeId": "41885931759584",
+  "vin": "WBA61AT090CN76352",
+  "possibleTwinOf": null,
+  "exteriorColorName": "Dravitgrau",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Full leather",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 0 — VIN tip kodu \"61AT\" = M440i xDrive Cabrio (fabrika verisi, ilan metnini ezer)",
+  "sunroofReason": "S403A=no — Open-Air Paket sunroof kanıtı değildir; gerçek Schiebedach sinyali yok",
+  "basePriceEuro": 50890,
+  "mileageKm": 15329,
+  "firstRegistrationYearAndMonth": [
+    2023,
+    6
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "yes"
+  },
+  "service": {
+    "type": "unknown",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "WELLER Premium GmbH - BMW & MINI Vertragshändler ★4.4",
+  "modelGeneration": "LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 171,
+  "listingLocation": "🇩🇪 DE-61352 Bad Homburg",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [
+    "ℹ️ Gövde tipi VIN ile doğrulandı: 61AT = G23 M440i xDrive Cabrio; mobile.de ve WELLER Coupe alanları çelişkiliydi."
+  ],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "yes",
+    "S688A": "yes",
+    "S2T4A": "yes",
+    "S610A": "no",
+    "S5DN_360": "yes",
+    "KGNL": "no",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "yes",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "no",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "yes",
+    "S302A": "yes",
+    "S4NHA": "yes"
+  },
+  "equipmentConflicts": {
+    "S420A": {
+      "mobile.de": "yes",
+      "WELLER": "no"
+    },
+    "S302A": {
+      "mobile.de": "yes",
+      "WELLER": "no"
+    }
+  },
+  "listingDates": {
+    "createdTime": "2026-08-25T17:08:35.000Z",
+    "modifiedTime": "2026-08-25T17:16:44.000Z",
+    "renewedTime": "2026-08-25T17:08:35.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-08-25T17:08:35.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-08-25T20:09:03.652Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "WELLER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "dealerListingUrl": {
+          "old": null,
+          "new": "https://wellergruppe.de/fahrzeuge/bmw/4er/sportwagen-coupe-benzin-275kw-592710382/"
+        },
+        "vin": {
+          "old": null,
+          "new": "WBA61AT090CN76352"
+        },
+        "equipmentConflicts": {
+          "old": null,
+          "new": {
+            "S459A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S420A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S302A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-26T10:12:04.412Z"
+    },
+    {
+      "action": "Bayi Kaydıyla Birleştirildi",
+      "detail": "WELLER ilanı aynı araç (tescil+km+fiyat+satıcı eşleşmesi) — bayi sayfası bağlandı, unknown donanımlar çözüldü",
+      "changes": {
+        "equipmentConflicts": {
+          "old": {
+            "S459A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S420A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S524A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S302A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            }
+          },
+          "new": {
+            "S420A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            },
+            "S302A": {
+              "mobile.de": "yes",
+              "WELLER": "no"
+            }
+          }
+        }
+      },
+      "auditDate": "2026-08-26T10:16:05.605Z"
+    },
+    {
+      "action": "Gövde Tipi Düzeltildi: COUPE → CABRIO",
+      "detail": "VIN tip kodu 61AT = G23 M440i xDrive Cabrio; mobile.de başlık/kategori/model serisi ve WELLER başlığı çelişkiliydi.",
+      "changes": {
+        "category": {
+          "old": "COUPE_GAS_WITH_SUNROOF",
+          "new": "CABRIO"
+        },
+        "equipmentFeatures.S403A": {
+          "old": "yes",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-08-26T21:10:21.000Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

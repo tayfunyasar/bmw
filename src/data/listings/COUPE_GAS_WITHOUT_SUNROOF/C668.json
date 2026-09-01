@@ -39,7 +39,7 @@
   "equipmentFeatures": {
     "S403A": "no",
     "S5AZA": "no",
-    "S5AUA": "yes",
+    "S5AUA": "no",
     "S688A": "yes",
     "S2T4A": "yes",
     "S610A": "no",

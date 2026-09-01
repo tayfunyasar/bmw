@@ -12,6 +12,17 @@ import { listingsDir, walkCarFiles } from './listings-store.js';
 
 export { listingsDir };
 
+// Gecerli listingId sozlesmesi: BUYUK HARF oneki + sayi (C1045, W2, BMW3 ...).
+// Tek kaynak burasi — lint (enforce-listings) bunu kullanir, boylece tahsis ile
+// dogrulama ayni deseni paylasir. Gecmiste bu kontrol yoktu ve URL parcasindan
+// tureyen `id=445587983` gibi ID'ler agaca sizdi (tarama raporunda ham query
+// string olarak gorundu); desen artik lint tarafindan zorunlu.
+export const LISTING_ID_PATTERN = /^[A-Z]+\d+$/;
+
+export function isValidListingId(listingId) {
+  return typeof listingId === 'string' && LISTING_ID_PATTERN.test(listingId);
+}
+
 export function maxListingIdNumber(prefix, dir = listingsDir) {
   const re = new RegExp(`^${prefix}(\\d+)$`);
   let max = 0;

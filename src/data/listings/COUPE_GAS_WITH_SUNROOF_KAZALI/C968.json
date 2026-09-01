@@ -37,7 +37,7 @@
   "equipmentFeatures": {
     "S403A": "yes",
     "S5AZA": "no",
-    "S5AUA": "yes",
+    "S5AUA": "unknown",
     "S610A": "no",
     "S5DN_360": "no",
     "KGNL": "no",

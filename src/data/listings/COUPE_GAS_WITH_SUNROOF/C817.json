@@ -11,7 +11,7 @@
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 3 — metin sessiz; mobile.de \"Four-wheel drive\" checkbox'ı işaretli",
   "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "basePriceEuro": 66640,
+  "basePriceEuro": 66045,
   "mileageKm": 4050,
   "firstRegistrationYearAndMonth": [
     2026,
@@ -38,7 +38,7 @@
   "equipmentFeatures": {
     "S403A": "yes",
     "S5AZA": "no",
-    "S5AUA": "yes",
+    "S5AUA": "no",
     "S688A": "yes",
     "S2T4A": "unknown",
     "S610A": "yes",
@@ -76,7 +76,7 @@
   },
   "listingDates": {
     "createdTime": "2026-07-27T09:49:05.000Z",
-    "modifiedTime": "2026-08-11T14:58:01.000Z",
+    "modifiedTime": "2026-08-28T23:07:04.000Z",
     "renewedTime": "2026-07-27T09:49:05.000Z"
   },
   "auditHistory": [
@@ -108,6 +108,17 @@
         }
       },
       "auditDate": "2026-08-06T07:05:10.496Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 66640,
+          "new": 66045
+        }
+      },
+      "auditDate": "2026-08-24T18:18:20.297Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

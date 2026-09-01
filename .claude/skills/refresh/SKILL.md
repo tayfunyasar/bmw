@@ -18,8 +18,12 @@ Kullanıcı `/refresh` dediğinde stale ilanları Apify ile yeniden tarar. Apify
 4. **Chrome'da aç ve kontrol et.** Önce `mcp__claude-in-chrome__tabs_context_mcp` ile sekme bağlamını al (gerekirse `createIfEmpty: true`). Eklenti bağlı değilse kullanıcıya bağlamasını söyle ve bekle. Her başarısız ID için:
    - `listingUrl`'i `navigate` ile aç, `get_page_text` ile sayfa metnini oku.
    - **Karar:**
-     - Sayfa "Bu araç mevcut değil" / boş / ilan içeriği yok → ilan **kayıp/satılmış**.
      - Sayfada ilan içeriği dolu (fiyat, km, donanım vb.) → ilan **geçerli**, dokunma.
+     - Sayfa "Bu araç mevcut değil" / boş / ilan içeriği yok → **HEMEN kayıp sayma.**
+       ÇİFT DOĞRULAMA ZORUNLU (C566 vakası: sayfa geç yüklendi diye canlı ilan yanlışlıkla
+       SOLD'a taşındı): 3-5 sn bekle (`computer` wait), sayfayı `navigate` ile YENİDEN aç,
+       `get_page_text` ile tekrar oku. Yalnızca İKİNCİ okuma da boş/"mevcut değil" dönerse
+       ilan **kayıp/satılmış** sayılır. İkinci okumada içerik geldiyse ilan geçerli, dokunma.
 
 5. **Kayıp ilanları SOLD'a taşı.** Kayıp olarak tespit edilen her ID için `npm run move:sell -- <mobileDeId>` çalıştır. Tek ve net bir kayıp ilan varsa doğrudan taşı. Birden fazla kayıp ilan varsa, taşımadan önce listeyi kullanıcıya gösterip onay al.
 

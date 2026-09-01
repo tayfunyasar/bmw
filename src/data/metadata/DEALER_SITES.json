@@ -1,5 +1,6 @@
 {
-  "_comment": "Bayi sitesi crawler config'i — tek kaynak. Site skill'leri (.claude/skills/bayi-tara-*) ve scripts/lib/dealer-sites.js buradan okur. searchUrls BOOKMARKS.json'daki linklerin kopyasi DEGIL — bookmarkTitlePrefix ile bookmark bulunur, arama URL'si oradan alinir (tek kaynak BOOKMARKS). detailUrlIdPattern: detay URL'sinden site-ici ilan ID'sini cikaran regex (1 capture group); null ise dealerKey URL'nin kendisidir. fetchStrategy: 'chrome-tabs' (SPA/korumali) | 'webfetch' (server-rendered) — pilot karar verir, 'unknown' baslangic degeri.",
+  "_comment": "Bayi sitesi crawler config'i — tek kaynak. Site skill'leri (.claude/skills/bayi-tara-*) ve scripts/lib/dealer-sites.js buradan okur. searchUrls BOOKMARKS.json'daki linklerin kopyasi DEGIL — bookmarkTitlePrefix ile bookmark bulunur, arama URL'si oradan alinir (tek kaynak BOOKMARKS). detailUrlIdPattern: detay URL'sinden site-ici ilan ID'sini cikaran regex (1 capture group); null ise dealerKey URL'nin kendisidir. fetchStrategy: 'chrome-tabs' (SPA/korumali) | 'webfetch' (server-rendered) — pilot karar verir, 'unknown' baslangic degeri. genericSellerWords: sellerMatches'in ayirt edici SAYMADIGI jenerik sirket kelimeleri.",
+  "genericSellerWords": ["gmbh", "ag", "kg", "co", "auto", "autohaus", "automobile", "automotive", "premium", "group", "gruppe", "mbh", "und", "the", "bmw", "mini", "motors", "motor"],
   "sites": [
     {
       "site": "WELLER",

@@ -26,7 +26,7 @@
     "rematch:equipment": "node scripts/rematch-equipment.js && npm run format:data",
     "rematch:drivetrain": "node scripts/rematch-drivetrain.js && npm run format:data",
     "deploy": "vercel --prod",
-    "test": "node --test scripts/lib/*.test.js"
+    "test": "node --test scripts/lib/*.test.js src/utils/*.test.js"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",

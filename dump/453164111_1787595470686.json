@@ -1,0 +1,273 @@
+{
+  "id": 453164111,
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-m-sport-pro-glasdach-innovati-siegen/453164111.html",
+  "shortTitle": "BMW M440",
+  "subTitle": "i xDrive Coupé M Sport Pro Glasdach Innovati",
+  "title": "BMW M440i xDrive Coupé M Sport Pro Glasdach Innovati",
+  "properties": {
+    "milage": "0 km",
+    "gearbox": "Automatic",
+    "fuelType": "Petrol, E10-enabled",
+    "power": "288 kW (392 hp)",
+    "firstRegistration": null,
+    "seats": "4",
+    "doors": null,
+    "generalInspection": "New",
+    "lastService": null,
+    "lastServiceMilage": null,
+    "productionDate": null,
+    "engineSize": null,
+    "cylinders": null,
+    "emptyWeight": null,
+    "emissionClass": "Euro6d",
+    "emissionSticker": "4 (Green)",
+    "co2Emission": "175 g/km",
+    "co2Class": "Based on CO₂ emissions (combined)",
+    "fuelConsumption": [
+      "7.7 l/100km (combined)"
+    ],
+    "costPer1500km": "€2,014/Year",
+    "colour": "Blue Metallic",
+    "manufacturerColour": "M Portimao Blau metallic",
+    "upholstery": "Full leather, Black",
+    "countryVersion": "German edition",
+    "vehicleNumber": "B00139CY13534",
+    "numberOfOwners": "0",
+    "climatisation": "Automatic climatisation, 3 zones",
+    "parkingSensors": "Front, Rear, Self-steering systems, 360° camera",
+    "airbags": "Front and Side and More Airbags",
+    "tankCapacity": null,
+    "range": null,
+    "powerConsumption": null,
+    "energyConsumption": "7.7 l/100km",
+    "otherEnergySources": null,
+    "driveType": "Internal combustion engine"
+  },
+  "descriptionHtml": "<b>Editionen und Pakete</b><br><ul><li>Sportpaket</li> </ul><br><b>Komfort, Innenausstattung</b><br><ul><li>Keyless Entry</li><li>Lordose</li><li>Sportsitze</li> </ul><br><b>Multimedia</b><br><ul><li>DAB Tuner</li> </ul><br><b>Sitzbezug</b><br><ul><li>Leder 'Vernasca' Schwarz/Kontraststeppung Blau (SW)</li> </ul><br><b>Umwelt, Sicherheit</b><br><ul><li>Fernlichtassistent</li>  </ul><hr><b>Irrtümer und Zwischenverkauf vorbehalten.</b>",
+  "description": "Editionen und Pakete\n\n * Sportpaket\n\n\nKomfort, Innenausstattung\n\n * Keyless Entry\n * Lordose\n * Sportsitze\n\n\nMultimedia\n\n * DAB Tuner\n\n\nSitzbezug\n\n * Leder 'Vernasca' Schwarz/Kontraststeppung Blau (SW)\n\n\nUmwelt, Sicherheit\n\n * Fernlichtassistent\n\n----------------------------------------------------------------------------------------------------------------------------------\n\nIrrtümer und Zwischenverkauf vorbehalten.",
+  "isNew": false,
+  "isReadyToDrive": true,
+  "isConditionNew": true,
+  "segment": "Car",
+  "category": "SportsCar",
+  "sellerId": 452549,
+  "manufacturer": "BMW",
+  "model": "M440",
+  "price": {
+    "priceType": "FIXED",
+    "amount": 77590,
+    "currency": "EUR",
+    "formatted": "€77,590",
+    "vat": 19
+  },
+  "netPrice": {
+    "amount": 65201.68,
+    "currency": "EUR",
+    "formatted": "€65,202"
+  },
+  "createdTime": "2026-04-15T08:26:28.000Z",
+  "modifiedTime": "2026-08-18T18:15:48.000Z",
+  "renewedTime": "2026-07-21T06:46:05.000Z",
+  "attributes": {
+    "Vehicle condition": "New vehicle, Accident-free",
+    "Category": "Sports Car/Coupe",
+    "Model range": "G22",
+    "Trim line": "Coupé M Sport Pro Glasdach Innovation Adapt LED Harman…",
+    "Vehicle Number": "B00139CY13534",
+    "Availability": "Now",
+    "Origin": "German edition",
+    "Mileage": "0 km",
+    "Power": "288 kW (392 hp)",
+    "Drive type": "Internal combustion engine",
+    "Fuel": "Petrol, E10-enabled",
+    "CO₂ class": "Based on CO₂ emissions (combined)",
+    "Fuel consumption": [
+      "7.7 l/100km (combined)"
+    ],
+    "Energy costs for 15,000 km annual mileage": "€2,014/Year",
+    "Fuel price": "€1.74/l (annual average 2025)",
+    "Possible CO₂ costs over the next 10 years (15,000 km/year)": [
+      "€3,741 (assuming an average CO₂ price of €143/t)",
+      "€1,575 (assuming a low average CO₂ price of €60/t)",
+      "€5,775 (assuming a high average CO₂ price of €220/t)"
+    ],
+    "Number of Seats": "4",
+    "Transmission": "Automatic",
+    "Emission Class": "Euro6d",
+    "Emissions Sticker": "4 (Green)",
+    "Number of Vehicle Owners": "0",
+    "HU": "New",
+    "Climatisation": "Automatic climatisation, 3 zones",
+    "Parking sensors": "Front, Rear, Self-steering systems, 360° camera",
+    "Airbags": "Front and Side and More Airbags",
+    "Colour (Manufacturer)": "M Portimao Blau metallic",
+    "Colour": "Blue Metallic",
+    "Interior Design": "Full leather, Black",
+    "Energy consumption (comb.)": "7.7 l/100km",
+    "CO₂ emissions (comb.)": "175 g/km"
+  },
+  "batteryInformation": null,
+  "features": [
+    "ABS",
+    "Adaptive lighting",
+    "Alarm system",
+    "Alloy wheels",
+    "Ambient lighting",
+    "Android Auto",
+    "Apple CarPlay",
+    "Arm rest",
+    "Blind spot assist",
+    "Bluetooth",
+    "Central locking",
+    "Cruise control",
+    "DAB radio",
+    "Digital cockpit",
+    "Distance warning system",
+    "Electric seat adjustment",
+    "Electric side mirror",
+    "Electric windows",
+    "Eletric seat adjustment with memory function",
+    "Emergency brake assist",
+    "Emergency call system",
+    "ESP",
+    "Folding exterior mirrors",
+    "Four-wheel drive",
+    "Full Service History",
+    "Hands-free kit",
+    "Head-up display",
+    "Heated seats",
+    "High beam assist",
+    "Immobilizer",
+    "Induction charging for smartphones",
+    "Isofix",
+    "Keyless central locking",
+    "Lane change assist",
+    "Leather steering wheel",
+    "LED headlights",
+    "LED running lights",
+    "Light sensor",
+    "Lumbar support",
+    "Multifunction steering wheel",
+    "Non-smoker vehicle",
+    "On-board computer",
+    "Paddle shifters",
+    "Power Assisted Steering",
+    "Rain sensor",
+    "Rear traffic alert",
+    "Sound system",
+    "Speed limit control system",
+    "Sport seats",
+    "Sports package",
+    "Start-stop system",
+    "Summer tyres",
+    "Sunroof",
+    "Tinted windows",
+    "Touchscreen",
+    "Traction control",
+    "Traffic sign recognition",
+    "Tuner/radio",
+    "Tyre pressure monitoring",
+    "USB port",
+    "Voice control",
+    "Warranty",
+    "WLAN / Wi-Fi hotspot"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fbb60de-81a9-4518-9b3e-379e23f79680?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2cc9645-66f5-4b56-baae-3246656f07d9?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/82/822de7b8-f1de-4827-8848-ad113d438510?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3e/3ea53475-3fcb-4c3c-94da-2eb34f65304d?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a932417-3bcf-40bb-a490-6086cfbd6188?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/292a3edb-c104-485c-96cd-257603ca64bb?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/38cd373e-bbc2-42c4-8a9d-cded91e8a025?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d50c25c-179f-4ec2-b6a5-de2680320081?rule=mo-1600.jpg",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7e/7e9490cc-9913-4738-bbba-aba5848d428d?rule=mo-1600.jpg"
+  ],
+  "version": 92,
+  "priceRating": {
+    "rating": "Fair price",
+    "priceRanges": [
+      {
+        "label": "Very good price",
+        "min": 51700,
+        "max": 67200
+      },
+      {
+        "label": "Good price",
+        "min": 67200,
+        "max": 72300
+      },
+      {
+        "label": "Fair price",
+        "min": 72300,
+        "max": 80400
+      },
+      {
+        "label": "Increased price",
+        "min": 80400,
+        "max": 86300
+      },
+      {
+        "label": "High price",
+        "min": 86300,
+        "max": 95900
+      }
+    ]
+  },
+  "dealer": {
+    "id": 452549,
+    "contry": "DE",
+    "name": "WAHL-GROUP Alfred Wahl GmbH & Co. KG | Filiale Siegen",
+    "phones": [
+      "+49 (0)271 402481",
+      "+49 271 42019"
+    ],
+    "messengers": [],
+    "languages": [
+      "Deutsch",
+      "Pусский",
+      "English",
+      "Italiano",
+      "Español",
+      "Türkçe"
+    ],
+    "activeSince": "",
+    "homePageUrl": "https://home.mobile.de/home/redirect.html?customerId=452549",
+    "logoUrl": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1cceae20-3470-48ca-9152-4144cedb8a0e?rule=mo-1600.jpg",
+    "reviewPageUrl": "https://www.mobile.de/bewertungen/WAHL-GROUP?lang=en",
+    "sellerType": "Dealer",
+    "addesses": [
+      "Weidenauer Straße 217-225",
+      "DE-57076 Siegen"
+    ],
+    "location": {
+      "latitude": 50.8925442,
+      "longitude": 8.0288005
+    },
+    "rating": {
+      "advice": 4.315789473684211,
+      "total": 4.3,
+      "responseTime": 4.1,
+      "friendliness": 4.473684210526316,
+      "adRealityRate": 100,
+      "ratingCount": 20,
+      "recommendationRate": 88
+    },
+    "openingHours": [
+      {
+        "day": "Mon - Fri",
+        "time": "08:00 h - 18:00 h"
+      },
+      {
+        "day": "Sat",
+        "time": "09:00 h - 13:00 h"
+      }
+    ],
+    "person": {}
+  },
+  "footnotes": [
+    "The information is provided in accordance with the Passenger Car Energy Consumption Labelling Regulation. The values stated were determined in accordance with the prescribed WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) measurement method. The fuel consumption and CO₂ emissions of a car depend not only on the efficient utilisation of fuel by the car, but also on driving style and other non-technical factors. CO₂ is the main greenhouse gas responsible for global warming. A guide to the fuel consumption and CO₂ emissions of all new car models offered in Germany can be viewed free of charge at any point of sale in Germany where new cars are displayed or offered for sale. The guide is also available here: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+    "The terms and conditions of the service provider apply."
+  ],
+  "vat": "19.00% VAT"
+}

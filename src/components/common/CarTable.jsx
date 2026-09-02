@@ -1,4 +1,4 @@
-import { useState, memo } from 'react';
+import { useState, useEffect, useRef, memo } from 'react';
 import { Card, Flex, Table, Typography, Space, Button, Modal, Timeline, Tooltip, Grid } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
 import { equipmentRules, dealersData, getColorHex, getInteriorHex, UI_COLORS } from '../../data';
@@ -12,6 +12,15 @@ import { listingCreatedAt, listingSoldAt, carListingAgeDays } from '../../utils/
 import { DRIVETRAIN_FORMULA } from '../../../scripts/lib/drivetrain';
 
 const { Text, Link } = Typography;
+
+// Tablo TERSTIR: her arac bir SUTUN. antd yalnizca SATIRLARI sanallastirir, sutunlari
+// DEGIL — 900 araclik havuzda her satir 900 hucre uretir ve sekme kilitlenir. Bu yuzden
+// yatay pencereleme burada yapilir: yalnizca ekranda gorunen sutunlar (+ overscan)
+// cizilir, solda/sagda kalanlar tek bir bosluk sutunuyla temsil edilir (kaydirma
+// genisligi ve konumu birebir korunur).
+const COL_W = 120;          // arac sutunu genisligi (px)
+const FIXED_COL_W = 140;    // soldaki "Özellik" sutunu
+const COL_OVERSCAN = 6;     // gorunur pencerenin iki yanina eklenen tampon sutun
 
 // extraHeaderActions her render'da yeni referans alır (inline JSX, örn. yıl sekmesindeki
 // "Tüm İlanları Aç" butonu) — bilerek karşılaştırma dışı: aksi halde memo hiç iş yapmaz.
@@ -36,29 +45,59 @@ const CarTableComponent = ({
   rejectedLabel = 'RED',
   yearLabel = ''
 }) => {
+  const tableRef = useRef(null);
+  const [colWindow, setColWindow] = useState({ start: 0, end: COL_OVERSCAN * 4 });
   const [historyModalVisible, setHistoryModalVisible] = useState(false);
   const [selectedCarHistory, setSelectedCarHistory] = useState(null);
   const screens = Grid.useBreakpoint();
   const isMobile = screens.md === false; // md altı (telefon/dar) → kart görünümü
+
+  // Yatay kaydirma penceresi: gorunur sutun araligini scrollLeft'ten hesaplar.
+  useEffect(() => {
+    const body = tableRef.current?.querySelector('.ant-table-body');
+    if (!body) return undefined;
+    const update = () => {
+      const first = Math.max(0, Math.floor((body.scrollLeft - FIXED_COL_W) / COL_W) - COL_OVERSCAN);
+      const visible = Math.ceil(body.clientWidth / COL_W) + COL_OVERSCAN * 2;
+      setColWindow(prev => (prev.start === first && prev.end === first + visible)
+        ? prev
+        : { start: first, end: first + visible });
+    };
+    update();
+    body.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => { body.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
+  }, [cars.length, isMobile]);
 
   const showHistory = (car) => {
     setSelectedCarHistory(car);
     setHistoryModalVisible(true);
   };
 
-  const columns = [
+  const fixedColumn = [
     {
       title: 'Özellik',
       dataIndex: 'prop',
       key: 'prop',
       fixed: 'left',
-      width: 140,
+      width: FIXED_COL_W,
       render: (text, record) => record.isSection
         ? <Text strong style={{ fontSize: '13px' }}>{text}</Text>
         : <Text strong={record.isFeature} type={record.isFeature ? "warning" : "secondary"}>{text}</Text>,
       onCell: (record) => record.isSection ? { style: { backgroundColor: UI_COLORS.sectionBg, borderBottom: `2px solid ${UI_COLORS.sectionBorder}` } } : {}
     }
-  ].concat(cars.map((car, index) => ({
+  ];
+
+  const windowStart = Math.max(0, Math.min(colWindow.start, Math.max(0, cars.length - 1)));
+  const windowEnd = Math.min(cars.length, colWindow.end);
+  const spacer = (key, width) => width > 0 ? [{ key, dataIndex: key, width, render: () => null }] : [];
+
+  const columns = [
+    ...fixedColumn,
+    ...spacer('spacer_left', windowStart * COL_W),
+    ...cars.slice(windowStart, windowEnd).map((car, offset) => {
+      const index = windowStart + offset;
+      return ({
       title: (
         <Flex vertical align="center">
           <Link strong href={car.listingUrl} target="_blank" delete={isRejected || car.isSold} underline={!isRejected && !car.isSold}>{car.listingId}</Link>
@@ -90,8 +129,12 @@ const CarTableComponent = ({
         else if (car.curatorPickBadge) Object.assign(style, { backgroundColor: UI_COLORS.buyableBg });
         return { style };
       },
-      render: (val, record) => {
+      // Hucre degeri TEMBEL: satir tanimindaki cell(car) yalnizca gorunur hucre icin
+      // cagrilir (antd virtual). Onceden hesaplama, tum kategoriler seciliyken
+      // ~940 arac × ~30 satir = on binlerce hucreyi bir anda uretip sayfayi kilitliyordu.
+      render: (_dataIndexValue, record) => {
         if (record.isSection) return null;
+        const val = typeof record.cell === 'function' ? record.cell(car) : undefined;
         if (record.isColor) {
           if (car.overrideFeatures?.exteriorColorName) return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} paintLabel={car.exteriorPaintLabel} />;
           return <ColorDisplay colorCode={getColorHex(car.exteriorColorName)} colorName={car.exteriorColorName} paintLabel={car.exteriorPaintLabel} />;
@@ -116,7 +159,10 @@ const CarTableComponent = ({
         }
         return <Text>{val}</Text>;
       }
-    })));
+      });
+    }),
+    ...spacer('spacer_right', (cars.length - windowEnd) * COL_W),
+  ];
 
   const overrideLabels = {
     co2EmissionsGramPerKm: (v) => `CO₂: ${v} g/km`,
@@ -146,7 +192,7 @@ const CarTableComponent = ({
   const dataSource = [
     { key: 'color', prop: 'Dış Renk', isColor: true },
     { key: 'interior', prop: 'İç Renk', isInterior: true },
-    Object.assign({ key: 'drive', prop: 'Tahrik' }, Object.fromEntries(cars.map(car => {
+    { key: 'drive', prop: 'Tahrik', cell: (car) => {
       const override = car.overrideFeatures?.drivetrainType;
       const weak = car.drivetrainCertain === false && !override;
       const reason = override
@@ -165,56 +211,56 @@ const CarTableComponent = ({
           <Text type={weak ? 'warning' : undefined}>{car.drivetrainType} {weak ? '⚠️' : '✅'}</Text>
         </Tooltip>
       );
-      return [car.listingId, cell];
-    }))),
-    Object.assign({ key: 'price', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'mileage', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString()} km`]))),
-    Object.assign({ key: 'registration', prop: 'İlk Tescil' }, Object.fromEntries(cars.map(car => {
+      return (cell);
+    } },
+    { key: 'price', prop: 'Fiyat', cell: (car) => `€${car.basePriceEuro?.toLocaleString()}` },
+    { key: 'mileage', prop: 'Kilometre', cell: (car) => `${car.mileageKm?.toLocaleString()} km` },
+    { key: 'registration', prop: 'İlk Tescil', cell: (car) => {
       const [y, m] = car.firstRegistrationYearAndMonth || [];
-      return [car.listingId, (y != null && m != null) ? `${m.toString().padStart(2, '0')}/${y}` : '?'];
-    }))),
-    Object.assign({ key: 'generation', prop: 'Nesil' }, Object.fromEntries(cars.map(car => [car.listingId, car.modelGenerationCertain === false ? '⚠️ Belirsiz (LCI?)' : (car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration)]))),
-    Object.assign({ key: 'co2', prop: 'CO₂' }, Object.fromEntries(cars.map(car => [car.listingId, car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?']))),
-    Object.assign({ key: 'overrides', prop: '🔧 Override' }, Object.fromEntries(cars.map(car => {
+      return ((y != null && m != null) ? `${m.toString().padStart(2, '0')}/${y}` : '?');
+    } },
+    { key: 'generation', prop: 'Nesil', cell: (car) => car.modelGenerationCertain === false ? '⚠️ Belirsiz (LCI?)' : (car.modelGeneration === 'LCI' ? '🔥 Facelift (LCI)' : car.modelGeneration) },
+    { key: 'co2', prop: 'CO₂', cell: (car) => car.co2EmissionsGramPerKm ? `${car.co2EmissionsGramPerKm} g/km` : '?' },
+    { key: 'overrides', prop: '🔧 Override', cell: (car) => {
       const text = formatOverrides(car);
-      return [car.listingId, text ? formatNotes(text.split('\n')) : '—'];
-    }))),
-    Object.assign({ key: 'additionalFeatures', prop: '✨ Ek Özellikler' }, Object.fromEntries(cars.map(car => [car.listingId, formatAdditionalFeatures(car.listingAdditionalFeatures)]))),
-    Object.assign({ key: 'notes', prop: '📝 Satıcı Açıklaması' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.listingDescriptionNotes)]))),
-    Object.assign({ key: 'personalNotes', prop: '💭 Kişisel' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.curatorPersonalNotes)]))),
-    Object.assign({ key: 'aiCommentary', prop: '🤖 AI Yorumu' }, Object.fromEntries(cars.map(car => [car.listingId, formatNotes(car.aiCommentary)]))),
+      return (text ? formatNotes(text.split('\n')) : '—');
+    } },
+    { key: 'additionalFeatures', prop: '✨ Ek Özellikler', cell: (car) => formatAdditionalFeatures(car.listingAdditionalFeatures) },
+    { key: 'notes', prop: '📝 Satıcı Açıklaması', cell: (car) => formatNotes(car.listingDescriptionNotes) },
+    { key: 'personalNotes', prop: '💭 Kişisel', cell: (car) => formatNotes(car.curatorPersonalNotes) },
+    { key: 'aiCommentary', prop: '🤖 AI Yorumu', cell: (car) => formatNotes(car.aiCommentary) },
   ];
 
   // Ikiz satiri yalnizca en az bir aracin twin baglantisi varsa eklenir.
   const hasAnyTwin = cars.some(car => findTwin(car));
   const listingInfoSource = [
     // Ikiz suphesi: bayi kaydi ile mobile.de kaydinin celisen alanlari (tek kaynak: listingDiff).
-    ...(!hasAnyTwin ? [] : [Object.assign({ key: 'twin_row', prop: '⚠️ İkiz Şüphesi' }, Object.fromEntries(cars.map(car => {
+    ...(!hasAnyTwin ? [] : [{ key: 'twin_row', prop: '⚠️ İkiz Şüphesi', cell: (car) => {
       const twin = findTwin(car);
-      if (!twin) return [car.listingId, '—'];
+      if (!twin) return ('—');
       const diffs = diffListings(car, twin);
-      if (diffs.length === 0) return [car.listingId, `${twin.listingId} — fark yok`];
-      return [car.listingId, (
+      if (diffs.length === 0) return (`${twin.listingId} — fark yok`);
+      return ((
         <Tooltip key="twin" styles={{ body: { maxWidth: 380 } }} title={<TwinDiffTable car={car} twin={twin} />}>
           <span style={{ cursor: 'help', color: '#d48806', fontWeight: 600 }}>
             {twin.listingId} · {diffs.length} çelişki ⓘ
           </span>
         </Tooltip>
-      )];
-    })))]),
-    Object.assign({ key: 'loc', prop: 'Konum' }, Object.fromEntries(cars.map(car => [car.listingId, car.listingLocation]))),
-    Object.assign({ key: 'seller', prop: 'Satıcı' }, Object.fromEntries(cars.map(car => [car.listingId, car.sellerTypeOrName]))),
-    Object.assign({ key: 'dealerNotes', prop: '🏢 Bayi Notları' }, Object.fromEntries(cars.map(car => {
+      ));
+    } }]),
+    { key: 'loc', prop: 'Konum', cell: (car) => car.listingLocation },
+    { key: 'seller', prop: 'Satıcı', cell: (car) => car.sellerTypeOrName },
+    { key: 'dealerNotes', prop: '🏢 Bayi Notları', cell: (car) => {
       const dealer = findDealerForListing(car.sellerTypeOrName, dealersData);
-      if (!dealer) return [car.listingId, '—'];
+      if (!dealer) return ('—');
       const allNotes = [...dealer.notes, ...(dealer.website ? [`🔗 ${dealer.website}`] : [])];
-      return [car.listingId, allNotes.length > 0 ? formatNotes(allNotes) : '—'];
-    }))),
-    Object.assign({ key: 'owners', prop: 'Sahip Sayısı' }, Object.fromEntries(cars.map(car => [car.listingId, car.numberOfPreviousOwners]))),
-    Object.assign({ key: 'warranty', prop: 'Garanti' }, Object.fromEntries(cars.map(car => [car.listingId, car.warranty?.exists === 'yes' ? 'Evet' : (car.warranty?.exists === 'no' ? 'Hayır' : '?')]))),
-    Object.assign({ key: 'service', prop: 'Tam Servis' }, Object.fromEntries(cars.map(car => [car.listingId, car.service?.type === 'yes' ? 'Evet' : (car.service?.type === 'no' ? 'Hayır' : '?')]))),
-    Object.assign({ key: 'inspection', prop: 'Muayene (TÜV)' }, Object.fromEntries(cars.map(car => [car.listingId, car.nextInspectionDate]))),
-    Object.assign({ key: 'dates', prop: '📅 İlan Tarihleri' }, Object.fromEntries(cars.map(car => {
+      return (allNotes.length > 0 ? formatNotes(allNotes) : '—');
+    } },
+    { key: 'owners', prop: 'Sahip Sayısı', cell: (car) => car.numberOfPreviousOwners },
+    { key: 'warranty', prop: 'Garanti', cell: (car) => car.warranty?.exists === 'yes' ? 'Evet' : (car.warranty?.exists === 'no' ? 'Hayır' : '?') },
+    { key: 'service', prop: 'Tam Servis', cell: (car) => car.service?.type === 'yes' ? 'Evet' : (car.service?.type === 'no' ? 'Hayır' : '?') },
+    { key: 'inspection', prop: 'Muayene (TÜV)', cell: (car) => car.nextInspectionDate },
+    { key: 'dates', prop: '📅 İlan Tarihleri', cell: (car) => {
       const dates = car.listingDates || {};
       const history = car.auditHistory || [];
       const published = history.find(h => h.action?.includes('İlan Yayınlandı'));
@@ -233,10 +279,10 @@ const CarTableComponent = ({
         // Gün hesabı TEK kaynakta (pricingCalculator) — skor tooltip'i ile tablo asla ayrışmasın.
         const days = carListingAgeDays(car);
         const label = sold ? `${days} günde satıldı` : `${days} gündür yayında`;
-        return [car.listingId, <span key={car.listingId}>{parts.join(' · ')} · <span style={{ color: daysColor(days), fontWeight: 600 }}>📌 {label}</span></span>];
+        return (<span key={car.listingId}>{parts.join(' · ')} · <span style={{ color: daysColor(days), fontWeight: 600 }}>📌 {label}</span></span>);
       }
-      return [car.listingId, parts.length > 0 ? parts.join(' · ') : '—'];
-    }))),
+      return (parts.length > 0 ? parts.join(' · ') : '—');
+    } },
   ];
 
   const threeStarFeatures = equipmentRules
@@ -288,40 +334,35 @@ const CarTableComponent = ({
   }));
 
   const costSource = [
-    Object.assign({ key: 'price_row', prop: 'Fiyat' }, Object.fromEntries(cars.map(car => [car.listingId, `€${car.basePriceEuro?.toLocaleString()}`]))),
-    Object.assign({ key: 'bpm_calc_row', prop: '+ BPM' }, Object.fromEntries(cars.map(car => {
+    { key: 'price_row', prop: 'Fiyat', cell: (car) => `€${car.basePriceEuro?.toLocaleString()}` },
+    { key: 'bpm_calc_row', prop: '+ BPM', cell: (car) => {
       const calc = car.metrics?.bpmCalculation;
       // Muaf (NL) → 0 falsy olduğu için '?' branch'inden ÖNCE kontrol edilmeli.
-      if (calc?.exempt) return [car.listingId, `€0 — ${calc.exemptCountry} tescilli, BPM ödenmiş`];
-      if (!calc?.bpmCalculated) return [car.listingId, '?'];
-      return [car.listingId, `€${calc.bpmCalculated.toLocaleString()} (${calc.depreciationPercent}% afs., ${calc.tariefYear} tarief)`];
-    }))),
-    Object.assign({ key: 'total_calc_row', prop: 'TOPLAM', isTotal: true }, Object.fromEntries(cars.map(car => {
-      const calc = car.metrics?.bpmCalculation;
-      if (!calc?.exempt && !calc?.bpmCalculated) return [car.listingId, null];
-      return [car.listingId, (car.basePriceEuro || 0) + (calc.bpmCalculated || 0)];
-    }))),
+      if (calc?.exempt) return (`€0 — ${calc.exemptCountry} tescilli, BPM ödenmiş`);
+      if (!calc?.bpmCalculated) return ('?');
+      return (`€${calc.bpmCalculated.toLocaleString()} (${calc.depreciationPercent}% afs., ${calc.tariefYear} tarief)`);
+    } },
   ];
 
   const evaluationSource = [
-    Object.assign({ key: 'age_row', prop: 'Yaş' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.metrics?.ageInMonths || '?'} ay → €${car.metrics?.agePenalty?.toLocaleString() || '?'}`]))),
-    Object.assign({ key: 'kmpen_row', prop: 'Kilometre' }, Object.fromEntries(cars.map(car => [car.listingId, `${car.mileageKm?.toLocaleString() || '?'} km → €${car.metrics?.mileagePenalty?.toLocaleString() || '?'}`]))),
-    Object.assign({ key: 'depreciation_row', prop: 'Yıpranma' }, Object.fromEntries(cars.map(car => [car.listingId, `+€${car.metrics?.totalDepreciation?.toLocaleString() || '?'}`]))),
-    Object.assign({ key: 'extfeat_row', prop: '− Donanım (beklenen dahil)' }, Object.fromEntries(cars.map(car => {
+    { key: 'age_row', prop: 'Yaş', cell: (car) => `${car.metrics?.ageInMonths || '?'} ay → €${car.metrics?.agePenalty?.toLocaleString() || '?'}` },
+    { key: 'kmpen_row', prop: 'Kilometre', cell: (car) => `${car.mileageKm?.toLocaleString() || '?'} km → €${car.metrics?.mileagePenalty?.toLocaleString() || '?'}` },
+    { key: 'depreciation_row', prop: 'Yıpranma', cell: (car) => `+€${car.metrics?.totalDepreciation?.toLocaleString() || '?'}` },
+    { key: 'extfeat_row', prop: '− Donanım (beklenen dahil)', cell: (car) => {
       const m = car.metrics || {};
-      if (m.extraFeaturesValue == null) return [car.listingId, '?'];
-      return [car.listingId, `−€${(m.extraFeaturesValue + (m.upsideGap || 0)).toLocaleString()}`];
-    }))),
-    Object.assign({ key: 'deal_score_row', prop: 'FIRSAT FİYATI', isDealScore: true }, Object.fromEntries(cars.map(car => [car.listingId, car.metrics?.expectedDealScore ?? car.metrics?.personalDealScore]))),
-    Object.assign({ key: 'upside_row', prop: '🔍 Belirsiz Donanım' }, Object.fromEntries(cars.map(car => {
+      if (m.extraFeaturesValue == null) return ('?');
+      return (`−€${(m.extraFeaturesValue + (m.upsideGap || 0)).toLocaleString()}`);
+    } },
+    { key: 'deal_score_row', prop: 'FIRSAT FİYATI', isDealScore: true, cell: (car) => car.metrics?.expectedDealScore ?? car.metrics?.personalDealScore },
+    { key: 'upside_row', prop: '🔍 Belirsiz Donanım', cell: (car) => {
       const m = car.metrics || {};
       const cnt = m.unknownsCount || 0;
-      if (!cnt) return [car.listingId, '—'];
+      if (!cnt) return ('—');
       const parts = [`${cnt} kalem`];
       if (m.upsideGap != null) parts.push(`beklenen +€${m.upsideGap.toLocaleString()}`);
       if (m.unknownsPotentialValue != null) parts.push(`max +€${m.unknownsPotentialValue.toLocaleString()}`);
-      return [car.listingId, parts.join(' • ')];
-    }))),
+      return (parts.join(' • '));
+    } },
   ];
 
   const renderTitle = () => {
@@ -336,11 +377,8 @@ const CarTableComponent = ({
     return title;
   };
 
-  const sectionHeader = (label) => {
-    const row = { key: `section_${label}`, prop: label, isSection: true };
-    cars.forEach(car => { row[car.listingId] = ''; });
-    return row;
-  };
+  // Bolum basligi satiri: hucre degeri yok (render isSection'da null doner).
+  const sectionHeader = (label) => ({ key: `section_${label}`, prop: label, isSection: true });
 
   // Yıldız bölümü boşsa (o skorda hiç donanım yok) başlığı da gizle — boş "3 Yıldızlı" başlığı çıkmasın.
   const starSection = (label, source) => source.length ? [sectionHeader(label), ...source] : [];
@@ -364,11 +402,12 @@ const CarTableComponent = ({
       <Card title={renderTitle()} styles={{ body: isMobile ? { padding: 10 } : undefined }}>
         {isMobile
           ? <MobileCarCards cars={cars} isRejected={isRejected} rejectedLabel={rejectedLabel} />
-          : <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small"
-              // virtual: tum kategoriler seciliyken 400+ arac = 400+ SUTUN olusur;
-              // virtualizasyon olmadan tarayici kilitleniyor (site acilmiyor).
-              // DIKKAT: yatay sanallastirma icin scroll.x SAYI olmali ('max-content' degil).
-              virtual scroll={{ x: 140 + cars.length * 120, y: 900 }} rowHoverable={false} />}
+          : <div ref={tableRef}>
+              {/* scroll.x TAM genislik (bosluk sutunlariyla korunur) — kaydirma cubugu
+                  havuzun tamamini temsil eder; DOM'a yalnizca pencere cizilir. */}
+              <Table dataSource={unifiedSource} columns={columns} pagination={false} size="small"
+                scroll={{ x: FIXED_COL_W + cars.length * COL_W, y: 900 }} rowHoverable={false} />
+            </div>}
       </Card>
 
       <Modal

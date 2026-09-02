@@ -18,12 +18,20 @@ export const listingCreatedAt = (car) => {
 // Satış tarihi — yaş sayacı burada DURUR. Satılmış ilan "hâlâ yayında bekliyor"
 // değildir; sayaç bugüne kadar işlerse (C45 vakası: 10 günde satıldı ama skorda
 // 181 gün yazıyordu) arşiv araçları anlamsızca tavan cezası yer.
+//
+// Re-list istisnası (C235/C266 vakası, 2026-09-01): arşive düşmüş kök kayıt, bayinin
+// yeni ilanıyla birleşince canlıya geri döner; audit'te kalan ESKİ "İlan Satıldı" damgası
+// sayacı durdurmamalı. Son "Yeniden İlan" girdisinden ÖNCEKİ satış damgaları yok sayılır.
 const SOLD_ACTIONS = ['SATILDI', 'İlan Satıldı'];
+const RELIST_ACTIONS = ['Yeniden İlan'];
+const stampsOf = (car, actions) => (car?.auditHistory || [])
+  .filter(h => actions.some(a => h.action?.includes(a)))
+  .map(h => new Date(h.auditDate).getTime())
+  .filter(t => !Number.isNaN(t));
 export const listingSoldAt = (car) => {
-  const stamps = (car?.auditHistory || [])
-    .filter(h => SOLD_ACTIONS.some(a => h.action?.includes(a)))
-    .map(h => new Date(h.auditDate).getTime())
-    .filter(t => !Number.isNaN(t));
+  const relists = stampsOf(car, RELIST_ACTIONS);
+  const lastRelist = relists.length ? Math.max(...relists) : -Infinity;
+  const stamps = stampsOf(car, SOLD_ACTIONS).filter(t => t > lastRelist);
   return stamps.length ? new Date(Math.min(...stamps)).toISOString() : null;
 };
 

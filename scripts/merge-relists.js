@@ -21,7 +21,9 @@
 //   node scripts/merge-relists.js         → uygula (sonra: npm run format:data)
 
 import { allCategories, readCategory, writeCar, removeCar, moveCar } from './lib/listings-store.js';
-import { buildDumpIndex, readLiveDump } from './lib/dumps.js';
+import { buildDumpIndex } from './lib/dumps.js';
+import { adState as adStateOf } from './lib/ad-state.js';
+import { mergeRelistIntoRoot } from './lib/merge-relist.js';
 
 const isDry = process.argv.includes('--dry');
 const dumpIndex = buildDumpIndex();
@@ -31,12 +33,9 @@ const normalizeSeller = (name) =>
   String(name || '').replace(/★\s*[\d.]+/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim().toLocaleLowerCase('de-DE');
 
 // Ilanin canli/olu durumu: dump yoksa "bilinmiyor" (karar verdirmez).
-const adState = (mobileDeId) => {
-  if (!mobileDeId) return 'unknown';
-  const { raw, reason } = readLiveDump(mobileDeId, dumpIndex);
-  if (raw) return 'alive';
-  return reason === 'deadDump' ? 'dead' : 'unknown';
-};
+// Piyasa karari lib/ad-state.js'te (newestIsDead) — icerik sinyali `raw` ile KARISTIRILMAZ
+// (C853/C1153 vakasi, 2026-09-01: eski dolu dump yuzunden olu ikiz "alive" sayilmisti).
+const adState = (mobileDeId) => adStateOf(mobileDeId, dumpIndex);
 
 // Tum agac bellekte: listingId -> { car, category }
 const index = new Map();
@@ -89,21 +88,8 @@ if (isDry) {
 }
 
 for (const { newCar, newCategory, root, rootCategory } of candidates) {
-  const changes = {
-    mobileDeId: { old: root.mobileDeId, new: newCar.mobileDeId },
-    listingUrl: { old: root.listingUrl, new: newCar.listingUrl },
-  };
-  root.mobileDeId = newCar.mobileDeId;
-  root.listingUrl = newCar.listingUrl;
-  root.listingDates = newCar.listingDates;      // ham veri: kayit artik YENI ilana bakiyor
-  root.possibleTwinOf = null;
-  root.auditHistory = root.auditHistory || [];
-  root.auditHistory.push({
-    action: 'Yeniden İlan (Re-list)',
-    detail: `Aynı araç bayi tarafından yeni ilan olarak açıldı; ${newCar.listingId} kaydı bu köke birleştirildi (satıcı aynı, eski ilan mobile.de'den kalkmış). Gerçek ilan yaşı audit'teki ilk yayın tarihinden hesaplanır.`,
-    changes,
-    auditDate: new Date().toISOString(),
-  });
+  // Saf birlestirme (audit gecmisi korunur) lib/merge-relist.js'te — test edilebilir.
+  mergeRelistIntoRoot(root, newCar);
 
   removeCar(newCategory, newCar.listingId);
   if (rootCategory !== newCategory) moveCar(rootCategory, newCategory, root);
@@ -111,4 +97,4 @@ for (const { newCar, newCategory, root, rootCategory } of candidates) {
   console.log(`🔗 ${root.listingId} ← ${newCar.listingId} birleştirildi (${newCategory})`);
 }
 
-console.log(`\nBitti: ${candidates.length} re-list birleştirildi. Sonraki adım: npm run format:data`);
+console.log(`\nBitti: ${candidates.length} re-list birleştirildi. Sonraki adım: npm run format:data, ardından içerik eşitleme: node scripts/parse-car-json.js <yeniMobileDeId>`);

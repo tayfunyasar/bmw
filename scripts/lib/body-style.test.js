@@ -247,3 +247,9 @@ test('determineBodyStyle — 11AW VIN tip kodu Coupe iddiasini ezer (GRAN_COUPE)
   assert.equal(r.type, 'GRAN_COUPE');
   assert.equal(r.certain, true);
 });
+
+test('classifyBodyStyle — tireli slug "gran-coupe" (AHG 159574 vakasi, 2026-09-01) GRAN_COUPE', () => {
+  // Bayi arama listeleri govdeyi yalniz URL slug'inda soyler; tire bosluk gibi sayilmali.
+  assert.equal(classifyBodyStyle({ title: 'BMW M440i', subTitle: 'bmw-m440i-xdrive-gran-coupe-m-sport-pro-20-glasdach-159574 • EZ 10/2025' }), 'GRAN_COUPE');
+  assert.equal(classifyBodyStyle({ title: 'BMW M440i', subTitle: 'bmw-m440i-xdrive-coupe-m-sportpaket-pro-167126 • EZ 07/2025' }), 'COUPE');
+});

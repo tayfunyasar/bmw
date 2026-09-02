@@ -103,6 +103,18 @@ Kullanici `/mobilede-tara` dedigi zaman: BOOKMARKS.json icindeki "mobile.de — 
   Yas korumasi kodda: `src/utils/listingAge.js` → `listingCreatedAt` = min(createdTime, ilk
   "İlan Yayınlandı/İlan Eklendi" audit'i) — createdTime sifirlansa bile gercek yas kalir
   (regresyon testi `src/utils/listingAge.test.js`).
+- **Re-list birlestirmesi otomatik ve 3 kanitli: `node scripts/merge-relists.js --dry` → uygula (C853/C1153 + C235/C266 vakasi, 2026-09-01).**
+  Import ciktisinda `⚠️ muhtemel ikiz: Cxxx` gorursen loop icinde SORMADAN su siralamayi uygula:
+  (1) eski ilani Chrome'da ac ("Bu arac mevcut degil" teyidi), (2) `node scripts/apify-fetch-car.js <eskiId>`
+  ile OLU DUMP kanitini yaz (script yalniz dump'a guvenir, Chrome teyidi ona yetmez), (3) `merge-relists.js --dry`
+  sonra uygula, (4) `node scripts/parse-car-json.js <yeniId>` ile kok kaydin fiyat/km'sini yeni ilandan esitle
+  (merge icerige dokunmaz — C235 €55.900'da kalmis, gercek €54.900'du), (5) `npm run format:data`.
+  Kodda duzeltilen 3 tuzak: `scripts/lib/ad-state.js` piyasa karari `newestIsDead`'den verilir (`raw` icerik
+  sinyalidir; eski dolu dump yuzunden olu ikiz "alive" sayilip birlestirme sessizce reddediliyordu — C266 bu yuzden
+  3.5 ay ayri kayit olarak yasadi), `scripts/lib/merge-relist.js` yeni kaydin audit gecmisini KORUR (fiyat/km
+  gecmisi siliniyordu), `src/utils/listingAge.js` re-list sonrasi eski "İlan Satıldı" damgasini yok sayar (arsivden
+  canliya donen kok kaydin yas sayaci satis gununde donuyordu). Testler: `ad-state.test.js`, `merge-relist.test.js`,
+  `listingAge.test.js`. Arsivden geri donen kok (C235 ← C266) raporda ACIKCA yazilir.
 - **Skor ve tablo ayni gun sayisini gostermeli (C45 vakasi, 2026-09-01).** Satilan ilanda yas sayaci
   SATIS tarihinde durur (`carListingAgeDays`); iki ayri formul yazilirsa tablo "10 gunde satildi",
   skor tooltip'i "181 gundur yayinda −20" der. Yas/gun hesabi TEK kaynak: `src/utils/listingAge.js`.

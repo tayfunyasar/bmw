@@ -73,3 +73,23 @@ test('listingAgeInDays — endTime verilmezse bugun; createdTime yoksa/bozuksa n
 test('listingAgeInDays — satis tarihi yayindan onceyse negatife dusmez (0)', () => {
   assert.equal(listingAgeInDays('2026-03-14T12:00:00.000Z', '2026-03-04T12:00:00.000Z'), 0);
 });
+
+// --- listingSoldAt: re-list sonrasi eski satis damgasi sayaci durdurmaz ---
+
+test('listingSoldAt — "Yeniden İlan" sonrasi canliya donen kayitta ONCEKI "İlan Satıldı" yok sayilir (C235/C266, 2026-09-01)', () => {
+  const t0 = Date.UTC(2026, 4, 5);
+  const car = {
+    listingDates: { createdTime: iso(t0 + 13 * day) },   // re-list'in createdTime'i
+    auditHistory: [
+      { action: 'İlan Eklendi', auditDate: iso(t0) },
+      { action: 'İlan Satıldı', auditDate: iso(t0 + 13 * day) },
+      { action: 'Yeniden İlan (Re-list)', auditDate: iso(t0 + 119 * day) },
+    ],
+  };
+  assert.equal(listingSoldAt(car), null, 'eski satis damgasi re-list ile gecersizlesir');
+  assert.equal(listingCreatedAt(car), iso(t0), 'ilk yayin tarihi korunur');
+  // Re-list SONRASI gercek bir satis yine sayaci durdurur.
+  car.auditHistory.push({ action: 'İlan Satıldı', auditDate: iso(t0 + 150 * day) });
+  assert.equal(listingSoldAt(car), iso(t0 + 150 * day));
+  assert.equal(carListingAgeDays(car), 150);
+});

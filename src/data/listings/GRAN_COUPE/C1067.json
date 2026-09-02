@@ -1,18 +1,18 @@
 {
   "listingId": "C1067",
-  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-2jahre-bps-garantie-hamm/41131696760160.html",
-  "mobileDeId": "41131696760160",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-2jahre-bps-garantie-hamm/43229068970784.html",
+  "mobileDeId": "43229068970784",
   "vin": null,
   "possibleTwinOf": null,
-  "exteriorColorName": "Saphirschwarz Metallic",
+  "exteriorColorName": "BLACK SAPPHIRE",
   "exteriorPaintLabel": null,
   "interiorColorName": "Full leather, Black",
   "drivetrainType": "RWD",
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 4 — metin sessiz; mobile.de \"Rear wheel drive\" checkbox'ı işaretli",
-  "sunroofReason": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 59 kalemlik kapsamlı listede işaretli değil",
   "basePriceEuro": 57770,
-  "mileageKm": 13005,
+  "mileageKm": 13006,
   "firstRegistrationYearAndMonth": [
     2023,
     8
@@ -22,7 +22,7 @@
     "exists": "yes"
   },
   "service": {
-    "type": "yes",
+    "type": "unknown",
     "history": []
   },
   "nextInspectionDate": "New",
@@ -41,7 +41,7 @@
     "S5AUA": "no",
     "S688A": "yes",
     "S2T4A": "yes",
-    "S610A": "yes",
+    "S610A": "no",
     "S5DN_360": "no",
     "KGNL": "no",
     "S322A": "yes",
@@ -56,7 +56,7 @@
     "S420A": "yes",
     "S1MAA": "unknown",
     "S5ACA": "yes",
-    "S6C4A": "no",
+    "S6C4A": "yes",
     "S430A": "yes",
     "S4AWA": "no",
     "S775A": "yes",
@@ -70,14 +70,14 @@
     "S521A": "yes",
     "S524A": "yes",
     "S265A": "yes",
-    "S216A": "no",
+    "S216A": "yes",
     "S302A": "no",
     "S4NHA": "no"
   },
   "listingDates": {
-    "createdTime": "2026-08-21T10:50:36.000Z",
-    "modifiedTime": "2026-08-21T15:20:42.000Z",
-    "renewedTime": "2026-08-21T10:50:36.000Z"
+    "createdTime": "2026-09-02T07:19:04.000Z",
+    "modifiedTime": "2026-09-02T07:19:07.000Z",
+    "renewedTime": "2026-09-02T07:19:04.000Z"
   },
   "auditHistory": [
     {
@@ -91,6 +91,80 @@
       "detail": "Sistem tarafından kayıt altına alındı",
       "changes": null,
       "auditDate": "2026-08-21T21:41:22.750Z"
+    },
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-09-02T07:19:04.000Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-09-02T07:19:04.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-09-02T10:13:56.824Z"
+    },
+    {
+      "action": "Yeniden İlan (Re-list)",
+      "detail": "Aynı araç bayi tarafından yeni ilan olarak açıldı; C1159 kaydı bu köke birleştirildi (satıcı aynı, eski ilan mobile.de'den kalkmış). C1159'in audit geçmişi korundu; gerçek ilan yaşı audit'teki ilk yayın tarihinden hesaplanır.",
+      "changes": {
+        "mobileDeId": {
+          "old": "41131696760160",
+          "new": "43229068970784"
+        },
+        "listingUrl": {
+          "old": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-2jahre-bps-garantie-hamm/41131696760160.html",
+          "new": "https://suchen.mobile.de/auto-inserat/bmw-m440i-gran-coupe-2jahre-bps-garantie-hamm/43229068970784.html"
+        }
+      },
+      "auditDate": "2026-09-02T10:16:52.348Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "mileageKm": {
+          "old": 13005,
+          "new": 13006
+        },
+        "exteriorColorName": {
+          "old": "Saphirschwarz Metallic",
+          "new": "BLACK SAPPHIRE"
+        },
+        "service": {
+          "old": {
+            "type": "yes",
+            "history": []
+          },
+          "new": {
+            "type": "unknown",
+            "history": []
+          }
+        },
+        "sunroofReason": {
+          "old": "S403A=no — checkbox otoritesi: 67 kalemlik kapsamlı listede işaretli değil",
+          "new": "S403A=no — checkbox otoritesi: 59 kalemlik kapsamlı listede işaretli değil"
+        },
+        "equipmentFeatures.S610A": {
+          "old": "yes",
+          "new": "no"
+        },
+        "equipmentFeatures.S6C4A": {
+          "old": "no",
+          "new": "yes"
+        },
+        "equipmentFeatures.S216A": {
+          "old": "no",
+          "new": "yes"
+        }
+      },
+      "auditDate": "2026-09-02T10:16:52.478Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

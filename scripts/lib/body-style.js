@@ -7,7 +7,8 @@
 // (Gan Coupé / Grand Coupé / Carbrio) ve kısaltma (Cab.). GC kısaltması \b
 // sınırı ile yakalanır — başka kelimelerin ortasındaki "GC"yi tetiklemez.
 
-const GRAN_COUPE_RE = /(gran[d]?|gan)\s*coup/i;
+// `[\s-]*`: bayi slug'lari tireli yazar (AHG `m440i-xdrive-gran-coupe-...`, 2026-09-01) — tire de bosluk gibi sayilir.
+const GRAN_COUPE_RE = /(gran[d]?|gan)[\s-]*coup/i;
 // GC kisaltmasi. \b sinirli klasik durumlar (örn. " GC ", "G.C.") + xDrGC /
 // xDriveGC gibi yapisik varyantlar (mobile.de baslik kisaltmalari). G ile C
 // arasindaki opsiyonel nokta (G.C.) da kapsanir. Diger kelimelerin ortasindaki

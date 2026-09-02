@@ -1,7 +1,7 @@
 {
   "listingId": "C853",
-  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-grancoupe-schiebdach-head-up-360-acc-h-k-m%C3%BCnchen/462175153.html",
-  "mobileDeId": "462175153",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-grancoupe-schiebdach-head-up-360-acc-h-k-m%C3%BCnchen/43109063911616.html",
+  "mobileDeId": "43109063911616",
   "vin": null,
   "possibleTwinOf": null,
   "exteriorColorName": "SAN REMO GREEN",
@@ -75,9 +75,9 @@
     "S4NHA": "no"
   },
   "listingDates": {
-    "createdTime": "2026-08-03T12:42:09.000Z",
-    "modifiedTime": "2026-08-03T12:42:35.000Z",
-    "renewedTime": "2026-08-03T12:42:09.000Z"
+    "createdTime": "2026-09-01T15:02:28.000Z",
+    "modifiedTime": "2026-09-01T15:02:28.000Z",
+    "renewedTime": "2026-09-01T15:02:28.000Z"
   },
   "auditHistory": [
     {
@@ -97,6 +97,27 @@
       "detail": "Sistem tarafından kayıt altına alındı",
       "changes": null,
       "auditDate": "2026-08-03T20:12:02.169Z"
+    },
+    {
+      "action": "İlan Yenilendi (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-09-01T15:02:28.000Z"
+    },
+    {
+      "action": "Yeniden İlan (Re-list)",
+      "detail": "Aynı araç bayi tarafından yeni ilan olarak açıldı; C1153 kaydı bu köke birleştirildi (satıcı aynı, eski ilan mobile.de'den kalkmış). Gerçek ilan yaşı audit'teki ilk yayın tarihinden hesaplanır.",
+      "changes": {
+        "mobileDeId": {
+          "old": "462175153",
+          "new": "43109063911616"
+        },
+        "listingUrl": {
+          "old": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-grancoupe-schiebdach-head-up-360-acc-h-k-m%C3%BCnchen/462175153.html",
+          "new": "https://suchen.mobile.de/auto-inserat/bmw-m440-i-grancoupe-schiebdach-head-up-360-acc-h-k-m%C3%BCnchen/43109063911616.html"
+        }
+      },
+      "auditDate": "2026-09-01T15:51:09.933Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

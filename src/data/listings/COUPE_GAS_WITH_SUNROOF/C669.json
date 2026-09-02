@@ -11,7 +11,7 @@
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
   "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "basePriceEuro": 52557,
+  "basePriceEuro": 52537,
   "mileageKm": 21800,
   "firstRegistrationYearAndMonth": [
     2023,
@@ -76,7 +76,7 @@
   },
   "listingDates": {
     "createdTime": "2026-07-17T10:53:16.000Z",
-    "modifiedTime": "2026-08-31T09:57:38.000Z",
+    "modifiedTime": "2026-09-02T09:57:40.000Z",
     "renewedTime": "2026-07-17T10:53:16.000Z"
   },
   "auditHistory": [
@@ -263,6 +263,17 @@
         }
       },
       "auditDate": "2026-08-31T10:09:42.812Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 52557,
+          "new": 52537
+        }
+      },
+      "auditDate": "2026-09-02T10:14:30.231Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

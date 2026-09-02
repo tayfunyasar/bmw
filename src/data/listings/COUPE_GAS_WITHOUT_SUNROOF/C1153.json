@@ -1,21 +1,21 @@
 {
-  "listingId": "C235",
-  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-hk-hifi-dab-led-gsd-tempomat-bad-neuenahr/454011133.html",
-  "mobileDeId": "454011133",
+  "listingId": "C1153",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m440i-xdrive-coupe-19-standheiz-acc-360-harmk-ismaning/460643699.html",
+  "mobileDeId": "460643699",
   "vin": null,
   "possibleTwinOf": null,
-  "exteriorColorName": "Fire Red",
+  "exteriorColorName": "saphirschwarz",
   "exteriorPaintLabel": null,
-  "interiorColorName": "Cloth, Black",
+  "interiorColorName": "Full leather, Black",
   "drivetrainType": "xDrive AWD",
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
-  "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "basePriceEuro": 55900,
-  "mileageKm": 51584,
+  "sunroofReason": "S403A=no — checkbox otoritesi: 71 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 60500,
+  "mileageKm": 9285,
   "firstRegistrationYearAndMonth": [
-    2024,
-    7
+    2025,
+    8
   ],
   "numberOfPreviousOwners": "1",
   "warranty": {
@@ -25,18 +25,18 @@
     "type": "yes",
     "history": []
   },
-  "nextInspectionDate": "04/2028",
-  "sellerTypeOrName": "Baum Automobile GmbH & Co. KG ★4.5",
+  "nextInspectionDate": "08/2026",
+  "sellerTypeOrName": "Spaett GmbH & Co. KG  BMW und MINI Vertragshändler ★4.2",
   "modelGeneration": "LCI",
   "modelGenerationCertain": true,
   "co2EmissionsGramPerKm": 0,
-  "listingLocation": "🇩🇪 DE-53474 Bad Neuenahr",
+  "listingLocation": "🇩🇪 DE-85737 Ismaning",
   "curatorPickBadge": null,
   "curatorPersonalNotes": [],
   "listingDescriptionNotes": [],
   "listingAdditionalFeatures": [],
   "equipmentFeatures": {
-    "S403A": "yes",
+    "S403A": "no",
     "S5AZA": "no",
     "S5AUA": "no",
     "S688A": "yes",
@@ -52,7 +52,7 @@
     "S715A": "yes",
     "S2VLA": "yes",
     "S494A": "yes",
-    "S248A": "no",
+    "S248A": "yes",
     "S420A": "yes",
     "S1MAA": "unknown",
     "S5ACA": "yes",
@@ -61,13 +61,13 @@
     "S4AWA": "no",
     "S775A": "no",
     "S493A": "yes",
-    "S536A": "no",
-    "S2NHA": "yes",
+    "S536A": "yes",
+    "S2NHA": "no",
     "S3ACA": "no",
     "S3ADA": "no",
     "S3AGA": "no",
     "S488A": "yes",
-    "S521A": "no",
+    "S521A": "yes",
     "S524A": "yes",
     "S265A": "yes",
     "S216A": "no",
@@ -75,45 +75,28 @@
     "S4NHA": "no"
   },
   "listingDates": {
-    "createdTime": "2026-04-24T04:09:01.000Z",
-    "modifiedTime": "2026-05-08T09:03:45.000Z",
-    "renewedTime": "2026-04-24T04:09:01.000Z"
+    "createdTime": "2026-07-14T15:25:55.000Z",
+    "modifiedTime": "2026-09-02T01:02:22.000Z",
+    "renewedTime": "2026-09-02T01:02:22.000Z"
   },
   "auditHistory": [
     {
       "action": "İlan Yayınlandı (mobile.de)",
       "detail": null,
       "changes": null,
-      "auditDate": "2026-04-24T04:09:01.000Z"
+      "auditDate": "2026-07-14T15:25:55.000Z"
     },
     {
       "action": "İlan Yenilendi (mobile.de)",
       "detail": null,
       "changes": null,
-      "auditDate": "2026-04-24T04:09:01.000Z"
+      "auditDate": "2026-09-02T01:02:22.000Z"
     },
     {
       "action": "İlan Eklendi",
       "detail": "Sistem tarafından kayıt altına alındı",
       "changes": null,
-      "auditDate": "2026-05-05T14:36:31.772Z"
-    },
-    {
-      "action": "İlan Satıldı",
-      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
-      "changes": null,
-      "auditDate": "2026-05-18T17:21:40.325Z"
-    },
-    {
-      "action": "İlan Güncellemesi (Otomatik)",
-      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
-      "changes": {
-        "listingLocation": {
-          "old": "🇩🇪 53474 Bad Neuenahr",
-          "new": "🇩🇪 DE-53474 Bad Neuenahr"
-        }
-      },
-      "auditDate": "2026-08-02T18:10:17.114Z"
+      "auditDate": "2026-09-02T07:02:43.266Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

@@ -11,7 +11,7 @@
   "drivetrainCertain": true,
   "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
   "sunroofReason": "S403A=yes — ilan açıklamasında donanım kalıbı geçiyor",
-  "basePriceEuro": 96439.99,
+  "basePriceEuro": 79990,
   "mileageKm": 10,
   "firstRegistrationYearAndMonth": [
     null,
@@ -60,7 +60,7 @@
     "S430A": "yes",
     "S4AWA": "no",
     "S775A": "no",
-    "S493A": "yes",
+    "S493A": "no",
     "S536A": "no",
     "S2NHA": "no",
     "S3ACA": "yes",
@@ -76,7 +76,7 @@
   },
   "listingDates": {
     "createdTime": "2026-08-26T11:49:06.000Z",
-    "modifiedTime": "2026-08-28T06:44:56.000Z",
+    "modifiedTime": "2026-09-01T13:37:39.000Z",
     "renewedTime": "2026-08-26T11:49:06.000Z"
   },
   "auditHistory": [
@@ -97,6 +97,21 @@
       "detail": "Sistem tarafından kayıt altına alındı",
       "changes": null,
       "auditDate": "2026-08-26T13:20:26.496Z"
+    },
+    {
+      "action": "İlan Güncellemesi (Otomatik)",
+      "detail": "Apify tekrar taraması sonucu veriler eşitlendi",
+      "changes": {
+        "basePriceEuro": {
+          "old": 96439.99,
+          "new": 79990
+        },
+        "equipmentFeatures.S493A": {
+          "old": "yes",
+          "new": "no"
+        }
+      },
+      "auditDate": "2026-09-02T07:03:08.352Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

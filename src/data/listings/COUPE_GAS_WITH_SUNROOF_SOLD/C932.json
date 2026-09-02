@@ -119,6 +119,12 @@
         }
       },
       "auditDate": "2026-08-29T08:03:41.588Z"
+    },
+    {
+      "action": "İlan Satıldı",
+      "detail": "Apify taramasında ilan bulunamadı (mobile.de'den kalktı)",
+      "changes": null,
+      "auditDate": "2026-09-02T10:14:58.465Z"
     }
   ],
   "cardThemeColorHex": "#94a3b8",

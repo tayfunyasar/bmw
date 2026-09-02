@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Card, Flex, Typography, Tooltip, Tag, Space } from 'antd';
 import { CATEGORIES, TIERS, rankPicks } from '../utils/recommendations';
 import { carListingAgeDays } from '../utils/pricingCalculator';
@@ -144,28 +144,46 @@ const RankedPick = ({ car, rank, category }) => {
   );
 };
 
-// Kategori basina cizilen kart ust siniri: tum kategoriler seciliyken havuz 400+
-// araca cikiyor; sinirsiz kart (kategori basina 400+) tarayiciyi kilitliyordu.
-// Siralama tam havuz uzerinden yapilir, yalnizca GORUNTULEME kirpilir.
+// Kart sayisinda tavan YOK — filtre cubugu neyi birakiyorsa hepsi siralanir.
+// Olcek yatay PENCERELEME ile cozulur (CarTable ile ayni ilke): kaydirma konumuna
+// gore yalnizca gorunen kartlar + tampon cizilir, geri kalan yer iki bosluk div'iyle
+// korunur — kaydirma cubugu havuzun tamamini temsil eder.
+const CARD_W = 232;      // kart genisligi + gap (px)
+const CARD_OVERSCAN = 4;
 
 const CategoryRow = ({ category, evaluatedListings }) => {
   const picks = rankPicks(evaluatedListings, category);
+  const scrollerRef = useRef(null);
+  const [win, setWin] = useState({ start: 0, end: CARD_OVERSCAN * 4 });
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return undefined;
+    const update = () => {
+      const first = Math.max(0, Math.floor(el.scrollLeft / CARD_W) - CARD_OVERSCAN);
+      const visible = Math.ceil(el.clientWidth / CARD_W) + CARD_OVERSCAN * 2;
+      setWin(prev => (prev.start === first && prev.end === first + visible) ? prev : { start: first, end: first + visible });
+    };
+    update();
+    el.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => { el.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
+  }, [picks.length]);
+
   if (picks.length === 0) return null;
-  const shown = picks;   // limit YOK — tek kirpma filtre cubugu
+  const start = Math.min(win.start, Math.max(0, picks.length - 1));
+  const end = Math.min(picks.length, win.end);
   return (
     <Flex vertical gap="small">
-      <Text strong>{category.icon} {category.label}</Text>
+      <Text strong>{category.icon} {category.label} <Text type="secondary" style={{ fontSize: 12 }}>({picks.length})</Text></Text>
       {category.hint && <Text type="secondary" style={{ fontSize: '12px', marginTop: -6 }}>{category.hint}</Text>}
       {/* Tek satır: kartlar sarmalanmaz, kutunun İÇİNDE yatay kaydırılır (sayfa taşmaz). */}
-      <Flex gap="middle" wrap="nowrap" style={{ overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'thin' }}>
-        {shown.map((car, index) => (
-          <RankedPick key={car.listingId} car={car} rank={index + 1} category={category} />
+      <Flex ref={scrollerRef} gap="middle" wrap="nowrap" style={{ overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'thin' }}>
+        {start > 0 && <div style={{ flex: `0 0 ${start * CARD_W}px` }} />}
+        {picks.slice(start, end).map((car, offset) => (
+          <RankedPick key={car.listingId} car={car} rank={start + offset + 1} category={category} />
         ))}
-        {picks.length > shown.length && (
-          <Text type="secondary" style={{ alignSelf: 'center', whiteSpace: 'nowrap', paddingRight: 8 }}>
-            +{picks.length - shown.length} araç daha (tabloda görünür)
-          </Text>
-        )}
+        {picks.length > end && <div style={{ flex: `0 0 ${(picks.length - end) * CARD_W}px` }} />}
       </Flex>
     </Flex>
   );

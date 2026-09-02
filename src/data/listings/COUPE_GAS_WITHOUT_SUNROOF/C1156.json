@@ -1,0 +1,109 @@
+{
+  "listingId": "C1156",
+  "listingUrl": "https://suchen.mobile.de/auto-inserat/bmw-m-440-i-xdrive-matrix-hud-neuwagenzustand-1-hand-fulda/43135449819744.html",
+  "mobileDeId": "43135449819744",
+  "vin": null,
+  "possibleTwinOf": null,
+  "exteriorColorName": "DRAVITGRAU",
+  "exteriorPaintLabel": null,
+  "interiorColorName": "Alcantara, Black",
+  "drivetrainType": "xDrive AWD",
+  "drivetrainCertain": true,
+  "drivetrainReason": "Kural 1 — ilan metninde \"xDrive\" geçiyor (açıklama ezer)",
+  "sunroofReason": "S403A=no — checkbox otoritesi: 73 kalemlik kapsamlı listede işaretli değil",
+  "basePriceEuro": 58990,
+  "mileageKm": 8443,
+  "firstRegistrationYearAndMonth": [
+    2021,
+    4
+  ],
+  "numberOfPreviousOwners": "1",
+  "warranty": {
+    "exists": "no"
+  },
+  "service": {
+    "type": "yes",
+    "history": []
+  },
+  "nextInspectionDate": "New",
+  "sellerTypeOrName": "nextcar24 GmbH ★4.2",
+  "modelGeneration": "Pre-LCI",
+  "modelGenerationCertain": true,
+  "co2EmissionsGramPerKm": 163,
+  "listingLocation": "🇩🇪 DE-36043 Fulda",
+  "curatorPickBadge": null,
+  "curatorPersonalNotes": [],
+  "listingDescriptionNotes": [],
+  "listingAdditionalFeatures": [],
+  "equipmentFeatures": {
+    "S403A": "no",
+    "S5AZA": "yes",
+    "S5AUA": "no",
+    "S688A": "unknown",
+    "S2T4A": "unknown",
+    "S610A": "yes",
+    "S5DN_360": "yes",
+    "KGNL": "yes",
+    "S322A": "yes",
+    "S2VFA": "no",
+    "S459A": "yes",
+    "S5DNA": "yes",
+    "S6U3A": "yes",
+    "S715A": "no",
+    "S2VLA": "yes",
+    "S494A": "yes",
+    "S248A": "yes",
+    "S420A": "yes",
+    "S1MAA": "unknown",
+    "S5ACA": "yes",
+    "S6C4A": "yes",
+    "S430A": "yes",
+    "S4AWA": "no",
+    "S775A": "yes",
+    "S493A": "yes",
+    "S536A": "no",
+    "S2NHA": "yes",
+    "S3ACA": "no",
+    "S3ADA": "no",
+    "S3AGA": "no",
+    "S488A": "yes",
+    "S521A": "yes",
+    "S524A": "yes",
+    "S265A": "yes",
+    "S216A": "no",
+    "S302A": "yes",
+    "S4NHA": "no"
+  },
+  "listingDates": {
+    "createdTime": "2026-09-01T18:37:11.000Z",
+    "modifiedTime": "2026-09-01T18:37:12.000Z",
+    "renewedTime": "2026-09-01T18:37:11.000Z"
+  },
+  "auditHistory": [
+    {
+      "action": "İlan Yayınlandı (mobile.de)",
+      "detail": null,
+      "changes": null,
+      "auditDate": "2026-09-01T18:37:11.000Z"
+    },
+    {
+      "action": "İlan Eklendi",
+      "detail": "Sistem tarafından kayıt altına alındı",
+      "changes": null,
+      "auditDate": "2026-09-02T07:02:43.272Z"
+    },
+    {
+      "action": "İkiz İşareti Kaldırıldı",
+      "detail": "possibleTwinOf: C822 yanlış pozitif — parmak izi çakışması (tescil 2021/04 + ~8.4xx km + yakın fiyat). Kanıt: C1156 dump G22 Coupé (doors 2/3, seats 4, Model range G22) — C822 dump Gran Coupé (doors 4/5, seats 5, başlık \"Gran Coupé\"); ayrıca C822 ilanı (461759081) Chrome teyidiyle hâlâ canlı. Farklı fiziksel araçlar.",
+      "changes": {
+        "possibleTwinOf": {
+          "old": "C822",
+          "new": null
+        }
+      },
+      "auditDate": "2026-09-02T07:05:15.804Z"
+    }
+  ],
+  "cardThemeColorHex": "#94a3b8",
+  "aiCommentary": null
+}

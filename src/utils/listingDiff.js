@@ -6,9 +6,10 @@ import { allByTotalCost } from './pricingCalculator';
 
 // possibleTwinOf bagini cozer — ikiz tum kaynak havuzunda aranir (tek kaynak;
 // MobileCarCards ve CarTable ikisi de bunu kullanir).
-export const findTwin = (car) => car?.possibleTwinOf
-  ? allByTotalCost.find(c => c.listingId === car.possibleTwinOf) || null
-  : null;
+// listingId -> arac indeksi (bir kez kurulur). Lineer arama, tum kategoriler secili
+// iken (1000+ arac × 1000+ kayit) tabloyu kilitliyordu.
+const CAR_BY_ID = new Map(allByTotalCost.map(c => [c.listingId, c]));
+export const findTwin = (car) => car?.possibleTwinOf ? CAR_BY_ID.get(car.possibleTwinOf) || null : null;
 
 const EQUIP_NAME = Object.fromEntries(equipmentRules.map(r => [r.code, r.name]));
 // Donanim kodu -> insan-okur ad (tek kaynak; Icons/FeatureIcon da bunu kullanir).

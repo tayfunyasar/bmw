@@ -72,6 +72,9 @@ Sira: **WELLER → TIMMERMANNS → EULER → AHG → BMW_DE → BMW_NL → UNTER
 - Bayi Almancasi mobile.de'den farkli kaliplar kullanir. Eslesmeyen onemli donanim gorursen EQUIPMENT_RULES.json'a kalip ekle ve import'u tekrar calistir — guncelleme idempotenttir. **DIKKAT — paket parcasi ≠ paket:** bir PAKETIN alt ozelligini paketin kaniti sayan kalip YAZMA. Ornek vaka (2026-08-20 duzeltildi): "Aktive Geschwindigkeitsregelung mit Stop & Go" (= sadece ACC) S5AUA/DAP kaniti sayilmisti; 250 aracta sahte "Driving Assistant Professional: var" uretti. Kalip yalnizca donanimin ACIK ADINI eslestirmeli.
 - **Collapsed "..." bolumleri: donanim listesini almadan once GENISLET (tikla).** Genisletilemiyorsa liste EKSIKTIR: notes'a "donanim listesi eksik (collapsed)" yaz ve raporda belirt. Eksik listeden turetilen "yok" degerleri roota SAHTE equipmentConflicts yazdirir — C264 vakasi (2026-08-20): eksik WELLER listesi 10 sahte celiski uretti, canli sayfa tam listeyle hepsini curuttu. Bir kayitta cok sayida "mobile.de=yes / SITE=no" celiskisi gorursen once taramanin listeyi tam alip almadigindan suphelen.
 - VIN cogu sitede yazmaz; varsa MUTLAKA al (tahrik Kural 0 + dedup icin altin degerinde).
+- **Slug'daki tireli `gran-coupe` de GC'dir (AHG 159574 vakasi, 2026-09-01).** `body-style.js` GRAN_COUPE_RE artik
+  `[\s-]*` ile tireyi bosluk sayar; 5 AHG GC ilani filtrede `new` gorunup detay maliyeti dogurmustu. Slug'i `subTitle`
+  olarak vermeye devam et — elemeyi kod yapar, skill'e kalip yazma (regresyon: `body-style.test.js`).
 - **Bayi hasar beyani kok kaydi KAZALI'ya tasir — merge tek basina YETMEZ.** `mergeTwinIntoRoot`
   bayinin "Unfallvorschaden: Ja" beyanini kok kayda `dealerReportedDamage` olarak yazar, ama
   `determineTargetFile` yalniz YENI kayitlar icin calistigi icin dosya temiz havuzda KALIYORDU.
